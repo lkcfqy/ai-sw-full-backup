@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-08T15:27:07.519740+09:00",
+  "elapsed_seconds": 67.21,
+  "manifest_sha256": "6eb02623dc5199ffae828ff708700a72188bb615c624185e2adef09902ec24ab",
+  "archive_name": "AI-SW-full-20261008.tar.zst.age",
+  "original_archive": {
+    "bytes": 42975391030,
+    "sha256": "5898b03004804e7595e429f37c99c0f7910d4f2a21f73b1d7d017fe523224e09"
+  },
+  "parts": {
+    "count": 41,
+    "bytes": 42975391030,
+    "sha256": "5898b03004804e7595e429f37c99c0f7910d4f2a21f73b1d7d017fe523224e09"
+  },
+  "archive_matches_concatenated_parts": true,
+  "manifest_counts": {
+    "directory": 7244,
+    "file": 53566,
+    "symlink": 6
+  },
+  "archive_counts": {
+    "directory": 7244,
+    "file": 53566,
+    "symlink": 6
+  },
+  "manifest_regular_bytes": 47882042338,
+  "verified_regular_bytes": 47882042338,
+  "verified_member_count": 60816,
+  "missing_member_count": 0,
+  "extra_member_count": 0,
+  "age_exit_code": 0,
+  "zstd_exit_code": 0,
+  "trailing_zero_padding_bytes_drained": 0,
+  "error_count": 0,
+  "errors": [],
+  "checks": [
+    "encrypted archive size and SHA256",
+    "each part size and SHA256",
+    "concatenated parts size and SHA256 against original archive",
+    "successful full age decryption and zstd decompression",
+    "all regular-member sizes and SHA256 against snapshot manifest",
+    "all member types and modes",
+    "all symlink targets",
+    "no missing, extra, or duplicate members",
+    "no source tree reads"
+  ]
+}
