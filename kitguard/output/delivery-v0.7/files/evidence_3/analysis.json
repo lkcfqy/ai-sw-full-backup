@@ -1,0 +1,644 @@
+{
+  "schema": "kitguard.v07.public-paired.analysis.v1",
+  "modes": {
+    "spatial_inventory": {
+      "all": {
+        "planned": 51,
+        "outcomes": {
+          "C": 46,
+          "W": 5,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "correct_actionable_rate": 0.9019607843137255,
+        "any_false_ready_images": 5,
+        "source_supported_any_false_ready_images": 0,
+        "false_ready_denominator": 51,
+        "unmeasured_risk_images": 0,
+        "latency_all_attempted": {
+          "measured": 51,
+          "median_ms": 8962,
+          "p90_ms": 14550,
+          "maximum_ms": 18749,
+          "total_ms": 499130
+        },
+        "latency_loaded_before": {
+          "measured": 50,
+          "median_ms": 8827.5,
+          "p90_ms": 14523,
+          "maximum_ms": 15165,
+          "total_ms": 480381
+        }
+      },
+      "loco_normal_222": {
+        "planned": 16,
+        "outcomes": {
+          "C": 16,
+          "W": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "correct_actionable_rate": 1.0,
+        "any_false_ready_images": 0,
+        "source_supported_any_false_ready_images": 0,
+        "false_ready_denominator": 16,
+        "unmeasured_risk_images": 0,
+        "latency_all_attempted": {
+          "measured": 16,
+          "median_ms": 14467.0,
+          "p90_ms": 15165,
+          "maximum_ms": 18749,
+          "total_ms": 236813
+        },
+        "latency_loaded_before": {
+          "measured": 15,
+          "median_ms": 14465,
+          "p90_ms": 14777,
+          "maximum_ms": 15165,
+          "total_ms": 218064
+        }
+      },
+      "screws_author_safe_crop": {
+        "planned": 35,
+        "outcomes": {
+          "C": 30,
+          "W": 5,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "correct_actionable_rate": 0.8571428571428571,
+        "any_false_ready_images": 5,
+        "source_supported_any_false_ready_images": 0,
+        "false_ready_denominator": 35,
+        "unmeasured_risk_images": 0,
+        "latency_all_attempted": {
+          "measured": 35,
+          "median_ms": 7117,
+          "p90_ms": 10219,
+          "maximum_ms": 11497,
+          "total_ms": 262317
+        },
+        "latency_loaded_before": {
+          "measured": 35,
+          "median_ms": 7117,
+          "p90_ms": 10219,
+          "maximum_ms": 11497,
+          "total_ms": 262317
+        }
+      }
+    },
+    "spatial_guarded": {
+      "all": {
+        "planned": 51,
+        "outcomes": {
+          "C": 41,
+          "W": 3,
+          "U": 7,
+          "E": 0,
+          "N": 0
+        },
+        "correct_actionable_rate": 0.803921568627451,
+        "any_false_ready_images": 3,
+        "source_supported_any_false_ready_images": 0,
+        "false_ready_denominator": 51,
+        "unmeasured_risk_images": 0,
+        "latency_all_attempted": {
+          "measured": 51,
+          "median_ms": 21814,
+          "p90_ms": 46231,
+          "maximum_ms": 47733,
+          "total_ms": 1352628
+        },
+        "latency_loaded_before": {
+          "measured": 51,
+          "median_ms": 21814,
+          "p90_ms": 46231,
+          "maximum_ms": 47733,
+          "total_ms": 1352628
+        }
+      },
+      "loco_normal_222": {
+        "planned": 16,
+        "outcomes": {
+          "C": 14,
+          "W": 0,
+          "U": 2,
+          "E": 0,
+          "N": 0
+        },
+        "correct_actionable_rate": 0.875,
+        "any_false_ready_images": 0,
+        "source_supported_any_false_ready_images": 0,
+        "false_ready_denominator": 16,
+        "unmeasured_risk_images": 0,
+        "latency_all_attempted": {
+          "measured": 16,
+          "median_ms": 46134.5,
+          "p90_ms": 47471,
+          "maximum_ms": 47733,
+          "total_ms": 705845
+        },
+        "latency_loaded_before": {
+          "measured": 16,
+          "median_ms": 46134.5,
+          "p90_ms": 47471,
+          "maximum_ms": 47733,
+          "total_ms": 705845
+        }
+      },
+      "screws_author_safe_crop": {
+        "planned": 35,
+        "outcomes": {
+          "C": 27,
+          "W": 3,
+          "U": 5,
+          "E": 0,
+          "N": 0
+        },
+        "correct_actionable_rate": 0.7714285714285715,
+        "any_false_ready_images": 3,
+        "source_supported_any_false_ready_images": 0,
+        "false_ready_denominator": 35,
+        "unmeasured_risk_images": 0,
+        "latency_all_attempted": {
+          "measured": 35,
+          "median_ms": 18548,
+          "p90_ms": 27409,
+          "maximum_ms": 35455,
+          "total_ms": 646783
+        },
+        "latency_loaded_before": {
+          "measured": 35,
+          "median_ms": 18548,
+          "p90_ms": 27409,
+          "maximum_ms": 35455,
+          "total_ms": 646783
+        }
+      }
+    },
+    "selective_identity_experimental_v1": {
+      "all": {
+        "planned": 51,
+        "outcomes": {
+          "C": 46,
+          "W": 4,
+          "U": 1,
+          "E": 0,
+          "N": 0
+        },
+        "correct_actionable_rate": 0.9019607843137255,
+        "any_false_ready_images": 4,
+        "source_supported_any_false_ready_images": 0,
+        "false_ready_denominator": 51,
+        "unmeasured_risk_images": 0,
+        "latency_all_attempted": {
+          "measured": 51,
+          "median_ms": 15625,
+          "p90_ms": 31896,
+          "maximum_ms": 32827,
+          "total_ms": 927090
+        },
+        "latency_loaded_before": {
+          "measured": 51,
+          "median_ms": 15625,
+          "p90_ms": 31896,
+          "maximum_ms": 32827,
+          "total_ms": 927090
+        }
+      },
+      "loco_normal_222": {
+        "planned": 16,
+        "outcomes": {
+          "C": 16,
+          "W": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "correct_actionable_rate": 1.0,
+        "any_false_ready_images": 0,
+        "source_supported_any_false_ready_images": 0,
+        "false_ready_denominator": 16,
+        "unmeasured_risk_images": 0,
+        "latency_all_attempted": {
+          "measured": 16,
+          "median_ms": 31737.0,
+          "p90_ms": 32598,
+          "maximum_ms": 32827,
+          "total_ms": 511647
+        },
+        "latency_loaded_before": {
+          "measured": 16,
+          "median_ms": 31737.0,
+          "p90_ms": 32598,
+          "maximum_ms": 32827,
+          "total_ms": 511647
+        }
+      },
+      "screws_author_safe_crop": {
+        "planned": 35,
+        "outcomes": {
+          "C": 30,
+          "W": 4,
+          "U": 1,
+          "E": 0,
+          "N": 0
+        },
+        "correct_actionable_rate": 0.8571428571428571,
+        "any_false_ready_images": 4,
+        "source_supported_any_false_ready_images": 0,
+        "false_ready_denominator": 35,
+        "unmeasured_risk_images": 0,
+        "latency_all_attempted": {
+          "measured": 35,
+          "median_ms": 12971,
+          "p90_ms": 19940,
+          "maximum_ms": 24060,
+          "total_ms": 415443
+        },
+        "latency_loaded_before": {
+          "measured": 35,
+          "median_ms": 12971,
+          "p90_ms": 19940,
+          "maximum_ms": 24060,
+          "total_ms": 415443
+        }
+      }
+    }
+  },
+  "classification": {
+    "C": "correct actionable",
+    "W": "wrong actionable",
+    "U": "uncertain/non-actionable",
+    "E": "execution/invalid-output failure",
+    "N": "not attempted"
+  },
+  "paired_outcomes": {
+    "C->C": 41,
+    "C->U": 5,
+    "W->U": 2,
+    "W->W": 3
+  },
+  "paired_cases": [
+    {
+      "case_id": "v07-loco-screw_bag-train-good-259",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-279",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-225",
+      "inventory": "C",
+      "guarded": "U"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-validation-good-019",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-validation-good-020",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_278-7c485f49437e",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-261",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-118",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-148",
+      "inventory": "C",
+      "guarded": "U"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-validation-good-012",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_267-b588d0610843",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_043-0f142a407685",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_329-3ef8cd71fa7c",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-288",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_254-01bdc322d45c",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-085",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-081",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-345",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_052-2ff24eaf90ca",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-186",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-087",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-144",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_217-02dcfdb94d9b",
+      "inventory": "W",
+      "guarded": "U"
+    },
+    {
+      "case_id": "v07-screws-screws_173-e4f3732390c7",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_306-b99ef95d6c60",
+      "inventory": "C",
+      "guarded": "U"
+    },
+    {
+      "case_id": "v07-screws-screws_029-022f090246f7",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_041-273db36ccf08",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_026-159d851cf865",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_165-203dda5f8171",
+      "inventory": "C",
+      "guarded": "U"
+    },
+    {
+      "case_id": "v07-screws-screws_116-579021319beb",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_120-3e86c9ca51d9",
+      "inventory": "W",
+      "guarded": "W"
+    },
+    {
+      "case_id": "v07-screws-screws_316-ceebce0412a3",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_025-be0cfb452c55",
+      "inventory": "C",
+      "guarded": "U"
+    },
+    {
+      "case_id": "v07-screws-screws_255-8f97b70e7b70",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_163-042340f2c1b1",
+      "inventory": "W",
+      "guarded": "U"
+    },
+    {
+      "case_id": "v07-screws-screws_240-3b677a02b30a",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_256-92cbbb2e681a",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_024-07f4bcf5c349",
+      "inventory": "W",
+      "guarded": "W"
+    },
+    {
+      "case_id": "v07-screws-screws_233-27b2aabfe1e8",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_315-6a1b174187e3",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_213-0c47276c5590",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_230-37d67057763d",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_105-1227f4b91a1e",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_295-880c3c73c29d",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_028-63c1ae2b3ff8",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_128-4a8c39795714",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_164-937fa690c693",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_261-1deaacc5e8e3",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_313-1ba16c0cddf8",
+      "inventory": "C",
+      "guarded": "C"
+    },
+    {
+      "case_id": "v07-screws-screws_172-53dacfde39d4",
+      "inventory": "W",
+      "guarded": "W"
+    },
+    {
+      "case_id": "v07-screws-screws_301-e88319aa2833",
+      "inventory": "C",
+      "guarded": "C"
+    }
+  ],
+  "paired_latency_guarded_minus_inventory": {
+    "measured": 51,
+    "median_ms": 13215,
+    "p90_ms": 31705,
+    "maximum_ms": 32956,
+    "total_ms": 853498
+  },
+  "predeclared_gates": {
+    "all_planned_complete": true,
+    "zero_execution_errors": true,
+    "zero_wrong_actionable": false,
+    "zero_any_false_ready": false,
+    "coverage_at_least_90_percent": false,
+    "coverage_loss_at_most_three_images": false,
+    "median_at_most_60_seconds": true
+  },
+  "engineering_acceptance_passed": false,
+  "descriptive_safety_advantage_observed": false,
+  "paired_outcomes_vs_inventory": {
+    "C->C": 41,
+    "C->U": 5,
+    "W->U": 2,
+    "W->W": 3
+  },
+  "comparisons_vs_inventory": {
+    "spatial_guarded": {
+      "predeclared_gates": {
+        "all_planned_complete": true,
+        "zero_execution_errors": true,
+        "zero_wrong_actionable": false,
+        "zero_any_false_ready": false,
+        "coverage_at_least_90_percent": false,
+        "coverage_loss_at_most_three_images": false,
+        "median_at_most_60_seconds": true
+      },
+      "engineering_acceptance_passed": false,
+      "descriptive_safety_advantage_observed": false,
+      "paired_outcomes_vs_inventory": {
+        "C->C": 41,
+        "C->U": 5,
+        "W->U": 2,
+        "W->W": 3
+      }
+    },
+    "selective_identity_experimental_v1": {
+      "predeclared_gates": {
+        "all_planned_complete": true,
+        "zero_execution_errors": true,
+        "zero_wrong_actionable": false,
+        "zero_any_false_ready": false,
+        "coverage_at_least_90_percent": true,
+        "coverage_loss_at_most_three_images": true,
+        "median_at_most_60_seconds": true
+      },
+      "engineering_acceptance_passed": false,
+      "descriptive_safety_advantage_observed": false,
+      "paired_outcomes_vs_inventory": {
+        "C->C": 46,
+        "W->U": 1,
+        "W->W": 4
+      }
+    }
+  },
+  "selective_identity_further_validation_gate": {
+    "checks": {
+      "all_planned_complete": true,
+      "zero_execution_errors": true,
+      "zero_wrong_actionable": false,
+      "zero_any_false_ready": false,
+      "coverage_at_least_90_percent": true,
+      "coverage_loss_at_most_three_images": true,
+      "median_at_most_60_seconds": true,
+      "guarded_comparator_all_attempted": true,
+      "correct_actionable_no_lower_than_guarded": true,
+      "median_at_least_20_percent_lower_than_guarded": true
+    },
+    "eligible_for_further_validation": false,
+    "median_reduction_fraction_vs_guarded": 0.2837168790684881,
+    "paired_outcomes_vs_guarded": {
+      "C->C": 41,
+      "U->C": 5,
+      "U->U": 1,
+      "U->W": 1,
+      "W->W": 3
+    },
+    "automatic_promotion": false
+  },
+  "constant_nominal_nonvisual_baseline": {
+    "eligible_images": 16,
+    "count_exact_images": 16,
+    "physical_quantity_anomaly_images": 0,
+    "note": "Always return the author normal composition without viewing the image; all-normal LOCO alone cannot show visual advantage."
+  },
+  "default_change_authorized_by_this_report": false,
+  "limitations": [
+    "51 source photos are descriptive same-domain evidence, not statistically independent factory samples.",
+    "No new bracket positives or real LOCO quantity-anomaly images.",
+    "Synthetic order panels do not create additional image samples or actual warehouse orders.",
+    "Missing/failing predictions have unmeasured false-ready risk, not proven safe outcomes.",
+    "Latency includes each isolated upload and model attempt; cold model loading remains in all-attempted times.",
+    "No inference from this static study about physical task efficiency or human accuracy."
+  ]
+}

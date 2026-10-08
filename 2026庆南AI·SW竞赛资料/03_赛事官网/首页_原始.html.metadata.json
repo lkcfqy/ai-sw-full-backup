@@ -1,0 +1,16 @@
+{
+  "url": "https://contest.gnict.org/",
+  "path": "03_赛事官网/首页_原始.html",
+  "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+  "kind": "webpage",
+  "retrieved_at": "2026-09-24T16:29:06.334877+09:00",
+  "http_status": 200,
+  "final_url": "https://contest.gnict.org/",
+  "content_type": "text/html; charset=utf-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 20093,
+  "sha256": "0c6755a51711d576bfaca68017b44d84d512b3d0ba16099445a5a06d4ca45a15",
+  "magic_hex": "3c21646f63747970652068746d6c3e0a"
+}

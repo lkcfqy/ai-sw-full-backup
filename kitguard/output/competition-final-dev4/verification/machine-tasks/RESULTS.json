@@ -1,0 +1,80 @@
+{
+  "protocol_sha256": "fc2aeb30f295f1db6e2b5aa8dedf125761b908ad62ca6eeca0b2000c5f287f1b",
+  "planned_tasks": 5,
+  "tasks": [
+    {
+      "id": "quantity",
+      "status": "completed",
+      "mission_id": "mission_3d0a8c94afc34c729465",
+      "order_id": "ord_cabbbe1e45414ba39b8d",
+      "finding": "quantity_difference",
+      "planned_checks": 1,
+      "actual_checks": 1,
+      "elapsed_ms": 20213,
+      "workflow_success": true
+    },
+    {
+      "id": "uncertain",
+      "status": "completed",
+      "mission_id": "mission_3357cb6cf7f34d748313",
+      "order_id": "ord_c67081b80d8f4ca68829",
+      "finding": "needs_more_evidence",
+      "planned_checks": 1,
+      "actual_checks": 1,
+      "elapsed_ms": 21739,
+      "workflow_success": true
+    },
+    {
+      "id": "matching",
+      "status": "completed",
+      "mission_id": "mission_3e6cfe749c174660988c",
+      "order_id": "ord_9465b8c5052240fea8c0",
+      "finding": "quantities_match",
+      "planned_checks": 1,
+      "actual_checks": 1,
+      "elapsed_ms": 48628,
+      "workflow_success": true
+    },
+    {
+      "id": "changed_bom",
+      "status": "completed",
+      "mission_id": "mission_eac2a4b8ecaf4288950e",
+      "order_id": "ord_9465b8c5052240fea8c0",
+      "finding": "quantity_difference",
+      "planned_checks": 1,
+      "actual_checks": 1,
+      "elapsed_ms": 49417,
+      "workflow_success": true,
+      "stale_refusal": 409
+    },
+    {
+      "id": "physical_source",
+      "status": "policy_refused",
+      "mission_id": null,
+      "order_id": "ord_fe495ccd857c47f6a228",
+      "finding": null,
+      "planned_checks": 0,
+      "actual_checks": 0,
+      "elapsed_ms": null,
+      "workflow_success": true
+    }
+  ],
+  "workflow_outcomes_met": 5,
+  "real_mlx_checks": 4,
+  "new_image_accuracy_denominator": 0,
+  "human_participants": 0,
+  "physical_completions": 0,
+  "ablation": {
+    "stale_request_status": 409,
+    "stale_request_detail": {
+      "detail": "현재 버전 사진이 필요합니다 / 需要当前版本的照片"
+    },
+    "unversioned_control_accepts_old_ready": true,
+    "version_aware_guard_accepts_old_ready": false
+  },
+  "limits": [
+    "Only 3 known source photos. Goals do not receive author truth.",
+    "One deterministic ablation exposes the binding mechanism, not market-wide superiority.",
+    "No human productivity, willingness-to-pay, repeated deployment or statistical population claim."
+  ]
+}

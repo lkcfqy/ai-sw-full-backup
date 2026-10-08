@@ -1,0 +1,758 @@
+{
+  "schema": "kitguard.v08.manta-classifier.cross-source-decision.v1",
+  "created_at_utc": "2026-10-02T03:53:37.071131+00:00",
+  "status": "audited_complete",
+  "decision": "component_rejected_for_integration",
+  "reason": "Fixed epoch10 classifier failed cross-source author-ROI identity diagnosis: 12C/161W/7U over 180; 136 accepted author-bolt AABBs over separate399.",
+  "integrity_audit_passed": true,
+  "independent_audit_first_attempt_passed": true,
+  "quality_outcome": "failed_cross_source_transfer",
+  "numeric_promotion_gate_predeclared": false,
+  "automatic_production_promotion": false,
+  "production_unchanged": true,
+  "default_remains": "spatial_guarded for research/digital assistance; no autonomous physical completion safety claim",
+  "fixed_method": {
+    "epoch": 10,
+    "threshold": 0.9,
+    "native_output_classes": [
+      "nut",
+      "yellow_green_washer"
+    ],
+    "score_aliases": [
+      "nut",
+      "washer"
+    ],
+    "input": "author AABB RGB→L→RGB aspect pad224",
+    "checkpoint_sha256": "ea29bfcf33dcf680e1b3ac2afa26de366991d029a42a3b5fe7ef7a5be1b3f985",
+    "no_retries": true,
+    "no_parameter_changes": true
+  },
+  "population": {
+    "author_rois": 579,
+    "original_images": 80,
+    "identity_targets": 180,
+    "nut": 168,
+    "washer": 12,
+    "bolt_open_category": 399,
+    "new_holdout": false,
+    "physical_instance_independence_proven": false,
+    "oracle_localization": true
+  },
+  "independent_results": {
+    "threshold_0_9": {
+      "identity": {
+        "denominator": 180,
+        "counts": {
+          "C": 12,
+          "W": 161,
+          "U": 7,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 64,
+        "source_groups": 3,
+        "correct_coverage": 0.06666666666666667,
+        "wrong_rate": 0.8944444444444445,
+        "confusions": {
+          "nut_to_washer": 153,
+          "washer_to_nut": 8
+        }
+      },
+      "bolt": {
+        "denominator": 399,
+        "counts": {
+          "accepted_nut": 126,
+          "accepted_washer": 10,
+          "U": 263,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 56,
+        "source_groups": 2,
+        "false_acceptances": 136,
+        "false_acceptance_rate": 0.3408521303258145,
+        "evaluated_fraction": 1.0
+      }
+    },
+    "forced_argmax": {
+      "identity": {
+        "denominator": 180,
+        "counts": {
+          "C": 14,
+          "W": 166,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 64,
+        "source_groups": 3,
+        "correct_coverage": 0.07777777777777778,
+        "wrong_rate": 0.9222222222222223,
+        "confusions": {
+          "nut_to_washer": 156,
+          "washer_to_nut": 10
+        }
+      },
+      "bolt": {
+        "denominator": 399,
+        "counts": {
+          "accepted_nut": 331,
+          "accepted_washer": 68,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 56,
+        "source_groups": 2,
+        "false_acceptances": 399,
+        "false_acceptance_rate": 1.0,
+        "evaluated_fraction": 1.0
+      }
+    },
+    "class_macro_correct_coverage": 0.03571428571428571,
+    "source_class_macro_correct_coverage": 0.3333333333333333,
+    "analytic_baselines": {
+      "constant_nut": {
+        "identity": {
+          "denominator": 180,
+          "counts": {
+            "C": 168,
+            "W": 12,
+            "U": 0,
+            "E": 0,
+            "N": 0
+          }
+        },
+        "bolt": {
+          "denominator": 399,
+          "accepted_nut": 399,
+          "accepted_washer": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        }
+      },
+      "constant_washer": {
+        "identity": {
+          "denominator": 180,
+          "counts": {
+            "C": 12,
+            "W": 168,
+            "U": 0,
+            "E": 0,
+            "N": 0
+          }
+        },
+        "bolt": {
+          "denominator": 399,
+          "accepted_nut": 0,
+          "accepted_washer": 399,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        }
+      },
+      "all_unknown": {
+        "identity": {
+          "denominator": 180,
+          "counts": {
+            "C": 0,
+            "W": 0,
+            "U": 180,
+            "E": 0,
+            "N": 0
+          }
+        },
+        "bolt": {
+          "denominator": 399,
+          "accepted_nut": 0,
+          "accepted_washer": 0,
+          "U": 399,
+          "E": 0,
+          "N": 0
+        }
+      }
+    }
+  },
+  "source_class": {
+    "[\"GOPR0181\",\"bolt\"]": {
+      "identity": {
+        "denominator": 0,
+        "counts": {
+          "C": 0,
+          "W": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 0,
+        "source_groups": 0,
+        "correct_coverage": null,
+        "wrong_rate": null,
+        "confusions": {
+          "nut_to_washer": 0,
+          "washer_to_nut": 0
+        }
+      },
+      "bolt": {
+        "denominator": 12,
+        "counts": {
+          "accepted_nut": 12,
+          "accepted_washer": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 12,
+        "source_groups": 1,
+        "false_acceptances": 12,
+        "false_acceptance_rate": 1.0,
+        "evaluated_fraction": 1.0
+      }
+    },
+    "[\"GOPR0183\",\"nut\"]": {
+      "identity": {
+        "denominator": 12,
+        "counts": {
+          "C": 12,
+          "W": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 12,
+        "source_groups": 1,
+        "correct_coverage": 1.0,
+        "wrong_rate": 0.0,
+        "confusions": {
+          "nut_to_washer": 0,
+          "washer_to_nut": 0
+        }
+      },
+      "bolt": {
+        "denominator": 0,
+        "counts": {
+          "accepted_nut": 0,
+          "accepted_washer": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 0,
+        "source_groups": 0,
+        "false_acceptances": 0,
+        "false_acceptance_rate": null,
+        "evaluated_fraction": null
+      }
+    },
+    "[\"screws_validation_collection\",\"bolt\"]": {
+      "identity": {
+        "denominator": 0,
+        "counts": {
+          "C": 0,
+          "W": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 0,
+        "source_groups": 0,
+        "correct_coverage": null,
+        "wrong_rate": null,
+        "confusions": {
+          "nut_to_washer": 0,
+          "washer_to_nut": 0
+        }
+      },
+      "bolt": {
+        "denominator": 387,
+        "counts": {
+          "accepted_nut": 114,
+          "accepted_washer": 10,
+          "U": 263,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 44,
+        "source_groups": 1,
+        "false_acceptances": 124,
+        "false_acceptance_rate": 0.32041343669250644,
+        "evaluated_fraction": 1.0
+      }
+    },
+    "[\"screws_validation_collection\",\"nut\"]": {
+      "identity": {
+        "denominator": 156,
+        "counts": {
+          "C": 0,
+          "W": 153,
+          "U": 3,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 40,
+        "source_groups": 1,
+        "correct_coverage": 0.0,
+        "wrong_rate": 0.9807692307692307,
+        "confusions": {
+          "nut_to_washer": 153,
+          "washer_to_nut": 0
+        }
+      },
+      "bolt": {
+        "denominator": 0,
+        "counts": {
+          "accepted_nut": 0,
+          "accepted_washer": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 0,
+        "source_groups": 0,
+        "false_acceptances": 0,
+        "false_acceptance_rate": null,
+        "evaluated_fraction": null
+      }
+    },
+    "[\"unprefixed_Washer\",\"washer\"]": {
+      "identity": {
+        "denominator": 12,
+        "counts": {
+          "C": 0,
+          "W": 8,
+          "U": 4,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 12,
+        "source_groups": 1,
+        "correct_coverage": 0.0,
+        "wrong_rate": 0.6666666666666666,
+        "confusions": {
+          "nut_to_washer": 0,
+          "washer_to_nut": 8
+        }
+      },
+      "bolt": {
+        "denominator": 0,
+        "counts": {
+          "accepted_nut": 0,
+          "accepted_washer": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 0,
+        "source_groups": 0,
+        "false_acceptances": 0,
+        "false_acceptance_rate": null,
+        "evaluated_fraction": null
+      }
+    }
+  },
+  "tiny": {
+    "false": {
+      "identity": {
+        "denominator": 176,
+        "counts": {
+          "C": 12,
+          "W": 158,
+          "U": 6,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 60,
+        "source_groups": 3,
+        "correct_coverage": 0.06818181818181818,
+        "wrong_rate": 0.8977272727272727,
+        "confusions": {
+          "nut_to_washer": 153,
+          "washer_to_nut": 5
+        }
+      },
+      "bolt": {
+        "denominator": 395,
+        "counts": {
+          "accepted_nut": 122,
+          "accepted_washer": 10,
+          "U": 263,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 52,
+        "source_groups": 2,
+        "false_acceptances": 132,
+        "false_acceptance_rate": 0.3341772151898734,
+        "evaluated_fraction": 1.0
+      }
+    },
+    "true": {
+      "identity": {
+        "denominator": 4,
+        "counts": {
+          "C": 0,
+          "W": 3,
+          "U": 1,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 4,
+        "source_groups": 1,
+        "correct_coverage": 0.0,
+        "wrong_rate": 0.75,
+        "confusions": {
+          "nut_to_washer": 0,
+          "washer_to_nut": 3
+        }
+      },
+      "bolt": {
+        "denominator": 4,
+        "counts": {
+          "accepted_nut": 4,
+          "accepted_washer": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 4,
+        "source_groups": 1,
+        "false_acceptances": 4,
+        "false_acceptance_rate": 1.0,
+        "evaluated_fraction": 1.0
+      }
+    }
+  },
+  "author_clipped": {
+    "false": {
+      "identity": {
+        "denominator": 155,
+        "counts": {
+          "C": 0,
+          "W": 152,
+          "U": 3,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 40,
+        "source_groups": 1,
+        "correct_coverage": 0.0,
+        "wrong_rate": 0.9806451612903225,
+        "confusions": {
+          "nut_to_washer": 152,
+          "washer_to_nut": 0
+        }
+      },
+      "bolt": {
+        "denominator": 379,
+        "counts": {
+          "accepted_nut": 113,
+          "accepted_washer": 10,
+          "U": 256,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 44,
+        "source_groups": 1,
+        "false_acceptances": 123,
+        "false_acceptance_rate": 0.3245382585751979,
+        "evaluated_fraction": 1.0
+      }
+    },
+    "null": {
+      "identity": {
+        "denominator": 24,
+        "counts": {
+          "C": 12,
+          "W": 8,
+          "U": 4,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 24,
+        "source_groups": 2,
+        "correct_coverage": 0.5,
+        "wrong_rate": 0.3333333333333333,
+        "confusions": {
+          "nut_to_washer": 0,
+          "washer_to_nut": 8
+        }
+      },
+      "bolt": {
+        "denominator": 12,
+        "counts": {
+          "accepted_nut": 12,
+          "accepted_washer": 0,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 12,
+        "source_groups": 1,
+        "false_acceptances": 12,
+        "false_acceptance_rate": 1.0,
+        "evaluated_fraction": 1.0
+      }
+    },
+    "true": {
+      "identity": {
+        "denominator": 1,
+        "counts": {
+          "C": 0,
+          "W": 1,
+          "U": 0,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 1,
+        "source_groups": 1,
+        "correct_coverage": 0.0,
+        "wrong_rate": 1.0,
+        "confusions": {
+          "nut_to_washer": 1,
+          "washer_to_nut": 0
+        }
+      },
+      "bolt": {
+        "denominator": 8,
+        "counts": {
+          "accepted_nut": 1,
+          "accepted_washer": 0,
+          "U": 7,
+          "E": 0,
+          "N": 0
+        },
+        "source_images": 8,
+        "source_groups": 1,
+        "false_acceptances": 1,
+        "false_acceptance_rate": 0.125,
+        "evaluated_fraction": 1.0
+      }
+    }
+  },
+  "recorded_execution": {
+    "started_at_utc": "2026-10-02T03:50:59.869987+00:00",
+    "finished_at_utc": "2026-10-02T03:51:03.397087+00:00",
+    "status_counts": {
+      "ok": 579
+    },
+    "actual_forward_calls_started": 19,
+    "actual_forward_calls_returned": 19,
+    "model_state_unchanged": true,
+    "final_integrity_passed": true,
+    "training_steps": 0,
+    "timing": {
+      "wall_seconds": 3.5339047079905868,
+      "model_seconds": 1.138242332963273,
+      "decode_tensor_seconds": 0.5640564179630019,
+      "scope": "This standalone oracle-ROI component only; model includes MPS sync/softmax, total includes loading/hash/decode, not system end-to-end."
+    }
+  },
+  "independent_audit_scope": {
+    "new_model_calls": 0,
+    "images_decoded": 0,
+    "full_predictions_scored": 579,
+    "byte_hashes_verified": true,
+    "tensor_rebuilt": false,
+    "model_replayed": false,
+    "runtime_receipts_not_new_measurement": true
+  },
+  "limitations": [
+    "579 ROIs are correlated within80 already-exposed source images; no independent physical/session holdout.",
+    "Screws original type IDs are projected by existing teaching labels, not author direct English nut labels.",
+    "FOD author_annotated_target_only does not certify complete scene annotation.",
+    "Predeclared27 QA revealed adjacent hardware/background inside some rotated-object AABBs; bolt acceptance is operational AABB acceptance, not pure single-bolt classification error.",
+    "Tiny and clipped targets remain included; FOD author-clipped metadata is unknown, not false.",
+    "Results do not causally identify color/brightness/shape/background/padding/domain shift or label-projection causes.",
+    "MANTA internal256, transfer180, open-category399, old51 and LOCO24 remain separate denominators.",
+    "No proof of independent localization, counting, mixed BOM improvement or repair of old51 three wrong results.",
+    "Author test/held-back images were not used; pretraining exposure unknown; MANTA stricter author NC-SA license and FOD local-research limitations remain."
+  ],
+  "bindings": [
+    {
+      "path": "docs/v0.8/MANTA_CLASSIFIER_CROSS_SOURCE_PROTOCOL_V1.md",
+      "bytes": 8879,
+      "sha256": "80f98e0eb719cfac697753b2f0a1c15135f4a85a6af34b26977c88ec6e8cc54b"
+    },
+    {
+      "path": "docs/v0.8/MANTA_CLASSIFIER_CROSS_SOURCE_PLAN_DRAFT.md",
+      "bytes": 6634,
+      "sha256": "3a4cd63e7e13dbed36441bb0b32d5cdb5d43de54bfca2a2e6f7eac7e1036d00c"
+    },
+    {
+      "path": "docs/v0.8/MANTA_CLASSIFIER_CROSS_SOURCE_RESULT_V1.md",
+      "bytes": 7353,
+      "sha256": "5e8f4cf1c994fe8788ac1fa91a312e185d9fb6f9e13743d46308cea8d76f83f8"
+    },
+    {
+      "path": "docs/v0.8/MANTA_CLASSIFIER_RESULT_V1.md",
+      "bytes": 5760,
+      "sha256": "54bbd93ed185d25f23c6f94792b16004b1fc9cb98ae754f30710eb1739862bfa"
+    },
+    {
+      "path": "docs/v0.8/MANTA_CLASSIFIER_DECISION_V1.json",
+      "bytes": 6725,
+      "sha256": "898cf98b8b0955a1455940a90a0f0a9d9a9717637a1f4b6ea32a29c0f874634b"
+    },
+    {
+      "path": "scripts/v08/audit_manta_transfer.py",
+      "bytes": 30781,
+      "sha256": "5e161ee9ba697c16ed14cb527c3495836b3662d73dc7250e227738a57c68630a"
+    },
+    {
+      "path": "tests/test_manta_transfer_audit_v08.py",
+      "bytes": 9520,
+      "sha256": "72115e86f541923b11f29e841a582a04ae079d1b208f8dd267d0c6ee95b49aa5"
+    },
+    {
+      "path": "scripts/v08/run_manta_transfer.py",
+      "bytes": 26486,
+      "sha256": "2df4bc2479f4d6ad2f1c08118bb2d9ddd04b0e0bb1e132e658dbc9a23cbb5ad3"
+    },
+    {
+      "path": "tests/test_manta_transfer_inference_v08.py",
+      "bytes": 8907,
+      "sha256": "5c6580813caee4e3d2a518edb69dd28867b010f768dd19aa9b0eece5ce2888fa"
+    },
+    {
+      "path": "datasets/manifests/v0.8/manta_transfer_candidate_v1/metadata.json",
+      "bytes": 1318428,
+      "sha256": "b6fe42c2520b19f7a24ccb1124600fe48a02430f0b7015752312316132f742ad"
+    },
+    {
+      "path": "datasets/derived/v0.8/manta_transfer_v1/records.json",
+      "bytes": 1488778,
+      "sha256": "192aec2a1fe2e5fe433e64d507c953f16d1d33112e8a2bf8d663308b2bec2464"
+    },
+    {
+      "path": "datasets/derived/v0.8/manta_transfer_v1/preparation.json",
+      "bytes": 1723,
+      "sha256": "4947e6d3ad6fcca9ebe32fc5076f782b82de9e4870e2ab63549fcd189d0b54da"
+    },
+    {
+      "path": "datasets/derived/v0.8/manta_transfer_v1/approval.json",
+      "bytes": 1343,
+      "sha256": "f9312f1fb43ba8ed1d435ac48da7f84136dee66af4a420c0179065faf4941d60"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-inference-preflight-v1/plan.json",
+      "bytes": 1584628,
+      "sha256": "b02bee20824cfe7d5c52836890ad77cfdf63af3335eefb1f659d36937e64bf2a"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-inference-approval-v1.json",
+      "bytes": 1555,
+      "sha256": "66de25b5f0c762713eb143380a7ffe05d93fc4fc7c595a2d2a0a60da5c8a0ff1"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-auditor-v1/freeze.json",
+      "bytes": 1022,
+      "sha256": "76b94ec78db43bd701a58d251d80133d5d60b3b7a3472a937f6932699c56cc17"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-auditor-v1/source_snapshot/scripts/v08/audit_manta_transfer.py",
+      "bytes": 30781,
+      "sha256": "5e161ee9ba697c16ed14cb527c3495836b3662d73dc7250e227738a57c68630a"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-auditor-peer-review-v1.json",
+      "bytes": 1409,
+      "sha256": "1d1db8db0cb7d283cd8dfd43f0780a372451c3ca4fc386853a4f7bc4e178543f"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-inference-peer-review-v1.json",
+      "bytes": 4224,
+      "sha256": "0bcdfc106624471aa19a4e046e96f86b8e1664b7c7abffdfd21c05ee2ffb26b2"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-synthetic-score-compatibility-v1.json",
+      "bytes": 1101,
+      "sha256": "fbe14985ab67792b58356ffc9a441dad0bd46e58bf2f2180e3254cb7668eeb34"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-root-layout-selection-v1.json",
+      "bytes": 3226,
+      "sha256": "42b5a33ea4b1cef6dcce972345b9a2393e7001db415175b45a6657228a81559e"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-root-check-v1/machine-check.json",
+      "bytes": 1368,
+      "sha256": "283b02f1221db6d6072a0f24c93c23e639df0cf3374ec6cd16e76b4eb9e6567a"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-root-check-v1/visual-review.json",
+      "bytes": 2009,
+      "sha256": "6b349d01f0e61dfbf7ee50702f907d99f0bc92fcb88fcede02c820a0259a585c"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-independent-audit-v1.json",
+      "bytes": 155204,
+      "sha256": "b16e412c335b2a9ce136461d87d14b990ca20fad3a2377e4a152a9114950ffdf"
+    },
+    {
+      "path": "test-results/v0.8-manta-transfer-independent-audit-v1.log",
+      "bytes": 171,
+      "sha256": "2b7a5aff9fa17e8026ad39916d33d7bd522780e3fe44b8985807c974b32cfd4d"
+    },
+    {
+      "path": "test-results/v0.8-manta-classifier-independent-audit-v1.json",
+      "bytes": 118039,
+      "sha256": "b9df04653db0e0ded4b6db2e0165e74508cc2c02a20829f98f25a5f1a9c57afd"
+    },
+    {
+      "path": "training-runs/v0.8/manta_classifier_v1/final.pt",
+      "bytes": 12079083,
+      "sha256": "ea29bfcf33dcf680e1b3ac2afa26de366991d029a42a3b5fe7ef7a5be1b3f985"
+    },
+    {
+      "path": "evaluation-runs/v0.8/manta_transfer_v1/analysis.json",
+      "bytes": 104216,
+      "sha256": "069874d3cee81a7986c44eaa5d04a3cf9b122a291d4971d608b0253c49772400"
+    },
+    {
+      "path": "evaluation-runs/v0.8/manta_transfer_v1/approval.json",
+      "bytes": 1555,
+      "sha256": "66de25b5f0c762713eb143380a7ffe05d93fc4fc7c595a2d2a0a60da5c8a0ff1"
+    },
+    {
+      "path": "evaluation-runs/v0.8/manta_transfer_v1/artifact_inventory.json",
+      "bytes": 1019,
+      "sha256": "44d82da3e2053eab6f12fd4b8b6d1fa70e601ad832f433b317faf929f176206e"
+    },
+    {
+      "path": "evaluation-runs/v0.8/manta_transfer_v1/batches.json",
+      "bytes": 15802,
+      "sha256": "11fc52381f45fc240f38ae7325fbf12cb48fd6638b812cd6dae5d0801cc6e285"
+    },
+    {
+      "path": "evaluation-runs/v0.8/manta_transfer_v1/plan.json",
+      "bytes": 1584628,
+      "sha256": "b02bee20824cfe7d5c52836890ad77cfdf63af3335eefb1f659d36937e64bf2a"
+    },
+    {
+      "path": "evaluation-runs/v0.8/manta_transfer_v1/predictions.json",
+      "bytes": 393015,
+      "sha256": "03ceeceac98f427cb1101184d47bc86f5f28a29bc61be189e1ae45fe78ec4e77"
+    },
+    {
+      "path": "evaluation-runs/v0.8/manta_transfer_v1/raw.jsonl",
+      "bytes": 308478,
+      "sha256": "3444dffc81c23b1d65070f97c39817c369500fa9cd0f9f6c5a6661fba34a173e"
+    },
+    {
+      "path": "evaluation-runs/v0.8/manta_transfer_v1/run.json",
+      "bytes": 1230,
+      "sha256": "9552b84172cbe17d8df24c176343a021d34d17857489134829ba0c063560a586"
+    },
+    {
+      "path": "evaluation-runs/v0.8/manta_transfer_v1/started.json",
+      "bytes": 574,
+      "sha256": "1cbaab00e1ebf00daa0f59329bdccdbb03481e4f250907e1e200d4459bec3a3f"
+    },
+    {
+      "path": "evaluation-runs/v0.8/manta_transfer_v1/tensor_hashes.json",
+      "bytes": 47481,
+      "sha256": "e5be330579ebf1e11d6852d50616fee0ec58bea43db5c33d38709a6bc155450f"
+    }
+  ]
+}

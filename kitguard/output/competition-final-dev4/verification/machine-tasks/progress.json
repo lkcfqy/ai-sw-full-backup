@@ -1,0 +1,58 @@
+[
+  {
+    "id": "quantity",
+    "status": "completed",
+    "mission_id": "mission_3d0a8c94afc34c729465",
+    "order_id": "ord_cabbbe1e45414ba39b8d",
+    "finding": "quantity_difference",
+    "planned_checks": 1,
+    "actual_checks": 1,
+    "elapsed_ms": 20213,
+    "workflow_success": true
+  },
+  {
+    "id": "uncertain",
+    "status": "completed",
+    "mission_id": "mission_3357cb6cf7f34d748313",
+    "order_id": "ord_c67081b80d8f4ca68829",
+    "finding": "needs_more_evidence",
+    "planned_checks": 1,
+    "actual_checks": 1,
+    "elapsed_ms": 21739,
+    "workflow_success": true
+  },
+  {
+    "id": "matching",
+    "status": "completed",
+    "mission_id": "mission_3e6cfe749c174660988c",
+    "order_id": "ord_9465b8c5052240fea8c0",
+    "finding": "quantities_match",
+    "planned_checks": 1,
+    "actual_checks": 1,
+    "elapsed_ms": 48628,
+    "workflow_success": true
+  },
+  {
+    "id": "changed_bom",
+    "status": "completed",
+    "mission_id": "mission_eac2a4b8ecaf4288950e",
+    "order_id": "ord_9465b8c5052240fea8c0",
+    "finding": "quantity_difference",
+    "planned_checks": 1,
+    "actual_checks": 1,
+    "elapsed_ms": 49417,
+    "workflow_success": true,
+    "stale_refusal": 409
+  },
+  {
+    "id": "physical_source",
+    "status": "policy_refused",
+    "mission_id": null,
+    "order_id": "ord_fe495ccd857c47f6a228",
+    "finding": null,
+    "planned_checks": 0,
+    "actual_checks": 0,
+    "elapsed_ms": null,
+    "workflow_success": true
+  }
+]

@@ -1,0 +1,190 @@
+{
+  "schema": "kitguard.v08.identity-reference-guarded.decision.v1",
+  "decided_at": "2026-10-02T02:08:10.304192+00:00",
+  "independent_integrity_audit": "passed_first_attempt",
+  "candidate_quality_gate_passed": false,
+  "decision": "candidate_rejected",
+  "production_unchanged": true,
+  "automatic_promotion": false,
+  "outcomes": {
+    "C": 40,
+    "W": 3,
+    "U": 8,
+    "E": 0,
+    "N": 0
+  },
+  "development_checks": {
+    "all51_attempted": true,
+    "zero_W": false,
+    "zero_E": true,
+    "zero_N": true,
+    "C_at_least_41": false,
+    "zero_all_four_AFR": false,
+    "all14_loco_C_preserved": false
+  },
+  "paired_transitions": {
+    "C->C": 40,
+    "U->U": 7,
+    "C->U": 1,
+    "W->W": 3
+  },
+  "original_wrong_cases": [
+    {
+      "case_id": "v07-screws-screws_120-3e86c9ca51d9",
+      "baseline": "W",
+      "candidate": "W"
+    },
+    {
+      "case_id": "v07-screws-screws_024-07f4bcf5c349",
+      "baseline": "W",
+      "candidate": "W"
+    },
+    {
+      "case_id": "v07-screws-screws_172-53dacfde39d4",
+      "baseline": "W",
+      "candidate": "W"
+    }
+  ],
+  "old_C_lost": [
+    "v07-loco-screw_bag-train-good-144"
+  ],
+  "loco_old_C": 14,
+  "loco_C_preserved": 13,
+  "any_false_ready_images": {
+    "all_four": 3,
+    "source_supported": 0
+  },
+  "risk_denominator": 51,
+  "unmeasured_risk": 0,
+  "actual_model_calls": {
+    "started": 133,
+    "completed": 133,
+    "raw_returns": 133
+  },
+  "raw_evidence_checks": {
+    "normalized_inputs_verified": 51,
+    "calls": 133,
+    "parsed": 133,
+    "raw_text_returns": 133,
+    "input_images": 274,
+    "actual_model_calls_started": 133,
+    "actual_model_calls_completed": 133,
+    "reconstructed_identity_crops": 79
+  },
+  "latency_all_attempted": {
+    "measured": 51,
+    "median_ms": 21982,
+    "p90_ms": 47767,
+    "maximum_ms": 51425,
+    "total_ms": 1388699
+  },
+  "historical_comparison_is_nonconcurrent": true,
+  "new_holdout": false,
+  "loco24_candidate_eligible_under_root_predeclared_gate": false,
+  "loco24_selection_written_by_this_decision": false,
+  "reason": "All three previous explicit errors remain; one formerly correct LOCO image becomes uncertain. C40<41, W3>0, all-four AFR3>0, LOCO13<14. Integrity success does not imply quality success.",
+  "evidence": [
+    {
+      "path": "docs/v0.8/IDENTITY_REFERENCE_GUARDED_RESULT.md",
+      "sha256": "76fa3cf0ae85a5e21e61c68bf57485b1d0cd9dfacb67e543a64b990a83626f5b"
+    },
+    {
+      "path": "docs/v0.8/IDENTITY_REFERENCE_GUARDED_PLAN.md",
+      "sha256": "7410b8ba8563e3185f033143a294dc5dcb003171f2c2b7d3c49d81066525267e"
+    },
+    {
+      "path": "docs/v0.8/IDENTITY_REFERENCE_AUDIT_CONTRACT.md",
+      "sha256": "4aada41d685f18e729f710b34104cfa7f7f75a75834a3158a56c0eae17fcd4a0"
+    },
+    {
+      "path": "docs/v0.8/identity_reference_guarded_freeze_v1/freeze.json",
+      "sha256": "2e0ef97133988a2ca00a36a08b82e4a42e2d97f61ae01ef38980fe7d72f8b19e"
+    },
+    {
+      "path": "evaluation-runs/v0.8/identity_reference_guarded_v1/run.json",
+      "sha256": "d6256b45efbe2d2e5eb634bf4e047ab13f5279641137379472c07a4897f8b289"
+    },
+    {
+      "path": "evaluation-runs/v0.8/identity_reference_guarded_v1/manifest.json",
+      "sha256": "326c8054bb33d945868feee4a6dba5d0c137b138a1b1fe62253f28de969050cb"
+    },
+    {
+      "path": "evaluation-runs/v0.8/identity_reference_guarded_v1/predictions.jsonl",
+      "sha256": "3c7474fbdb6c4b8befa03d50a5ccbfd0b1216e8225152416015442bd9908e5b6"
+    },
+    {
+      "path": "evaluation-runs/v0.8/identity_reference_guarded_v1/analysis.json",
+      "sha256": "42d8cffb5e634775e76bb862241be4707ea2721bc6830a362c60852ea7b1b7ef"
+    },
+    {
+      "path": "test-results/v0.8-identity-reference-independent-audit-v1.json",
+      "sha256": "51e38affdf7c226d37377c5de8ac39df23c0e756159d11438290e47a0874bec4"
+    },
+    {
+      "path": "test-results/v0.8-identity-reference-independent-audit-v1.log",
+      "sha256": "251900f85cdda13356b89490815c6b3d9a3e8017b3ebcd2f019626b39f58fe31"
+    },
+    {
+      "path": "scripts/v08/audit_identity_reference_guarded.py",
+      "sha256": "a2be00fc3d12583583e03eb06265248550a7f085ee4019d5c88f2b35d4e4ac5c"
+    },
+    {
+      "path": "scripts/v08/run_identity_reference_guarded.py",
+      "sha256": "6b7e39dc26dd2062c770c78168bf6091e6efff6ccaf0df3600f2459f46fdc7b7"
+    },
+    {
+      "path": "test-results/v0.8-identity-reference-audit-contracts-v4.log",
+      "sha256": "75683774bddf94289a9897b0932c6791486eb582e60505257b1cb5daf4641bf6"
+    },
+    {
+      "path": "test-results/v0.8-identity-reference-audit-contracts-v4.xml",
+      "sha256": "43dbce1cb6105fb8f71ef64ae034051beae42d6034939e730b2e331bd4b0e467"
+    },
+    {
+      "path": "test-results/v0.8/identity-reference-peer-review-v1/peer-review.json",
+      "sha256": "a424e1663f69be8b99ff813559a1b18eb7aef679b41bff0edc300adf0d3061a2"
+    },
+    {
+      "path": "test-results/v0.8-identity-reference-freeze-scoring-peer-v1.json",
+      "sha256": "2d4e9b55878d8bd185b642ec0b59e60d1da8be6379d5fa18320bcd388a3b7afd"
+    },
+    {
+      "path": "datasets/derived/v0.8/class_reference_dev_v1/approved_references.json",
+      "sha256": "9eded7727cf624d812b3b4ed03598c7d82afe93bd6a9a630935afa3d318961fe"
+    },
+    {
+      "path": "evaluation-runs/v0.7/public_paired_v1/run.json",
+      "sha256": "98d26a66c384466fc85f2e6c3f9c2266d2be89b8a2a3d3ad034da6fae2789661"
+    },
+    {
+      "path": "evaluation-runs/v0.7/public_paired_v1/manifest.json",
+      "sha256": "efe4633e873d45032101a26e035c23d267bafa6605d147d3d2f7fcb51b697643"
+    },
+    {
+      "path": "evaluation-runs/v0.7/public_paired_v1/predictions.jsonl",
+      "sha256": "9b525702cb2665274c37a7d7740c1d93c05562ab5fb5a17e171e31b75a6859ee"
+    },
+    {
+      "path": "test-results/v0.7/public-paired-audit-v1.json",
+      "sha256": "94c71e45341a5065ee90fe601e606cd3a54242094d5dcc08770f6aae8c588fe9"
+    }
+  ],
+  "evidence_provenance": {
+    "auditor_model_loaded_or_called": false,
+    "run_modified_by_auditor": false,
+    "truth_changed": false,
+    "observer_sources_changed": false,
+    "first_audit_failure": null
+  },
+  "limitations": [
+    "51 photos were previously exposed development data, from two existing public domains; not a fresh holdout.",
+    "References aid only identity; both original unreferenced spatial calls and identity are newly executed by one correlated VLM.",
+    "LOCO16 has constant counts 2/2/2/0; no bracket-positive or quantity-anomaly coverage.",
+    "Reference labels follow frozen author/project projection and AI crop QA, not human physical identity certification.",
+    "CPU replay verifies saved raw parsing/postprocessing and exact prepared inputs, not model response authenticity.",
+    "Model payload hashes and library versions are checked; external runtime binaries/source are not fully hashed.",
+    "Historical G was not rerun concurrently. Recorded timings do not establish a fair speed advantage.",
+    "Missing raw runtime returns remain unmeasured risk; their internal failure cause cannot be reproduced.",
+    "Pretraining exposure, physical-object/session independence and real-world benefit remain unknown."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "url": "https://www.gnu.ac.kr/enfrance/na/ntt/selectNttInfo.do?mi=0&nttSn=8530305",
+  "path": "05_补充官方资料/庆尚国立大学竞赛配套VR培训_原始.html",
+  "source": "https://contest.gnict.org/",
+  "kind": "webpage",
+  "retrieved_at": "2026-09-24T16:29:55.689060+09:00",
+  "http_status": 200,
+  "final_url": "https://www.gnu.ac.kr/enfrance/na/ntt/selectNttInfo.do?mi=0&nttSn=8530305",
+  "content_type": "text/html;charset=UTF-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 51396,
+  "sha256": "08ffc2a75fffee162194f743ec2171bd8abc41ceedde2b8f306b1e5017143fab",
+  "magic_hex": "0d0a0d0a0d0a3c21646f637479706520"
+}

@@ -1,0 +1,37 @@
+{
+  "archive": "/Users/lkc/Downloads/AI·SW/现在签名_해피/창원대_해피_남청청외1명_20260929수정2.zip",
+  "bytes": 10651898,
+  "sha256": "0fb53c928428f20e09bdfccd8e3e37c852882f3461c8532b4cea483d66bb003d",
+  "files": [
+    {
+      "name": "01_해피_참가신청서_개발계획서_서명본.hwp",
+      "sha256": "13d98bc53815990ddc9cbac00b79607865d4e7146657e19f7c3ed0a13af4ee21",
+      "bytes": 32768
+    },
+    {
+      "name": "02_참가자_동의서_남청청_서명본.hwp",
+      "sha256": "6b48ddb5d7e3a5f00db5e028ca08496e3a2e693dd10a96f2cb69ffef5e58ab65",
+      "bytes": 28160
+    },
+    {
+      "name": "03_참가자_동의서_이개심_서명본.hwp",
+      "sha256": "c6abcccbd02902d184e60cc0d50a31810926d7f3f998de32c93cb3a8166af520",
+      "bytes": 25600
+    },
+    {
+      "name": "04_재학증명서_남청청.pdf",
+      "sha256": "7d8ea64795a6d38a70146876747699b8f49cdfe5e41d9260f06f9cfa73f8d3b6",
+      "bytes": 6952050
+    },
+    {
+      "name": "05_재학증명서_이개심.pdf",
+      "sha256": "704656d6eb524ecce88f2c2a883bfb937698ea1945a22fe9ab1707fa00542e24",
+      "bytes": 3632083
+    }
+  ],
+  "changed_application_paragraphs": 4,
+  "development_status": "Paused",
+  "uploaded_or_submitted": false,
+  "consent_documents_unchanged": true,
+  "certificate_documents_unchanged": true
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://contest.gnict.org/about.php",
+    "path": "03_赛事官网/大赛介绍_原始.html",
+    "source": "https://contest.gnict.org/",
+    "kind": "webpage"
+  },
+  {
+    "url": "https://contest.gnict.org/rule.php",
+    "path": "03_赛事官网/运营规定_原始.html",
+    "source": "https://contest.gnict.org/",
+    "kind": "webpage"
+  },
+  {
+    "url": "https://contest.gnict.org/apply.php",
+    "path": "03_赛事官网/主题与报名方法_原始.html",
+    "source": "https://contest.gnict.org/",
+    "kind": "webpage"
+  },
+  {
+    "url": "https://contest.gnict.org/bbs/board.php?bo_table=notice",
+    "path": "03_赛事官网/公告目录_原始.html",
+    "source": "https://contest.gnict.org/",
+    "kind": "listing"
+  },
+  {
+    "url": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=1",
+    "path": "03_赛事官网/募集公告_原始.html",
+    "source": "https://contest.gnict.org/",
+    "kind": "webpage"
+  },
+  {
+    "url": "https://sw.inje.ac.kr/bbs/board.php?bo_table=news",
+    "path": "05_补充官方资料/仁济大学公告目录_原始.html",
+    "source": "https://contest.gnict.org/",
+    "kind": "listing"
+  },
+  {
+    "url": "https://gntp.or.kr/",
+    "path": "05_补充官方资料/庆南科技园首页_原始.html",
+    "source": "https://contest.gnict.org/",
+    "kind": "listing"
+  },
+  {
+    "url": "https://www.gnu.ac.kr/aero/na/ntt/selectNttList.do?bbsId=4226&mi=13821",
+    "path": "05_补充官方资料/庆尚国立大学航空航天学院公告目录_原始.html",
+    "source": "https://contest.gnict.org/",
+    "kind": "listing"
+  },
+  {
+    "url": "https://www.gnu.ac.kr/enfrance/na/ntt/selectNttInfo.do?mi=0&nttSn=8530305",
+    "path": "05_补充官方资料/庆尚国立大学竞赛配套VR培训_原始.html",
+    "source": "https://contest.gnict.org/",
+    "kind": "webpage"
+  }
+]

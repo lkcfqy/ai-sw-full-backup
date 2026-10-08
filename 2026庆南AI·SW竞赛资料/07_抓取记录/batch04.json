@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://gntp.or.kr/board/detail/notice/20867",
+    "path": "05_补充官方资料/庆南科技园参赛公告_原始.html",
+    "source": "https://gntp.or.kr/",
+    "kind": "webpage"
+  },
+  {
+    "url": "https://www.gnu.ac.kr/aero/na/ntt/selectNttInfo.do?mi=13821&nttSn=8570562",
+    "path": "05_补充官方资料/庆尚国立大学航空航天竞赛公告_原始.html",
+    "source": "https://www.gnu.ac.kr/aero/na/ntt/selectNttList.do?bbsId=4226&mi=13821",
+    "kind": "webpage"
+  },
+  {
+    "url": "https://www.gnu.ac.kr/common/nttEditorImgView.do?imgKey=45e9307f4043b4f9b18c5bb8eb6d6302",
+    "path": "05_补充官方资料/附件/庆尚国立大学VR培训海报.png",
+    "source": "https://www.gnu.ac.kr/enfrance/na/ntt/selectNttInfo.do?mi=0&nttSn=8530305",
+    "kind": "content_image"
+  },
+  {
+    "url": "https://bit.ly/46IS4uH",
+    "path": "02_主办方公告/报名表所链接公告_原始.html",
+    "source": "https://forms.gle/RcxRqdWCXkfQTqYTA",
+    "kind": "webpage"
+  }
+]

@@ -1,0 +1,566 @@
+{
+  "schema_version": 1,
+  "kind": "kitguard_fixed_state_study",
+  "study": {
+    "cases": [
+      {
+        "confirmed_independent": true,
+        "demo_source": null,
+        "evidence_epoch": 2,
+        "id": "case_f4a01d3d22af48a097a2",
+        "inspection_scope": {
+          "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+          "derivation": "pillow_root_crop_rgb_jpeg95_v1",
+          "mode": "region",
+          "region_xyxy": [
+            90,
+            90,
+            810,
+            510
+          ],
+          "root_created_at": "2026-09-26T15:33:26.867+00:00",
+          "root_height": 600,
+          "root_photo_id": "img_6b6ca1c391a945dba3fb",
+          "root_photo_sha256": "f80fbd80bf8658c5ea712f41f39fcc8dbae713817cabf4f3e01675ba19766009",
+          "root_source_sha256": "c53f8542778ad868e63b1b2e6ea566818fe1fc80de98bd01a3e6d89a582ddd88",
+          "root_width": 900,
+          "scope_confirmed_at": "2026-09-26T15:33:29.814+00:00",
+          "scope_declaration": "operator_all_required_items_inside",
+          "source_family_sha256": "f80fbd80bf8658c5ea712f41f39fcc8dbae713817cabf4f3e01675ba19766009",
+          "view_photo_id": "img_b6622172d29f4fc48d4c",
+          "view_sha256": "08b0b3134b86973dbed2869325c4dc657c74545e5ba05e79de47f13e49126c3f"
+        },
+        "label": "ENGINEERING crop case",
+        "order_id": "ord_56081f8d1218489f9a8f",
+        "photo_id": "img_b6622172d29f4fc48d4c",
+        "photo_sha256": "08b0b3134b86973dbed2869325c4dc657c74545e5ba05e79de47f13e49126c3f",
+        "reference_ids": {},
+        "reference_sha256": {},
+        "registered_at": "2026-09-26T15:33:30.476+00:00",
+        "requirements": {
+          "bolt": 2,
+          "bracket": 1,
+          "nut": 2,
+          "washer": 2
+        },
+        "revision": 1,
+        "source_family_sha256": "f80fbd80bf8658c5ea712f41f39fcc8dbae713817cabf4f3e01675ba19766009",
+        "source_note": "Synthetic drawn rectangles, no real parts.",
+        "trials": {
+          "kitguard": {
+            "check": {
+              "action": {
+                "kind": "none",
+                "message": "영역 안 수량이 일치합니다. 영역 밖은 검사하지 않았습니다. 실물을 확인하세요 / 选区内数量与要求一致，框外未核验，请核对实物",
+                "region": null
+              },
+              "backend": "test",
+              "created_at": "2026-09-26T15:33:31.923+00:00",
+              "decision": "ready",
+              "differences": [
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "bolt",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "nut",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "washer",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 1,
+                  "part": "bracket",
+                  "required": 1
+                }
+              ],
+              "evidence_epoch": 2,
+              "evidence_feedback": null,
+              "id": "chk_4e1a0687c0984fa3aecc",
+              "inspection_scope": {
+                "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                "derivation": "pillow_root_crop_rgb_jpeg95_v1",
+                "mode": "region",
+                "region_xyxy": [
+                  90,
+                  90,
+                  810,
+                  510
+                ],
+                "root_created_at": "2026-09-26T15:33:26.867+00:00",
+                "root_height": 600,
+                "root_photo_id": "img_6b6ca1c391a945dba3fb",
+                "root_photo_sha256": "f80fbd80bf8658c5ea712f41f39fcc8dbae713817cabf4f3e01675ba19766009",
+                "root_source_sha256": "c53f8542778ad868e63b1b2e6ea566818fe1fc80de98bd01a3e6d89a582ddd88",
+                "root_width": 900,
+                "scope_confirmed_at": "2026-09-26T15:33:29.814+00:00",
+                "scope_declaration": "operator_all_required_items_inside",
+                "source_family_sha256": "f80fbd80bf8658c5ea712f41f39fcc8dbae713817cabf4f3e01675ba19766009",
+                "view_photo_id": "img_b6622172d29f4fc48d4c",
+                "view_sha256": "08b0b3134b86973dbed2869325c4dc657c74545e5ba05e79de47f13e49126c3f"
+              },
+              "issues": [],
+              "latency_ms": 266,
+              "model_label": "SYNTHETIC TEST FIXTURE ONLY",
+              "observation_context": null,
+              "observed": {
+                "bolt": 2,
+                "bracket": 1,
+                "nut": 2,
+                "washer": 2
+              },
+              "order_id": "ord_56081f8d1218489f9a8f",
+              "photo_id": "img_b6622172d29f4fc48d4c",
+              "photo_sha256": "08b0b3134b86973dbed2869325c4dc657c74545e5ba05e79de47f13e49126c3f",
+              "reference_ids": {},
+              "requirements_snapshot": {
+                "bolt": 2,
+                "bracket": 1,
+                "nut": 2,
+                "washer": 2
+              },
+              "revision": 1,
+              "runtime_identity": {
+                "image_max_side": null,
+                "label": "SYNTHETIC TEST FIXTURE ONLY",
+                "observation_mode": null,
+                "observer_protocol_sha256": null,
+                "repo_id": null,
+                "revision": null
+              },
+              "source_family_sha256": "f80fbd80bf8658c5ea712f41f39fcc8dbae713817cabf4f3e01675ba19766009",
+              "tool_trace": [
+                {
+                  "latency_ms": 266,
+                  "model": "SYNTHETIC TEST FIXTURE ONLY",
+                  "status": "completed",
+                  "step": "observe_image"
+                },
+                {
+                  "revision": 1,
+                  "status": "completed",
+                  "step": "compare_current_requirements"
+                },
+                {
+                  "status": "not_applicable",
+                  "step": "review_previous_evidence"
+                },
+                {
+                  "action_kind": "none",
+                  "decision": "ready",
+                  "status": "completed",
+                  "step": "choose_next_action"
+                },
+                {
+                  "evidence_epoch": 2,
+                  "revision": 1,
+                  "status": "completed",
+                  "step": "commit_current_evidence"
+                }
+              ],
+              "valid": true
+            },
+            "check_index": 0,
+            "elapsed_ms": 295,
+            "event_index": 3,
+            "evidence": {
+              "captured_at": "2026-09-26T15:33:31.938+00:00",
+              "checks": [
+                {
+                  "action": {
+                    "kind": "none",
+                    "message": "영역 안 수량이 일치합니다. 영역 밖은 검사하지 않았습니다. 실물을 확인하세요 / 选区内数量与要求一致，框外未核验，请核对实物",
+                    "region": null
+                  },
+                  "backend": "test",
+                  "created_at": "2026-09-26T15:33:31.923+00:00",
+                  "decision": "ready",
+                  "differences": [
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "bolt",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "nut",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "washer",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 1,
+                      "part": "bracket",
+                      "required": 1
+                    }
+                  ],
+                  "evidence_epoch": 2,
+                  "evidence_feedback": null,
+                  "id": "chk_4e1a0687c0984fa3aecc",
+                  "inspection_scope": {
+                    "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                    "derivation": "pillow_root_crop_rgb_jpeg95_v1",
+                    "mode": "region",
+                    "region_xyxy": [
+                      90,
+                      90,
+                      810,
+                      510
+                    ],
+                    "root_created_at": "2026-09-26T15:33:26.867+00:00",
+                    "root_height": 600,
+                    "root_photo_id": "img_6b6ca1c391a945dba3fb",
+                    "root_photo_sha256": "f80fbd80bf8658c5ea712f41f39fcc8dbae713817cabf4f3e01675ba19766009",
+                    "root_source_sha256": "c53f8542778ad868e63b1b2e6ea566818fe1fc80de98bd01a3e6d89a582ddd88",
+                    "root_width": 900,
+                    "scope_confirmed_at": "2026-09-26T15:33:29.814+00:00",
+                    "scope_declaration": "operator_all_required_items_inside",
+                    "source_family_sha256": "f80fbd80bf8658c5ea712f41f39fcc8dbae713817cabf4f3e01675ba19766009",
+                    "view_photo_id": "img_b6622172d29f4fc48d4c",
+                    "view_sha256": "08b0b3134b86973dbed2869325c4dc657c74545e5ba05e79de47f13e49126c3f"
+                  },
+                  "issues": [],
+                  "latency_ms": 266,
+                  "model_label": "SYNTHETIC TEST FIXTURE ONLY",
+                  "observation_context": null,
+                  "observed": {
+                    "bolt": 2,
+                    "bracket": 1,
+                    "nut": 2,
+                    "washer": 2
+                  },
+                  "order_id": "ord_56081f8d1218489f9a8f",
+                  "photo_id": "img_b6622172d29f4fc48d4c",
+                  "photo_sha256": "08b0b3134b86973dbed2869325c4dc657c74545e5ba05e79de47f13e49126c3f",
+                  "reference_ids": {},
+                  "requirements_snapshot": {
+                    "bolt": 2,
+                    "bracket": 1,
+                    "nut": 2,
+                    "washer": 2
+                  },
+                  "revision": 1,
+                  "runtime_identity": {
+                    "image_max_side": null,
+                    "label": "SYNTHETIC TEST FIXTURE ONLY",
+                    "observation_mode": null,
+                    "observer_protocol_sha256": null,
+                    "repo_id": null,
+                    "revision": null
+                  },
+                  "source_family_sha256": "f80fbd80bf8658c5ea712f41f39fcc8dbae713817cabf4f3e01675ba19766009",
+                  "tool_trace": [
+                    {
+                      "latency_ms": 266,
+                      "model": "SYNTHETIC TEST FIXTURE ONLY",
+                      "status": "completed",
+                      "step": "observe_image"
+                    },
+                    {
+                      "revision": 1,
+                      "status": "completed",
+                      "step": "compare_current_requirements"
+                    },
+                    {
+                      "status": "not_applicable",
+                      "step": "review_previous_evidence"
+                    },
+                    {
+                      "action_kind": "none",
+                      "decision": "ready",
+                      "status": "completed",
+                      "step": "choose_next_action"
+                    },
+                    {
+                      "evidence_epoch": 2,
+                      "revision": 1,
+                      "status": "completed",
+                      "step": "commit_current_evidence"
+                    }
+                  ],
+                  "valid": true
+                }
+              ],
+              "events": [
+                {
+                  "created_at": "2026-09-26T15:33:31.657+00:00",
+                  "id": "evt_ede5f84110c347c69bb2",
+                  "kind": "inspection_started",
+                  "message": "실물 관찰 시작 / 开始观察实物",
+                  "payload": {
+                    "photo_id": "img_b6622172d29f4fc48d4c"
+                  }
+                },
+                {
+                  "created_at": "2026-09-26T15:33:31.927+00:00",
+                  "id": "evt_45205010236e4d709ee5",
+                  "kind": "inspection_completed",
+                  "message": "영역 안 수량이 일치합니다. 영역 밖은 검사하지 않았습니다. 실물을 확인하세요 / 选区内数量与要求一致，框外未核验，请核对实物",
+                  "payload": {
+                    "check_id": "chk_4e1a0687c0984fa3aecc",
+                    "decision": "ready",
+                    "revision": 1
+                  }
+                }
+              ],
+              "order_revision_at_capture": 1,
+              "other_order_exposures": []
+            },
+            "finished_at": "2026-09-26T15:33:31.938+00:00",
+            "id": "trial_6d2c7894c2c7460db3cc",
+            "manual_counts": null,
+            "method": "kitguard",
+            "note": "",
+            "order_id": "ord_56081f8d1218489f9a8f",
+            "photo_id": "img_b6622172d29f4fc48d4c",
+            "revision": 1,
+            "started_at": "2026-09-26T15:33:31.643+00:00",
+            "status": "completed"
+          },
+          "manual": {
+            "check": null,
+            "check_index": 0,
+            "elapsed_ms": 67,
+            "event_index": 3,
+            "evidence": {
+              "captured_at": "2026-09-26T15:33:31.595+00:00",
+              "checks": [],
+              "events": [],
+              "order_revision_at_capture": 1,
+              "other_order_exposures": []
+            },
+            "finished_at": "2026-09-26T15:33:31.595+00:00",
+            "id": "trial_add25397e406487e894e",
+            "manual_counts": {
+              "bolt": 2,
+              "bracket": 1,
+              "nut": 2,
+              "washer": 2
+            },
+            "method": "manual",
+            "note": "",
+            "order_id": "ord_56081f8d1218489f9a8f",
+            "photo_id": "img_b6622172d29f4fc48d4c",
+            "revision": 1,
+            "started_at": "2026-09-26T15:33:31.527+00:00",
+            "status": "completed"
+          }
+        },
+        "truth": {
+          "bolt": 2,
+          "bracket": 1,
+          "nut": 2,
+          "washer": 2
+        },
+        "truth_commitment": "2fabd86cd900fc443ea2499ad4290b436a90fed44d6fe8ca2e5abf9609da092a",
+        "truth_nonce": "e6cb52a3279de0e16552640791a6d0cf9aea62818771ad2841c2acf8e6f466cd"
+      }
+    ],
+    "closed_at": "2026-09-26T15:33:32.026+00:00",
+    "created_at": "2026-09-26T15:33:29.818+00:00",
+    "events": [
+      {
+        "created_at": "2026-09-26T15:33:29.818+00:00",
+        "kind": "created",
+        "payload": {}
+      },
+      {
+        "created_at": "2026-09-26T15:33:30.476+00:00",
+        "kind": "case_registered",
+        "payload": {
+          "case_id": "case_f4a01d3d22af48a097a2",
+          "truth_commitment": "2fabd86cd900fc443ea2499ad4290b436a90fed44d6fe8ca2e5abf9609da092a"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:33:31.344+00:00",
+        "kind": "frozen",
+        "payload": {}
+      },
+      {
+        "created_at": "2026-09-26T15:33:31.527+00:00",
+        "kind": "trial_started",
+        "payload": {
+          "case_id": "case_f4a01d3d22af48a097a2",
+          "method": "manual",
+          "trial_id": "trial_add25397e406487e894e"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:33:31.595+00:00",
+        "kind": "trial_finished",
+        "payload": {
+          "status": "completed",
+          "trial_id": "trial_add25397e406487e894e"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:33:31.643+00:00",
+        "kind": "trial_started",
+        "payload": {
+          "case_id": "case_f4a01d3d22af48a097a2",
+          "method": "kitguard",
+          "trial_id": "trial_6d2c7894c2c7460db3cc"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:33:31.938+00:00",
+        "kind": "trial_finished",
+        "payload": {
+          "status": "completed",
+          "trial_id": "trial_6d2c7894c2c7460db3cc"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:33:32.026+00:00",
+        "kind": "closed",
+        "payload": {}
+      }
+    ],
+    "frozen_at": "2026-09-26T15:33:31.344+00:00",
+    "id": "study_2ebadbda2cf54b3d8b49",
+    "limitations": [
+      "출처·독립 계수는 작업자의 선언입니다 / 来源与独立计数是操作者声明，软件不能证明现场真实性。",
+      "정답 잠금은 블라인드 실험이 아닙니다 / 真值先锁定不等于盲测；同一浏览器没有人员隔离。",
+      "수동 후 AI 순서에는 학습 효과가 있습니다 / 固定先人工后AI可能产生学习效应，不能据此宣称因果效率提升。",
+      "준비·촬영 이후의 시간입니다 / 计时从准备和拍照之后开始，包含等待与操作，不是完整实物作业时间。",
+      "한 사례는 고정된 물체 상태입니다 / 每个案例只对应一个固定实物状态；补件后须新登记真值，不计连续补件成功率。",
+      "공개 사진·공학 테스트는 현장 결과가 아닙니다 / 公开回放和工程替身不是现场效果；三种来源分别记录。",
+      "중단·미실행도 분모에 포함합니다 / 失败、放弃、中断及未开始都保留；已返回的错误不会被放弃状态隐藏。",
+      "해시는 서명이 아닙니다 / 散列用于核对内容，不是签名、人员身份或实物真实性证明。"
+    ],
+    "note": "Synthetic software validation only. No real users, GPU or field accuracy.",
+    "participant_code": "qa_region",
+    "planned_cases": 1,
+    "protocol": {
+      "inspection_scope_policy": "operator_region_v1",
+      "max_cases": 48,
+      "methods": [
+        "manual",
+        "kitguard"
+      ],
+      "missing": "Every planned slot remains in each method denominator",
+      "name": "fixed_state_manual_then_kitguard_v1",
+      "repeat": "One start per method; all inspection attempts and returned checks retained",
+      "timing": "Server monotonic start-to-terminal after photo/setup; not full physical work time",
+      "truth_policy": "Two matching entries and an operator declaration, sealed before either method starts"
+    },
+    "protocol_sha256": "3205020ea0e502a2b64db70ccc9e57a773fbd1e547d74a39eda35ef7c0702e93",
+    "recorder_source_sha256": "c74f7de108ea574bbca66c9311116ba1b5bc152805c83512819c9d0350cbe12f",
+    "runtime_identity": {
+      "app_version": "0.5.0",
+      "image_max_side": null,
+      "observation_mode": null,
+      "observer_protocol_sha256": null,
+      "repo_id": null,
+      "revision": null
+    },
+    "source_kind": "engineering_fixture",
+    "status": "closed",
+    "title": "ENGINEERING v05 frozen scope",
+    "report": {
+      "scope": "fixed_state_manual_then_kitguard_v1",
+      "source_kind": "engineering_fixture",
+      "planned_cases": 1,
+      "registered_cases": 1,
+      "methods": {
+        "manual": {
+          "started": 1,
+          "completed": 1,
+          "correct": 1,
+          "wrong": 0,
+          "uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "interrupted": 0,
+          "not_started": 0,
+          "planned": 1,
+          "correct_fraction": 1,
+          "terminal_elapsed_ms": {
+            "n": 1,
+            "median": 67,
+            "max": 67
+          },
+          "completed_elapsed_ms": {
+            "n": 1,
+            "median": 67,
+            "max": 67
+          },
+          "false_ready": null,
+          "returned_checks": {
+            "total": 0,
+            "scorable": 0,
+            "wrong_clear": 0,
+            "false_ready": 0,
+            "uncertain": 0,
+            "multiple_attempt_trials": 0,
+            "ineligible_backend_or_identity": 0
+          }
+        },
+        "kitguard": {
+          "started": 1,
+          "completed": 1,
+          "correct": 1,
+          "wrong": 0,
+          "uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "interrupted": 0,
+          "not_started": 0,
+          "planned": 1,
+          "correct_fraction": 1,
+          "terminal_elapsed_ms": {
+            "n": 1,
+            "median": 295,
+            "max": 295
+          },
+          "completed_elapsed_ms": {
+            "n": 1,
+            "median": 295,
+            "max": 295
+          },
+          "false_ready": {
+            "numerator": 0,
+            "denominator": 0
+          },
+          "returned_checks": {
+            "total": 1,
+            "scorable": 1,
+            "wrong_clear": 0,
+            "false_ready": 0,
+            "uncertain": 0,
+            "multiple_attempt_trials": 0,
+            "ineligible_backend_or_identity": 0
+          }
+        }
+      },
+      "paired_completed_cases": 1,
+      "limitations": [
+        "출처·독립 계수는 작업자의 선언입니다 / 来源与独立计数是操作者声明，软件不能证明现场真实性。",
+        "정답 잠금은 블라인드 실험이 아닙니다 / 真值先锁定不等于盲测；同一浏览器没有人员隔离。",
+        "수동 후 AI 순서에는 학습 효과가 있습니다 / 固定先人工后AI可能产生学习效应，不能据此宣称因果效率提升。",
+        "준비·촬영 이후의 시간입니다 / 计时从准备和拍照之后开始，包含等待与操作，不是完整实物作业时间。",
+        "한 사례는 고정된 물체 상태입니다 / 每个案例只对应一个固定实物状态；补件后须新登记真值，不计连续补件成功率。",
+        "공개 사진·공학 테스트는 현장 결과가 아닙니다 / 公开回放和工程替身不是现场效果；三种来源分别记录。",
+        "중단·미실행도 분모에 포함합니다 / 失败、放弃、中断及未开始都保留；已返回的错误不会被放弃状态隐藏。",
+        "해시는 서명이 아닙니다 / 散列用于核对内容，不是签名、人员身份或实物真实性证明。"
+      ]
+    }
+  }
+}

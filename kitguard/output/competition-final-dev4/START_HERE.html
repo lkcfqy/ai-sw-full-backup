@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KitGuard dev4 · 参赛材料与运行入口</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","PingFang SC",sans-serif;color:#163d33;background:#f4f7f3}*{box-sizing:border-box}body{margin:0}main{max-width:1080px;margin:auto;padding:42px 28px 65px}nav{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #d4ded5;padding-bottom:22px}nav strong{font-size:24px}small,.muted{color:#566a61}h1{font-size:clamp(31px,5vw,48px);line-height:1.23;letter-spacing:-.025em;margin:38px 0 16px}h2{font-size:23px;margin:32px 0 16px}p{line-height:1.75}a{color:#12664c;text-underline-offset:4px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.actions a{border:1px solid #bacfc0;border-radius:9px;padding:12px 18px;text-decoration:none;background:white}.actions a.primary{background:#275e49;color:white;border-color:#275e49}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:white;border:1px solid #dae3db;border-radius:13px;padding:22px}.card h3{margin:0 0 9px}.card p{margin:9px 0}.band{border-left:4px solid #538567;padding:13px 20px;background:#e8efe8}.band p{margin:3px 0}video{width:100%;border-radius:13px;background:#d9e4d9}details{background:white;border:1px solid #dae3db;border-radius:12px;padding:18px;margin:14px 0}summary{cursor:pointer;font-weight:600}.files{display:flex;flex-wrap:wrap;gap:12px 24px;margin:18px 0}footer{margin-top:40px;border-top:1px solid #d4ded5;padding-top:16px;font-size:14px}@media(max-width:600px){main{padding:24px 18px 40px}.grid{grid-template-columns:1fr}nav{align-items:start}.card{padding:18px}}
+</style>
+<main>
+<nav><strong>KitGuard</strong><small>0.9.0.dev4 · 2026-10-04 KST</small></nav>
+<h1>用当前照片和 BOM，<br>完成自主审查与证据保存。</h1>
+<p>使用现有 M5 Pro / 64GB 和项目内模型。自己登记的资料可直接作为目标；数量差异、资料不足与订单改版都有实际执行记录。</p>
+<div class="actions"><a class="primary" href="http://127.0.0.1:8765/static/autonomy.html">打开自主审查台 ↗</a><a href="http://127.0.0.1:8765/?new=photo-document">登记自己的照片 ↗</a><a href="KitGuard_competition_score.html">查看逐轮自评 ↗</a></div>
+<div class="band"><p><strong>保守自评：80.5 / 100，起点 72.5。</strong> 分数是依官方权重的开发审查判断，不能预测名次。</p><p>Level 3 MVP；真人 0、实物完成 0。原 51 图的 3 次错误仍保留。文件已制作，资格及提交回执尚未核实。</p></div>
+<h2>五项同版本参赛材料 · 최종 제출자료 5종</h2>
+<div class="grid">
+<article class="card"><h3>01 · 결과보고서 / 报告</h3><p>5 页 A4，包含任务结果、识别限制与部署条件。</p><a href="KitGuard_report_5p.pdf">打开报告 PDF</a></article>
+<article class="card"><h3>02 · Agent 기술설명 / 技术说明</h3><p>1 页，解释目标、计划、工具、版本记忆与反馈。</p><a href="KitGuard_agent_1p.pdf">打开 Agent PDF</a></article>
+<article class="card"><h3>03 · 소스 / 源码</h3><p>dev4 ZIP，含公开开发样例。模型与依赖分开准备。</p><a href="KitGuard_source_dev4.zip" download>保存源码 ZIP</a></article>
+<article class="card"><h3>04 · 발표자료 / 幻灯片</h3><p>9 张可编辑幻灯片，实际截图、原生表格和来源注释。</p><a href="KitGuard_presentation_9slides.pptx" download>保存答辩 PPTX</a></article>
+<article class="card"><h3>05 · 시연 영상 / 演示</h3><p>约 2 分 57 秒，实际浏览器时间抽样，韩语合成配音。</p><a href="KitGuard_demo_ko.mp4" download>保存韩语 MP4</a></article>
+<article class="card"><h3>실행 증거 / 运行证据</h3><p>公开三场景实际新推理，含照片、检查快照和工具步骤。</p><a href="evidence/index.html">离线查看执行证据</a> · <a href="KitGuard_execution_evidence.zip" download>保存证据 ZIP</a></article>
+</div>
+<h2>实际执行视频</h2>
+<video controls preload="metadata" poster="completed-ko.jpg" aria-label="KitGuard 韩语实际执行演示"><source src="KitGuard_demo_ko.mp4" type="video/mp4"></video>
+<p class="muted">真实浏览器按时间抽样，样本之间停留原画面，模型等待未压缩；额外保持结束画面便于阅读。配音为合成，不宣称连续原生录屏。旧照片重复执行不增加新图准确率分母。</p>
+<details><summary>现有电脑怎样运行</summary><p>在项目根目录双击“启动参赛演示.command”，或运行 bash scripts/run_competition.sh。已有 8765 服务时直接使用页面。模型在项目 models 内，运行数据在 data-competition-v09 内。打开资料订单，再点“自主审查此订单”。</p><p>新解压源码先按 SOURCE_PACKAGE.md 准备依赖和固定模型。源码验收使用已有依赖、合成观察与 CPU 合同，不等于无依赖的新机器安装测试。</p></details>
+<details><summary>评分和材料边界</summary><p>预定五项机器任务达到各自流程结果，含不确定与拒绝，共四次新 MLX 核验；另一个完整三场景演示执行四次检查。1877 项工程回归通过，最终源码的自主目标与资料订单 68 项合同复验通过。它们不能代替识别准确率或真人效果。</p><p>容量根据四次服务器任务用时及假设占用率计算；客户需求、付费意愿与持续吞吐仍未验证。旧模型失败、AI 使用和开发期前复用均保留披露。</p></details>
+<div class="files"><a href="DEV4_HANDOFF.md">运行与复现指南</a><a href="PRESENTATION_SCRIPT_KO.md">6 分钟韩语讲稿与问答</a><a href="SOURCE_AI_DISCLOSURE_KO.md">来源及 AI 使用披露</a><a href="ledger.json">逐轮评分账本</a><a href="RELEASE_ACCEPTANCE.json">最终验收</a><a href="MANIFEST.json">文件校验清单</a></div>
+<footer><a href="https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=5">比赛方公告与规则</a>：最终材料截止 2026-10-06 12:00 KST。制作、报名资格及正式接收是不同状态。</footer>
+</main></html>

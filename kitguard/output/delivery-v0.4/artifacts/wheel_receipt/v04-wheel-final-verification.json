@@ -1,0 +1,20 @@
+{
+  "wheel": "output/wheels-v0.4-final/kitguard-0.4.0-py3-none-any.whl",
+  "sha256": "81bebc8328cc15c18fc361bbbf2ed24f28985bb903ebeb96b48c12953d826f23",
+  "scope": "Actual final wheel extraction with existing dependencies; no clean-machine or GPU claim.",
+  "source_files_byte_matched": 31,
+  "runtime": {
+    "routes": {
+      "/": 200,
+      "/static/study.html": 200,
+      "/static/study.js": 200,
+      "/static/study.css": 200,
+      "/api/studies": 200,
+      "/api/health": 200
+    },
+    "version": "0.4.0",
+    "model_loaded": false
+  },
+  "status": "passed",
+  "study_js_sha256": "cdbbb333fb397cff15ccb0bd6e2798506bafbc0f73d38a9fa47c335278f420ff"
+}

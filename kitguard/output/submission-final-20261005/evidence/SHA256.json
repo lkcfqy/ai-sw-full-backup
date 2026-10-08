@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "mission.json",
+      "bytes": 213136,
+      "sha256": "4cb5c8ed9da4ff816c3ab7644973793d5f8b5849f3d1b966e4a27da6ce7b15eb"
+    },
+    {
+      "path": "photos/img_049323f9ca894d2c8da4.jpg",
+      "bytes": 190021,
+      "sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543"
+    },
+    {
+      "path": "photos/img_51ba42ac643a48f5986f.jpg",
+      "bytes": 187515,
+      "sha256": "27484392fc9508316051c759e797cc9047aa44c755e59394fa1661013a156662"
+    },
+    {
+      "path": "photos/img_0eb463e1a7fd47e2b6fe.jpg",
+      "bytes": 333139,
+      "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949"
+    },
+    {
+      "path": "photos/img_866933be04794452bc57.jpg",
+      "bytes": 333139,
+      "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949"
+    },
+    {
+      "path": "index.html",
+      "bytes": 12540,
+      "sha256": "c402775f9b5e0c9ee98e856d8441de259ad430d2216ae2bdf127a1e663b95576"
+    }
+  ]
+}

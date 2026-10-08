@@ -1,0 +1,42 @@
+[
+  {
+    "path": "ACCEPTANCE.json",
+    "bytes": 4473,
+    "sha256": "99a7e33f60fce00b39f870f54bb4bf2d6767ea1d0560eae4a3546b8a5add2f5a"
+  },
+  {
+    "path": "DEMO_AND_HANDOFF_ZH.md",
+    "bytes": 6657,
+    "sha256": "169eb41fbafbd7e0215df0f39eb020a0bc52720719d92b4741cd9f2623d94018"
+  },
+  {
+    "path": "KitGuard_source_v0.9_dev2.zip",
+    "bytes": 6851349,
+    "sha256": "349df57853d742ac86e432df514e7b1d0b1d7b6df57b1ec4a5f95e8effc6c9f7"
+  },
+  {
+    "path": "KitGuard_source_v0.9_dev2.zip.manifest.json",
+    "bytes": 117749,
+    "sha256": "a5b4147683f60e880e93b63b3db1fb0c8d65c7cdcef32b84d0c53fe48126051c"
+  },
+  {
+    "path": "KitGuard_source_v0.9_dev2.zip.sha256",
+    "bytes": 96,
+    "sha256": "18e2e85ae53c2ed9b5d8e6eed27bc8704930dd492dd0cb6bcb0760022ac77fe2"
+  },
+  {
+    "path": "KitGuard_source_v0.9_dev2.zip.verification.json",
+    "bytes": 1365,
+    "sha256": "58419a68699f989909da2f1504605e217cf6db1a74492682a66ae25a39dc7f69"
+  },
+  {
+    "path": "START_HERE.html",
+    "bytes": 5725,
+    "sha256": "2f03ab94a965602b2019951f9da835c9002ae366108b636301c30e84d9a4c1cb"
+  },
+  {
+    "path": "engineering-rehearsal-0-humans.json",
+    "bytes": 109543,
+    "sha256": "b206bd204ed1607d9d04ee4e36f8db2ff4f4c8de825467c15231003e2a728855"
+  }
+]

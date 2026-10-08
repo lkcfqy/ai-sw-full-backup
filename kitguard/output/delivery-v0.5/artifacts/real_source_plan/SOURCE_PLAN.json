@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_frozen_not_executed",
+  "base_url": "http://127.0.0.1:8791",
+  "planned_inspections": 2,
+  "retry_inference": false,
+  "human_participants": 0,
+  "model_path": "/Users/lkc/Downloads/AI-Models/Qwen3.6-27B-4bit",
+  "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+  "model_revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+  "observation_mode": "spatial_guarded",
+  "image_max_side": 1536,
+  "pillow_version": "12.3.0",
+  "cases": [
+    {
+      "id": "ino-A41-author-region",
+      "image": "datasets/raw/ino-10-190/data/origin/A/41_color.png",
+      "image_sha256": "0633cf4178aada2611ec46d8df34ee0f6c7452a549c8e6bd67fc4c456e299695",
+      "annotation": "datasets/raw/ino-10-190/data/origin/A/41_color.txt",
+      "annotation_sha256": "e3be445b2cbe2a01373329cd7447e7ccf01bf6441a2574d8abf95cbce32b0d38",
+      "author_bbox_xyxy": [
+        446.4972160908251,
+        521.2125510604375,
+        595.9827694152484,
+        616.604110380303
+      ],
+      "margin_px": 9.539155931986546,
+      "region_xyxy": [
+        436,
+        511,
+        606,
+        627
+      ],
+      "root_size": [
+        1280,
+        720
+      ],
+      "expected_root_sha256": "4df848a897627d659fa670fc76991f6f9c762dbfd7fced5cc4b961c7ffb3d72f",
+      "expected_view_sha256": "7e360c775c03b810b50a0d9e1c80e44d508fdd27da8084defce6eb3297e0b484",
+      "requirements": {
+        "bolt": 0,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 1
+      },
+      "ground_truth": {
+        "bracket": 1
+      },
+      "unlabeled_categories": [
+        "bolt",
+        "nut",
+        "washer"
+      ],
+      "label_scope": "author_class0_count_only",
+      "field_registration": false,
+      "interpretation": "Previously exposed A41, author-position ROI; no four-category scoring or accuracy-improvement claim."
+    },
+    {
+      "id": "mixed-screws-full-region",
+      "sample_id": "mixed-screws",
+      "image": "datasets/derived/v0.3/screws_views/v03-screws-screws_344-8d389e404b12.png",
+      "image_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+      "source_image": "datasets/raw/mvtec_screws_v1.0/images/screws_344.png",
+      "source_sha256": "082118a3c0a7530b640a9327b369e73c9d63ec9ed7ca11fb15565aeb840bb4ca",
+      "annotation": "datasets/raw/mvtec_screws_v1.0/mvtec_screws.json",
+      "annotation_sha256": "81257dff178531b5f02240addb89a132b701b557fb2663817981339176c80fa9",
+      "truth_manifest": "datasets/manifests/v0.3/CANONICAL_NEW_SOURCE_BENCHMARK_V1.json",
+      "truth_manifest_sha256": "85f331c47d50256e1e98c3b346bef109e30a98e7e101da6ea3f46c9b7b3dcaf2",
+      "source_crop_xyxy": [
+        832,
+        832,
+        1600,
+        1408
+      ],
+      "author_annotation_geometry": [
+        {
+          "annotation_id": 344001,
+          "category_id": 8,
+          "padded_aabb_xyxy": [
+            844.3201468187787,
+            1113.303761640675,
+            1029.2938531812215,
+            1382.4162383593248
+          ],
+          "inside": true,
+          "outside": false
+        },
+        {
+          "annotation_id": 344002,
+          "category_id": 8,
+          "padded_aabb_xyxy": [
+            517.7334748487119,
+            138.3173955037102,
+            816.0165251512881,
+            412.6106044962898
+          ],
+          "inside": false,
+          "outside": true
+        },
+        {
+          "annotation_id": 344003,
+          "category_id": 7,
+          "padded_aabb_xyxy": [
+            694.9569605129295,
+            864.6687815560051,
+            792.3050394870704,
+            961.9312184439948
+          ],
+          "inside": false,
+          "outside": true
+        },
+        {
+          "annotation_id": 344004,
+          "category_id": 3,
+          "padded_aabb_xyxy": [
+            844.3494954485936,
+            25.4469944607891,
+            1477.7105045514063,
+            250.7070055392109
+          ],
+          "inside": false,
+          "outside": true
+        },
+        {
+          "annotation_id": 344005,
+          "category_id": 7,
+          "padded_aabb_xyxy": [
+            1449.0516118171547,
+            406.65914990925364,
+            1549.668388182845,
+            504.99085009074633
+          ],
+          "inside": false,
+          "outside": true
+        },
+        {
+          "annotation_id": 344006,
+          "category_id": 12,
+          "padded_aabb_xyxy": [
+            983.8311361886606,
+            850.7361805829944,
+            1066.1688638113394,
+            1019.5498194170057
+          ],
+          "inside": true,
+          "outside": false
+        },
+        {
+          "annotation_id": 344007,
+          "category_id": 4,
+          "padded_aabb_xyxy": [
+            852.7023291592178,
+            329.675431229869,
+            970.1756708407821,
+            605.102568770131
+          ],
+          "inside": false,
+          "outside": true
+        },
+        {
+          "annotation_id": 344008,
+          "category_id": 12,
+          "padded_aabb_xyxy": [
+            499.10792587043943,
+            596.930403660293,
+            630.8880741295607,
+            774.319596339707
+          ],
+          "inside": false,
+          "outside": true
+        },
+        {
+          "annotation_id": 344009,
+          "category_id": 3,
+          "padded_aabb_xyxy": [
+            87.32097893354114,
+            652.1656834807968,
+            668.0890210664588,
+            1102.3923165192032
+          ],
+          "inside": false,
+          "outside": true
+        },
+        {
+          "annotation_id": 344010,
+          "category_id": 4,
+          "padded_aabb_xyxy": [
+            1185.5724327311225,
+            1032.9739495904714,
+            1389.7275672688777,
+            1300.5860504095285
+          ],
+          "inside": true,
+          "outside": false
+        },
+        {
+          "annotation_id": 344011,
+          "category_id": 13,
+          "padded_aabb_xyxy": [
+            1072.5330514958396,
+            666.1362015272964,
+            1202.8669485041605,
+            794.3857984727035
+          ],
+          "inside": false,
+          "outside": true
+        },
+        {
+          "annotation_id": 344012,
+          "category_id": 13,
+          "padded_aabb_xyxy": [
+            1180.7132295799565,
+            393.1900917965092,
+            1307.0867704200436,
+            514.8119082034907
+          ],
+          "inside": false,
+          "outside": true
+        }
+      ],
+      "included_annotation_ids": [
+        344001,
+        344006,
+        344010
+      ],
+      "ground_truth": {
+        "bolt": 3,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "requirements": {
+        "bolt": 3,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "label_scope": "existing_author_taxonomy_four_categories",
+      "field_registration": true,
+      "root_size": [
+        768,
+        576
+      ],
+      "region_xyxy": [
+        0,
+        0,
+        768,
+        576
+      ],
+      "expected_root_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+      "expected_view_sha256": "5d1ea6976927e6d3b0e723511afb7fde9d889fa1cb0c84c555accac0b492d6b5",
+      "interpretation": "Previously exposed development sample; full-frame region integration; scripted author counts, not a human baseline."
+    }
+  ],
+  "scope": "Two exposed development inputs, one HTTP inspect each, all failures retained, no physical completion, no new accuracy samples."
+}

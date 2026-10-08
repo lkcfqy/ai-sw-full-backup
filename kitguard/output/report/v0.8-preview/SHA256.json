@@ -1,0 +1,16 @@
+{
+  "output/report/v0.8-preview/BUILD_MANIFEST.json": "85f249d745e7d1684a081bb7269379a5ba453a486deae1184e41b9615b3e3d20",
+  "output/report/v0.8-preview/CONTENT_SOURCE.json": "86b85f07250324f505421fe2b8ad83f6f7c878f2c75c22bef310a59658885586",
+  "output/report/v0.8-preview/EXTRACTED_TEXT.txt": "527f48228f5fe9832a52ffb65e42bcff7bc15fe5e2e3bfdc5fffef73f5507f6e",
+  "output/report/v0.8-preview/KitGuard_Agent_기술설명_v0.8_preview.pdf": "77b518127c6d3c9e6cb2f391454980add053d5242a0aac58e44e3f306d476e2c",
+  "output/report/v0.8-preview/KitGuard_결과보고서_v0.8_preview.pdf": "9812fbafb68a2ffeac91c05abcb93ad60f2a03c5cdcf9abb469cdcd9c6a23072",
+  "output/report/v0.8-preview/QA.json": "c11b56375d1eeb235d1372ea6fbfed3009551b9465a6fc254879d77dab8c87da",
+  "output/report/v0.8-preview/SOURCE_EVIDENCE.json": "7013e3bb2206ffd622471460579a6d991966c68ec46b7f5504538a0b5f0ca5a4",
+  "output/report/v0.8-preview/qa/report-1.png": "e340d7149e78411d08dbc97b7e8f763dad04473b6f26b688146b7631eb565d5f",
+  "output/report/v0.8-preview/qa/report-2.png": "6126982bcb51a69f172c95397255ee46241272ba2e031edf9ce1dbfd91910717",
+  "output/report/v0.8-preview/qa/report-3.png": "f944d28f450c5473bfa83d26c54d7b3c98b6c99bd0ff2df2000dc9328f8d89e1",
+  "output/report/v0.8-preview/qa/report-4.png": "484cb6db814a15212137f2b9c6c0dd94209482a732fc8279fb3659de8baf3c08",
+  "output/report/v0.8-preview/qa/report-5.png": "720840652086d729c68225039fae9583c8e866c76f75e09ddb438d99e14a0092",
+  "output/report/v0.8-preview/qa/technical-1.png": "3aee43df6afcf6ff13b47b1eb43cc36860dd63005eb45ec22db83d991468dfd1",
+  "scripts/v08/build_submission_pdfs.py": "bb7a5d2203a48b05f1e89e79e16a866dfa3af2c30d207fdb9721f34a5f08b7b0"
+}

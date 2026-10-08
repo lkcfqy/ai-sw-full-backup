@@ -1,0 +1,152 @@
+{
+  "version": "0.1.0",
+  "recorded_at": "2026-09-26T18:28:15.140273+09:00",
+  "purpose": "Local implementation snapshot; timestamps are development records, not a third-party certification.",
+  "model_repository": "mlx-community/Qwen3-VL-8B-Instruct-8bit",
+  "model_revision": "a0093b9b5fda6f76ddd4a462c6830ae7c4fe47ec",
+  "software_tests_passed": 67,
+  "browser_workflows_passed": 15,
+  "physical_parts_accuracy": "not yet evaluated",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "15d95f670f92bc977ed6243d31bc030406a0e6927fe1213a417ed99c4f8855ed",
+      "bytes": 129
+    },
+    {
+      "path": "README.md",
+      "sha256": "7ac6c2a819e31b9336ab885e7a13105b6a47da7d00a3aa8a3f0aca2a4859bd40",
+      "bytes": 6256
+    },
+    {
+      "path": "docs/DEVELOPMENT_LOG.md",
+      "sha256": "9fe184f06780f9f01cc6bc2f535c7145c08bd110ada53abd45ec7e29f0a3101a",
+      "bytes": 1278
+    },
+    {
+      "path": "docs/IMPLEMENTATION_CONTRACT.md",
+      "sha256": "4247e409f95eaa68b5c467d38532c02e893d0c020ca321c930f06869bbf14a33",
+      "bytes": 5514
+    },
+    {
+      "path": "docs/REAL_WORLD_VALIDATION.md",
+      "sha256": "44a9dfd8bac1b709d08f2779b19e5d8c88862c2cdd37399f82bc0e2c61cce346",
+      "bytes": 3295
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "a4ede3fa1bcb1e750c813bb84f61ba0244def1f715e776d12b6888ee12a8962e",
+      "bytes": 4356
+    },
+    {
+      "path": "kitguard/__init__.py",
+      "sha256": "93ff7393ccb4d2d12337825dbb3d9e89302a32a4b17c13fdbf5526f50633c05f",
+      "bytes": 35
+    },
+    {
+      "path": "kitguard/app.py",
+      "sha256": "46fa19c782d581375096fa0139c4068a3ec685b3c862dfbd5704912545eb08c7",
+      "bytes": 17975
+    },
+    {
+      "path": "kitguard/schemas.py",
+      "sha256": "8a73031b4576664921406aba8dbb57568247efce7776f1acdba31b6bb5e26eb3",
+      "bytes": 3628
+    },
+    {
+      "path": "kitguard/static/app.js",
+      "sha256": "815b9b24ad18ebccf617761277f62bf69ac203a3d3f76f11901e02fe5a21d6c3",
+      "bytes": 68739
+    },
+    {
+      "path": "kitguard/static/favicon.svg",
+      "sha256": "1e72ff002f137d117d6bd58b597e22f5b9fd807bd893d52caef22ba9993dd1a7",
+      "bytes": 303
+    },
+    {
+      "path": "kitguard/static/index.html",
+      "sha256": "140f87f981e6496fdeaeae2b1e1adbb2a99a85a820517d02af867dce350549a5",
+      "bytes": 1146
+    },
+    {
+      "path": "kitguard/static/styles.css",
+      "sha256": "79e0d94380e88c2b0b45144e5cb559e9dce79ec7c9f3ea95d5f31c2fedb0a418",
+      "bytes": 30399
+    },
+    {
+      "path": "kitguard/store.py",
+      "sha256": "2909fc9b9f11b8d3c0e458852497176c18d1150d6bc437fa99cd9a423b3de17c",
+      "bytes": 13135
+    },
+    {
+      "path": "kitguard/vision.py",
+      "sha256": "05e37230f910783f28d00dd8926cfe710a6ccf98cd6634a9f6b32ae200738cc9",
+      "bytes": 16771
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "43c04b7dc645f58d3d04f2776b9fdc18a4905e97df7c178dbb19ee10d9f59828",
+      "bytes": 703
+    },
+    {
+      "path": "requirements-lock.txt",
+      "sha256": "1ce8c4696cd3f50af5b75c7d6d277dd1738caf4e4641d0e85f7aa7ef50369b3c",
+      "bytes": 1085
+    },
+    {
+      "path": "scripts/download_model.py",
+      "sha256": "8a1de12226da9bed4ef46c2094af5252a4f82483b946e014d3da70578bfb62e9",
+      "bytes": 7764
+    },
+    {
+      "path": "scripts/run.sh",
+      "sha256": "eb7d5ebc6fb6980360fa4a62c8e0d42e95390985080c5ce9f8dd18ecd749e6f4",
+      "bytes": 552
+    },
+    {
+      "path": "scripts/setup.sh",
+      "sha256": "b519aee57296de2e4f5aba2cec3257792e2b9d9cb67f7168bf5507a471941f27",
+      "bytes": 884
+    },
+    {
+      "path": "tests/README.md",
+      "sha256": "a80f211490df09e5655b43de66d08cf1d24378d46f2d7911914ec1ba5a2e7dbf",
+      "bytes": 2669
+    },
+    {
+      "path": "tests/browser_ui_smoke.cjs",
+      "sha256": "9a1c53543ec7e9ad647b6ef2328825592028fa55096eeb8ce6b6c081c75c07b5",
+      "bytes": 12899
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "50a76a247f553972b11e46c8234a84f11de57c01ca63ecfb240f9d455d2fcd05",
+      "bytes": 4936
+    },
+    {
+      "path": "tests/generate_ui_fixtures.py",
+      "sha256": "9d1a82afb8590c315cd35997eff8aef18528f74d61f224525033f006c901d06f",
+      "bytes": 1230
+    },
+    {
+      "path": "tests/test_api_integrity.py",
+      "sha256": "244adb79253f639af8b2f394d37b4d9c05f72688cbd74393fb9880062123f969",
+      "bytes": 22853
+    },
+    {
+      "path": "tests/test_data_portability.py",
+      "sha256": "0933110c397344b101581db0704be7a97396b7d1fceb9dacbb9879f8bf3dc3dc",
+      "bytes": 1021
+    },
+    {
+      "path": "tests/test_model_output_validation.py",
+      "sha256": "b039b238498a84e4bcb0bfb3ab0f4d25e324fe1a23893f9a2c9972851467196a",
+      "bytes": 2422
+    },
+    {
+      "path": "启动KitGuard.command",
+      "sha256": "0bdef9811138fb24e20f8e3a11315bd80ed430d62102e58d24fa09cf43bad04f",
+      "bytes": 176
+    }
+  ]
+}

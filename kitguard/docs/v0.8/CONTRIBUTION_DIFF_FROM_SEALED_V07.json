@@ -1,0 +1,372 @@
+{
+  "schema": "kitguard.v08.core-diff-from-sealed-v07.v1",
+  "checked_at": "2026-10-02T02:38:01.480978+00:00",
+  "comparison_scope": "Top-level kitguard Python modules, all static app files, and pyproject; excludes tests, experiments and documentation",
+  "baseline": "output/KitGuard_source_v0.7.0.zip",
+  "baseline_sha256": "e25074ff5db30e22459d66f0e29f6b610453eba5753dd75bbbb27c4fef3a2960",
+  "baseline_is_contest_start_snapshot": false,
+  "current_version": "0.8.0.dev1",
+  "development_origin_unchanged": "2026-09-26",
+  "eligibility_authorization_not_evidenced": true,
+  "counts": {
+    "added": 2,
+    "modified": 21,
+    "removed": 0,
+    "unchanged": 35
+  },
+  "files": [
+    {
+      "path": "kitguard/__init__.py",
+      "before_sha256": "c3eabb5e98942c7bfed9eb2776e6fd2d7297b9558027ffdb944e803fbd396ea7",
+      "after_sha256": "ecf1d6375dbc6c17154b40c0f6dcc501ca65370b39b1cf378e3a84558d7a7239",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/app.py",
+      "before_sha256": "18541c473913810da510edc90647c7ee52b3619921aed730e3828b8706d97f61",
+      "after_sha256": "ef4d8f13e95dc787e70d4687e1c29707566900887654586b80d484f758654d7c",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/consensus.py",
+      "before_sha256": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+      "after_sha256": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/detector_lab.py",
+      "before_sha256": "1ef12e1027f505a75f7f4643479f48f2ab313e48a1d74f098671f13aad2415e2",
+      "after_sha256": "1ef12e1027f505a75f7f4643479f48f2ab313e48a1d74f098671f13aad2415e2",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/detector_worker.py",
+      "before_sha256": "5283d515c7ce47676c7f6069e7702ba20a2705b9d286633ea5761a0aab3e9586",
+      "after_sha256": "5283d515c7ce47676c7f6069e7702ba20a2705b9d286633ea5761a0aab3e9586",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/evaluation.py",
+      "before_sha256": "7f5f7e9840e81cf5896d850248c0491fb8ad24f5228cb58479340c89061f37a3",
+      "after_sha256": "7f5f7e9840e81cf5896d850248c0491fb8ad24f5228cb58479340c89061f37a3",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/evidence.py",
+      "before_sha256": "a29ea382a0a806809308f02ceafbf18c8c2d1d50ca4381a1fc8caf2d32f4b916",
+      "after_sha256": "5336664490981131890d55429783e4159d679dbbc2cb7a2c147a8da51c9881fc",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/feedback.py",
+      "before_sha256": "53bc33cb728b98b0a6896f4d3b9e236ecfab7d9db3f12ac6eb8cde087ea9db1e",
+      "after_sha256": "53bc33cb728b98b0a6896f4d3b9e236ecfab7d9db3f12ac6eb8cde087ea9db1e",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/field_api.py",
+      "before_sha256": "23d7cea5b3f4ece198ecc606a29f6b7d6b7e066ded1812378729f1df58ce8f6d",
+      "after_sha256": "23d7cea5b3f4ece198ecc606a29f6b7d6b7e066ded1812378729f1df58ce8f6d",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/field_archive.py",
+      "before_sha256": "302abca5b4eb07a0f7255c8fd393e53fb5f426c24badc25794900694e5768413",
+      "after_sha256": "302abca5b4eb07a0f7255c8fd393e53fb5f426c24badc25794900694e5768413",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/field_study.py",
+      "before_sha256": "c74f7de108ea574bbca66c9311116ba1b5bc152805c83512819c9d0350cbe12f",
+      "after_sha256": "fd9269da7acc678bd4a281e37641379d18a103a9f1094745d7f9f47fa8a950c2",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/identity.py",
+      "before_sha256": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+      "after_sha256": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/inspection_jobs.py",
+      "before_sha256": "9dd9befd9aa13b28fe4f75609234173c72e6d824b4892b950a89b3606b4f72ca",
+      "after_sha256": "9dd9befd9aa13b28fe4f75609234173c72e6d824b4892b950a89b3606b4f72ca",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/instructions.py",
+      "before_sha256": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+      "after_sha256": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/manual_review.py",
+      "before_sha256": "e8e4295c4df83d601d5bbd52866a49ec7459fa45d1e24c30145a0df5da697cc5",
+      "after_sha256": "e8e4295c4df83d601d5bbd52866a49ec7459fa45d1e24c30145a0df5da697cc5",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/models.py",
+      "before_sha256": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+      "after_sha256": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/photo_documents.py",
+      "before_sha256": null,
+      "after_sha256": "ded94a5d63854257eed73b25971aec63d27447d9dfad32c0a29b224795a41773",
+      "status": "added"
+    },
+    {
+      "path": "kitguard/public_demo_catalog.py",
+      "before_sha256": "cc50ea4ed9f3d3c08ea8b59f671403df8961c900e06890aa0e082d1aecb6eddf",
+      "after_sha256": "cc50ea4ed9f3d3c08ea8b59f671403df8961c900e06890aa0e082d1aecb6eddf",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/public_review.py",
+      "before_sha256": "186dba2e804f45105ff0a1ab4b5d12507079ce4bfb80381ded90fdbb8f6e3879",
+      "after_sha256": "a42deba6e47420b7a5e247bda0182fcfde630052a209266b9c48c65226a726bb",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/readiness.py",
+      "before_sha256": "ca2292e1a6979fddf611e626a26d2be3bad2db4778757119ed1b3a1e92138f77",
+      "after_sha256": "67642339e0195f5b7e7782417aab984057b91dca112165f299d7c3f82c064daa",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/regions.py",
+      "before_sha256": "0915bc19bb5c26dec95d34d65a23e0cac09a0db48d4c8e6e05724029da898bcf",
+      "after_sha256": "1fd440803e1c763cf3b65999af9149fe510031dd91d8e4e0ae80c0dc2946f005",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/runtime.py",
+      "before_sha256": "c5a6fa1ebcd4021436cbfeb83bc19d59852e1225fd8142bf0004bc449ba2edfb",
+      "after_sha256": "c5a6fa1ebcd4021436cbfeb83bc19d59852e1225fd8142bf0004bc449ba2edfb",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/schemas.py",
+      "before_sha256": "2726e824a1a0c7e8fb2a99994992f787300e8675c93954e1e58d2f6156573788",
+      "after_sha256": "ffa4cc350c26b64c82e5c14b24e7a4fa14144350f7ef7cc89bdb72047c5de448",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/spatial.py",
+      "before_sha256": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+      "after_sha256": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/app.js",
+      "before_sha256": "1a186570a90481ef4e7414dd5b8628660a97b1b14bdc13a404aaa6c1ca5ddf5c",
+      "after_sha256": "165f41c0996fc5ba25b4f26ab90df50b05776163d7e42a319990cc5f7e0bddb5",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/static/audit.js",
+      "before_sha256": "270ae1b4fa9e99b43bfadce18074ed27791dea3446ee5ff4ad992696265b50a5",
+      "after_sha256": "d09b81dc9f113b8b6ef6a03fbacc2bbf10c9813d7830e62bc8608575ad0a8acd",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/static/camera.js",
+      "before_sha256": "b38d1290850db0db67bf8845757262482e9a5d4e03dc287f847b0b09413123f5",
+      "after_sha256": "b38d1290850db0db67bf8845757262482e9a5d4e03dc287f847b0b09413123f5",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/demo.css",
+      "before_sha256": "72bdddf64198196fb34053256c06d8d69590286546f08bc247f27d1416fb4ede",
+      "after_sha256": "72bdddf64198196fb34053256c06d8d69590286546f08bc247f27d1416fb4ede",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/demo.html",
+      "before_sha256": "3873373b37f989857a47942f0a7d0b302918993b3e1ba25621d3cfc4317d021d",
+      "after_sha256": "0e2d609840a497f54d7ee7f0650b9766d087456200274d27ba12ac6afe9fce19",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/static/demo.js",
+      "before_sha256": "19ae5ba48fc002476c599bca1b3d1ca6f65881dd75d6d1c8d65d5269a79ef1ec",
+      "after_sha256": "19ae5ba48fc002476c599bca1b3d1ca6f65881dd75d6d1c8d65d5269a79ef1ec",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/detector.css",
+      "before_sha256": "988da98c18e52275612bf6fbe56d94216d15d1c9b275aed5dc79faedfdabb8fc",
+      "after_sha256": "988da98c18e52275612bf6fbe56d94216d15d1c9b275aed5dc79faedfdabb8fc",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/detector.html",
+      "before_sha256": "d575adcdaa3a6cb8a9d36583e24fcff13806941d2e33caf06178cc127938906b",
+      "after_sha256": "d575adcdaa3a6cb8a9d36583e24fcff13806941d2e33caf06178cc127938906b",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/detector.js",
+      "before_sha256": "66fe07a3fe12e30e26c5f5f537657a8a84570f8ae9dcc799166e9cda2d183d52",
+      "after_sha256": "66fe07a3fe12e30e26c5f5f537657a8a84570f8ae9dcc799166e9cda2d183d52",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/favicon.svg",
+      "before_sha256": "1e72ff002f137d117d6bd58b597e22f5b9fd807bd893d52caef22ba9993dd1a7",
+      "after_sha256": "1e72ff002f137d117d6bd58b597e22f5b9fd807bd893d52caef22ba9993dd1a7",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/index.html",
+      "before_sha256": "fe24fcb1841d90671172e7dd3a2a1f47269d838b4c5b37c3eb3f807486288c8f",
+      "after_sha256": "fc5b8854250e0148bd46ab9e364fd7edb09f6cdf24f34ebf80b3e20c2c843ce3",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/static/photo-documents.js",
+      "before_sha256": null,
+      "after_sha256": "c584227a6fd17df564629c69f0262dd9c1111388f0b85cd20bd45e7f665c81d1",
+      "status": "added"
+    },
+    {
+      "path": "kitguard/static/public-review.css",
+      "before_sha256": "49e6e77673b94563a61ed47d7a68d8a3434903c3e92feb905e24ad402bd5957d",
+      "after_sha256": "9027b7f7b8d9569fa18e251a2ad17491c6de58f55dcd572195524148ef62a3a3",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/static/public-review.js",
+      "before_sha256": "f7d1267338f7070f2c49768fcb6c7c2651b24e02fb9c9280ab0ea205dbbbd150",
+      "after_sha256": "846fd6f3272b3eb35fa086fafe9f4cf341f60faaa37d35c57987b9ac3e53c818",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/static/readiness.css",
+      "before_sha256": "c2303614f95f494db005432f9f792653c451747aa203b870c44757aac136902f",
+      "after_sha256": "c2303614f95f494db005432f9f792653c451747aa203b870c44757aac136902f",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/readiness.html",
+      "before_sha256": "f300db9759dae5fbc4e0dbde01cb6a10a6bfc37baad589d8dac25bf9ee29c62e",
+      "after_sha256": "f300db9759dae5fbc4e0dbde01cb6a10a6bfc37baad589d8dac25bf9ee29c62e",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/readiness.js",
+      "before_sha256": "09a6a34b3752e859188b772e93e02c574ad192f36d63557821b123c8ab3f98bc",
+      "after_sha256": "09a6a34b3752e859188b772e93e02c574ad192f36d63557821b123c8ab3f98bc",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/region.css",
+      "before_sha256": "3c497497966fd4f3df2c39fcf46583de2c4b823c2974d53589ac381a65db665e",
+      "after_sha256": "3c497497966fd4f3df2c39fcf46583de2c4b823c2974d53589ac381a65db665e",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/region.js",
+      "before_sha256": "307907a31bf61aea26ea1cf199a31f71a27de0f1a770cd32936205b7ed3722cc",
+      "after_sha256": "307907a31bf61aea26ea1cf199a31f71a27de0f1a770cd32936205b7ed3722cc",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/spatial.js",
+      "before_sha256": "fc482aaba0f2bcc18d1a4cd7093113544c6f415ebaf4a57c5a72ff738d9b36f4",
+      "after_sha256": "fc482aaba0f2bcc18d1a4cd7093113544c6f415ebaf4a57c5a72ff738d9b36f4",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/study.css",
+      "before_sha256": "b3eb9ffa3df56239a2a5c19e75cc337bbb7c39a15b9c435e562410bb89974cd4",
+      "after_sha256": "b3eb9ffa3df56239a2a5c19e75cc337bbb7c39a15b9c435e562410bb89974cd4",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/study.html",
+      "before_sha256": "1fe3499b8b77406169340cb6d2699f7a152b6f6037e0dd06beefdca6939e4d94",
+      "after_sha256": "1fe3499b8b77406169340cb6d2699f7a152b6f6037e0dd06beefdca6939e4d94",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/study.js",
+      "before_sha256": "0339f1a958e98bbc73a88981c09368c7c8d74fc6f1210758b29e0ba59590ac25",
+      "after_sha256": "785ed1e48e52bcc242e16e21c67cf23ffa34b12e69b9d16575c317eccac3074b",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/static/styles.css",
+      "before_sha256": "16233578b215935e3286e62a7b174f2d988f6b9c4a906c360e6edf53c7e35f31",
+      "after_sha256": "16233578b215935e3286e62a7b174f2d988f6b9c4a906c360e6edf53c7e35f31",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/trials.css",
+      "before_sha256": "25b0efdfddf6526d0c4c9548a3e7cf0dbc3b29ead0efe344fd74709c73dc65ba",
+      "after_sha256": "25b0efdfddf6526d0c4c9548a3e7cf0dbc3b29ead0efe344fd74709c73dc65ba",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/trials.html",
+      "before_sha256": "c461407db9614ea48b7cd0006e66e63d1f2d61241a3e9b6ebe42ca622b01f560",
+      "after_sha256": "c461407db9614ea48b7cd0006e66e63d1f2d61241a3e9b6ebe42ca622b01f560",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/trials.js",
+      "before_sha256": "bdf1f41ebd3f6d2be8d600c25d0ab77c278a125ff7402e9a91681d1fdc4feb5b",
+      "after_sha256": "bdf1f41ebd3f6d2be8d600c25d0ab77c278a125ff7402e9a91681d1fdc4feb5b",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/static/workflow.css",
+      "before_sha256": "85c02bc52428a399498ab37fd01753598f9a9e3f3444d753c581cc3f0a703534",
+      "after_sha256": "870c1dd97503c5088045f7f0c3ed60c1d63a053013058efb591528e0505b2adb",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/static/workflow.js",
+      "before_sha256": "02526de8435a5ee6660ad29fbc2c74ba09741d2937f475dd235bf5edfef115f8",
+      "after_sha256": "d713edff4d87af9ef6e0dea1cf5ee5932f34deec93849132f0da5dae3e58185f",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/store.py",
+      "before_sha256": "5e1b5311ae2d6c7c9d89020150ef92d3a69534e48b26831b9784a487d5a588cd",
+      "after_sha256": "b013ee2158ae46132c60f38fc627d79c5448e750768eb4874f911b5d2e1ed051",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/task_trial_api.py",
+      "before_sha256": "f09729f749169b9fdae7947c0de8f5bc827a1734f2baa8ab93321e2a06edebc3",
+      "after_sha256": "f09729f749169b9fdae7947c0de8f5bc827a1734f2baa8ab93321e2a06edebc3",
+      "status": "unchanged"
+    },
+    {
+      "path": "kitguard/task_trials.py",
+      "before_sha256": "621f7728332ef13cfbb0054f97a940470e823710f61643956362ad0d3b99b745",
+      "after_sha256": "9946fb448b3a5477ea3c3d769772d915a346595cd298922eea26ccb2e5b213ab",
+      "status": "modified"
+    },
+    {
+      "path": "kitguard/vision.py",
+      "before_sha256": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+      "after_sha256": "e0c30d23c2620bfdc4bdf453f828c0a353da957eab89ab3c2ec92b7840f79b08",
+      "status": "modified"
+    },
+    {
+      "path": "pyproject.toml",
+      "before_sha256": "c5e52a63fca5db6b3d4a03d18361f17d898d7551aa75b2e7f03548da9e240e74",
+      "after_sha256": "8929c37526c2cab49ba953f3999f42ecf8e76194fbed0d2275e96686f96b57bd",
+      "status": "modified"
+    }
+  ],
+  "scope_limitations": [
+    "Sealed v0.7 is an earlier Oct2 release, not the Sep29 contest-start state",
+    "Hash comparison proves byte differences only, not individual authorship or development timestamps",
+    "No official submission, permission, eligibility or new-model-accuracy claim"
+  ]
+}

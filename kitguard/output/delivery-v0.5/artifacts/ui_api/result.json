@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "assertions": 52,
+  "checks": [
+    "Korean default for region UI",
+    "unmodified photo defaults whole image",
+    "scope application requires explicit confirmation",
+    "selector loads full normalized root dimensions",
+    "decimal coordinates rejected visibly",
+    "out of image coordinates rejected",
+    "sub-32px selection rejected",
+    "full width keyboard digits normalized to strict integer payload",
+    "double application click sends one mutation",
+    "actual server stores keyboard selection",
+    "derived view preserves root source family",
+    "selection never automatically triggers inference",
+    "same source view is not labelled a new physical photo",
+    "workbench retains visible whole root image",
+    "reselecting crop resolves original full root",
+    "cancel has no mutation or evidence epoch change",
+    "mouse selection maps CSS image bounds to root pixels",
+    "ready result explicitly excludes outside region",
+    "restoring whole image requires fresh confirmation",
+    "whole reset preserves exact original normalized JPEG bytes",
+    "range change invalidates prior completed check",
+    "stale request locks Apply until close and reopen",
+    "stale API reason retained in visible bilingual error",
+    "stale form never overwrites concurrent range",
+    "real Chrome touch gesture maps portrait source pixels",
+    "keyboard arrow increments one source pixel",
+    "registration defines identical manual and AI inspection scope",
+    "registration preview shows full root and selected rectangle",
+    "case freezes actual region scope snapshot",
+    "saved case shows root bounds before trial",
+    "manual sees exact same crop input later sent to AI",
+    "registered draft case rejects scope edits with actionable error",
+    "frozen case error does not auto retry or change range",
+    "running manual phase retains same frozen crop and full source",
+    "actual FakeAnalyzer check bound to exact manual crop view",
+    "scope disclosure does not reveal sealed truth",
+    "1440px frozen-scope study has no page overflow",
+    "390px frozen-scope study has no page overflow",
+    "320px frozen-scope study has no page overflow",
+    "1440px workbench no page overflow",
+    "1440px scope dialog has no internal horizontal overflow",
+    "Chinese selector displays explicit completeness declaration",
+    "390px workbench no page overflow",
+    "390px scope dialog has no internal horizontal overflow",
+    "Chinese selector displays explicit completeness declaration",
+    "320px workbench no page overflow",
+    "320px scope dialog has no internal horizontal overflow",
+    "Chinese selector displays explicit completeness declaration",
+    "actual closed API JSON exported with frozen scope",
+    "adversarial order title never executes HTML",
+    "no Chrome JavaScript errors",
+    "browser makes zero external requests"
+  ],
+  "errors": [],
+  "order_id": "ord_607a3abeab4848cd9cc2",
+  "portrait_order_id": "ord_f4f3699cdbd746cbafb3",
+  "study_id": "study_2ebadbda2cf54b3d8b49",
+  "apiPosts": [
+    {
+      "url": "http://127.0.0.1:8790/api/orders/ord_607a3abeab4848cd9cc2/inspection-region",
+      "body": "{\"expected_revision\":1,\"expected_photo_id\":\"img_9819828d33634a4e832e\",\"expected_evidence_epoch\":1,\"root_photo_id\":\"img_9819828d33634a4e832e\",\"mode\":\"region\",\"region_xyxy\":[100,100,800,500],\"confirmed_all_items_inside\":true}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/orders/ord_607a3abeab4848cd9cc2/inspection-region",
+      "body": "{\"expected_revision\":1,\"expected_photo_id\":\"img_77ab0064f49e473ab636\",\"expected_evidence_epoch\":2,\"root_photo_id\":\"img_9819828d33634a4e832e\",\"mode\":\"region\",\"region_xyxy\":[99,119,601,481],\"confirmed_all_items_inside\":true}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/orders/ord_607a3abeab4848cd9cc2/inspection-region",
+      "body": "{\"expected_revision\":1,\"expected_photo_id\":\"img_c617a7e8fa1246e7b8df\",\"expected_evidence_epoch\":3,\"root_photo_id\":\"img_9819828d33634a4e832e\",\"mode\":\"whole_image\",\"region_xyxy\":null,\"confirmed_all_items_inside\":true}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/orders/ord_607a3abeab4848cd9cc2/inspection-region",
+      "body": "{\"expected_revision\":1,\"expected_photo_id\":\"img_e6b3715453c24938b981\",\"expected_evidence_epoch\":4,\"root_photo_id\":\"img_9819828d33634a4e832e\",\"mode\":\"region\",\"region_xyxy\":[30,40,700,500],\"confirmed_all_items_inside\":true}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/studies/study_2ebadbda2cf54b3d8b49/cases",
+      "body": "{\"label\":\"ENGINEERING crop case\",\"order_id\":\"ord_56081f8d1218489f9a8f\",\"expected_revision\":1,\"photo_id\":\"img_b6622172d29f4fc48d4c\",\"truth\":{\"bolt\":2,\"nut\":2,\"washer\":2,\"bracket\":1},\"truth_repeat\":{\"bolt\":2,\"nut\":2,\"washer\":2,\"bracket\":1},\"confirmed_independent\":true,\"source_note\":\"Synthetic drawn rectangles, no real parts.\"}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/studies/study_2ebadbda2cf54b3d8b49/freeze",
+      "body": "{\"confirmed\":true}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/studies/study_2ebadbda2cf54b3d8b49/cases/case_f4a01d3d22af48a097a2/start",
+      "body": "{\"method\":\"manual\"}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/studies/study_2ebadbda2cf54b3d8b49/trials/trial_add25397e406487e894e/finish",
+      "body": "{\"outcome\":\"completed\",\"manual_counts\":{\"bolt\":2,\"nut\":2,\"washer\":2,\"bracket\":1}}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/studies/study_2ebadbda2cf54b3d8b49/cases/case_f4a01d3d22af48a097a2/start",
+      "body": "{\"method\":\"kitguard\"}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/orders/ord_56081f8d1218489f9a8f/inspect",
+      "body": "{\"photo_id\":\"img_b6622172d29f4fc48d4c\",\"expected_revision\":1}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/studies/study_2ebadbda2cf54b3d8b49/trials/trial_6d2c7894c2c7460db3cc/finish",
+      "body": "{\"outcome\":\"completed\",\"check_id\":\"chk_4e1a0687c0984fa3aecc\"}"
+    },
+    {
+      "url": "http://127.0.0.1:8790/api/studies/study_2ebadbda2cf54b3d8b49/close",
+      "body": "{\"confirmed\":true}"
+    }
+  ],
+  "scope": "Synthetic engineering fixtures and injected FakeAnalyzer only. No GPU, real people, field trials, new accuracy claims, production DB or old delivery edits.",
+  "source_sha256": {
+    "index.html": "c1808a4e360a1a412865d6228dc473398f28e2ee5664691531e4a0afdc2b2265",
+    "app.js": "e48c3a9929731deb89e4d6effca3bb573ada2f834e6ef5e079e9187bebd1d35f",
+    "region.js": "307907a31bf61aea26ea1cf199a31f71a27de0f1a770cd32936205b7ed3722cc",
+    "region.css": "4c9bbf5a85c4e7bb982f90c7cc0f7dc73c100679ee4ab23ee50fbc40516742b2",
+    "study.html": "1fe3499b8b77406169340cb6d2699f7a152b6f6037e0dd06beefdca6939e4d94",
+    "study.js": "0339f1a958e98bbc73a88981c09368c7c8d74fc6f1210758b29e0ba59590ac25"
+  }
+}

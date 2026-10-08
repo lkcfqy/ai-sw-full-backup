@@ -1,0 +1,202 @@
+{
+  "checked_at": "2026-10-01T01:16:31.515041+09:00",
+  "wheel": "/Users/lkc/Downloads/AI·SW/kitguard/output/dev-v0.6.0.dev2/kitguard-0.6.0.dev2-py3-none-any.whl",
+  "wheel_sha256": "abac5e67eb4b610a30859793b8121097f9bff6a52e477bb6f15b55a6850cd85c",
+  "wheel_bytes": 250629,
+  "version": "0.6.0.dev2",
+  "zip_integrity": "passed",
+  "record_hashes_and_sizes": "passed",
+  "source_unchanged_since_snapshot": true,
+  "package_files_exact_match": 52,
+  "static_file_count": 26,
+  "included_files": [
+    "kitguard/__init__.py",
+    "kitguard/app.py",
+    "kitguard/consensus.py",
+    "kitguard/detector_lab.py",
+    "kitguard/detector_worker.py",
+    "kitguard/evaluation.py",
+    "kitguard/evidence.py",
+    "kitguard/feedback.py",
+    "kitguard/field_api.py",
+    "kitguard/field_archive.py",
+    "kitguard/field_study.py",
+    "kitguard/identity.py",
+    "kitguard/inspection_jobs.py",
+    "kitguard/instructions.py",
+    "kitguard/manual_review.py",
+    "kitguard/models.py",
+    "kitguard/public_demo_catalog.py",
+    "kitguard/readiness.py",
+    "kitguard/regions.py",
+    "kitguard/runtime.py",
+    "kitguard/schemas.py",
+    "kitguard/spatial.py",
+    "kitguard/static/app.js",
+    "kitguard/static/audit.js",
+    "kitguard/static/camera.js",
+    "kitguard/static/demo.css",
+    "kitguard/static/demo.html",
+    "kitguard/static/demo.js",
+    "kitguard/static/detector.css",
+    "kitguard/static/detector.html",
+    "kitguard/static/detector.js",
+    "kitguard/static/favicon.svg",
+    "kitguard/static/index.html",
+    "kitguard/static/readiness.css",
+    "kitguard/static/readiness.html",
+    "kitguard/static/readiness.js",
+    "kitguard/static/region.css",
+    "kitguard/static/region.js",
+    "kitguard/static/spatial.js",
+    "kitguard/static/study.css",
+    "kitguard/static/study.html",
+    "kitguard/static/study.js",
+    "kitguard/static/styles.css",
+    "kitguard/static/trials.css",
+    "kitguard/static/trials.html",
+    "kitguard/static/trials.js",
+    "kitguard/static/workflow.css",
+    "kitguard/static/workflow.js",
+    "kitguard/store.py",
+    "kitguard/task_trial_api.py",
+    "kitguard/task_trials.py",
+    "kitguard/vision.py"
+  ],
+  "new_required_files": [
+    "kitguard/inspection_jobs.py",
+    "kitguard/manual_review.py",
+    "kitguard/readiness.py",
+    "kitguard/static/readiness.css",
+    "kitguard/static/readiness.html",
+    "kitguard/static/readiness.js",
+    "kitguard/static/trials.css",
+    "kitguard/static/trials.html",
+    "kitguard/static/trials.js",
+    "kitguard/static/workflow.css",
+    "kitguard/static/workflow.js",
+    "kitguard/task_trial_api.py",
+    "kitguard/task_trials.py"
+  ],
+  "weights_databases_datasets_or_cache_included": false,
+  "requires_python": "<3.14,>=3.11",
+  "extras": [
+    "detector",
+    "local",
+    "dev"
+  ],
+  "requires_dist": [
+    "fastapi<1,>=0.115",
+    "uvicorn<1,>=0.34",
+    "python-multipart>=0.0.20",
+    "pillow<13,>=11",
+    "pydantic<3,>=2.10",
+    "torch<2.15,>=2.14; extra == \"detector\"",
+    "torchvision<0.30,>=0.29; extra == \"detector\"",
+    "mlx-vlm<0.8,>=0.7.3; extra == \"local\"",
+    "huggingface-hub>=0.34; extra == \"local\"",
+    "safetensors>=0.6; extra == \"local\"",
+    "torch<3,>=2.8; extra == \"local\"",
+    "torchvision<1,>=0.23; extra == \"local\"",
+    "pytest<10,>=8; extra == \"dev\"",
+    "httpx<1,>=0.28; extra == \"dev\"",
+    "ruff>=0.12; extra == \"dev\""
+  ],
+  "runtime": {
+    "imported_from": "/Users/lkc/Downloads/AI·SW/kitguard/output/dev-v0.6.0.dev2/verification/extracted-wheel/kitguard/__init__.py",
+    "version": "0.6.0.dev2",
+    "http_200_and_exact_static_bytes": {
+      "/api/health": 200,
+      "/static/app.js": 200,
+      "/static/audit.js": 200,
+      "/static/camera.js": 200,
+      "/static/demo.css": 200,
+      "/static/demo.html": 200,
+      "/static/demo.js": 200,
+      "/static/detector.css": 200,
+      "/static/detector.html": 200,
+      "/static/detector.js": 200,
+      "/static/favicon.svg": 200,
+      "/static/index.html": 200,
+      "/static/readiness.css": 200,
+      "/static/readiness.html": 200,
+      "/static/readiness.js": 200,
+      "/static/region.css": 200,
+      "/static/region.js": 200,
+      "/static/spatial.js": 200,
+      "/static/study.css": 200,
+      "/static/study.html": 200,
+      "/static/study.js": 200,
+      "/static/styles.css": 200,
+      "/static/trials.css": 200,
+      "/static/trials.html": 200,
+      "/static/trials.js": 200,
+      "/static/workflow.css": 200,
+      "/static/workflow.js": 200,
+      "/api/readiness?mode=main": 200,
+      "/api/readiness?mode=detector": 200,
+      "/api/readiness?mode=all": 200,
+      "/api/readiness?mode=detector&download=true": 200,
+      "/api/detector-lab/status": 200
+    },
+    "readiness_scopes": {
+      "main": {
+        "ready": false,
+        "scopes": {
+          "main": {
+            "checked": true,
+            "ready": false
+          },
+          "detector": {
+            "checked": false,
+            "ready": null
+          }
+        }
+      },
+      "detector": {
+        "ready": false,
+        "scopes": {
+          "main": {
+            "checked": false,
+            "ready": null
+          },
+          "detector": {
+            "checked": true,
+            "ready": false
+          }
+        }
+      },
+      "all": {
+        "ready": false,
+        "scopes": {
+          "main": {
+            "checked": true,
+            "ready": false
+          },
+          "detector": {
+            "checked": true,
+            "ready": false
+          }
+        }
+      }
+    },
+    "task_trials_route_validation": "passed",
+    "inspection_jobs_route_validation": "passed",
+    "manual_review_route_validation": "passed",
+    "orders_created": 0,
+    "torch_imported": false,
+    "mlx_imported": false,
+    "model_inference_executed": false
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.14",
+  "build_method": "existing setuptools.build_meta.build_wheel; isolated source snapshot; no installation/download",
+  "limitations": [
+    "Existing virtualenv dependencies are reused; not a clean-machine dependency installation.",
+    "Wheel was independently unpacked and imported with Python -I and an explicit extracted-package path.",
+    "No trained model is loaded and no inference, GPU or CUDA-environment validation is performed.",
+    "Synthetic/disabled status providers only; no physical users or accuracy evidence.",
+    "Browser rendering and interactions are verified separately by the root agent.",
+    "Wheel excludes datasets, model weights, source-only launchers, training scripts and documentation."
+  ]
+}

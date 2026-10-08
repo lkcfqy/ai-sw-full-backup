@@ -1,0 +1,694 @@
+{
+  "schema_version": 1,
+  "name": "KitGuard OWLv2 target-blind CPU development probe v1",
+  "created_at_utc": "2026-09-26T11:58:50.726985+00:00",
+  "status": "fixed_before_first_OWLv2_inference",
+  "model": {
+    "repo_id": "google/owlv2-base-patch16-ensemble",
+    "revision": "cfd3195ba4ea9592eec887ded089f4c08eff231d",
+    "safetensors_sha256": "e1e130b9e404cf91a75ad45644c1da9d7fa5284085eecc864266a6923efb99e7",
+    "device": "cpu",
+    "dtype": "float32",
+    "torch_threads": 4,
+    "interop_threads": 1
+  },
+  "queries": [
+    {
+      "part": "bolt",
+      "text": "a photo of a metal screw or bolt"
+    },
+    {
+      "part": "nut",
+      "text": "a photo of a metal hex nut"
+    },
+    {
+      "part": "washer",
+      "text": "a photo of a metal washer"
+    },
+    {
+      "part": "bracket",
+      "text": "a photo of an L-shaped metal bracket"
+    }
+  ],
+  "postprocess": {
+    "score_threshold": 0.1,
+    "threshold_comparison": ">",
+    "class_rule": "one highest-logit query per raw predicted box; first query index wins exact tie",
+    "nms_iou_threshold": 0.5,
+    "nms_rule": "same-class greedy descending score; raw box index breaks ties; suppress if IoU > threshold; no cross-class suppression",
+    "boxes": "official processor scales to input JPEG pixel coordinates, then clips to image; zero-area boxes rejected and recorded",
+    "count_rule": "Count post-NMS boxes per class; no clamp, target fitting, or correction; zero detections is detector zero, not verified absence"
+  },
+  "input_pipeline": "Reuse SHA-verified JPEGs from actual app-upload runs; no new image selection or Qwen-output conditioning; OWLv2 pinned processor performs its own default transform",
+  "raw_recording": "Save raw model logits/pred_boxes/objectness NPZ, thresholded pre-NMS and post-NMS boxes, input JPEG SHA, actual pixel_values tensor SHA/dtype/shape, per-case end-to-end CPU latency",
+  "localization": {
+    "loco": "No instance-box truth; no mAP or localization accuracy claim",
+    "screws": "Fixed IoU >=0.5, same-class greedy prediction-score order, one-to-one matching against AABBs enclosing original author oriented boxes after exact crop translation; report TP/FP/FN and precision/recall, not mAP"
+  },
+  "evaluation": {
+    "count_metrics": [
+      "four-class exact count per image / all planned cases",
+      "per-class exact count / all planned cases",
+      "per-class absolute error on successful inference only plus success denominator",
+      "inference/parse errors retained in planned denominator"
+    ],
+    "usage": "heterogeneous shadow diagnosis only, no ready decisions, no automatic count corrections",
+    "single_case_over_60_seconds": "Save completed row then pause before next case; parent notified; resume requires explicit --resume-slow flag"
+  },
+  "limitations": [
+    "Development only; thresholds not selected on model outcomes in this run. Later changes require new protocol/version.",
+    "All four queries fixed for every photograph; no BOM, target counts, first-model list or ground-truth input to detector.",
+    "Same-class NMS can merge adjacent instances and cross-class duplicate boxes may remain.",
+    "Detector scores are not calibrated reliability probabilities. Agreement with Qwen is not independent truth.",
+    "No bracket-positive data here; Screws has no washer-positive data.",
+    "LOCO constant-normal composition and acquisition domains limit external validity."
+  ],
+  "groups": [
+    {
+      "dataset": "loco",
+      "source_run": "loco_development_release_v1",
+      "source_manifest_sha256": "3166a331b981635170794dbef4989ed7294a54f89fd56e1aeac4993163700cfb",
+      "cases": [
+        {
+          "id": "mvtec-loco-screw_bag-train-good-016",
+          "source_id": "mvtec-loco-ad:screw_bag/train/good/016",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/train/good/016.png",
+          "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/001.jpg",
+          "input_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "normal_constant_222",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-test-logical_anomalies-043",
+          "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/043",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/043.png",
+          "source_sha256": "d75d49ef64bef5e899e72f47ad597d5999095739bda2d260ea77c72bc266adb6",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/002.jpg",
+          "input_sha256": "e0c189a9ef6c86a9ace2eee1258d1e3c7fb357d731a9349242ab7841fadd1caa",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 3,
+            "bracket": 0
+          },
+          "subgroup": "quantity_anomaly",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-train-good-046",
+          "source_id": "mvtec-loco-ad:screw_bag/train/good/046",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/train/good/046.png",
+          "source_sha256": "fa6c5ed0a7a8278870056984baa8379831e75e7be2653c01c712bce36e8f4a91",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/003.jpg",
+          "input_sha256": "e4c096121fca169a305070f5edad987dcc344b823ae817609333b163224ce62f",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "normal_constant_222",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-test-logical_anomalies-062",
+          "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/062",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/062.png",
+          "source_sha256": "df066e5c5aaa8065744e2f41d501c37ca96cb87690ad839e6db8abe8a9543559",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/004.jpg",
+          "input_sha256": "9add697b6eb0f987c020e3a676894aded42ad701e7163e29f0e8c3f9dfa6d553",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 3,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "quantity_anomaly",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-train-good-031",
+          "source_id": "mvtec-loco-ad:screw_bag/train/good/031",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/train/good/031.png",
+          "source_sha256": "687969fb4f0383ae99071ff1a8865e3aaf22907987998a45577d68456ab795e3",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/005.jpg",
+          "input_sha256": "024c39dc30433b7f3b3d524c4063e21ca51a3cc4657d13321fb4f26142b30abe",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "normal_constant_222",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-test-logical_anomalies-082",
+          "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/082",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/082.png",
+          "source_sha256": "74195ad6264dd86289a249f272249352c80412193948e06940fa85a91fc39ff4",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/006.jpg",
+          "input_sha256": "ee57a8f5f12d131a4f538823c157e0febebfee054759a40c5e15c5896683ced5",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 1,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "quantity_anomaly",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-train-good-312",
+          "source_id": "mvtec-loco-ad:screw_bag/train/good/312",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/train/good/312.png",
+          "source_sha256": "8370101e1875ef2598cf2bd8e6ed803634bb010eb3cbd807406c2c289f3576b2",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/007.jpg",
+          "input_sha256": "5967c1f31466accbeb246cf800dd684df809d2f7c880a4ef707ff9571f81e7a3",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "normal_constant_222",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-test-logical_anomalies-072",
+          "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/072",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/072.png",
+          "source_sha256": "85c813797d1285f51145e5a5161ffa6fe9939e5a0e92361e879e010d703a03d4",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/008.jpg",
+          "input_sha256": "8ac931e495062e05faa56f1baabd5fd0422b71f06067e7759a2b25951351a243",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 1,
+            "bracket": 0
+          },
+          "subgroup": "quantity_anomaly",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-train-good-265",
+          "source_id": "mvtec-loco-ad:screw_bag/train/good/265",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/train/good/265.png",
+          "source_sha256": "43c6666b43292b85751dd02b047b09942e62998c8c7d275e2dd911a5bbe25afe",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/009.jpg",
+          "input_sha256": "57e76fd891da18570af36068b8edd1a012bd298875aa467b10d235202289fd68",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "normal_constant_222",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-test-logical_anomalies-050",
+          "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/050",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/050.png",
+          "source_sha256": "21e5db21ba176fbf097fec035262e149c0ad5cd42bd8e0539e593ffc9db49d70",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/010.jpg",
+          "input_sha256": "65e547e1135176404f533485382debb07d79e3dc6c953d0acd7a767e53c70aa6",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 3,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "quantity_anomaly",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-train-good-057",
+          "source_id": "mvtec-loco-ad:screw_bag/train/good/057",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/train/good/057.png",
+          "source_sha256": "525a366f58623a4e100dbd04387c9c8ddeac39b025fd6545ed2cb94dd3791f88",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/011.jpg",
+          "input_sha256": "d0ad0c8f26694ea8fce5e1a53b9751687d6e1f1bd55e8d6d2488dae7ae5d4c62",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "normal_constant_222",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-test-logical_anomalies-065",
+          "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/065",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/065.png",
+          "source_sha256": "2aa4c5be7b529b768aa64c40cbcdbede6743eb98cd5db8ca5780c72c89429c99",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/012.jpg",
+          "input_sha256": "c400f43f796035a05d5c7e465316f9d2ef2176df5a68001ba522268e1d008d78",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 1,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "quantity_anomaly",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-train-good-250",
+          "source_id": "mvtec-loco-ad:screw_bag/train/good/250",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/train/good/250.png",
+          "source_sha256": "9e80a32e38e2ceea904993d2021f97656b457f1215c9763d7730984eed944d9c",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/013.jpg",
+          "input_sha256": "e12f7bb8512bae304ede3118160f54e25da5f1ac7ab7d88330667d7cf425aa6f",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "normal_constant_222",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-test-logical_anomalies-087",
+          "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/087",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/087.png",
+          "source_sha256": "c0939c7f1ef9b6d9ac56dbe783e169ca5487f612769e4e20499831527f994f0c",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/014.jpg",
+          "input_sha256": "816982d5462c4f5dd0fe2d2abfbe5485858c0035399fbf905ae252a31c1cbc8f",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 1,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "quantity_anomaly",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-train-good-257",
+          "source_id": "mvtec-loco-ad:screw_bag/train/good/257",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/train/good/257.png",
+          "source_sha256": "7c503df207c4457d753e5ff7c4a11d874f60a6139e814449d1e6d42d46556283",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/015.jpg",
+          "input_sha256": "86e0cc2273d4f0e60a3098ad472577a86a754a55d80e0e601fa9a3be1c78f4f1",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "normal_constant_222",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        },
+        {
+          "id": "mvtec-loco-screw_bag-test-logical_anomalies-061",
+          "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/061",
+          "source_image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/061.png",
+          "source_sha256": "5e48824d4503dc0edb2ad0553cf0f9b1bc3d19edbeb0d379e75e28ddce9ff820",
+          "input_jpeg": "evaluation-runs/loco_development_release_v1/normalized_inputs/016.jpg",
+          "input_sha256": "595dc37b4c925bc5765a6486d0300ba76cc0fb4825df4b49d4182dc885f20b69",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 3,
+            "washer": 2,
+            "bracket": 0
+          },
+          "subgroup": "quantity_anomaly",
+          "included_annotation_ids": [],
+          "crop_xyxy": null
+        }
+      ]
+    },
+    {
+      "dataset": "screws",
+      "source_run": "v03_screws_development_v1",
+      "source_manifest_sha256": "af14bc3b1073eb34909484ad05d51266dccb6990c413224f445c98a1ed2b069b",
+      "cases": [
+        {
+          "id": "v03-screws-screws_119-30f6a97bb066",
+          "source_id": "mvtec-screws:screws_119.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_119-30f6a97bb066.png",
+          "source_sha256": "7242d8ed6681f146d9f4b6d008edec4cf1e664fac3da1a1c12836371cb2052fe",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/001.jpg",
+          "input_sha256": "70e9ec96067d85515bfc6cf6b30a0bdc8830c875d4eb1b8dec6f04e295da4c58",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 0,
+            "nut": 1,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            119001
+          ],
+          "crop_xyxy": [
+            896,
+            720,
+            1856,
+            1440
+          ]
+        },
+        {
+          "id": "v03-screws-screws_222-56eea59f64ca",
+          "source_id": "mvtec-screws:screws_222.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_222-56eea59f64ca.png",
+          "source_sha256": "9aba8a284f2492dc78014a886b5091c7fa93f10485f9b4fab6e5ccfbaafedddd",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/002.jpg",
+          "input_sha256": "27484392fc9508316051c759e797cc9047aa44c755e59394fa1661013a156662",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 1,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            222003,
+            222004,
+            222007
+          ],
+          "crop_xyxy": [
+            320,
+            768,
+            1088,
+            1344
+          ]
+        },
+        {
+          "id": "v03-screws-screws_036-51d4ef71f334",
+          "source_id": "mvtec-screws:screws_036.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_036-51d4ef71f334.png",
+          "source_sha256": "3738a7947c696b56541bf2fae4f182ac4d034a63d1fcaf71b8d919af7b550cca",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/003.jpg",
+          "input_sha256": "9f0f20895e347623f511f20477076766e368edb1f58d1f6b75391506399863c9",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 1,
+            "nut": 0,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            36009
+          ],
+          "crop_xyxy": [
+            960,
+            720,
+            1920,
+            1440
+          ]
+        },
+        {
+          "id": "v03-screws-screws_344-8d389e404b12",
+          "source_id": "mvtec-screws:screws_344.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_344-8d389e404b12.png",
+          "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/004.jpg",
+          "input_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 3,
+            "nut": 0,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            344001,
+            344006,
+            344010
+          ],
+          "crop_xyxy": [
+            832,
+            832,
+            1600,
+            1408
+          ]
+        },
+        {
+          "id": "v03-screws-screws_236-c613f45ce5e0",
+          "source_id": "mvtec-screws:screws_236.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_236-c613f45ce5e0.png",
+          "source_sha256": "3f4e890ed2c62734e02a5fab1da6f180934fb58c6832fb1efff9ed73a3f08ca3",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/005.jpg",
+          "input_sha256": "20b234918cf3c4671269ee61495fc8e8eead32b7717119350d0443d8e5369af8",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            236003,
+            236005,
+            236007,
+            236008
+          ],
+          "crop_xyxy": [
+            0,
+            448,
+            1152,
+            1312
+          ]
+        },
+        {
+          "id": "v03-screws-screws_237-3ee8661c3f6f",
+          "source_id": "mvtec-screws:screws_237.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_237-3ee8661c3f6f.png",
+          "source_sha256": "7042581b3eb7769cfdb1d3699352e1d54a603768f3da3af13479493b12dbf30b",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/006.jpg",
+          "input_sha256": "e213469b052dd2e0c018ec410e11358a51e5017275d81bb0c5b980121a9c352b",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 1,
+            "nut": 3,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            237002,
+            237005,
+            237006,
+            237007
+          ],
+          "crop_xyxy": [
+            192,
+            0,
+            1152,
+            720
+          ]
+        },
+        {
+          "id": "v03-screws-screws_251-5c517b370789",
+          "source_id": "mvtec-screws:screws_251.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_251-5c517b370789.png",
+          "source_sha256": "6a6fe5a2ce5a590c5c20d40055e82b565c995a6f7ac93225dc28cb9686f0186d",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/007.jpg",
+          "input_sha256": "ac2461c0296ecde2cf57e5d2ff9a6d267f6b3654062bbe707ae7e66269f2390f",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 0,
+            "nut": 2,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            251004,
+            251008
+          ],
+          "crop_xyxy": [
+            1152,
+            128,
+            1920,
+            704
+          ]
+        },
+        {
+          "id": "v03-screws-screws_248-797bd83da25c",
+          "source_id": "mvtec-screws:screws_248.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_248-797bd83da25c.png",
+          "source_sha256": "c1149338111b38a44a13c21467db61fd22b3f64647f2ce3d137d7d0ed03d2c39",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/008.jpg",
+          "input_sha256": "948a2e49d792c95b557ae2facd0e30a2293ea5db9fb4db108861ed22a0b27330",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 3,
+            "nut": 2,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            248002,
+            248003,
+            248007,
+            248008,
+            248009
+          ],
+          "crop_xyxy": [
+            480,
+            0,
+            1920,
+            1080
+          ]
+        },
+        {
+          "id": "v03-screws-screws_038-1c05ace1cd60",
+          "source_id": "mvtec-screws:screws_038.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_038-1c05ace1cd60.png",
+          "source_sha256": "ee6ce07c73cf40ca7f80e9e3cc30aa591f9fcd5d4914f3c796afa0f81352b4f7",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/009.jpg",
+          "input_sha256": "0dd4fec2d01ecb7154afe8b60562ee85198400af2aac93748a400aa7c2fb669c",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 1,
+            "nut": 1,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            38006,
+            38010
+          ],
+          "crop_xyxy": [
+            0,
+            832,
+            768,
+            1408
+          ]
+        },
+        {
+          "id": "v03-screws-screws_308-b80a15fbc0a6",
+          "source_id": "mvtec-screws:screws_308.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_308-b80a15fbc0a6.png",
+          "source_sha256": "e3c3aa687fdf86aee5025089d2915397aebe187b8f2b2577548ec1c44d9d315c",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/010.jpg",
+          "input_sha256": "aff9d4d6e553e8ba593954d8f0f90d084d4b998b158e1a9303d0aeb8bfd404db",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 2,
+            "nut": 0,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            308001,
+            308006
+          ],
+          "crop_xyxy": [
+            0,
+            576,
+            960,
+            1296
+          ]
+        },
+        {
+          "id": "v03-screws-screws_234-15ed94910b55",
+          "source_id": "mvtec-screws:screws_234.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_234-15ed94910b55.png",
+          "source_sha256": "1e4923e6d2091958765f7319631f46986d3572bff661a9e030a8e989456fa322",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/011.jpg",
+          "input_sha256": "95bc9a1913bb6d07997f2d848551b41513a2fc1b4041503e77ed1852f10a9f43",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 1,
+            "nut": 2,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            234001,
+            234004,
+            234009
+          ],
+          "crop_xyxy": [
+            512,
+            720,
+            1472,
+            1440
+          ]
+        },
+        {
+          "id": "v03-screws-screws_122-2e63c6dbddd2",
+          "source_id": "mvtec-screws:screws_122.png",
+          "source_image": "derived/v0.3/screws_views/v03-screws-screws_122-2e63c6dbddd2.png",
+          "source_sha256": "255e33f634a6036fdd303ab0b4d3ebf00134a7c37fe668f2348ee6cfbb13e138",
+          "input_jpeg": "evaluation-runs/v03_screws_development_v1/normalized_inputs/012.jpg",
+          "input_sha256": "a2fcdc1d3fa813bbe08fff7393fbf1b08b74d087c2bf478a3d10564a1d5bd2ce",
+          "split": "development",
+          "ground_truth": {
+            "bolt": 3,
+            "nut": 3,
+            "washer": 0,
+            "bracket": 0
+          },
+          "subgroup": "screws_author_safe_crop",
+          "included_annotation_ids": [
+            122001,
+            122002,
+            122003,
+            122007,
+            122008,
+            122009
+          ],
+          "crop_xyxy": [
+            480,
+            360,
+            1920,
+            1440
+          ]
+        }
+      ]
+    }
+  ]
+}

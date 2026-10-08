@@ -1,0 +1,25 @@
+{
+  "decided_at": "2026-10-01T21:18:47.300857+00:00",
+  "decision": "include selective_identity_experimental_v1 as third arm; production remains spatial_guarded",
+  "evidence": "evaluation-runs/v07_selective_identity_development28_v1",
+  "outcomes": {
+    "C": 25,
+    "W": 0,
+    "U": 3,
+    "E": 0
+  },
+  "historical_guarded_development_outcomes": {
+    "C": 24,
+    "W": 0,
+    "U": 4,
+    "E": 0
+  },
+  "gates": "28 complete; provenance/raw/source audit passes; W/E=0; C>=24; no historical cross-pipeline speed claim",
+  "audit": "test-results/v0.7/development28-audit-v1.json",
+  "before_new51_inference": true,
+  "hashes": {
+    "run.json": "be01d16ba70a4a1f1d9537b7fea35b79694d0f9d708d972fd88dc984b5449322",
+    "predictions.jsonl": "56c4e743d799e2b83c82caf782b94b7e42ed2a3aefb4a833e4af1c5e69a38b17",
+    "protocol.json": "64f27f7473140d7696bc36b491c4b1aa361452ff9acd3ae575678d4a5b8397f1"
+  }
+}

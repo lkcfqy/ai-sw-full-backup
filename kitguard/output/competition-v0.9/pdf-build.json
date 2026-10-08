@@ -1,0 +1,44 @@
+{
+  "documents": [
+    {
+      "path": "KitGuard_report_5p.pdf",
+      "pages": 5,
+      "sha256": "47f59f8f401640b1f3e19fe1dd1d5768dbfb3b5bb3ce43d332870b1823e2b5ce",
+      "layout": [
+        {
+          "page": 1,
+          "bottom": 171.09776377952767
+        },
+        {
+          "page": 2,
+          "bottom": 183.3777637795277
+        },
+        {
+          "page": 3,
+          "bottom": 255.55376377952763
+        },
+        {
+          "page": 4,
+          "bottom": 224.1297637795277
+        },
+        {
+          "page": 5,
+          "bottom": 210.4617637795277
+        }
+      ]
+    },
+    {
+      "path": "KitGuard_agent_1p.pdf",
+      "pages": 1,
+      "sha256": "c5aeeaebb02426b4e6d596df5748518fc5123e4c211d09a54ecf4d28ae4736cd",
+      "layout": [
+        {
+          "page": 1,
+          "bottom": 197.08976377952766
+        }
+      ]
+    }
+  ],
+  "builder_sha256": "2b80e174a11689a936e9a27c820f0cd80c7cb08f1ced3e25e377c66ce345482c",
+  "visual_qa": "passed: every final page/slide/scene rendered and inspected"
+}

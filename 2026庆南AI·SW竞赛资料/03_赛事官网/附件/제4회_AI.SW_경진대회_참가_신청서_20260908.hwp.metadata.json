@@ -1,0 +1,17 @@
+{
+  "url": "https://contest.gnict.org/bbs/download.php?bo_table=notice&wr_id=1&no=1&nonce=b9039df01a54c14fca08%7C1790242547%7C8c17f829f4d564b67d6f997d5be3afe0666b72ce",
+  "path": "03_赛事官网/附件/제4회_AI.SW_경진대회_참가_신청서_20260908.hwp",
+  "source": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=1",
+  "kind": "attachment",
+  "cookie_jar": "/var/folders/57/my3v7tgs1mn9cxsptzl_jv6m0000gn/T/tmpr2gsxdks/cookies.txt",
+  "retrieved_at": "2026-09-24T16:35:47.998426+09:00",
+  "http_status": 200,
+  "final_url": "https://contest.gnict.org/bbs/download.php?bo_table=notice&wr_id=1&no=1&nonce=b9039df01a54c14fca08%7C1790242547%7C8c17f829f4d564b67d6f997d5be3afe0666b72ce",
+  "content_type": "file/unknown",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": "attachment; filename=\"%EC%A0%9C4%ED%9A%8C_AI.SW_%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C_%EC%B0%B8%EA%B0%80_%EC%8B%A0%EC%B2%AD%EC%84%9C_20260908.hwp\"",
+  "bytes": 80384,
+  "sha256": "4b262808bde99222b2947a3f6de9551e4bae9d36f6ba4e33be8c2452ebf6301b",
+  "magic_hex": "d0cf11e0a1b11ae10000000000000000"
+}

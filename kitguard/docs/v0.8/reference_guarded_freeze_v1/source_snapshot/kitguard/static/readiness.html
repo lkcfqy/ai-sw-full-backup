@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KitGuard · 시연 전 점검</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/readiness.css">
+  <script src="/static/readiness.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">본문으로 건너뛰기</a>
+  <header><a class="brand" href="/">KitGuard <span>/ DEMO CHECK</span></a>
+    <nav aria-label="Language"><button type="button" data-lang="ko" aria-pressed="true">한국어</button><button type="button" data-lang="zh" aria-pressed="false">中文</button></nav>
+  </header>
+  <main id="main">
+    <div class="intro"><p class="eyebrow">BEFORE THE DEMO</p><h1 data-i18n="title">시연 전에, 한 번 확인하세요.</h1>
+      <p data-i18n="intro">실행 중인 서버의 설정과 파일을 확인합니다. 주문을 바꾸거나 모델을 실행하지 않습니다.</p></div>
+    <section class="controls" aria-label="Check controls">
+      <div><label for="mode" data-i18n="scope">확인할 기능</label><select id="mode">
+        <option value="main" data-i18n="main">주문 작업대</option><option value="detector" data-i18n="detector">검출 실험</option><option value="all" data-i18n="all">둘 다</option>
+      </select></div>
+      <button type="button" id="check" class="primary" data-i18n="check">지금 확인하기</button>
+      <button type="button" id="download" disabled data-i18n="download">최신 점검 JSON 저장</button>
+    </section>
+    <section id="summary" class="summary" aria-live="polite" aria-atomic="true"><h2 id="summary-title">점검 대기</h2><p id="summary-text"></p><p id="checked-at" class="stamp"></p></section>
+    <p id="error" role="alert" hidden></p>
+    <div id="checks" class="checks"></div>
+    <aside class="limits"><h2 data-i18n="limitsTitle">이 점검의 범위</h2><p id="limits-text"></p><p data-i18n="snapshot">결과는 확인한 시점의 상태입니다. 모델을 실제로 실행할 수 있는지, 사진을 정확히 세는지는 별도 확인이 필요합니다.</p></aside>
+    <footer><a href="/" data-i18n="back">작업대로 돌아가기</a><a href="/static/detector.html" data-i18n="openDetector">검출 실험 열기</a></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,1517 @@
+{
+  "surface": "report",
+  "title": "KitGuard 自检与竞争力评估",
+  "generatedAt": "2026-09-26T13:28:25.637637+00:00",
+  "buildStatus": "complete",
+  "status": "observed",
+  "report": {
+    "asOf": "2026-09-26"
+  },
+  "filters": [],
+  "queries": {
+    "benchmark_runs": {
+      "rows": [
+        {
+          "run": "screws_development_baseline_v1",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "dataset": "MVTec Screws",
+          "label": "screws_development_baseline_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 1,
+          "accuracy": 0.0625,
+          "actionable": 0,
+          "wrongActionable": 0,
+          "errors": 0,
+          "medianMs": 5455.5,
+          "eligible": 0,
+          "matchedReady": 0,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 0,
+          "protocol": "single / 1024px / original",
+          "status": "completed",
+          "nominalNormalReady": null,
+          "nominalNormalTotal": null,
+          "nominalAnomalyFalseReady": null,
+          "nominalAnomalyCorrect": null,
+          "nominalAnomalyTotal": null,
+          "normalExact": null,
+          "normalImages": null,
+          "anomalyExact": null,
+          "anomalyImages": null,
+          "constantNominalExact": null,
+          "constantNominalImages": null,
+          "timingNote": "真实observe调用，包括当次冷加载；单次调用"
+        },
+        {
+          "run": "screws_development_v2",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "dataset": "MVTec Screws",
+          "label": "screws_development_v2",
+          "split": "development",
+          "images": 16,
+          "exact": 3,
+          "accuracy": 0.1875,
+          "actionable": 16,
+          "wrongActionable": 13,
+          "errors": 0,
+          "medianMs": 3123.5,
+          "eligible": 0,
+          "matchedReady": 0,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 0,
+          "protocol": "single / 1024px / original",
+          "status": "completed",
+          "nominalNormalReady": null,
+          "nominalNormalTotal": null,
+          "nominalAnomalyFalseReady": null,
+          "nominalAnomalyCorrect": null,
+          "nominalAnomalyTotal": null,
+          "normalExact": null,
+          "normalImages": null,
+          "anomalyExact": null,
+          "anomalyImages": null,
+          "constantNominalExact": null,
+          "constantNominalImages": null,
+          "timingNote": "真实observe调用，包括当次冷加载；单次调用"
+        },
+        {
+          "run": "loco_development_8b_v1",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_development_8b_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 9,
+          "accuracy": 0.5625,
+          "actionable": 16,
+          "wrongActionable": 7,
+          "errors": 0,
+          "medianMs": 3028.0,
+          "eligible": 16,
+          "matchedReady": 9,
+          "mismatchFalseReady": 1,
+          "mismatchCorrect": 9,
+          "protocol": "single / 1024px / original",
+          "status": "completed",
+          "nominalNormalReady": null,
+          "nominalNormalTotal": null,
+          "nominalAnomalyFalseReady": null,
+          "nominalAnomalyCorrect": null,
+          "nominalAnomalyTotal": null,
+          "normalExact": null,
+          "normalImages": null,
+          "anomalyExact": null,
+          "anomalyImages": null,
+          "constantNominalExact": null,
+          "constantNominalImages": null,
+          "timingNote": "真实observe调用，包括当次冷加载；单次调用"
+        },
+        {
+          "run": "loco_development_8b_dual_v1",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_development_8b_dual_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 7,
+          "accuracy": 0.4375,
+          "actionable": 7,
+          "wrongActionable": 0,
+          "errors": 0,
+          "medianMs": 6038.5,
+          "eligible": 16,
+          "matchedReady": 7,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 7,
+          "protocol": "dual_orientation / 1024px / original",
+          "status": "completed",
+          "nominalNormalReady": 3,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 4,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 3,
+          "normalImages": 8,
+          "anomalyExact": 4,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "真实observe调用，包括当次冷加载；双方向为两次同模型调用"
+        },
+        {
+          "run": "loco_development_8b_app_v1",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_development_8b_app_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 9,
+          "accuracy": 0.5625,
+          "actionable": 16,
+          "wrongActionable": 7,
+          "errors": 0,
+          "medianMs": 3058.0,
+          "eligible": 16,
+          "matchedReady": 9,
+          "mismatchFalseReady": 1,
+          "mismatchCorrect": 9,
+          "protocol": "single / 1024px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 5,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 3,
+          "nominalAnomalyCorrect": 4,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 5,
+          "normalImages": 8,
+          "anomalyExact": 4,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；单次调用"
+        },
+        {
+          "run": "loco_development_8b_app_dual_v1",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_development_8b_app_dual_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 7,
+          "accuracy": 0.4375,
+          "actionable": 8,
+          "wrongActionable": 1,
+          "errors": 0,
+          "medianMs": 6128.5,
+          "eligible": 16,
+          "matchedReady": 7,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 7,
+          "protocol": "dual_orientation / 1024px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 4,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 3,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 4,
+          "normalImages": 8,
+          "anomalyExact": 3,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；双方向为两次同模型调用"
+        },
+        {
+          "run": "loco_development_27b_app_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_development_27b_app_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 12,
+          "accuracy": 0.75,
+          "actionable": 16,
+          "wrongActionable": 4,
+          "errors": 0,
+          "medianMs": 6086.0,
+          "eligible": 16,
+          "matchedReady": 12,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 12,
+          "protocol": "single / 1024px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 7,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 1,
+          "nominalAnomalyCorrect": 5,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 7,
+          "normalImages": 8,
+          "anomalyExact": 5,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；单次调用"
+        },
+        {
+          "run": "loco_development_27b_app_1536_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_development_27b_app_1536_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 12,
+          "accuracy": 0.75,
+          "actionable": 16,
+          "wrongActionable": 4,
+          "errors": 0,
+          "medianMs": 8773.0,
+          "eligible": 16,
+          "matchedReady": 12,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 12,
+          "protocol": "single / 1536px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 6,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 6,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 6,
+          "normalImages": 8,
+          "anomalyExact": 6,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；单次调用"
+        },
+        {
+          "run": "loco_development_27b_spatial_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_development_27b_spatial_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 14,
+          "accuracy": 0.875,
+          "actionable": 16,
+          "wrongActionable": 2,
+          "errors": 0,
+          "medianMs": 12129.5,
+          "eligible": 16,
+          "matchedReady": 14,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 14,
+          "protocol": "spatial_inventory / 1024px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 7,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 1,
+          "nominalAnomalyCorrect": 7,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 7,
+          "normalImages": 8,
+          "anomalyExact": 7,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；单次调用"
+        },
+        {
+          "run": "loco_development_27b_spatial_1536_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_development_27b_spatial_1536_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 15,
+          "accuracy": 0.9375,
+          "actionable": 16,
+          "wrongActionable": 1,
+          "errors": 0,
+          "medianMs": 14959.5,
+          "eligible": 16,
+          "matchedReady": 15,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 15,
+          "protocol": "spatial_inventory / 1536px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 7,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 8,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 7,
+          "normalImages": 8,
+          "anomalyExact": 8,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；单次调用"
+        },
+        {
+          "run": "loco_development_release_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_development_release_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 15,
+          "accuracy": 0.9375,
+          "actionable": 16,
+          "wrongActionable": 1,
+          "errors": 0,
+          "medianMs": 14742.0,
+          "eligible": 16,
+          "matchedReady": 15,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 15,
+          "protocol": "spatial_inventory / 1536px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 7,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 8,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 7,
+          "normalImages": 8,
+          "anomalyExact": 8,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；单次调用"
+        },
+        {
+          "run": "loco_holdout_release_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_holdout_release_v1",
+          "split": "holdout",
+          "images": 48,
+          "exact": 46,
+          "accuracy": 0.9583333333333334,
+          "actionable": 48,
+          "wrongActionable": 2,
+          "errors": 0,
+          "medianMs": 14619.5,
+          "eligible": 48,
+          "matchedReady": 46,
+          "mismatchFalseReady": 1,
+          "mismatchCorrect": 46,
+          "protocol": "spatial_inventory / 1536px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 23,
+          "nominalNormalTotal": 24,
+          "nominalAnomalyFalseReady": 1,
+          "nominalAnomalyCorrect": 23,
+          "nominalAnomalyTotal": 24,
+          "normalExact": 23,
+          "normalImages": 24,
+          "anomalyExact": 23,
+          "anomalyImages": 24,
+          "constantNominalExact": 24,
+          "constantNominalImages": 48,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；单次调用"
+        },
+        {
+          "run": "loco_holdout_27b_single_control_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "loco_holdout_27b_single_control_v1",
+          "split": "holdout",
+          "images": 48,
+          "exact": 34,
+          "accuracy": 0.7083333333333334,
+          "actionable": 48,
+          "wrongActionable": 14,
+          "errors": 0,
+          "medianMs": 8990.5,
+          "eligible": 48,
+          "matchedReady": 34,
+          "mismatchFalseReady": 1,
+          "mismatchCorrect": 34,
+          "protocol": "single / 1536px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 17,
+          "nominalNormalTotal": 24,
+          "nominalAnomalyFalseReady": 2,
+          "nominalAnomalyCorrect": 17,
+          "nominalAnomalyTotal": 24,
+          "normalExact": 17,
+          "normalImages": 24,
+          "anomalyExact": 17,
+          "anomalyImages": 24,
+          "constantNominalExact": 24,
+          "constantNominalImages": 48,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；单次调用"
+        },
+        {
+          "run": "v03_consensus_development_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "v03_consensus_development_v1",
+          "split": "development",
+          "images": 16,
+          "exact": 14,
+          "accuracy": 0.875,
+          "actionable": 14,
+          "wrongActionable": 0,
+          "errors": 0,
+          "medianMs": 29338.5,
+          "eligible": 16,
+          "matchedReady": 14,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 14,
+          "protocol": "spatial_consensus / 1536px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 7,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 7,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 7,
+          "normalImages": 8,
+          "anomalyExact": 7,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；双方向为两次同模型调用"
+        },
+        {
+          "run": "v03_screws_development_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec Screws",
+          "label": "v03_screws_development_v1",
+          "split": "development",
+          "images": 12,
+          "exact": 10,
+          "accuracy": 0.8333333333333334,
+          "actionable": 12,
+          "wrongActionable": 2,
+          "errors": 0,
+          "medianMs": 15716.0,
+          "eligible": 12,
+          "matchedReady": 10,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 10,
+          "protocol": "spatial_consensus / 1536px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 0,
+          "nominalNormalTotal": 0,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 0,
+          "nominalAnomalyTotal": 0,
+          "normalExact": null,
+          "normalImages": null,
+          "anomalyExact": null,
+          "anomalyImages": null,
+          "constantNominalExact": 0,
+          "constantNominalImages": 0,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；双方向为两次同模型调用"
+        },
+        {
+          "run": "v03_screws_identity_probe_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec Screws",
+          "label": "v03_screws_identity_probe_v1 · 已存前两轮 + 新局部复核回放",
+          "split": "development",
+          "images": 12,
+          "exact": 10,
+          "accuracy": 0.8333333333333334,
+          "actionable": 11,
+          "wrongActionable": 1,
+          "errors": 0,
+          "medianMs": 22343.0,
+          "eligible": 12,
+          "matchedReady": 10,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 10,
+          "protocol": "experimental_identity_guard_v1 / 1536px / original",
+          "status": "completed",
+          "nominalNormalReady": 0,
+          "nominalNormalTotal": 0,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 0,
+          "nominalAnomalyTotal": 0,
+          "normalExact": null,
+          "normalImages": null,
+          "anomalyExact": null,
+          "anomalyImages": null,
+          "constantNominalExact": 0,
+          "constantNominalImages": 0,
+          "timingNote": "历史基础延迟 + 本轮新增身份核查；非集成端到端时间"
+        },
+        {
+          "run": "v03_screws_identity_geometry_v2",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec Screws",
+          "label": "v03_screws_identity_geometry_v2 · 已存前两轮 + 新局部复核回放",
+          "split": "development",
+          "images": 12,
+          "exact": 10,
+          "accuracy": 0.8333333333333334,
+          "actionable": 10,
+          "wrongActionable": 0,
+          "errors": 0,
+          "medianMs": 23602.5,
+          "eligible": 12,
+          "matchedReady": 10,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 10,
+          "protocol": "experimental_identity_geometry_v2 / 1536px / original",
+          "status": "completed",
+          "nominalNormalReady": 0,
+          "nominalNormalTotal": 0,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 0,
+          "nominalAnomalyTotal": 0,
+          "normalExact": null,
+          "normalImages": null,
+          "anomalyExact": null,
+          "anomalyImages": null,
+          "constantNominalExact": 0,
+          "constantNominalImages": 0,
+          "timingNote": "历史基础延迟 + 本轮新增身份核查；非集成端到端时间"
+        },
+        {
+          "run": "v03_loco_identity_geometry_v2",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag",
+          "label": "v03_loco_identity_geometry_v2 · 已存前两轮 + 新局部复核回放",
+          "split": "development",
+          "images": 16,
+          "exact": 14,
+          "accuracy": 0.875,
+          "actionable": 14,
+          "wrongActionable": 0,
+          "errors": 0,
+          "medianMs": 47391.0,
+          "eligible": 16,
+          "matchedReady": 14,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 14,
+          "protocol": "experimental_identity_geometry_v2 / 1536px / original",
+          "status": "completed",
+          "nominalNormalReady": 7,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 7,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 7,
+          "normalImages": 8,
+          "anomalyExact": 7,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "历史基础延迟 + 本轮新增身份核查；非集成端到端时间"
+        },
+        {
+          "run": "v03_guarded_integrated_development_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag + MVTec Screws",
+          "label": "v03_guarded_integrated_development_v1",
+          "split": "development",
+          "images": 28,
+          "exact": 24,
+          "accuracy": 0.8571428571428571,
+          "actionable": 24,
+          "wrongActionable": 0,
+          "errors": 0,
+          "medianMs": 43500.5,
+          "eligible": 28,
+          "matchedReady": 24,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 24,
+          "protocol": "spatial_guarded / 1536px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 7,
+          "nominalNormalTotal": 8,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 7,
+          "nominalAnomalyTotal": 8,
+          "normalExact": 7,
+          "normalImages": 8,
+          "anomalyExact": 7,
+          "anomalyImages": 8,
+          "constantNominalExact": 8,
+          "constantNominalImages": 16,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；原向、旋转两轮，明确且有环状候选时追加局部身份核查"
+        },
+        {
+          "run": "v03_guarded_holdout_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "dataset": "MVTec LOCO screw_bag + MVTec Screws",
+          "label": "v03_guarded_holdout_v1",
+          "split": "holdout",
+          "images": 64,
+          "exact": 59,
+          "accuracy": 0.921875,
+          "actionable": 59,
+          "wrongActionable": 0,
+          "errors": 0,
+          "medianMs": 40579.5,
+          "eligible": 64,
+          "matchedReady": 59,
+          "mismatchFalseReady": 0,
+          "mismatchCorrect": 59,
+          "protocol": "spatial_guarded / 1536px / app-upload",
+          "status": "completed",
+          "nominalNormalReady": 16,
+          "nominalNormalTotal": 16,
+          "nominalAnomalyFalseReady": 0,
+          "nominalAnomalyCorrect": 15,
+          "nominalAnomalyTotal": 16,
+          "normalExact": 16,
+          "normalImages": 16,
+          "anomalyExact": 15,
+          "anomalyImages": 16,
+          "constantNominalExact": 16,
+          "constantNominalImages": 32,
+          "timingNote": "包括隔离上传路由、SQLite、归一化、输入哈希及observe；未经过inspect超时路由；原向、旋转两轮，明确且有环状候选时追加局部身份核查"
+        }
+      ],
+      "source": {
+        "label": "真实本地视觉模型逐图运行",
+        "files": [
+          "evaluation-runs/screws_development_baseline_v1/run.json",
+          "evaluation-runs/screws_development_v2/run.json",
+          "evaluation-runs/loco_development_8b_v1/run.json",
+          "evaluation-runs/loco_development_8b_dual_v1/run.json",
+          "evaluation-runs/loco_development_8b_app_v1/run.json",
+          "evaluation-runs/loco_development_8b_app_dual_v1/run.json",
+          "evaluation-runs/loco_development_27b_app_v1/run.json",
+          "evaluation-runs/loco_development_27b_app_1536_v1/run.json",
+          "evaluation-runs/loco_development_27b_spatial_v1/run.json",
+          "evaluation-runs/loco_development_27b_spatial_1536_v1/run.json",
+          "evaluation-runs/loco_development_release_v1/run.json",
+          "evaluation-runs/loco_holdout_release_v1/run.json",
+          "evaluation-runs/loco_holdout_27b_single_control_v1/run.json",
+          "evaluation-runs/v03_consensus_development_v1/run.json",
+          "evaluation-runs/v03_screws_development_v1/run.json",
+          "evaluation-runs/v03_screws_identity_probe_v1/run.json",
+          "evaluation-runs/v03_screws_identity_geometry_v2/run.json",
+          "evaluation-runs/v03_loco_identity_geometry_v2/run.json",
+          "evaluation-runs/v03_guarded_integrated_development_v1/run.json",
+          "evaluation-runs/v03_guarded_holdout_v1/run.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "完整计数正确率",
+            "definition": "四类观察全部等于源数据对象标注映射后的四类真值的图片数 / 全部预先选定原图数；失败和拒绝不排除。",
+            "componentIds": [
+              "benchmark-table",
+              "benchmark-findings",
+              "scope-coverage",
+              "report-summary"
+            ]
+          },
+          {
+            "label": "可执行与错误",
+            "definition": "四类数量非null、issues为空、action为none即为可执行；其中计数错误另外统计，不等于已放行工单。",
+            "componentIds": [
+              "benchmark-table",
+              "benchmark-findings",
+              "report-summary"
+            ]
+          },
+          {
+            "label": "中位耗时",
+            "definition": "单次/双次集成行为每图实际测量区间中位数，包含当次冷加载；original是observe调用，app-upload另含隔离上传路由、SQLite、归一化及输入哈希。身份复核回放则是历史基础耗时加本次新增调用，不是端到端实测。具体以各行timingNote为准。",
+            "componentIds": [
+              "benchmark-table",
+              "benchmark-timing",
+              "report-summary",
+              "benchmark-findings"
+            ]
+          },
+          {
+            "label": "同模型协议对照差异",
+            "definition": "冻结48张主留出与直接计数对照同模型、同1536px、同上传图。准确率差=(46/48−34/48)×100=25个百分点；中位耗时差=14.6195−8.9905=5.629秒。提示词/输出结构和900对450token预算一起变化，不是只改变定位的因果消融。",
+            "componentIds": [
+              "report-summary",
+              "benchmark-findings"
+            ]
+          },
+          {
+            "label": "正常组成与数量异常子组",
+            "definition": "LOCO作者正常构成为2螺纹件、2螺母、2垫圈；数量异常由作者单一数量缺陷标签导出。每个子组单独报告完整计数正确图数，恒返222基线没有使用图像。",
+            "componentIds": [
+              "subgroup-findings",
+              "subgroup-table"
+            ]
+          },
+          {
+            "label": "固定正常订单的错误就绪",
+            "definition": "对所有LOCO样本均使用作者正常组成2220作为订单；数量异常照片被判断ready即为误放行。分母仅预选数量异常图；正确纠正须四类数量全部正确。同图派生多种订单不增加样本数。",
+            "componentIds": [
+              "nominal-findings",
+              "nominal-table",
+              "report-summary",
+              "benchmark-findings"
+            ]
+          },
+          {
+            "label": "匹配与固定扰动订单",
+            "definition": "每张范围内原图生成真值匹配订单和一个预先固定的bolt数量扰动订单。分别统计匹配ready、扰动错误ready和扰动纠正全部正确；分母均为范围内原图数。同图任务相关，不是额外样本，也没有人工完成或实际发货。",
+            "componentIds": [
+              "perturbation-findings",
+              "perturbation-table"
+            ]
+          },
+          {
+            "label": "产品范围内原图",
+            "definition": "派生真值每类0–3件、总数1–12件的原图数量；早期Screws整图压力集为0，新v0.3作者框完整保留的像素裁剪单列，属于产品数量范围内。",
+            "componentIds": [
+              "benchmark-table",
+              "scope-coverage"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "可复算的本地记录",
+            "detail": "只收录有finished_at和summary的已完成运行；每个运行对应保留的manifest、逐例JSONL与源码快照。失败不排除，开发与留出分开。"
+          }
+        ]
+      }
+    },
+    "instruction_runs": {
+      "rows": [
+        {
+          "run": "instructions_8b_v1",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "attempted": 24,
+          "passed": 18,
+          "proposalPassed": 9,
+          "proposalTotal": 9,
+          "clarificationPassed": 9,
+          "clarificationTotal": 15,
+          "executionErrors": 1
+        },
+        {
+          "run": "instructions_8b_v2",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "attempted": 24,
+          "passed": 22,
+          "proposalPassed": 7,
+          "proposalTotal": 9,
+          "clarificationPassed": 15,
+          "clarificationTotal": 15,
+          "executionErrors": 0
+        },
+        {
+          "run": "instructions_8b_v3",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "attempted": 24,
+          "passed": 24,
+          "proposalPassed": 9,
+          "proposalTotal": 9,
+          "clarificationPassed": 15,
+          "clarificationTotal": 15,
+          "executionErrors": 0
+        },
+        {
+          "run": "instructions_27b_v1",
+          "model": "Qwen3.6-27B · MLX 4-bit · local",
+          "attempted": 24,
+          "passed": 24,
+          "proposalPassed": 9,
+          "proposalTotal": 9,
+          "clarificationPassed": 15,
+          "clarificationTotal": 15,
+          "executionErrors": 0
+        }
+      ],
+      "source": {
+        "label": "作者生成的24条多语言开发工程案例",
+        "files": [
+          "evaluation-runs/instructions_8b_v1/run.json",
+          "evaluation-runs/instructions_8b_v2/run.json",
+          "evaluation-runs/instructions_8b_v3/run.json",
+          "evaluation-runs/instructions_27b_v1/run.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "指令通过",
+            "definition": "明确指令的四类提案数量完全相符，或预期澄清指令得到业务拒绝；执行异常为失败。固定9条修改、15条澄清，不是用户研究。",
+            "componentIds": [
+              "instruction-table",
+              "instruction-findings",
+              "report-summary"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "可复算的本地记录",
+            "detail": "只收录有finished_at和summary的已完成运行；每个运行对应保留的manifest、逐例JSONL与源码快照。失败不排除，开发与留出分开。"
+          }
+        ]
+      }
+    },
+    "engineering_checks": {
+      "rows": [
+        {
+          "suite": "v0.3 Python完整工程回归",
+          "pass": 428,
+          "fail": 0,
+          "scope": "隔离状态、版本、相机输入、来源绑定、身份核查、评测协议；模型测试替身",
+          "evidence": "test-results/engineering-v03-final.xml"
+        },
+        {
+          "suite": "工作台Chrome交互",
+          "pass": 15,
+          "fail": 0,
+          "scope": "真实浏览器，合成工程照片，创建/改版/上传/下载/手机",
+          "evidence": "test-results/browser/workbench-core/browser-results.json"
+        },
+        {
+          "suite": "历史只读详情Chrome",
+          "pass": 17,
+          "fail": 0,
+          "scope": "独立浏览器工程回归，不计为视觉样本",
+          "evidence": "test-results/browser/audit-details/result.json"
+        },
+        {
+          "suite": "空间点位与清单Chrome",
+          "pass": 36,
+          "fail": 0,
+          "scope": "编号点位、照片绑定、历史只读、键盘与移动端；工程测试替身",
+          "evidence": "test-results/browser/spatial-evidence/result.json"
+        },
+        {
+          "suite": "补证与真实步骤Chrome",
+          "pass": 29,
+          "fail": 0,
+          "scope": "独立浏览器工程回归，与其他组覆盖有交集",
+          "evidence": "test-results/browser/evidence-feedback/result.json"
+        },
+        {
+          "suite": "v0.3相机采集",
+          "pass": 37,
+          "fail": 0,
+          "scope": "Real isolated API with no inference adapter; Chrome fake camera generates engineering video frames. Validates capture/software only, not real camera hardware quality, users, model accuracy or field benefits.",
+          "evidence": "test-results/browser/camera-v03/result.json"
+        },
+        {
+          "suite": "v0.3公开图库",
+          "pass": 39,
+          "fail": 0,
+          "scope": "Actual three public development PNGs and actual API with isolated database on 8772; NoInference. One transient ready-shaped rendering-only contract and one mocked creation failure, both explicitly engineering. Not model accuracy, new holdout evidence, field completion or human usability evidence.",
+          "evidence": "test-results/browser/public-demo-v03/result.json"
+        },
+        {
+          "suite": "v0.3身份核验明细",
+          "pass": 34,
+          "fail": 0,
+          "scope": "Synthetic engineering HTTP fixture only. All image shapes, counts, identity labels, geometry and hashes are test metadata. No model, production data, holdout images or accuracy measurement.",
+          "evidence": "test-results/browser/identity-evidence-v03/result.json"
+        },
+        {
+          "suite": "v0.3离线证据报告",
+          "pass": 54,
+          "fail": 0,
+          "scope": "Actual Google Chrome file:// with offline contexts; real historical MLX demo copy and explicit synthetic safety fixtures; no new model inference.",
+          "evidence": "test-results/browser/offline-evidence-v03/browser-results.json"
+        },
+        {
+          "suite": "v0.3离线身份明细",
+          "pass": 30,
+          "fail": 0,
+          "scope": "Actual Chrome offline file://. Fixed development-output display replay, not live API or physical verification. No model call.",
+          "evidence": "test-results/browser/offline-identity-v03/browser-results.json"
+        },
+        {
+          "suite": "v0.3真实UI/API验收",
+          "pass": 86,
+          "fail": 0,
+          "scope": "3个已用开发样例；4视觉请求+1韩语提案请求，浏览器自动化确认，非真人/现场研究",
+          "evidence": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/result.json"
+        }
+      ],
+      "source": {
+        "label": "工程回归记录",
+        "files": [
+          "test-results/engineering-v03-final.xml",
+          "test-results/browser/workbench-core/browser-results.json",
+          "test-results/browser/audit-details/result.json",
+          "test-results/browser/evidence-feedback/result.json",
+          "test-results/browser/spatial-evidence/result.json",
+          "docs/UI_IMPROVEMENTS.md",
+          "test-results/browser/camera-v03/result.json",
+          "test-results/browser/public-demo-v03/result.json",
+          "test-results/browser/identity-evidence-v03/result.json",
+          "test-results/browser/offline-evidence-v03/browser-results.json",
+          "test-results/browser/offline-identity-v03/browser-results.json",
+          "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/result.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "工程检查通过",
+            "definition": "该次工程检查的断言或pytest用例结果；不同组有覆盖重叠，不等于独立图像数量或视觉准确率。",
+            "componentIds": [
+              "engineering-table"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "工程记录读取",
+            "detail": "用ElementTree汇总engineering-current.xml每个testsuite的tests/failures/errors；浏览器各组来自原始browser-results.json及UI_IMPROVEMENTS.md。套件有覆盖重叠，未相加为独立准确率。"
+          }
+        ]
+      }
+    },
+    "readiness_gaps": {
+      "rows": [
+        {
+          "item": "公开实拍与模型对照",
+          "status": "已完成静态留出对照",
+          "evidence": "冻结后48张公开照片完成所选协议与同模型对照；未据留出调参",
+          "implication": "这是公开静态图片验证，不是实物操作或工厂泛化证明"
+        },
+        {
+          "item": "真人基线及实际生产收益",
+          "status": "尚未验证",
+          "evidence": "没有招募参与者或企业试点",
+          "implication": "不能声称省时比例、降低现场漏配率或Pilot验证"
+        },
+        {
+          "item": "同一批实物的连续补证",
+          "status": "尚未验证",
+          "evidence": "公开静态原图和工程状态夹具",
+          "implication": "观察变化不证明实物操作发生"
+        },
+        {
+          "item": "赛前代码使用资格",
+          "status": "待官方明确",
+          "evidence": "原始同意书禁止开发期外预先开发；本工程如实记录9月26日",
+          "implication": "披露时间与来源不能自行构成豁免"
+        },
+        {
+          "item": "正式评分表与AI使用表",
+          "status": "待9月29日公布",
+          "evidence": "当前官方公告答疑",
+          "implication": "材料为内部草稿，不冒充最终合规提交"
+        }
+      ],
+      "source": {
+        "label": "已核实官方条款与当前未验证事项",
+        "files": [
+          "docs/INDEPENDENT_REVIEW.md",
+          "docs/DEVELOPMENT_LOG.md"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "状态",
+            "definition": "记录当前有证据的完成情况与缺口，不是官方评分或名次预测。",
+            "componentIds": [
+              "readiness-table"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "官方条款与证据状态",
+            "detail": "读取INDEPENDENT_REVIEW.md所列原始HWP条款、官网要求及DEVELOPMENT_LOG.md真实开发时间；检查本地是否已有现场参与者、连续实拍和完成评测的记录。状态是当前证据判断，不是官方裁定。"
+          }
+        ]
+      }
+    },
+    "v03_runs": {
+      "rows": [
+        {
+          "run": "v03_consensus_development_v1",
+          "label": "v03_consensus_development_v1",
+          "cohort": "LOCO",
+          "stage": "development",
+          "kind": "consensus",
+          "images": 16,
+          "correct": 14,
+          "actionable": 14,
+          "wrong": 0,
+          "abstained": 2,
+          "errors": 0,
+          "medianMs": 29338.5,
+          "timingNote": "隔离实际上传处理 + observe总时间；不含真人操作，不经过inspect超时接口",
+          "status": "completed"
+        },
+        {
+          "run": "v03_grounding_dino_development_v1",
+          "label": "v03_grounding_dino_development_v1",
+          "cohort": "LOCO",
+          "stage": "development",
+          "kind": "detector",
+          "images": 16,
+          "correct": 0,
+          "actionable": null,
+          "wrong": null,
+          "abstained": null,
+          "errors": 0,
+          "medianMs": 1410.9,
+          "timingNote": "固定CPU检测实验管线，不含模型加载；不是完整工作台耗时",
+          "status": "completed"
+        },
+        {
+          "run": "v03_grounding_dino_development_v1",
+          "label": "v03_grounding_dino_development_v1",
+          "cohort": "Screws",
+          "stage": "development",
+          "kind": "detector",
+          "images": 12,
+          "correct": 1,
+          "actionable": null,
+          "wrong": null,
+          "abstained": null,
+          "errors": 0,
+          "medianMs": 1315.3,
+          "timingNote": "固定CPU检测实验管线，不含模型加载；不是完整工作台耗时",
+          "status": "completed"
+        },
+        {
+          "run": "v03_guarded_holdout_v1",
+          "label": "v03_guarded_holdout_v1",
+          "cohort": "Screws",
+          "stage": "holdout",
+          "kind": "integrated",
+          "images": 32,
+          "correct": 28,
+          "actionable": 28,
+          "wrong": 0,
+          "abstained": 4,
+          "errors": 0,
+          "medianMs": 22404.5,
+          "timingNote": "隔离实际上传处理 + observe总时间；不含真人操作，不经过inspect超时接口",
+          "status": "completed"
+        },
+        {
+          "run": "v03_guarded_holdout_v1",
+          "label": "v03_guarded_holdout_v1",
+          "cohort": "LOCO · 正常",
+          "stage": "holdout",
+          "kind": "integrated",
+          "images": 16,
+          "correct": 16,
+          "actionable": 16,
+          "wrong": 0,
+          "abstained": 0,
+          "errors": 0,
+          "medianMs": 47271.0,
+          "timingNote": "隔离实际上传处理 + observe总时间；不含真人操作，不经过inspect超时接口",
+          "status": "completed"
+        },
+        {
+          "run": "v03_guarded_holdout_v1",
+          "label": "v03_guarded_holdout_v1",
+          "cohort": "LOCO · 数量异常",
+          "stage": "holdout",
+          "kind": "integrated",
+          "images": 16,
+          "correct": 15,
+          "actionable": 15,
+          "wrong": 0,
+          "abstained": 1,
+          "errors": 0,
+          "medianMs": 45031.0,
+          "timingNote": "隔离实际上传处理 + observe总时间；不含真人操作，不经过inspect超时接口",
+          "status": "completed"
+        },
+        {
+          "run": "v03_guarded_integrated_development_v1",
+          "label": "v03_guarded_integrated_development_v1",
+          "cohort": "LOCO",
+          "stage": "development",
+          "kind": "integrated",
+          "images": 16,
+          "correct": 14,
+          "actionable": 14,
+          "wrong": 0,
+          "abstained": 2,
+          "errors": 0,
+          "medianMs": 47264.5,
+          "timingNote": "隔离实际上传处理 + observe总时间；不含真人操作，不经过inspect超时接口",
+          "status": "completed"
+        },
+        {
+          "run": "v03_guarded_integrated_development_v1",
+          "label": "v03_guarded_integrated_development_v1",
+          "cohort": "Screws",
+          "stage": "development",
+          "kind": "integrated",
+          "images": 12,
+          "correct": 10,
+          "actionable": 10,
+          "wrong": 0,
+          "abstained": 2,
+          "errors": 0,
+          "medianMs": 21378.5,
+          "timingNote": "隔离实际上传处理 + observe总时间；不含真人操作，不经过inspect超时接口",
+          "status": "completed"
+        },
+        {
+          "run": "v03_loco_identity_geometry_v2",
+          "label": "v03_loco_identity_geometry_v2",
+          "cohort": "LOCO",
+          "stage": "development",
+          "kind": "replay",
+          "images": 16,
+          "correct": 14,
+          "actionable": 14,
+          "wrong": 0,
+          "abstained": 2,
+          "errors": 0,
+          "medianMs": 47391.0,
+          "timingNote": "历史两轮基础耗时 + 新身份核查回放；非端到端实测",
+          "status": "completed"
+        },
+        {
+          "run": "v03_owl_development_v1",
+          "label": "v03_owl_development_v1",
+          "cohort": "LOCO",
+          "stage": "development",
+          "kind": "detector",
+          "images": 16,
+          "correct": 0,
+          "actionable": null,
+          "wrong": null,
+          "abstained": null,
+          "errors": 0,
+          "medianMs": 1046.85,
+          "timingNote": "固定CPU检测实验管线，不含模型加载；不是完整工作台耗时",
+          "status": "completed"
+        },
+        {
+          "run": "v03_owl_development_v1",
+          "label": "v03_owl_development_v1",
+          "cohort": "Screws",
+          "stage": "development",
+          "kind": "detector",
+          "images": 12,
+          "correct": 0,
+          "actionable": null,
+          "wrong": null,
+          "abstained": null,
+          "errors": 0,
+          "medianMs": 1037.1999999999998,
+          "timingNote": "固定CPU检测实验管线，不含模型加载；不是完整工作台耗时",
+          "status": "completed"
+        },
+        {
+          "run": "v03_screws_development_v1",
+          "label": "v03_screws_development_v1",
+          "cohort": "Screws",
+          "stage": "development",
+          "kind": "consensus",
+          "images": 12,
+          "correct": 10,
+          "actionable": 12,
+          "wrong": 2,
+          "abstained": 0,
+          "errors": 0,
+          "medianMs": 15716.0,
+          "timingNote": "隔离实际上传处理 + observe总时间；不含真人操作，不经过inspect超时接口",
+          "status": "completed"
+        },
+        {
+          "run": "v03_screws_identity_geometry_v2",
+          "label": "v03_screws_identity_geometry_v2",
+          "cohort": "Screws",
+          "stage": "development",
+          "kind": "replay",
+          "images": 12,
+          "correct": 10,
+          "actionable": 10,
+          "wrong": 0,
+          "abstained": 2,
+          "errors": 0,
+          "medianMs": 23602.5,
+          "timingNote": "历史两轮基础耗时 + 新身份核查回放；非端到端实测",
+          "status": "completed"
+        },
+        {
+          "run": "v03_screws_identity_probe_v1",
+          "label": "v03_screws_identity_probe_v1",
+          "cohort": "Screws",
+          "stage": "development",
+          "kind": "replay",
+          "images": 12,
+          "correct": 10,
+          "actionable": 11,
+          "wrong": 1,
+          "abstained": 1,
+          "errors": 0,
+          "medianMs": 22343.0,
+          "timingNote": "历史两轮基础耗时 + 新身份核查回放；非端到端实测",
+          "status": "completed"
+        }
+      ],
+      "source": {
+        "label": "v0.3候选逐图结果",
+        "files": [
+          "evaluation-runs/v03_consensus_development_v1/run.json",
+          "evaluation-runs/v03_consensus_development_v1/predictions.jsonl",
+          "evaluation-runs/v03_grounding_dino_development_v1/run.json",
+          "evaluation-runs/v03_grounding_dino_development_v1/predictions.jsonl",
+          "evaluation-runs/v03_guarded_holdout_v1/run.json",
+          "evaluation-runs/v03_guarded_holdout_v1/predictions.jsonl",
+          "evaluation-runs/v03_guarded_integrated_development_v1/run.json",
+          "evaluation-runs/v03_guarded_integrated_development_v1/predictions.jsonl",
+          "evaluation-runs/v03_loco_identity_geometry_v2/run.json",
+          "evaluation-runs/v03_loco_identity_geometry_v2/predictions.jsonl",
+          "evaluation-runs/v03_owl_development_v1/run.json",
+          "evaluation-runs/v03_owl_development_v1/predictions.jsonl",
+          "evaluation-runs/v03_screws_development_v1/run.json",
+          "evaluation-runs/v03_screws_development_v1/predictions.jsonl",
+          "evaluation-runs/v03_screws_identity_geometry_v2/run.json",
+          "evaluation-runs/v03_screws_identity_geometry_v2/predictions.jsonl",
+          "evaluation-runs/v03_screws_identity_probe_v1/run.json",
+          "evaluation-runs/v03_screws_identity_probe_v1/predictions.jsonl"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "v0.3候选逐图结果",
+            "definition": "正确是actionable_counts且counts_exact；wrong是actionable且计数错；abstained是无执行异常但不可执行；errors为运行异常。探测器仅报告完整计数correct，未定义业务可执行/拒绝（null）。每图有多个派生订单，但分母仍按原图。",
+            "componentIds": [
+              "v03-runs"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "本地冻结结果复算",
+            "detail": "只读取完整completed运行，按原图source_id分组；逐例counts_exact与actionable_counts同时成立才为正确明确计数。所有错误、拒绝仍留在分母。探测器单列完整计数，不假装已集成业务决策。"
+          }
+        ],
+        "fileHashes": {
+          "evaluation-runs/v03_consensus_development_v1/run.json": "c3f693d9db32f2cb1f2dc647a8873910557322d29d594adb8941b6583e1444de",
+          "evaluation-runs/v03_consensus_development_v1/predictions.jsonl": "8b24af42c49b4811dfe7963a26800fa046ba59f6430f994dd91f3e10d10d457e",
+          "evaluation-runs/v03_grounding_dino_development_v1/run.json": "e174cdd952f82e9385ba34ceba35f7039e1f95e2bc982b381f7768e9c1df56bf",
+          "evaluation-runs/v03_grounding_dino_development_v1/predictions.jsonl": "dfcf044fc8781ee473fb6562d96a8a1b0b2dce22f11a61ac9364c12ae89c7ca3",
+          "evaluation-runs/v03_guarded_holdout_v1/run.json": "4e28b4508f5c390ca663c230c5c8d6546fb9dc6913526b8f36cafb7138882280",
+          "evaluation-runs/v03_guarded_holdout_v1/predictions.jsonl": "4a6ef7c976271cc3096bdd369b897b1db46bec21d2287699f55226308e7536a3",
+          "evaluation-runs/v03_guarded_integrated_development_v1/run.json": "da1467a6229ae184adea96adba5b1d0a972c5f53c6397e5120e03c6ebe72b3a0",
+          "evaluation-runs/v03_guarded_integrated_development_v1/predictions.jsonl": "defa8353d8f0ea2eb89ec3ae8fd0ecb0bc4e90b80caa8a32c075765548d6e9a4",
+          "evaluation-runs/v03_loco_identity_geometry_v2/run.json": "fc1041026bd76eb8a4afcf1896288e0e814f2b708c3a463953d78f8a49ddedf2",
+          "evaluation-runs/v03_loco_identity_geometry_v2/predictions.jsonl": "f90651622c9da3c7e8bb47a5ffa70ae46cddcf3cafad8e963d20306185770fef",
+          "evaluation-runs/v03_owl_development_v1/run.json": "a33635eb96fa231c79745e7ba12851fcae5e12b275c6cff4759b58ad56cec383",
+          "evaluation-runs/v03_owl_development_v1/predictions.jsonl": "8458d4c55d98caa23cb605ab530d4222282880648f1d7e1ec0a3473b2d91d56a",
+          "evaluation-runs/v03_screws_development_v1/run.json": "fc14d055e2ea96b15f9b6b3566bbd92118f25a18b2fee03960e29b03eab4ca30",
+          "evaluation-runs/v03_screws_development_v1/predictions.jsonl": "b679d3521cadb2299373c02d60c8295505132bf6597aea42d69e897513d7b12a",
+          "evaluation-runs/v03_screws_identity_geometry_v2/run.json": "6a92dace8d61662fcf18d5cb24fbebc8c3621a52a45c7ded2f5cc4f30d540367",
+          "evaluation-runs/v03_screws_identity_geometry_v2/predictions.jsonl": "7a658c39093cb7da73a42e4c608d7eedc5dc09852a090488e2ea7ba950ce2ef8",
+          "evaluation-runs/v03_screws_identity_probe_v1/run.json": "04e2708c6d66c4137014f690db24ce02a0fe1a078df0a010eac1b93c0352246a",
+          "evaluation-runs/v03_screws_identity_probe_v1/predictions.jsonl": "251af0c605954cc4fe6590579e54325d82c04ca569c11e74ae69bdf52dba6399"
+        }
+      },
+      "methods": [
+        {
+          "language": "Python",
+          "code": "python -m scripts.refresh_v03_report_snapshot；每个运行按source_id中的loco区分领域，holdout再按subgroup分层。源码保存于scripts/refresh_v03_report_snapshot.py。"
+        }
+      ]
+    },
+    "v03_selection": {
+      "rows": [
+        {
+          "status": "holdout_passed",
+          "headline": "挡住2次错误，保留59张正确明确回答；研究版采用强化核查",
+          "detail": "64张新留出全部完成：59张正确且可执行，5张要求补拍，错误明确计数及执行异常均为0。同次真实首轮是62张正确、2张错误；强化流程拦住2次错误，也把3次正确回答转为补拍。正确明确覆盖59/64（92.2%），完整观察中位40.58秒。三分层与全部冻结门槛通过；不将拒绝样本删除或把原始数量一致率当作可执行覆盖。",
+          "holdoutStatus": "64/64完成，预先冻结的门槛通过；完整结果与失败均已保留",
+          "selectedDefault": "spatial_guarded（启动脚本的研究版默认；3阶段同模型核查）",
+          "knownLimits": "静态公开图、同模型相关调用；数字旋转/裁剪不增加实物证据；无角码阳性、真人效率或现场连续补件结果。0观察错误不等于工业零风险。"
+        }
+      ],
+      "source": {
+        "label": "当前候选采用结论",
+        "files": [
+          "docs/v0.3/IDENTITY_GEOMETRY_SELECTION.json",
+          "docs/v0.3/IDENTITY_GEOMETRY_DEVELOPMENT_PROTOCOL.json",
+          "docs/v0.3/REPORT_SELECTION_STATE.json",
+          "evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json",
+          "docs/v0.3/HOLDOUT_GATES_V1.json",
+          "docs/v0.3/DEPLOYMENT_SELECTION.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "当前候选采用结论",
+            "definition": "结论来自先于运行冻结的门槛与完整结果；开发通过不等于留出通过，零观察错误不等于风险为零；选默认与名次无等价关系。",
+            "componentIds": [
+              "v03-summary"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "本地冻结结果复算",
+            "detail": "读取开发协议与选择记录，以及存在时的最新REPORT_SELECTION_STATE；不从工程检查数推算效果或比赛名次。"
+          }
+        ],
+        "fileHashes": {
+          "docs/v0.3/IDENTITY_GEOMETRY_SELECTION.json": "e56429cba49017caceeaa0bfe4c5474a78bcc03bbb938f6f8409876856d4b611",
+          "docs/v0.3/IDENTITY_GEOMETRY_DEVELOPMENT_PROTOCOL.json": "a662389036c4852980cb0dcbe2219dfd4349d39b345349eed26ea1d1831c7e5a",
+          "docs/v0.3/REPORT_SELECTION_STATE.json": "7e29ff440591760923e53af97a71c8a7e94c3dc47eff944b0d723ca3cd75a3fd",
+          "evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json": "8f8fa784b9abca802ffab08e1fc8b23efd75407a2ede9cc235c3496b442f599f",
+          "docs/v0.3/HOLDOUT_GATES_V1.json": "563bf149286d6cacb7e14992b5ee9d1b1895752fae7f407a4da37ab11d65b8b6",
+          "docs/v0.3/DEPLOYMENT_SELECTION.json": "a36e8b1b51b2bb3443728ec46c75659b6bbdd54c2e233fc0babbdf04c04947ae"
+        }
+      }
+    },
+    "v03_features": {
+      "rows": [
+        {
+          "feature": "拍摄、预览、重拍后显式保存",
+          "status": "已实现",
+          "evidence": "test-results/browser/camera-v03/result.json",
+          "scope": "浏览器模拟摄像头工程验证，非真实设备摄像头实拍结果"
+        },
+        {
+          "feature": "可校验来源的公开实拍演示图库",
+          "status": "已实现",
+          "evidence": "test-results/browser/public-demo-v03/result.json",
+          "scope": "三张开发样例，创建不调用模型；公开图订单禁止记为实物完成"
+        },
+        {
+          "feature": "在线身份与孔形复核明细",
+          "status": "已实现",
+          "evidence": "test-results/browser/identity-evidence-v03/result.json",
+          "scope": "只读工程夹具；原图绑定、双方向及裁剪SHA，不能证明物理操作"
+        },
+        {
+          "feature": "可断网查阅的中韩证据报告",
+          "status": "已实现",
+          "evidence": "test-results/browser/offline-identity-v03/browser-results.json",
+          "scope": "桌面/手机file://；身份部分为开发输出回放，无现场API实录主张"
+        },
+        {
+          "feature": "相同照片内容不消耗追加补证预算",
+          "status": "已实现",
+          "evidence": "tests/test_evidence_content_identity.py",
+          "scope": "重新编码后的内容SHA优先，包含A→B→A和不同PNG元数据场景"
+        },
+        {
+          "feature": "真实本地模型、韩语改版与版本失效演示",
+          "status": "流程已执行（保留实际结果）",
+          "evidence": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/result.json",
+          "scope": "3个已用开发样例、4个视觉请求+1个韩语提案请求；提案状态proposal_returned、结构回退False。浏览器自动化明确确认；非真人研究或实物补件。"
+        }
+      ],
+      "source": {
+        "label": "新增可用流程",
+        "files": [
+          "test-results/browser/camera-v03/result.json",
+          "test-results/browser/public-demo-v03/result.json",
+          "test-results/browser/identity-evidence-v03/result.json",
+          "test-results/browser/offline-identity-v03/browser-results.json",
+          "tests/test_evidence_content_identity.py",
+          "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/result.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "新增可用流程",
+            "definition": "已实现代表功能及工程验证，不是现场识别或用户效率数据。每行证据只支持其声明范围。",
+            "componentIds": [
+              "v03-features"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "本地冻结结果复算",
+            "detail": "逐项读取camera/public-demo/identity/offline浏览器记录及照片内容去重测试；工程夹具、模拟摄像头和开发输出回放分别保留范围，未运行现场试验。"
+          }
+        ],
+        "fileHashes": {
+          "test-results/browser/camera-v03/result.json": "a399426ca6323f6037fbd5c955e420721d202f75ac700df14088f5937b28df2b",
+          "test-results/browser/public-demo-v03/result.json": "56c25940373bb49d1b9f9b62631fe26b191cef976ef81599a09309a764748d01",
+          "test-results/browser/identity-evidence-v03/result.json": "35054f7489ead326ef32bc4ff9059fc7ae5cde090b5f66fb13b5742850d000ec",
+          "test-results/browser/offline-identity-v03/browser-results.json": "344cb2a0e91338dcf00baba1c43357f7f50958f0e122c67f3bdd3cb6792ed726",
+          "tests/test_evidence_content_identity.py": "b149c55edbe1241c4e66da23144189f85356d7f62733016d62101944d254c915",
+          "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/result.json": "cab064f757d7c4e984b76a64c31ab5f47a2ed7040226fa128838881dbe8d01f7"
+        }
+      }
+    },
+    "v03_comparison": {
+      "rows": [
+        {
+          "cohort": "LOCO 正常",
+          "method": "同次真实首轮",
+          "images": 16,
+          "correct": 16,
+          "wrong": 0,
+          "abstained": 0,
+          "errors": 0,
+          "medianMs": null,
+          "gate": "配对消融，无独立端到端计时"
+        },
+        {
+          "cohort": "LOCO 正常",
+          "method": "强化候选",
+          "images": 16,
+          "correct": 16,
+          "wrong": 0,
+          "abstained": 0,
+          "errors": 0,
+          "medianMs": 47271.0,
+          "gate": "通过"
+        },
+        {
+          "cohort": "LOCO 数量异常",
+          "method": "同次真实首轮",
+          "images": 16,
+          "correct": 16,
+          "wrong": 0,
+          "abstained": 0,
+          "errors": 0,
+          "medianMs": null,
+          "gate": "配对消融，无独立端到端计时"
+        },
+        {
+          "cohort": "LOCO 数量异常",
+          "method": "强化候选",
+          "images": 16,
+          "correct": 15,
+          "wrong": 0,
+          "abstained": 1,
+          "errors": 0,
+          "medianMs": 45031.0,
+          "gate": "通过"
+        },
+        {
+          "cohort": "Screws 散装零件",
+          "method": "同次真实首轮",
+          "images": 32,
+          "correct": 30,
+          "wrong": 2,
+          "abstained": 0,
+          "errors": 0,
+          "medianMs": null,
+          "gate": "配对消融，无独立端到端计时"
+        },
+        {
+          "cohort": "Screws 散装零件",
+          "method": "强化候选",
+          "images": 32,
+          "correct": 28,
+          "wrong": 0,
+          "abstained": 4,
+          "errors": 0,
+          "medianMs": 22404.5,
+          "gate": "通过"
+        }
+      ],
+      "source": {
+        "label": "同64张的阶段配对比较",
+        "files": [
+          "evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json",
+          "evaluation-runs/v03_guarded_holdout_v1/run.json",
+          "evaluation-runs/v03_guarded_holdout_v1/predictions.jsonl",
+          "docs/v0.3/HOLDOUT_GATES_V1.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "同64张的阶段配对比较",
+            "definition": "C为正确且可执行，W为错误且可执行，U为无执行错误但不可执行，E为执行错误；每行C+W+U+E为该层图片数。同次首轮来自真实保存调用，不是独立样本或独立端到端服务。",
+            "componentIds": [
+              "v03-paired-results"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "本地冻结结果复算",
+            "detail": "读取完整64张冻结gate，核对run、逐例预测及协议SHA；按原有三个分层呈现首轮与最终候选，保持失败与弃权分母。"
+          }
+        ],
+        "fileHashes": {
+          "evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json": "8f8fa784b9abca802ffab08e1fc8b23efd75407a2ede9cc235c3496b442f599f",
+          "evaluation-runs/v03_guarded_holdout_v1/run.json": "4e28b4508f5c390ca663c230c5c8d6546fb9dc6913526b8f36cafb7138882280",
+          "evaluation-runs/v03_guarded_holdout_v1/predictions.jsonl": "4a6ef7c976271cc3096bdd369b897b1db46bec21d2287699f55226308e7536a3",
+          "docs/v0.3/HOLDOUT_GATES_V1.json": "563bf149286d6cacb7e14992b5ee9d1b1895752fae7f407a4da37ab11d65b8b6"
+        }
+      }
+    }
+  },
+  "id": "report:3d2f4f32-7d2f-4624-9822-03ee6c5b4c32"
+}

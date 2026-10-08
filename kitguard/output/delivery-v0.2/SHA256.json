@@ -1,0 +1,98 @@
+{
+  "created_at": "2026-09-26T11:14:14.116970+00:00",
+  "files": [
+    {
+      "title": "韩文完成报告 · 5页",
+      "path": "KitGuard_결과보고서_v0.2.pdf",
+      "source": "output/pdf/KitGuard_결과보고서_v0.2.pdf",
+      "bytes": 105712,
+      "sha256": "e6df8459206d33d40ff87eb5d05d9d1da01759105bb7a4692f6e5b8b485d64d5"
+    },
+    {
+      "title": "韩文Agent技术说明 · 1页",
+      "path": "KitGuard_Agent_기술설명_v0.2.pdf",
+      "source": "output/pdf/KitGuard_Agent_기술설명_v0.2.pdf",
+      "bytes": 81453,
+      "sha256": "63c2a59574c2fe0a92b39a17c7aa06f4629794ddd3a1a2417397268218573380"
+    },
+    {
+      "title": "答辩幻灯片 · 9页",
+      "path": "KitGuard_발표_v0.2.pptx",
+      "source": "output/presentations/KitGuard_발표_v0.2.pptx",
+      "bytes": 3632738,
+      "sha256": "67a4d338fb912997889fed4f418b0e0ac45f59fba960373a614d57292647c019"
+    },
+    {
+      "title": "真实本地模型演示 · MP4",
+      "path": "KitGuard_real_local_demo.mp4",
+      "source": "output/demo/KitGuard_real_local_demo.mp4",
+      "bytes": 1922891,
+      "sha256": "a4e225f7012adaa6b6e501b97aeced29bb7d008592de7aaf3848215235bcd237"
+    },
+    {
+      "title": "源码与可复算记录",
+      "path": "KitGuard_source_v0.2.zip",
+      "source": "output/KitGuard_source_v0.2.zip",
+      "bytes": 1559447,
+      "sha256": "50f0aa32b50fc719ebfa7b8ecdc3e21aaf9773c4cfafccd6ec5fe8bf56db1c3f"
+    },
+    {
+      "title": "中文交互评估报告",
+      "path": "KitGuard_中文交互评估.html",
+      "source": "output/report/KitGuard_中文交互评估.html",
+      "bytes": 2912778,
+      "sha256": "df42ce036d291b77fde77fb9e3b5cba294bc635a3403488c2acf5dbeae0eff57"
+    },
+    {
+      "title": "中文评估正文",
+      "path": "KitGuard/docs/FINAL_EVALUATION.md",
+      "source": "docs/FINAL_EVALUATION.md",
+      "bytes": 10285,
+      "sha256": "b03b2e7f018c14acaaccd3d89d147bfe794e833ec17b923ccc69a4d1299aaaf3"
+    },
+    {
+      "title": "韩文答辩问答",
+      "path": "KitGuard/docs/JUDGES_QA_KO.md",
+      "source": "docs/JUDGES_QA_KO.md",
+      "bytes": 11720,
+      "sha256": "973d145db7f6a148928ce0ab4d8b4a94ab7381e207a1194e39da00aabe609b1e"
+    },
+    {
+      "title": "演示来源与边界",
+      "path": "演示来源说明.md",
+      "source": "output/demo/README.md",
+      "bytes": 2089,
+      "sha256": "ca7cb349204ba6d766c334aefe8a1c53ab09c76924a8c61f4f0091296d135f49"
+    },
+    {
+      "title": "实际订单离线证据包",
+      "path": "PUBLIC_PHOTO_DEMO_evidence.zip",
+      "source": "output/demo/PUBLIC_PHOTO_DEMO_evidence.zip",
+      "bytes": 698638,
+      "sha256": "90763bdd76fc4db21ce379ebc03f04f5a39bc43d2eaff5283a45a34600dbea28"
+    },
+    {
+      "path": "recording.json",
+      "source": "output/demo/recording.json",
+      "bytes": 77801,
+      "sha256": "ef4defa30913b77b1e80e075424b90a5e3dd78b5a60dff4f650a00fd47477a5d"
+    },
+    {
+      "path": "video-verification.json",
+      "source": "output/demo/video-verification.json",
+      "bytes": 812,
+      "sha256": "4272b98459fbf7b79a0ff3004ed4bd3761b8ed957120d009be3402bfd005e037"
+    },
+    {
+      "path": "source-package-verification.json",
+      "source": "output/source-package-verification.json",
+      "bytes": 1191,
+      "sha256": "f855372d65101b6159731267bb03994c2915ad2d88b8e323b55abb738f112ad8"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3331,
+      "sha256": "732f87bfd9afed7496432eec8688ed665585abc743f02c757bd8a19d6fd1772d"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Text,Arial Unicode MS,32,&H00353D12,&H000000FF,&H00F2F8F8,&H00F2F8F8,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,20)\fs24\c&H353D12&\b0}API 실행 기록 + 브라우저 정지 화면 편집 · 연속 녹화 아님 · 실제 사용자 0명
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(1500,20)\fs24\c&H353D12&\b0}KitGuard · 0.8.0.dev1 preview
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,65)\fs44\c&H353D12&\b1}05  두 개의 디지털 의견도 이력으로 남김
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,185)\fs30\c&H353D12&\b1}ENGINEERING-AGENT\N자동화 공학 기록
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,415)\fs30\c&H353D12&\b1}의견 2건\N모두 inconclusive
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,645)\fs30\c&H353D12&\b1}실제 사용자 0명\N실물 완료 0건
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(448,900)\fs22\c&H646B56&\b0}실제 저장된 의견 · ENGINEERING-AGENT · user_validation=false
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,944)\fs29\c&H353D12&\b0}두 의견은 API 연결과 이력 보존을 확인한 자동화 기록입니다. 정확도 승인이나 사용자 평가가 아닙니다.\N현재 R2 의견과 무효화된 R1 의견을 구분합니다. 사용자가 참여했다고 기록하지 않았습니다.
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,1038)\fs19\c&H646B56&\b0}사용한 MVTec LOCO AD 사진: CC BY-NC-SA 4.0 · mvtec.com/research-teaching/datasets/mvtec-loco-ad

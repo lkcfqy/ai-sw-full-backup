@@ -1,0 +1,122 @@
+{
+  "id": "ord_cabbbe1e45414ba39b8d",
+  "title": "[MACHINE TASK] quantity",
+  "requirements": {
+    "bolt": 2,
+    "nut": 0,
+    "washer": 0,
+    "bracket": 0
+  },
+  "revision": 1,
+  "status": "pending",
+  "created_at": "2026-10-03T16:20:21.282+00:00",
+  "updated_at": "2026-10-03T16:20:21.282+00:00",
+  "latest_check": null,
+  "checks": [],
+  "photos": [
+    {
+      "id": "img_83648db2d02747289f40",
+      "url": "/api/photos/img_83648db2d02747289f40",
+      "sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+      "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+      "revision": 1,
+      "created_at": "2026-10-03T16:20:21.282+00:00",
+      "width": 768,
+      "height": 576,
+      "quality": {
+        "warning": null
+      },
+      "kind": "root_photo",
+      "scope_mode": "whole_image",
+      "root_photo_id": "img_83648db2d02747289f40",
+      "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+      "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+      "document_source": {
+        "source_note": "Automated engineering use of an exposed public development photo; not a user study. v03-screws-screws_344-8d389e404b12",
+        "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+        "license_note": "MVTec · CC BY-NC-SA 4.0",
+        "schema_version": 1,
+        "kind": "user_declared_photo",
+        "verification": "user_declared_unverified",
+        "physical_completion_allowed": false,
+        "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+        "storage_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+        "original_root_photo_id": "img_83648db2d02747289f40",
+        "declared_at": "2026-10-03T16:20:21.282+00:00",
+        "statement_sha256": "d0ef53961235838d3cccfef84b4c992780cc7de10a8d208275b64a0f77a447e1",
+        "binding_sha256": "df37d0083098c0fa848d5383202dd98a9690c90d543b976b0101c8cfdd9cbfe2"
+      },
+      "physical_capture": false,
+      "capture_kind": "user_declared_photo_upload"
+    }
+  ],
+  "references": {},
+  "reference_history": [],
+  "events": [
+    {
+      "id": "evt_c61807f8834b49e5a773",
+      "kind": "order_created",
+      "message": "주문 생성 / 已创建订单",
+      "created_at": "2026-10-03T16:20:21.282+00:00",
+      "payload": {}
+    },
+    {
+      "id": "evt_a37ea80ee4274466af4e",
+      "kind": "photo_document_registered",
+      "message": "사용자 자료 등록 · 출처 미인증 / 已登记用户资料，来源未经认证",
+      "created_at": "2026-10-03T16:20:21.282+00:00",
+      "payload": {
+        "source": {
+          "source_note": "Automated engineering use of an exposed public development photo; not a user study. v03-screws-screws_344-8d389e404b12",
+          "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+          "license_note": "MVTec · CC BY-NC-SA 4.0",
+          "schema_version": 1,
+          "kind": "user_declared_photo",
+          "verification": "user_declared_unverified",
+          "physical_completion_allowed": false,
+          "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+          "storage_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "original_root_photo_id": "img_83648db2d02747289f40",
+          "declared_at": "2026-10-03T16:20:21.282+00:00",
+          "statement_sha256": "d0ef53961235838d3cccfef84b4c992780cc7de10a8d208275b64a0f77a447e1",
+          "binding_sha256": "df37d0083098c0fa848d5383202dd98a9690c90d543b976b0101c8cfdd9cbfe2"
+        },
+        "photo_id": "img_83648db2d02747289f40",
+        "physical_capture": false
+      }
+    }
+  ],
+  "completions": [],
+  "manual_reviews": [],
+  "reopenings": [],
+  "evidence_epoch": 1,
+  "active_inspection": null,
+  "revisions": [
+    {
+      "revision": 1,
+      "requirements": {
+        "bolt": 2,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "instruction": "최초 주문 / 初始订单",
+      "created_at": "2026-10-03T16:20:21.282+00:00"
+    }
+  ],
+  "document_source": {
+    "source_note": "Automated engineering use of an exposed public development photo; not a user study. v03-screws-screws_344-8d389e404b12",
+    "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+    "license_note": "MVTec · CC BY-NC-SA 4.0",
+    "schema_version": 1,
+    "kind": "user_declared_photo",
+    "verification": "user_declared_unverified",
+    "physical_completion_allowed": false,
+    "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+    "storage_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+    "original_root_photo_id": "img_83648db2d02747289f40",
+    "declared_at": "2026-10-03T16:20:21.282+00:00",
+    "statement_sha256": "d0ef53961235838d3cccfef84b4c992780cc7de10a8d208275b64a0f77a447e1",
+    "binding_sha256": "df37d0083098c0fa848d5383202dd98a9690c90d543b976b0101c8cfdd9cbfe2"
+  }
+}

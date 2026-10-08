@@ -1,0 +1,88 @@
+{
+  "sets": {
+    "cropped": {
+      "images": 190,
+      "objects": 919,
+      "class_counts": {
+        "7": 88,
+        "1": 97,
+        "8": 87,
+        "5": 89,
+        "9": 103,
+        "4": 79,
+        "3": 112,
+        "0": 80,
+        "2": 101,
+        "6": 83
+      },
+      "all_class0_1to3": [
+        {
+          "source_group": "A/39",
+          "count": 1
+        },
+        {
+          "source_group": "A/40",
+          "count": 1
+        },
+        {
+          "source_group": "A/41",
+          "count": 1
+        },
+        {
+          "source_group": "A/42",
+          "count": 1
+        }
+      ],
+      "positive_class0": 62
+    },
+    "origin": {
+      "images": 190,
+      "objects": 919,
+      "class_counts": {
+        "7": 88,
+        "1": 97,
+        "8": 87,
+        "5": 89,
+        "9": 103,
+        "4": 79,
+        "3": 112,
+        "0": 80,
+        "2": 101,
+        "6": 83
+      },
+      "all_class0_1to3": [
+        {
+          "source_group": "A/39",
+          "count": 1
+        },
+        {
+          "source_group": "A/40",
+          "count": 1
+        },
+        {
+          "source_group": "A/41",
+          "count": 1
+        },
+        {
+          "source_group": "A/42",
+          "count": 1
+        }
+      ],
+      "positive_class0": 62
+    }
+  },
+  "source_group_image_counts": {
+    "cropped/A": 53,
+    "cropped/B": 19,
+    "cropped/C": 20,
+    "cropped/D": 21,
+    "cropped/E": 22,
+    "cropped/F": 55,
+    "origin/A": 53,
+    "origin/B": 19,
+    "origin/C": 20,
+    "origin/D": 21,
+    "origin/E": 22,
+    "origin/F": 55
+  }
+}

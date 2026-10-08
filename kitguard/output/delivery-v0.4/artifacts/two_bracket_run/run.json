@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "protocol": "ino_bracket_partial_v1",
+  "label_scope": "author_L_bracket_count_only",
+  "status": "completed",
+  "started_at": "2026-09-26T15:13:20.639443+00:00",
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "manifest_sha256": "603d26994ba1565de1381293d6782ead26a5eac13eb67dfce38f46116a980c33",
+  "freeze_sha256": "636111211408a5c435e67302aa98689611b159f1b4fa626e27531647637b32bc",
+  "runner_sha256": "8760cd43db75c37028d102440a6c0109b9d8471ee409e20d45e68533917e0c73",
+  "source_hashes": {
+    "kitguard/__init__.py": "cbee720fa84a191dee58e3286c3789dd9cc12819c7e91186b0de73ffb04209a8",
+    "kitguard/app.py": "e5e3c6023198a754b1c53e023586b5bc6477269892089d2ada0b41e001dee14a",
+    "kitguard/consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+    "kitguard/evaluation.py": "7f5f7e9840e81cf5896d850248c0491fb8ad24f5228cb58479340c89061f37a3",
+    "kitguard/evidence.py": "230b26b4fd99a47f13f6f523b79faa235e84ae69c72534a2b016e215e7f79300",
+    "kitguard/feedback.py": "370a8ee1adf606a1d08bd4890422ef4bbbafd7661254dbd1741f294bad76dc64",
+    "kitguard/field_api.py": "23d7cea5b3f4ece198ecc606a29f6b7d6b7e066ded1812378729f1df58ce8f6d",
+    "kitguard/field_archive.py": "4b03ca0f78b3f89f48a63b3a274a9ddd0486bfb2fc5a96fac38134acb222c43e",
+    "kitguard/field_study.py": "20a09935261d6e6f334dde9aba642ab01dc5343327e709ccb8f7acc8558d1f9b",
+    "kitguard/identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+    "kitguard/instructions.py": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+    "kitguard/models.py": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+    "kitguard/public_demo_catalog.py": "cc50ea4ed9f3d3c08ea8b59f671403df8961c900e06890aa0e082d1aecb6eddf",
+    "kitguard/runtime.py": "c5a6fa1ebcd4021436cbfeb83bc19d59852e1225fd8142bf0004bc449ba2edfb",
+    "kitguard/schemas.py": "6cc72d010ff65bf4b718f5d5f5445dd4f364d80091e0f036f6076635e0eed886",
+    "kitguard/spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+    "kitguard/store.py": "91af2cd3872ab5617d5d9da374d9b9615c550e740d461eac53bb1477781b7246",
+    "kitguard/vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef"
+  },
+  "expected_cases": 1,
+  "completed_cases": 1,
+  "case_ids": [
+    "ino-two-bracket-F-52"
+  ],
+  "model": {
+    "profile": "Qwen3.6-27B-4bit",
+    "revision": "c000ac2c2057d94be3fa931000c31723aac53282"
+  },
+  "observation_mode": "spatial_guarded",
+  "image_max_side": 1536,
+  "input_pipeline": "app-upload",
+  "fixed_observer_requirements": {
+    "bolt": 1,
+    "nut": 1,
+    "washer": 1,
+    "bracket": 1
+  },
+  "unlabeled_categories": [
+    "bolt",
+    "nut",
+    "washer"
+  ],
+  "view_counts": {
+    "full_image": 0,
+    "author_box_roi": 1
+  },
+  "limitations": [
+    "Only author L-bracket counts have truth; bolt, nut and washer remain unlabeled.",
+    "Positive-only views, including author-box oracle ROIs; not general detection or false-positive validation.",
+    "One case per origin source; no new-factory, independent-scene or multi-bracket claim.",
+    "Original-pass counts are paired components of the same run; no independent baseline latency."
+  ],
+  "model_before": {
+    "available": true,
+    "loaded": false,
+    "label": "Qwen3.6-27B · MLX 4-bit · local",
+    "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+    "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+    "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+    "observer_source_hashes": {
+      "vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+      "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+      "consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+      "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696"
+    },
+    "observation_mode": "spatial_guarded",
+    "image_max_side": 1536,
+    "path": "/Users/lkc/Downloads/AI-Models/Qwen3.6-27B-4bit",
+    "error": null,
+    "load_seconds": null,
+    "last_inference": null,
+    "last_observation_attempt": null
+  },
+  "recorded_cases": 1,
+  "not_executed_or_not_recorded": 0,
+  "finished_at": "2026-09-26T15:13:36.062749+00:00",
+  "model_after": {
+    "available": true,
+    "loaded": true,
+    "label": "Qwen3.6-27B · MLX 4-bit · local",
+    "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+    "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+    "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+    "observer_source_hashes": {
+      "vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+      "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+      "consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+      "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696"
+    },
+    "observation_mode": "spatial_guarded",
+    "image_max_side": 1536,
+    "path": "/Users/lkc/Downloads/AI-Models/Qwen3.6-27B-4bit",
+    "error": null,
+    "load_seconds": 2.732,
+    "last_inference": {
+      "mode": "spatial_guarded",
+      "same_model_correlated_calls": true,
+      "passes": [
+        {
+          "seconds": 5.832,
+          "prompt_tokens": 539,
+          "generation_tokens": 79,
+          "mlx_reported_peak_memory_gb": 17.354,
+          "finish_reason": "stop"
+        },
+        {
+          "seconds": 5.873,
+          "prompt_tokens": 539,
+          "generation_tokens": 82,
+          "mlx_reported_peak_memory_gb": 17.363,
+          "finish_reason": "stop"
+        }
+      ],
+      "identity": {
+        "status": "skipped_no_candidates",
+        "model_called": false
+      }
+    },
+    "last_observation_attempt": {
+      "status": "completed",
+      "mode": "spatial_guarded",
+      "model": "Qwen3.6-27B · MLX 4-bit · local",
+      "passes": [
+        {
+          "transform": "original",
+          "input_sha256": "030c8f705bdebcbf5d3bd49ddbd9fa950f46b5291f10bb3cf9b9b2a76758bba3",
+          "inventory": {
+            "objects": [
+              {
+                "part": "bracket",
+                "center": [
+                  0.55,
+                  0.2
+                ]
+              },
+              {
+                "part": "bracket",
+                "center": [
+                  0.42,
+                  0.8
+                ]
+              }
+            ],
+            "uncertain_parts": [],
+            "issues": [],
+            "action": {
+              "kind": "none",
+              "message": "All requested objects are visible and identifiable."
+            }
+          },
+          "count_derivation": {
+            "listed_counts": {
+              "bolt": 0,
+              "nut": 0,
+              "washer": 0,
+              "bracket": 2
+            },
+            "uncertain_parts_applied": [],
+            "action_coerced_to_recapture": false,
+            "duplicate_policy": "No deduplication or geometric correctness assumption; all listed objects retained"
+          },
+          "runtime": {
+            "seconds": 5.832,
+            "prompt_tokens": 539,
+            "generation_tokens": 79,
+            "mlx_reported_peak_memory_gb": 17.354,
+            "finish_reason": "stop"
+          }
+        },
+        {
+          "transform": "rotate_90_ccw",
+          "input_sha256": "72700edf9b924431d524f7b99a06b24c4ad5707a9d9bc10d8ca344a3d13d0a7f",
+          "inventory": {
+            "objects": [
+              {
+                "part": "bracket",
+                "center": [
+                  0.18,
+                  0.38
+                ]
+              },
+              {
+                "part": "bracket",
+                "center": [
+                  0.76,
+                  0.58
+                ]
+              }
+            ],
+            "uncertain_parts": [],
+            "issues": [],
+            "action": {
+              "kind": "none",
+              "message": "All requested objects are clearly visible and identifiable."
+            }
+          },
+          "count_derivation": {
+            "listed_counts": {
+              "bolt": 0,
+              "nut": 0,
+              "washer": 0,
+              "bracket": 2
+            },
+            "uncertain_parts_applied": [],
+            "action_coerced_to_recapture": false,
+            "duplicate_policy": "No deduplication or geometric correctness assumption; all listed objects retained"
+          },
+          "runtime": {
+            "seconds": 5.873,
+            "prompt_tokens": 539,
+            "generation_tokens": 82,
+            "mlx_reported_peak_memory_gb": 17.363,
+            "finish_reason": "stop"
+          }
+        }
+      ],
+      "source_sha256": "5f7e19560f357e06f3289f8285c59aef7f63ac36267bf325cc273567d8a7766f",
+      "identity": {
+        "status": "skipped_no_candidates",
+        "model_called": false
+      }
+    }
+  },
+  "source_hashes_after": {
+    "kitguard/__init__.py": "cbee720fa84a191dee58e3286c3789dd9cc12819c7e91186b0de73ffb04209a8",
+    "kitguard/app.py": "e5e3c6023198a754b1c53e023586b5bc6477269892089d2ada0b41e001dee14a",
+    "kitguard/consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+    "kitguard/evaluation.py": "7f5f7e9840e81cf5896d850248c0491fb8ad24f5228cb58479340c89061f37a3",
+    "kitguard/evidence.py": "230b26b4fd99a47f13f6f523b79faa235e84ae69c72534a2b016e215e7f79300",
+    "kitguard/feedback.py": "370a8ee1adf606a1d08bd4890422ef4bbbafd7661254dbd1741f294bad76dc64",
+    "kitguard/field_api.py": "23d7cea5b3f4ece198ecc606a29f6b7d6b7e066ded1812378729f1df58ce8f6d",
+    "kitguard/field_archive.py": "4b03ca0f78b3f89f48a63b3a274a9ddd0486bfb2fc5a96fac38134acb222c43e",
+    "kitguard/field_study.py": "20a09935261d6e6f334dde9aba642ab01dc5343327e709ccb8f7acc8558d1f9b",
+    "kitguard/identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+    "kitguard/instructions.py": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+    "kitguard/models.py": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+    "kitguard/public_demo_catalog.py": "cc50ea4ed9f3d3c08ea8b59f671403df8961c900e06890aa0e082d1aecb6eddf",
+    "kitguard/runtime.py": "c5a6fa1ebcd4021436cbfeb83bc19d59852e1225fd8142bf0004bc449ba2edfb",
+    "kitguard/schemas.py": "6cc72d010ff65bf4b718f5d5f5445dd4f364d80091e0f036f6076635e0eed886",
+    "kitguard/spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+    "kitguard/store.py": "91af2cd3872ab5617d5d9da374d9b9615c550e740d461eac53bb1477781b7246",
+    "kitguard/vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef"
+  },
+  "runner_sha256_after": "8760cd43db75c37028d102440a6c0109b9d8471ee409e20d45e68533917e0c73",
+  "manifest_sha256_after": "603d26994ba1565de1381293d6782ead26a5eac13eb67dfce38f46116a980c33",
+  "freeze_sha256_after": "636111211408a5c435e67302aa98689611b159f1b4fa626e27531647637b32bc",
+  "source_changed_during_run": false,
+  "summary": {
+    "planned_cases": 1,
+    "outcomes": {
+      "C_b": 1,
+      "W_b": 0,
+      "U_b": 0,
+      "E": 0
+    },
+    "author_bracket_count_agreement_fraction": 1.0,
+    "outcome_by_application_clarity": {
+      "C_b": {
+        "app_clear": 1,
+        "app_not_clear": 0
+      },
+      "W_b": {
+        "app_clear": 0,
+        "app_not_clear": 0
+      },
+      "U_b": {
+        "app_clear": 0,
+        "app_not_clear": 0
+      }
+    },
+    "paired_first_final": {
+      "cases": 1,
+      "transitions": {
+        "C_b->C_b": 1,
+        "C_b->W_b": 0,
+        "C_b->U_b": 0,
+        "C_b->E": 0,
+        "W_b->C_b": 0,
+        "W_b->W_b": 0,
+        "W_b->U_b": 0,
+        "W_b->E": 0,
+        "U_b->C_b": 0,
+        "U_b->W_b": 0,
+        "U_b->U_b": 0,
+        "U_b->E": 0
+      }
+    },
+    "constant_one_baseline": {
+      "correct": 0,
+      "denominator": 1,
+      "fraction": 0.0,
+      "interpretation": "A constant prediction of one matches all single-bracket truths; this set cannot establish counting reasoning."
+    },
+    "by_view_kind": {
+      "full_image": {
+        "cases": 0,
+        "outcomes": {
+          "C_b": 0,
+          "W_b": 0,
+          "U_b": 0,
+          "E": 0
+        }
+      },
+      "author_box_roi": {
+        "cases": 1,
+        "outcomes": {
+          "C_b": 1,
+          "W_b": 0,
+          "U_b": 0,
+          "E": 0
+        }
+      }
+    },
+    "median_pipeline_latency_ms": 15411,
+    "pipeline_latency_n": 1,
+    "interpretation": "Bracket author-count agreement only; app_clear is not four-category correctness or readiness."
+  },
+  "input_changed_during_run": false,
+  "valid_frozen_run": true
+}

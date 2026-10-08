@@ -1,0 +1,8 @@
+{
+  "stopped_at": "2026-09-26T14:56:59.598183+00:00",
+  "isolated_pid": 49481,
+  "isolated_process_exited": true,
+  "port_8787_released": true,
+  "main_model_loaded": false,
+  "note": "Isolated real MLX server terminated after successful export and read-only Chrome checks; its GPU/model allocation is released with process exit."
+}

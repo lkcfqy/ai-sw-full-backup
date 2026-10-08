@@ -1,0 +1,47 @@
+{
+  "schema": "kitguard.v08.detector-veto.config.v1",
+  "architecture": "fasterrcnn_mobilenet_v3_large_320_fpn",
+  "checkpoint": "training-runs/public_detector_v1_mps_20260930/best.pt",
+  "checkpoint_sha256": "2022c203a3b3b36dd146534c8bcfc538739cf8bf643066fc14a5b9611ebeb62c",
+  "checkpoint_epoch": 10,
+  "threshold": 0.5,
+  "threshold_comparison": "score >= threshold",
+  "device": "cpu",
+  "cpu_threads": 4,
+  "planned_photos": 51,
+  "baseline_mode": "spatial_guarded",
+  "vlm_image_max_side": 1536,
+  "coordinate_rule": "x*(width-1), y*(height-1); closed-interval nut-box containment",
+  "veto_rule": "original VLM washer point in detector nut box; only nut and washer become null; no count repair",
+  "retries": 0,
+  "warmup": false,
+  "automatic_promotion": false,
+  "baseline_artifacts": {
+    "run.json": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/run.json",
+      "sha256": "98d26a66c384466fc85f2e6c3f9c2266d2be89b8a2a3d3ad034da6fae2789661"
+    },
+    "analysis.json": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/analysis.json",
+      "sha256": "13f1775f4f6c57a6f21e01dbb6584654d4beb36a1749ae5430179d7a95f037c4"
+    },
+    "manifest.json": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/manifest.json",
+      "sha256": "efe4633e873d45032101a26e035c23d267bafa6605d147d3d2f7fcb51b697643"
+    },
+    "freeze.json": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/freeze.json",
+      "sha256": "cec1cf5362a5154cfd6e4d27e5ed9dbb49d7757a12189474c13e643f1dc67be7"
+    },
+    "predictions.jsonl": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/predictions.jsonl",
+      "sha256": "9b525702cb2665274c37a7d7740c1d93c05562ab5fb5a17e171e31b75a6859ee"
+    },
+    "independent_audit": {
+      "path": "test-results/v0.7/public-paired-audit-v1.json",
+      "sha256": "94c71e45341a5065ee90fe601e606cd3a54242094d5dcc08770f6aae8c588fe9"
+    }
+  },
+  "washer_eligibility": "original washer not in uncertain_parts; original observed washer is nonnegative integer equal to listed washer points",
+  "fused_observation_scope": "experimental overlay; original VLM evidence retained; no production schema revalidation"
+}

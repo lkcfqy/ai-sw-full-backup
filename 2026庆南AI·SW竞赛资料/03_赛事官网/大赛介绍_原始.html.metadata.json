@@ -1,0 +1,16 @@
+{
+  "url": "https://contest.gnict.org/about.php",
+  "path": "03_赛事官网/大赛介绍_原始.html",
+  "source": "https://contest.gnict.org/",
+  "kind": "webpage",
+  "retrieved_at": "2026-09-24T16:29:55.485248+09:00",
+  "http_status": 200,
+  "final_url": "https://contest.gnict.org/about.php",
+  "content_type": "text/html; charset=utf-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 19906,
+  "sha256": "45117c2b51d18c8668664a57487f78ae927f7dbc20529ea62832fb5565dcf2de",
+  "magic_hex": "3c21646f63747970652068746d6c3e0a"
+}

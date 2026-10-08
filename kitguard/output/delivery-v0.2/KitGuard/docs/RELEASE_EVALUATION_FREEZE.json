@@ -1,0 +1,126 @@
+{
+  "created_at": "2026-09-26T10:44:49.603420+00:00",
+  "status": "frozen_before_any_holdout_inference",
+  "model": {
+    "available": true,
+    "loaded": false,
+    "label": "Qwen3.6-27B · MLX 4-bit · local",
+    "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+    "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+    "observer_protocol_sha256": "d65f411dc69c3f5de57bfcad82c34a4e4bf77fad45c373ad60572c3866ce9678",
+    "observer_source_hashes": {
+      "vision.py": "cd9d36f3496b759ba845149c901a9c85bbc87d051cb833a8a80ba44f4649c39e",
+      "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278"
+    },
+    "observation_mode": "spatial_inventory",
+    "image_max_side": 1536,
+    "path": "/Users/lkc/Downloads/AI-Models/Qwen3.6-27B-4bit",
+    "error": null,
+    "load_seconds": null,
+    "last_inference": null,
+    "last_observation_attempt": null
+  },
+  "protocol": {
+    "selected_mode": "spatial_inventory",
+    "image_max_side": 1536,
+    "max_tokens": 900,
+    "temperature": 0,
+    "enable_thinking": false,
+    "input_pipeline": "app-upload"
+  },
+  "development_selection": {
+    "count_exact": "15/16",
+    "wrong_actionable": "1/16",
+    "known_failure": "train/good/312",
+    "development_run": "evaluation-runs/loco_development_release_v1"
+  },
+  "manifest": {
+    "path": "datasets/manifests/mvtec_loco_screw_bag/benchmark_v2.json",
+    "sha256": "3166a331b981635170794dbef4989ed7294a54f89fd56e1aeac4993163700cfb",
+    "holdout_ids": [
+      "mvtec-loco-screw_bag-test-good-020",
+      "mvtec-loco-screw_bag-test-logical_anomalies-064",
+      "mvtec-loco-screw_bag-test-good-080",
+      "mvtec-loco-screw_bag-test-logical_anomalies-041",
+      "mvtec-loco-screw_bag-test-good-052",
+      "mvtec-loco-screw_bag-test-logical_anomalies-063",
+      "mvtec-loco-screw_bag-test-good-112",
+      "mvtec-loco-screw_bag-test-logical_anomalies-051",
+      "mvtec-loco-screw_bag-test-good-104",
+      "mvtec-loco-screw_bag-test-logical_anomalies-081",
+      "mvtec-loco-screw_bag-test-good-113",
+      "mvtec-loco-screw_bag-test-logical_anomalies-042",
+      "mvtec-loco-screw_bag-test-good-036",
+      "mvtec-loco-screw_bag-test-logical_anomalies-045",
+      "mvtec-loco-screw_bag-test-good-101",
+      "mvtec-loco-screw_bag-test-logical_anomalies-068",
+      "mvtec-loco-screw_bag-test-good-062",
+      "mvtec-loco-screw_bag-test-logical_anomalies-079",
+      "mvtec-loco-screw_bag-test-good-105",
+      "mvtec-loco-screw_bag-test-logical_anomalies-073",
+      "mvtec-loco-screw_bag-test-good-008",
+      "mvtec-loco-screw_bag-test-logical_anomalies-046",
+      "mvtec-loco-screw_bag-test-good-024",
+      "mvtec-loco-screw_bag-test-logical_anomalies-086",
+      "mvtec-loco-screw_bag-test-good-073",
+      "mvtec-loco-screw_bag-test-logical_anomalies-047",
+      "mvtec-loco-screw_bag-test-good-103",
+      "mvtec-loco-screw_bag-test-logical_anomalies-049",
+      "mvtec-loco-screw_bag-test-good-007",
+      "mvtec-loco-screw_bag-test-logical_anomalies-076",
+      "mvtec-loco-screw_bag-test-good-035",
+      "mvtec-loco-screw_bag-test-logical_anomalies-069",
+      "mvtec-loco-screw_bag-test-good-016",
+      "mvtec-loco-screw_bag-test-logical_anomalies-085",
+      "mvtec-loco-screw_bag-test-good-001",
+      "mvtec-loco-screw_bag-test-logical_anomalies-048",
+      "mvtec-loco-screw_bag-test-good-060",
+      "mvtec-loco-screw_bag-test-logical_anomalies-044",
+      "mvtec-loco-screw_bag-test-good-055",
+      "mvtec-loco-screw_bag-test-logical_anomalies-083",
+      "mvtec-loco-screw_bag-test-good-025",
+      "mvtec-loco-screw_bag-test-logical_anomalies-067",
+      "mvtec-loco-screw_bag-test-good-120",
+      "mvtec-loco-screw_bag-test-logical_anomalies-057",
+      "mvtec-loco-screw_bag-test-good-045",
+      "mvtec-loco-screw_bag-test-logical_anomalies-053",
+      "mvtec-loco-screw_bag-test-good-014",
+      "mvtec-loco-screw_bag-test-logical_anomalies-066"
+    ]
+  },
+  "planned_runs": [
+    {
+      "output": "loco_holdout_release_v1",
+      "mode": "spatial_inventory",
+      "max_tokens": 900
+    },
+    {
+      "output": "loco_holdout_27b_single_control_v1",
+      "mode": "single",
+      "max_tokens": 450
+    }
+  ],
+  "shared_comparison_parameters": {
+    "model_revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+    "image_max_side": 1536,
+    "input_pipeline": "app-upload",
+    "split": "holdout",
+    "all_cases": 48
+  },
+  "comparison_interpretation": "Prompt/structured inventory and output-token budget differ together. Same model, input pipeline and resolution. This is not an isolated token-budget ablation.",
+  "source_sha256": {
+    "kitguard/__init__.py": "93ff7393ccb4d2d12337825dbb3d9e89302a32a4b17c13fdbf5526f50633c05f",
+    "kitguard/app.py": "7899f6e43cd343416defc50f5e2d6dbbeebeacec91275dbc1b6fa2329a68ec18",
+    "kitguard/evaluation.py": "4bf45f22ba460e936275cc1fc5dc968cce94ba4368ed078b985a192942452759",
+    "kitguard/evidence.py": "a9e1bd9a0ab79020f6176ff55d0d212203c6b8d1e8b78fa1078ed5a579e70e8c",
+    "kitguard/feedback.py": "2eb4111671c1910c8d38bcc2ad99f6e16586a1c69c48fdfdec0a3da9ac3e950a",
+    "kitguard/instructions.py": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+    "kitguard/models.py": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+    "kitguard/schemas.py": "e0997da7ffc66ee164851a0cec43dc191d16a648c98ed1837eafcae0439c9533",
+    "kitguard/spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+    "kitguard/store.py": "0ab6802be1cedea76136052fe51b10f98a8c417a6b1d01af66a43f6e1ee931f2",
+    "kitguard/vision.py": "cd9d36f3496b759ba845149c901a9c85bbc87d051cb833a8a80ba44f4649c39e",
+    "scripts/run_benchmark.py": "ce12de26bcb7f149d65be74f95180ea4d4d7da818fc057f7dbd6cea041e5854d"
+  },
+  "policy": "Run every selected case; retain refusals and failures. Do not tune the frozen observer after inspecting holdout. Public pretrained-data overlap unknown. Spatial points are model estimates, not annotated localization accuracy. No physical field or human completion claim."
+}

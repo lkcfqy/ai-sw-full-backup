@@ -1,0 +1,16 @@
+{
+  "url": "http://www.gntp.or.kr/assets/externalLib/crosseditor/binary/images/000028/%EA%B2%BD%EB%82%A8_AISW_%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C.jpg?v=1789513925470",
+  "path": "05_补充官方资料/附件/庆南科技园海报_1.jpg",
+  "source": "https://gntp.or.kr/board/detail/notice/20867",
+  "kind": "content_image",
+  "retrieved_at": "2026-09-24T16:35:12.194661+09:00",
+  "http_status": 200,
+  "final_url": "https://www.gntp.or.kr/assets/externalLib/crosseditor/binary/images/000028/%EA%B2%BD%EB%82%A8_AISW_%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C.jpg?v=1789513925470",
+  "content_type": "image/jpeg",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 1997900,
+  "sha256": "9521fcaa9d9c8ff9493895e1602804d0ccaa6e38e4a00fc8b1dcc12941469df0",
+  "magic_hex": "ffd8ffe1215a4578696600004d4d002a"
+}

@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-09-26T15:50:37.501774+00:00",
+  "source_archive": "/Users/lkc/Downloads/AI·SW/kitguard/output/KitGuard_source_v0.5.zip",
+  "source_archive_sha256": "6b17561a2a81645db2436a604fef9b7e8581f01e8306e6eadd0fca7d280e5e3a",
+  "status": "passed",
+  "scope": "Actual ZIP extracted to an isolated directory; CPU suite and HTTP routes with existing dependencies. No clean-machine installation, GPU inference or photographic re-evaluation.",
+  "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]",
+  "zip_crc_verified": true,
+  "all_file_digests_verified": true,
+  "source_files": 1196,
+  "excluded": [
+    "model weights",
+    "original and normalized photographs",
+    "SQLite databases",
+    "Python/node environments",
+    "private registration documents",
+    "Data plugin protected report runtime (offline rendered report delivered separately)"
+  ],
+  "runtime_returncode": 0,
+  "runtime_stderr": "/Users/lkc/Downloads/AI·SW/kitguard/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n  from starlette.testclient import TestClient as TestClient  # noqa\n",
+  "runtime": {
+    "import_path": "/private/var/folders/57/my3v7tgs1mn9cxsptzl_jv6m0000gn/T/kitguard-source-8sssgwox/KitGuard/kitguard/__init__.py",
+    "routes": {
+      "/": 200,
+      "/static/styles.css": 200,
+      "/static/app.js": 200,
+      "/static/demo.html": 200,
+      "/static/camera.js": 200,
+      "/static/audit.js": 200,
+      "/static/study.html": 200,
+      "/static/study.js": 200,
+      "/static/study.css": 200,
+      "/api/studies": 200,
+      "/api/public-demos": 200,
+      "/api/orders": 200,
+      "/static/region.js": 200,
+      "/static/region.css": 200
+    },
+    "health": {
+      "ok": true,
+      "model": {
+        "available": true,
+        "loaded": false,
+        "label": "Qwen3.6-27B · MLX 4-bit · local",
+        "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+        "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+        "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+        "observer_source_hashes": {
+          "vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+          "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+          "consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+          "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696"
+        },
+        "observation_mode": "spatial_guarded",
+        "image_max_side": 1536,
+        "path": "/Users/lkc/Downloads/AI-Models/Qwen3.6-27B-4bit",
+        "error": null,
+        "load_seconds": null,
+        "last_inference": null,
+        "last_observation_attempt": null
+      },
+      "version": "0.5.0",
+      "inference": {
+        "busy": false,
+        "request_waiting": false,
+        "queue_capacity": 0
+      }
+    }
+  },
+  "extracted_suite": {
+    "tests": 696,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 6,
+    "passed": 690,
+    "returncode": 0,
+    "log": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/audit/source_v05_verification.pytest.log",
+    "junit": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/audit/source_v05_verification.pytest.xml",
+    "junit_sha256": "38ab6f425b43be0a8a2527bcd50cc6484997b5ae0ae51b494341d72629a82ced",
+    "skip_policy": "Exactly 6 declared photo/source replay checks require excluded public input photographs or author annotations; all other tests execute against extracted code and text records."
+  }
+}

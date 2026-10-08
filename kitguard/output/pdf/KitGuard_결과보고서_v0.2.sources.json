@@ -1,0 +1,457 @@
+{
+  "artifact": "/Users/lkc/Downloads/AI·SW/kitguard/output/pdf/KitGuard_결과보고서_v0.2.pdf",
+  "pages": 5,
+  "candidate_status": "동결 48장 정적 평가 및 독립 재계산 완료",
+  "loco_status": "전체 원본 압축본 검증 완료",
+  "report_sha256": "e6df8459206d33d40ff87eb5d05d9d1da01759105bb7a4692f6e5b8b485d64d5",
+  "runs": [
+    {
+      "path": "evaluation-runs/loco_development_release_v1",
+      "label": "개발 / 공간 목록",
+      "summary": {
+        "images": 16,
+        "unique_image_hashes": 16,
+        "unique_source_images": 16,
+        "splits": {
+          "development": 16
+        },
+        "order_eligible_images": 16,
+        "order_out_of_scope_images": 0,
+        "count_exact": {
+          "numerator": 15,
+          "denominator": 16,
+          "rate": 0.9375,
+          "wilson_95": null,
+          "interval_note": "Descriptive benchmark only; independent holdout sampling is not established."
+        },
+        "actionable_coverage": {
+          "numerator": 16,
+          "denominator": 16,
+          "rate": 1.0
+        },
+        "wrong_actionable_count": {
+          "numerator": 1,
+          "denominator": 16,
+          "rate": 0.0625
+        },
+        "errors": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0.0
+        },
+        "matched_order_ready": {
+          "numerator": 15,
+          "denominator": 16,
+          "rate": 0.9375
+        },
+        "mismatched_order_false_ready": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0.0
+        },
+        "mismatched_order_correct_adjustment": {
+          "numerator": 15,
+          "denominator": 16,
+          "rate": 0.9375
+        },
+        "nominal_order": {
+          "matching_images_ready": {
+            "numerator": 7,
+            "denominator": 8,
+            "rate": 0.875
+          },
+          "quantity_anomalies_false_ready": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0.0
+          },
+          "quantity_anomalies_correct_adjustment": {
+            "numerator": 8,
+            "denominator": 8,
+            "rate": 1.0
+          },
+          "constant_nominal_baseline": {
+            "label": "Always return the author-defined normal composition; no visual input",
+            "count_exact": {
+              "numerator": 8,
+              "denominator": 16,
+              "rate": 0.5
+            },
+            "quantity_anomalies_false_ready": {
+              "numerator": 8,
+              "denominator": 8,
+              "rate": 1.0
+            }
+          }
+        },
+        "subgroups": {
+          "normal_constant_222": {
+            "images": 8,
+            "count_exact": {
+              "numerator": 7,
+              "denominator": 8,
+              "rate": 0.875
+            },
+            "actionable_coverage": {
+              "numerator": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "wrong_actionable_count": {
+              "numerator": 1,
+              "denominator": 8,
+              "rate": 0.125
+            },
+            "errors": {
+              "numerator": 0,
+              "denominator": 8,
+              "rate": 0.0
+            }
+          },
+          "quantity_anomaly": {
+            "images": 8,
+            "count_exact": {
+              "numerator": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "actionable_coverage": {
+              "numerator": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "wrong_actionable_count": {
+              "numerator": 0,
+              "denominator": 8,
+              "rate": 0.0
+            },
+            "errors": {
+              "numerator": 0,
+              "denominator": 8,
+              "rate": 0.0
+            }
+          }
+        },
+        "latency_ms": {
+          "median": 14742.0,
+          "maximum": 18273
+        },
+        "limitations": [
+          "Public photographs, broad category mapping; no SKU/size or physical action verification.",
+          "Order tasks from the same photograph are correlated, not additional image samples.",
+          "Refusals and errors remain in the image denominator; no exclusion after model output.",
+          "Intervals require an explicit independent holdout sampling assumption and unique sources.",
+          "Development and first-N benchmark results are descriptive, not population performance estimates.",
+          "Mismatched-order rates cover one fixed perturbation per eligible image, not every possible mismatch.",
+          "Unknown overlap with the pretrained model's training data limits generalization claims."
+        ]
+      },
+      "run_sha256": "bc3e9aa45bb7fdbc79bdec72caa264c0f598e6dbcc41663383f5b66f21cdb4d6",
+      "predictions_sha256": "a00a76f268c11a427651cb52e47a9d0c90ac45445632cc3830cf82d068d70d2c",
+      "manifest_sha256": "3166a331b981635170794dbef4989ed7294a54f89fd56e1aeac4993163700cfb",
+      "model": "Qwen3.6-27B · MLX 4-bit · local",
+      "input_pipeline": "app-upload",
+      "image_max_side": 1536,
+      "observation_mode": "spatial_inventory"
+    },
+    {
+      "path": "evaluation-runs/loco_holdout_27b_single_control_v1",
+      "label": "보류 / 직접 계수",
+      "summary": {
+        "images": 48,
+        "unique_image_hashes": 48,
+        "unique_source_images": 48,
+        "splits": {
+          "holdout": 48
+        },
+        "order_eligible_images": 48,
+        "order_out_of_scope_images": 0,
+        "count_exact": {
+          "numerator": 34,
+          "denominator": 48,
+          "rate": 0.7083333333333334,
+          "wilson_95": null,
+          "interval_note": "Descriptive benchmark only; independent holdout sampling is not established."
+        },
+        "actionable_coverage": {
+          "numerator": 48,
+          "denominator": 48,
+          "rate": 1.0
+        },
+        "wrong_actionable_count": {
+          "numerator": 14,
+          "denominator": 48,
+          "rate": 0.2916666666666667
+        },
+        "errors": {
+          "numerator": 0,
+          "denominator": 48,
+          "rate": 0.0
+        },
+        "matched_order_ready": {
+          "numerator": 34,
+          "denominator": 48,
+          "rate": 0.7083333333333334
+        },
+        "mismatched_order_false_ready": {
+          "numerator": 1,
+          "denominator": 48,
+          "rate": 0.020833333333333332
+        },
+        "mismatched_order_correct_adjustment": {
+          "numerator": 34,
+          "denominator": 48,
+          "rate": 0.7083333333333334
+        },
+        "nominal_order": {
+          "matching_images_ready": {
+            "numerator": 17,
+            "denominator": 24,
+            "rate": 0.7083333333333334
+          },
+          "quantity_anomalies_false_ready": {
+            "numerator": 2,
+            "denominator": 24,
+            "rate": 0.08333333333333333
+          },
+          "quantity_anomalies_correct_adjustment": {
+            "numerator": 17,
+            "denominator": 24,
+            "rate": 0.7083333333333334
+          },
+          "constant_nominal_baseline": {
+            "label": "Always return the author-defined normal composition; no visual input",
+            "count_exact": {
+              "numerator": 24,
+              "denominator": 48,
+              "rate": 0.5
+            },
+            "quantity_anomalies_false_ready": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            }
+          }
+        },
+        "subgroups": {
+          "normal_constant_222": {
+            "images": 24,
+            "count_exact": {
+              "numerator": 17,
+              "denominator": 24,
+              "rate": 0.7083333333333334
+            },
+            "actionable_coverage": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "wrong_actionable_count": {
+              "numerator": 7,
+              "denominator": 24,
+              "rate": 0.2916666666666667
+            },
+            "errors": {
+              "numerator": 0,
+              "denominator": 24,
+              "rate": 0.0
+            }
+          },
+          "quantity_anomaly": {
+            "images": 24,
+            "count_exact": {
+              "numerator": 17,
+              "denominator": 24,
+              "rate": 0.7083333333333334
+            },
+            "actionable_coverage": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "wrong_actionable_count": {
+              "numerator": 7,
+              "denominator": 24,
+              "rate": 0.2916666666666667
+            },
+            "errors": {
+              "numerator": 0,
+              "denominator": 24,
+              "rate": 0.0
+            }
+          }
+        },
+        "latency_ms": {
+          "median": 8990.5,
+          "maximum": 13194
+        },
+        "limitations": [
+          "Public photographs, broad category mapping; no SKU/size or physical action verification.",
+          "Order tasks from the same photograph are correlated, not additional image samples.",
+          "Refusals and errors remain in the image denominator; no exclusion after model output.",
+          "Intervals require an explicit independent holdout sampling assumption and unique sources.",
+          "Development and first-N benchmark results are descriptive, not population performance estimates.",
+          "Mismatched-order rates cover one fixed perturbation per eligible image, not every possible mismatch.",
+          "Unknown overlap with the pretrained model's training data limits generalization claims."
+        ]
+      },
+      "run_sha256": "2ea499b5f828fec31a85b7e24f2b9cb27a239be6a2c35e4f8ef93aba612fcc5c",
+      "predictions_sha256": "573de916ee6d9ca0f76b0bbab3a9807a2c4e12523937d5678404a5a7ac1c3c2f",
+      "manifest_sha256": "3166a331b981635170794dbef4989ed7294a54f89fd56e1aeac4993163700cfb",
+      "model": "Qwen3.6-27B · MLX 4-bit · local",
+      "input_pipeline": "app-upload",
+      "image_max_side": 1536,
+      "observation_mode": "single"
+    },
+    {
+      "path": "evaluation-runs/loco_holdout_release_v1",
+      "label": "보류 / 공간 목록",
+      "summary": {
+        "images": 48,
+        "unique_image_hashes": 48,
+        "unique_source_images": 48,
+        "splits": {
+          "holdout": 48
+        },
+        "order_eligible_images": 48,
+        "order_out_of_scope_images": 0,
+        "count_exact": {
+          "numerator": 46,
+          "denominator": 48,
+          "rate": 0.9583333333333334,
+          "wilson_95": null,
+          "interval_note": "Descriptive benchmark only; independent holdout sampling is not established."
+        },
+        "actionable_coverage": {
+          "numerator": 48,
+          "denominator": 48,
+          "rate": 1.0
+        },
+        "wrong_actionable_count": {
+          "numerator": 2,
+          "denominator": 48,
+          "rate": 0.041666666666666664
+        },
+        "errors": {
+          "numerator": 0,
+          "denominator": 48,
+          "rate": 0.0
+        },
+        "matched_order_ready": {
+          "numerator": 46,
+          "denominator": 48,
+          "rate": 0.9583333333333334
+        },
+        "mismatched_order_false_ready": {
+          "numerator": 1,
+          "denominator": 48,
+          "rate": 0.020833333333333332
+        },
+        "mismatched_order_correct_adjustment": {
+          "numerator": 46,
+          "denominator": 48,
+          "rate": 0.9583333333333334
+        },
+        "nominal_order": {
+          "matching_images_ready": {
+            "numerator": 23,
+            "denominator": 24,
+            "rate": 0.9583333333333334
+          },
+          "quantity_anomalies_false_ready": {
+            "numerator": 1,
+            "denominator": 24,
+            "rate": 0.041666666666666664
+          },
+          "quantity_anomalies_correct_adjustment": {
+            "numerator": 23,
+            "denominator": 24,
+            "rate": 0.9583333333333334
+          },
+          "constant_nominal_baseline": {
+            "label": "Always return the author-defined normal composition; no visual input",
+            "count_exact": {
+              "numerator": 24,
+              "denominator": 48,
+              "rate": 0.5
+            },
+            "quantity_anomalies_false_ready": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            }
+          }
+        },
+        "subgroups": {
+          "normal_constant_222": {
+            "images": 24,
+            "count_exact": {
+              "numerator": 23,
+              "denominator": 24,
+              "rate": 0.9583333333333334
+            },
+            "actionable_coverage": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "wrong_actionable_count": {
+              "numerator": 1,
+              "denominator": 24,
+              "rate": 0.041666666666666664
+            },
+            "errors": {
+              "numerator": 0,
+              "denominator": 24,
+              "rate": 0.0
+            }
+          },
+          "quantity_anomaly": {
+            "images": 24,
+            "count_exact": {
+              "numerator": 23,
+              "denominator": 24,
+              "rate": 0.9583333333333334
+            },
+            "actionable_coverage": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "wrong_actionable_count": {
+              "numerator": 1,
+              "denominator": 24,
+              "rate": 0.041666666666666664
+            },
+            "errors": {
+              "numerator": 0,
+              "denominator": 24,
+              "rate": 0.0
+            }
+          }
+        },
+        "latency_ms": {
+          "median": 14619.5,
+          "maximum": 18295
+        },
+        "limitations": [
+          "Public photographs, broad category mapping; no SKU/size or physical action verification.",
+          "Order tasks from the same photograph are correlated, not additional image samples.",
+          "Refusals and errors remain in the image denominator; no exclusion after model output.",
+          "Intervals require an explicit independent holdout sampling assumption and unique sources.",
+          "Development and first-N benchmark results are descriptive, not population performance estimates.",
+          "Mismatched-order rates cover one fixed perturbation per eligible image, not every possible mismatch.",
+          "Unknown overlap with the pretrained model's training data limits generalization claims."
+        ]
+      },
+      "run_sha256": "232de018714f5ac6b145e20c86cbaa4b481a5338fdb698cd32152846ea02e46a",
+      "predictions_sha256": "b8094669dc0d334219e009beb65ce0a0d2e60f5b180aa90b4db1c7e19405bdcb",
+      "manifest_sha256": "3166a331b981635170794dbef4989ed7294a54f89fd56e1aeac4993163700cfb",
+      "model": "Qwen3.6-27B · MLX 4-bit · local",
+      "input_pipeline": "app-upload",
+      "image_max_side": 1536,
+      "observation_mode": "spatial_inventory"
+    }
+  ],
+  "note": "Frozen static holdout and same-model protocol comparison; not physical field performance. Rendering and visual QA are required after each content update."
+}

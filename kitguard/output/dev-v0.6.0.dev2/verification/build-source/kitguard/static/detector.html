@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <title>KitGuard · 부품 검출 확인</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/detector.css">
+  <script src="/static/detector.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#lab-main" data-i18n="skip">본문으로 건너뛰기</a>
+  <header class="lab-header">
+    <a href="/" class="lab-brand">Kit<span>Guard</span><small>VERIFY WITH EVIDENCE</small></a>
+    <nav aria-label="Navigation"><a href="/" data-i18n="back">작업대로 돌아가기 ↗</a>
+      <div class="lab-languages" aria-label="Language"><button type="button" data-lang="ko" aria-pressed="true">한국어</button><button type="button" data-lang="zh" aria-pressed="false">中文</button></div>
+    </nav>
+  </header>
+  <main id="lab-main" class="lab-main">
+    <div class="lab-intro"><div><p class="lab-eyebrow">PART DETECTION · RESEARCH PREVIEW</p>
+      <h1 data-i18n="title">부품 하나하나, 눈으로 확인하세요.</h1>
+      <p data-i18n="subtitle">사진 속 볼트와 너트를 찾고, 표시된 상자를 실제 부품과 대조하세요.</p></div>
+      <span id="service-status" class="lab-service" role="status" data-i18n="connecting">서비스 확인 중</span>
+    </div>
+    <aside class="lab-scope"><strong data-i18n="scopeTitle">볼트 · 너트만 검출합니다</strong><span data-i18n="scope">와셔와 브래킷은 아직 지원하지 않습니다. 누락·오검출이 있을 수 있으므로 사진을 직접 확인하세요.</span></aside>
+    <div class="lab-grid">
+      <section class="lab-photo-panel" aria-labelledby="photo-title">
+        <div class="lab-panel-heading"><h2 id="photo-title" data-i18n="photo">01 / 사진 확인</h2><button type="button" id="clear-photo" class="lab-text-button" disabled data-i18n="clear">새 사진</button></div>
+        <div id="drop-zone" class="lab-drop">
+          <div id="empty-photo" class="lab-empty">
+            <svg viewBox="0 0 80 80" aria-hidden="true"><rect x="12" y="17" width="56" height="46" rx="9"/><circle cx="29" cy="32" r="5"/><path d="m16 56 17-15 12 9 9-10 13 14"/></svg>
+            <h3 data-i18n="uploadTitle">사진 한 장으로 시작하세요</h3><p data-i18n="uploadHint">부품이 잘 보이는 사진을 끌어오거나 선택하세요.</p>
+            <label class="lab-primary lab-file-label" for="photo-input" data-i18n="choose">사진 선택</label>
+            <input id="photo-input" type="file" accept="image/jpeg,image/png,image/webp" class="lab-visually-hidden">
+            <button type="button" id="take-photo" class="lab-secondary" data-i18n="camera">카메라로 촬영</button>
+            <input id="camera-input" type="file" accept="image/jpeg,image/png,image/webp" capture="environment" hidden>
+            <small data-i18n="format">JPEG · PNG · WebP / 최대 12 MB</small>
+          </div>
+          <div id="photo-stage" class="lab-stage" hidden><img id="photo-preview" alt=""><svg id="boxes-overlay" aria-hidden="true"></svg></div>
+        </div>
+        <div class="lab-photo-footer"><span id="photo-name" data-i18n="photoTips">겹침을 줄이고, 모든 부품을 프레임 안에 담으세요.</span><label id="boxes-control" hidden><input id="show-boxes" type="checkbox" checked><span data-i18n="boxes">검출 상자</span></label></div>
+        <div class="lab-sample"><button type="button" id="load-sample" class="lab-text-button" data-i18n="sample">공개 개발 사진으로 체험 ↗</button><small data-i18n="sampleNote">MVTec · CC BY-NC-SA 4.0 · 현장 검증으로 집계되지 않습니다.</small></div>
+      </section>
+      <section class="lab-results" aria-labelledby="results-title">
+        <div class="lab-panel-heading"><h2 id="results-title" data-i18n="results">02 / 검출 결과</h2><span class="lab-preview-badge" data-i18n="preview">실험용</span></div>
+        <div class="lab-count-grid">
+          <div class="lab-count bolt"><span data-i18n="bolt">볼트 / 나사</span><strong id="count-bolt">—</strong><small data-i18n="estimate">모델 추정</small></div>
+          <div class="lab-count nut"><span data-i18n="nut">너트</span><strong id="count-nut">—</strong><small data-i18n="estimate">모델 추정</small></div>
+          <div class="lab-unsupported"><span data-i18n="washer">와셔</span><strong data-i18n="unsupported">미지원</strong></div>
+          <div class="lab-unsupported"><span data-i18n="bracket">브래킷</span><strong data-i18n="unsupported">미지원</strong></div>
+        </div>
+        <button type="button" id="run-detection" class="lab-primary lab-run" disabled data-i18n="run">이 사진 분석하기</button>
+        <p id="job-status" class="lab-job-status" role="status" aria-live="polite" data-i18n="selectFirst">먼저 사진을 선택하세요.</p>
+        <div id="error-message" class="lab-error" role="alert" hidden></div>
+        <div id="result-actions" hidden><button type="button" id="download-result" class="lab-secondary lab-download" data-i18n="download">검출 기록 내려받기</button></div>
+        <div class="lab-check-note"><h3 data-i18n="checkTitle">확인할 두 가지</h3><ol><li data-i18n="checkOne">모든 볼트와 너트에 상자가 하나씩 표시됐나요?</li><li data-i18n="checkTwo">빈 배경이나 다른 부품에 상자가 표시되지는 않았나요?</li></ol><p data-i18n="notRelease">이 화면은 검출 결과를 확인하는 곳입니다. 주문 완료 여부는 작업대에서 확인합니다.</p></div>
+      </section>
+    </div>
+    <section id="detection-detail" class="lab-detail" hidden>
+      <div class="lab-panel-heading"><h2 data-i18n="objects">검출된 부품 목록</h2><span id="object-count"></span></div>
+      <div class="lab-table-scroll"><table><thead><tr><th data-i18n="number">번호</th><th data-i18n="part">종류</th><th data-i18n="score">모델 점수</th><th data-i18n="location">사진 내 위치</th></tr></thead><tbody id="object-rows"></tbody></table></div>
+      <p class="lab-score-note" data-i18n="scoreNote">점수는 모델의 출력값이며, 정답 확률이나 품질 보증이 아닙니다.</p>
+      <details class="lab-evidence"><summary data-i18n="evidence">사진과 모델 기록</summary><dl id="evidence-records"></dl></details>
+    </section>
+    <footer class="lab-footer" data-i18n="footer">사진은 이 컴퓨터에서 처리됩니다. 공개 데이터 학습 모델이며 실제 촬영 환경에서의 성능은 별도 확인이 필요합니다.</footer>
+  </main>
+</body>
+</html>

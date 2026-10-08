@@ -1,0 +1,16 @@
+{
+  "status": "passed_with_mobile_override_limitation",
+  "checked_zip_payload_files": [
+    "photos/img_df2a030dfaf644e69d31.jpg",
+    "evidence.json",
+    "OPEN_ME.html"
+  ],
+  "html_no_scripts_or_external_image_sources": true,
+  "browser_static_view_verified": true,
+  "static_view_note": "Served by standalone static server 8766; not a literal browser-network-disabled test. App server not used by viewer.",
+  "mobile_final_order_verified": false,
+  "mobile_override_observed_width": 1280,
+  "mobile_attempt_note": "Browser viewport set(390,844) did not change final order DOM width; attempts retained as desktop images and not counted as mobile acceptance. Earlier welcome mobile test is separate.",
+  "drag_drop_browser_tested": false,
+  "created_at": "2026-10-01T22:36:01.004403+00:00"
+}

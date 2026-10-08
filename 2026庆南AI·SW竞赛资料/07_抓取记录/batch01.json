@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.changwon.ac.kr/common/nttFileDownload.do?fileKey=0b133ca692169b607d2244df675ff78d",
+    "path": "01_昌原大学公告/附件/1. 제4회_AI.SW_경진대회_참가_신청서.hwp",
+    "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+    "kind": "attachment"
+  },
+  {
+    "url": "https://www.changwon.ac.kr/common/nttFileDownload.do?fileKey=f98b403aa06129b6553c6ac3e6d4359f",
+    "path": "01_昌原大学公告/附件/2. 공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집.hwp",
+    "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+    "kind": "attachment"
+  },
+  {
+    "url": "https://www.changwon.ac.kr/common/nttFileDownload.do?fileKey=a954f57c4d44aa7088e036b126c9e965",
+    "path": "01_昌原大学公告/附件/최종_경진대회_프로그램포스터.png",
+    "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+    "kind": "attachment"
+  },
+  {
+    "url": "https://www.changwon.ac.kr/common/nttEditorImgView.do?imgKey=8443a80060e39a5f943287c72eb7d7ec",
+    "path": "01_昌原大学公告/附件/正文海报_1.png",
+    "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+    "kind": "content_image"
+  },
+  {
+    "url": "https://www.changwon.ac.kr/common/nttEditorImgView.do?imgKey=e0873eb2cf7a7b95a8f5bb75934602d2",
+    "path": "01_昌原大学公告/附件/正文海报_2.png",
+    "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+    "kind": "content_image"
+  },
+  {
+    "url": "https://www.gnict.org/",
+    "path": "02_主办方公告/协会首页_原始.html",
+    "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+    "kind": "webpage"
+  },
+  {
+    "url": "https://www.gnict.org/게시판/sw경진대회/제4회-경남aisw경진대회-공고/",
+    "path": "02_主办方公告/竞赛公告及官方答疑_原始.html",
+    "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+    "kind": "webpage"
+  },
+  {
+    "url": "https://www.gnict.org/게시판/sw경진대회/",
+    "path": "02_主办方公告/竞赛公告目录_原始.html",
+    "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+    "kind": "listing"
+  },
+  {
+    "url": "https://contest.gnict.org/",
+    "path": "03_赛事官网/首页_原始.html",
+    "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+    "kind": "webpage"
+  },
+  {
+    "url": "https://forms.gle/RcxRqdWCXkfQTqYTA",
+    "path": "04_报名入口/报名表单_原始.html",
+    "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+    "kind": "form"
+  }
+]

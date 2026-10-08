@@ -1,0 +1,16 @@
+{
+  "url": "https://www.code-c.kr/newsroom/1267",
+  "path": "08_媒体及公开转载/CODE_C_20260918.html",
+  "source": "public web search",
+  "kind": "media_repost",
+  "retrieved_at": "2026-09-24T16:39:43.228190+09:00",
+  "http_status": 200,
+  "final_url": "https://www.code-c.kr/newsroom/1267",
+  "content_type": "text/html; charset=utf-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 60835,
+  "sha256": "2cc505f0c6ca7294d8b8a7f86aa8072c0fbc20248e4f0fab6e8b32c637a93739",
+  "magic_hex": "3c21646f63747970652068746d6c3e0a"
+}

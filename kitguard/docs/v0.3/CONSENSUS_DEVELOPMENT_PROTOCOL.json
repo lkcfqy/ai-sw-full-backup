@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-09-26T11:41:50.457765+00:00",
+  "experiment": "spatial_consensus_v1 development selection",
+  "baseline": "v0.2 spatial_inventory original image pass",
+  "candidate": "Original and 90-degree CCW image, same fixed 27B/1536 model and original spatial prompt, each 900 tokens; second receives neither first answer nor order quantities. Keep only known equal class counts; disagreements null. No voting, deduplication, geometry correctness threshold or corrected quantities.",
+  "selection_data": "Exactly existing 16 development photographs; the 48 already-inspected holdout photos are now regression only for v0.3.",
+  "predeclared_default_gate": {
+    "wrong_actionable_count_max": 0,
+    "correct_actionable_count_min": 13,
+    "total_cases": 16,
+    "median_total_latency_ms_max": 40000,
+    "errors_max": 0
+  },
+  "gate_scope": "Development selection only, never a deployment-risk or winner guarantee. Any fresh holdout will be frozen before running and cannot drive further tuning without becoming development.",
+  "reporting": [
+    "Same-run first-pass versus final pair",
+    "correct actionable / all",
+    "wrong actionable / actionable",
+    "coverage",
+    "nominal/fixed perturbation false-ready",
+    "errors and latency"
+  ],
+  "fallback": "If gate fails, keep candidate experimental; do not select by the old two holdout errors.",
+  "physics": "Digital rotation adds no new physical evidence; calls from same model are correlated. Conflict regions use model centers only as approximate guides.",
+  "camera": "Capture preview and explicit submission, captured order/revision binding; no completion automation."
+}

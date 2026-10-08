@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-09-30T23:35:53+09:00",
+  "historical_network_sources_verified": 46,
+  "historical_network_payloads_unchanged": true,
+  "user_supplied_pdfs_verified": 2,
+  "pdf_copies_match_source_bytes": true,
+  "pdf_pages": [
+    18,
+    32
+  ],
+  "index_local_links_verified": 62,
+  "source_records": [
+    {
+      "path": "09_说明会与培训_20260929/比赛说明会_V0.1_20260929.pdf",
+      "kind": "user_provided_pdf",
+      "source_type": "user_provided_local_attachment",
+      "source_path": "/Users/lkc/Library/Mobile Documents/com~apple~CloudDocs/TalkFile_발표자료_경진대회 사업설명회V0.1_최창석부회장_20260929.pdf.pdf",
+      "source_filename": "TalkFile_발표자료_경진대회 사업설명회V0.1_최창석부회장_20260929.pdf.pdf",
+      "imported_at": "2026-09-30T23:32:09+09:00",
+      "document_date": "2026-09-29",
+      "content_type": "application/pdf",
+      "bytes": 4692852,
+      "pages": 18,
+      "sha256": "573f86cfb4b85652cdbcb5e3cc863e5164863aefb9b3f371dc1c008d0322448f",
+      "original_web_download": false
+    },
+    {
+      "path": "09_说明会与培训_20260929/AI_Agent八天开发教育资料_20260929.pdf",
+      "kind": "user_provided_pdf",
+      "source_type": "user_provided_local_attachment",
+      "source_path": "/Users/lkc/Library/Mobile Documents/com~apple~CloudDocs/TalkFile_교육자료_제4회_경남AI_SW경진대회_AI_Agent_8일완성.pdf.pdf",
+      "source_filename": "TalkFile_교육자료_제4회_경남AI_SW경진대회_AI_Agent_8일완성.pdf.pdf",
+      "imported_at": "2026-09-30T23:32:09+09:00",
+      "document_date": "2026-09-29",
+      "content_type": "application/pdf",
+      "bytes": 527853,
+      "pages": 32,
+      "sha256": "199ebd332900f8702e0279e7e83a9bdbe1b444323436dc2bc35c49f58ac61b04",
+      "original_web_download": false
+    }
+  ],
+  "issues": []
+}

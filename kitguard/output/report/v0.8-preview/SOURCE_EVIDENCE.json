@@ -1,0 +1,83 @@
+{
+  "sources": {
+    "E1": {
+      "path": "test-results/v0.8/photo-document-live-api-v1/receipt.json",
+      "sha256": "b86f4f3d9f989ce3c07da986465b0e44d662e3b9e6bd469b413351a43a05d29d"
+    },
+    "E2": {
+      "path": "test-results/v0.8-loco-combined-independent-audit-v2.json",
+      "sha256": "f9f1256442934061982c3aaca7f96c15a365d83e2a5aff000a5fef13ea20f263"
+    },
+    "E3": {
+      "path": "evaluation-runs/v0.8/loco_combined_v1/analysis.json",
+      "sha256": "5f880c132299b6f78657ab9513b5a1121e3cb8003bacc483e99efd746b2fac4b"
+    },
+    "E4": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/analysis.json",
+      "sha256": "13f1775f4f6c57a6f21e01dbb6584654d4beb36a1749ae5430179d7a95f037c4"
+    },
+    "E5": {
+      "path": "test-results/v0.7/public-paired-audit-v1.json",
+      "sha256": "94c71e45341a5065ee90fe601e606cd3a54242094d5dcc08770f6aae8c588fe9"
+    },
+    "E6": {
+      "path": "test-results/v0.8-photo-document-backend-v2.json",
+      "sha256": "0b708da2bf29a2026d53609e6698755c7541160860e43bf9527ea0b807779c54"
+    },
+    "E7": {
+      "path": "test-results/v0.8/reference-live-api-v1/receipt.json",
+      "sha256": "240aeaeff7059ee737cb31ed359af17585f94229c171cff7a83a38c27b4c8a12"
+    },
+    "E8": {
+      "path": "docs/v0.8/DELIVERY_UPDATE_PLAN.md",
+      "sha256": "df6a160c375108278b80512746b6e9b59b4d114eb8195652c716dbce2b1c7a14"
+    },
+    "E9": {
+      "path": "docs/v0.7/CONTEST_PERIOD_CONTRIBUTIONS.md",
+      "sha256": "71f32990ec6b860e2385d83f2c5ba001199a309c9226a8c788eb82f11f9913d0"
+    },
+    "E10": {
+      "path": "docs/v0.8/SCREWS_CATEGORY_SEMANTICS_REVIEW.md",
+      "sha256": "42acee3eea618463969ba2116b65b067a7d0e42eacaa30ce527b3e7e17622e27"
+    },
+    "E11": {
+      "path": "docs/v0.8/LOCO_COMBINED_RESULT.md",
+      "sha256": "bc45c7c076a492cbbbeeb28f5bafb8b1d550b552525c1a27efe8e5a75d9c28b1"
+    },
+    "E12": {
+      "path": "docs/v0.8/LOCO_COMBINED_DECISION.json",
+      "sha256": "688044080f1f11d951c53e9e25707dd0156272c8c785643ddced0ed7c7625e9b"
+    },
+    "E13": {
+      "path": "test-results/v0.8-preview-full-v1.xml",
+      "sha256": "9983c611203ba27e0b9f9048bad5b6956e11bcad882434cce3b468393255797c"
+    },
+    "E14": {
+      "path": "test-results/browser/photo-document-live-v08/browser-receipt.json",
+      "sha256": "9db664fa5089c1f3fb25297cbd796b3d78eeb99290e8e3245583935f8f83c431"
+    },
+    "E15": {
+      "path": "docs/v0.7/OFFICIAL_RULE_CHECK_20261002.txt",
+      "sha256": "fcec8818eb1b30277e80d18b0a5574358525aebdda7c1843282de51ac34be72a"
+    },
+    "E16": {
+      "path": "docs/v0.8/CONTEST_PERIOD_CONTRIBUTIONS.md",
+      "sha256": "5f2d8f5a450466a8eb20f5943373e8c68fb4ff22de74b2b7491ac59aa77d8905"
+    },
+    "E17": {
+      "path": "docs/v0.8/CONTRIBUTION_DIFF_FROM_SEALED_V07.json",
+      "sha256": "a1dee1e9390d08a7146bcffde92a3c75f8ceccb98cbff4380018d3032aa191d0"
+    }
+  },
+  "regression": {
+    "passed": 1530,
+    "path": "test-results/v0.8-preview-full-v1.xml",
+    "sha256": "9983c611203ba27e0b9f9048bad5b6956e11bcad882434cce3b468393255797c",
+    "tests": 1530,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "local_pdf_links": "Labels only; no relocated relative clickable links",
+  "evidence_scope": "No source archive self-hash"
+}

@@ -1,0 +1,606 @@
+{
+  "schema": "kitguard.v08.grayscale-validation.decision.v1",
+  "recorded_at": "2026-10-02T01:36:52.358370+00:00",
+  "status": "diagnostic_completed_no_adoption",
+  "diagnostic_only": true,
+  "input_grayscale_adopted": false,
+  "production_unchanged": true,
+  "default_unchanged": true,
+  "automatic_promotion": false,
+  "model_trained_or_threshold_changed": false,
+  "new_holdout": false,
+  "training_causal_effect_established": false,
+  "interpretation": "统一灰度使旧验证80的计数完全正确53→39；nut→washer几何混淆12→0主要伴随9漏检，不能把错误框消失当作识别修复。",
+  "independent_audit_status": "passed",
+  "actual_inputs_reconstructed": 80,
+  "raw_boxes_retained": 741,
+  "new_model_calls_in_audit": 0,
+  "planned": 80,
+  "successful_model_observations": 80,
+  "failed_or_unattempted": 0,
+  "rgb_baseline_concurrently_rerun": false,
+  "results": {
+    "all": {
+      "planned": 80,
+      "completed": 80,
+      "failed": 0,
+      "not_attempted": 0,
+      "rgb_historical_metrics": {
+        "n": 80,
+        "exact_count_n": 53,
+        "exact_count_accuracy": 0.6625,
+        "count_mae": 0.2208333333333333,
+        "per_class": {
+          "bolt": {
+            "tp": 385,
+            "fp": 8,
+            "fn": 14,
+            "count_mae": 0.15,
+            "signed_count_error": -6
+          },
+          "nut": {
+            "tp": 152,
+            "fp": 7,
+            "fn": 16,
+            "count_mae": 0.2875,
+            "signed_count_error": -9
+          },
+          "washer": {
+            "tp": 6,
+            "fp": 12,
+            "fn": 6,
+            "count_mae": 0.225,
+            "signed_count_error": 6
+          }
+        },
+        "tp": 543,
+        "fp": 27,
+        "fn": 36,
+        "box_f1": 0.9451697127937336
+      },
+      "gray_measured_subset_metrics": {
+        "n": 80,
+        "exact_count_n": 39,
+        "exact_count_accuracy": 0.4875,
+        "count_mae": 0.26666666666666666,
+        "per_class": {
+          "bolt": {
+            "tp": 361,
+            "fp": 5,
+            "fn": 38,
+            "count_mae": 0.4625,
+            "signed_count_error": -33
+          },
+          "nut": {
+            "tp": 156,
+            "fp": 7,
+            "fn": 12,
+            "count_mae": 0.2375,
+            "signed_count_error": -5
+          },
+          "washer": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 8,
+            "count_mae": 0.1,
+            "signed_count_error": -8
+          }
+        },
+        "tp": 521,
+        "fp": 12,
+        "fn": 58,
+        "box_f1": 0.9370503597122302
+      },
+      "gray_exact_count_n": 39,
+      "gray_exact_count_fraction_of_planned": 0.4875,
+      "full_denominator_metrics_available": true,
+      "rgb_nut_to_washer": 12,
+      "gray_measured_nut_to_washer": 0,
+      "unmeasured_nut_gt": 0,
+      "exact_to_inexact": [
+        "screws:10",
+        "screws:15",
+        "screws:46",
+        "screws:51",
+        "screws:56",
+        "screws:58",
+        "screws:59",
+        "screws:89",
+        "screws:111",
+        "screws:130",
+        "screws:177",
+        "screws:184",
+        "screws:262",
+        "screws:302",
+        "screws:321",
+        "screws:365",
+        "screws:382",
+        "foda:030831"
+      ],
+      "inexact_to_exact": [
+        "screws:131",
+        "foda:013025",
+        "foda:013081",
+        "foda:013208"
+      ]
+    },
+    "sources": {
+      "foda": {
+        "planned": 36,
+        "completed": 36,
+        "failed": 0,
+        "not_attempted": 0,
+        "rgb_historical_metrics": {
+          "n": 36,
+          "exact_count_n": 17,
+          "exact_count_accuracy": 0.4722222222222222,
+          "count_mae": 0.34259259259259256,
+          "per_class": {
+            "bolt": {
+              "tp": 12,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            },
+            "nut": {
+              "tp": 0,
+              "fp": 7,
+              "fn": 12,
+              "count_mae": 0.5277777777777778,
+              "signed_count_error": -5
+            },
+            "washer": {
+              "tp": 6,
+              "fp": 12,
+              "fn": 6,
+              "count_mae": 0.5,
+              "signed_count_error": 6
+            }
+          },
+          "tp": 18,
+          "fp": 19,
+          "fn": 18,
+          "box_f1": 0.4931506849315068
+        },
+        "gray_measured_subset_metrics": {
+          "n": 36,
+          "exact_count_n": 19,
+          "exact_count_accuracy": 0.5277777777777778,
+          "count_mae": 0.21296296296296294,
+          "per_class": {
+            "bolt": {
+              "tp": 12,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            },
+            "nut": {
+              "tp": 3,
+              "fp": 6,
+              "fn": 9,
+              "count_mae": 0.4166666666666667,
+              "signed_count_error": -3
+            },
+            "washer": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 8,
+              "count_mae": 0.2222222222222222,
+              "signed_count_error": -8
+            }
+          },
+          "tp": 19,
+          "fp": 6,
+          "fn": 17,
+          "box_f1": 0.6229508196721312
+        },
+        "gray_exact_count_n": 19,
+        "gray_exact_count_fraction_of_planned": 0.5277777777777778,
+        "full_denominator_metrics_available": true,
+        "rgb_nut_to_washer": 12,
+        "gray_measured_nut_to_washer": 0,
+        "unmeasured_nut_gt": 0,
+        "exact_to_inexact": [
+          "foda:030831"
+        ],
+        "inexact_to_exact": [
+          "foda:013025",
+          "foda:013081",
+          "foda:013208"
+        ]
+      },
+      "screws": {
+        "planned": 44,
+        "completed": 44,
+        "failed": 0,
+        "not_attempted": 0,
+        "rgb_historical_metrics": {
+          "n": 44,
+          "exact_count_n": 36,
+          "exact_count_accuracy": 0.8181818181818182,
+          "count_mae": 0.1212121212121212,
+          "per_class": {
+            "bolt": {
+              "tp": 373,
+              "fp": 8,
+              "fn": 14,
+              "count_mae": 0.2727272727272727,
+              "signed_count_error": -6
+            },
+            "nut": {
+              "tp": 152,
+              "fp": 0,
+              "fn": 4,
+              "count_mae": 0.09090909090909091,
+              "signed_count_error": -4
+            },
+            "washer": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            }
+          },
+          "tp": 525,
+          "fp": 8,
+          "fn": 18,
+          "box_f1": 0.9758364312267658
+        },
+        "gray_measured_subset_metrics": {
+          "n": 44,
+          "exact_count_n": 20,
+          "exact_count_accuracy": 0.45454545454545453,
+          "count_mae": 0.3106060606060606,
+          "per_class": {
+            "bolt": {
+              "tp": 349,
+              "fp": 5,
+              "fn": 38,
+              "count_mae": 0.8409090909090909,
+              "signed_count_error": -33
+            },
+            "nut": {
+              "tp": 153,
+              "fp": 1,
+              "fn": 3,
+              "count_mae": 0.09090909090909091,
+              "signed_count_error": -2
+            },
+            "washer": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            }
+          },
+          "tp": 502,
+          "fp": 6,
+          "fn": 41,
+          "box_f1": 0.9552806850618458
+        },
+        "gray_exact_count_n": 20,
+        "gray_exact_count_fraction_of_planned": 0.45454545454545453,
+        "full_denominator_metrics_available": true,
+        "rgb_nut_to_washer": 0,
+        "gray_measured_nut_to_washer": 0,
+        "unmeasured_nut_gt": 0,
+        "exact_to_inexact": [
+          "screws:10",
+          "screws:15",
+          "screws:46",
+          "screws:51",
+          "screws:56",
+          "screws:58",
+          "screws:59",
+          "screws:89",
+          "screws:111",
+          "screws:130",
+          "screws:177",
+          "screws:184",
+          "screws:262",
+          "screws:302",
+          "screws:321",
+          "screws:365",
+          "screws:382"
+        ],
+        "inexact_to_exact": [
+          "screws:131"
+        ]
+      }
+    },
+    "foda_groups": {
+      "GOPR0181": {
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "not_attempted": 0,
+        "rgb_historical_metrics": {
+          "n": 12,
+          "exact_count_n": 12,
+          "exact_count_accuracy": 1.0,
+          "count_mae": 0.0,
+          "per_class": {
+            "bolt": {
+              "tp": 12,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            },
+            "nut": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            },
+            "washer": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            }
+          },
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "box_f1": 1.0
+        },
+        "gray_measured_subset_metrics": {
+          "n": 12,
+          "exact_count_n": 12,
+          "exact_count_accuracy": 1.0,
+          "count_mae": 0.0,
+          "per_class": {
+            "bolt": {
+              "tp": 12,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            },
+            "nut": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            },
+            "washer": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            }
+          },
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "box_f1": 1.0
+        },
+        "gray_exact_count_n": 12,
+        "gray_exact_count_fraction_of_planned": 1.0,
+        "full_denominator_metrics_available": true,
+        "rgb_nut_to_washer": 0,
+        "gray_measured_nut_to_washer": 0,
+        "unmeasured_nut_gt": 0,
+        "exact_to_inexact": [],
+        "inexact_to_exact": []
+      },
+      "GOPR0183": {
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "not_attempted": 0,
+        "rgb_historical_metrics": {
+          "n": 12,
+          "exact_count_n": 0,
+          "exact_count_accuracy": 0.0,
+          "count_mae": 0.6666666666666666,
+          "per_class": {
+            "bolt": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            },
+            "nut": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 12,
+              "count_mae": 1.0,
+              "signed_count_error": -12
+            },
+            "washer": {
+              "tp": 0,
+              "fp": 12,
+              "fn": 0,
+              "count_mae": 1.0,
+              "signed_count_error": 12
+            }
+          },
+          "tp": 0,
+          "fp": 12,
+          "fn": 12,
+          "box_f1": 0.0
+        },
+        "gray_measured_subset_metrics": {
+          "n": 12,
+          "exact_count_n": 3,
+          "exact_count_accuracy": 0.25,
+          "count_mae": 0.25,
+          "per_class": {
+            "bolt": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            },
+            "nut": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 9,
+              "count_mae": 0.75,
+              "signed_count_error": -9
+            },
+            "washer": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            }
+          },
+          "tp": 3,
+          "fp": 0,
+          "fn": 9,
+          "box_f1": 0.4
+        },
+        "gray_exact_count_n": 3,
+        "gray_exact_count_fraction_of_planned": 0.25,
+        "full_denominator_metrics_available": true,
+        "rgb_nut_to_washer": 12,
+        "gray_measured_nut_to_washer": 0,
+        "unmeasured_nut_gt": 0,
+        "exact_to_inexact": [],
+        "inexact_to_exact": [
+          "foda:013025",
+          "foda:013081",
+          "foda:013208"
+        ]
+      },
+      "unprefixed_Washer": {
+        "planned": 12,
+        "completed": 12,
+        "failed": 0,
+        "not_attempted": 0,
+        "rgb_historical_metrics": {
+          "n": 12,
+          "exact_count_n": 5,
+          "exact_count_accuracy": 0.4166666666666667,
+          "count_mae": 0.3611111111111111,
+          "per_class": {
+            "bolt": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            },
+            "nut": {
+              "tp": 0,
+              "fp": 7,
+              "fn": 0,
+              "count_mae": 0.5833333333333334,
+              "signed_count_error": 7
+            },
+            "washer": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 6,
+              "count_mae": 0.5,
+              "signed_count_error": -6
+            }
+          },
+          "tp": 6,
+          "fp": 7,
+          "fn": 6,
+          "box_f1": 0.48
+        },
+        "gray_measured_subset_metrics": {
+          "n": 12,
+          "exact_count_n": 4,
+          "exact_count_accuracy": 0.3333333333333333,
+          "count_mae": 0.38888888888888884,
+          "per_class": {
+            "bolt": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "count_mae": 0.0,
+              "signed_count_error": 0
+            },
+            "nut": {
+              "tp": 0,
+              "fp": 6,
+              "fn": 0,
+              "count_mae": 0.5,
+              "signed_count_error": 6
+            },
+            "washer": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 8,
+              "count_mae": 0.6666666666666666,
+              "signed_count_error": -8
+            }
+          },
+          "tp": 4,
+          "fp": 6,
+          "fn": 8,
+          "box_f1": 0.36363636363636365
+        },
+        "gray_exact_count_n": 4,
+        "gray_exact_count_fraction_of_planned": 0.3333333333333333,
+        "full_denominator_metrics_available": true,
+        "rgb_nut_to_washer": 0,
+        "gray_measured_nut_to_washer": 0,
+        "unmeasured_nut_gt": 0,
+        "exact_to_inexact": [
+          "foda:030831"
+        ],
+        "inexact_to_exact": []
+      }
+    }
+  },
+  "v1_setup_failure": {
+    "preserved": true,
+    "model_calls": 0,
+    "rows_failed": 80,
+    "reason": "checkpoint.classes integer keys versus JSON string keys; only this representation normalized, all full equality checks retained.",
+    "counted_as_model_quality_result": false
+  },
+  "boundaries": [
+    "已曝光且用于模型/阈值选择的80验证图，不是新留出。",
+    "单一推理输入灰度干预不能证明训练颜色捷径因果。",
+    "历史RGB非同期，MPS非逐位确定，不做速度或精确因果优势声明。",
+    "作者标注目标集合而非经认证全图计数；FOD单件组不证明一般混合BOM能力。",
+    "不读取新LOCO24/MANTA/held_back，不改标签、阈值、默认或权重。"
+  ],
+  "evidence_sha256": {
+    "test-results/v0.8-grayscale-validation-independent-audit-v2.json": "ad3d10fa86a50b7050e94a6e0cd076d824d68049be4e5a75d09d743d29085f20",
+    "test-results/v0.8-grayscale-validation-independent-audit-v2.log": "8e193e5eea22c27141c51109c1642ee46568c175779fbb293d5208800deb6798",
+    "scripts/v08/audit_grayscale_validation.py": "f1f15ec734ffcde5a472f52d30dbe3ed6e5ac5b58826b1b5e35e5b672de6a495",
+    "tests/test_grayscale_audit_v08.py": "be03cf1326cbf9dabef06bcc9c4d7a9193fc68e06ba53873cf21ceed7909c73b",
+    "test-results/v0.8-grayscale-independent-audit-contracts-v1.log": "88ac971bfef2a9472e09db164fa43db5d5dd39ede55f12b5896e788a4fbc2074",
+    "test-results/v0.8-grayscale-independent-audit-contracts-v1.xml": "2130633533d33e6275f6775890e6c156dbdb6c639c0bcc32a790cf494d190d14",
+    "docs/v0.8/GRAYSCALE_VALIDATION_RESULT.md": "67c26504f634cce306e16446b0ac12e4d550d81fd5fd75bd8d4595cada3387c1",
+    "docs/v0.8/GRAYSCALE_VALIDATION_DIAGNOSTIC_PLAN.md": "d77ef96a333fe9def164baa60981568c06d369109159c8d71331c519a2417e7b",
+    "test-results/v0.8-grayscale-validation-plan-v2.json": "f16ba6590a892cbfb836493808330139557b66d0c3f39eb9aed90f11b076c180",
+    "test-results/v0.8-grayscale-validation-independent-failure-v1.json": "1da153b916d1cbc73dc877dbc628aca51833b184a1800db79c4c9513301da663",
+    "test-results/v0.8-grayscale-validation-peer-review-v3.json": "2abb95bb88dec014dc84f793e4971a809342cacd75e064e47b381a98ae438fe8",
+    "test-results/v0.8-grayscale-validation-repair-v2.json": "8223912de35fae52502268fae02b55a376ecd2fd279f4d008a238c9574d7ebed",
+    "evaluation-runs/v0.8/grayscale_validation_v1/analysis.json": "3dc04818ed5d366953492e49d28fbb722036ff2b3e441887941d7f8615c86973",
+    "evaluation-runs/v0.8/grayscale_validation_v1/plan.json": "e368b53e479afa95faab19262e70510fa151543cf06f32c210a89b25b7d5c8e7",
+    "evaluation-runs/v0.8/grayscale_validation_v1/predictions.json": "ded60934f3597ff8ac7a86ebdf0ee5d6b5444babca6aab9a05aeaa8cecb5b8d0",
+    "evaluation-runs/v0.8/grayscale_validation_v1/run.json": "3e112714a785e0220a3ac0ae66bbd35e288836401f2080dd498285555e8259ee",
+    "evaluation-runs/v0.8/grayscale_validation_v1/source_snapshot/docs/v0.8/GRAYSCALE_VALIDATION_DIAGNOSTIC_PLAN.md": "3b8ccb2c7b60b5f270d2336925b24a6cc1d3383eb08a62308891ef35a93016be",
+    "evaluation-runs/v0.8/grayscale_validation_v1/source_snapshot/preservation.json": "20b6ead039bc607d54dc92849c994d738f7549df841812cc806cfb39a468b870",
+    "evaluation-runs/v0.8/grayscale_validation_v1/source_snapshot/scripts/v08/probe_grayscale_validation.py": "c28fef566bef5f6e36763d99d8ca7893953c48773666dfc8dacda13ec42f1cd7",
+    "evaluation-runs/v0.8/grayscale_validation_v2/analysis.json": "61b4070b94ba5c71c789d8e3f3ce94c747792a974dedc2c52751cb25351b0cf1",
+    "evaluation-runs/v0.8/grayscale_validation_v2/plan.json": "f16ba6590a892cbfb836493808330139557b66d0c3f39eb9aed90f11b076c180",
+    "evaluation-runs/v0.8/grayscale_validation_v2/predictions.json": "6b24e60f371d2808b3fee9897e811700bb88c5e85729bcdcbba6aedddd816f2a",
+    "evaluation-runs/v0.8/grayscale_validation_v2/run.json": "ad7d0d1abc0c2b444cd70ff7fb0069693d16d7d7c7a1963d1f3b34c29a9f6d0d",
+    "evaluation-runs/v0.8/grayscale_validation_v2/source_snapshot/docs/v0.8/GRAYSCALE_VALIDATION_DIAGNOSTIC_PLAN.md": "d77ef96a333fe9def164baa60981568c06d369109159c8d71331c519a2417e7b",
+    "evaluation-runs/v0.8/grayscale_validation_v2/source_snapshot/scripts/v08/probe_grayscale_validation.py": "92cc31924c3bbd5685e1fac9cda801b59f82a9c9875c649f1fde03f825b9d091",
+    "evaluation-runs/v0.8/grayscale_validation_v2/source_snapshot/source_receipt.json": "af3482fdfd50f8d5eb8081ea690cf435b57900b62151d662a370b3dc0a7d89e3"
+  }
+}

@@ -1,0 +1,1356 @@
+{
+  "schema_version": 1,
+  "kind": "kitguard_fixed_state_study",
+  "study": {
+    "cases": [
+      {
+        "confirmed_independent": true,
+        "demo_source": null,
+        "evidence_epoch": 1,
+        "id": "case_96cd40b594624af2bb12",
+        "inspection_scope": {
+          "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+          "derivation": "normalized_root_bytes_v1",
+          "mode": "whole_image",
+          "region_xyxy": null,
+          "root_created_at": "2026-09-26T15:35:09.059+00:00",
+          "root_height": 480,
+          "root_photo_id": "img_190951e6904c431ba5f2",
+          "root_photo_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+          "root_source_sha256": "3d6c145976b9b352d87a10684c95c6906ef4ead888e37abd9312a2d77a7eb7e7",
+          "root_width": 640,
+          "scope_confirmed_at": null,
+          "scope_declaration": null,
+          "source_family_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+          "view_photo_id": "img_190951e6904c431ba5f2",
+          "view_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662"
+        },
+        "label": "whole",
+        "order_id": "ord_cd6efebbdb3f40818366",
+        "photo_id": "img_190951e6904c431ba5f2",
+        "photo_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+        "reference_ids": {},
+        "reference_sha256": {},
+        "registered_at": "2026-09-26T15:35:09.061+00:00",
+        "requirements": {
+          "bolt": 2,
+          "bracket": 1,
+          "nut": 2,
+          "washer": 2
+        },
+        "revision": 1,
+        "source_family_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+        "source_note": "Synthetic CPU scope engineering fixture only",
+        "trials": {
+          "kitguard": {
+            "check": {
+              "action": {
+                "kind": "none",
+                "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+                "region": null
+              },
+              "backend": "test",
+              "created_at": "2026-09-26T15:35:09.096+00:00",
+              "decision": "ready",
+              "differences": [
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "bolt",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "nut",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "washer",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 1,
+                  "part": "bracket",
+                  "required": 1
+                }
+              ],
+              "evidence_epoch": 1,
+              "evidence_feedback": null,
+              "id": "chk_fcc2c690a6f5488a8b66",
+              "inspection_scope": {
+                "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                "derivation": "normalized_root_bytes_v1",
+                "mode": "whole_image",
+                "region_xyxy": null,
+                "root_created_at": "2026-09-26T15:35:09.059+00:00",
+                "root_height": 480,
+                "root_photo_id": "img_190951e6904c431ba5f2",
+                "root_photo_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+                "root_source_sha256": "3d6c145976b9b352d87a10684c95c6906ef4ead888e37abd9312a2d77a7eb7e7",
+                "root_width": 640,
+                "scope_confirmed_at": null,
+                "scope_declaration": null,
+                "source_family_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+                "view_photo_id": "img_190951e6904c431ba5f2",
+                "view_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662"
+              },
+              "issues": [],
+              "latency_ms": 2,
+              "model_label": "SYNTHETIC TEST FIXTURE ONLY",
+              "observation_context": null,
+              "observed": {
+                "bolt": 2,
+                "bracket": 1,
+                "nut": 2,
+                "washer": 2
+              },
+              "order_id": "ord_cd6efebbdb3f40818366",
+              "photo_id": "img_190951e6904c431ba5f2",
+              "photo_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+              "reference_ids": {},
+              "requirements_snapshot": {
+                "bolt": 2,
+                "bracket": 1,
+                "nut": 2,
+                "washer": 2
+              },
+              "revision": 1,
+              "runtime_identity": {
+                "image_max_side": null,
+                "label": "SYNTHETIC TEST FIXTURE ONLY",
+                "observation_mode": null,
+                "observer_protocol_sha256": null,
+                "repo_id": null,
+                "revision": null
+              },
+              "source_family_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+              "tool_trace": [
+                {
+                  "latency_ms": 2,
+                  "model": "SYNTHETIC TEST FIXTURE ONLY",
+                  "status": "completed",
+                  "step": "observe_image"
+                },
+                {
+                  "revision": 1,
+                  "status": "completed",
+                  "step": "compare_current_requirements"
+                },
+                {
+                  "status": "not_applicable",
+                  "step": "review_previous_evidence"
+                },
+                {
+                  "action_kind": "none",
+                  "decision": "ready",
+                  "status": "completed",
+                  "step": "choose_next_action"
+                },
+                {
+                  "evidence_epoch": 1,
+                  "revision": 1,
+                  "status": "completed",
+                  "step": "commit_current_evidence"
+                }
+              ],
+              "valid": true
+            },
+            "check_index": 0,
+            "elapsed_ms": 7,
+            "event_index": 2,
+            "evidence": {
+              "captured_at": "2026-09-26T15:35:09.099+00:00",
+              "checks": [
+                {
+                  "action": {
+                    "kind": "none",
+                    "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+                    "region": null
+                  },
+                  "backend": "test",
+                  "created_at": "2026-09-26T15:35:09.096+00:00",
+                  "decision": "ready",
+                  "differences": [
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "bolt",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "nut",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "washer",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 1,
+                      "part": "bracket",
+                      "required": 1
+                    }
+                  ],
+                  "evidence_epoch": 1,
+                  "evidence_feedback": null,
+                  "id": "chk_fcc2c690a6f5488a8b66",
+                  "inspection_scope": {
+                    "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                    "derivation": "normalized_root_bytes_v1",
+                    "mode": "whole_image",
+                    "region_xyxy": null,
+                    "root_created_at": "2026-09-26T15:35:09.059+00:00",
+                    "root_height": 480,
+                    "root_photo_id": "img_190951e6904c431ba5f2",
+                    "root_photo_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+                    "root_source_sha256": "3d6c145976b9b352d87a10684c95c6906ef4ead888e37abd9312a2d77a7eb7e7",
+                    "root_width": 640,
+                    "scope_confirmed_at": null,
+                    "scope_declaration": null,
+                    "source_family_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+                    "view_photo_id": "img_190951e6904c431ba5f2",
+                    "view_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662"
+                  },
+                  "issues": [],
+                  "latency_ms": 2,
+                  "model_label": "SYNTHETIC TEST FIXTURE ONLY",
+                  "observation_context": null,
+                  "observed": {
+                    "bolt": 2,
+                    "bracket": 1,
+                    "nut": 2,
+                    "washer": 2
+                  },
+                  "order_id": "ord_cd6efebbdb3f40818366",
+                  "photo_id": "img_190951e6904c431ba5f2",
+                  "photo_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+                  "reference_ids": {},
+                  "requirements_snapshot": {
+                    "bolt": 2,
+                    "bracket": 1,
+                    "nut": 2,
+                    "washer": 2
+                  },
+                  "revision": 1,
+                  "runtime_identity": {
+                    "image_max_side": null,
+                    "label": "SYNTHETIC TEST FIXTURE ONLY",
+                    "observation_mode": null,
+                    "observer_protocol_sha256": null,
+                    "repo_id": null,
+                    "revision": null
+                  },
+                  "source_family_sha256": "9de322eeeda7145cb66def3ff1a65f0ab130b77ed1a193d66bb164ba135a2662",
+                  "tool_trace": [
+                    {
+                      "latency_ms": 2,
+                      "model": "SYNTHETIC TEST FIXTURE ONLY",
+                      "status": "completed",
+                      "step": "observe_image"
+                    },
+                    {
+                      "revision": 1,
+                      "status": "completed",
+                      "step": "compare_current_requirements"
+                    },
+                    {
+                      "status": "not_applicable",
+                      "step": "review_previous_evidence"
+                    },
+                    {
+                      "action_kind": "none",
+                      "decision": "ready",
+                      "status": "completed",
+                      "step": "choose_next_action"
+                    },
+                    {
+                      "evidence_epoch": 1,
+                      "revision": 1,
+                      "status": "completed",
+                      "step": "commit_current_evidence"
+                    }
+                  ],
+                  "valid": true
+                }
+              ],
+              "events": [
+                {
+                  "created_at": "2026-09-26T15:35:09.094+00:00",
+                  "id": "evt_cd156b3a723645baa746",
+                  "kind": "inspection_started",
+                  "message": "실물 관찰 시작 / 开始观察实物",
+                  "payload": {
+                    "photo_id": "img_190951e6904c431ba5f2"
+                  }
+                },
+                {
+                  "created_at": "2026-09-26T15:35:09.096+00:00",
+                  "id": "evt_a6be6cf6f1494d188877",
+                  "kind": "inspection_completed",
+                  "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+                  "payload": {
+                    "check_id": "chk_fcc2c690a6f5488a8b66",
+                    "decision": "ready",
+                    "revision": 1
+                  }
+                }
+              ],
+              "order_revision_at_capture": 1,
+              "other_order_exposures": []
+            },
+            "finished_at": "2026-09-26T15:35:09.099+00:00",
+            "id": "trial_b97c63ca5c554bff98d1",
+            "manual_counts": null,
+            "method": "kitguard",
+            "note": "FakeAnalyzer only; no GPU inference",
+            "order_id": "ord_cd6efebbdb3f40818366",
+            "photo_id": "img_190951e6904c431ba5f2",
+            "revision": 1,
+            "started_at": "2026-09-26T15:35:09.092+00:00",
+            "status": "completed"
+          },
+          "manual": {
+            "check": null,
+            "check_index": 0,
+            "elapsed_ms": 2,
+            "event_index": 2,
+            "evidence": {
+              "captured_at": "2026-09-26T15:35:09.090+00:00",
+              "checks": [],
+              "events": [],
+              "order_revision_at_capture": 1,
+              "other_order_exposures": []
+            },
+            "finished_at": "2026-09-26T15:35:09.090+00:00",
+            "id": "trial_d701857d0b6143d680e2",
+            "manual_counts": {
+              "bolt": 2,
+              "bracket": 1,
+              "nut": 2,
+              "washer": 2
+            },
+            "method": "manual",
+            "note": "CPU synthetic manual fixture, not human timing",
+            "order_id": "ord_cd6efebbdb3f40818366",
+            "photo_id": "img_190951e6904c431ba5f2",
+            "revision": 1,
+            "started_at": "2026-09-26T15:35:09.088+00:00",
+            "status": "completed"
+          }
+        },
+        "truth": {
+          "bolt": 2,
+          "bracket": 1,
+          "nut": 2,
+          "washer": 2
+        },
+        "truth_commitment": "bd539fa568249bbd066e52107ffcfd159df14f318219aef958b384170e610984",
+        "truth_nonce": "46c11495581c36ba1acb8cf034a985ba8d120ae8c0bcc55fd64d4bd8a6036212"
+      },
+      {
+        "confirmed_independent": true,
+        "demo_source": null,
+        "evidence_epoch": 2,
+        "id": "case_98983c8457ce45abb1c0",
+        "inspection_scope": {
+          "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+          "derivation": "pillow_root_crop_rgb_jpeg95_v1",
+          "mode": "region",
+          "region_xyxy": [
+            40,
+            50,
+            400,
+            400
+          ],
+          "root_created_at": "2026-09-26T15:35:09.067+00:00",
+          "root_height": 480,
+          "root_photo_id": "img_a411033eb1ba4f0e9ff7",
+          "root_photo_sha256": "fa40e345f6498b2501146520f6cca9e4c2c9cabcf2b553f7a99439a7070259f4",
+          "root_source_sha256": "c4870a2a31c0e32fcbfb57b61b4a754642042a47065ffe5683d81851d2470adf",
+          "root_width": 640,
+          "scope_confirmed_at": "2026-09-26T15:35:09.069+00:00",
+          "scope_declaration": "operator_all_required_items_inside",
+          "source_family_sha256": "fa40e345f6498b2501146520f6cca9e4c2c9cabcf2b553f7a99439a7070259f4",
+          "view_photo_id": "img_bf89a44d2376416690e3",
+          "view_sha256": "d577a3cf043a1ad51eff4dc398500cd9064dccf7d7a11e8b09bf4832b99ae2f9"
+        },
+        "label": "region",
+        "order_id": "ord_f029779ac8f74108af1d",
+        "photo_id": "img_bf89a44d2376416690e3",
+        "photo_sha256": "d577a3cf043a1ad51eff4dc398500cd9064dccf7d7a11e8b09bf4832b99ae2f9",
+        "reference_ids": {},
+        "reference_sha256": {},
+        "registered_at": "2026-09-26T15:35:09.072+00:00",
+        "requirements": {
+          "bolt": 2,
+          "bracket": 1,
+          "nut": 2,
+          "washer": 2
+        },
+        "revision": 1,
+        "source_family_sha256": "fa40e345f6498b2501146520f6cca9e4c2c9cabcf2b553f7a99439a7070259f4",
+        "source_note": "Synthetic CPU scope engineering fixture only",
+        "trials": {
+          "kitguard": {
+            "check": {
+              "action": {
+                "kind": "none",
+                "message": "영역 안 수량이 일치합니다. 영역 밖은 검사하지 않았습니다. 실물을 확인하세요 / 选区内数量与要求一致，框外未核验，请核对实物",
+                "region": null
+              },
+              "backend": "test",
+              "created_at": "2026-09-26T15:35:09.112+00:00",
+              "decision": "ready",
+              "differences": [
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "bolt",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "nut",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "washer",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 1,
+                  "part": "bracket",
+                  "required": 1
+                }
+              ],
+              "evidence_epoch": 2,
+              "evidence_feedback": null,
+              "id": "chk_09eb5f2297fc4d8a8fd9",
+              "inspection_scope": {
+                "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                "derivation": "pillow_root_crop_rgb_jpeg95_v1",
+                "mode": "region",
+                "region_xyxy": [
+                  40,
+                  50,
+                  400,
+                  400
+                ],
+                "root_created_at": "2026-09-26T15:35:09.067+00:00",
+                "root_height": 480,
+                "root_photo_id": "img_a411033eb1ba4f0e9ff7",
+                "root_photo_sha256": "fa40e345f6498b2501146520f6cca9e4c2c9cabcf2b553f7a99439a7070259f4",
+                "root_source_sha256": "c4870a2a31c0e32fcbfb57b61b4a754642042a47065ffe5683d81851d2470adf",
+                "root_width": 640,
+                "scope_confirmed_at": "2026-09-26T15:35:09.069+00:00",
+                "scope_declaration": "operator_all_required_items_inside",
+                "source_family_sha256": "fa40e345f6498b2501146520f6cca9e4c2c9cabcf2b553f7a99439a7070259f4",
+                "view_photo_id": "img_bf89a44d2376416690e3",
+                "view_sha256": "d577a3cf043a1ad51eff4dc398500cd9064dccf7d7a11e8b09bf4832b99ae2f9"
+              },
+              "issues": [],
+              "latency_ms": 3,
+              "model_label": "SYNTHETIC TEST FIXTURE ONLY",
+              "observation_context": null,
+              "observed": {
+                "bolt": 2,
+                "bracket": 1,
+                "nut": 2,
+                "washer": 2
+              },
+              "order_id": "ord_f029779ac8f74108af1d",
+              "photo_id": "img_bf89a44d2376416690e3",
+              "photo_sha256": "d577a3cf043a1ad51eff4dc398500cd9064dccf7d7a11e8b09bf4832b99ae2f9",
+              "reference_ids": {},
+              "requirements_snapshot": {
+                "bolt": 2,
+                "bracket": 1,
+                "nut": 2,
+                "washer": 2
+              },
+              "revision": 1,
+              "runtime_identity": {
+                "image_max_side": null,
+                "label": "SYNTHETIC TEST FIXTURE ONLY",
+                "observation_mode": null,
+                "observer_protocol_sha256": null,
+                "repo_id": null,
+                "revision": null
+              },
+              "source_family_sha256": "fa40e345f6498b2501146520f6cca9e4c2c9cabcf2b553f7a99439a7070259f4",
+              "tool_trace": [
+                {
+                  "latency_ms": 3,
+                  "model": "SYNTHETIC TEST FIXTURE ONLY",
+                  "status": "completed",
+                  "step": "observe_image"
+                },
+                {
+                  "revision": 1,
+                  "status": "completed",
+                  "step": "compare_current_requirements"
+                },
+                {
+                  "status": "not_applicable",
+                  "step": "review_previous_evidence"
+                },
+                {
+                  "action_kind": "none",
+                  "decision": "ready",
+                  "status": "completed",
+                  "step": "choose_next_action"
+                },
+                {
+                  "evidence_epoch": 2,
+                  "revision": 1,
+                  "status": "completed",
+                  "step": "commit_current_evidence"
+                }
+              ],
+              "valid": true
+            },
+            "check_index": 0,
+            "elapsed_ms": 10,
+            "event_index": 3,
+            "evidence": {
+              "captured_at": "2026-09-26T15:35:09.116+00:00",
+              "checks": [
+                {
+                  "action": {
+                    "kind": "none",
+                    "message": "영역 안 수량이 일치합니다. 영역 밖은 검사하지 않았습니다. 실물을 확인하세요 / 选区内数量与要求一致，框外未核验，请核对实物",
+                    "region": null
+                  },
+                  "backend": "test",
+                  "created_at": "2026-09-26T15:35:09.112+00:00",
+                  "decision": "ready",
+                  "differences": [
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "bolt",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "nut",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "washer",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 1,
+                      "part": "bracket",
+                      "required": 1
+                    }
+                  ],
+                  "evidence_epoch": 2,
+                  "evidence_feedback": null,
+                  "id": "chk_09eb5f2297fc4d8a8fd9",
+                  "inspection_scope": {
+                    "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                    "derivation": "pillow_root_crop_rgb_jpeg95_v1",
+                    "mode": "region",
+                    "region_xyxy": [
+                      40,
+                      50,
+                      400,
+                      400
+                    ],
+                    "root_created_at": "2026-09-26T15:35:09.067+00:00",
+                    "root_height": 480,
+                    "root_photo_id": "img_a411033eb1ba4f0e9ff7",
+                    "root_photo_sha256": "fa40e345f6498b2501146520f6cca9e4c2c9cabcf2b553f7a99439a7070259f4",
+                    "root_source_sha256": "c4870a2a31c0e32fcbfb57b61b4a754642042a47065ffe5683d81851d2470adf",
+                    "root_width": 640,
+                    "scope_confirmed_at": "2026-09-26T15:35:09.069+00:00",
+                    "scope_declaration": "operator_all_required_items_inside",
+                    "source_family_sha256": "fa40e345f6498b2501146520f6cca9e4c2c9cabcf2b553f7a99439a7070259f4",
+                    "view_photo_id": "img_bf89a44d2376416690e3",
+                    "view_sha256": "d577a3cf043a1ad51eff4dc398500cd9064dccf7d7a11e8b09bf4832b99ae2f9"
+                  },
+                  "issues": [],
+                  "latency_ms": 3,
+                  "model_label": "SYNTHETIC TEST FIXTURE ONLY",
+                  "observation_context": null,
+                  "observed": {
+                    "bolt": 2,
+                    "bracket": 1,
+                    "nut": 2,
+                    "washer": 2
+                  },
+                  "order_id": "ord_f029779ac8f74108af1d",
+                  "photo_id": "img_bf89a44d2376416690e3",
+                  "photo_sha256": "d577a3cf043a1ad51eff4dc398500cd9064dccf7d7a11e8b09bf4832b99ae2f9",
+                  "reference_ids": {},
+                  "requirements_snapshot": {
+                    "bolt": 2,
+                    "bracket": 1,
+                    "nut": 2,
+                    "washer": 2
+                  },
+                  "revision": 1,
+                  "runtime_identity": {
+                    "image_max_side": null,
+                    "label": "SYNTHETIC TEST FIXTURE ONLY",
+                    "observation_mode": null,
+                    "observer_protocol_sha256": null,
+                    "repo_id": null,
+                    "revision": null
+                  },
+                  "source_family_sha256": "fa40e345f6498b2501146520f6cca9e4c2c9cabcf2b553f7a99439a7070259f4",
+                  "tool_trace": [
+                    {
+                      "latency_ms": 3,
+                      "model": "SYNTHETIC TEST FIXTURE ONLY",
+                      "status": "completed",
+                      "step": "observe_image"
+                    },
+                    {
+                      "revision": 1,
+                      "status": "completed",
+                      "step": "compare_current_requirements"
+                    },
+                    {
+                      "status": "not_applicable",
+                      "step": "review_previous_evidence"
+                    },
+                    {
+                      "action_kind": "none",
+                      "decision": "ready",
+                      "status": "completed",
+                      "step": "choose_next_action"
+                    },
+                    {
+                      "evidence_epoch": 2,
+                      "revision": 1,
+                      "status": "completed",
+                      "step": "commit_current_evidence"
+                    }
+                  ],
+                  "valid": true
+                }
+              ],
+              "events": [
+                {
+                  "created_at": "2026-09-26T15:35:09.109+00:00",
+                  "id": "evt_0bd1c3f738e8443a89dd",
+                  "kind": "inspection_started",
+                  "message": "실물 관찰 시작 / 开始观察实物",
+                  "payload": {
+                    "photo_id": "img_bf89a44d2376416690e3"
+                  }
+                },
+                {
+                  "created_at": "2026-09-26T15:35:09.113+00:00",
+                  "id": "evt_a767ae2f0fbb4cceb645",
+                  "kind": "inspection_completed",
+                  "message": "영역 안 수량이 일치합니다. 영역 밖은 검사하지 않았습니다. 실물을 확인하세요 / 选区内数量与要求一致，框外未核验，请核对实物",
+                  "payload": {
+                    "check_id": "chk_09eb5f2297fc4d8a8fd9",
+                    "decision": "ready",
+                    "revision": 1
+                  }
+                }
+              ],
+              "order_revision_at_capture": 1,
+              "other_order_exposures": []
+            },
+            "finished_at": "2026-09-26T15:35:09.116+00:00",
+            "id": "trial_61125f55826747559822",
+            "manual_counts": null,
+            "method": "kitguard",
+            "note": "FakeAnalyzer only; no GPU inference",
+            "order_id": "ord_f029779ac8f74108af1d",
+            "photo_id": "img_bf89a44d2376416690e3",
+            "revision": 1,
+            "started_at": "2026-09-26T15:35:09.107+00:00",
+            "status": "completed"
+          },
+          "manual": {
+            "check": null,
+            "check_index": 0,
+            "elapsed_ms": 3,
+            "event_index": 3,
+            "evidence": {
+              "captured_at": "2026-09-26T15:35:09.104+00:00",
+              "checks": [],
+              "events": [],
+              "order_revision_at_capture": 1,
+              "other_order_exposures": []
+            },
+            "finished_at": "2026-09-26T15:35:09.104+00:00",
+            "id": "trial_83f5d506cafe41fabf3b",
+            "manual_counts": {
+              "bolt": 2,
+              "bracket": 1,
+              "nut": 2,
+              "washer": 2
+            },
+            "method": "manual",
+            "note": "CPU synthetic manual fixture, not human timing",
+            "order_id": "ord_f029779ac8f74108af1d",
+            "photo_id": "img_bf89a44d2376416690e3",
+            "revision": 1,
+            "started_at": "2026-09-26T15:35:09.101+00:00",
+            "status": "completed"
+          }
+        },
+        "truth": {
+          "bolt": 2,
+          "bracket": 1,
+          "nut": 2,
+          "washer": 2
+        },
+        "truth_commitment": "87f90808c72702c7f97bc7d7c6b0dfaae81d0ed9790362b752a32342efcce0ee",
+        "truth_nonce": "bc81058ebc9210086d3be1267a172a6f6132f758c91c7ea3f853ce1ccb1d4508"
+      },
+      {
+        "confirmed_independent": true,
+        "demo_source": null,
+        "evidence_epoch": 3,
+        "id": "case_e57f738dcc664b73a4d5",
+        "inspection_scope": {
+          "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+          "derivation": "normalized_root_bytes_v1",
+          "mode": "whole_image",
+          "region_xyxy": null,
+          "root_created_at": "2026-09-26T15:35:09.077+00:00",
+          "root_height": 480,
+          "root_photo_id": "img_b932b31783514139acb1",
+          "root_photo_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+          "root_source_sha256": "b1eb9cd196342cde67801c662ac4d9ba91c416d69978fa0c83a2496a81dbde2c",
+          "root_width": 640,
+          "scope_confirmed_at": "2026-09-26T15:35:09.082+00:00",
+          "scope_declaration": "operator_all_required_items_inside",
+          "source_family_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+          "view_photo_id": "img_8c1e8eab0551483183fa",
+          "view_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34"
+        },
+        "label": "restored",
+        "order_id": "ord_578d33a1960546d8a38b",
+        "photo_id": "img_8c1e8eab0551483183fa",
+        "photo_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+        "reference_ids": {},
+        "reference_sha256": {},
+        "registered_at": "2026-09-26T15:35:09.084+00:00",
+        "requirements": {
+          "bolt": 2,
+          "bracket": 1,
+          "nut": 2,
+          "washer": 2
+        },
+        "revision": 1,
+        "source_family_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+        "source_note": "Synthetic CPU scope engineering fixture only",
+        "trials": {
+          "kitguard": {
+            "check": {
+              "action": {
+                "kind": "none",
+                "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+                "region": null
+              },
+              "backend": "test",
+              "created_at": "2026-09-26T15:35:09.129+00:00",
+              "decision": "ready",
+              "differences": [
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "bolt",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "nut",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 2,
+                  "part": "washer",
+                  "required": 2
+                },
+                {
+                  "delta": 0,
+                  "observed": 1,
+                  "part": "bracket",
+                  "required": 1
+                }
+              ],
+              "evidence_epoch": 3,
+              "evidence_feedback": null,
+              "id": "chk_d6f4793610b74c79b187",
+              "inspection_scope": {
+                "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                "derivation": "normalized_root_bytes_v1",
+                "mode": "whole_image",
+                "region_xyxy": null,
+                "root_created_at": "2026-09-26T15:35:09.077+00:00",
+                "root_height": 480,
+                "root_photo_id": "img_b932b31783514139acb1",
+                "root_photo_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+                "root_source_sha256": "b1eb9cd196342cde67801c662ac4d9ba91c416d69978fa0c83a2496a81dbde2c",
+                "root_width": 640,
+                "scope_confirmed_at": "2026-09-26T15:35:09.082+00:00",
+                "scope_declaration": "operator_all_required_items_inside",
+                "source_family_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+                "view_photo_id": "img_8c1e8eab0551483183fa",
+                "view_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34"
+              },
+              "issues": [],
+              "latency_ms": 2,
+              "model_label": "SYNTHETIC TEST FIXTURE ONLY",
+              "observation_context": null,
+              "observed": {
+                "bolt": 2,
+                "bracket": 1,
+                "nut": 2,
+                "washer": 2
+              },
+              "order_id": "ord_578d33a1960546d8a38b",
+              "photo_id": "img_8c1e8eab0551483183fa",
+              "photo_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+              "reference_ids": {},
+              "requirements_snapshot": {
+                "bolt": 2,
+                "bracket": 1,
+                "nut": 2,
+                "washer": 2
+              },
+              "revision": 1,
+              "runtime_identity": {
+                "image_max_side": null,
+                "label": "SYNTHETIC TEST FIXTURE ONLY",
+                "observation_mode": null,
+                "observer_protocol_sha256": null,
+                "repo_id": null,
+                "revision": null
+              },
+              "source_family_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+              "tool_trace": [
+                {
+                  "latency_ms": 2,
+                  "model": "SYNTHETIC TEST FIXTURE ONLY",
+                  "status": "completed",
+                  "step": "observe_image"
+                },
+                {
+                  "revision": 1,
+                  "status": "completed",
+                  "step": "compare_current_requirements"
+                },
+                {
+                  "status": "not_applicable",
+                  "step": "review_previous_evidence"
+                },
+                {
+                  "action_kind": "none",
+                  "decision": "ready",
+                  "status": "completed",
+                  "step": "choose_next_action"
+                },
+                {
+                  "evidence_epoch": 3,
+                  "revision": 1,
+                  "status": "completed",
+                  "step": "commit_current_evidence"
+                }
+              ],
+              "valid": true
+            },
+            "check_index": 0,
+            "elapsed_ms": 8,
+            "event_index": 4,
+            "evidence": {
+              "captured_at": "2026-09-26T15:35:09.132+00:00",
+              "checks": [
+                {
+                  "action": {
+                    "kind": "none",
+                    "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+                    "region": null
+                  },
+                  "backend": "test",
+                  "created_at": "2026-09-26T15:35:09.129+00:00",
+                  "decision": "ready",
+                  "differences": [
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "bolt",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "nut",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 2,
+                      "part": "washer",
+                      "required": 2
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 1,
+                      "part": "bracket",
+                      "required": 1
+                    }
+                  ],
+                  "evidence_epoch": 3,
+                  "evidence_feedback": null,
+                  "id": "chk_d6f4793610b74c79b187",
+                  "inspection_scope": {
+                    "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                    "derivation": "normalized_root_bytes_v1",
+                    "mode": "whole_image",
+                    "region_xyxy": null,
+                    "root_created_at": "2026-09-26T15:35:09.077+00:00",
+                    "root_height": 480,
+                    "root_photo_id": "img_b932b31783514139acb1",
+                    "root_photo_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+                    "root_source_sha256": "b1eb9cd196342cde67801c662ac4d9ba91c416d69978fa0c83a2496a81dbde2c",
+                    "root_width": 640,
+                    "scope_confirmed_at": "2026-09-26T15:35:09.082+00:00",
+                    "scope_declaration": "operator_all_required_items_inside",
+                    "source_family_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+                    "view_photo_id": "img_8c1e8eab0551483183fa",
+                    "view_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34"
+                  },
+                  "issues": [],
+                  "latency_ms": 2,
+                  "model_label": "SYNTHETIC TEST FIXTURE ONLY",
+                  "observation_context": null,
+                  "observed": {
+                    "bolt": 2,
+                    "bracket": 1,
+                    "nut": 2,
+                    "washer": 2
+                  },
+                  "order_id": "ord_578d33a1960546d8a38b",
+                  "photo_id": "img_8c1e8eab0551483183fa",
+                  "photo_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+                  "reference_ids": {},
+                  "requirements_snapshot": {
+                    "bolt": 2,
+                    "bracket": 1,
+                    "nut": 2,
+                    "washer": 2
+                  },
+                  "revision": 1,
+                  "runtime_identity": {
+                    "image_max_side": null,
+                    "label": "SYNTHETIC TEST FIXTURE ONLY",
+                    "observation_mode": null,
+                    "observer_protocol_sha256": null,
+                    "repo_id": null,
+                    "revision": null
+                  },
+                  "source_family_sha256": "6c2e33db350b0195088ac47ee00d50bb8285b79e634e07ace3858336322acd34",
+                  "tool_trace": [
+                    {
+                      "latency_ms": 2,
+                      "model": "SYNTHETIC TEST FIXTURE ONLY",
+                      "status": "completed",
+                      "step": "observe_image"
+                    },
+                    {
+                      "revision": 1,
+                      "status": "completed",
+                      "step": "compare_current_requirements"
+                    },
+                    {
+                      "status": "not_applicable",
+                      "step": "review_previous_evidence"
+                    },
+                    {
+                      "action_kind": "none",
+                      "decision": "ready",
+                      "status": "completed",
+                      "step": "choose_next_action"
+                    },
+                    {
+                      "evidence_epoch": 3,
+                      "revision": 1,
+                      "status": "completed",
+                      "step": "commit_current_evidence"
+                    }
+                  ],
+                  "valid": true
+                }
+              ],
+              "events": [
+                {
+                  "created_at": "2026-09-26T15:35:09.127+00:00",
+                  "id": "evt_d5b3df8166054941b399",
+                  "kind": "inspection_started",
+                  "message": "실물 관찰 시작 / 开始观察实物",
+                  "payload": {
+                    "photo_id": "img_8c1e8eab0551483183fa"
+                  }
+                },
+                {
+                  "created_at": "2026-09-26T15:35:09.130+00:00",
+                  "id": "evt_8e40c332782844c3b1a4",
+                  "kind": "inspection_completed",
+                  "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+                  "payload": {
+                    "check_id": "chk_d6f4793610b74c79b187",
+                    "decision": "ready",
+                    "revision": 1
+                  }
+                }
+              ],
+              "order_revision_at_capture": 1,
+              "other_order_exposures": []
+            },
+            "finished_at": "2026-09-26T15:35:09.132+00:00",
+            "id": "trial_315ccccdc2164598bf66",
+            "manual_counts": null,
+            "method": "kitguard",
+            "note": "FakeAnalyzer only; no GPU inference",
+            "order_id": "ord_578d33a1960546d8a38b",
+            "photo_id": "img_8c1e8eab0551483183fa",
+            "revision": 1,
+            "started_at": "2026-09-26T15:35:09.124+00:00",
+            "status": "completed"
+          },
+          "manual": {
+            "check": null,
+            "check_index": 0,
+            "elapsed_ms": 3,
+            "event_index": 4,
+            "evidence": {
+              "captured_at": "2026-09-26T15:35:09.122+00:00",
+              "checks": [],
+              "events": [],
+              "order_revision_at_capture": 1,
+              "other_order_exposures": []
+            },
+            "finished_at": "2026-09-26T15:35:09.122+00:00",
+            "id": "trial_20a9a8ff980344e29d51",
+            "manual_counts": {
+              "bolt": 2,
+              "bracket": 1,
+              "nut": 2,
+              "washer": 2
+            },
+            "method": "manual",
+            "note": "CPU synthetic manual fixture, not human timing",
+            "order_id": "ord_578d33a1960546d8a38b",
+            "photo_id": "img_8c1e8eab0551483183fa",
+            "revision": 1,
+            "started_at": "2026-09-26T15:35:09.119+00:00",
+            "status": "completed"
+          }
+        },
+        "truth": {
+          "bolt": 2,
+          "bracket": 1,
+          "nut": 2,
+          "washer": 2
+        },
+        "truth_commitment": "250d3eef565b27577f02baef4bf040a6b61837832d1f58b7d9ce9e1573710049",
+        "truth_nonce": "35b3d21055f37b860157485f7450738d64a22be34e50b3108bc3cebb8b26b6b3"
+      }
+    ],
+    "closed_at": "2026-09-26T15:35:09.135+00:00",
+    "created_at": "2026-09-26T15:35:09.050+00:00",
+    "events": [
+      {
+        "created_at": "2026-09-26T15:35:09.051+00:00",
+        "kind": "created",
+        "payload": {}
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.061+00:00",
+        "kind": "case_registered",
+        "payload": {
+          "case_id": "case_96cd40b594624af2bb12",
+          "truth_commitment": "bd539fa568249bbd066e52107ffcfd159df14f318219aef958b384170e610984"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.072+00:00",
+        "kind": "case_registered",
+        "payload": {
+          "case_id": "case_98983c8457ce45abb1c0",
+          "truth_commitment": "87f90808c72702c7f97bc7d7c6b0dfaae81d0ed9790362b752a32342efcce0ee"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.084+00:00",
+        "kind": "case_registered",
+        "payload": {
+          "case_id": "case_e57f738dcc664b73a4d5",
+          "truth_commitment": "250d3eef565b27577f02baef4bf040a6b61837832d1f58b7d9ce9e1573710049"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.086+00:00",
+        "kind": "frozen",
+        "payload": {}
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.088+00:00",
+        "kind": "trial_started",
+        "payload": {
+          "case_id": "case_96cd40b594624af2bb12",
+          "method": "manual",
+          "trial_id": "trial_d701857d0b6143d680e2"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.090+00:00",
+        "kind": "trial_finished",
+        "payload": {
+          "status": "completed",
+          "trial_id": "trial_d701857d0b6143d680e2"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.092+00:00",
+        "kind": "trial_started",
+        "payload": {
+          "case_id": "case_96cd40b594624af2bb12",
+          "method": "kitguard",
+          "trial_id": "trial_b97c63ca5c554bff98d1"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.099+00:00",
+        "kind": "trial_finished",
+        "payload": {
+          "status": "completed",
+          "trial_id": "trial_b97c63ca5c554bff98d1"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.101+00:00",
+        "kind": "trial_started",
+        "payload": {
+          "case_id": "case_98983c8457ce45abb1c0",
+          "method": "manual",
+          "trial_id": "trial_83f5d506cafe41fabf3b"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.104+00:00",
+        "kind": "trial_finished",
+        "payload": {
+          "status": "completed",
+          "trial_id": "trial_83f5d506cafe41fabf3b"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.107+00:00",
+        "kind": "trial_started",
+        "payload": {
+          "case_id": "case_98983c8457ce45abb1c0",
+          "method": "kitguard",
+          "trial_id": "trial_61125f55826747559822"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.116+00:00",
+        "kind": "trial_finished",
+        "payload": {
+          "status": "completed",
+          "trial_id": "trial_61125f55826747559822"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.119+00:00",
+        "kind": "trial_started",
+        "payload": {
+          "case_id": "case_e57f738dcc664b73a4d5",
+          "method": "manual",
+          "trial_id": "trial_20a9a8ff980344e29d51"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.122+00:00",
+        "kind": "trial_finished",
+        "payload": {
+          "status": "completed",
+          "trial_id": "trial_20a9a8ff980344e29d51"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.124+00:00",
+        "kind": "trial_started",
+        "payload": {
+          "case_id": "case_e57f738dcc664b73a4d5",
+          "method": "kitguard",
+          "trial_id": "trial_315ccccdc2164598bf66"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.132+00:00",
+        "kind": "trial_finished",
+        "payload": {
+          "status": "completed",
+          "trial_id": "trial_315ccccdc2164598bf66"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:35:09.135+00:00",
+        "kind": "closed",
+        "payload": {}
+      }
+    ],
+    "frozen_at": "2026-09-26T15:35:09.086+00:00",
+    "id": "study_06aa76989d894130a189",
+    "limitations": [
+      "출처·독립 계수는 작업자의 선언입니다 / 来源与独立计数是操作者声明，软件不能证明现场真实性。",
+      "정답 잠금은 블라인드 실험이 아닙니다 / 真值先锁定不等于盲测；同一浏览器没有人员隔离。",
+      "수동 후 AI 순서에는 학습 효과가 있습니다 / 固定先人工后AI可能产生学习效应，不能据此宣称因果效率提升。",
+      "준비·촬영 이후의 시간입니다 / 计时从准备和拍照之后开始，包含等待与操作，不是完整实物作业时间。",
+      "한 사례는 고정된 물체 상태입니다 / 每个案例只对应一个固定实物状态；补件后须新登记真值，不计连续补件成功率。",
+      "공개 사진·공학 테스트는 현장 결과가 아닙니다 / 公开回放和工程替身不是现场效果；三种来源分别记录。",
+      "중단·미실행도 분모에 포함합니다 / 失败、放弃、中断及未开始都保留；已返回的错误不会被放弃状态隐藏。",
+      "해시는 서명이 아닙니다 / 散列用于核对内容，不是签名、人员身份或实物真实性证明。"
+    ],
+    "note": "Synthetic inputs and FakeAnalyzer. No physical or model accuracy claims.",
+    "participant_code": "CPU-v05",
+    "planned_cases": 3,
+    "protocol": {
+      "inspection_scope_policy": "operator_region_v1",
+      "max_cases": 48,
+      "methods": [
+        "manual",
+        "kitguard"
+      ],
+      "missing": "Every planned slot remains in each method denominator",
+      "name": "fixed_state_manual_then_kitguard_v1",
+      "repeat": "One start per method; all inspection attempts and returned checks retained",
+      "timing": "Server monotonic start-to-terminal after photo/setup; not full physical work time",
+      "truth_policy": "Two matching entries and an operator declaration, sealed before either method starts"
+    },
+    "protocol_sha256": "3205020ea0e502a2b64db70ccc9e57a773fbd1e547d74a39eda35ef7c0702e93",
+    "recorder_source_sha256": "c74f7de108ea574bbca66c9311116ba1b5bc152805c83512819c9d0350cbe12f",
+    "runtime_identity": {
+      "app_version": "0.5.0",
+      "image_max_side": null,
+      "observation_mode": null,
+      "observer_protocol_sha256": null,
+      "repo_id": null,
+      "revision": null
+    },
+    "source_kind": "engineering_fixture",
+    "status": "closed",
+    "title": "v05 CPU API fixture: whole, region, restored whole",
+    "report": {
+      "scope": "fixed_state_manual_then_kitguard_v1",
+      "source_kind": "engineering_fixture",
+      "planned_cases": 3,
+      "registered_cases": 3,
+      "methods": {
+        "manual": {
+          "started": 3,
+          "completed": 3,
+          "correct": 3,
+          "wrong": 0,
+          "uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "interrupted": 0,
+          "not_started": 0,
+          "planned": 3,
+          "correct_fraction": 1.0,
+          "terminal_elapsed_ms": {
+            "n": 3,
+            "median": 3,
+            "max": 3
+          },
+          "completed_elapsed_ms": {
+            "n": 3,
+            "median": 3,
+            "max": 3
+          },
+          "false_ready": null,
+          "returned_checks": {
+            "total": 0,
+            "scorable": 0,
+            "wrong_clear": 0,
+            "false_ready": 0,
+            "uncertain": 0,
+            "multiple_attempt_trials": 0,
+            "ineligible_backend_or_identity": 0
+          }
+        },
+        "kitguard": {
+          "started": 3,
+          "completed": 3,
+          "correct": 3,
+          "wrong": 0,
+          "uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "interrupted": 0,
+          "not_started": 0,
+          "planned": 3,
+          "correct_fraction": 1.0,
+          "terminal_elapsed_ms": {
+            "n": 3,
+            "median": 8,
+            "max": 10
+          },
+          "completed_elapsed_ms": {
+            "n": 3,
+            "median": 8,
+            "max": 10
+          },
+          "false_ready": {
+            "numerator": 0,
+            "denominator": 0
+          },
+          "returned_checks": {
+            "total": 3,
+            "scorable": 3,
+            "wrong_clear": 0,
+            "false_ready": 0,
+            "uncertain": 0,
+            "multiple_attempt_trials": 0,
+            "ineligible_backend_or_identity": 0
+          }
+        }
+      },
+      "paired_completed_cases": 3,
+      "limitations": [
+        "출처·독립 계수는 작업자의 선언입니다 / 来源与独立计数是操作者声明，软件不能证明现场真实性。",
+        "정답 잠금은 블라인드 실험이 아닙니다 / 真值先锁定不等于盲测；同一浏览器没有人员隔离。",
+        "수동 후 AI 순서에는 학습 효과가 있습니다 / 固定先人工后AI可能产生学习效应，不能据此宣称因果效率提升。",
+        "준비·촬영 이후의 시간입니다 / 计时从准备和拍照之后开始，包含等待与操作，不是完整实物作业时间。",
+        "한 사례는 고정된 물체 상태입니다 / 每个案例只对应一个固定实物状态；补件后须新登记真值，不计连续补件成功率。",
+        "공개 사진·공학 테스트는 현장 결과가 아닙니다 / 公开回放和工程替身不是现场效果；三种来源分别记录。",
+        "중단·미실행도 분모에 포함합니다 / 失败、放弃、中断及未开始都保留；已返回的错误不会被放弃状态隐藏。",
+        "해시는 서명이 아닙니다 / 散列用于核对内容，不是签名、人员身份或实物真实性证明。"
+      ]
+    }
+  }
+}

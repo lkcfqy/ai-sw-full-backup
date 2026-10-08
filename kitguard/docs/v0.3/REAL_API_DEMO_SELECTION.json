@@ -1,0 +1,8 @@
+{
+  "selected_at": "2026-09-26T13:27:34.966883+00:00",
+  "receipt": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/result.json",
+  "receipt_sha256": "cab064f757d7c4e984b76a64c31ab5f47a2ed7040226fa128838881dbe8d01f7",
+  "earlier_attempt": "test-results/browser/real-api-v03/runs/candidate-real-api-v1/browser/result.json",
+  "selection_reason": "First full planned execution after a browser navigation response-body capture failure with zero model calls in v1. Only harness order retrieval fixed and re-frozen; no model/prompt/sample changes, inference retries or choosing best outputs.",
+  "scope": "Three reused public development examples, four visual API requests and one separate Korean proposal request. Automated approval action, no physical completion or user study."
+}

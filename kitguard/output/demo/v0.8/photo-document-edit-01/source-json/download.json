@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-02T02:32:39.106180+00:00",
+  "transport": "Actual Chrome download event and returned local file path",
+  "download_path": "/Users/lkc/Downloads/kitguard-ord_37625d420eaf4e7a868a-evidence.zip",
+  "zip_sha256": "5799f343df6654b22b6cdffb2ca620ecea8264da78aebae1845e0fc9b1b3364c",
+  "verified_payload_entries": [
+    {
+      "path": "photos/img_41ae76f94a7447c280d7.jpg",
+      "bytes": 333139,
+      "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949"
+    },
+    {
+      "path": "photos/img_5a2858161b9d4db0ae20.jpg",
+      "bytes": 333139,
+      "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949"
+    },
+    {
+      "path": "evidence.json",
+      "bytes": 112191,
+      "sha256": "92d505b839abfaa27ebec0f07a0f6456bd531dddfa9b27ce4e3ba31eebc96e97"
+    },
+    {
+      "path": "OPEN_ME.html",
+      "bytes": 292712,
+      "sha256": "26a314b1baae3b21f46097ab0ae4034ef070faf61f720f14180341a0629394ef"
+    }
+  ],
+  "order_equals_original_api_export": true,
+  "checks": 2,
+  "public_reviews": 2,
+  "public_replays": 1,
+  "completions": 0,
+  "all_reviews_engineering_agent_zero_humans": true,
+  "offline_html_scope": "CPU structural text assertions only; file:// not retried; no offline visual claim"
+}

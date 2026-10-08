@@ -1,0 +1,10 @@
+.manual-review-receipt { margin: 18px 0; padding: 16px; border: 1px solid #d7ddcc; border-radius: 12px; background: #f6f8f2; text-align: left; }
+.manual-review-receipt p { margin: 8px 0; overflow-wrap: anywhere; }
+.manual-review-receipt small { color: #657267; line-height: 1.6; display: block; }
+.manual-counts { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; margin: 12px 0; }
+.manual-counts span { display: flex; justify-content: space-between; gap: 8px; }
+.badge.manual_reviewed, .dot.manual_reviewed { color: #596b42; background: #e8efdb; }
+#workflow-dialog textarea { width: 100%; border: 1px solid #c9d1c2; padding: 10px; border-radius: 8px; font: inherit; resize: vertical; }
+.action-panel .btn + .btn { margin-top: 8px; }
+.sidebar-footer > a { display: block; font-size: 12px; line-height: 1.5; margin-bottom: 8px; }
+.sidebar-footer .local-badge { margin-top: 12px; }

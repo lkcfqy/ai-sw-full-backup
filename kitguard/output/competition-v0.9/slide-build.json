@@ -1,0 +1,25 @@
+{
+  "slides": 9,
+  "version": "0.9.0.dev1",
+  "font": "Apple SD Gothic Neo",
+  "photoSources": [
+    {
+      "path": "test-results/v0.9/browser/08-final-workspace.jpg",
+      "sha256": "4907ac6fccf3d17975a0619f6c1e30ad644b573cc0778c37342ca9a2d48ca4bd"
+    },
+    {
+      "path": "test-results/v0.9/browser/01-real-r1.jpg",
+      "sha256": "3af7a78388a4a326816f3bf8a3f47651f110c518d7b453da8d4fc7b8b80fca1b"
+    },
+    {
+      "path": "test-results/v0.9/browser/04-r2-marked.jpg",
+      "sha256": "25a9aef2c3f828727ce5ad5a1d21052c74bc9f8dbd2e9e1811b618d081ebf724"
+    },
+    {
+      "path": "test-results/v0.9/browser/07-offline-points.jpg",
+      "sha256": "0dd31a0de57de562815a3cbe112f92b5c31c98dea2dbab5c8da37a26a792c1cc"
+    }
+  ],
+  "visual_qa": "passed: every final page/slide/scene rendered and inspected",
+  "sha256": "1e3cdf42ddc45035e4925a632dc6616c48b61624567e9bc6e21216abac172930"
+}

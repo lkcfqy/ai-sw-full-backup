@@ -1,0 +1,317 @@
+{
+  "schema": "kitguard.v08.preview-pdfs.v1",
+  "version": "0.8.0.dev1",
+  "builder": {
+    "path": "scripts/v08/build_submission_pdfs.py",
+    "sha256": "bb7a5d2203a48b05f1e89e79e16a866dfa3af2c30d207fdb9721f34a5f08b7b0"
+  },
+  "font": {
+    "path": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+    "sha256": "876af2cd4854644e7f3e7feb2f688997fdb3343c6df6693611209c9dfb47ccec"
+  },
+  "documents": [
+    {
+      "path": "output/report/v0.8-preview/KitGuard_결과보고서_v0.8_preview.pdf",
+      "sha256": "9812fbafb68a2ffeac91c05abcb93ad60f2a03c5cdcf9abb469cdcd9c6a23072",
+      "pages": 5,
+      "body_font_pt": 10.3,
+      "cell_font_pt": 9.4,
+      "layout": [
+        {
+          "page": 1,
+          "blocks": [
+            {
+              "kind": "lead",
+              "top": 694.8897637795277,
+              "bottom": 675.8897637795277
+            },
+            {
+              "kind": "body",
+              "top": 668.8897637795277,
+              "bottom": 621.9217637795277
+            },
+            {
+              "kind": "process",
+              "top": 614.9217637795277,
+              "bottom": 528.9217637795277
+            },
+            {
+              "kind": "h2",
+              "top": 518.9217637795277,
+              "bottom": 501.1217637795277
+            },
+            {
+              "kind": "table",
+              "top": 495.1217637795277,
+              "bottom": 310.92176377952774
+            },
+            {
+              "kind": "callout",
+              "top": 301.92176377952774,
+              "bottom": 236.95376377952772
+            },
+            {
+              "kind": "small",
+              "top": 227.95376377952772,
+              "bottom": 201.75376377952773
+            }
+          ],
+          "bottom": 201.75376377952773
+        },
+        {
+          "page": 2,
+          "blocks": [
+            {
+              "kind": "lead",
+              "top": 725.8897637795277,
+              "bottom": 706.8897637795277
+            },
+            {
+              "kind": "body",
+              "top": 699.8897637795277,
+              "bottom": 652.9217637795277
+            },
+            {
+              "kind": "table",
+              "top": 645.9217637795277,
+              "bottom": 422.1217637795277
+            },
+            {
+              "kind": "h2",
+              "top": 413.1217637795277,
+              "bottom": 395.3217637795277
+            },
+            {
+              "kind": "body",
+              "top": 389.3217637795277,
+              "bottom": 342.3537637795277
+            },
+            {
+              "kind": "callout",
+              "top": 335.3537637795277,
+              "bottom": 254.7297637795277
+            },
+            {
+              "kind": "small",
+              "top": 245.7297637795277,
+              "bottom": 219.5297637795277
+            }
+          ],
+          "bottom": 219.52976377952768
+        },
+        {
+          "page": 3,
+          "blocks": [
+            {
+              "kind": "body",
+              "top": 725.8897637795277,
+              "bottom": 678.9217637795277
+            },
+            {
+              "kind": "table",
+              "top": 671.9217637795277,
+              "bottom": 529.1217637795278
+            },
+            {
+              "kind": "small",
+              "top": 520.1217637795278,
+              "bottom": 493.9217637795278
+            },
+            {
+              "kind": "h2",
+              "top": 486.9217637795278,
+              "bottom": 469.1217637795278
+            },
+            {
+              "kind": "body",
+              "top": 463.1217637795278,
+              "bottom": 416.15376377952776
+            },
+            {
+              "kind": "table",
+              "top": 409.15376377952776,
+              "bottom": 252.55376377952777
+            },
+            {
+              "kind": "callout",
+              "top": 243.55376377952777,
+              "bottom": 147.27376377952777
+            }
+          ],
+          "bottom": 147.27376377952777
+        },
+        {
+          "page": 4,
+          "blocks": [
+            {
+              "kind": "body",
+              "top": 725.8897637795277,
+              "bottom": 678.9217637795277
+            },
+            {
+              "kind": "table",
+              "top": 671.9217637795277,
+              "bottom": 542.9217637795277
+            },
+            {
+              "kind": "small",
+              "top": 533.9217637795277,
+              "bottom": 507.72176377952775
+            },
+            {
+              "kind": "h2",
+              "top": 500.72176377952775,
+              "bottom": 482.92176377952774
+            },
+            {
+              "kind": "body",
+              "top": 476.92176377952774,
+              "bottom": 429.9537637795277
+            },
+            {
+              "kind": "body",
+              "top": 422.9537637795277,
+              "bottom": 375.9857637795277
+            },
+            {
+              "kind": "callout",
+              "top": 368.9857637795277,
+              "bottom": 288.3617637795277
+            },
+            {
+              "kind": "small",
+              "top": 279.3617637795277,
+              "bottom": 253.1617637795277
+            }
+          ],
+          "bottom": 253.1617637795277
+        },
+        {
+          "page": 5,
+          "blocks": [
+            {
+              "kind": "h2",
+              "top": 725.8897637795277,
+              "bottom": 708.0897637795277
+            },
+            {
+              "kind": "body",
+              "top": 702.0897637795277,
+              "bottom": 623.8097637795278
+            },
+            {
+              "kind": "body",
+              "top": 616.8097637795278,
+              "bottom": 569.8417637795278
+            },
+            {
+              "kind": "table",
+              "top": 562.8417637795278,
+              "bottom": 378.64176377952776
+            },
+            {
+              "kind": "h2",
+              "top": 369.64176377952776,
+              "bottom": 351.84176377952775
+            },
+            {
+              "kind": "body",
+              "top": 345.84176377952775,
+              "bottom": 298.87376377952774
+            },
+            {
+              "kind": "small",
+              "top": 291.87376377952774,
+              "bottom": 252.57376377952772
+            },
+            {
+              "kind": "h2",
+              "top": 245.57376377952772,
+              "bottom": 227.7737637795277
+            },
+            {
+              "kind": "refs",
+              "top": 221.7737637795277,
+              "bottom": 104.77376377952771
+            },
+            {
+              "kind": "small",
+              "top": 95.77376377952771,
+              "bottom": 69.57376377952771
+            }
+          ],
+          "bottom": 69.57376377952771
+        }
+      ]
+    },
+    {
+      "path": "output/report/v0.8-preview/KitGuard_Agent_기술설명_v0.8_preview.pdf",
+      "sha256": "77b518127c6d3c9e6cb2f391454980add053d5242a0aac58e44e3f306d476e2c",
+      "pages": 1,
+      "body_font_pt": 9.8,
+      "cell_font_pt": 9.1,
+      "layout": [
+        {
+          "page": 1,
+          "blocks": [
+            {
+              "kind": "body",
+              "top": 733.8897637795277,
+              "bottom": 704.0977637795277
+            },
+            {
+              "kind": "table",
+              "top": 697.0977637795277,
+              "bottom": 485.29776377952766
+            },
+            {
+              "kind": "h2",
+              "top": 476.29776377952766,
+              "bottom": 458.49776377952765
+            },
+            {
+              "kind": "body",
+              "top": 452.49776377952765,
+              "bottom": 407.80976377952766
+            },
+            {
+              "kind": "body",
+              "top": 400.80976377952766,
+              "bottom": 356.12176377952767
+            },
+            {
+              "kind": "small",
+              "top": 349.12176377952767,
+              "bottom": 312.2217637795277
+            },
+            {
+              "kind": "callout",
+              "top": 305.2217637795277,
+              "bottom": 257.42976377952766
+            },
+            {
+              "kind": "small",
+              "top": 248.4297637795277,
+              "bottom": 223.8297637795277
+            }
+          ],
+          "bottom": 223.8297637795277
+        }
+      ]
+    }
+  ],
+  "content_source_sha256": "86b85f07250324f505421fe2b8ad83f6f7c878f2c75c22bef310a59658885586",
+  "source_evidence_sha256": "7013e3bb2206ffd622471460579a6d991966c68ec46b7f5504538a0b5f0ca5a4",
+  "regression": {
+    "passed": 1530,
+    "path": "test-results/v0.8-preview-full-v1.xml",
+    "sha256": "9983c611203ba27e0b9f9048bad5b6956e11bcad882434cce3b468393255797c",
+    "tests": 1530,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "visual_qa": "passed_all_6_pages_rendered_and_visually_reviewed",
+  "visual_qa_receipt": "QA.json",
+  "page_format_verified": "A4 portrait; report5 + technical1"
+}

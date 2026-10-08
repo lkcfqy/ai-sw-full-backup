@@ -1,0 +1,114 @@
+{
+  "schema": "kitguard.digital-task-acceptance.v1",
+  "version": "0.9.0.dev2",
+  "date": "2026-10-03",
+  "status": "passed",
+  "new_hardware": false,
+  "external_gpu": false,
+  "human_participants": 0,
+  "physical_completions": 0,
+  "regression": {
+    "passed": 1844,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 49.607
+  },
+  "browser": {
+    "batch_id": "digital_trial_f3aa1e2c1281439c8d19",
+    "purpose": "engineering_rehearsal",
+    "completed_tasks": 6,
+    "actual_model_checks": 4,
+    "checks": [
+      {
+        "id": "chk_91cb9cce7a984a5da002",
+        "revision": 1,
+        "decision": "correct",
+        "observed": {
+          "bolt": 2,
+          "bracket": 0,
+          "nut": 2,
+          "washer": 2
+        },
+        "backend": "mlx",
+        "latency_ms": 52804
+      },
+      {
+        "id": "chk_9041133b701f488bb2e3",
+        "revision": 2,
+        "decision": "ready",
+        "observed": {
+          "bolt": 2,
+          "bracket": 0,
+          "nut": 2,
+          "washer": 2
+        },
+        "backend": "mlx",
+        "latency_ms": 47477
+      },
+      {
+        "id": "chk_f47da9b7a69046569816",
+        "revision": 1,
+        "decision": "correct",
+        "observed": {
+          "bolt": 3,
+          "bracket": 0,
+          "nut": 0,
+          "washer": 0
+        },
+        "backend": "mlx",
+        "latency_ms": 15639
+      },
+      {
+        "id": "chk_e8545129579d44238039",
+        "revision": 1,
+        "decision": "recapture",
+        "observed": {
+          "bolt": 2,
+          "bracket": 0,
+          "nut": null,
+          "washer": null
+        },
+        "backend": "mlx",
+        "latency_ms": 21105
+      }
+    ],
+    "native_download_verified": true,
+    "same_pixels_across_methods_verified": true,
+    "r1_expiration_verified": true,
+    "persisted_after_restart": true
+  },
+  "observer_core_unchanged": true,
+  "limitations": [
+    "Automated rehearsal; manual inputs reuse known author labels and elapsed time includes development pauses. No human baseline or benefit estimate.",
+    "Three exposed public development photographs; no new accuracy denominator.",
+    "Runtime loaded the recorder before the lazy-table compatibility repair. Exact executed source snapshot is retained; final recorder passes the full regression suite.",
+    "Browser download observer timed out, but the actual downloaded JSON file was found, verified and moved into the project.",
+    "Source archive smoke uses existing dependencies; no clean-machine installation claim."
+  ],
+  "sources": {
+    "kitguard/digital_task_trials.py": "b2f1af3177f5a3c895176d07c6dd346349284fc6d594bd46ed8fcc38934dc143",
+    "kitguard/static/digital-trials.html": "a0cf18b9b97ed8600f559ad703de49f2767d7d1d10c6555747ad282866a76b5f",
+    "kitguard/static/digital-trials.js": "0810e740355479be09cc9abb2cf9e286d3fb22598b064252b96b3a712432a898",
+    "kitguard/static/digital-trials.css": "0b184272ac42987398b971752e8b8696139c5dc93f4b1c3559c6e6b92934db24",
+    "test-results/v0.9/digital-tasks/browser/recorder-executed.py": "07c5974bedf07afcb80e1fcce89d26a9225c46b962d529a519087bc680375e6f",
+    "test-results/v0.9/digital-tasks/browser/downloaded-results.json": "b206bd204ed1607d9d04ee4e36f8db2ff4f4c8de825467c15231003e2a728855",
+    "test-results/v0.9/digital-tasks/full-regression-v2.xml": "8d95bafcab6fc71ef939d4df633c203a24e6c667d46b77f8942cf93b7ad50b67",
+    "test-results/v0.9/digital-tasks/browser/01-r2-awaiting.jpg": "ab8b05542e52d18a89e2d3632c52ae14ebe459da1b09e12d2f33801b9dc98032",
+    "test-results/v0.9/digital-tasks/browser/02-identity-uncertain.jpg": "0122c2932815726fa24471df4b52b5aa8dbe2f7bf597f276990b980e21149365",
+    "test-results/v0.9/digital-tasks/browser/03-rehearsal-report.jpg": "5339a04707168abc59c1af07eabc2f4bf45afc4107ff5c942f2093904bbd3351",
+    "test-results/v0.9/digital-tasks/browser/04-sprint-entry.jpg": "6d0aa6a3baf5cb40e2e3d08071fad1d5ade1967afdfcc8975a133dbd2c61b67e",
+    "test-results/v0.9/digital-tasks/browser/05-digital-trial-entry.jpg": "12f17217f9b3047eb1a03d3742b649f823fb456dda3f0901b61515104af4a8b0"
+  },
+  "source_archive": {
+    "path": "output/competition-v0.9-digital-task-update/KitGuard_source_v0.9_dev2.zip",
+    "bytes": 6851349,
+    "sha256": "349df57853d742ac86e432df514e7b1d0b1d7b6df57b1ec4a5f95e8effc6c9f7",
+    "existing_dependency_cpu_smoke": "passed",
+    "extracted_new_feature_contracts": {
+      "passed": 18,
+      "failures": 0,
+      "errors": 0,
+      "seconds": 0.79
+    }
+  }
+}

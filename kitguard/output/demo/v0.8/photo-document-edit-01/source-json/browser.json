@@ -1,0 +1,97 @@
+{
+  "schema": "kitguard.v08.photo-document-live-browser.v1",
+  "status": "passed_read_only_display_and_download",
+  "checked_at": "2026-10-02T02:33:24.634235+00:00",
+  "order_id": "ord_37625d420eaf4e7a868a",
+  "prior_real_api_run": {
+    "receipt_path": "test-results/v0.8/photo-document-live-api-v1/receipt.json",
+    "receipt_sha256": "b86f4f3d9f989ce3c07da986465b0e44d662e3b9e6bd469b413351a43a05d29d",
+    "status": "passed",
+    "inspect_attempts": 2,
+    "actual_generate_started": 6,
+    "actual_generate_completed": 6,
+    "r1_decision": "correct",
+    "r1_latency_ms": 50909,
+    "r2_decision": "ready",
+    "r2_latency_ms": 47728
+  },
+  "browser_scope": {
+    "korean_current_r2": true,
+    "chinese_current_r2": true,
+    "r1_historical_invalid_and_original_requirements": true,
+    "r1_bolt_required_observed_difference": [
+      3,
+      2,
+      -1
+    ],
+    "two_engineering_opinions_current_r2_historical_r1": true,
+    "unverified_user_source_visible": true,
+    "physical_completion_manual_root_replacement_controls": 0,
+    "actual_zip_download": true,
+    "additional_model_calls": 0,
+    "new_review_or_mutation_requests": 0,
+    "runtime_model_available": true,
+    "runtime_model_loaded": false,
+    "mlx_imported": false,
+    "http_request_methods_observed": [
+      "GET"
+    ],
+    "http_request_count": 31,
+    "get_only_service_enforced": true
+  },
+  "human_participants": 0,
+  "saved_review_authorship": "ENGINEERING-AGENT automated integration; user_validation=false, physical_completion=false",
+  "saved_order_unchanged": true,
+  "saved_record_counts": {
+    "checks": 2,
+    "public_reviews": 2,
+    "public_replays": 1,
+    "completions": 0
+  },
+  "production_source_changed_since_real_api_run": [],
+  "visual_qa": {
+    "reviewer": "AI agent",
+    "viewed_screenshots": [
+      "r2-ko.jpg",
+      "reviews-zh.jpg",
+      "r1-history-zh.jpg"
+    ],
+    "finding": "Current version/source notice and engineering label readable; history distinguishes current R2 and invalid R1; R1 retains bolt requirement3/observed2/difference-1; no physical action controls",
+    "human_feedback": false
+  },
+  "limitations": [
+    "Browser file upload remains unverified due earlier chooser permission limit; no new attempt or permission change",
+    "file:// visual inspection remains unverified due policy; no alternate browser or HTTP workaround",
+    "This pass displays completed real API history, not a new real-time model run or new accuracy evaluation",
+    "Engineer-authored inconclusive digital opinions are not human participation or acceptance of correctness"
+  ],
+  "cleanup": {
+    "pid": 92469,
+    "port": 8784,
+    "process_exit_code": 143,
+    "server_stopped": true,
+    "port_closed": true,
+    "tab_closed": "1718412197",
+    "original_data_retained": true
+  },
+  "artifacts_sha256": {
+    "test-results/browser/photo-document-live-v08/before.json": "08e0167db052d9d4de657fecbbc6b5cfef333f20108347e4b277e7caa9a2dfce",
+    "test-results/browser/photo-document-live-v08/browser-download-evidence.zip": "5799f343df6654b22b6cdffb2ca620ecea8264da78aebae1845e0fc9b1b3364c",
+    "test-results/browser/photo-document-live-v08/download-verification.json": "3dfe499a345cf42232a0b4d4546df12e6aa339cd79bc02f85b59ad764d76e7d0",
+    "test-results/browser/photo-document-live-v08/health.json": "bceaaacd984f2154c2ad03d27d6896e79c8b43a26f33b3d20f8fce8d6e630707",
+    "test-results/browser/photo-document-live-v08/order.json": "fd8bc96628358b60611a8b4b4976b5ed3cdef30b9d3325bd040ea056e7f853d8",
+    "test-results/browser/photo-document-live-v08/r1-history-zh.ax.txt": "88f64cb06f105335a38d7258c578794597aa002732e5fdd57650be52a9e977a6",
+    "test-results/browser/photo-document-live-v08/r1-history-zh.jpg": "79cbdbed67547c62f841beab34658f01aa2fcbe45f698fc46bc74db79b4075cf",
+    "test-results/browser/photo-document-live-v08/r2-ko.ax.txt": "93e55d373796cbfc96930ad3923847da8ac512045b5ae155d6314b81332a930b",
+    "test-results/browser/photo-document-live-v08/r2-ko.jpg": "209a3d542ecf6dcffc20ccc81a77e5d0429baaa3fe53aa1dadef57dc9f339805",
+    "test-results/browser/photo-document-live-v08/r2-zh.jpg": "fd597743833581e7e47caa4242eda5981fc5c87afffa769a8335852613ca764a",
+    "test-results/browser/photo-document-live-v08/readonly-status.json": "ba845c441ee082fcb8bc8d15504d2a25c665ded190656e3871ae97df877f8ad3",
+    "test-results/browser/photo-document-live-v08/reviews-ko.jpg": "7784cc2aee05acb44aa81df9b3f5d5624b0377120b73a7b80204dd12b79adc5e",
+    "test-results/browser/photo-document-live-v08/reviews-zh.ax.txt": "2e6af2133dcd192be66c55c5023d7291336c91269b08ea55aa0334cddd1676c4",
+    "test-results/browser/photo-document-live-v08/reviews-zh.jpg": "4b10c2bfef81552d0f9a87f4055604c96a4bda525bd68d0c9281b4d415fc0a8c",
+    "test-results/browser/photo-document-live-v08/server-session.log": "2807c4bd199ff5309716f281df1810577e4ced4dea624a3bd69fbe475b97485a",
+    "test-results/browser/photo-document-live-v08/server.py": "23716e9100b697df79ccbdf4b77e0f4e06842bc5c3beb15c36254aae42fec602",
+    "test-results/browser/photo-document-live-v08/source-zh.ax.txt": "36d6d716e2cd22e02c5029b0dc7530b135f44895d0862c54ca4353f7b8718cc4",
+    "test-results/browser/photo-document-live-v08/summary.json": "8d9ac47e03c7cea44c916b5e8145bed90739ce4570435820b73a77ab4984f3e4"
+  }
+}

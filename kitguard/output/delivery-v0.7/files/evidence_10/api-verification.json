@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-01T22:25:52.547699+00:00",
+  "order_id": "ord_5a1e14b862b84621882c",
+  "actual_mlx_inspections": 1,
+  "latency_ms": 25096,
+  "decision": "recapture",
+  "observed": {
+    "bolt": 2,
+    "nut": null,
+    "washer": null,
+    "bracket": 0
+  },
+  "needs_more_evidence_reviews": 1,
+  "stale_browser_form_rejected_without_new_review": true,
+  "r2_replay_requires_new_inference": true,
+  "physical_completions": 0,
+  "manual_physical_reviews": 0,
+  "public_uploads_same_and_different_source_rejected_409": true,
+  "rejection_preserved_order_and_photo_files": true,
+  "ordinary_order_id": "ord_e083ae60d5c84c93b98e",
+  "ordinary_order_uploads_preserved": 2,
+  "ordinary_inference_performed": false,
+  "real_user_validation": false,
+  "browser_drag_drop_tested": false,
+  "drag_drop_coverage": "CPU UI contract; actual file dragging not performed",
+  "receipt_repair": "Initial verification finished API assertions and saved snapshots but receipt generation used reviewer_code instead of actual operator_code. This read-only receipt uses persisted state; no repeated uploads or extra model calls."
+}

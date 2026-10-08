@@ -1,0 +1,69 @@
+{
+  "version": "0.9.0.dev1",
+  "date": "2026-10-03",
+  "tests_passed": 1826,
+  "checks": [
+    {
+      "id": "chk_bd48ba3b69d24725a726",
+      "revision": 1,
+      "backend": "mlx",
+      "latency_ms": 55052,
+      "decision": "correct",
+      "observed": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "chk_71603531d0c04f04bf8a",
+      "revision": 2,
+      "backend": "mlx",
+      "latency_ms": 49773,
+      "decision": "ready",
+      "observed": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    }
+  ],
+  "resolution_outcomes": [
+    "mismatch",
+    "matched"
+  ],
+  "human_participants": 0,
+  "physical_completion": 0,
+  "sources": {
+    "A": {
+      "path": "test-results/v0.9/ACCEPTANCE.json",
+      "sha256": "e8b259772d9c1521df854cf287546ce6aa439764faab9c3b5a111838d04834ce"
+    },
+    "B": {
+      "path": "test-results/v0.9/browser/r2-order.json",
+      "sha256": "e6a6eb817e7dbf6d4579c5d7edf231798df6cdaeb6e29117a47630697e65cce7"
+    },
+    "C": {
+      "path": "test-results/v0.9/full-regression-v2.xml",
+      "sha256": "49ce44d43d78481522b18923b207ea529b7752ab34a32056516c829495d76b36"
+    },
+    "D": {
+      "path": "docs/v0.8/LOCO_COMBINED_DECISION.json",
+      "sha256": "688044080f1f11d951c53e9e25707dd0156272c8c785643ddced0ed7c7625e9b"
+    },
+    "E": {
+      "path": "docs/v0.7/FINAL_EVALUATION.md",
+      "sha256": "3499d854ce327f67744e7a8eb10666406398b6812b5675b7c85cd496f33a0b5f"
+    },
+    "F": {
+      "path": "docs/v0.9/SOURCE_AI_DISCLOSURE_KO.md",
+      "sha256": "3eb38e79c8110a4ecc9922ed8169c12880a93017390ee265cd587837ea5e7ff1"
+    },
+    "G": {
+      "path": "docs/v0.9/RELEASE_NOTES.md",
+      "sha256": "1583f69c87839419ce17a6e5d1476a4a39cd78af325788a6229464402f1b9af5"
+    }
+  }
+}

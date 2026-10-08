@@ -1,0 +1,22 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Text,Arial Unicode MS,32,&H00353D12,&H000000FF,&H00F2F8F8,&H00F2F8F8,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,20)\fs24\c&H353D12&\b0}API 실행 기록 + 브라우저 정지 화면 편집 · 연속 녹화 아님 · 실제 사용자 0명
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(1500,20)\fs24\c&H353D12&\b0}KitGuard · 0.8.0.dev1 preview
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,65)\fs44\c&H353D12&\b1}06  기록을 ZIP으로 내려받아 전달
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(60,260)\fs31\c&H353D12&\b1}Chrome 실제 다운로드 확인\N검사 2 · 의견 2 · 같은 사진 재사용 1\N실물 완료 0
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(700,260)\fs31\c&H353D12&\b1}사진·JSON·오프라인 HTML\N다운로드된 4개 payload의 해시 일치\NAPI 실행에서 ZIP 6개 멤버 검증
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(1310,260)\fs31\c&H353D12&\b1}검증 범위\N파일 선택창 / file:// 화면 검증은 권한 제한\NAPI 업로드와 다운로드 검증을 구분
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(60,580)\fs48\c&H353D12&\b1}입력 → 판단 → 도구 실행 → 기록 전달
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(60,680)\fs30\c&H5C7217&\b0}자료의 요구 일치와 증거 이력 관리\N실물 보충·출고·사용자 만족을 주장하지 않음
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(60,840)\fs24\c&H646B56&\b0}실제 다운로드 증빙 요약 · 영상 무음 · 전체 기록 링크는 SOURCE_INDEX.json
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,944)\fs29\c&H353D12&\b0}이 장면은 다운로드 검증 JSON에 근거한 사실 카드입니다. 다운로드 클릭 화면을 재현하지 않았습니다.\N입력 → 모델 판단 → 수량·버전 도구 → 기록·ZIP. 실제 사용자 0명, 실물 완료를 주장하지 않습니다.
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,1038)\fs19\c&H646B56&\b0}사용한 MVTec LOCO AD 사진: CC BY-NC-SA 4.0 · mvtec.com/research-teaching/datasets/mvtec-loco-ad

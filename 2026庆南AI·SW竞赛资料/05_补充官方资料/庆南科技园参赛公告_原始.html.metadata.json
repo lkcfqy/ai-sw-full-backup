@@ -1,0 +1,16 @@
+{
+  "url": "https://gntp.or.kr/board/detail/notice/20867",
+  "path": "05_补充官方资料/庆南科技园参赛公告_原始.html",
+  "source": "https://gntp.or.kr/",
+  "kind": "webpage",
+  "retrieved_at": "2026-09-24T16:33:50.066223+09:00",
+  "http_status": 200,
+  "final_url": "https://gntp.or.kr/board/detail/notice/20867",
+  "content_type": "text/html;charset=UTF-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 31469,
+  "sha256": "8e774dc4e5d418184c07cb7875b9d78918353d9c2f557e4fb5bd085b863e3169",
+  "magic_hex": "0a0a0a200a0a0a0a3c21444f43545950"
+}

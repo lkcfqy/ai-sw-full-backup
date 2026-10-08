@@ -1,0 +1,26 @@
+{
+  "baseline_archive": "/Users/lkc/Downloads/AI\u00b7SW/kitguard/output/KitGuard_source_v0.3.zip",
+  "baseline_archive_sha256": "072b1b685d3766cc28164ce1bfa17e8b409dacbe015055e46647807366c9e87e",
+  "observer_protocol_sources": {
+    "vision.py": {
+      "baseline_sha256": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+      "current_sha256": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+      "unchanged": true
+    },
+    "spatial.py": {
+      "baseline_sha256": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+      "current_sha256": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+      "unchanged": true
+    },
+    "consensus.py": {
+      "baseline_sha256": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+      "current_sha256": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+      "unchanged": true
+    },
+    "identity.py": {
+      "baseline_sha256": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+      "current_sha256": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+      "unchanged": true
+    }
+  }
+}

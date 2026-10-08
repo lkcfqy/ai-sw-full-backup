@@ -1,0 +1,16 @@
+{
+  "url": "https://www.changwon.ac.kr/common/nttFileDownload.do?fileKey=f98b403aa06129b6553c6ac3e6d4359f",
+  "path": "01_昌原大学公告/附件/2. 공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집.hwp",
+  "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+  "kind": "attachment",
+  "retrieved_at": "2026-09-24T16:29:04.774826+09:00",
+  "http_status": 200,
+  "final_url": "https://www.changwon.ac.kr/common/nttFileDownload.do?fileKey=f98b403aa06129b6553c6ac3e6d4359f",
+  "content_type": "application-download",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": "attachment; filename=\"2. ê³µê³ ë¬¸_2026ë",
+  "bytes": 90112,
+  "sha256": "c26def5428469ad239178de00650bc7987dcc2e078b7324913f40cdd0d5e86dd",
+  "magic_hex": "d0cf11e0a1b11ae10000000000000000"
+}

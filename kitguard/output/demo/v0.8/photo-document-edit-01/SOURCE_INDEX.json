@@ -1,0 +1,118 @@
+{
+  "schema": "kitguard.v08.video-source-index.v1",
+  "inputs": [
+    {
+      "role": "api",
+      "path": "test-results/v0.8/photo-document-live-api-v1/receipt.json",
+      "bytes": 1762,
+      "sha256": "b86f4f3d9f989ce3c07da986465b0e44d662e3b9e6bd469b413351a43a05d29d"
+    },
+    {
+      "role": "api_plan",
+      "path": "test-results/v0.8/photo-document-live-api-v1/plan.json",
+      "bytes": 1810,
+      "sha256": "59543c2151e95ae58d0f128c41d80073707f8dec7f3f72b6a182e2aad73dc2c0"
+    },
+    {
+      "role": "browser",
+      "path": "test-results/browser/photo-document-live-v08/browser-receipt.json",
+      "bytes": 5282,
+      "sha256": "9db664fa5089c1f3fb25297cbd796b3d78eeb99290e8e3245583935f8f83c431"
+    },
+    {
+      "role": "order",
+      "path": "test-results/browser/photo-document-live-v08/order.json",
+      "bytes": 107655,
+      "sha256": "fd8bc96628358b60611a8b4b4976b5ed3cdef30b9d3325bd040ea056e7f853d8"
+    },
+    {
+      "role": "download",
+      "path": "test-results/browser/photo-document-live-v08/download-verification.json",
+      "bytes": 1271,
+      "sha256": "3dfe499a345cf42232a0b4d4546df12e6aa339cd79bc02f85b59ad764d76e7d0"
+    },
+    {
+      "role": "original_capture",
+      "path": "test-results/browser/photo-document-live-v08/r2-ko.jpg",
+      "bytes": 89296,
+      "sha256": "209a3d542ecf6dcffc20ccc81a77e5d0429baaa3fe53aa1dadef57dc9f339805",
+      "format": "JPEG",
+      "dimensions": [
+        1713,
+        899
+      ]
+    },
+    {
+      "role": "original_capture",
+      "path": "test-results/browser/photo-document-live-v08/r1-history-zh.jpg",
+      "bytes": 80842,
+      "sha256": "79cbdbed67547c62f841beab34658f01aa2fcbe45f698fc46bc74db79b4075cf",
+      "format": "JPEG",
+      "dimensions": [
+        1713,
+        899
+      ]
+    },
+    {
+      "role": "original_capture",
+      "path": "test-results/browser/photo-document-live-v08/r2-zh.jpg",
+      "bytes": 87803,
+      "sha256": "fd597743833581e7e47caa4242eda5981fc5c87afffa769a8335852613ca764a",
+      "format": "JPEG",
+      "dimensions": [
+        1713,
+        899
+      ]
+    },
+    {
+      "role": "original_capture",
+      "path": "test-results/browser/photo-document-live-v08/reviews-ko.jpg",
+      "bytes": 95664,
+      "sha256": "7784cc2aee05acb44aa81df9b3f5d5624b0377120b73a7b80204dd12b79adc5e",
+      "format": "JPEG",
+      "dimensions": [
+        1713,
+        899
+      ]
+    },
+    {
+      "role": "original_capture",
+      "path": "test-results/browser/photo-document-live-v08/reviews-zh.jpg",
+      "bytes": 95467,
+      "sha256": "4b10c2bfef81552d0f9a87f4055604c96a4bda525bd68d0c9281b4d415fc0a8c",
+      "format": "JPEG",
+      "dimensions": [
+        1713,
+        899
+      ]
+    }
+  ],
+  "exact_capture_times": "Not recorded per screenshot; all display completed API history. Edit order is narrative order, not capture chronology.",
+  "source_photo": {
+    "source_note": "Engineering integration, zero human participants. Already exposed MVTec LOCO AD screw_bag/train/good/016.png, uploaded locally as a user declaration; not authenticated provenance, not a physical capture or field task.",
+    "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+    "license_note": "MVTec · CC BY-NC-SA 4.0",
+    "schema_version": 1,
+    "kind": "user_declared_photo",
+    "verification": "user_declared_unverified",
+    "physical_completion_allowed": false,
+    "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+    "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+    "original_root_photo_id": "img_41ae76f94a7447c280d7",
+    "declared_at": "2026-10-02T02:28:42.761+00:00",
+    "statement_sha256": "08f1783e60ecfe55cbd36ee09820f68e84ccd87f84f5829e4cc5b81d2f625cf0",
+    "binding_sha256": "0f1e44d73f5f8098594a45bce275f256584baf0dedc5fddabdfeb3b09465fc02"
+  },
+  "browser_checked_at": "2026-10-02T02:33:24.634235+00:00",
+  "api_started_at": "2026-10-02T02:28:37.373550+00:00",
+  "api_finished_at": "2026-10-02T02:30:21.524926+00:00",
+  "human_participants": 0,
+  "additional_model_calls": 0,
+  "audio": "none",
+  "limitations": [
+    "Browser file upload remains unverified due earlier chooser permission limit; no new attempt or permission change",
+    "file:// visual inspection remains unverified due policy; no alternate browser or HTTP workaround",
+    "This pass displays completed real API history, not a new real-time model run or new accuracy evaluation",
+    "Engineer-authored inconclusive digital opinions are not human participation or acceptance of correctness"
+  ]
+}

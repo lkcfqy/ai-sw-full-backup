@@ -1,0 +1,16 @@
+{
+  "url": "https://contest.gnict.org/rule.php",
+  "path": "03_赛事官网/运营规定_原始.html",
+  "source": "https://contest.gnict.org/",
+  "kind": "webpage",
+  "retrieved_at": "2026-09-24T16:29:55.485561+09:00",
+  "http_status": 200,
+  "final_url": "https://contest.gnict.org/rule.php",
+  "content_type": "text/html; charset=utf-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 16312,
+  "sha256": "5cd3b7de620209c6449dc3162d6069bcb0878c29d9b3228850bf20683782e649",
+  "magic_hex": "3c21646f63747970652068746d6c3e0a"
+}

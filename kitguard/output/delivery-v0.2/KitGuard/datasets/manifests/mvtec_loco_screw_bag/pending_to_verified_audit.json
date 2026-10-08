@@ -1,0 +1,30 @@
+{
+  "verified_at_utc": "2026-09-26T10:21:52.982008+00:00",
+  "full_archive_verification_pending": false,
+  "full_archive_sha256": "9e7c84dba550fd2e59d8e9e231c929c45ba737b6b6a6d3814100f54d63aae687",
+  "full_archive_bytes": 6126996224,
+  "compared_original_files": 1007,
+  "differences": [],
+  "staged_development_results_source_integrity_validated": true,
+  "benchmarks": [
+    {
+      "version": "v1",
+      "pending_manifest_sha256": "fb17e1a2e4fb516ba1ca5efd5e29ed6e89216342b7d2375f9789939fd65d5bf5",
+      "fully_verified_manifest_sha256": "2a429c3170f08eff1d478d2ed12e47dda95e29f745f623e62f7113e89f590ddc",
+      "same_selected_images_order_splits_labels_and_mask_evidence": true,
+      "historical_selection_frozen_at_utc": "2026-09-26T10:02:53.257329+00:00",
+      "fully_verified_manifest_generated_at_utc": "2026-09-26T10:20:23.784386+00:00",
+      "timestamp_note": "The fully verified manifest was regenerated after development began; its local creation/freeze timestamp is not the original image-selection time. The unchanged historical pending manifest proves the earlier selection."
+    },
+    {
+      "version": "v2",
+      "pending_manifest_sha256": "bbfe01e6a0c9887367ce86807dd46b939e505309d1e97a8d0d874e0f48ec40ff",
+      "fully_verified_manifest_sha256": "3166a331b981635170794dbef4989ed7294a54f89fd56e1aeac4993163700cfb",
+      "same_selected_images_order_splits_labels_and_mask_evidence": true,
+      "historical_selection_frozen_at_utc": "2026-09-26T10:02:53.257329+00:00",
+      "fully_verified_manifest_generated_at_utc": "2026-09-26T10:20:30.761592+00:00",
+      "timestamp_note": "The fully verified manifest was regenerated after development began; its local creation/freeze timestamp is not the original image-selection time. The unchanged historical pending manifest proves the earlier selection."
+    }
+  ],
+  "historical_manifest_policy": "Original pending v1/v2 manifests and prior model runs are preserved unchanged; this report supplies subsequent whole-archive and file-equality evidence. Any difference invalidates prior source-dependent evaluations and requires reruns."
+}

@@ -1,0 +1,87 @@
+# v0.7 reproducible source packaging
+
+`scripts/v07/package_source.py` creates a reproducible source component. It does
+not rename or modify earlier source/delivery packages. The output path is mandatory;
+the ZIP, manifest, checksum file, and requested verification receipt must be new.
+
+```sh
+.venv/bin/python -m scripts.v07.package_source \
+  --output tmp/v07-source-package-smoke/choose-a-new-source-snapshot.zip \
+  --verify-runtime
+```
+
+For a reviewed delivery, choose a new explicit path under `output/`. The source
+component does not create the competition's report/PPT/video or claim a complete
+submission; consult its accompanying delivery manifest for the overall deliverables.
+The version identifies the included source. Fixed ZIP timestamps serve reproducibility
+and do not represent the generation or submission date.
+
+## Contents
+
+- All application Python modules and authored static assets, including
+  `public_review.py`, `public-review.js/css`, and the revised `demo.html/js/css`.
+- Installation/start scripts, dependency lock, package configuration, tests,
+  experiment preparation/runner/analyzer and their source dependencies.
+- Authored text documentation, small public dataset manifests, and third-party
+  notices. Historical binary reports and screenshots are not source payloads.
+- Exactly the three catalog development photographs. Their bytes must match the
+  catalog hashes; source links, CC BY-NC-SA 4.0 terms, and the two crop descriptions
+  accompany them. These 2.64 MB of permitted samples make the public-photo entry
+  usable after extraction; they are not the new 51-image holdout.
+- Generated `SOURCE_PACKAGE.md` with startup, source/license, external-data and
+  reproducibility instructions; `SOURCE_MANIFEST.json` with every file's SHA-256,
+  size and normalized permission mode.
+
+Excluded: private SQLite databases, uploaded photos/participant records, model or
+training weights, full raw/derived datasets, experiment outputs, browser outputs,
+Python/node environments, caches, generated reports and earlier packages. Symlinks
+are not followed into the source tree, and required source files cannot be links.
+The application-static asset directory is treated as authored product content.
+
+`prepare_public_evaluation.py` needs external raw author annotations, images,
+historical exposure records, and training splits. Its existence in this package
+does not mean the whole held-out experiment can run from these three examples.
+Restore the exact verified external inputs according to `PUBLIC_EVALUATION_PLAN.md`.
+Do not substitute an empty history when checking prior source exposure.
+
+## Reproducibility and validation
+
+Files are sorted, ZIP timestamps fixed to 1980-01-01, file modes normalized, and
+the manifest contains no build-time clock or absolute output path. Equal source
+bytes produce equal archive bytes with the same Python/zlib toolchain. Source
+changes yield a different archive and content-tree hash. Checksums do not provide
+authenticity or signatures.
+
+The tool validates required files, version agreement, exact sample hashes, all
+archive members and checksums, and Python source syntax. `--verify-runtime`
+extracts the actual archive, uses the existing interpreter/dependencies, imports
+the application and v0.7 experiment tools, checks HTTP/static routes, previews all
+three images, and creates isolated public orders with no observations. It asserts
+that model files are unavailable in the isolated configuration and that MLX has
+not been imported. Shell startup syntax is checked without running setup/download.
+
+This is not a clean-machine install, GPU inference, browser interaction test, or
+recognition evaluation. Launching from source on the supported Apple Silicon Mac
+still requires `bash scripts/setup.sh` and a separately installed pinned model.
+
+## Engineering record, 2026-10-02 (Korea)
+
+- Initial actual ZIP smoke check: 358 files, 5,045,532 bytes. The extracted public
+  gallery had three available previews and created three source-tagged orders;
+  model loading/inference were not performed.
+- Synthetic packaging-contract tests cover exact
+  byte reproducibility despite different names/mtimes/permissions, private-data
+  exclusion, source/crop/license/version failure, overwrite protection, unsafe
+  links/output placement, rollback cleanup, required entrypoints and content-change
+  detection. These tests do not use genuine photographs or model observations.
+- Trial 02 included 425 files and was 5,365,362 bytes. Rebuilding from its extracted
+  payload produced the identical ZIP SHA-256
+  `d1982c47e95c60aeff2117debba07edc4516268e4779241cfdd82bf4cc75fa05`.
+  Both actual archives passed isolated import, public-photo creation, route and
+  shell-syntax checks without importing MLX. The reproducibility receipt is
+  `tmp/v07-source-package-smoke/source-package-reproducibility-02.json`.
+- Disposable packages and receipts are in `tmp/v07-source-package-smoke/`.
+  No final submission package was generated by this task.
+
+The earlier `scripts/package_source.py` is retained for historical delivery
+reconstruction. It is not the v0.7 reproducible-packaging entry point.

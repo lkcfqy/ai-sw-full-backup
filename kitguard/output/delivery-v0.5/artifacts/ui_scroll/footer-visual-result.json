@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checks": [
+    "390px complete declaration and apply visible after ordinary modal scroll",
+    "320px complete declaration and apply visible after ordinary modal scroll"
+  ],
+  "scope": "Read-only scrolling only; no source edits or mutations."
+}

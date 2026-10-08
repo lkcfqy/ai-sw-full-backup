@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "release": "v0.3",
+  "created_at": "2026-09-26T13:40:42.760099+00:00",
+  "scope": "All bundle files except SHA256.json and its detached checksum; historical references are not bundle files",
+  "files": [
+    {
+      "path": "BUILD_MANIFEST.json",
+      "bytes": 20689,
+      "sha256": "14e59da5f4bb708be85b921acfeb064177f4adb4e12e07cd0047f69881a87437"
+    },
+    {
+      "path": "docs/AI_AND_SOURCE_DISCLOSURE.md",
+      "bytes": 4703,
+      "sha256": "f1c1cc6a271585593b4f01ef63a54ab0cd470535e8866fb3d77f42c88527b1b7"
+    },
+    {
+      "path": "docs/DATA_PROVENANCE.md",
+      "bytes": 10958,
+      "sha256": "1ba8538b68632f4d0281d87ece3128224712846c905d423258fad1b8d5a6beac"
+    },
+    {
+      "path": "docs/FINAL_EVALUATION.md",
+      "bytes": 10285,
+      "sha256": "b03b2e7f018c14acaaccd3d89d147bfe794e833ec17b923ccc69a4d1299aaaf3"
+    },
+    {
+      "path": "docs/FINAL_INDEPENDENT_AUDIT.md",
+      "bytes": 26680,
+      "sha256": "16e4939ede9eda2232856a76fed2cb3f846bc0a8ada890305518605b10b8f6c2"
+    },
+    {
+      "path": "docs/PUBLIC_DATA_PLAN.md",
+      "bytes": 3819,
+      "sha256": "3bb812bc1620bc61c238c38921967af74967f87cd89d9976eef04ff26411363c"
+    },
+    {
+      "path": "docs/REAL_WORLD_VALIDATION.md",
+      "bytes": 3710,
+      "sha256": "4b16b0cab547eca20c07a546b22027482b0d9127936f11f67e08b024233ecafa"
+    },
+    {
+      "path": "docs/RELEASE_EVALUATION_FREEZE.json",
+      "bytes": 6036,
+      "sha256": "593a3f3f4da4a26f429a08fdea31cab22f0fdc3c40da42e73fb5a15dda65dea6"
+    },
+    {
+      "path": "docs/v0.3/DEMO_RUNBOOK_KO.md",
+      "bytes": 5702,
+      "sha256": "c6f804091c344dc7cb7b28373f6bf8e92a2d0dea9880d1769b15224efd262dc7"
+    },
+    {
+      "path": "docs/v0.3/DEPLOYMENT_SELECTION.json",
+      "bytes": 1651,
+      "sha256": "a36e8b1b51b2bb3443728ec46c75659b6bbdd54c2e233fc0babbdf04c04947ae"
+    },
+    {
+      "path": "docs/v0.3/FINAL_EVALUATION.md",
+      "bytes": 12265,
+      "sha256": "29a28b3ce930d128a8da13a9a49fb1ac3d83fd30d9dbd3d7600117d5b8a9a19e"
+    },
+    {
+      "path": "docs/v0.3/FINAL_INDEPENDENT_AUDIT.md",
+      "bytes": 8965,
+      "sha256": "a2009319411ab4353d9ac3dad21b7fad85aec7d3d108eda0474f8b10d6a34c5a"
+    },
+    {
+      "path": "docs/v0.3/GROUNDING_DINO_DEVELOPMENT_REPORT.md",
+      "bytes": 5959,
+      "sha256": "7c2a7eaaef55e18a75e27e55b4312e175b529f29b9e7a59e6b48e4750f57f873"
+    },
+    {
+      "path": "docs/v0.3/HOLDOUT_GATES_V1.json",
+      "bytes": 25306,
+      "sha256": "563bf149286d6cacb7e14992b5ee9d1b1895752fae7f407a4da37ab11d65b8b6"
+    },
+    {
+      "path": "docs/v0.3/JUDGES_QA_KO.md",
+      "bytes": 16720,
+      "sha256": "25cfeb2f8f526abdc8d071cee74705111eee2134780a54bbde0f718562d6f613"
+    },
+    {
+      "path": "docs/v0.3/OWL_DEVELOPMENT_REPORT.md",
+      "bytes": 4967,
+      "sha256": "b24cdade771816e3d70e63ac2ca6b646cfd254cc5276c24891db33483c453eb6"
+    },
+    {
+      "path": "docs/v0.3/SOURCE_REPRODUCTION.md",
+      "bytes": 2603,
+      "sha256": "00666be109a0d17712241cc4dc62f62ef1106cce53c1b5a4b941ac9f19d005c6"
+    },
+    {
+      "path": "evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json",
+      "bytes": 898888,
+      "sha256": "8f8fa784b9abca802ffab08e1fc8b23efd75407a2ede9cc235c3496b442f599f"
+    },
+    {
+      "path": "evaluation-runs/v03_guarded_holdout_v1/run.json",
+      "bytes": 17686,
+      "sha256": "4e28b4508f5c390ca663c230c5c8d6546fb9dc6913526b8f36cafb7138882280"
+    },
+    {
+      "path": "evaluation-runs/v03_guarded_integrated_development_v1/gate_report_v1.json",
+      "bytes": 409341,
+      "sha256": "fc54ee5cbac231a3aa214235de1d8ae494055ef744d94b0e5fca28ab8a95d4e8"
+    },
+    {
+      "path": "index.html",
+      "bytes": 18330,
+      "sha256": "be529aec57291a180dbc1830173a4238276d3ccefd66fd2218cc0b33d73a878e"
+    },
+    {
+      "path": "review/KitGuard_v0.3.html",
+      "bytes": 2962427,
+      "sha256": "d7de023e7609e48d50a6b73f033534ecbb56f63bb1754ff79ad1fbbbd1aef27e"
+    },
+    {
+      "path": "review/KitGuard_validation_v0.3.pdf",
+      "bytes": 99850,
+      "sha256": "fb724e10ac6227ed9369720d8d4c323b8a330870a6896ee9e5d66cd4d85a9805"
+    },
+    {
+      "path": "review/KitGuard_validation_v0.3.pptx",
+      "bytes": 687200,
+      "sha256": "4cfe783b4ce5561c35df087558639abfd33f4f51bc75685ed5f6e935e2502c26"
+    },
+    {
+      "path": "source/KitGuard_source_v0.3.zip",
+      "bytes": 3530748,
+      "sha256": "072b1b685d3766cc28164ce1bfa17e8b409dacbe015055e46647807366c9e87e"
+    },
+    {
+      "path": "test-results/audit/korean_pdf_v0.3_qa.json",
+      "bytes": 2765,
+      "sha256": "ac16f0ba131ae683bc20e987e439732f7126329946efffb8be6031319443c4bc"
+    },
+    {
+      "path": "test-results/audit/source_v03_verification.json",
+      "bytes": 3327,
+      "sha256": "8acaf9594b840330b6b900b6dd65b28a4decbbd863abf23cc34727b07aa9536e"
+    },
+    {
+      "path": "test-results/audit/source_v03_verification.pytest.xml",
+      "bytes": 63717,
+      "sha256": "006c137380dff47e37e70bf1385720c4412b7049ad548375bd397ef2c059c882"
+    },
+    {
+      "path": "test-results/audit/v03-guarded-holdout-analysis.json",
+      "bytes": 10156,
+      "sha256": "76a878c1b75fc09dcbaf4ae5d3139c97f46cfdc859c8c0200f0014215c5b3408"
+    },
+    {
+      "path": "test-results/audit/v03-guarded-integrated-development-analysis.json",
+      "bytes": 10266,
+      "sha256": "da054cdb515b11b4bec968944c0c5b0d51516897fad0cea991e14fc55eed2961"
+    },
+    {
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/bag-revision-r1.zip",
+      "bytes": 455555,
+      "sha256": "df693a317edf772fbb0bae907c86dd4df1382fd8c3f30513a1e412abd4672af0"
+    },
+    {
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/bag-revision-r2.zip",
+      "bytes": 868334,
+      "sha256": "a11808490f26c9f0ea7b2e2ddb7ce00c4c550b28fb9c540548fdf1c08d992160"
+    },
+    {
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/mixed-screws-r1.zip",
+      "bytes": 253544,
+      "sha256": "8af5c4cd29781f17a9a42a6f80112ef68e8ca76606d1f19d83025d4ffaf8b90f"
+    },
+    {
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/small-part-r1.zip",
+      "bytes": 271669,
+      "sha256": "6bc4ebc9f0e9ff33402415b40e0bf3c61eb70b7c0ba663484800b609e62af474"
+    },
+    {
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/candidate-real-api.mp4",
+      "bytes": 7237604,
+      "sha256": "9610b0c0e5c993fdff1a04fc02a6b1ab4e20726e9430dc5683a98f94a2243381"
+    },
+    {
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/result.json",
+      "bytes": 254659,
+      "sha256": "cab064f757d7c4e984b76a64c31ab5f47a2ed7040226fa128838881dbe8d01f7"
+    },
+    {
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/video-metadata.json",
+      "bytes": 4212,
+      "sha256": "02ad81b26334b096102285165b36dcab589d638172b3019c00df5b5c7c57c517"
+    },
+    {
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/visual-qa.json",
+      "bytes": 1848,
+      "sha256": "687ff3ab8badf2fa27b4098ceaeb0f4a5a564890180fab7db789a41f34a6718e"
+    },
+    {
+      "path": "test-results/browser/region-label-v03/provenance.json",
+      "bytes": 1436,
+      "sha256": "65a47c702ace2887fe88b8f1ecffdd88528f38217dc2113f9df50a7988d00a17"
+    },
+    {
+      "path": "test-results/browser/region-label-v03/result.json",
+      "bytes": 17750,
+      "sha256": "37baa61a5a0a76db988160c9c48d01423006d10d589e09639efa8a4adddaa18a"
+    },
+    {
+      "path": "test-results/browser/report-v03-final/browser-result.json",
+      "bytes": 8534,
+      "sha256": "5104c629768ad9db1b73eeaaba3785e46dd8931ea35ba869c0de06a5fc9be807"
+    },
+    {
+      "path": "test-results/browser/report-v03-final/offline-result.json",
+      "bytes": 1251,
+      "sha256": "3d8ffece11eb9855bf0a774785843cb7eedeee8685f3914918e5c4821bc0b9bf"
+    },
+    {
+      "path": "test-results/engineering-v03-final.xml",
+      "bytes": 61912,
+      "sha256": "5842e15b5d851940dd2b13168064dbae277f483a062de8038710f7a2dbfede92"
+    },
+    {
+      "path": "verification/slides-visual-qa.json",
+      "bytes": 3609,
+      "sha256": "e9ff5fa31bcab879b5903b566bc2f793885e8ab925d10e1355f86ba536eb84a1"
+    }
+  ],
+  "historical_references": [
+    {
+      "title": "v0.2 历史交付入口",
+      "note": "保留原版本文档、录像和 48 张历史评测；不计为 v0.3 新留出结果。历史链接依赖本项目目录。",
+      "source": "output/delivery-v0.2/index.html",
+      "bytes": 3331,
+      "sha256": "732f87bfd9afed7496432eec8688ed665585abc743f02c757bd8a19d6fd1772d",
+      "href": "../delivery-v0.2/index.html"
+    }
+  ]
+}

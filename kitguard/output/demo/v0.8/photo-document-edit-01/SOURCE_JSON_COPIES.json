@@ -1,0 +1,27 @@
+[
+  {
+    "original_path": "test-results/v0.8/photo-document-live-api-v1/receipt.json",
+    "preserved_copy": "source-json/api.json",
+    "sha256": "b86f4f3d9f989ce3c07da986465b0e44d662e3b9e6bd469b413351a43a05d29d"
+  },
+  {
+    "original_path": "test-results/v0.8/photo-document-live-api-v1/plan.json",
+    "preserved_copy": "source-json/api_plan.json",
+    "sha256": "59543c2151e95ae58d0f128c41d80073707f8dec7f3f72b6a182e2aad73dc2c0"
+  },
+  {
+    "original_path": "test-results/browser/photo-document-live-v08/browser-receipt.json",
+    "preserved_copy": "source-json/browser.json",
+    "sha256": "9db664fa5089c1f3fb25297cbd796b3d78eeb99290e8e3245583935f8f83c431"
+  },
+  {
+    "original_path": "test-results/browser/photo-document-live-v08/order.json",
+    "preserved_copy": "source-json/order.json",
+    "sha256": "fd8bc96628358b60611a8b4b4976b5ed3cdef30b9d3325bd040ea056e7f853d8"
+  },
+  {
+    "original_path": "test-results/browser/photo-document-live-v08/download-verification.json",
+    "preserved_copy": "source-json/download.json",
+    "sha256": "3dfe499a345cf42232a0b4d4546df12e6aa339cd79bc02f85b59ad764d76e7d0"
+  }
+]

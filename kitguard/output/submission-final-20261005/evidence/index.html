@@ -1,0 +1,204 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KitGuard autonomous mission</title><style>body{max-width:980px;margin:40px auto;padding:0 22px;background:#f6f8f6;color:#173b35;font:16px system-ui}section{background:white;padding:24px;margin:24px 0;border:1px solid #dae4de;border-radius:16px}img{max-width:100%;max-height:340px}table{border-collapse:collapse}th,td{padding:8px 24px;border-bottom:1px solid #ddd}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}li{margin:18px 0}a{color:#12654d}</style><h1>KitGuard · Autonomous mission</h1><p>mission_540aab61fe4449a2bdac · completed · 137071ms</p><p>3 planned cases · 4 planned checks · 0 humans · 0 physical completions</p><p>工程执行 / 엔지니어링 실행. Known development photos; no new accuracy or human benefit claim.</p><p><a href="mission.json">Full snapshots and tool results</a> · <a href="SHA256.json">File checksums</a></p><section><h2>quantity · completed · quantity_difference</h2><p>Binding at export: current</p><img src="photos/img_049323f9ca894d2c8da4.jpg" alt="quantity"><p>Saved input · R1</p><p>chk_9b3fc9d9008249c3a7b5 · 15995ms</p><table><tr><th>Part</th><th>BOM</th><th>AI</th></tr><tr><th>bolt</th><td>2</td><td>3</td></tr><tr><th>nut</th><td>0</td><td>0</td></tr><tr><th>washer</th><td>0</td><td>0</td></tr><tr><th>bracket</th><td>0</td><td>0</td></tr></table><ol><li><b>prepare_public_photo</b> · completed<p>Use the frozen public source and predeclared BOM, not a cached prediction.</p><pre>{
+  &quot;order_id&quot;: &quot;ord_07cbe2992c514d34a4c8&quot;,
+  &quot;photo_id&quot;: &quot;img_049323f9ca894d2c8da4&quot;,
+  &quot;source&quot;: {
+    &quot;sample_id&quot;: &quot;mixed-screws&quot;,
+    &quot;source_case_id&quot;: &quot;v03-screws-screws_344-8d389e404b12&quot;,
+    &quot;source_sha256&quot;: &quot;dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb&quot;,
+    &quot;source_url&quot;: &quot;https://www.mvtec.com/research-teaching/datasets/mvtec-screws&quot;,
+    &quot;license&quot;: &quot;MVTec · CC BY-NC-SA 4.0&quot;,
+    &quot;source_note&quot;: &quot;굵은 종류만 검사, 규격·SKU 검증 아님 / 检查粗类别，不验证规格或SKU&quot;,
+    &quot;derived_view&quot;: true,
+    &quot;kind&quot;: &quot;public_photo_demo&quot;,
+    &quot;physical_completion_allowed&quot;: false,
+    &quot;autonomous_mission_id&quot;: &quot;mission_540aab61fe4449a2bdac&quot;,
+    &quot;autonomous_case_id&quot;: &quot;quantity&quot;
+  },
+  &quot;input_binding_sha256&quot;: &quot;d3b463f9e2773e58f59fea5784e6f72398e722d1d09c2a08500bb16e88752f49&quot;
+}</pre></li><li><b>local_vision</b> · completed<p>A fresh check is required for this exact version and photograph.</p><pre>{
+  &quot;check_id&quot;: &quot;chk_9b3fc9d9008249c3a7b5&quot;,
+  &quot;decision&quot;: &quot;correct&quot;,
+  &quot;latency_ms&quot;: 15995,
+  &quot;check_sha256&quot;: &quot;c8b3837053ab7f334f354cfcdd71bd4abbe1f206aad1e8b885d9be985e82e581&quot;
+}</pre></li><li><b>list_differences</b> · completed<p>The stored count comparison has a nonzero difference; preserve the BOM and list the differences.</p><pre>{
+  &quot;finding&quot;: &quot;quantity_difference&quot;,
+  &quot;differences&quot;: [
+    {
+      &quot;part&quot;: &quot;bolt&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 3,
+      &quot;delta&quot;: 1
+    },
+    {
+      &quot;part&quot;: &quot;nut&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;washer&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;bracket&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    }
+  ],
+  &quot;uncertain_action&quot;: null
+}</pre></li></ol></section><section><h2>identity · completed · needs_more_evidence</h2><p>Binding at export: current</p><img src="photos/img_51ba42ac643a48f5986f.jpg" alt="identity"><p>Saved input · R1</p><p>chk_2046d964947f4b26a697 · 21566ms</p><table><tr><th>Part</th><th>BOM</th><th>AI</th></tr><tr><th>bolt</th><td>2</td><td>2</td></tr><tr><th>nut</th><td>1</td><td>?</td></tr><tr><th>washer</th><td>0</td><td>?</td></tr><tr><th>bracket</th><td>0</td><td>0</td></tr></table><ol><li><b>prepare_public_photo</b> · completed<p>Use the frozen public source and predeclared BOM, not a cached prediction.</p><pre>{
+  &quot;order_id&quot;: &quot;ord_f07f91288ff44c1d929c&quot;,
+  &quot;photo_id&quot;: &quot;img_51ba42ac643a48f5986f&quot;,
+  &quot;source&quot;: {
+    &quot;sample_id&quot;: &quot;small-part&quot;,
+    &quot;source_case_id&quot;: &quot;v03-screws-screws_222-56eea59f64ca&quot;,
+    &quot;source_sha256&quot;: &quot;9aba8a284f2492dc78014a886b5091c7fa93f10485f9b4fab6e5ccfbaafedddd&quot;,
+    &quot;source_url&quot;: &quot;https://www.mvtec.com/research-teaching/datasets/mvtec-screws&quot;,
+    &quot;license&quot;: &quot;MVTec · CC BY-NC-SA 4.0&quot;,
+    &quot;source_note&quot;: &quot;작은 원형 부품은 혼동될 수 있습니다 / 小型环状零件可能被误认&quot;,
+    &quot;derived_view&quot;: true,
+    &quot;kind&quot;: &quot;public_photo_demo&quot;,
+    &quot;physical_completion_allowed&quot;: false,
+    &quot;autonomous_mission_id&quot;: &quot;mission_540aab61fe4449a2bdac&quot;,
+    &quot;autonomous_case_id&quot;: &quot;identity&quot;
+  },
+  &quot;input_binding_sha256&quot;: &quot;95ce302525bc296fb9f269f0bde7b68e0b15f8ebe45ed9e35daea64a8a6ae099&quot;
+}</pre></li><li><b>local_vision</b> · completed<p>A fresh check is required for this exact version and photograph.</p><pre>{
+  &quot;check_id&quot;: &quot;chk_2046d964947f4b26a697&quot;,
+  &quot;decision&quot;: &quot;recapture&quot;,
+  &quot;latency_ms&quot;: 21566,
+  &quot;check_sha256&quot;: &quot;3a07aa00d2c138f980d5f4bee0bf5155529a952e19e8f921c477bff4493dc470&quot;
+}</pre></li><li><b>request_more_evidence</b> · completed<p>The stored observation is uncertain or requires review; these same pixels cannot resolve it by assertion.</p><pre>{
+  &quot;finding&quot;: &quot;needs_more_evidence&quot;,
+  &quot;differences&quot;: [
+    {
+      &quot;part&quot;: &quot;bolt&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;nut&quot;,
+      &quot;required&quot;: 1,
+      &quot;observed&quot;: null,
+      &quot;delta&quot;: null
+    },
+    {
+      &quot;part&quot;: &quot;washer&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: null,
+      &quot;delta&quot;: null
+    },
+    {
+      &quot;part&quot;: &quot;bracket&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    }
+  ],
+  &quot;uncertain_action&quot;: {
+    &quot;kind&quot;: &quot;recapture&quot;,
+    &quot;message&quot;: &quot;표시된 부품을 분리하고 약간 기울여 머리·나사산·관통 구멍을 보여 주세요. 전체를 다시 촬영하세요 / 分开放置所示零件，稍微倾斜以露出头部、螺纹和孔口，再拍摄整套。区域仅为模型估计。&quot;,
+    &quot;region&quot;: [
+      0.81,
+      0.0,
+      1.0,
+      0.24
+    ]
+  }
+}</pre></li></ol></section><section><h2>revision · completed · quantities_match</h2><p>Binding at export: current</p><img src="photos/img_866933be04794452bc57.jpg" alt="revision"><p>Saved input · R2</p><p>chk_e8de29b8840949d59402 · 49972ms</p><table><tr><th>Part</th><th>BOM</th><th>AI</th></tr><tr><th>bolt</th><td>2</td><td>2</td></tr><tr><th>nut</th><td>2</td><td>2</td></tr><tr><th>washer</th><td>2</td><td>2</td></tr><tr><th>bracket</th><td>0</td><td>0</td></tr></table><ol><li><b>prepare_public_photo</b> · completed<p>Use the frozen public source and predeclared BOM, not a cached prediction.</p><pre>{
+  &quot;order_id&quot;: &quot;ord_e910025e6a9d4de295cb&quot;,
+  &quot;photo_id&quot;: &quot;img_0eb463e1a7fd47e2b6fe&quot;,
+  &quot;source&quot;: {
+    &quot;sample_id&quot;: &quot;bag-revision&quot;,
+    &quot;source_case_id&quot;: &quot;mvtec-loco-screw_bag-train-good-016&quot;,
+    &quot;source_sha256&quot;: &quot;3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9&quot;,
+    &quot;source_url&quot;: &quot;https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad&quot;,
+    &quot;license&quot;: &quot;MVTec · CC BY-NC-SA 4.0&quot;,
+    &quot;source_note&quot;: &quot;공개 사진의 관찰과 수량 변경 흐름 / 用公开照片体验核验与改版&quot;,
+    &quot;derived_view&quot;: false,
+    &quot;kind&quot;: &quot;public_photo_demo&quot;,
+    &quot;physical_completion_allowed&quot;: false,
+    &quot;autonomous_mission_id&quot;: &quot;mission_540aab61fe4449a2bdac&quot;,
+    &quot;autonomous_case_id&quot;: &quot;revision&quot;
+  },
+  &quot;input_binding_sha256&quot;: &quot;5e2c7388e6b5c7f4d530174b6ea4bb63f2b8de1b9656a48384cea932c8e6a060&quot;
+}</pre></li><li><b>local_vision</b> · completed<p>A fresh check is required for this exact version and photograph.</p><pre>{
+  &quot;check_id&quot;: &quot;chk_bc740899bd06470185e5&quot;,
+  &quot;decision&quot;: &quot;correct&quot;,
+  &quot;latency_ms&quot;: 48976,
+  &quot;check_sha256&quot;: &quot;9ed2f33e513ddeb5a8efad7fb653b6505bb89d92543a2012ac5c353ada8cf304&quot;
+}</pre></li><li><b>list_differences</b> · completed<p>The stored count comparison has a nonzero difference; preserve the BOM and list the differences.</p><pre>{
+  &quot;finding&quot;: &quot;quantity_difference&quot;,
+  &quot;differences&quot;: [
+    {
+      &quot;part&quot;: &quot;bolt&quot;,
+      &quot;required&quot;: 3,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: -1
+    },
+    {
+      &quot;part&quot;: &quot;nut&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;washer&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;bracket&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    }
+  ],
+  &quot;uncertain_action&quot;: null
+}</pre></li><li><b>apply_planned_revision</b> · completed<p>Apply the predeclared simulated R2 and prove the old check is no longer current.</p><pre>{
+  &quot;revision&quot;: 2,
+  &quot;old_check_valid&quot;: false
+}</pre></li><li><b>replay_verified_photo</b> · completed<p>Same pixels, declared no new physical capture; the new revision requires new inference.</p><pre>{
+  &quot;replay_id&quot;: &quot;replay_3d165f2cecf5461282da&quot;,
+  &quot;photo_id&quot;: &quot;img_866933be04794452bc57&quot;,
+  &quot;physical_capture&quot;: false
+}</pre></li><li><b>local_vision</b> · completed<p>A fresh check is required for this exact version and photograph.</p><pre>{
+  &quot;check_id&quot;: &quot;chk_e8de29b8840949d59402&quot;,
+  &quot;decision&quot;: &quot;ready&quot;,
+  &quot;latency_ms&quot;: 49972,
+  &quot;check_sha256&quot;: &quot;b495a7229b0276c09c8415a14ccb879d677448d9f7bad331cf59b66decb5c240&quot;
+}</pre></li><li><b>package_findings</b> · completed<p>All four visible coarse-category counts match this BOM; digital evidence only.</p><pre>{
+  &quot;finding&quot;: &quot;quantities_match&quot;,
+  &quot;differences&quot;: [
+    {
+      &quot;part&quot;: &quot;bolt&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;nut&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;washer&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;bracket&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    }
+  ],
+  &quot;uncertain_action&quot;: null
+}</pre></li></ol></section><ul><li>This is automatic engineering execution on previously exposed public development photos; human participants = 0.</li><li>The rule planner routes real model findings. It does not certify correctness, independently review the image, or repair a scene.</li><li>Same-photo R2 replay is declared simulation, not a new capture. No physical completion or user-efficiency claim.</li><li>An archived finding describes its saved snapshot. A later order, photo, check or runtime change makes it historical.</li></ul></html>

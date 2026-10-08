@@ -1,0 +1,73 @@
+{
+  "name": "five_machine_goal_tasks_v1",
+  "classification": "prospective_engineering_tasks_on_exposed_images",
+  "human_participants": 0,
+  "physical_completions": 0,
+  "new_image_accuracy_denominator": 0,
+  "observer": "unchanged spatial_guarded_1536 MLX Qwen3.6-27B-4bit",
+  "control": "CPU workflow ablation: latest stored check without version binding, using the same real saved MLX observations. Not an independent model or service.",
+  "timing": "Whole mission server monotonic; control replay time is not compared to model inference or a human.",
+  "cases": [
+    {
+      "id": "quantity",
+      "sample": "mixed-screws",
+      "bom": {
+        "bolt": 2,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "expected": "quantity_difference"
+    },
+    {
+      "id": "uncertain",
+      "sample": "small-part",
+      "bom": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 0,
+        "bracket": 0
+      },
+      "expected": "needs_more_evidence"
+    },
+    {
+      "id": "matching",
+      "sample": "bag-revision",
+      "bom": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "expected": "quantities_match"
+    },
+    {
+      "id": "changed_bom",
+      "sample": "bag-revision",
+      "bom": {
+        "bolt": 3,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "expected": "reject_stale_goal_then_fresh_check"
+    },
+    {
+      "id": "physical_source",
+      "sample": null,
+      "bom": {
+        "bolt": 1,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "expected": "reject_physical_goal"
+    }
+  ],
+  "success": "Predeclared workflow outcome matches expected routing/refusal, every attempted case retained. Not ground-truth image accuracy.",
+  "limits": [
+    "Only 3 known source photos. Goals do not receive author truth.",
+    "One deterministic ablation exposes the binding mechanism, not market-wide superiority.",
+    "No human productivity, willingness-to-pay, repeated deployment or statistical population claim."
+  ]
+}

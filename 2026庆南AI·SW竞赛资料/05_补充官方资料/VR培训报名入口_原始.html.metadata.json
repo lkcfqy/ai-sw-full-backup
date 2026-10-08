@@ -1,0 +1,16 @@
+{
+  "url": "https://docs.google.com/forms/d/e/1FAIpQLScuKMLVV5AGA-envX5QLrjtlCwiKFiXJGRwtT-FfBE6F5hyOg/viewform?usp=header",
+  "path": "05_补充官方资料/VR培训报名入口_原始.html",
+  "source": "https://m.site.naver.com/2gmJs",
+  "kind": "form",
+  "retrieved_at": "2026-09-24T16:40:26.273039+09:00",
+  "http_status": 200,
+  "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScuKMLVV5AGA-envX5QLrjtlCwiKFiXJGRwtT-FfBE6F5hyOg/viewform?usp=header",
+  "content_type": "text/html; charset=utf-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 111284,
+  "sha256": "4fb8800c16ecde8f1abf430c168b4180c613c736e35bfd037ed3f606dacfa8a1",
+  "magic_hex": "3c21444f43545950452068746d6c3e3c"
+}

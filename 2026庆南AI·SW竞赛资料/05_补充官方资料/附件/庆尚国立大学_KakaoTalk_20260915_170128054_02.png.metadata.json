@@ -1,0 +1,16 @@
+{
+  "url": "https://www.gnu.ac.kr/common/nttFileDownload.do?fileKey=a3a1040b1cede6735223a88d5caa737a",
+  "path": "05_补充官方资料/附件/庆尚国立大学_KakaoTalk_20260915_170128054_02.png",
+  "source": "https://www.gnu.ac.kr/aero/na/ntt/selectNttInfo.do?mi=13821&nttSn=8570562",
+  "kind": "attachment",
+  "retrieved_at": "2026-09-24T16:35:11.102898+09:00",
+  "http_status": 200,
+  "final_url": "https://www.gnu.ac.kr/common/nttFileDownload.do?fileKey=a3a1040b1cede6735223a88d5caa737a",
+  "content_type": "application-download",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": "attachment; filename=\"KakaoTalk_20260915_170128054_02.png\"",
+  "bytes": 877356,
+  "sha256": "d3d9455e22ee3f0d2aa4568c81f3b4c62bb1b659beae57ad30ca2fa23782abdd",
+  "magic_hex": "89504e470d0a1a0a0000000d49484452"
+}

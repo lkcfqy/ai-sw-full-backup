@@ -1,0 +1,16 @@
+{
+  "url": "https://www.changwon.ac.kr/common/nttFileDownload.do?fileKey=0b133ca692169b607d2244df675ff78d",
+  "path": "01_昌原大学公告/附件/1. 제4회_AI.SW_경진대회_참가_신청서.hwp",
+  "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+  "kind": "attachment",
+  "retrieved_at": "2026-09-24T16:29:04.774536+09:00",
+  "http_status": 200,
+  "final_url": "https://www.changwon.ac.kr/common/nttFileDownload.do?fileKey=0b133ca692169b607d2244df675ff78d",
+  "content_type": "application-download",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": "attachment; filename=\"1. ì 4í_AI.SW_ê²½ì§ëí_ì°¸ê°_ì ì²­ì.hwp\"",
+  "bytes": 80384,
+  "sha256": "4b262808bde99222b2947a3f6de9551e4bae9d36f6ba4e33be8c2452ebf6301b",
+  "magic_hex": "d0cf11e0a1b11ae10000000000000000"
+}

@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-10-02T02:28:37.373144+00:00",
+  "status": "prepared_before_model_call",
+  "purpose": "real_mlx_photo_document_api_integration",
+  "source_image": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/016.png",
+  "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+  "source_already_exposed": true,
+  "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+  "license_note": "MVTec · CC BY-NC-SA 4.0",
+  "server_verification_expected": "user_declared_unverified",
+  "requirements_by_revision": [
+    {
+      "bolt": 3,
+      "nut": 2,
+      "washer": 2,
+      "bracket": 0
+    },
+    {
+      "bolt": 2,
+      "nut": 2,
+      "washer": 2,
+      "bracket": 0
+    }
+  ],
+  "revision_authority": "Preset explicit engineering operator instruction, not AI lowering a BOM to fit pixels",
+  "observation_mode": "spatial_guarded",
+  "image_max_side": 1536,
+  "profile": "Qwen3.6-27B-4bit",
+  "references": {},
+  "inspect_attempt_limit": 2,
+  "retries": 0,
+  "warmups": 0,
+  "review_operator": "ENGINEERING-AGENT",
+  "human_participants": 0,
+  "physical_completion": false,
+  "review_conclusion": "inconclusive",
+  "accuracy_evaluation": false,
+  "production_promotion": false,
+  "source_before_sha256": "8f6efb2a0ca729274b3b36c7f89c7fbebb6806b6f5995c20ec5792b4d2612a0a",
+  "recording": "Existing recorder preserves raw text/actual images; wrapper adds actual call start/return flags",
+  "timing": "First inspect includes cold load. Rehash/setup are separate; this is not an accuracy benchmark.",
+  "data_isolation": {
+    "import": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/v0.8/photo-document-live-api-v1/import-runtime-data",
+    "app": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/v0.8/photo-document-live-api-v1/data"
+  }
+}

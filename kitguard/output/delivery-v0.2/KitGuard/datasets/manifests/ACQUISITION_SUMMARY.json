@@ -1,0 +1,35 @@
+{
+  "completed_at_utc": "2026-09-26T10:22:23.544269+00:00",
+  "status": "complete",
+  "full_archive_verification_pending": false,
+  "archives": [
+    {
+      "dataset": "MVTec Screws v1.0",
+      "path": "datasets/archives/mvtec_screws_v1.0.tar.gz",
+      "bytes": 1361662840,
+      "verified_sha256": "a742c5744cea973eca5d9eeee5896c8b458d3d695fb107a58707a9e7e0cc1342",
+      "read_only": true
+    },
+    {
+      "dataset": "MVTec LOCO AD",
+      "path": "datasets/archives/mvtec_loco_anomaly_detection.tar.xz",
+      "bytes": 6126996224,
+      "verified_sha256": "9e7c84dba550fd2e59d8e9e231c929c45ba737b6b6a6d3814100f54d63aae687",
+      "read_only": true
+    }
+  ],
+  "original_photos_available": {
+    "mvtec_screws": 384,
+    "mvtec_loco_screw_bag": 761,
+    "total": 1145
+  },
+  "loco_original_masks": 243,
+  "license": "CC BY-NC-SA 4.0",
+  "static_only": true,
+  "bracket_positive_examples": 0,
+  "loco_provenance_audit": "datasets/manifests/mvtec_loco_screw_bag/pending_to_verified_audit.json",
+  "loco_evaluation_manifest": "datasets/manifests/mvtec_loco_screw_bag/benchmark_v2.json",
+  "historical_pending_manifests_preserved": true,
+  "source_downloads_require_no_contact_form_or_login": true,
+  "unique_archive_download_bytes": 7488659064
+}

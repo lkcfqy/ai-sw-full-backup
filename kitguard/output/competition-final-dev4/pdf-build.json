@@ -1,0 +1,52 @@
+{
+  "documents": [
+    {
+      "path": "KitGuard_report_5p.pdf",
+      "pages": 5,
+      "sha256": "5b743ed2709cb171955ddbc32624e26acf775bc63d2f08455f351b259b408c1f",
+      "layout": [
+        {
+          "page": 1,
+          "bottom": 164.0177637795278
+        },
+        {
+          "page": 2,
+          "bottom": 145.69776377952775
+        },
+        {
+          "page": 3,
+          "bottom": 182.67376377952772
+        },
+        {
+          "page": 4,
+          "bottom": 196.96176377952764
+        },
+        {
+          "page": 5,
+          "bottom": 174.6057637795277
+        }
+      ]
+    },
+    {
+      "path": "KitGuard_agent_1p.pdf",
+      "pages": 1,
+      "sha256": "5f607c2b604072c6075256de8e248d7f57affd6885c73c4475e5bf4c4bf5af81",
+      "layout": [
+        {
+          "page": 1,
+          "bottom": 169.48976377952764
+        }
+      ]
+    }
+  ],
+  "builder_sha256": "9c6b284f5c623af829121217a18cffb4b54934176a5e4d87cffd3ed99f470eb0",
+  "visual_qa": "verified_all_6_rendered_pages",
+  "inspected_pages": [
+    "report1",
+    "report2",
+    "report3",
+    "report4",
+    "report5",
+    "agent1"
+  ]
+}

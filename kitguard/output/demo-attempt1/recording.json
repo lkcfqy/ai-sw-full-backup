@@ -1,0 +1,1148 @@
+{
+  "startedAt": "2026-09-26T11:04:14.185Z",
+  "kind": "Actual local model and browser walkthrough",
+  "source": "MVTec LOCO AD screw_bag/train/good/016.png, CC BY-NC-SA 4.0",
+  "selection": "Development image chosen for demonstration before 27B results; excluded from holdout; demo reuse does not add an evaluation sample",
+  "physicalActionVerified": false,
+  "humanCompletionPerformed": false,
+  "samePhotoResubmittedAfterOrderRevision": true,
+  "responses": [
+    {
+      "url": "http://127.0.0.1:8766/api/orders",
+      "status": 201,
+      "body": {
+        "order": {
+          "id": "ord_6056d20757de475ea977",
+          "title": "공개 사진 데모 · 실물 검증 아님",
+          "requirements": {
+            "bolt": 3,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "revision": 1,
+          "status": "pending",
+          "created_at": "2026-09-26T11:04:22.139+00:00",
+          "updated_at": "2026-09-26T11:04:22.139+00:00",
+          "latest_check": null,
+          "checks": [],
+          "photos": [],
+          "references": {},
+          "reference_history": [],
+          "events": [
+            {
+              "id": "evt_c1ac31eda05b48afa442",
+              "kind": "order_created",
+              "message": "주문 생성 / 已创建订单",
+              "created_at": "2026-09-26T11:04:22.139+00:00",
+              "payload": {}
+            }
+          ],
+          "completions": [],
+          "evidence_epoch": 0,
+          "active_inspection": null,
+          "revisions": [
+            {
+              "revision": 1,
+              "requirements": {
+                "bolt": 3,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "instruction": "최초 주문 / 初始订单",
+              "created_at": "2026-09-26T11:04:22.139+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8766/api/orders/ord_6056d20757de475ea977/photos",
+      "status": 201,
+      "body": {
+        "order": {
+          "id": "ord_6056d20757de475ea977",
+          "title": "공개 사진 데모 · 실물 검증 아님",
+          "requirements": {
+            "bolt": 3,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "revision": 1,
+          "status": "pending",
+          "created_at": "2026-09-26T11:04:22.139+00:00",
+          "updated_at": "2026-09-26T11:04:22.204+00:00",
+          "latest_check": null,
+          "checks": [],
+          "photos": [
+            {
+              "id": "img_09f987317b584317878b",
+              "url": "/api/photos/img_09f987317b584317878b",
+              "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "revision": 1,
+              "created_at": "2026-09-26T11:04:22.203+00:00",
+              "width": 1600,
+              "height": 1100,
+              "quality": {
+                "warning": null
+              }
+            }
+          ],
+          "references": {},
+          "reference_history": [],
+          "events": [
+            {
+              "id": "evt_c1ac31eda05b48afa442",
+              "kind": "order_created",
+              "message": "주문 생성 / 已创建订单",
+              "created_at": "2026-09-26T11:04:22.139+00:00",
+              "payload": {}
+            },
+            {
+              "id": "evt_bbdb09f2ffff43868226",
+              "kind": "photo_uploaded",
+              "message": "새 실물 사진 등록 / 已上传实物照片",
+              "created_at": "2026-09-26T11:04:22.204+00:00",
+              "payload": {
+                "photo_id": "img_09f987317b584317878b",
+                "part": null
+              }
+            }
+          ],
+          "completions": [],
+          "evidence_epoch": 1,
+          "active_inspection": null,
+          "revisions": [
+            {
+              "revision": 1,
+              "requirements": {
+                "bolt": 3,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "instruction": "최초 주문 / 初始订单",
+              "created_at": "2026-09-26T11:04:22.139+00:00"
+            }
+          ]
+        },
+        "photo": {
+          "id": "img_09f987317b584317878b",
+          "url": "/api/photos/img_09f987317b584317878b",
+          "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+          "revision": 1,
+          "created_at": "2026-09-26T11:04:22.203+00:00",
+          "width": 1600,
+          "height": 1100,
+          "quality": {
+            "warning": null
+          }
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8766/api/orders/ord_6056d20757de475ea977/inspect",
+      "status": 200,
+      "body": {
+        "order": {
+          "id": "ord_6056d20757de475ea977",
+          "title": "공개 사진 데모 · 실물 검증 아님",
+          "requirements": {
+            "bolt": 3,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "revision": 1,
+          "status": "needs_action",
+          "created_at": "2026-09-26T11:04:22.139+00:00",
+          "updated_at": "2026-09-26T11:04:43.108+00:00",
+          "latest_check": {
+            "id": "chk_23db60536e27431aba60",
+            "order_id": "ord_6056d20757de475ea977",
+            "revision": 1,
+            "photo_id": "img_09f987317b584317878b",
+            "decision": "correct",
+            "observed": {
+              "bolt": 2,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "differences": [
+              {
+                "part": "bolt",
+                "required": 3,
+                "observed": 2,
+                "delta": -1
+              },
+              {
+                "part": "nut",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "washer",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "bracket",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              }
+            ],
+            "issues": [],
+            "action": {
+              "kind": "add_remove",
+              "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+              "region": null
+            },
+            "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+            "backend": "mlx",
+            "latency_ms": 19354,
+            "created_at": "2026-09-26T11:04:43.107+00:00",
+            "valid": true,
+            "requirements_snapshot": {
+              "bolt": 3,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "object_evidence": {
+              "protocol": "spatial_inventory_v1",
+              "coordinate_frame": "normalized_original",
+              "objects": [
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.33,
+                    0.52
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.53,
+                    0.5
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.29,
+                    0.43
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.4,
+                    0.55
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.36,
+                    0.38
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.46,
+                    0.48
+                  ]
+                }
+              ],
+              "uncertain_parts": []
+            },
+            "reference_ids": {},
+            "evidence_feedback": null,
+            "tool_trace": [
+              {
+                "step": "observe_image",
+                "status": "completed",
+                "model": "Qwen3.6-27B · MLX 4-bit · local",
+                "latency_ms": 19354
+              },
+              {
+                "step": "derive_counts_from_object_list",
+                "status": "completed",
+                "listed_objects": 6,
+                "uncertain_parts": []
+              },
+              {
+                "step": "compare_current_requirements",
+                "status": "completed",
+                "revision": 1
+              },
+              {
+                "step": "review_previous_evidence",
+                "status": "not_applicable"
+              },
+              {
+                "step": "choose_next_action",
+                "status": "completed",
+                "decision": "correct",
+                "action_kind": "add_remove"
+              },
+              {
+                "step": "commit_current_evidence",
+                "status": "completed",
+                "revision": 1,
+                "evidence_epoch": 1
+              }
+            ],
+            "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "observation_context": null,
+            "runtime_identity": {
+              "label": "Qwen3.6-27B · MLX 4-bit · local",
+              "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+              "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+              "observer_protocol_sha256": "d65f411dc69c3f5de57bfcad82c34a4e4bf77fad45c373ad60572c3866ce9678",
+              "observation_mode": "spatial_inventory",
+              "image_max_side": 1536
+            },
+            "evidence_epoch": 1
+          },
+          "checks": [
+            {
+              "id": "chk_23db60536e27431aba60",
+              "order_id": "ord_6056d20757de475ea977",
+              "revision": 1,
+              "photo_id": "img_09f987317b584317878b",
+              "decision": "correct",
+              "observed": {
+                "bolt": 2,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "differences": [
+                {
+                  "part": "bolt",
+                  "required": 3,
+                  "observed": 2,
+                  "delta": -1
+                },
+                {
+                  "part": "nut",
+                  "required": 2,
+                  "observed": 2,
+                  "delta": 0
+                },
+                {
+                  "part": "washer",
+                  "required": 2,
+                  "observed": 2,
+                  "delta": 0
+                },
+                {
+                  "part": "bracket",
+                  "required": 0,
+                  "observed": 0,
+                  "delta": 0
+                }
+              ],
+              "issues": [],
+              "action": {
+                "kind": "add_remove",
+                "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+                "region": null
+              },
+              "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+              "backend": "mlx",
+              "latency_ms": 19354,
+              "created_at": "2026-09-26T11:04:43.107+00:00",
+              "valid": true,
+              "requirements_snapshot": {
+                "bolt": 3,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "object_evidence": {
+                "protocol": "spatial_inventory_v1",
+                "coordinate_frame": "normalized_original",
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.33,
+                      0.52
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.53,
+                      0.5
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.29,
+                      0.43
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.4,
+                      0.55
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.36,
+                      0.38
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.46,
+                      0.48
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              },
+              "reference_ids": {},
+              "evidence_feedback": null,
+              "tool_trace": [
+                {
+                  "step": "observe_image",
+                  "status": "completed",
+                  "model": "Qwen3.6-27B · MLX 4-bit · local",
+                  "latency_ms": 19354
+                },
+                {
+                  "step": "derive_counts_from_object_list",
+                  "status": "completed",
+                  "listed_objects": 6,
+                  "uncertain_parts": []
+                },
+                {
+                  "step": "compare_current_requirements",
+                  "status": "completed",
+                  "revision": 1
+                },
+                {
+                  "step": "review_previous_evidence",
+                  "status": "not_applicable"
+                },
+                {
+                  "step": "choose_next_action",
+                  "status": "completed",
+                  "decision": "correct",
+                  "action_kind": "add_remove"
+                },
+                {
+                  "step": "commit_current_evidence",
+                  "status": "completed",
+                  "revision": 1,
+                  "evidence_epoch": 1
+                }
+              ],
+              "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "observation_context": null,
+              "runtime_identity": {
+                "label": "Qwen3.6-27B · MLX 4-bit · local",
+                "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+                "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+                "observer_protocol_sha256": "d65f411dc69c3f5de57bfcad82c34a4e4bf77fad45c373ad60572c3866ce9678",
+                "observation_mode": "spatial_inventory",
+                "image_max_side": 1536
+              },
+              "evidence_epoch": 1
+            }
+          ],
+          "photos": [
+            {
+              "id": "img_09f987317b584317878b",
+              "url": "/api/photos/img_09f987317b584317878b",
+              "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "revision": 1,
+              "created_at": "2026-09-26T11:04:22.203+00:00",
+              "width": 1600,
+              "height": 1100,
+              "quality": {
+                "warning": null
+              }
+            }
+          ],
+          "references": {},
+          "reference_history": [],
+          "events": [
+            {
+              "id": "evt_c1ac31eda05b48afa442",
+              "kind": "order_created",
+              "message": "주문 생성 / 已创建订单",
+              "created_at": "2026-09-26T11:04:22.139+00:00",
+              "payload": {}
+            },
+            {
+              "id": "evt_bbdb09f2ffff43868226",
+              "kind": "photo_uploaded",
+              "message": "새 실물 사진 등록 / 已上传实物照片",
+              "created_at": "2026-09-26T11:04:22.204+00:00",
+              "payload": {
+                "photo_id": "img_09f987317b584317878b",
+                "part": null
+              }
+            },
+            {
+              "id": "evt_4e5b905848c046b1afc2",
+              "kind": "inspection_started",
+              "message": "실물 관찰 시작 / 开始观察实物",
+              "created_at": "2026-09-26T11:04:23.753+00:00",
+              "payload": {
+                "photo_id": "img_09f987317b584317878b"
+              }
+            },
+            {
+              "id": "evt_989f99db5ef04383ae56",
+              "kind": "inspection_completed",
+              "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+              "created_at": "2026-09-26T11:04:43.108+00:00",
+              "payload": {
+                "check_id": "chk_23db60536e27431aba60",
+                "decision": "correct",
+                "revision": 1
+              }
+            }
+          ],
+          "completions": [],
+          "evidence_epoch": 1,
+          "active_inspection": null,
+          "revisions": [
+            {
+              "revision": 1,
+              "requirements": {
+                "bolt": 3,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "instruction": "최초 주문 / 初始订单",
+              "created_at": "2026-09-26T11:04:22.139+00:00"
+            }
+          ]
+        },
+        "check": {
+          "id": "chk_23db60536e27431aba60",
+          "order_id": "ord_6056d20757de475ea977",
+          "revision": 1,
+          "photo_id": "img_09f987317b584317878b",
+          "decision": "correct",
+          "observed": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "differences": [
+            {
+              "part": "bolt",
+              "required": 3,
+              "observed": 2,
+              "delta": -1
+            },
+            {
+              "part": "nut",
+              "required": 2,
+              "observed": 2,
+              "delta": 0
+            },
+            {
+              "part": "washer",
+              "required": 2,
+              "observed": 2,
+              "delta": 0
+            },
+            {
+              "part": "bracket",
+              "required": 0,
+              "observed": 0,
+              "delta": 0
+            }
+          ],
+          "issues": [],
+          "action": {
+            "kind": "add_remove",
+            "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+            "region": null
+          },
+          "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+          "backend": "mlx",
+          "latency_ms": 19354,
+          "created_at": "2026-09-26T11:04:43.107+00:00",
+          "valid": true,
+          "requirements_snapshot": {
+            "bolt": 3,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "object_evidence": {
+            "protocol": "spatial_inventory_v1",
+            "coordinate_frame": "normalized_original",
+            "objects": [
+              {
+                "part": "bolt",
+                "center": [
+                  0.33,
+                  0.52
+                ]
+              },
+              {
+                "part": "bolt",
+                "center": [
+                  0.53,
+                  0.5
+                ]
+              },
+              {
+                "part": "nut",
+                "center": [
+                  0.29,
+                  0.43
+                ]
+              },
+              {
+                "part": "nut",
+                "center": [
+                  0.4,
+                  0.55
+                ]
+              },
+              {
+                "part": "washer",
+                "center": [
+                  0.36,
+                  0.38
+                ]
+              },
+              {
+                "part": "washer",
+                "center": [
+                  0.46,
+                  0.48
+                ]
+              }
+            ],
+            "uncertain_parts": []
+          },
+          "reference_ids": {},
+          "evidence_feedback": null,
+          "tool_trace": [
+            {
+              "step": "observe_image",
+              "status": "completed",
+              "model": "Qwen3.6-27B · MLX 4-bit · local",
+              "latency_ms": 19354
+            },
+            {
+              "step": "derive_counts_from_object_list",
+              "status": "completed",
+              "listed_objects": 6,
+              "uncertain_parts": []
+            },
+            {
+              "step": "compare_current_requirements",
+              "status": "completed",
+              "revision": 1
+            },
+            {
+              "step": "review_previous_evidence",
+              "status": "not_applicable"
+            },
+            {
+              "step": "choose_next_action",
+              "status": "completed",
+              "decision": "correct",
+              "action_kind": "add_remove"
+            },
+            {
+              "step": "commit_current_evidence",
+              "status": "completed",
+              "revision": 1,
+              "evidence_epoch": 1
+            }
+          ],
+          "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "observation_context": null,
+          "runtime_identity": {
+            "label": "Qwen3.6-27B · MLX 4-bit · local",
+            "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+            "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+            "observer_protocol_sha256": "d65f411dc69c3f5de57bfcad82c34a4e4bf77fad45c373ad60572c3866ce9678",
+            "observation_mode": "spatial_inventory",
+            "image_max_side": 1536
+          },
+          "evidence_epoch": 1
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8766/api/orders/ord_6056d20757de475ea977/propose-revision",
+      "status": 200,
+      "body": {
+        "proposal": {
+          "requirements": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "explanation": "미적용 변경 제안: 볼트 3개 → 2개. 승인 후 적용됩니다.",
+          "base_revision": 1
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8766/api/orders/ord_6056d20757de475ea977/revise",
+      "status": 200,
+      "body": {
+        "order": {
+          "id": "ord_6056d20757de475ea977",
+          "title": "공개 사진 데모 · 실물 검증 아님",
+          "requirements": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "revision": 2,
+          "status": "pending",
+          "created_at": "2026-09-26T11:04:22.139+00:00",
+          "updated_at": "2026-09-26T11:04:57.040+00:00",
+          "latest_check": {
+            "id": "chk_23db60536e27431aba60",
+            "order_id": "ord_6056d20757de475ea977",
+            "revision": 1,
+            "photo_id": "img_09f987317b584317878b",
+            "decision": "correct",
+            "observed": {
+              "bolt": 2,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "differences": [
+              {
+                "part": "bolt",
+                "required": 3,
+                "observed": 2,
+                "delta": -1
+              },
+              {
+                "part": "nut",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "washer",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "bracket",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              }
+            ],
+            "issues": [],
+            "action": {
+              "kind": "add_remove",
+              "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+              "region": null
+            },
+            "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+            "backend": "mlx",
+            "latency_ms": 19354,
+            "created_at": "2026-09-26T11:04:43.107+00:00",
+            "valid": false,
+            "requirements_snapshot": {
+              "bolt": 3,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "object_evidence": {
+              "protocol": "spatial_inventory_v1",
+              "coordinate_frame": "normalized_original",
+              "objects": [
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.33,
+                    0.52
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.53,
+                    0.5
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.29,
+                    0.43
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.4,
+                    0.55
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.36,
+                    0.38
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.46,
+                    0.48
+                  ]
+                }
+              ],
+              "uncertain_parts": []
+            },
+            "reference_ids": {},
+            "evidence_feedback": null,
+            "tool_trace": [
+              {
+                "step": "observe_image",
+                "status": "completed",
+                "model": "Qwen3.6-27B · MLX 4-bit · local",
+                "latency_ms": 19354
+              },
+              {
+                "step": "derive_counts_from_object_list",
+                "status": "completed",
+                "listed_objects": 6,
+                "uncertain_parts": []
+              },
+              {
+                "step": "compare_current_requirements",
+                "status": "completed",
+                "revision": 1
+              },
+              {
+                "step": "review_previous_evidence",
+                "status": "not_applicable"
+              },
+              {
+                "step": "choose_next_action",
+                "status": "completed",
+                "decision": "correct",
+                "action_kind": "add_remove"
+              },
+              {
+                "step": "commit_current_evidence",
+                "status": "completed",
+                "revision": 1,
+                "evidence_epoch": 1
+              }
+            ],
+            "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "observation_context": null,
+            "runtime_identity": {
+              "label": "Qwen3.6-27B · MLX 4-bit · local",
+              "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+              "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+              "observer_protocol_sha256": "d65f411dc69c3f5de57bfcad82c34a4e4bf77fad45c373ad60572c3866ce9678",
+              "observation_mode": "spatial_inventory",
+              "image_max_side": 1536
+            },
+            "evidence_epoch": 1
+          },
+          "checks": [
+            {
+              "id": "chk_23db60536e27431aba60",
+              "order_id": "ord_6056d20757de475ea977",
+              "revision": 1,
+              "photo_id": "img_09f987317b584317878b",
+              "decision": "correct",
+              "observed": {
+                "bolt": 2,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "differences": [
+                {
+                  "part": "bolt",
+                  "required": 3,
+                  "observed": 2,
+                  "delta": -1
+                },
+                {
+                  "part": "nut",
+                  "required": 2,
+                  "observed": 2,
+                  "delta": 0
+                },
+                {
+                  "part": "washer",
+                  "required": 2,
+                  "observed": 2,
+                  "delta": 0
+                },
+                {
+                  "part": "bracket",
+                  "required": 0,
+                  "observed": 0,
+                  "delta": 0
+                }
+              ],
+              "issues": [],
+              "action": {
+                "kind": "add_remove",
+                "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+                "region": null
+              },
+              "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+              "backend": "mlx",
+              "latency_ms": 19354,
+              "created_at": "2026-09-26T11:04:43.107+00:00",
+              "valid": false,
+              "requirements_snapshot": {
+                "bolt": 3,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "object_evidence": {
+                "protocol": "spatial_inventory_v1",
+                "coordinate_frame": "normalized_original",
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.33,
+                      0.52
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.53,
+                      0.5
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.29,
+                      0.43
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.4,
+                      0.55
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.36,
+                      0.38
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.46,
+                      0.48
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              },
+              "reference_ids": {},
+              "evidence_feedback": null,
+              "tool_trace": [
+                {
+                  "step": "observe_image",
+                  "status": "completed",
+                  "model": "Qwen3.6-27B · MLX 4-bit · local",
+                  "latency_ms": 19354
+                },
+                {
+                  "step": "derive_counts_from_object_list",
+                  "status": "completed",
+                  "listed_objects": 6,
+                  "uncertain_parts": []
+                },
+                {
+                  "step": "compare_current_requirements",
+                  "status": "completed",
+                  "revision": 1
+                },
+                {
+                  "step": "review_previous_evidence",
+                  "status": "not_applicable"
+                },
+                {
+                  "step": "choose_next_action",
+                  "status": "completed",
+                  "decision": "correct",
+                  "action_kind": "add_remove"
+                },
+                {
+                  "step": "commit_current_evidence",
+                  "status": "completed",
+                  "revision": 1,
+                  "evidence_epoch": 1
+                }
+              ],
+              "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "observation_context": null,
+              "runtime_identity": {
+                "label": "Qwen3.6-27B · MLX 4-bit · local",
+                "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+                "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+                "observer_protocol_sha256": "d65f411dc69c3f5de57bfcad82c34a4e4bf77fad45c373ad60572c3866ce9678",
+                "observation_mode": "spatial_inventory",
+                "image_max_side": 1536
+              },
+              "evidence_epoch": 1
+            }
+          ],
+          "photos": [
+            {
+              "id": "img_09f987317b584317878b",
+              "url": "/api/photos/img_09f987317b584317878b",
+              "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "revision": 1,
+              "created_at": "2026-09-26T11:04:22.203+00:00",
+              "width": 1600,
+              "height": 1100,
+              "quality": {
+                "warning": null
+              }
+            }
+          ],
+          "references": {},
+          "reference_history": [],
+          "events": [
+            {
+              "id": "evt_c1ac31eda05b48afa442",
+              "kind": "order_created",
+              "message": "주문 생성 / 已创建订单",
+              "created_at": "2026-09-26T11:04:22.139+00:00",
+              "payload": {}
+            },
+            {
+              "id": "evt_bbdb09f2ffff43868226",
+              "kind": "photo_uploaded",
+              "message": "새 실물 사진 등록 / 已上传实物照片",
+              "created_at": "2026-09-26T11:04:22.204+00:00",
+              "payload": {
+                "photo_id": "img_09f987317b584317878b",
+                "part": null
+              }
+            },
+            {
+              "id": "evt_4e5b905848c046b1afc2",
+              "kind": "inspection_started",
+              "message": "실물 관찰 시작 / 开始观察实物",
+              "created_at": "2026-09-26T11:04:23.753+00:00",
+              "payload": {
+                "photo_id": "img_09f987317b584317878b"
+              }
+            },
+            {
+              "id": "evt_989f99db5ef04383ae56",
+              "kind": "inspection_completed",
+              "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+              "created_at": "2026-09-26T11:04:43.108+00:00",
+              "payload": {
+                "check_id": "chk_23db60536e27431aba60",
+                "decision": "correct",
+                "revision": 1
+              }
+            },
+            {
+              "id": "evt_3c167105e1a940b4900f",
+              "kind": "revision_approved",
+              "message": "주문 변경 승인 · 이전 검증 무효 / 已确认改版，旧核验失效",
+              "created_at": "2026-09-26T11:04:57.040+00:00",
+              "payload": {
+                "revision": 2,
+                "requirements": {
+                  "bolt": 2,
+                  "nut": 2,
+                  "washer": 2,
+                  "bracket": 0
+                },
+                "instruction": "볼트를 2개로 변경하고 나머지는 유지해 주세요."
+              }
+            }
+          ],
+          "completions": [],
+          "evidence_epoch": 2,
+          "active_inspection": null,
+          "revisions": [
+            {
+              "revision": 1,
+              "requirements": {
+                "bolt": 3,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "instruction": "최초 주문 / 初始订单",
+              "created_at": "2026-09-26T11:04:22.139+00:00"
+            },
+            {
+              "revision": 2,
+              "requirements": {
+                "bolt": 2,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "instruction": "볼트를 2개로 변경하고 나머지는 유지해 주세요.",
+              "created_at": "2026-09-26T11:04:57.040+00:00"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "success": false,
+  "error": "page.waitForResponse: Target page, context or browser has been closed\n    at mutation (/Users/lkc/Downloads/AI·SW/kitguard/scripts/record_real_demo.cjs:16:22)\n    at /Users/lkc/Downloads/AI·SW/kitguard/scripts/record_real_demo.cjs:56:11",
+  "finishedAt": "2026-09-26T11:06:36.349Z"
+}

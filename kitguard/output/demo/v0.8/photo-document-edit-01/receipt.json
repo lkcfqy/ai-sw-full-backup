@@ -1,0 +1,142 @@
+{
+  "schema": "kitguard.v08.real-history-video-receipt.v1",
+  "status": "encoded_and_full_decode_verified_pending_visual_qa",
+  "finished_at": "2026-10-02T03:04:46.402300+00:00",
+  "video": {
+    "path": "output/demo/v0.8/photo-document-edit-01/KitGuard_v08_photo_document_edit_ko.mp4",
+    "sha256": "faeb3b16fee34370a2b04e2beacc726b8c7a419d90d18180bceb7f9dc9320857",
+    "bytes": 2374331
+  },
+  "duration_seconds": 135.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "decoded_frames": 3240,
+  "full_decode_passed": true,
+  "ffprobe_available": false,
+  "metadata_verifier": "FFmpeg stream metadata and full decode; ffprobe unavailable",
+  "audio_tracks": 0,
+  "silent": true,
+  "original_inputs_unchanged": true,
+  "human_participants": 0,
+  "new_model_calls": 0,
+  "continuous_screen_recording": false,
+  "preparation_sha256": "593d5ddd66b23d11e30170efd06e11db67eb8ccac4a2707f9e016eb8387b023c",
+  "peer_approval": {
+    "path": "test-results/v0.8-video-peer-review-v1/encode-approval.json",
+    "sha256": "a712d45995cd7b6a474ea16c2d908af0656a7105c0da343e85389591a6bdc4e5"
+  },
+  "qa_frames": [
+    {
+      "frame": 0,
+      "seconds": 0.0,
+      "path": "qa/frame-0000.png",
+      "sha256": "4f71f19b96ec9082fa2ae22f2454ba5689dc7dd755df3217454cd1e12907843b"
+    },
+    {
+      "frame": 240,
+      "seconds": 10.0,
+      "path": "qa/frame-0240.png",
+      "sha256": "0e043237a630c408f04f798c32d46f37819b45a73b485a092a8a619c4876746e"
+    },
+    {
+      "frame": 479,
+      "seconds": 19.958333333333332,
+      "path": "qa/frame-0479.png",
+      "sha256": "45387e1a43223fa9ec599f58e97fc68a5d009e552b2e2cd994f434c0bc6eeec4"
+    },
+    {
+      "frame": 480,
+      "seconds": 20.0,
+      "path": "qa/frame-0480.png",
+      "sha256": "494ce9a3c53f18344bb3e5d0b68731f81e18964cb1a26a9a6fbf33d34074f479"
+    },
+    {
+      "frame": 780,
+      "seconds": 32.5,
+      "path": "qa/frame-0780.png",
+      "sha256": "f8f633f7cb4dceb0cad27e8342ebea0ad2a030dc28e26255fc08cedd5bf28499"
+    },
+    {
+      "frame": 1079,
+      "seconds": 44.958333333333336,
+      "path": "qa/frame-1079.png",
+      "sha256": "3048e8f413fa48f887440bd26c84be1ec151eb78743730352dbfa5f9a0dcdc2b"
+    },
+    {
+      "frame": 1080,
+      "seconds": 45.0,
+      "path": "qa/frame-1080.png",
+      "sha256": "0854b09cb36429a1ae65948292aa6bb9aeaf7b645691732686a6a21b9d505fd7"
+    },
+    {
+      "frame": 1380,
+      "seconds": 57.5,
+      "path": "qa/frame-1380.png",
+      "sha256": "8c96432e5b0a880b3f51d791f9f9b5a200278234eef5df172c384f538d8b6954"
+    },
+    {
+      "frame": 1679,
+      "seconds": 69.95833333333333,
+      "path": "qa/frame-1679.png",
+      "sha256": "84cbf41fe15c8a029575f9e123dc239250012790ce631772ea83746de7680a31"
+    },
+    {
+      "frame": 1680,
+      "seconds": 70.0,
+      "path": "qa/frame-1680.png",
+      "sha256": "19314042765c99fdec0508a85dcc1262365fdd357d895ec64a37034a7a6f48a9"
+    },
+    {
+      "frame": 1980,
+      "seconds": 82.5,
+      "path": "qa/frame-1980.png",
+      "sha256": "b943b8a8843f28e4547ef94e14905da106019df205fe08b2b7d4e36520450e98"
+    },
+    {
+      "frame": 2279,
+      "seconds": 94.95833333333333,
+      "path": "qa/frame-2279.png",
+      "sha256": "f1f5e400c3648d6eb8d9c5f0985541266c99752e946dc29cbd0d1a01527e9331"
+    },
+    {
+      "frame": 2280,
+      "seconds": 95.0,
+      "path": "qa/frame-2280.png",
+      "sha256": "98ebb3a4f1e2cbcd0bb2593ce9a367bf5afeab8853e4e3423cb1dc207991e669"
+    },
+    {
+      "frame": 2520,
+      "seconds": 105.0,
+      "path": "qa/frame-2520.png",
+      "sha256": "e42b2fdb1844b04ea0987f640579dea973aa057438ba1c09668d122f8733aab4"
+    },
+    {
+      "frame": 2759,
+      "seconds": 114.95833333333333,
+      "path": "qa/frame-2759.png",
+      "sha256": "d0e8a40e88a22a4dbd769b0b329378e425b8ae9755bcf4bb05b7cb35c82471a8"
+    },
+    {
+      "frame": 2760,
+      "seconds": 115.0,
+      "path": "qa/frame-2760.png",
+      "sha256": "5139e29bfb97eccb3cbca07232ee4e9a4889b2b1dc0eac6a2f76f7a2c431e93e"
+    },
+    {
+      "frame": 3000,
+      "seconds": 125.0,
+      "path": "qa/frame-3000.png",
+      "sha256": "4c62643d9f5f00cc5a302905cf3a491f4ed59c5e7d11d35cebc135976cf11d11"
+    },
+    {
+      "frame": 3239,
+      "seconds": 134.95833333333334,
+      "path": "qa/frame-3239.png",
+      "sha256": "06572f0942d1f3eb83e4411bb68d878b9d09787a05afcf85481ab7f157ef87d9"
+    }
+  ],
+  "visual_qa": "pending; record separately without rewriting this stage receipt"
+}

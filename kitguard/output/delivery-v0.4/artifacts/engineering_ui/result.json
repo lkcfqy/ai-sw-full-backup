@@ -1,0 +1,302 @@
+{
+  "status": "passed",
+  "assertions": 74,
+  "checks": [
+    "Korean is default in fresh browser",
+    "source and self-report limits visible before creation",
+    "engineering source has non-field disclaimer",
+    "batch saved and resumable URL written",
+    "batch title escaped instead of evaluated",
+    "actual API records explicit engineering source",
+    "case 1 first entry concealed during second entry",
+    "mismatched independent entries send no case",
+    "case 1 truth and scoring omitted from actual API",
+    "case 1 no premature scoring in DOM",
+    "case 2 first entry concealed during second entry",
+    "case 2 truth and scoring omitted from actual API",
+    "case 2 no premature scoring in DOM",
+    "case 3 first entry concealed during second entry",
+    "case 3 truth and scoring omitted from actual API",
+    "case 3 no premature scoring in DOM",
+    "case 4 first entry concealed during second entry",
+    "case 4 truth and scoring omitted from actual API",
+    "case 4 no premature scoring in DOM",
+    "case 5 first entry concealed during second entry",
+    "case 5 truth and scoring omitted from actual API",
+    "case 5 no premature scoring in DOM",
+    "case 6 first entry concealed during second entry",
+    "case 6 truth and scoring omitted from actual API",
+    "case 6 no premature scoring in DOM",
+    "full planned N removes registration input including truth",
+    "case labels and source notes escaped",
+    "actual export refused before closure",
+    "full planned batch froze with protocol hash",
+    "390px frozen page contained",
+    "case 1 AI blocked until manual terminal",
+    "global running trial disables other starts",
+    "manual timer restored after page reload",
+    "running AI explains no auto-retry after reload",
+    "reload and read existing check never re-infer",
+    "resumed actual check binds to original AI trial",
+    "post-trial 1 still conceals ground truth and scores",
+    "case 2 AI blocked until manual terminal",
+    "case 2 automatic start invokes inspect exactly once",
+    "post-trial 2 still conceals ground truth and scores",
+    "case 3 AI blocked until manual terminal",
+    "case 3 automatic start invokes inspect exactly once",
+    "post-trial 3 still conceals ground truth and scores",
+    "case 4 AI blocked until manual terminal",
+    "case 4 automatic start invokes inspect exactly once",
+    "post-trial 4 still conceals ground truth and scores",
+    "real API intentional analyzer error becomes a failed trial without retry",
+    "Chinese language toggles and persists",
+    "Chinese persists after reload",
+    "closure reveals sealed truth once terminal",
+    "manual exact C3/W1/abandoned1/not_started1 denominator six",
+    "AI exact C1/W1/U1/E1/not_started2 denominator six",
+    "false-ready and all returned-check errors retained",
+    "report prominently discloses returned checks despite failure classification",
+    "all six truths visible after closure",
+    "closed page offers no start or mutation controls",
+    "translated full C/W/U/E table displayed",
+    "390px closed page has no document overflow",
+    "390px results table stays in its own scroll container",
+    "320px closed page has no document overflow",
+    "320px results table stays in its own scroll container",
+    "download JSON comes from actual closed study and retains source",
+    "standalone export escapes adversarial title/source",
+    "standalone export identifies engineering source",
+    "explicit failure form preserves manual failure",
+    "abandoning AI cannot hide its returned wrong or false-ready output",
+    "explicit abandon terminates original trial",
+    "closing draft retains all unregistered planned slots",
+    "unstarted draft has unavailable rate not 0 percent",
+    "unstarted undefined rate visibly shown as dash",
+    "no malicious HTML executed anywhere in recorder",
+    "zero browser JavaScript errors",
+    "zero failed browser requests",
+    "recorder never submits physical completion"
+  ],
+  "errors": [],
+  "unexpectedFailed": [],
+  "studyId": "study_d2cf19099c274ae38f39",
+  "orderIds": [
+    "ord_08cd63df44054d9a8da6",
+    "ord_bd211b820f3246dbab8c",
+    "ord_6e61187508ad407a8896",
+    "ord_a4bbb3d91d304fb38458",
+    "ord_6487258d21e9467c8c15",
+    "ord_e4960159004a4171a657"
+  ],
+  "methods": {
+    "manual": {
+      "started": 5,
+      "completed": 4,
+      "correct": 3,
+      "wrong": 1,
+      "uncertain": 0,
+      "failed": 0,
+      "abandoned": 1,
+      "interrupted": 0,
+      "not_started": 1,
+      "planned": 6,
+      "correct_fraction": 0.5,
+      "terminal_elapsed_ms": {
+        "n": 5,
+        "median": 67,
+        "max": 618
+      },
+      "completed_elapsed_ms": {
+        "n": 4,
+        "median": 66.5,
+        "max": 618
+      },
+      "false_ready": null,
+      "returned_checks": {
+        "total": 0,
+        "scorable": 0,
+        "wrong_clear": 0,
+        "false_ready": 0,
+        "uncertain": 0,
+        "multiple_attempt_trials": 0,
+        "ineligible_backend_or_identity": 0
+      }
+    },
+    "kitguard": {
+      "started": 4,
+      "completed": 3,
+      "correct": 1,
+      "wrong": 1,
+      "uncertain": 1,
+      "failed": 1,
+      "abandoned": 0,
+      "interrupted": 0,
+      "not_started": 2,
+      "planned": 6,
+      "correct_fraction": 0.16666666666666666,
+      "terminal_elapsed_ms": {
+        "n": 4,
+        "median": 290,
+        "max": 906
+      },
+      "completed_elapsed_ms": {
+        "n": 3,
+        "median": 290,
+        "max": 906
+      },
+      "false_ready": {
+        "numerator": 1,
+        "denominator": 5
+      },
+      "returned_checks": {
+        "total": 3,
+        "scorable": 3,
+        "wrong_clear": 1,
+        "false_ready": 1,
+        "uncertain": 1,
+        "multiple_attempt_trials": 0,
+        "ineligible_backend_or_identity": 0
+      }
+    }
+  },
+  "apiPosts": [
+    {
+      "url": "http://127.0.0.1:8786/api/studies",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/freeze",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases/case_619c10ca5ed547b39070/start",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/trials/trial_2a26fae320814703af91/finish",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/trials/trial_804cf3c201eb49808ec5/finish",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases/case_6a83cc1d6c8643fabb0f/start",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/trials/trial_bddf781a1b9a405ea5bd/finish",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases/case_6a83cc1d6c8643fabb0f/start",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/orders/ord_bd211b820f3246dbab8c/inspect",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/trials/trial_59fa6e6eb59442788dea/finish",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases/case_15ebc4daadc14151be4f/start",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/trials/trial_ea23c65d776840349b0e/finish",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases/case_15ebc4daadc14151be4f/start",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/orders/ord_6e61187508ad407a8896/inspect",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/trials/trial_8751283ba7524066867c/finish",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases/case_338ea832f1de4202b3b3/start",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/trials/trial_4aeba6cf9ddd43208185/finish",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases/case_338ea832f1de4202b3b3/start",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/orders/ord_a4bbb3d91d304fb38458/inspect",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/trials/trial_dc5a7540ae374f99b513/finish",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/cases/case_e47b1642581c4db89181/start",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_d2cf19099c274ae38f39/close",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_f8d964b210b441dfbd90/cases/case_4c6076fef436409ca261/start",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_f8d964b210b441dfbd90/trials/trial_1079c93454af469aa565/finish",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_f8d964b210b441dfbd90/trials/trial_c9ed04fc01eb423bb281/finish",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_f8d964b210b441dfbd90/close",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:8786/api/studies/study_0b30172a3ea24eaf96c5/close",
+      "method": "POST"
+    }
+  ],
+  "scope": "ENGINEERING FIXTURES with injected FakeAnalyzer and generated rectangles, actual Chrome + isolated API + SQLite. No GPU, model accuracy, real users, real parts, physical field benefit or continuous supplementation measured.",
+  "files": {
+    "study.html": "fc35101fc922705cd6b9f79a928a1baf2b5ad3cdbcb8e88939fea1e71e4cdef0",
+    "study.js": "a737120741ada9bad956803f543be28d7fdfc6093dc95e31a45338cd3d0f10d2",
+    "study.css": "4ca2e87cbfb0d1b457f3a2535e83d1c5c2d3eeeb148ab7a3baf1a4a85c761660"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "url": "https://contest.gnict.org/bbs/download.php?bo_table=notice&wr_id=1&no=0&nonce=b9039df01a54c14fca08%7C1790242547%7C8c17f829f4d564b67d6f997d5be3afe0666b72ce",
+  "path": "03_赛事官网/附件/공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집_20260908.hwp",
+  "source": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=1",
+  "kind": "attachment",
+  "cookie_jar": "/var/folders/57/my3v7tgs1mn9cxsptzl_jv6m0000gn/T/tmpr2gsxdks/cookies.txt",
+  "retrieved_at": "2026-09-24T16:35:47.861623+09:00",
+  "http_status": 200,
+  "final_url": "https://contest.gnict.org/bbs/download.php?bo_table=notice&wr_id=1&no=0&nonce=b9039df01a54c14fca08%7C1790242547%7C8c17f829f4d564b67d6f997d5be3afe0666b72ce",
+  "content_type": "file/unknown",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": "attachment; filename=\"%EA%B3%B5%EA%B3%A0%EB%AC%B8_2026%EB%85%84_%EC%A0%9C4%ED%9A%8C_%EA%B2%BD%EB%82%A8_AI.SW_%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C_%EC%B0%B8%EA%B0%80%EC%9E%90%ED%8C%80_%EB%AA%A8%EC%A7%91_20260908.hwp\"",
+  "bytes": 90112,
+  "sha256": "c26def5428469ad239178de00650bc7987dcc2e078b7324913f40cdd0d5e86dd",
+  "magic_hex": "d0cf11e0a1b11ae10000000000000000"
+}

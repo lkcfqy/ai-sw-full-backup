@@ -1,0 +1,126 @@
+- heading "『제4회 경남AI·SW경진대회』 최종산출물 제출" [level=1]
+- text: lkcfqy@gmail.com
+- link "Switch account":
+  - /url: https://accounts.google.com/AccountChooser?continue=https://docs.google.com/forms/d/e/1FAIpQLScICgtArF_gnn2kjDpCMu_4OmTZ05qIczgXqr0EJloSFTewtg/formResponse&service=wise
+- status:
+  - generic: Draft saved
+- generic: The name, email, and photo associated with your Google account will be recorded when you upload files and submit this form
+- generic: "* Indicates required question"
+- list:
+  - heading "신청구분 및 팀 구성 정보" [level=2]:
+    - generic: 신청구분 및 팀 구성 정보
+  - heading "신청구분 Required question" [level=3]:
+    - generic: 신청구분
+    - generic "Required question": "*"
+  - generic: "- 대상: 경상남도 관내에 주소지를 둔 고등학생, 대학생, 일반인"
+  - radiogroup "신청구분 Required question":
+    - radio "고등부"
+    - generic: 고등부
+    - radio "대학부"
+    - generic: 대학부
+    - radio "일반부" [checked]
+    - generic: 일반부
+  - heading "팀명 Required question" [level=3]:
+    - generic: 팀명
+    - generic "Required question": "*"
+  - textbox "팀명 Required question": 해피
+  - heading "신청자(팀장) 성명 Required question" [level=3]:
+    - generic: 신청자(팀장) 성명
+    - generic "Required question": "*"
+  - textbox "신청자(팀장) 성명 Required question": 남청청
+  - heading "소속 Required question" [level=3]:
+    - generic: 소속
+    - generic "Required question": "*"
+  - textbox "소속 Required question": 국립창원대학교 대학원 인공지능융합공학과
+  - heading "휴대폰번호 Required question" [level=3]:
+    - generic: 휴대폰번호
+    - generic "Required question": "*"
+  - generic: (예시) 010-0000-0000
+  - textbox "휴대폰번호 Required question": 010-6728-3265
+  - heading "이메일 Required question" [level=3]:
+    - generic: 이메일
+    - generic "Required question": "*"
+  - textbox "이메일 Required question": 3246599898@qq.com
+  - heading "팀 구성원 수 Required question" [level=3]:
+    - generic: 팀 구성원 수
+    - generic "Required question": "*"
+  - radiogroup "팀 구성원 수 Required question":
+    - radio "1명"
+    - generic: 1명
+    - radio "2명" [checked]
+    - generic: 2명
+    - radio "3명"
+    - generic: 3명
+    - radio "4명"
+    - generic: 4명
+    - radio "5명"
+    - generic: 5명
+  - heading "신청분야 Required question" [level=3]:
+    - generic: 신청분야
+    - generic "Required question": "*"
+  - radiogroup "신청분야 Required question":
+    - radio "(10) 1. 사회문제 해결형 AI Agent"
+    - generic: (10) 1. 사회문제 해결형 AI Agent
+    - radio "(20) 2. 업무혁신, 생산성향상 AI Agent" [checked]
+    - generic: (20) 2. 업무혁신, 생산성향상 AI Agent
+    - radio "(31) 3-1. (제조 피지컬 AI) 우주항공 제조 AI Agent"
+    - generic: (31) 3-1. (제조 피지컬 AI) 우주항공 제조 AI Agent
+    - radio "(32) 3-2. (제조 피지컬 AI) MetaQuest2 VR 기반 피지컬 AI Agent"
+    - generic: (32) 3-2. (제조 피지컬 AI) MetaQuest2 VR 기반 피지컬 AI Agent
+    - radio "(33) 3-3.(제조 피지컬 AI) 우리 삶(L.AX)과 산업(M.AX, P.AX)을 바꾸는 똑똑한 AI Agent"
+    - text: (33) 3-3.(제조 피지컬 AI) 우리 삶(
+    - link "L.AX":
+      - /url: https://www.google.com/url?q=http://L.AX&sa=D&source=editors&ust=1791194480247773&usg=AOvVaw0cXZwXJfVNjLGrSYTRtXVv
+    - text: )과 산업(
+    - link "M.AX":
+      - /url: https://www.google.com/url?q=http://M.AX&sa=D&source=editors&ust=1791194480247847&usg=AOvVaw0pm6imV2FZmHe21dLtMFw4
+    - text: ","
+    - link "P.AX":
+      - /url: https://www.google.com/url?q=http://P.AX&sa=D&source=editors&ust=1791194480247870&usg=AOvVaw0fM9SJ6HC1Am_NWor6i_Pz
+    - text: )을 바꾸는 똑똑한 AI Agent
+    - radio "(34) 3-4. (제조 피지컬 AI) 스마트팩토리 제조 AI Agent"
+    - generic: (34) 3-4. (제조 피지컬 AI) 스마트팩토리 제조 AI Agent
+    - radio "(40) 4. 교육·인재육성 AI Agent"
+    - generic: (40) 4. 교육·인재육성 AI Agent
+    - radio "(50) 5. 지역혁신·공공서비스 AI Agent"
+    - generic: (50) 5. 지역혁신·공공서비스 AI Agent
+  - 'heading "최종산출물은 ZIP 파일 1개로 업로드합니다. 파일명 규칙 : 신청구분_신청분야 코드_팀장명.zip -신청구분 : 고등부, 대학부, 일반부 -신청분야 코드 : 10, 20, 21, 32, 33, 34, 40, 50 Ex. 고등부_10_홍길동.zip 대학부_31_김대상.zip Required question" [level=3]':
+    - text: 최종산출물은 ZIP 파일 1개로 업로드합니다.
+    - text: "파일명 규칙 : 신청구분_신청분야 코드_팀장명.zip"
+    - text: "-신청구분 : 고등부, 대학부, 일반부"
+    - text: "-신청분야 코드 : 10, 20, 21, 32, 33, 34, 40, 50"
+    - text: Ex. 고등부_10_홍길동.zip
+    - text: 대학부_31_김대상.zip
+    - generic "Required question": "*"
+  - generic: Upload 1 supported file. Max 10 GB.
+  - list "Selected files":
+    - button "Open file" [active]:
+      - img "Compressed archive"
+      - generic: 일반부_20_남청청.zip
+    - button "Remove file"
+- button "Back":
+  - generic: Back
+- button "Next":
+  - generic: Next
+- button "Clear form":
+  - generic: Clear form
+- generic: Never submit passwords through Google Forms.
+- text: This content is neither created nor endorsed by Google. -
+- button "Contact form owner"
+- text: "-"
+- link "Terms of Service":
+  - /url: https://policies.google.com/terms
+- text: "-"
+- link "Privacy Policy":
+  - /url: https://policies.google.com/privacy
+- paragraph:
+  - text: Does this form look suspicious?
+  - link "Report":
+    - /url: https://docs.google.com/forms/u/0/d/e/1FAIpQLScICgtArF_gnn2kjDpCMu_4OmTZ05qIczgXqr0EJloSFTewtg/abuse
+- link "Google Forms":
+  - /url: //www.google.com/forms/about/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms
+  - img "Google"
+  - text: Forms
+- button "help and feedback"
+- tooltip: Help and feedback
+- generic: 일반부_20_남청청.zip

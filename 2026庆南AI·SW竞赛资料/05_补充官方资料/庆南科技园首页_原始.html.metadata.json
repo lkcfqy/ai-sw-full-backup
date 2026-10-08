@@ -1,0 +1,16 @@
+{
+  "url": "https://gntp.or.kr/",
+  "path": "05_补充官方资料/庆南科技园首页_原始.html",
+  "source": "https://contest.gnict.org/",
+  "kind": "listing",
+  "retrieved_at": "2026-09-24T16:29:55.589390+09:00",
+  "http_status": 200,
+  "final_url": "https://gntp.or.kr/",
+  "content_type": "text/html;charset=UTF-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 64933,
+  "sha256": "3255bb676d2f5f8ec88306f4d38f76049a106e4eb6e83433b21fcf40e966d171",
+  "magic_hex": "0a0a0a200a0a0a0a3c21444f43545950"
+}

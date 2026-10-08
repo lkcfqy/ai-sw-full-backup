@@ -1,0 +1,2068 @@
+{
+  "schema": "kitguard.v08.detector-veto.freeze.v1",
+  "created_at": "2026-10-01T22:54:03.528518+00:00",
+  "project_root": "/Users/lkc/Downloads/AI·SW/kitguard",
+  "config": {
+    "schema": "kitguard.v08.detector-veto.config.v1",
+    "architecture": "fasterrcnn_mobilenet_v3_large_320_fpn",
+    "checkpoint": "training-runs/public_detector_v1_mps_20260930/best.pt",
+    "checkpoint_sha256": "2022c203a3b3b36dd146534c8bcfc538739cf8bf643066fc14a5b9611ebeb62c",
+    "checkpoint_epoch": 10,
+    "threshold": 0.5,
+    "threshold_comparison": "score >= threshold",
+    "device": "cpu",
+    "cpu_threads": 4,
+    "planned_photos": 51,
+    "baseline_mode": "spatial_guarded",
+    "vlm_image_max_side": 1536,
+    "coordinate_rule": "x*(width-1), y*(height-1); closed-interval nut-box containment",
+    "veto_rule": "original VLM washer point in detector nut box; only nut and washer become null; no count repair",
+    "retries": 0,
+    "warmup": false,
+    "automatic_promotion": false,
+    "baseline_artifacts": {
+      "run.json": {
+        "path": "evaluation-runs/v0.7/public_paired_v1/run.json",
+        "sha256": "98d26a66c384466fc85f2e6c3f9c2266d2be89b8a2a3d3ad034da6fae2789661"
+      },
+      "analysis.json": {
+        "path": "evaluation-runs/v0.7/public_paired_v1/analysis.json",
+        "sha256": "13f1775f4f6c57a6f21e01dbb6584654d4beb36a1749ae5430179d7a95f037c4"
+      },
+      "manifest.json": {
+        "path": "evaluation-runs/v0.7/public_paired_v1/manifest.json",
+        "sha256": "efe4633e873d45032101a26e035c23d267bafa6605d147d3d2f7fcb51b697643"
+      },
+      "freeze.json": {
+        "path": "evaluation-runs/v0.7/public_paired_v1/freeze.json",
+        "sha256": "cec1cf5362a5154cfd6e4d27e5ed9dbb49d7757a12189474c13e643f1dc67be7"
+      },
+      "predictions.jsonl": {
+        "path": "evaluation-runs/v0.7/public_paired_v1/predictions.jsonl",
+        "sha256": "9b525702cb2665274c37a7d7740c1d93c05562ab5fb5a17e171e31b75a6859ee"
+      },
+      "independent_audit": {
+        "path": "test-results/v0.7/public-paired-audit-v1.json",
+        "sha256": "94c71e45341a5065ee90fe601e606cd3a54242094d5dcc08770f6aae8c588fe9"
+      }
+    },
+    "washer_eligibility": "original washer not in uncertain_parts; original observed washer is nonnegative integer equal to listed washer points",
+    "fused_observation_scope": "experimental overlay; original VLM evidence retained; no production schema revalidation"
+  },
+  "planned_photos": 51,
+  "source_hashes": {
+    "probe_detector_veto.py": "5e0036ee15b722453b788d85fe06afc0789f0c94a3a656cff3919553c3cdc256",
+    "detector_worker.py": "5283d515c7ce47676c7f6069e7702ba20a2705b9d286633ea5761a0aab3e9586",
+    "config.json": "fc9044f99e152377bc09a75ea09ff543eaec757b98686d951a54421d15ce553a",
+    "plan.md": "561e271eabedce8f91231b52900a750bd842834429d37f3f1b741bd42a9ddc80",
+    "exposure.json": "348b0b30310936f76b8ebb97c5d1cac75c2261b6823d0c319aa6feee8b9d86b2"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "Pillow": "12.3.0",
+    "torch": "2.14.0",
+    "torchvision": "0.29.0"
+  },
+  "checkpoint": {
+    "path": "training-runs/public_detector_v1_mps_20260930/best.pt",
+    "sha256": "2022c203a3b3b36dd146534c8bcfc538739cf8bf643066fc14a5b9611ebeb62c"
+  },
+  "training_summary": {
+    "path": "training-runs/public_detector_v1_mps_20260930/training_summary.json",
+    "sha256": "7a697703494b6b7f248a47ae174acda8d8120fa726a68163c7c99947147345db"
+  },
+  "cases": [
+    {
+      "case_id": "v07-loco-screw_bag-train-good-259",
+      "baseline_attempt": 2,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/259.png",
+          "sha256": "a0e4ca9b02f20ccea48b73132027bde3cfcf1a95e9977ea34b323e51837ce8cf"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/259.png",
+          "sha256": "a0e4ca9b02f20ccea48b73132027bde3cfcf1a95e9977ea34b323e51837ce8cf"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/002-spatial_guarded.jpg",
+          "sha256": "49804228be8ce16bdccb1e9bfaf67d81da11e133e67bf43ab8235e7f9ea10ecf"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/002-spatial_guarded/call-01/image-01.png",
+          "sha256": "2af2c8fb67ee223d68a1691d823fcf34caf81f3d2cb622a3b3f7994c687be5f2"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/002-spatial_guarded/call-01/generation.json",
+          "sha256": "dec709135337ef4a2bb12476a8196eb19a80f0842683a33adf02ec141211f7a7"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "43b87a68a3134ce003255707dbc2770947968d8beac3832360255a2ad81bfe59",
+          "vlm_rgb_sha256": "ed5d31c399491d7c79f0c781c4fe243250dc1590be703c1ee416e3d7884a2af4",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-279",
+      "baseline_attempt": 4,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/279.png",
+          "sha256": "b1f448cbae9bc13999dc7e7acc33527250df410357f40be4e27673ada8d6ef5c"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/279.png",
+          "sha256": "b1f448cbae9bc13999dc7e7acc33527250df410357f40be4e27673ada8d6ef5c"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/004-spatial_guarded.jpg",
+          "sha256": "7a11a0de59787ea903b77fe354ac7c128fc8b0545b06daa59c71f7b976607d86"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/004-spatial_guarded/call-01/image-01.png",
+          "sha256": "2b998f548f7bd8e8744ed1ad340e69ff3f7f340e87c4d800b2e55f8df2944402"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/004-spatial_guarded/call-01/generation.json",
+          "sha256": "a44d6c2202db837d1c9f6c0a1ac393133a1db902a0568f1462f3ee8bc6a1efb7"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "156f723b58eefbd08d8c5dab449437dd6859704fce73ea82d4c12c4683226c42",
+          "vlm_rgb_sha256": "e3c56130d05808b55130ad535c9cbe338ff49484f3351d578734e7c946b40fd4",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-225",
+      "baseline_attempt": 9,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/225.png",
+          "sha256": "f9cd5e5b41b1ea7ea42e579f608ada8a05cd8a264af50f7b3b8bc927b5ed8519"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/225.png",
+          "sha256": "f9cd5e5b41b1ea7ea42e579f608ada8a05cd8a264af50f7b3b8bc927b5ed8519"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/009-spatial_guarded.jpg",
+          "sha256": "5b3f37a89a7abf3e8d6f7cb456db5630bd1c094d43bb9e99ecf8f533def0899f"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/009-spatial_guarded/call-01/image-01.png",
+          "sha256": "64be96b9dc050b85bce985cd33ba3b05e2615453edb647c5d248c6f4b5880f56"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/009-spatial_guarded/call-01/generation.json",
+          "sha256": "a4bfd80a5d9dc11d1f4e9659b46637ac3fca2ac8d18fc2244e196c5eaef30247"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "2c1392af4579c7874519f602320b16dd54d12bfb6ae6ec5d168b9a6330073dcc",
+          "vlm_rgb_sha256": "8aadf5212e1a25531246a9ad1ded02e1db8cf9f146a22326ad2e7a92f426b55b",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-validation-good-019",
+      "baseline_attempt": 11,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/validation/good/019.png",
+          "sha256": "719c7a5a6f0160952b98de5ddc48be719dc2d22f7e4ae833e7a113381c78ea61"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/validation/good/019.png",
+          "sha256": "719c7a5a6f0160952b98de5ddc48be719dc2d22f7e4ae833e7a113381c78ea61"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/011-spatial_guarded.jpg",
+          "sha256": "06b09e3ee0d868d74040cc0714822dd3b779189b9bfef59713c7ec193ccb5f37"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/011-spatial_guarded/call-01/image-01.png",
+          "sha256": "86b27e825b500d1442ab5e6dd062f4014efd02123b815d0ba4447eea1cdcd70d"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/011-spatial_guarded/call-01/generation.json",
+          "sha256": "36d2f9040e9bbaa3c320ded5bfaa043839b069ad45d09ee31957755cdbec06a6"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "874b699117906448b5e8ed9ec0cdb54b52fd7a031fc4764707262a61f40e9270",
+          "vlm_rgb_sha256": "96b0f2b9e459c398e0a97ff244cf3d855f3e103a651dcfa4b869a0439e3aeaa7",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-validation-good-020",
+      "baseline_attempt": 15,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/validation/good/020.png",
+          "sha256": "f4d7d8c5397fc27367fe244400d15f689a6f2325f4f7f47c504e74e0419fd3d5"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/validation/good/020.png",
+          "sha256": "f4d7d8c5397fc27367fe244400d15f689a6f2325f4f7f47c504e74e0419fd3d5"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/015-spatial_guarded.jpg",
+          "sha256": "25d78a71e33c4e43b0f3683d5c1f020ca1e5f263abc8577215904373d833c707"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/015-spatial_guarded/call-01/image-01.png",
+          "sha256": "a943490de117813fb9890b160dbfad0c3763e83206be53e748ab74d13d57e8f5"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/015-spatial_guarded/call-01/generation.json",
+          "sha256": "4e37107fa06cd88da36b1b4c468973221afa20aa4a4c7ec66ae07876a86b3f28"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "da15ba89369df18c4d273a89400fb68a385745b0582fda0eb3ebab343aec917f",
+          "vlm_rgb_sha256": "c52157330c34ae4e46f325fa1aa0ca51c0c7ca1e96651917823e44901c09a03d",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_278-7c485f49437e",
+      "baseline_attempt": 16,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_278.png",
+          "sha256": "b595cc798ac859ff2fabf0cdd3858f5c1d64a15595d242188fbfb6f7c7555e77"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_278-7c485f49437e.png",
+          "sha256": "e53a6ff006ec99a8eba36721645df7cf25efd52848f22761f97f59e4fb839ccb"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/016-spatial_guarded.jpg",
+          "sha256": "cfc52e5d37c5b081f0ae954392335789a7e363863e300e73ac0ed8694133056e"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/016-spatial_guarded/call-01/image-01.png",
+          "sha256": "cbeaee8d72d2f5cb27676f8b51c692daabc8fa11e633e2b02cfc8147812115f7"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/016-spatial_guarded/call-01/generation.json",
+          "sha256": "d70abeb116b9bbb347b1d0541a108956b1113b8194cd42bcef3b51aeea1e9b4a"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "fd38ad368d83029b793102a5a116d34d3ba095d01dd94577d3560ca296466ae4",
+          "vlm_rgb_sha256": "fd38ad368d83029b793102a5a116d34d3ba095d01dd94577d3560ca296466ae4",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-261",
+      "baseline_attempt": 20,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/261.png",
+          "sha256": "f51182587055b348f4913d6b776ff4d9100818b3fe27bb939957483f37933e65"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/261.png",
+          "sha256": "f51182587055b348f4913d6b776ff4d9100818b3fe27bb939957483f37933e65"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/020-spatial_guarded.jpg",
+          "sha256": "c266cef7cba042779238bb0c0b15eef315feec6b7f3714e27fc33ab82652ec7c"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/020-spatial_guarded/call-01/image-01.png",
+          "sha256": "bd15a724865862675befab4d663c0129102c905e3d4c4e62599f979ae8448a84"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/020-spatial_guarded/call-01/generation.json",
+          "sha256": "423eb26180e2b90d00bca3123f62bf66fbefc006c32d42af4a91712d949be439"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "856f83e745a9caf06c8f3d95e96c62c453f68fcb3a72f34ef0ad82edc968d68c",
+          "vlm_rgb_sha256": "350daa4de71691290a46e733189ff9987d62cafb0a292eb7817abba54fefff8e",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-118",
+      "baseline_attempt": 22,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/118.png",
+          "sha256": "7aab8007d36da42ad8a960bf566ebf08a25e9fc63159da415f615bd66673aaee"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/118.png",
+          "sha256": "7aab8007d36da42ad8a960bf566ebf08a25e9fc63159da415f615bd66673aaee"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/022-spatial_guarded.jpg",
+          "sha256": "d5792df047eb8862131809f810f348b06886368af63bde28deada52864e7599c"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/022-spatial_guarded/call-01/image-01.png",
+          "sha256": "352ed162d77ca08558361f83b7a036c6f89f0646fe6d8ec284be98c0efb61a4a"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/022-spatial_guarded/call-01/generation.json",
+          "sha256": "fd6c652eafa5fe1685a0fe3aac5b87bd540b78d0139d22c54e60ab6e5c7f5bc3"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "d4b41693e0c8cdff4b5a292ce4151ef159443d87cfce97ef6de506db8721b02b",
+          "vlm_rgb_sha256": "ce7025fe77fe8e388244e3c2f644bbfa23fdc5f55275b01c4a1061b221f7e2dc",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-148",
+      "baseline_attempt": 27,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/148.png",
+          "sha256": "28c01de4c176609663b76e0403e328d225aefd0663124aa2f3d4ea5e820f72b6"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/148.png",
+          "sha256": "28c01de4c176609663b76e0403e328d225aefd0663124aa2f3d4ea5e820f72b6"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/027-spatial_guarded.jpg",
+          "sha256": "b5c4ff3d17366514c00fd470c542a41cbf652a3c51fc66555e2a77863728e5e7"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/027-spatial_guarded/call-01/image-01.png",
+          "sha256": "5f206c2fe59a07f49eba651afa484b7b7f7515a7665533b0c3bf70863a4cbf87"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/027-spatial_guarded/call-01/generation.json",
+          "sha256": "3494f00b945f0c8da28e79c99209e5efe4dc3d1efacf15852a4ba7d3cc5e30c0"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "9f96ad41675ab1428e6a913cebe042156b61e9d8384d6e9dd762b85636bde7db",
+          "vlm_rgb_sha256": "52a60e79bb367bf84c5c6a46f77337009f4830edc68d16fe50f2e978572d5c6b",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-validation-good-012",
+      "baseline_attempt": 29,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/validation/good/012.png",
+          "sha256": "f353af83a48463fabd25b334e8705e01d0779b342cbf45d140d0f299cd4a9c83"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/validation/good/012.png",
+          "sha256": "f353af83a48463fabd25b334e8705e01d0779b342cbf45d140d0f299cd4a9c83"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/029-spatial_guarded.jpg",
+          "sha256": "e6879e37615dfd8df12242e98f30e131e0c0a0d9817c37af5a79dc8acda159a4"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/029-spatial_guarded/call-01/image-01.png",
+          "sha256": "bbe629f17ebc891de5e7db266b892b01dde8038ed2399082540b2908ed2de812"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/029-spatial_guarded/call-01/generation.json",
+          "sha256": "e4ee2c8302e87378acb03e3ebc0573958a995563c9e78c1751f61ff5620de153"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "79f0094ebafd6b572951aebb8421953c761dd19ac0017e16afa3c66945787827",
+          "vlm_rgb_sha256": "bf2e9d6c0ad8e40deec68feb02cf9a670f4177b63511f5f1bb6e834841117087",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_267-b588d0610843",
+      "baseline_attempt": 33,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_267.png",
+          "sha256": "8efad11d7cf3716b8bd15a7d11005ce5111f9542a12737a7e8bab9346c082914"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_267-b588d0610843.png",
+          "sha256": "b13f16f339893f1499bf2caf5cd1ae10462949dc426c27c0e543eea024f8ae68"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/033-spatial_guarded.jpg",
+          "sha256": "cf7b6d46e89eaaf5b8183386ae0488510763381c1600df227be483eb0f570fff"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/033-spatial_guarded/call-01/image-01.png",
+          "sha256": "81be900ed804d14003e3553b7b1a05c7edd4187a9b3e4d4817e3e8562e9bd60e"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/033-spatial_guarded/call-01/generation.json",
+          "sha256": "f529015177ecc7569401f0210b6d64bb85034da278381c5ddad2a51815b446b7"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "a5a92783c3761675ac2aea370ba2ec8e10b15d723c7e1fbfe828e1a28a1c7024",
+          "vlm_rgb_sha256": "a5a92783c3761675ac2aea370ba2ec8e10b15d723c7e1fbfe828e1a28a1c7024",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_043-0f142a407685",
+      "baseline_attempt": 34,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_043.png",
+          "sha256": "8e41165ee69c578d755b53f5b66cf1a41081ce203c6be867eb193b9c408d5b5b"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_043-0f142a407685.png",
+          "sha256": "da835eb7a1c4e22b36da8f19a9a01e6385cdbf76716a625a17246a1564642970"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/034-spatial_guarded.jpg",
+          "sha256": "30f9211cc8fa96cced29ca864c5476d0e15f4deb056fdf4ab6499e7694e5f96c"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/034-spatial_guarded/call-01/image-01.png",
+          "sha256": "d8a76d814478b0675ef6371e0376f2d7d1e6cf245feb9c29f957aefaeae4faa9"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/034-spatial_guarded/call-01/generation.json",
+          "sha256": "b40bcef5f450cb716cebe370cda46a0cb563e656c0c774fbaff4d36880a5508c"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1152,
+            864
+          ],
+          "vlm_image_size": [
+            1152,
+            864
+          ],
+          "normalized_rgb_sha256": "4ade0bb0c547f413f77e24f9cc2cf2ac846c8ab58b01580016b14b4e91835e7d",
+          "vlm_rgb_sha256": "4ade0bb0c547f413f77e24f9cc2cf2ac846c8ab58b01580016b14b4e91835e7d",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_329-3ef8cd71fa7c",
+      "baseline_attempt": 38,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_329.png",
+          "sha256": "94dc98efafcb98c759d27bf06078ccb4d4bf5f2b6c1691fc8cc8f749b16b0d75"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_329-3ef8cd71fa7c.png",
+          "sha256": "6253d31ad4915a62dfc5a5e8d0daad890fdfe29407e8847f199908481c348717"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/038-spatial_guarded.jpg",
+          "sha256": "db10888d012075b28a8f96455958f7eb21a33a933e9f51899e2f6b46bd6912de"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/038-spatial_guarded/call-01/image-01.png",
+          "sha256": "b432993506b7caf02c3063066a15ddbdd3f80180551d7d73b6b0aa89791e86f8"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/038-spatial_guarded/call-01/generation.json",
+          "sha256": "6bea0f87149afb7e273f324d66980a17beb3cc5a12cd7c5152277622bdee75be"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "799bab8f2ab8fcba81623ecb171c3a0d636c90771196721728484c44d891ab27",
+          "vlm_rgb_sha256": "799bab8f2ab8fcba81623ecb171c3a0d636c90771196721728484c44d891ab27",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-288",
+      "baseline_attempt": 40,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/288.png",
+          "sha256": "ec1b14eaa216a4812102674e0490c31c64585e87effd31625768d2fcfff2fb1c"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/288.png",
+          "sha256": "ec1b14eaa216a4812102674e0490c31c64585e87effd31625768d2fcfff2fb1c"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/040-spatial_guarded.jpg",
+          "sha256": "a33c0854b61e896b7a6745fb99020c2ac94e162250e298cb3abf9f4952ee9734"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/040-spatial_guarded/call-01/image-01.png",
+          "sha256": "4ee0139a1e397903948af3072dea302ea63317fd9fb8bdb0924365747742012a"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/040-spatial_guarded/call-01/generation.json",
+          "sha256": "e9fae1a2a9d03d78ff2e1a20c0441e1cd1b182ab00bcd8bc030fcea520043942"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "c1a260fae7076d283e11f304af1c1275bc943e68cefc4274f0a8fb38947f3344",
+          "vlm_rgb_sha256": "0466d0665c4a323056fc0a62fb7a5b7d164fa77ac0770274e41ef1f228ec959c",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_254-01bdc322d45c",
+      "baseline_attempt": 45,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_254.png",
+          "sha256": "b8e27e154d33900d383f65fead45bd257198d3e7e8357e9bbe2b541ec8d733f5"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_254-01bdc322d45c.png",
+          "sha256": "9d305432acb40e49625d2a8081d0920053b542d2ed4a1732de1537343f30f5fe"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/045-spatial_guarded.jpg",
+          "sha256": "5cdbc6af9441a1109b74bcdf17fece97729a4163231552ad9d58d60cd705b12e"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/045-spatial_guarded/call-01/image-01.png",
+          "sha256": "ac4cbff09473c4adf3583af878c2837caed292c3f5a5061f9a08b8c03566fb7e"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/045-spatial_guarded/call-01/generation.json",
+          "sha256": "0785d8cfcd77651d740fa13407f43288e40ca22d601b5ceda391dbc1ad25a1fd"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "8f4cc48c0d07c8cc8e01e9995e998472b948071d57ac23c73b71100096479726",
+          "vlm_rgb_sha256": "8f4cc48c0d07c8cc8e01e9995e998472b948071d57ac23c73b71100096479726",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-085",
+      "baseline_attempt": 47,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/085.png",
+          "sha256": "e97bf06283a4d5284f8c7e4f899db67466c410cd8ccab49090e5168c55fbd01f"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/085.png",
+          "sha256": "e97bf06283a4d5284f8c7e4f899db67466c410cd8ccab49090e5168c55fbd01f"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/047-spatial_guarded.jpg",
+          "sha256": "e1a54b1a3570043e1e03b1efad4c08ecd62bfd35e963ca58b52055feb9658a6e"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/047-spatial_guarded/call-01/image-01.png",
+          "sha256": "ef6643bc8bcadde28ab25f09ad265f2a742df5ac38decd0f1db19e043cc6f897"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/047-spatial_guarded/call-01/generation.json",
+          "sha256": "2027eb357517962f53ec19719dd587636871b871629606cb3414c4806d5f14ae"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "7b97c6b1e728443edc4a48b41a2d7f2ebe9b83482807e17274515a85359badc6",
+          "vlm_rgb_sha256": "f310216784a6fee9e74de979dc1c232b0800fd2f1e1d7b6404d028924786eb0c",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-081",
+      "baseline_attempt": 51,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/081.png",
+          "sha256": "c7a0edd4d73bb2674b628c98d28fee1dd331acf1b47f664ecd2346aca7326392"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/081.png",
+          "sha256": "c7a0edd4d73bb2674b628c98d28fee1dd331acf1b47f664ecd2346aca7326392"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/051-spatial_guarded.jpg",
+          "sha256": "e22aa0dcb8f1e11195308b45fa18c89861fdd6bce0e3a2ae3e7a676735e03db2"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/051-spatial_guarded/call-01/image-01.png",
+          "sha256": "159ca93c43e7a98e28e7a10638eb325f4d71b2218ac47021cf4fc3cd6dc52960"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/051-spatial_guarded/call-01/generation.json",
+          "sha256": "383a25b03a6b425c9874e03631e50486216d70137aac149b93d0ef0b3b699488"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "b4b16d9d28586028f9fc1046a58d8b8a5380a19e0d0feb25032f0f73caacc823",
+          "vlm_rgb_sha256": "3e9506738eaf420f7084f8ea4c6e4357c5ecf8ac67c87593cecd677e11434111",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-345",
+      "baseline_attempt": 52,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/345.png",
+          "sha256": "8c7f1dbb4a2595e489d984e66d830c0758bf97b7d799b817cff045ead701f2ee"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/345.png",
+          "sha256": "8c7f1dbb4a2595e489d984e66d830c0758bf97b7d799b817cff045ead701f2ee"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/052-spatial_guarded.jpg",
+          "sha256": "0086f6a2539b32ad714b989fe88100a8644fc08e1c2ee7b2563b345a2e1fcdfd"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/052-spatial_guarded/call-01/image-01.png",
+          "sha256": "11ef86532dfa5178d44574ffd6c0c9fb837cdb1480618b03662fae9c68a08bd5"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/052-spatial_guarded/call-01/generation.json",
+          "sha256": "0bdf75d52193e6af0fc7fde6131295a0a236063b06a049c7da4646184e0c545b"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "76f49898d82b053871429b2632bfd4e2575e4b933d16ea5761d833f28b623783",
+          "vlm_rgb_sha256": "1b4d897f34f7c678d1d033f1d4b3ec06fa257c6004b6c236b914b09dc2e0de1c",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_052-2ff24eaf90ca",
+      "baseline_attempt": 56,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_052.png",
+          "sha256": "5280c1e072bfd08fde162cbcd5748ded97594511802a47c0b67188396b6ca261"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_052-2ff24eaf90ca.png",
+          "sha256": "89f3fbecf0b3f2a8a895c98fdf67e63e8d032f67175e5072b1ada001dcc11fa7"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/056-spatial_guarded.jpg",
+          "sha256": "85beb312aad90b88ac297ff78a51c38ba38e67838d4860a9e63634c21b8ae514"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/056-spatial_guarded/call-01/image-01.png",
+          "sha256": "4118a58a7f6ff33141fc4a156135a7878a553d822a3193cb4699beabb46c78b9"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/056-spatial_guarded/call-01/generation.json",
+          "sha256": "bea9d2ee5498905e67c8742ad41e681f29042f213ebb30e19af4f3bbe33fb069"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "41331c26076dc847ec6072937756f7ffd969c2f6dfa4eacf57e00ed3b40cf74c",
+          "vlm_rgb_sha256": "41331c26076dc847ec6072937756f7ffd969c2f6dfa4eacf57e00ed3b40cf74c",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-186",
+      "baseline_attempt": 58,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/186.png",
+          "sha256": "57fc63660bb81c09ede9101cb7da89fe9cf9a1f7b7e524e9ca8a66dc4fb0be35"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/186.png",
+          "sha256": "57fc63660bb81c09ede9101cb7da89fe9cf9a1f7b7e524e9ca8a66dc4fb0be35"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/058-spatial_guarded.jpg",
+          "sha256": "d6e457859f6141c1cfb665e3176db5edfe8a280768588176568b63ac0960cb76"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/058-spatial_guarded/call-01/image-01.png",
+          "sha256": "0e4fc17e232ba603935c8d6afc6261bf6a2e73355525994f9f70b52209c9e46f"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/058-spatial_guarded/call-01/generation.json",
+          "sha256": "a62aad6c16fed89a1d0f3ab687611d0117466ecf80970a952f54c9580d14c4fb"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "66d8e3c1394254fb202ef10fbc047b6f029bebaa9021283f680b8e0343cc0527",
+          "vlm_rgb_sha256": "c8f4dd72cb0bf16fc3555afcac952c39c9b8612a4ca6260a48681a572d638037",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-087",
+      "baseline_attempt": 63,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/087.png",
+          "sha256": "e2760c658686afa417441ecc1a0221ac84b8bc14979fbe7fc7f5fae32ad33c79"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/087.png",
+          "sha256": "e2760c658686afa417441ecc1a0221ac84b8bc14979fbe7fc7f5fae32ad33c79"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/063-spatial_guarded.jpg",
+          "sha256": "7765cca291414dd95640b1ab43dc30d8347a52d0a41a833c4996490a6aa13ecf"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/063-spatial_guarded/call-01/image-01.png",
+          "sha256": "54bc3da97ca64239b5a57f3aa3046abfbc37037f21c37c0b8476b37c7e1f46e7"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/063-spatial_guarded/call-01/generation.json",
+          "sha256": "8a94431c173281daf508dd856b12fae18bb83a4b00111ffb0b23a39afb37574a"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "a7f885dc519c548bb2c58a5d6b531dd567548de30dc9be8a14c403c5091df184",
+          "vlm_rgb_sha256": "af4f44ff37fd4b5351cf45258ed1362bea12e20e7584e78237c029506354974b",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-144",
+      "baseline_attempt": 65,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/144.png",
+          "sha256": "66279264682dc0710bfaed7a9ebc6a37332d7b42f368fac78c6ba5b88de1c879"
+        },
+        "selected_image": {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/train/good/144.png",
+          "sha256": "66279264682dc0710bfaed7a9ebc6a37332d7b42f368fac78c6ba5b88de1c879"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/065-spatial_guarded.jpg",
+          "sha256": "9d52960cc91a1100a04c7f26d000a81d6b5561a9fe88eabde434f322eba53fae"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/065-spatial_guarded/call-01/image-01.png",
+          "sha256": "3764fb77f29bf8a87cebf1226607a917c28131dbbed2b4c87ade3012f98dae39"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/065-spatial_guarded/call-01/generation.json",
+          "sha256": "a88a456cbb12147dddc8ddc4279ba1038a72ba4ce13c02bb6f42df9f8e6c7107"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1600,
+            1100
+          ],
+          "vlm_image_size": [
+            1536,
+            1056
+          ],
+          "normalized_rgb_sha256": "360c4fe60092c62d2fbe645cb22e6d18ad7721b1017cddaa8b9eaff86062e0d0",
+          "vlm_rgb_sha256": "3cf65c286348676222489477fec960f9c991a037665478a1651181bb7ea4db40",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_217-02dcfdb94d9b",
+      "baseline_attempt": 69,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_217.png",
+          "sha256": "68286e4b8f52431198f8a321681bb15b44f6bda8821725bbd97287e0359406c0"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_217-02dcfdb94d9b.png",
+          "sha256": "37742f4745003df6a4ef55d2ee42497769bfe74eba68d68d6284989f32d80f50"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/069-spatial_guarded.jpg",
+          "sha256": "259b650aa1800ebc42fe0ae6b1e2228ba62ad6f8422905aaf6dea6af20204a53"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/069-spatial_guarded/call-01/image-01.png",
+          "sha256": "9b6b2dd3016ba64acf556b167d851c77ed3908a2a3ce9e298651cef4d0032a3d"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/069-spatial_guarded/call-01/generation.json",
+          "sha256": "e0bf7544eae74bbb4100bf12ac5659dcd6990f3f96fced3e90861b3476ae5310"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "e1a1aedadda870515f01c6ed2e27ac60621a47725bc78ed33073844c7bff2235",
+          "vlm_rgb_sha256": "e1a1aedadda870515f01c6ed2e27ac60621a47725bc78ed33073844c7bff2235",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_173-e4f3732390c7",
+      "baseline_attempt": 70,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_173.png",
+          "sha256": "a6aeaf2faa5b28a2ba0fe9ec91882f18f0e3a7a05b76e9bafcece626c4755aa9"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_173-e4f3732390c7.png",
+          "sha256": "03c87b3a475646877e9cc44c342a7f866bbd826d4a4e54bd03696c7e37a33815"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/070-spatial_guarded.jpg",
+          "sha256": "37017bb365d73f7e0a6a3f4c40365434a766ed94a438050f321e6e83cb8608dd"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/070-spatial_guarded/call-01/image-01.png",
+          "sha256": "afa74ffe835c9ae1f80026ff7cff62bef1a3a5ba592331d3ad3b8259d1936acc"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/070-spatial_guarded/call-01/generation.json",
+          "sha256": "2f968e596636655d2f3dcb0921be404264e75670e3c9569c81149375e773bf33"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1152,
+            864
+          ],
+          "vlm_image_size": [
+            1152,
+            864
+          ],
+          "normalized_rgb_sha256": "0bfd4fa3bcb3a57fd60d310d543ac5803c11a37747adf62529e46c8ca9baca85",
+          "vlm_rgb_sha256": "0bfd4fa3bcb3a57fd60d310d543ac5803c11a37747adf62529e46c8ca9baca85",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_306-b99ef95d6c60",
+      "baseline_attempt": 74,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_306.png",
+          "sha256": "36fbe6356b956dc65d87a85ae2a061be838a51b729868cca3b10e499ec3600d3"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_306-b99ef95d6c60.png",
+          "sha256": "a38c8e263902e0f7813cebb42b0705ade169ab1580ea63ead382e22442f4526d"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/074-spatial_guarded.jpg",
+          "sha256": "688281d0250fe2a5cc5e2f3f236a8ac87f51ed6ee2797e22a3e70ead2b8ee83b"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/074-spatial_guarded/call-01/image-01.png",
+          "sha256": "4d9d29a937274a6ef49a16e50b655fe075fe7253020272a6cfc029ebbc923cd6"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/074-spatial_guarded/call-01/generation.json",
+          "sha256": "fce5040262c7e820fbfed16f78551518a3092877b02fa52e873613447b8f56bd"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "d605aaeeecb440d916bb662d0965ba10e6fb8a79647f22050afc77ceb2984ef4",
+          "vlm_rgb_sha256": "d605aaeeecb440d916bb662d0965ba10e6fb8a79647f22050afc77ceb2984ef4",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_029-022f090246f7",
+      "baseline_attempt": 76,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_029.png",
+          "sha256": "94403917cd187703ca919ec0f2d060bcf622c4b4c54a51768f78d53d73e98b3a"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_029-022f090246f7.png",
+          "sha256": "8069e4ef2ea2b6733eedcf32a2b4af62de32a211aafadcf43a28e1523ec75a96"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/076-spatial_guarded.jpg",
+          "sha256": "1d825156d846b899df47787c160e12cb5b88c75e435476c60fee0d396adcfdde"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/076-spatial_guarded/call-01/image-01.png",
+          "sha256": "6a34b59b88b1390f9e3813ae96f8cac5a5e1800ddc8912ef17deafb472a24ed7"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/076-spatial_guarded/call-01/generation.json",
+          "sha256": "ceeb961e23bcee69acca2b3a00b31ab5ed26fbcbf877c45f0fde128b498834ac"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "73e6d0098fb1af0f01710dbb15e4ac0b0a3b2478ef5b23ca5bf17b7e22eff13a",
+          "vlm_rgb_sha256": "73e6d0098fb1af0f01710dbb15e4ac0b0a3b2478ef5b23ca5bf17b7e22eff13a",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_041-273db36ccf08",
+      "baseline_attempt": 81,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_041.png",
+          "sha256": "0f7ef3d719ed18a84637c3f78a76af99b3ce628dae1c1f1fb73081129970262f"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_041-273db36ccf08.png",
+          "sha256": "90449a4e52cab51ccde5d3ddfc9b65e14e147695953e0c5ecb46a927738774e0"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/081-spatial_guarded.jpg",
+          "sha256": "86f2abc39eb575a57ac902571676874067d6788b732b27982b4358a6edf0df30"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/081-spatial_guarded/call-01/image-01.png",
+          "sha256": "b28bdd325452ef6862339fbe61ffc81a0a38ef1996429a863b4b7afaee90eeaf"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/081-spatial_guarded/call-01/generation.json",
+          "sha256": "d8cbcc959a77784ce5dd8cba71f4c765b89b5e685c9cdd348e73e77367f88584"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "a46caf451db2d9af29b922907513a99ea43bc4f327dd18b90164adca397b09b5",
+          "vlm_rgb_sha256": "a46caf451db2d9af29b922907513a99ea43bc4f327dd18b90164adca397b09b5",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_026-159d851cf865",
+      "baseline_attempt": 83,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_026.png",
+          "sha256": "a14ad6e127ce7a562025f0caadf56a6c988b13dd571964e8fdbe6f29ffc5c525"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_026-159d851cf865.png",
+          "sha256": "7a576eb948f8a908dbc85ba7de2632b6bf614c3173e655495afefafd1dc1d8b3"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/083-spatial_guarded.jpg",
+          "sha256": "e44cc2b34b69504b8b5f63fe7cd1dfcb35bfb62ec0a32c3261e183845ed39656"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/083-spatial_guarded/call-01/image-01.png",
+          "sha256": "a39958e3b95b32e3fb28057ae644f00bb33fc9b7a93945d5d9fdf6f3f74232f4"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/083-spatial_guarded/call-01/generation.json",
+          "sha256": "13de195ccfefbb9357d0b30f49554f0250a9355cef88275493ed5d4d0e4907f7"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "65dc9b2cf8934e05939efb46cdc74daf23d378fef16021809e1a3a2876eec9d7",
+          "vlm_rgb_sha256": "65dc9b2cf8934e05939efb46cdc74daf23d378fef16021809e1a3a2876eec9d7",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_165-203dda5f8171",
+      "baseline_attempt": 87,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_165.png",
+          "sha256": "582a401c35b73ea44f51ec708b0f985b92ef625e44172e7be2bc21e85a052857"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_165-203dda5f8171.png",
+          "sha256": "9395a12b61ee804dc9f880e99feb3ef93ab1fcdfbad34133d11c66cfd666e27f"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/087-spatial_guarded.jpg",
+          "sha256": "4e44c3d0a2e107e032b81e4da2e260e1d7a29d47ca8c3f31e20cb69e031c9376"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/087-spatial_guarded/call-01/image-01.png",
+          "sha256": "4cd0a2d4ae715da8eb06d8693744b8b955386df651e66394c0c8acdbe04d7278"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/087-spatial_guarded/call-01/generation.json",
+          "sha256": "49933c1e1f0a76cc9c6996e172dc4fdd9b90ef6a848af465fb66d6f2629b02a8"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1152,
+            864
+          ],
+          "vlm_image_size": [
+            1152,
+            864
+          ],
+          "normalized_rgb_sha256": "5a6c176806f9c89cb254c672686898fb6cb770c55029b6ef39bc8c102aee4bd9",
+          "vlm_rgb_sha256": "5a6c176806f9c89cb254c672686898fb6cb770c55029b6ef39bc8c102aee4bd9",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_116-579021319beb",
+      "baseline_attempt": 88,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_116.png",
+          "sha256": "d599a15193ca56abbecad76d5abd72aac8bab91fe23942bf249fa047571cbc9e"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_116-579021319beb.png",
+          "sha256": "45c4b6ca911767255bddb46f857ef6bfaaed4d916fb3430b6a7fcf35d5583a45"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/088-spatial_guarded.jpg",
+          "sha256": "4e8dbdb3133f3c131f7a63bb44806b42ec5f1b4705384ba7c3cfe92c90cb4189"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/088-spatial_guarded/call-01/image-01.png",
+          "sha256": "f7b23f1e867f5712c65834a68d006a592a1e6b890669be6f9287225b992ddeb2"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/088-spatial_guarded/call-01/generation.json",
+          "sha256": "caac52beff935e5e082b5c0f6fa09a4a392c309c81f4c40296cc15b3ac4accf2"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1152,
+            864
+          ],
+          "vlm_image_size": [
+            1152,
+            864
+          ],
+          "normalized_rgb_sha256": "343c644cfdfa72b8abe68d4a777c1e2991d6cbf46a0a290663f9fec28eb03990",
+          "vlm_rgb_sha256": "343c644cfdfa72b8abe68d4a777c1e2991d6cbf46a0a290663f9fec28eb03990",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_120-3e86c9ca51d9",
+      "baseline_attempt": 92,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_120.png",
+          "sha256": "c4f663e6528ef41fafb77303095adf5b05934560bec00af36ec64d81238aad60"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_120-3e86c9ca51d9.png",
+          "sha256": "9b5055b70a2926696ea7f5ab3c325f59bc22ab592661605c5297b905a2f5a84b"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/092-spatial_guarded.jpg",
+          "sha256": "4c3a5e28926b6284dd9f3f34f6c05e383484cb94390aec02cc96a7628f0fbb6b"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/092-spatial_guarded/call-01/image-01.png",
+          "sha256": "3fadb2a106ee28c016ce26b0c83ccaf931c7f14f8af99cbc743f58b98ee612ee"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/092-spatial_guarded/call-01/generation.json",
+          "sha256": "8901f2eabf224b7b8114e0f10b302392fe8cb5999319a538259a6800f451099d"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "de82de9b869e0e0dc7dca649ac9d2406f15b464c23fa63ffe63f3d0311163d90",
+          "vlm_rgb_sha256": "de82de9b869e0e0dc7dca649ac9d2406f15b464c23fa63ffe63f3d0311163d90",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_316-ceebce0412a3",
+      "baseline_attempt": 94,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_316.png",
+          "sha256": "0db245445481965e27c40d2ce5f0fdb623a178dd22178e326c4ecd926ebe8710"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_316-ceebce0412a3.png",
+          "sha256": "e1ee483554ba0d3fd5e05097f7d7717cb8c2c2d310f2a019902c306935378e70"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/094-spatial_guarded.jpg",
+          "sha256": "73139a780e76e2eb1db5a6ab3352b47df22ff923771de401edd6c89149ee077c"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/094-spatial_guarded/call-01/image-01.png",
+          "sha256": "c3781c79d50aa4774ff68c1f26d54cd1ec9ecf1568e393a8e3029cdf294af685"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/094-spatial_guarded/call-01/generation.json",
+          "sha256": "8294e32e9168f87d85766830f238de2d9d9872023d213e2412841ed8bd3cddfe"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "56d9a4953f7bc3f6836734990007a2a0baa11fb9ae8caf234886e7f99e47ec2b",
+          "vlm_rgb_sha256": "56d9a4953f7bc3f6836734990007a2a0baa11fb9ae8caf234886e7f99e47ec2b",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_025-be0cfb452c55",
+      "baseline_attempt": 99,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_025.png",
+          "sha256": "e734d84b32631fe63c71fd3095ba66c1e97768cf389a6f0c70eaebc3015b9cad"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_025-be0cfb452c55.png",
+          "sha256": "cc401c9eac2aa74c0e606205a1d153aaea06e47541131559d5bed7fc0caed6ae"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/099-spatial_guarded.jpg",
+          "sha256": "1fc366c5ff73b5602279ae99b9d5a6e7d88f4d0809d72768f10011888132a396"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/099-spatial_guarded/call-01/image-01.png",
+          "sha256": "781714d714f8400a94649b15a7412d42d9d15af862cc5f32c21f273c150561ad"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/099-spatial_guarded/call-01/generation.json",
+          "sha256": "2d70db5a236bcaa0a4a5ad671ce08cbf20c681e42cec885ab28a94051c12b775"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "a9a7aa0ca8a4ddc3186e8ef35cdeaa3d3929e70c54603e43011a788fa35dcdba",
+          "vlm_rgb_sha256": "a9a7aa0ca8a4ddc3186e8ef35cdeaa3d3929e70c54603e43011a788fa35dcdba",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_255-8f97b70e7b70",
+      "baseline_attempt": 101,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_255.png",
+          "sha256": "9464daa979ac9f5cb6f452fd1aa3e19433a73fdf8ef5fdb125f186ae8c699ae5"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_255-8f97b70e7b70.png",
+          "sha256": "6eb115d896f7bb1b03d0ecc312d51489de97f632a595d78e7555a0bf3ebc5b52"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/101-spatial_guarded.jpg",
+          "sha256": "7b66eb02e20508aac639e81e63e5cf4993e5ca0444112c1206d6058bcf65e09c"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/101-spatial_guarded/call-01/image-01.png",
+          "sha256": "99d7606e452603975b7844c2bfd46b4c3a231d70199b54d2257fc34a67deca01"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/101-spatial_guarded/call-01/generation.json",
+          "sha256": "a9b98262e5c494763d39b860daa2564c3b5e08f3ac00110b6db5a870fba1af64"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "4b2242913245db7add1515f7dfc782a4e24c5c50c56f2edcc49b2435d012f80c",
+          "vlm_rgb_sha256": "4b2242913245db7add1515f7dfc782a4e24c5c50c56f2edcc49b2435d012f80c",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_163-042340f2c1b1",
+      "baseline_attempt": 105,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_163.png",
+          "sha256": "b544e677e69f2cb8d3adfd438943744c77daa49f2612117a8a8b5016c283e228"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_163-042340f2c1b1.png",
+          "sha256": "3ee1124c4be639f2dff45df34688356452e3b25c2262145498a8f74a025105a9"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/105-spatial_guarded.jpg",
+          "sha256": "1a36ebfe31fd68f8ea4e2df11d8ff62374371c9c3f9f7102e7109740be6fbca9"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-01/image-01.png",
+          "sha256": "0fb2730f20d0bf0a99037bd1efe54763c435fd89fd1af69a73620118dec34d27"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-01/generation.json",
+          "sha256": "68289e26daf449711d730e2a26290a0dbac7e86a7ba1f4a9bb9a13181365d248"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "c5006eacead5e72a19782a74ce814e2cc84cd5d78d655e4062c5153e17c8ac3f",
+          "vlm_rgb_sha256": "c5006eacead5e72a19782a74ce814e2cc84cd5d78d655e4062c5153e17c8ac3f",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_240-3b677a02b30a",
+      "baseline_attempt": 106,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_240.png",
+          "sha256": "13df91b1248d1a633e9a173111fd01859dcff490b08b7e56da6b46d2543578be"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_240-3b677a02b30a.png",
+          "sha256": "47b786a2e7f6f9ef839fe4a91cd973d45bbf3292d8db6a66d51ecd14b5f05e30"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/106-spatial_guarded.jpg",
+          "sha256": "4d86c49c7f2f79d416eaaf5c5a2ec5fa142e82066076852ba9a50259ea8bf405"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/106-spatial_guarded/call-01/image-01.png",
+          "sha256": "2a204f1087bc3e170ac1fcb75d78633a3dc89547934807fc8fb8653af8a0bd28"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/106-spatial_guarded/call-01/generation.json",
+          "sha256": "153dd921621aff55f5fc04bf39d3d4d61eb3fea2846540e5c9a1408ff7d44e14"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "8fd9bdb56ec2c6b3e37199721021e9a62c8009213b9b228f6df83ee35577924b",
+          "vlm_rgb_sha256": "8fd9bdb56ec2c6b3e37199721021e9a62c8009213b9b228f6df83ee35577924b",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_256-92cbbb2e681a",
+      "baseline_attempt": 110,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_256.png",
+          "sha256": "2c72d44d6505c751666cc24e07e5de96daa7924ceb7e32d3c1df26d63c1f435e"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_256-92cbbb2e681a.png",
+          "sha256": "845b03001e113ed4c1448e535fcb90ac8d63e04da6643c3aa10dd602d3b366af"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/110-spatial_guarded.jpg",
+          "sha256": "d369c60b10181b193c79618540043603ad5272555a95182fb74c439a31b524ed"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/110-spatial_guarded/call-01/image-01.png",
+          "sha256": "c083fe8f5dde9cf15afcf184db37aff618e3975d65655cd664df7551b48828d5"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/110-spatial_guarded/call-01/generation.json",
+          "sha256": "5ece09f9ac1d630cd1d1774fa68d29d0040fe6f06fad5333565bd89e3c59d0b1"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "0cd59b36a704d864cf3bc1b57427c89954cc6e7ac22e17c0d8b585670035e775",
+          "vlm_rgb_sha256": "0cd59b36a704d864cf3bc1b57427c89954cc6e7ac22e17c0d8b585670035e775",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_024-07f4bcf5c349",
+      "baseline_attempt": 112,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_024.png",
+          "sha256": "e6e3bb2b9d4c17662ac66be60b9f11d0e32f7941a5594d4a8db326baa8bff6e9"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_024-07f4bcf5c349.png",
+          "sha256": "74138063d6dc74cddf2c84b9e2f6d9cc6fc73fb48bcdbceee0ce155306227a17"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/112-spatial_guarded.jpg",
+          "sha256": "3884d278e932ee2e4c13c2eda81d3df3574db23d9f357e7cb9ecb6d74a084a60"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/112-spatial_guarded/call-01/image-01.png",
+          "sha256": "11839cf2fb7cac7eb3c74b993163e7bc6a9be15210b01f6a9acd69efed7780f8"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/112-spatial_guarded/call-01/generation.json",
+          "sha256": "5f631e88986c397077b40172823d106d51523e01567da0c8310049f2e2c47f6e"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "b9b1b6ffed9da10f9c6754d6a710f3e8878e34912ebb34de380c8858fa1dedae",
+          "vlm_rgb_sha256": "b9b1b6ffed9da10f9c6754d6a710f3e8878e34912ebb34de380c8858fa1dedae",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_233-27b2aabfe1e8",
+      "baseline_attempt": 117,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_233.png",
+          "sha256": "dc4d8c0ea5828b57a840c8ac5e29ff364aee978ec80a59be7e0ccb3b3f720d6c"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_233-27b2aabfe1e8.png",
+          "sha256": "46ff0f22f2a71216c9cf540aa25aae44558b223ab899d70b761bf2fd7ed28761"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/117-spatial_guarded.jpg",
+          "sha256": "b3de688d3c69981a1300c574a073014134482a056c71b8e7701a9c91c18442cf"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/117-spatial_guarded/call-01/image-01.png",
+          "sha256": "51a54faf30d0d2a6b14a8c044c5cda7d03bcb97d3a5db6d1043ec69e86977e3c"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/117-spatial_guarded/call-01/generation.json",
+          "sha256": "e66751c03997001b20fbefbf59cd40302c372182f43b566b22a00ab32949096d"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "6210a96173f030357d7e944ea55c9311ffe2a4b471b63b4b5d524ea24c0837a9",
+          "vlm_rgb_sha256": "6210a96173f030357d7e944ea55c9311ffe2a4b471b63b4b5d524ea24c0837a9",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_315-6a1b174187e3",
+      "baseline_attempt": 119,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_315.png",
+          "sha256": "8ca1780ceba921813d1874f920db93af65383c9aa5e2675924d941fa8a1f6912"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_315-6a1b174187e3.png",
+          "sha256": "41f5f0da2fee943286af03c46ca022aad92df9b57cce7a8538b98c9a8026f5fb"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/119-spatial_guarded.jpg",
+          "sha256": "b90b2ca5004d073c05c5739948c62fc60a7badbed80e9a335ebcbefa5f1fa611"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/119-spatial_guarded/call-01/image-01.png",
+          "sha256": "cb3e77514dae0a993ffda3462ee878757cbad81c80f5166f5881713a565ef745"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/119-spatial_guarded/call-01/generation.json",
+          "sha256": "c5e39a2dbeaf295ef0c035c6e78de81b4632bff6b6dbdd846e26d90d0e4e5e7d"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "24f8b0e154e83513cf4b5c99accc0cd0a92707739b42cd7fb49a6bf8730967de",
+          "vlm_rgb_sha256": "24f8b0e154e83513cf4b5c99accc0cd0a92707739b42cd7fb49a6bf8730967de",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_213-0c47276c5590",
+      "baseline_attempt": 123,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_213.png",
+          "sha256": "62fe19c607086a27a0cd1b1ab65c364a2edb3ae5cd7d13f2245496cb420cfee3"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_213-0c47276c5590.png",
+          "sha256": "b156bc1718fafe2ab743ca433e8d638bb98a478696496b86360a42e03a35358d"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/123-spatial_guarded.jpg",
+          "sha256": "2ff3cc74e434065180c39c59eefb1e267a5b7f683d48eb4c5bb308f02da24827"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/123-spatial_guarded/call-01/image-01.png",
+          "sha256": "e54cb58b6f596b727d47c67e0d7ec3e5f647798517733af887ab9e9e1aa3c4fa"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/123-spatial_guarded/call-01/generation.json",
+          "sha256": "385d972af044e5d2d75bd1887aa40505f6ff53784e993776beed835ce1ad5443"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "79ca2ddb4beee8f73bb6c06660aeb7f3b11c731d52b73d3fbe6e037b4ced7c59",
+          "vlm_rgb_sha256": "79ca2ddb4beee8f73bb6c06660aeb7f3b11c731d52b73d3fbe6e037b4ced7c59",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_230-37d67057763d",
+      "baseline_attempt": 124,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_230.png",
+          "sha256": "b5d49154610ba86d0254d0d01c25c6ab06083e2a09272f3fe804ea2d15dd61b4"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_230-37d67057763d.png",
+          "sha256": "2165eb619a63c618d69ab4ad8a1a4fb08d6db59648177b2eed7e7a1dc85fbb58"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/124-spatial_guarded.jpg",
+          "sha256": "1dcb0483e901c4e87fb1ffa173f94d44c73c83c3a25b5df369694eae185da0a6"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/124-spatial_guarded/call-01/image-01.png",
+          "sha256": "61fad97f1382f2afcd508b5150f64f7879b79e39682f2e1370792a8e94c8fe15"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/124-spatial_guarded/call-01/generation.json",
+          "sha256": "681f057b9285e84af41c0f349c95560c2882dd388668c0c621b7d0df333fa48a"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "e57c7a9cbf25559c52efe944429f92fb6da23f1870e1cf17d0f55c301719dd8d",
+          "vlm_rgb_sha256": "e57c7a9cbf25559c52efe944429f92fb6da23f1870e1cf17d0f55c301719dd8d",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_105-1227f4b91a1e",
+      "baseline_attempt": 128,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_105.png",
+          "sha256": "0d311c3ee7adf4c5a73a84672852a085b8ce124426633bee184098e3cd540c30"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_105-1227f4b91a1e.png",
+          "sha256": "8f62db3c380d7a720985fc12b278f920ecb7f6e85de1e32a1f71c293cfd36029"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/128-spatial_guarded.jpg",
+          "sha256": "a414c1b3cb6ae358116f8578ff535a60d3031bc9a078f218cf3fdfecce7f7564"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/128-spatial_guarded/call-01/image-01.png",
+          "sha256": "1796fe2c918d4e814913cd0afd01c6fa2f9c8ec635cf2c777ebd17cea8c930a4"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/128-spatial_guarded/call-01/generation.json",
+          "sha256": "ca2e1b5bba600f6b52943eeb835c364e533e32fdcef0181b9bfda09b2a8096d6"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "40b25531ec64709cca3f21cd0392cbff5aa35e75ed436ba47e686b10ce9e35ce",
+          "vlm_rgb_sha256": "40b25531ec64709cca3f21cd0392cbff5aa35e75ed436ba47e686b10ce9e35ce",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_295-880c3c73c29d",
+      "baseline_attempt": 130,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_295.png",
+          "sha256": "e64b2c16b98227d7793d2d76b50e628f257bb51311f4c8e69fc48a3f055ebd12"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_295-880c3c73c29d.png",
+          "sha256": "ee7111d8b6056e5422a1f27bfcb6881598160515072dbe1e1c59674b45baa2df"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/130-spatial_guarded.jpg",
+          "sha256": "5f34186c413a5d523138c51aa70a2337edfca81881aa774b0b2d0317b3192186"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/130-spatial_guarded/call-01/image-01.png",
+          "sha256": "bfba9159ca76c0205d6e4769e8d230e0e81fd02be6e481a15b15ccc74b51eb28"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/130-spatial_guarded/call-01/generation.json",
+          "sha256": "606fb5a59b22d339dacb92bd97e51ac70acdd620c3cd8c465fec93c1f542caf0"
+        },
+        "lineage": {
+          "detector_image_size": [
+            960,
+            720
+          ],
+          "vlm_image_size": [
+            960,
+            720
+          ],
+          "normalized_rgb_sha256": "6d70a2c1830915b150b46486c5e1b96a8b59ae628fe5ae6323d5ba94c46a4aa8",
+          "vlm_rgb_sha256": "6d70a2c1830915b150b46486c5e1b96a8b59ae628fe5ae6323d5ba94c46a4aa8",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_028-63c1ae2b3ff8",
+      "baseline_attempt": 135,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_028.png",
+          "sha256": "37bdeb3cafec721d90d25705ec7faf58fb026efcfe1b30e5ca31b34ae2833fde"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_028-63c1ae2b3ff8.png",
+          "sha256": "58d16e79c0402cb70b05dd59302caff25bc80bcbd2fd217a7c6348a4e989d51a"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/135-spatial_guarded.jpg",
+          "sha256": "3dfa259439f47a1c4863b34c4f33007c601c76526f78e6f9ab8e8e37201266ef"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/135-spatial_guarded/call-01/image-01.png",
+          "sha256": "961b0e1322ddeecfb1c25a5b29ca3d8f5a132ab975344a4090eb245628a391b6"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/135-spatial_guarded/call-01/generation.json",
+          "sha256": "ec128855b535c0631f86db6d877a363f194030398ffd9fd65f6c05c6219a7e5b"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "f5f2e500d125d50b391b45c4da7cc15c168b76cc8a35019486add2999a51c648",
+          "vlm_rgb_sha256": "f5f2e500d125d50b391b45c4da7cc15c168b76cc8a35019486add2999a51c648",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_128-4a8c39795714",
+      "baseline_attempt": 137,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_128.png",
+          "sha256": "e021fa11927cae0320111382745a2a17060248919fb22c95730e94252807fa20"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_128-4a8c39795714.png",
+          "sha256": "7ee8b0b4a19593716300e49a7a3394d287a150f8dfde7660db4c47a83218e456"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/137-spatial_guarded.jpg",
+          "sha256": "752115e15b346dc9c3942cd63695da325a034254d02e9f4e131af0fe876bac85"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/137-spatial_guarded/call-01/image-01.png",
+          "sha256": "32205e7b07888a60c1e74a82a98fb131b59cb150fd4865c390aa5e3cd7cecdfb"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/137-spatial_guarded/call-01/generation.json",
+          "sha256": "5573cc567207f224a60d7195a6278c9e8f9a665e6d0d88f239fc95f44eec7d5c"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1152,
+            864
+          ],
+          "vlm_image_size": [
+            1152,
+            864
+          ],
+          "normalized_rgb_sha256": "9a625410ea71f767a401ca372147a92b13a7e3d01756aa7601373ec96cd66208",
+          "vlm_rgb_sha256": "9a625410ea71f767a401ca372147a92b13a7e3d01756aa7601373ec96cd66208",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_164-937fa690c693",
+      "baseline_attempt": 141,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_164.png",
+          "sha256": "bb84d247ffa96cc13b8768ab47a16bc5bfaa479d0158bc58c40520fe1fef6d4a"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_164-937fa690c693.png",
+          "sha256": "b8f35c8c5fcbcd500ba1317f3e247394a9a854b5e8f62c985e5add0fb24026f3"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/141-spatial_guarded.jpg",
+          "sha256": "3bc3d6da9aedc82074bc80a616f3e13951f0599eaf0cfff45e75e1f46f3e86f2"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/141-spatial_guarded/call-01/image-01.png",
+          "sha256": "c10e5d35397def67a4fa8af0e356e9bd30e11cb0c9e508c27eb8ec8cf7f6e2fc"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/141-spatial_guarded/call-01/generation.json",
+          "sha256": "2ed1f97dc9c223f9447dcaf3c63c4f590c5741381037c33df033873b29c835e5"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "c2766d8a7a75c9f237570ac435c899131cd3946ea55bbffaef8c71db66e64d0f",
+          "vlm_rgb_sha256": "c2766d8a7a75c9f237570ac435c899131cd3946ea55bbffaef8c71db66e64d0f",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_261-1deaacc5e8e3",
+      "baseline_attempt": 142,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_261.png",
+          "sha256": "74e8731145d988c21aa7b446a8b44404689d529ab61c599df236b0c57a8a6501"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_261-1deaacc5e8e3.png",
+          "sha256": "d1acf71230217b52bc10c413c5daec4e9cc2b49852b794a73f4b7c728317f82a"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/142-spatial_guarded.jpg",
+          "sha256": "4272656363a3c8c5717c39ec8480e22347500a2cb3d6bf4f4a872d31a006bf39"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/142-spatial_guarded/call-01/image-01.png",
+          "sha256": "1e87a3012a53313bb8f0c1955768143971024ede3849a487d883a64aed6c1ea1"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/142-spatial_guarded/call-01/generation.json",
+          "sha256": "c7547c19b1b3d81462e0bdf04ca855ffea5a65192efc04f1cab285ca8447ce04"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "b4d38cf6d324ba4c58e453e67541164a9eae96ab1417d0792ff85515427035ec",
+          "vlm_rgb_sha256": "b4d38cf6d324ba4c58e453e67541164a9eae96ab1417d0792ff85515427035ec",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_313-1ba16c0cddf8",
+      "baseline_attempt": 146,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_313.png",
+          "sha256": "135cf4d60a55afc31e1934008c6ae5bf4dbcaed5e3a23939234dc5d6fe74c127"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_313-1ba16c0cddf8.png",
+          "sha256": "84b3059fafe52c3541f2d925aef736f1c0c490d53e975c689081bce598c869bd"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/146-spatial_guarded.jpg",
+          "sha256": "49aafee4bd7f7f7cf3e01c6ea2685104d8bba49a8ca47c24bb2b46e9ecc448c8"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/146-spatial_guarded/call-01/image-01.png",
+          "sha256": "21912127d5fa33bef62cf1c5e8177c53aca2678cedc68b203e26eccf7e3c9ee2"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/146-spatial_guarded/call-01/generation.json",
+          "sha256": "b05021a74f7ac53aa0029ad88e71e08196194f35013def8bd0e82f013fd8ebae"
+        },
+        "lineage": {
+          "detector_image_size": [
+            768,
+            576
+          ],
+          "vlm_image_size": [
+            768,
+            576
+          ],
+          "normalized_rgb_sha256": "d826572d40e1046b6d9900955a2f82a6a7c53cab91f9a48e7a7b95afd0ce2dc5",
+          "vlm_rgb_sha256": "d826572d40e1046b6d9900955a2f82a6a7c53cab91f9a48e7a7b95afd0ce2dc5",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_172-53dacfde39d4",
+      "baseline_attempt": 148,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_172.png",
+          "sha256": "cda11712c99a93152e7b57111aae1bb69bcbd9f085645e67dd65e7913fabff6c"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_172-53dacfde39d4.png",
+          "sha256": "6470f890c2aebb3a2948d2d63798545d79faabb0d78f941c1d5c9c7d94700436"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/148-spatial_guarded.jpg",
+          "sha256": "a40f75baa889f94b88be58a5879af55d1443b8ba3227baaa3413add768256a9c"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/148-spatial_guarded/call-01/image-01.png",
+          "sha256": "50ead6771c1cee2610c84933d40f00ddda5b22033b7eabd7998e14783e669f53"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/148-spatial_guarded/call-01/generation.json",
+          "sha256": "b000a19bd05b354e1c3d0649001b256f0448c83b9b7a5d4229970e98a4030052"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1152,
+            864
+          ],
+          "vlm_image_size": [
+            1152,
+            864
+          ],
+          "normalized_rgb_sha256": "48fd7fd722eb00d4fa9d0ecd1640656a095eae9ac7196ea143aa95add577f755",
+          "vlm_rgb_sha256": "48fd7fd722eb00d4fa9d0ecd1640656a095eae9ac7196ea143aa95add577f755",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_301-e88319aa2833",
+      "baseline_attempt": 153,
+      "binding": {
+        "source_image": {
+          "path": "datasets/raw/mvtec_screws_v1.0/images/screws_301.png",
+          "sha256": "8afc9ae353c992373592864d4f3a56a576f723498ddcb326e140f8f50a6d8e0d"
+        },
+        "selected_image": {
+          "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_301-e88319aa2833.png",
+          "sha256": "1c85c1856e8b740d4294b00cb1cea3b8251f745d094a9a2f179ade8a945d35d3"
+        },
+        "normalized_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/normalized_inputs/153-spatial_guarded.jpg",
+          "sha256": "d79d89aeec583d8a50fdcc0f827aab143678378cb58eabf1ce9c102ce0e07c43"
+        },
+        "original_vlm_input": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/153-spatial_guarded/call-01/image-01.png",
+          "sha256": "8089dc09280b941d7a9c944d9f4f13d4b2a18a824c7f5d1f71d56b4d032d9866"
+        },
+        "original_generation": {
+          "path": "evaluation-runs/v0.7/public_paired_v1/cases/153-spatial_guarded/call-01/generation.json",
+          "sha256": "3620ca2a4ca6ec47592be1b9f3fca2c7622677dd88f8c92d47212a4016dd7cb9"
+        },
+        "lineage": {
+          "detector_image_size": [
+            1152,
+            864
+          ],
+          "vlm_image_size": [
+            1152,
+            864
+          ],
+          "normalized_rgb_sha256": "f8c017e1ee0ec14a0da6cd9e29be3d870808ce962ccfeb3991b13176062afc0b",
+          "vlm_rgb_sha256": "f8c017e1ee0ec14a0da6cd9e29be3d870808ce962ccfeb3991b13176062afc0b",
+          "transform": "EXIF-oriented RGB, LANCZOS thumbnail max_side=1536; no crop/rotation"
+        }
+      }
+    }
+  ],
+  "new_holdout": false,
+  "automatic_promotion": false,
+  "note": "51 photos exposed during v0.7 development; post-hoc diagnostic only. No inference at freeze."
+}

@@ -1,0 +1,27 @@
+{
+  "mp4_duration_seconds": 75.16,
+  "webm_duration_seconds": 75.16,
+  "measurements": {
+    "webm": {
+      "duration": 75.16,
+      "width": 1280,
+      "height": 800
+    },
+    "mp4": {
+      "duration": 75.16,
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "within_three_minutes": true,
+  "same_duration": true,
+  "offline_evidence_images": 4,
+  "offline_browser_verified": true,
+  "javascript_errors": [],
+  "encoding": "H.264 yuv420p, no acceleration or edits; source WebM retained",
+  "visual_review": {
+    "sampled_frames": 5,
+    "reviewed_all_sampled_frames": true,
+    "notes": "Actual UI, original model waiting, revision dialog, final historical read-only inspection; no crop obscures key counts. Captions are behind native modal backdrop during dialogs; modal copy remains readable."
+  }
+}

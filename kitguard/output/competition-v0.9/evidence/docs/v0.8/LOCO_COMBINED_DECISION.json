@@ -1,0 +1,450 @@
+{
+  "schema": "kitguard.v08.loco-combined-decision.v1",
+  "decided_at": "2026-10-02T02:35:18.289309+00:00",
+  "independent_integrity_audit": "passed",
+  "decision": "accept_bounded_same_domain_composition_evidence_no_production_promotion",
+  "production_unchanged": true,
+  "automatic_promotion": false,
+  "safe_automatic_release_claim": false,
+  "methods": [
+    {
+      "mode": "spatial_guarded",
+      "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+      "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+      "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+      "observation_mode": "spatial_guarded",
+      "image_max_side": 1536,
+      "source_freeze": {
+        "path": "docs/v0.8/identity_reference_guarded_freeze_v1/freeze.json",
+        "sha256": "2e0ef97133988a2ca00a36a08b82e4a42e2d97f61ae01ef38980fe7d72f8b19e"
+      },
+      "references_in_identity_only": false
+    }
+  ],
+  "identity_only_candidate_included": false,
+  "method_selection_was_before_loco24_inference": true,
+  "population": {
+    "planned": 24,
+    "source": "MVTec LOCO AD screw_bag logical_anomalies 113..136",
+    "truth_rule": "author_combined_quantity_defect_rule_v1",
+    "native_instance_count_truth": false,
+    "new_domain": false,
+    "unregistered_in_bound_exposure_registry": true,
+    "guaranteed_never_viewed": false,
+    "physical_or_session_independence_established": false,
+    "pretraining_exposure_known": false,
+    "total_hardware_count_constant": 6,
+    "bracket_positive_examples": 0
+  },
+  "outcomes": {
+    "C": 23,
+    "W": 0,
+    "U": 1,
+    "E": 0,
+    "N": 0
+  },
+  "groups": [
+    {
+      "counts": {
+        "bolt": 2,
+        "nut": 0,
+        "washer": 4,
+        "bracket": 0
+      },
+      "planned": 6,
+      "outcomes": {
+        "C": 6,
+        "W": 0,
+        "U": 0,
+        "E": 0,
+        "N": 0
+      }
+    },
+    {
+      "counts": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 3,
+        "bracket": 0
+      },
+      "planned": 6,
+      "outcomes": {
+        "C": 5,
+        "W": 0,
+        "U": 1,
+        "E": 0,
+        "N": 0
+      }
+    },
+    {
+      "counts": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 1,
+        "bracket": 0
+      },
+      "planned": 6,
+      "outcomes": {
+        "C": 6,
+        "W": 0,
+        "U": 0,
+        "E": 0,
+        "N": 0
+      }
+    },
+    {
+      "counts": {
+        "bolt": 2,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "planned": 6,
+      "outcomes": {
+        "C": 6,
+        "W": 0,
+        "U": 0,
+        "E": 0,
+        "N": 0
+      }
+    }
+  ],
+  "matched_order_applicable": 12,
+  "matched_order_not_applicable_count4": 12,
+  "matched_order_correct_ready": 11,
+  "normal_order_correct_adjustment": 23,
+  "false_ready_panels": {
+    "primary_all_four": {
+      "correlated_orders_per_image": 255,
+      "planned_image_denominator": 24,
+      "planned_mismatched_orders": 6108,
+      "measured_images": 24,
+      "unmeasured_images": 0,
+      "observed_any_false_ready_images": 0,
+      "observed_false_ready_orders": 0
+    },
+    "secondary_source_supported": {
+      "correlated_orders_per_image": 63,
+      "planned_image_denominator": 24,
+      "planned_mismatched_orders": 1500,
+      "measured_images": 24,
+      "unmeasured_images": 0,
+      "observed_any_false_ready_images": 0,
+      "observed_false_ready_orders": 0
+    }
+  },
+  "analytical_comparators": {
+    "constant_normal": {
+      "outcomes": {
+        "C": 0,
+        "W": 24,
+        "U": 0,
+        "E": 0,
+        "N": 0
+      },
+      "all_four_panel": {
+        "correlated_orders_per_image": 255,
+        "planned_image_denominator": 24,
+        "planned_mismatched_orders": 6108,
+        "measured_images": 24,
+        "unmeasured_images": 0,
+        "observed_any_false_ready_images": 24,
+        "observed_false_ready_orders": 24
+      },
+      "source_supported_panel": {
+        "correlated_orders_per_image": 63,
+        "planned_image_denominator": 24,
+        "planned_mismatched_orders": 1500,
+        "measured_images": 24,
+        "unmeasured_images": 0,
+        "observed_any_false_ready_images": 24,
+        "observed_false_ready_orders": 24
+      },
+      "matched_order_correct_ready": 0,
+      "normal_order_correct_adjustment": 0
+    },
+    "always_abstain": {
+      "outcomes": {
+        "C": 0,
+        "W": 0,
+        "U": 24,
+        "E": 0,
+        "N": 0
+      },
+      "all_four_panel": {
+        "correlated_orders_per_image": 255,
+        "planned_image_denominator": 24,
+        "planned_mismatched_orders": 6108,
+        "measured_images": 24,
+        "unmeasured_images": 0,
+        "observed_any_false_ready_images": 0,
+        "observed_false_ready_orders": 0
+      },
+      "source_supported_panel": {
+        "correlated_orders_per_image": 63,
+        "planned_image_denominator": 24,
+        "planned_mismatched_orders": 1500,
+        "measured_images": 24,
+        "unmeasured_images": 0,
+        "observed_any_false_ready_images": 0,
+        "observed_false_ready_orders": 0
+      },
+      "matched_order_correct_ready": 0,
+      "normal_order_correct_adjustment": 0
+    }
+  },
+  "unique_uncertain_case": {
+    "case_id": "case-021",
+    "source_id": "screw_bag/test/logical_anomalies/125",
+    "truth": {
+      "bolt": 2,
+      "nut": 1,
+      "washer": 3,
+      "bracket": 0
+    },
+    "original_counts": {
+      "bolt": 2,
+      "nut": 1,
+      "washer": 3,
+      "bracket": 0
+    },
+    "rotated_counts": {
+      "bolt": 2,
+      "nut": 1,
+      "washer": 2,
+      "bracket": 0
+    },
+    "final_counts": {
+      "bolt": 2,
+      "nut": 1,
+      "washer": null,
+      "bracket": 0
+    },
+    "action": "recapture",
+    "identity_status": "skipped_base_unclear",
+    "actual_model_calls": 2,
+    "basis": "read-only saved raw/diagnostics; no new image review or model invocation",
+    "counterfactual_remove_rotation_claim": false
+  },
+  "historical_normal16": {
+    "outcomes": {
+      "C": 14,
+      "W": 0,
+      "U": 2,
+      "E": 0,
+      "N": 0
+    },
+    "exposed": true,
+    "nonconcurrent": true,
+    "pooled_with_new24": false,
+    "constant_normal_counts_exact": 16
+  },
+  "old51_guarded_remains": {
+    "outcomes": {
+      "C": 41,
+      "W": 3,
+      "U": 7,
+      "E": 0,
+      "N": 0
+    },
+    "three_screws_errors_unresolved": true,
+    "results_replaced_by_new24": false
+  },
+  "actual_model_calls": {
+    "records": 71,
+    "started": 71,
+    "completed": 71,
+    "spatial": 48,
+    "identity": 23,
+    "identity_conditional_skips": 1
+  },
+  "raw_evidence_checks": {
+    "calls": 71,
+    "parsed": 71,
+    "raw_text_returns": 71,
+    "input_images": 163,
+    "actual_model_calls_started": 71,
+    "actual_model_calls_completed": 71,
+    "reconstructed_identity_crops": 92
+  },
+  "latency": {
+    "all_attempted": {
+      "n": 24,
+      "p50_ms": 46901.0,
+      "p90_ms": 47953.4,
+      "total_ms": 1114494,
+      "max_ms": 51770
+    },
+    "warm_subset": {
+      "n": 23,
+      "p50_ms": 46886.0,
+      "p90_ms": 47820.8,
+      "total_ms": 1062724,
+      "max_ms": 48131
+    }
+  },
+  "latency_scope": "per observation copy/cold load/observer/raw persistence; not full product end-to-end; no concurrent method comparison",
+  "audit": {
+    "source_files_verified": 69,
+    "model_payloads_rehashed": 16,
+    "frozen_normalized_inputs_verified": 24,
+    "actual_normalized_inputs_verified": 24,
+    "model_loaded_or_called": false,
+    "run_modified": false,
+    "opaque_runtime_failures": [],
+    "runtime_db_empty_tables": 7
+  },
+  "first_audit_failure": {
+    "retained": true,
+    "kind": "independent_auditor_author_label_singular_plural_parser_bug",
+    "stage": "before predictions JSON parsing and outcome extraction; preceding artifact inventory already hashed predictions bytes",
+    "model_failure": false,
+    "truth_or_run_changed": false,
+    "minimal_repair_root_authorized": true,
+    "independent_peer_review_passed": true,
+    "cpu_contracts_passed": 32,
+    "complete_v2_audit_passed": true
+  },
+  "interpretation": "23 actionable correct compositions beat constant-normal and always-abstain analytical controls on these 24 same-domain author-derived cases. This does not erase old Screws errors, establish independent physical/session generalization, or authorize field automatic release.",
+  "limitations": [
+    "Same-domain author global quantity labels, not native instance counting truth or physical/session independence.",
+    "Absence from the bound project exposure registry does not certify never-viewed or pretraining-unseen images.",
+    "Normal16 is historical exposed nonconcurrent and never pooled with24; constant normal counts do not prove quantity skill.",
+    "CPU replay verifies saved bytes/text/schema/postprocessing; it cannot authenticate historical model returns or remeasure latency.",
+    "G repeats the same correlated VLM; no independent confirmation or field safety claim.",
+    "255/63 BOMs per image are correlated rule replays, not additional independent photographs.",
+    "All24 have total6, bolt2, bracket0; changing nut/washer composition is tested but arbitrary total counts and bracket positives are not.",
+    "Author-derived global labels are preserved as a new named rule; original unresolved truth is not rewritten."
+  ],
+  "evidence": [
+    {
+      "path": "docs/v0.8/LOCO_COMBINED_RESULT.md",
+      "sha256": "bc45c7c076a492cbbbeeb28f5bafb8b1d550b552525c1a27efe8e5a75d9c28b1"
+    },
+    {
+      "path": "docs/v0.8/loco_combined_freeze_v1/freeze.json",
+      "sha256": "513b461a7574e6c68f1bdd6674769fe4b9fa95f3626b1302969f01c70b3deffd"
+    },
+    {
+      "path": "docs/v0.8/loco_combined_method_selection_v1.json",
+      "sha256": "fe6efb0160ac82cce73423494446c793b2ef87bff8c29f0dee91ca6111071114"
+    },
+    {
+      "path": "evaluation-runs/v0.8/loco_combined_v1/run.json",
+      "sha256": "176e668dde66a1ddd5bcdc8c3fbcd9c9756723c59106c74001df662add549780"
+    },
+    {
+      "path": "evaluation-runs/v0.8/loco_combined_v1/predictions.json",
+      "sha256": "54f650fcf99568e05c4452bd77a7c471b97e83eee5b873a549caca4f80388d60"
+    },
+    {
+      "path": "evaluation-runs/v0.8/loco_combined_v1/analysis.json",
+      "sha256": "5f880c132299b6f78657ab9513b5a1121e3cb8003bacc483e99efd746b2fac4b"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-run-v1.log",
+      "sha256": "5256b04d77da5c57663a5f8f119bcd85352ca7a407a862da10edd4c0e3514b40"
+    },
+    {
+      "path": "scripts/v08/run_loco_combined.py",
+      "sha256": "16f12bc8ac45cc7536a76bdb5600a5139a447479e8081fcf70d897ca301490cf"
+    },
+    {
+      "path": "docs/v0.8/LOCO_COMBINED_RUNNER_PLAN.md",
+      "sha256": "6348669aeab05e6b8c96a7009312db549302ee9d6376c41451849f1ad4dc5a8b"
+    },
+    {
+      "path": "scripts/v08/score_loco_combined.py",
+      "sha256": "9391920712f523780e099836c54f21024cc2778360c94fdd68a25dc5fef28c94"
+    },
+    {
+      "path": "docs/v0.8/LOCO_COMBINED_SCORING_DRAFT.md",
+      "sha256": "01c8bbb0b3482c13d185b38562e53c180c064c63bf9f70002c745f9923bc9250"
+    },
+    {
+      "path": "scripts/v08/audit_loco_combined.py",
+      "sha256": "f1684baf929b47bb8b8e84ff2560d5bbb6f582b549a6e433e8922f9733b10711"
+    },
+    {
+      "path": "scripts/v08/audit_identity_reference_guarded.py",
+      "sha256": "a2be00fc3d12583583e03eb06265248550a7f085ee4019d5c88f2b35d4e4ac5c"
+    },
+    {
+      "path": "tests/test_loco_combined_audit_v08.py",
+      "sha256": "531a5cfb32d8e511eb46add224890e7bd94a4fa5cf3e878084b6ec17a098eeb7"
+    },
+    {
+      "path": "docs/v0.8/LOCO_COMBINED_AUDIT_CONTRACT.md",
+      "sha256": "dd71ef6c4f0ea191275fa0a7eeb08c6cbb83fdbd305247be91228f0eb6522bb1"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-independent-audit-v2.json",
+      "sha256": "f9f1256442934061982c3aaca7f96c15a365d83e2a5aff000a5fef13ea20f263"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-independent-audit-v2.log",
+      "sha256": "109dfbe9da30773193ecc76cd0cc3a71e599775b3ab4bbe591df431dc8ef389c"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-independent-audit-v1.json",
+      "sha256": "eb2ecb224ad2ac357dab1a8461d775ae0fe33ba8e7d9906315f90ad7c23307ea"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-independent-audit-v1.log",
+      "sha256": "ec6611ae2f2a22ea02dc0efe1cdc26233febf8bf1a1760f3b748360879b4d7f5"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-auditor-v1-source/receipt.json",
+      "sha256": "62ff271a1dbca62cde7f28efe0361f60518c2afd2008f09da538b43053afa80e"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-auditor-v1-source/scripts/v08/audit_loco_combined.py",
+      "sha256": "a6b9d9d9e23d0dd759c2f65b2c4285d0fc6bde484846495fddfc412f3be58bb6"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-audit-repair-v2.json",
+      "sha256": "d1ee002251079bb63993c0e49d98b45ebf9bfe929a36923afa95386ba7b2c4cb"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-audit-contracts-v3.log",
+      "sha256": "a8239f93d41d383bb338d7470e44aac65145f517b4f8bf9cf6e7599f4ab03b78"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-audit-contracts-v3.xml",
+      "sha256": "ada589330741f6a950b2eb2d736153866f245ebe709226a30761a0dc8e2360d6"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-source-preflight-v1.json",
+      "sha256": "5a099cd576d4014c306beeb9183247953d7dea13303333d1d7e7b020b80e7cf4"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-preflight-v1.json",
+      "sha256": "95a884ea6bc496389c205e272bf6d0fede0702ac9c7fa426e1f529c9f18c1f22"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-label-semantics-v1.json",
+      "sha256": "e15a917d708a4c9edb27a10602d03b5628c423bfb3d593a900bec54af1146484"
+    },
+    {
+      "path": "test-results/v0.8-loco-combined-label-peer-review-v1.json",
+      "sha256": "52adf819d42a68672d637d97c6ff64cfafe4b11501944ed58cc86789048e35eb"
+    },
+    {
+      "path": "datasets/raw/mvtec_loco_ad/screw_bag/defects_config.json",
+      "sha256": "99d2f93ac25f632d594ec0e4e610d30c157b8f4985cd3bd76828375103bdaacd"
+    },
+    {
+      "path": "test-results/v0.7/public-paired-audit-v1.json",
+      "sha256": "94c71e45341a5065ee90fe601e606cd3a54242094d5dcc08770f6aae8c588fe9"
+    },
+    {
+      "path": "test-results/v0.8-identity-reference-independent-audit-v1.json",
+      "sha256": "51e38affdf7c226d37377c5de8ac39df23c0e756159d11438290e47a0874bec4"
+    },
+    {
+      "path": "docs/v0.8/IDENTITY_REFERENCE_GUARDED_DECISION.json",
+      "sha256": "d19cf9f82e10f815e37b5a812c48f8841c4602151f12b3a8a8bec830f82b543f"
+    }
+  ],
+  "evidence_provenance": "The successful independent audit binds the complete raw/input artifact inventory; this decision binds its bytes plus original failure, repair, contracts and prerequisite receipts."
+}

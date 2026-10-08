@@ -1,0 +1,137 @@
+{
+  "schema": "kitguard.v08.heterogeneous-veto.decision.v1",
+  "decided_at": "2026-10-01T23:01:56.594545+00:00",
+  "candidate": "fixed_v1_faster_rcnn_nut_box_veto_threshold_0_5",
+  "decision": "candidate_rejected",
+  "candidate_rejected": true,
+  "production_unchanged": true,
+  "production_default": "spatial_guarded",
+  "v07_sealed_artifacts_unchanged": true,
+  "automatic_promotion": false,
+  "new_holdout": false,
+  "independent_audit_status": "passed",
+  "predeclared_conditions": {
+    "all_51_attempted": true,
+    "no_wrong": false,
+    "no_errors": true,
+    "no_all_four_false_ready": false,
+    "no_correct_coverage_loss": false,
+    "no_loco_correct_loss": false
+  },
+  "predeclared_conditions_met": false,
+  "eligible_for_new_source_validation": false,
+  "planned_photos": 51,
+  "baseline_outcomes": {
+    "C": 41,
+    "W": 3,
+    "U": 7,
+    "E": 0,
+    "N": 0
+  },
+  "candidate_outcomes": {
+    "C": 27,
+    "W": 2,
+    "U": 22,
+    "E": 0,
+    "N": 0
+  },
+  "paired_transitions": {
+    "C->C": 27,
+    "C->U": 14,
+    "U->U": 7,
+    "W->U": 1,
+    "W->W": 2
+  },
+  "false_ready_summary": {
+    "all_four": {
+      "base": 3,
+      "fused": 2
+    },
+    "source_supported": {
+      "base": 0,
+      "fused": 0
+    }
+  },
+  "loco_true_washer_negative_controls": {
+    "planned": 16,
+    "previously_C_denominator": 14,
+    "errors": 0,
+    "veto_applied": 16,
+    "previously_C_to_U": 14,
+    "unchanged_C": 0
+  },
+  "reasons": [
+    "Two wrong actionable cases and two all-four false-ready images remain.",
+    "Fourteen previously correct actionable LOCO photographs become uncertain; all sixteen real-washer controls are vetoed.",
+    "One wrong case becomes uncertain; no count is repaired."
+  ],
+  "initial_audit_failure": {
+    "kind": "auditor_fingerprint_namespace_mismatch",
+    "model_execution_failure": false,
+    "explanation": "The first auditor used bare RGB pixels for source_decoded_rgb_sha256. The frozen v0.7 algorithm hashes size + |RGB| + RGB pixels. The auditor was corrected to reproduce that exact algorithm; inputs, frozen sources and model results were not changed.",
+    "regression": "Same pixel-byte sequence with different image dimensions must produce different source hashes.",
+    "failure_log_preserved": true,
+    "pre_fix_auditor_preserved": true
+  },
+  "validation": {
+    "synthetic_auditor_tests_passed": 26,
+    "ruff": "passed",
+    "model_called_by_auditor": false
+  },
+  "limitations": [
+    "All 51 photos were already exposed; the candidate was motivated by their failures.",
+    "No recorded train/val/test original-source overlap does not establish domain or physical-object/session independence.",
+    "Two-class detector does not independently confirm washer identity.",
+    "No VLM rerun, no live end-to-end latency or human task-benefit result."
+  ],
+  "artifacts": {
+    "plan": {
+      "path": "docs/v0.8/HETEROGENEOUS_VETO_PLAN.md",
+      "sha256": "561e271eabedce8f91231b52900a750bd842834429d37f3f1b741bd42a9ddc80"
+    },
+    "exposure_audit": {
+      "path": "docs/v0.8/heterogeneous_veto_exposure_v1.json",
+      "sha256": "348b0b30310936f76b8ebb97c5d1cac75c2261b6823d0c319aa6feee8b9d86b2"
+    },
+    "freeze": {
+      "path": "docs/v0.8/detector_veto_freeze_v1/freeze.json",
+      "sha256": "c86c967e48f28c33c541a9d9943ba7d6cb28af8ecdfbbe48b7bf32ff1fd590fb"
+    },
+    "run": {
+      "path": "evaluation-runs/v0.8/detector_veto_v1/run.json",
+      "sha256": "136205c856e577d01b8aaf50f3af9634378663d17d9c5df619dc3de6d9456db6"
+    },
+    "predictions": {
+      "path": "evaluation-runs/v0.8/detector_veto_v1/predictions.jsonl",
+      "sha256": "554e24b74a2e1a07bc9b2323f9f0be5d4011dc4343b53b53e00cb9fdd52ee2a7"
+    },
+    "analysis": {
+      "path": "evaluation-runs/v0.8/detector_veto_v1/analysis.json",
+      "sha256": "7f9419f4cdcbc6f0ab1079790936cd33b35903b052cb5990745398cd2ae574b1"
+    },
+    "independent_audit": {
+      "path": "test-results/v0.8/detector-veto-independent-audit-v1.json",
+      "sha256": "4fa0a7eac03e5fd0373d47f0ca7eb13dfc3aad52f25fe125b50cc0b99b1ebc53"
+    },
+    "auditor": {
+      "path": "scripts/v08/audit_heterogeneous_veto.py",
+      "sha256": "2a47b8ea4efe7482c17f30c158e2f3e3eb48e71c61b2becb11fb5d63ea53c6aa"
+    },
+    "result_report": {
+      "path": "docs/v0.8/HETEROGENEOUS_VETO_RESULT.md",
+      "sha256": "a960711f609339c1ebae8ffd67f6ad7034f1428e1963c7ec11652f4273cd41d0"
+    },
+    "initial_audit_failure_log": {
+      "path": "test-results/v0.8-detector-veto-independent-audit-v1.log",
+      "sha256": "34eaecd4d3f56b86f402c51f850e48bf2f8d40824aa2955c382b270f3db2a3d4"
+    },
+    "initial_auditor_snapshot": {
+      "path": "test-results/v0.8-auditor-before-rgb-fingerprint-fix.py",
+      "sha256": "faa8fe15c7be2b570563a0606d26f4524fb52a39d12885033c74c42d6128d8a8"
+    },
+    "successful_audit_log": {
+      "path": "test-results/v0.8-detector-veto-independent-audit-v2.log",
+      "sha256": "e3720a3ac3ad60c1dbf4040629aa8f67d5519307b4f12f5b60a744c30e901321"
+    }
+  }
+}

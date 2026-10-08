@@ -1,0 +1,16 @@
+{
+  "url": "https://sw.inje.ac.kr/data/editor/2609/thumb-1711efda31908d4f16d6c5d6462e27e9_1788832244_2184_1100x1597.png",
+  "path": "05_补充官方资料/附件/仁济大学_正文海报_1.png",
+  "source": "https://sw.inje.ac.kr/bbs/board.php?bo_table=news&wr_id=71",
+  "kind": "content_image",
+  "retrieved_at": "2026-09-24T16:41:45.965547+09:00",
+  "http_status": 200,
+  "final_url": "https://sw.inje.ac.kr/data/editor/2609/thumb-1711efda31908d4f16d6c5d6462e27e9_1788832244_2184_1100x1597.png",
+  "content_type": "image/png",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 1862123,
+  "sha256": "e5cd2473af0102b2feb41f53b4173ba869dbdeae930d5a8cfb53f72776669302",
+  "magic_hex": "89504e470d0a1a0a0000000d49484452"
+}

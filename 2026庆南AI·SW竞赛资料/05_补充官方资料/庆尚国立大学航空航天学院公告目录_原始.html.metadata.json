@@ -1,0 +1,16 @@
+{
+  "url": "https://www.gnu.ac.kr/aero/na/ntt/selectNttList.do?bbsId=4226&mi=13821",
+  "path": "05_补充官方资料/庆尚国立大学航空航天学院公告目录_原始.html",
+  "source": "https://contest.gnict.org/",
+  "kind": "listing",
+  "retrieved_at": "2026-09-24T16:29:55.596517+09:00",
+  "http_status": 200,
+  "final_url": "https://www.gnu.ac.kr/aero/na/ntt/selectNttList.do?bbsId=4226&mi=13821",
+  "content_type": "text/html;charset=UTF-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 52232,
+  "sha256": "b53f036f7b1ce6c76afc132c12343f0510c0bbcf06ba8d88ae1c477eb0ecda7a",
+  "magic_hex": "0d0a0d0a0d0a3c21646f637479706520"
+}

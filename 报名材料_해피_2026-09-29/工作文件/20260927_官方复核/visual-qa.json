@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-27",
+  "document": "/Users/lkc/Downloads/AI·SW/报名材料_해피_2026-09-29/04_20260927更新_仍待补地址签字/01_해피_참가신청서_개발계획서_20260927_주소서명전.docx",
+  "pdf": "/Users/lkc/Downloads/AI·SW/报名材料_해피_2026-09-29/04_20260927更新_仍待补地址签字/01_해피_참가신청서_개발계획서_20260927_주소서명전.pdf",
+  "pdf_sha256": "2b000337c01565c2a873d9ae5f43e18864ef97a3a08bd30a6f9265e6f9d72a7b",
+  "page_count": 4,
+  "visual_review": "All four rendered page PNGs inspected. Korean glyphs visible; no clipping or overflow observed.",
+  "renderer_output": "/Users/lkc/Downloads/AI·SW/报名材料_해피_2026-09-29/工作文件/20260927_官方复核/render-fontfixed",
+  "fontconfig": "/Users/lkc/Downloads/AI·SW/tmp/hwp_template_check/fonts.conf",
+  "original_docx_unchanged": true,
+  "other_docx_parts_unchanged": true,
+  "ready_to_submit": false,
+  "missing": [
+    "addresses",
+    "official degree confirmation",
+    "enrollment certificates",
+    "dates and personal signatures",
+    "organizer confirmation of prior development and leader eligibility"
+  ]
+}

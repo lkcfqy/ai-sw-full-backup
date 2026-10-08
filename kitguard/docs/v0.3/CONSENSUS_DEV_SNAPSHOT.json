@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-09-26T11:41:50.462783+00:00",
+  "snapshot": "/Users/lkc/Downloads/AI\u00b7SW/kitguard/tmp/experiments/v03-consensus-dev1",
+  "files": {
+    "scripts/run_benchmark.py": "5c4183dfe4920984cab9a67c95a9a60368f54146f95d0d92791f279ed03a6d60",
+    "kitguard/store.py": "0ab6802be1cedea76136052fe51b10f98a8c417a6b1d01af66a43f6e1ee931f2",
+    "kitguard/models.py": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+    "kitguard/vision.py": "38c939c3db4486cb2d12e997b15ed8c86b39bdaca86a75d007391bf15912e064",
+    "kitguard/feedback.py": "3959b6a03aae642827f1fe6bbf8b5cc5005967ea661e9648d1967a98b3e8aa3e",
+    "kitguard/instructions.py": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+    "kitguard/evaluation.py": "4bf45f22ba460e936275cc1fc5dc968cce94ba4368ed078b985a192942452759",
+    "kitguard/__init__.py": "93ff7393ccb4d2d12337825dbb3d9e89302a32a4b17c13fdbf5526f50633c05f",
+    "kitguard/spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+    "kitguard/schemas.py": "8a820a7290dbccddbc9c7d8fce487e69d2f4ad53fc11fe68251706b829489c37",
+    "kitguard/consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+    "kitguard/app.py": "38ec2bc4b9f91cba504755ab5a62206d86c0d2c892a11e85b1f01af2939d4c81",
+    "kitguard/evidence.py": "a9e1bd9a0ab79020f6176ff55d0d212203c6b8d1e8b78fa1078ed5a579e70e8c"
+  }
+}

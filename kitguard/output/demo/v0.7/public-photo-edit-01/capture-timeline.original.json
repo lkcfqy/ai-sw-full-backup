@@ -1,0 +1,77 @@
+[
+  {
+    "name": "01-public-library.png",
+    "captured_at": "2026-10-01T21:20:00.448Z",
+    "url": "http://127.0.0.1:8765/static/demo.html"
+  },
+  {
+    "name": "02-r1-before-inference.png",
+    "captured_at": "2026-10-01T21:20:05.936Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "03-real-inference-running.png",
+    "captured_at": "2026-10-01T21:20:42.733Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "04-r1-actual-difference.png",
+    "captured_at": "2026-10-01T21:21:17.227Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "05-digital-review-form.png",
+    "captured_at": "2026-10-01T21:21:27.396Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "06-natural-instruction.png",
+    "captured_at": "2026-10-01T21:21:43.719Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "07-model-proposal-before-approval.png",
+    "captured_at": "2026-10-01T21:22:39.855Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "08-r2-invalidates-r1.png",
+    "captured_at": "2026-10-01T21:22:40.161Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "09-explicit-same-photo-replay.png",
+    "captured_at": "2026-10-01T21:22:46.270Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "10-r2-real-result.png",
+    "captured_at": "2026-10-01T21:24:11.602Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "11-versioned-digital-reviews.png",
+    "captured_at": "2026-10-01T21:24:21.071Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "12-real-tool-trace.png",
+    "captured_at": "2026-10-01T21:27:46.488Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "13-evidence-download.png",
+    "captured_at": "2026-10-01T21:28:12.644Z",
+    "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+  },
+  {
+    "name": "14-offline-evidence.png",
+    "captured_at": "2026-10-01T21:29:03.192Z",
+    "url": "http://127.0.0.1:8766/OPEN_ME.html"
+  },
+  {
+    "name": "15-offline-versioned-reviews.png",
+    "captured_at": "2026-10-01T21:29:03.633Z",
+    "url": "http://127.0.0.1:8766/OPEN_ME.html"
+  }
+]

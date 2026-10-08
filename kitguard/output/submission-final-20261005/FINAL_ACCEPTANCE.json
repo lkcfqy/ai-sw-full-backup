@@ -1,0 +1,230 @@
+{
+  "schema": "kitguard.final-submission-acceptance.v1",
+  "recorded_at_utc": "2026-10-05T09:09:19.908945+00:00",
+  "status": "passed",
+  "code_version": "0.9.0.dev4",
+  "material_revision": "2026-10-05",
+  "scope": "Local engineering and material readiness; not official acceptance, eligibility certification, field accuracy or a rank prediction",
+  "full_regression": {
+    "tests": 1877,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 1877,
+    "recorded_seconds": 61.259,
+    "junit": "full-regression.xml",
+    "junit_sha256": "32b0a3b30c8fbe6885a2604d3c40b14c2d3703365feb662a3d4601095f8c9397",
+    "log": "full-regression.log",
+    "command": ".venv/bin/python -m pytest -q -p no:cacheprovider --junitxml=test-results/submission-final-20261005/full-regression.xml",
+    "data_scope": "isolated test-results/submission-final-20261005/cpu-runtime; synthetic observers, offline flags, no real model"
+  },
+  "source_acceptance": {
+    "archive_sha256": "e60aa641e032bf59741a1f4c27142436fe910cebd0e28f1fe65b2d1d1f804f06",
+    "scope": "Actual final ZIP extracted; existing Python dependencies; synthetic CPU contracts; no MLX/model or human participation",
+    "status": "passed",
+    "payload_files_verified": 610,
+    "private_or_weight_members": [],
+    "common_credential_pattern_candidates": [],
+    "source_contracts": {
+      "tests": 68,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "junit_sha256": "2ba335b9ced45cc5bdeb26af57dc3cfebfd434ba8bcc413f89671ee599600792"
+  },
+  "live_runtime": {
+    "version": "0.9.0.dev4",
+    "mission_id": "mission_4d019e6cec4f4ad8b8e9",
+    "status": "completed",
+    "scenarios": 3,
+    "real_mlx_checks": 4,
+    "elapsed_ms": 135542,
+    "findings": [
+      "quantity_difference",
+      "needs_more_evidence",
+      "quantities_match"
+    ],
+    "human_participants": 0,
+    "physical_completions": 0,
+    "new_image_accuracy_denominator": 0,
+    "classification": "final_engineering_replay_on_three_existing_public_development_photos",
+    "observer_unchanged": true
+  },
+  "live_runtime_evidence": {
+    "path": "KitGuard_final_runtime_evidence.zip",
+    "sha256": "1f0a5f95b3083b7389d6619555760dadf553502ce0f9525b15321e87088a81eb"
+  },
+  "observer_frozen": {
+    "kitguard/vision.py": "e0c30d23c2620bfdc4bdf453f828c0a353da957eab89ab3c2ec92b7840f79b08",
+    "kitguard/spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+    "kitguard/consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+    "kitguard/identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696"
+  },
+  "preflight": {
+    "ready": true,
+    "version": "0.9.0.dev4",
+    "checked_at": "2026-10-05T08:53:42.486671+00:00",
+    "verification_level": "read_only_preflight_without_model_load_or_inference"
+  },
+  "material_qa": {
+    "version": "0.9.0.dev4",
+    "material_revision": "20261005",
+    "final_materials_frozen": true,
+    "status": "pass",
+    "artifacts": {
+      "KitGuard_report_5p.pdf": {
+        "bytes": 197390,
+        "sha256": "cd8f3a139562c16f547d7118f3ff2406f7af150be1f2c7baf2830b1311672ce4"
+      },
+      "KitGuard_agent_1p.pdf": {
+        "bytes": 74193,
+        "sha256": "ff913fe38b5dc727f083a0d38782209409b4fc9d56198b86ae82090a5a1146e7"
+      },
+      "KitGuard_presentation_9slides.pptx": {
+        "bytes": 136486,
+        "sha256": "46099c5695d414f181e6219f6f2514249b49d5dd9ea65246a938327f768a9259"
+      },
+      "KitGuard_presentation_9slides.pdf": {
+        "bytes": 609654,
+        "sha256": "2810ec36bf0595afffa1e63b400c1319d7316bcc6bdaac36686fd79d3251ed91"
+      }
+    },
+    "visual_qa": {
+      "report_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "agent_pages": [
+        1
+      ],
+      "pptx_final_rendered_slides": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ppt_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "each_page_individually_inspected": true,
+      "findings": []
+    },
+    "pptx_structure": "9 slides; 4 native editable tables; package integrity, geometry, heading fit, font policy and first-party import passed",
+    "ppt_pdf_conversion": "Bundled LibreOffice with private fontconfig; all native PPT text segments preserved and all 9 PDF pages visually inspected",
+    "native_powerpoint_verified": false,
+    "revisions": [
+      "Team leader 남청청 and member 이개심; 일반부; 국립창원대학교",
+      "Standardized source filename KitGuard_source.zip",
+      "Concrete 2/2/2/0 to 3/2/2/0 stale-ready ablation",
+      "LOCO24 separate same-domain fixed evaluation; no 51+24 pooling",
+      "10/5 live engineering replay: 3 scenarios, 4 real MLX; no new accuracy denominator",
+      "0.9.0.dev4 observation core unchanged; material revision only",
+      "No claims of first place, actual human efficiency, physical completion or proven business demand"
+    ],
+    "builders": [
+      "scripts/submission/build_materials.py",
+      "scripts/submission/build_slides.mjs",
+      "scripts/submission/export_presentation_pdf.py"
+    ]
+  },
+  "video": {
+    "path": "KitGuard_demo_ko.mp4",
+    "duration_seconds": 177.416667,
+    "sha256": "3a4eb4554935d6e9e38ae03a33c0b286246b4d03e7d6356a1671693d879cb9d5",
+    "server_mission_ms": 137071,
+    "method": "Timed actual browser samples, actual gaps held as still screens; no native continuous recording claim. Full own-goal and all-case timelines retained, final completed screen held2 extra seconds. All model waits retained. Final5sec tool-result still. Separate captions and local Yuna synthetic narration. Screenshots unretouched.",
+    "full_decode": "passed",
+    "native_browser_playback": "verified"
+  },
+  "official_submission_check": {
+    "schema": "kitguard.official-submission-check.v1",
+    "checked_at_utc": "2026-10-05T09:09:19.907257+00:00",
+    "sources": {
+      "notice": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=5",
+      "rules": "https://contest.gnict.org/rule.php",
+      "application": "https://contest.gnict.org/apply.php",
+      "final_form": "https://forms.gle/FUVSCAtjd8w8ksRg8"
+    },
+    "form_pages_inspected": [
+      "introduction",
+      "team_information_and_upload"
+    ],
+    "deadline": "2026-10-06T12:00:00+09:00",
+    "upload_count": 1,
+    "upload_format": "ZIP",
+    "max_upload_GB": 10,
+    "official_filename_pattern": "신청구분_신청분야 코드_팀장명.zip",
+    "final_filename": "일반부_20_남청청.zip",
+    "division": "일반부",
+    "track_code": "20",
+    "limits": {
+      "report_pages_max": 5,
+      "agent_explanation_pages": 1,
+      "source": "executable source ZIP with documentation",
+      "video_seconds_max": 180,
+      "presentation_slides_max": 10
+    },
+    "minimum": "Level 2 functional prototype with actual end-to-end execution; Level 3 MVP recommended",
+    "reuse_and_ai_assistance": "allowed with contribution, source and rights disclosure",
+    "new_humans_or_physical_purchases_required": false,
+    "document_sha256": "7f47dac1f5d6fc435cebb4700d4a18df18adc33e62024d517ee1abe42e28bb2c",
+    "redacted_upload_page_sha256": "fa04787d7ad7af5b9435ca88cd6d5f242acbc127292d5c116c8b4ff1423bfb3b",
+    "submission_performed": false,
+    "official_receipt_obtained": false,
+    "remaining_user_action": "Fill true registered team information, upload the one final ZIP, complete later required questions, submit and save confirmation."
+  },
+  "verification_receipt_bindings": {
+    "test-results/submission-final-20261005/engineering-review.json": "c1b66e75602ea5d8c59d962880d118acfd9e54872dc543e37171b1b79ae866b1",
+    "test-results/submission-final-20261005/full-regression.xml": "32b0a3b30c8fbe6885a2604d3c40b14c2d3703365feb662a3d4601095f8c9397",
+    "test-results/submission-final-20261005/final-source-verification/FINAL_SOURCE_ACCEPTANCE.json": "5e9cb07334443995ff52a7bf0c186732fea73c934d6c0b391dc088ac6a28714c",
+    "test-results/submission-final-20261005/final-source-verification/source-contracts.xml": "2ba335b9ced45cc5bdeb26af57dc3cfebfd434ba8bcc413f89671ee599600792",
+    "test-results/submission-final-20261005/live-summary.json": "91be01862373b8857f858a7dd8b94c256329c8a8890e9c427d1410a68f742b24",
+    "test-results/submission-final-20261005/readiness-live.json": "6784b1cbab020ce619e2a5d1fa59b3c95a3aec83f9b3c70c8c8ad667964f9106",
+    "output/submission-final-20261005/MATERIALS_QA.json": "899eda48b2fdb4bd263b30a2b20ebd876f74fa72a92f1b68d6ae1af23ca63dc2"
+  },
+  "evidence_limits": {
+    "human_participants": 0,
+    "physical_completions": 0,
+    "new_accuracy_denominator": 0,
+    "general_photo_evaluation": {
+      "n": 51,
+      "correct": 41,
+      "wrong": 3,
+      "uncertain": 7
+    },
+    "loco_same_public_domain_limited_evaluation": {
+      "n": 24,
+      "correct": 23,
+      "wrong": 0,
+      "uncertain": 1
+    },
+    "denominators_pooled": false,
+    "synthetic_cpu_tests_are_photographic_accuracy": false
+  },
+  "not_verified": [
+    "Clean-machine installation",
+    "Operating-system portability beyond Apple Silicon macOS",
+    "Native Microsoft PowerPoint playback",
+    "Actual user efficiency",
+    "Physical fulfilment",
+    "Competition score or rank",
+    "Later form pages or official submission receipt"
+  ]
+}

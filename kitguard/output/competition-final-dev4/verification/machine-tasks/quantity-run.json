@@ -1,0 +1,1307 @@
+{
+  "schema_version": 1,
+  "id": "mission_3d0a8c94afc34c729465",
+  "version": "0.9.0.dev4",
+  "scenario": "order",
+  "status": "completed",
+  "created_at": "2026-10-03T16:21:29.285+00:00",
+  "finished_at": "2026-10-03T16:21:49.500+00:00",
+  "elapsed_ms": 20213,
+  "cancel_requested": false,
+  "purpose": "machine_assistance",
+  "human_participants": 0,
+  "physical_completions": 0,
+  "runtime_identity": {
+    "label": "Qwen3.6-27B · MLX 4-bit · local",
+    "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+    "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+    "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+    "observation_mode": "spatial_guarded",
+    "image_max_side": 1536
+  },
+  "protocol": {
+    "name": "bound_photo_document_goal_v1",
+    "cases": [],
+    "goal": "Produce current-version machine findings and an inspectable digital evidence package.",
+    "plan": [
+      "verify_bound_order",
+      "run_local_vision",
+      "route_from_saved_check",
+      "package_machine_evidence"
+    ],
+    "revision_policy": "No automatic revision. Any input change invalidates the accepted goal; start a new goal explicitly.",
+    "uncertainty_policy": "Stop that case at needs_more_evidence; do not repeatedly infer the same pixels to force agreement.",
+    "timing": "Server monotonic for the entire mission, includes preparation and all model waits; restart is unknown.",
+    "scope": "One current digital order supplied by the operator; source declarations remain unverified."
+  },
+  "protocol_sha256": "2571dfc1efc9abd4ab2c1d422693797374284d215119da023363e8813c5b3a6b",
+  "planned_cases": 1,
+  "planned_checks": 1,
+  "cases": [
+    {
+      "id": "order",
+      "sample_id": null,
+      "bom": {
+        "bolt": 2,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "revision_bom": null,
+      "goal_binding": {
+        "order_id": "ord_cabbbe1e45414ba39b8d",
+        "revision": 1,
+        "evidence_epoch": 1,
+        "photo_id": "img_83648db2d02747289f40",
+        "photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+        "requirements": {
+          "bolt": 2,
+          "nut": 0,
+          "washer": 0,
+          "bracket": 0
+        },
+        "inspection_scope": {
+          "mode": "whole_image",
+          "view_photo_id": "img_83648db2d02747289f40",
+          "view_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "root_photo_id": "img_83648db2d02747289f40",
+          "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "root_width": 768,
+          "root_height": 576,
+          "root_source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+          "root_created_at": "2026-10-03T16:20:21.282+00:00",
+          "region_xyxy": null,
+          "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+          "derivation": "normalized_root_bytes_v1",
+          "scope_declaration": null,
+          "scope_confirmed_at": null
+        },
+        "reference_ids": {},
+        "source_sha256": "0f6057830738422156234f238d72a411a9d5b352f961895905f36f173d5c9200"
+      },
+      "status": "completed",
+      "order_id": "ord_cabbbe1e45414ba39b8d",
+      "finding": "quantity_difference",
+      "steps": [
+        {
+          "index": 1,
+          "tool": "verify_bound_order",
+          "reason": "Verify the accepted version, photo, BOM and scope; never revise the operator's input.",
+          "status": "completed",
+          "started_at": "2026-10-03T16:21:29.287+00:00",
+          "finished_at": "2026-10-03T16:21:29.289+00:00",
+          "binding": {
+            "order_id": "ord_cabbbe1e45414ba39b8d",
+            "revision": 1,
+            "evidence_epoch": 1,
+            "photo_id": "img_83648db2d02747289f40",
+            "photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "requirements": {
+              "bolt": 2,
+              "nut": 0,
+              "washer": 0,
+              "bracket": 0
+            },
+            "inspection_scope": {
+              "mode": "whole_image",
+              "view_photo_id": "img_83648db2d02747289f40",
+              "view_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+              "root_photo_id": "img_83648db2d02747289f40",
+              "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+              "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+              "root_width": 768,
+              "root_height": 576,
+              "root_source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+              "root_created_at": "2026-10-03T16:20:21.282+00:00",
+              "region_xyxy": null,
+              "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+              "derivation": "normalized_root_bytes_v1",
+              "scope_declaration": null,
+              "scope_confirmed_at": null
+            },
+            "reference_ids": {},
+            "source_sha256": "0f6057830738422156234f238d72a411a9d5b352f961895905f36f173d5c9200"
+          },
+          "result": {
+            "order_id": "ord_cabbbe1e45414ba39b8d",
+            "photo_id": "img_83648db2d02747289f40",
+            "source": {
+              "source_note": "Automated engineering use of an exposed public development photo; not a user study. v03-screws-screws_344-8d389e404b12",
+              "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+              "license_note": "MVTec · CC BY-NC-SA 4.0",
+              "schema_version": 1,
+              "kind": "user_declared_photo",
+              "verification": "user_declared_unverified",
+              "physical_completion_allowed": false,
+              "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+              "storage_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+              "original_root_photo_id": "img_83648db2d02747289f40",
+              "declared_at": "2026-10-03T16:20:21.282+00:00",
+              "statement_sha256": "d0ef53961235838d3cccfef84b4c992780cc7de10a8d208275b64a0f77a447e1",
+              "binding_sha256": "df37d0083098c0fa848d5383202dd98a9690c90d543b976b0101c8cfdd9cbfe2"
+            },
+            "input_binding_sha256": "ffba2ead08551648a7da85dbf9605432aff6985cef961bde5ef0d3178611743c"
+          }
+        },
+        {
+          "index": 2,
+          "tool": "local_vision",
+          "reason": "A fresh check is required for this exact version and photograph.",
+          "status": "completed",
+          "started_at": "2026-10-03T16:21:29.290+00:00",
+          "finished_at": "2026-10-03T16:21:49.493+00:00",
+          "binding": {
+            "order_id": "ord_cabbbe1e45414ba39b8d",
+            "revision": 1,
+            "photo_id": "img_83648db2d02747289f40",
+            "photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "evidence_epoch": 1
+          },
+          "result": {
+            "check_id": "chk_f8b12e71139b46fcbeda",
+            "decision": "correct",
+            "latency_ms": 20097,
+            "check_sha256": "bddbdb2d2829146b23c8697d162c47e099309da339335f3c4980b7c244884923"
+          },
+          "job_id": "job_1c82557b2fb041619e8a"
+        },
+        {
+          "index": 3,
+          "tool": "list_differences",
+          "reason": "The stored count comparison has a nonzero difference; preserve the BOM and list the differences.",
+          "status": "completed",
+          "started_at": "2026-10-03T16:21:49.495+00:00",
+          "finished_at": "2026-10-03T16:21:49.496+00:00",
+          "binding": {
+            "check_id": "chk_f8b12e71139b46fcbeda"
+          },
+          "result": {
+            "finding": "quantity_difference",
+            "differences": [
+              {
+                "part": "bolt",
+                "required": 2,
+                "observed": 3,
+                "delta": 1
+              },
+              {
+                "part": "nut",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              },
+              {
+                "part": "washer",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              },
+              {
+                "part": "bracket",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              }
+            ],
+            "uncertain_action": null
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "chk_f8b12e71139b46fcbeda",
+          "order_id": "ord_cabbbe1e45414ba39b8d",
+          "revision": 1,
+          "photo_id": "img_83648db2d02747289f40",
+          "decision": "correct",
+          "observed": {
+            "bolt": 3,
+            "nut": 0,
+            "washer": 0,
+            "bracket": 0
+          },
+          "differences": [
+            {
+              "part": "bolt",
+              "required": 2,
+              "observed": 3,
+              "delta": 1
+            },
+            {
+              "part": "nut",
+              "required": 0,
+              "observed": 0,
+              "delta": 0
+            },
+            {
+              "part": "washer",
+              "required": 0,
+              "observed": 0,
+              "delta": 0
+            },
+            {
+              "part": "bracket",
+              "required": 0,
+              "observed": 0,
+              "delta": 0
+            }
+          ],
+          "issues": [],
+          "action": {
+            "kind": "add_remove",
+            "message": "볼트/螺栓 제거/取出 1 → 다시 촬영 / 然后重新拍摄",
+            "region": null
+          },
+          "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+          "backend": "mlx",
+          "latency_ms": 20097,
+          "created_at": "2026-10-03T16:21:49.391+00:00",
+          "valid": true,
+          "requirements_snapshot": {
+            "bolt": 2,
+            "nut": 0,
+            "washer": 0,
+            "bracket": 0
+          },
+          "inspection_scope": {
+            "mode": "whole_image",
+            "view_photo_id": "img_83648db2d02747289f40",
+            "view_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "root_photo_id": "img_83648db2d02747289f40",
+            "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "root_width": 768,
+            "root_height": 576,
+            "root_source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+            "root_created_at": "2026-10-03T16:20:21.282+00:00",
+            "region_xyxy": null,
+            "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+            "derivation": "normalized_root_bytes_v1",
+            "scope_declaration": null,
+            "scope_confirmed_at": null
+          },
+          "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "observation_verification": {
+            "mode": "spatial_consensus",
+            "same_model_correlated_calls": true,
+            "counts_agree": true,
+            "clear_agreement": true,
+            "passes": [
+              {
+                "transform": "original",
+                "input_sha256": "29350a3b44b6d363cf2394cbbfc8269cea1db1cbfd9c901a7e13dc8ffb5dc2c7",
+                "observed": {
+                  "bolt": 3,
+                  "nut": 0,
+                  "washer": 0,
+                  "bracket": 0
+                },
+                "issues": [],
+                "action": {
+                  "kind": "none",
+                  "message": "All visible hardware objects identified.",
+                  "region": null
+                },
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.25,
+                      0.17
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.14,
+                      0.72
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.57,
+                      0.59
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              },
+              {
+                "transform": "rotate_90_ccw",
+                "input_sha256": "d24bb5713ed324cb6344026a6336d3d8cae89dd1d5d5173faada6f1c99f8df06",
+                "observed": {
+                  "bolt": 3,
+                  "nut": 0,
+                  "washer": 0,
+                  "bracket": 0
+                },
+                "issues": [],
+                "action": {
+                  "kind": "none",
+                  "message": "All visible hardware objects identified.",
+                  "region": null
+                },
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.59,
+                      0.42
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.18,
+                      0.75
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.72,
+                      0.86
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              }
+            ]
+          },
+          "object_evidence": {
+            "protocol": "spatial_inventory_v1",
+            "coordinate_frame": "normalized_original",
+            "objects": [
+              {
+                "part": "bolt",
+                "center": [
+                  0.25,
+                  0.17
+                ]
+              },
+              {
+                "part": "bolt",
+                "center": [
+                  0.14,
+                  0.72
+                ]
+              },
+              {
+                "part": "bolt",
+                "center": [
+                  0.57,
+                  0.59
+                ]
+              }
+            ],
+            "uncertain_parts": []
+          },
+          "reference_evidence": {
+            "protocol": "reference_inputs_v1",
+            "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+            "observation_mode": "spatial_guarded",
+            "preprocessing": "exif_transpose_rgb_thumbnail_lanczos_png_v1",
+            "pillow_version": "12.3.0",
+            "max_side": 512,
+            "prepared_bytes_retained": false,
+            "guarded_identity_uses_references": false,
+            "images": [],
+            "stages": [
+              {
+                "stage": "original",
+                "reference_image_indices": [],
+                "status": "completed"
+              },
+              {
+                "stage": "rotate_90_ccw",
+                "reference_image_indices": [],
+                "status": "completed"
+              },
+              {
+                "stage": "identity",
+                "reference_image_indices": [],
+                "status": "skipped_no_candidates"
+              }
+            ]
+          },
+          "reference_ids": {},
+          "evidence_feedback": null,
+          "tool_trace": [
+            {
+              "step": "observe_image",
+              "status": "completed",
+              "model": "Qwen3.6-27B · MLX 4-bit · local",
+              "latency_ms": 20097
+            },
+            {
+              "step": "derive_counts_from_object_list",
+              "status": "completed",
+              "listed_objects": 3,
+              "uncertain_parts": []
+            },
+            {
+              "step": "compare_orientation_observations",
+              "status": "completed",
+              "clear_agreement": true,
+              "same_model_correlated_calls": true
+            },
+            {
+              "step": "compare_current_requirements",
+              "status": "completed",
+              "revision": 1
+            },
+            {
+              "step": "review_previous_evidence",
+              "status": "not_applicable"
+            },
+            {
+              "step": "choose_next_action",
+              "status": "completed",
+              "decision": "correct",
+              "action_kind": "add_remove"
+            },
+            {
+              "step": "commit_current_evidence",
+              "status": "completed",
+              "revision": 1,
+              "evidence_epoch": 1
+            }
+          ],
+          "photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "observation_context": null,
+          "runtime_identity": {
+            "label": "Qwen3.6-27B · MLX 4-bit · local",
+            "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+            "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+            "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+            "observation_mode": "spatial_guarded",
+            "image_max_side": 1536
+          },
+          "evidence_epoch": 1
+        }
+      ],
+      "snapshot": {
+        "id": "ord_cabbbe1e45414ba39b8d",
+        "title": "[MACHINE TASK] quantity",
+        "requirements": {
+          "bolt": 2,
+          "nut": 0,
+          "washer": 0,
+          "bracket": 0
+        },
+        "revision": 1,
+        "status": "needs_action",
+        "created_at": "2026-10-03T16:20:21.282+00:00",
+        "updated_at": "2026-10-03T16:21:49.391+00:00",
+        "latest_check": {
+          "id": "chk_f8b12e71139b46fcbeda",
+          "order_id": "ord_cabbbe1e45414ba39b8d",
+          "revision": 1,
+          "photo_id": "img_83648db2d02747289f40",
+          "decision": "correct",
+          "observed": {
+            "bolt": 3,
+            "nut": 0,
+            "washer": 0,
+            "bracket": 0
+          },
+          "differences": [
+            {
+              "part": "bolt",
+              "required": 2,
+              "observed": 3,
+              "delta": 1
+            },
+            {
+              "part": "nut",
+              "required": 0,
+              "observed": 0,
+              "delta": 0
+            },
+            {
+              "part": "washer",
+              "required": 0,
+              "observed": 0,
+              "delta": 0
+            },
+            {
+              "part": "bracket",
+              "required": 0,
+              "observed": 0,
+              "delta": 0
+            }
+          ],
+          "issues": [],
+          "action": {
+            "kind": "add_remove",
+            "message": "볼트/螺栓 제거/取出 1 → 다시 촬영 / 然后重新拍摄",
+            "region": null
+          },
+          "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+          "backend": "mlx",
+          "latency_ms": 20097,
+          "created_at": "2026-10-03T16:21:49.391+00:00",
+          "valid": true,
+          "requirements_snapshot": {
+            "bolt": 2,
+            "nut": 0,
+            "washer": 0,
+            "bracket": 0
+          },
+          "inspection_scope": {
+            "mode": "whole_image",
+            "view_photo_id": "img_83648db2d02747289f40",
+            "view_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "root_photo_id": "img_83648db2d02747289f40",
+            "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "root_width": 768,
+            "root_height": 576,
+            "root_source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+            "root_created_at": "2026-10-03T16:20:21.282+00:00",
+            "region_xyxy": null,
+            "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+            "derivation": "normalized_root_bytes_v1",
+            "scope_declaration": null,
+            "scope_confirmed_at": null
+          },
+          "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "observation_verification": {
+            "mode": "spatial_consensus",
+            "same_model_correlated_calls": true,
+            "counts_agree": true,
+            "clear_agreement": true,
+            "passes": [
+              {
+                "transform": "original",
+                "input_sha256": "29350a3b44b6d363cf2394cbbfc8269cea1db1cbfd9c901a7e13dc8ffb5dc2c7",
+                "observed": {
+                  "bolt": 3,
+                  "nut": 0,
+                  "washer": 0,
+                  "bracket": 0
+                },
+                "issues": [],
+                "action": {
+                  "kind": "none",
+                  "message": "All visible hardware objects identified.",
+                  "region": null
+                },
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.25,
+                      0.17
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.14,
+                      0.72
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.57,
+                      0.59
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              },
+              {
+                "transform": "rotate_90_ccw",
+                "input_sha256": "d24bb5713ed324cb6344026a6336d3d8cae89dd1d5d5173faada6f1c99f8df06",
+                "observed": {
+                  "bolt": 3,
+                  "nut": 0,
+                  "washer": 0,
+                  "bracket": 0
+                },
+                "issues": [],
+                "action": {
+                  "kind": "none",
+                  "message": "All visible hardware objects identified.",
+                  "region": null
+                },
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.59,
+                      0.42
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.18,
+                      0.75
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.72,
+                      0.86
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              }
+            ]
+          },
+          "object_evidence": {
+            "protocol": "spatial_inventory_v1",
+            "coordinate_frame": "normalized_original",
+            "objects": [
+              {
+                "part": "bolt",
+                "center": [
+                  0.25,
+                  0.17
+                ]
+              },
+              {
+                "part": "bolt",
+                "center": [
+                  0.14,
+                  0.72
+                ]
+              },
+              {
+                "part": "bolt",
+                "center": [
+                  0.57,
+                  0.59
+                ]
+              }
+            ],
+            "uncertain_parts": []
+          },
+          "reference_evidence": {
+            "protocol": "reference_inputs_v1",
+            "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+            "observation_mode": "spatial_guarded",
+            "preprocessing": "exif_transpose_rgb_thumbnail_lanczos_png_v1",
+            "pillow_version": "12.3.0",
+            "max_side": 512,
+            "prepared_bytes_retained": false,
+            "guarded_identity_uses_references": false,
+            "images": [],
+            "stages": [
+              {
+                "stage": "original",
+                "reference_image_indices": [],
+                "status": "completed"
+              },
+              {
+                "stage": "rotate_90_ccw",
+                "reference_image_indices": [],
+                "status": "completed"
+              },
+              {
+                "stage": "identity",
+                "reference_image_indices": [],
+                "status": "skipped_no_candidates"
+              }
+            ]
+          },
+          "reference_ids": {},
+          "evidence_feedback": null,
+          "tool_trace": [
+            {
+              "step": "observe_image",
+              "status": "completed",
+              "model": "Qwen3.6-27B · MLX 4-bit · local",
+              "latency_ms": 20097
+            },
+            {
+              "step": "derive_counts_from_object_list",
+              "status": "completed",
+              "listed_objects": 3,
+              "uncertain_parts": []
+            },
+            {
+              "step": "compare_orientation_observations",
+              "status": "completed",
+              "clear_agreement": true,
+              "same_model_correlated_calls": true
+            },
+            {
+              "step": "compare_current_requirements",
+              "status": "completed",
+              "revision": 1
+            },
+            {
+              "step": "review_previous_evidence",
+              "status": "not_applicable"
+            },
+            {
+              "step": "choose_next_action",
+              "status": "completed",
+              "decision": "correct",
+              "action_kind": "add_remove"
+            },
+            {
+              "step": "commit_current_evidence",
+              "status": "completed",
+              "revision": 1,
+              "evidence_epoch": 1
+            }
+          ],
+          "photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "observation_context": null,
+          "runtime_identity": {
+            "label": "Qwen3.6-27B · MLX 4-bit · local",
+            "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+            "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+            "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+            "observation_mode": "spatial_guarded",
+            "image_max_side": 1536
+          },
+          "evidence_epoch": 1
+        },
+        "checks": [
+          {
+            "id": "chk_f8b12e71139b46fcbeda",
+            "order_id": "ord_cabbbe1e45414ba39b8d",
+            "revision": 1,
+            "photo_id": "img_83648db2d02747289f40",
+            "decision": "correct",
+            "observed": {
+              "bolt": 3,
+              "nut": 0,
+              "washer": 0,
+              "bracket": 0
+            },
+            "differences": [
+              {
+                "part": "bolt",
+                "required": 2,
+                "observed": 3,
+                "delta": 1
+              },
+              {
+                "part": "nut",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              },
+              {
+                "part": "washer",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              },
+              {
+                "part": "bracket",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              }
+            ],
+            "issues": [],
+            "action": {
+              "kind": "add_remove",
+              "message": "볼트/螺栓 제거/取出 1 → 다시 촬영 / 然后重新拍摄",
+              "region": null
+            },
+            "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+            "backend": "mlx",
+            "latency_ms": 20097,
+            "created_at": "2026-10-03T16:21:49.391+00:00",
+            "valid": true,
+            "requirements_snapshot": {
+              "bolt": 2,
+              "nut": 0,
+              "washer": 0,
+              "bracket": 0
+            },
+            "inspection_scope": {
+              "mode": "whole_image",
+              "view_photo_id": "img_83648db2d02747289f40",
+              "view_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+              "root_photo_id": "img_83648db2d02747289f40",
+              "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+              "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+              "root_width": 768,
+              "root_height": 576,
+              "root_source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+              "root_created_at": "2026-10-03T16:20:21.282+00:00",
+              "region_xyxy": null,
+              "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+              "derivation": "normalized_root_bytes_v1",
+              "scope_declaration": null,
+              "scope_confirmed_at": null
+            },
+            "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "observation_verification": {
+              "mode": "spatial_consensus",
+              "same_model_correlated_calls": true,
+              "counts_agree": true,
+              "clear_agreement": true,
+              "passes": [
+                {
+                  "transform": "original",
+                  "input_sha256": "29350a3b44b6d363cf2394cbbfc8269cea1db1cbfd9c901a7e13dc8ffb5dc2c7",
+                  "observed": {
+                    "bolt": 3,
+                    "nut": 0,
+                    "washer": 0,
+                    "bracket": 0
+                  },
+                  "issues": [],
+                  "action": {
+                    "kind": "none",
+                    "message": "All visible hardware objects identified.",
+                    "region": null
+                  },
+                  "objects": [
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.25,
+                        0.17
+                      ]
+                    },
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.14,
+                        0.72
+                      ]
+                    },
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.57,
+                        0.59
+                      ]
+                    }
+                  ],
+                  "uncertain_parts": []
+                },
+                {
+                  "transform": "rotate_90_ccw",
+                  "input_sha256": "d24bb5713ed324cb6344026a6336d3d8cae89dd1d5d5173faada6f1c99f8df06",
+                  "observed": {
+                    "bolt": 3,
+                    "nut": 0,
+                    "washer": 0,
+                    "bracket": 0
+                  },
+                  "issues": [],
+                  "action": {
+                    "kind": "none",
+                    "message": "All visible hardware objects identified.",
+                    "region": null
+                  },
+                  "objects": [
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.59,
+                        0.42
+                      ]
+                    },
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.18,
+                        0.75
+                      ]
+                    },
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.72,
+                        0.86
+                      ]
+                    }
+                  ],
+                  "uncertain_parts": []
+                }
+              ]
+            },
+            "object_evidence": {
+              "protocol": "spatial_inventory_v1",
+              "coordinate_frame": "normalized_original",
+              "objects": [
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.25,
+                    0.17
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.14,
+                    0.72
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.57,
+                    0.59
+                  ]
+                }
+              ],
+              "uncertain_parts": []
+            },
+            "reference_evidence": {
+              "protocol": "reference_inputs_v1",
+              "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+              "observation_mode": "spatial_guarded",
+              "preprocessing": "exif_transpose_rgb_thumbnail_lanczos_png_v1",
+              "pillow_version": "12.3.0",
+              "max_side": 512,
+              "prepared_bytes_retained": false,
+              "guarded_identity_uses_references": false,
+              "images": [],
+              "stages": [
+                {
+                  "stage": "original",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                },
+                {
+                  "stage": "rotate_90_ccw",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                },
+                {
+                  "stage": "identity",
+                  "reference_image_indices": [],
+                  "status": "skipped_no_candidates"
+                }
+              ]
+            },
+            "reference_ids": {},
+            "evidence_feedback": null,
+            "tool_trace": [
+              {
+                "step": "observe_image",
+                "status": "completed",
+                "model": "Qwen3.6-27B · MLX 4-bit · local",
+                "latency_ms": 20097
+              },
+              {
+                "step": "derive_counts_from_object_list",
+                "status": "completed",
+                "listed_objects": 3,
+                "uncertain_parts": []
+              },
+              {
+                "step": "compare_orientation_observations",
+                "status": "completed",
+                "clear_agreement": true,
+                "same_model_correlated_calls": true
+              },
+              {
+                "step": "compare_current_requirements",
+                "status": "completed",
+                "revision": 1
+              },
+              {
+                "step": "review_previous_evidence",
+                "status": "not_applicable"
+              },
+              {
+                "step": "choose_next_action",
+                "status": "completed",
+                "decision": "correct",
+                "action_kind": "add_remove"
+              },
+              {
+                "step": "commit_current_evidence",
+                "status": "completed",
+                "revision": 1,
+                "evidence_epoch": 1
+              }
+            ],
+            "photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "observation_context": null,
+            "runtime_identity": {
+              "label": "Qwen3.6-27B · MLX 4-bit · local",
+              "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+              "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+              "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+              "observation_mode": "spatial_guarded",
+              "image_max_side": 1536
+            },
+            "evidence_epoch": 1
+          }
+        ],
+        "photos": [
+          {
+            "id": "img_83648db2d02747289f40",
+            "url": "/api/photos/img_83648db2d02747289f40",
+            "sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+            "revision": 1,
+            "created_at": "2026-10-03T16:20:21.282+00:00",
+            "width": 768,
+            "height": 576,
+            "quality": {
+              "warning": null
+            },
+            "kind": "root_photo",
+            "scope_mode": "whole_image",
+            "root_photo_id": "img_83648db2d02747289f40",
+            "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "document_source": {
+              "source_note": "Automated engineering use of an exposed public development photo; not a user study. v03-screws-screws_344-8d389e404b12",
+              "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+              "license_note": "MVTec · CC BY-NC-SA 4.0",
+              "schema_version": 1,
+              "kind": "user_declared_photo",
+              "verification": "user_declared_unverified",
+              "physical_completion_allowed": false,
+              "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+              "storage_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+              "original_root_photo_id": "img_83648db2d02747289f40",
+              "declared_at": "2026-10-03T16:20:21.282+00:00",
+              "statement_sha256": "d0ef53961235838d3cccfef84b4c992780cc7de10a8d208275b64a0f77a447e1",
+              "binding_sha256": "df37d0083098c0fa848d5383202dd98a9690c90d543b976b0101c8cfdd9cbfe2"
+            },
+            "physical_capture": false,
+            "capture_kind": "user_declared_photo_upload"
+          }
+        ],
+        "references": {},
+        "reference_history": [],
+        "events": [
+          {
+            "id": "evt_c61807f8834b49e5a773",
+            "kind": "order_created",
+            "message": "주문 생성 / 已创建订单",
+            "created_at": "2026-10-03T16:20:21.282+00:00",
+            "payload": {}
+          },
+          {
+            "id": "evt_a37ea80ee4274466af4e",
+            "kind": "photo_document_registered",
+            "message": "사용자 자료 등록 · 출처 미인증 / 已登记用户资料，来源未经认证",
+            "created_at": "2026-10-03T16:20:21.282+00:00",
+            "payload": {
+              "source": {
+                "source_note": "Automated engineering use of an exposed public development photo; not a user study. v03-screws-screws_344-8d389e404b12",
+                "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+                "license_note": "MVTec · CC BY-NC-SA 4.0",
+                "schema_version": 1,
+                "kind": "user_declared_photo",
+                "verification": "user_declared_unverified",
+                "physical_completion_allowed": false,
+                "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+                "storage_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+                "original_root_photo_id": "img_83648db2d02747289f40",
+                "declared_at": "2026-10-03T16:20:21.282+00:00",
+                "statement_sha256": "d0ef53961235838d3cccfef84b4c992780cc7de10a8d208275b64a0f77a447e1",
+                "binding_sha256": "df37d0083098c0fa848d5383202dd98a9690c90d543b976b0101c8cfdd9cbfe2"
+              },
+              "photo_id": "img_83648db2d02747289f40",
+              "physical_capture": false
+            }
+          },
+          {
+            "id": "evt_5d58212f40b54645a732",
+            "kind": "inspection_started",
+            "message": "사진 관찰 시작 / 开始观察照片",
+            "created_at": "2026-10-03T16:21:29.292+00:00",
+            "payload": {
+              "photo_id": "img_83648db2d02747289f40"
+            }
+          },
+          {
+            "id": "evt_4d2f2af4ff5643b2bee6",
+            "kind": "inspection_completed",
+            "message": "볼트/螺栓 제거/取出 1 → 다시 촬영 / 然后重新拍摄",
+            "created_at": "2026-10-03T16:21:49.391+00:00",
+            "payload": {
+              "check_id": "chk_f8b12e71139b46fcbeda",
+              "decision": "correct",
+              "revision": 1
+            }
+          }
+        ],
+        "completions": [],
+        "manual_reviews": [],
+        "reopenings": [],
+        "evidence_epoch": 1,
+        "active_inspection": null,
+        "revisions": [
+          {
+            "revision": 1,
+            "requirements": {
+              "bolt": 2,
+              "nut": 0,
+              "washer": 0,
+              "bracket": 0
+            },
+            "instruction": "최초 주문 / 初始订单",
+            "created_at": "2026-10-03T16:20:21.282+00:00"
+          }
+        ],
+        "document_source": {
+          "source_note": "Automated engineering use of an exposed public development photo; not a user study. v03-screws-screws_344-8d389e404b12",
+          "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+          "license_note": "MVTec · CC BY-NC-SA 4.0",
+          "schema_version": 1,
+          "kind": "user_declared_photo",
+          "verification": "user_declared_unverified",
+          "physical_completion_allowed": false,
+          "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+          "storage_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "original_root_photo_id": "img_83648db2d02747289f40",
+          "declared_at": "2026-10-03T16:20:21.282+00:00",
+          "statement_sha256": "d0ef53961235838d3cccfef84b4c992780cc7de10a8d208275b64a0f77a447e1",
+          "binding_sha256": "df37d0083098c0fa848d5383202dd98a9690c90d543b976b0101c8cfdd9cbfe2"
+        }
+      },
+      "prepared_snapshot": {
+        "id": "ord_cabbbe1e45414ba39b8d",
+        "title": "[MACHINE TASK] quantity",
+        "requirements": {
+          "bolt": 2,
+          "nut": 0,
+          "washer": 0,
+          "bracket": 0
+        },
+        "revision": 1,
+        "status": "pending",
+        "created_at": "2026-10-03T16:20:21.282+00:00",
+        "updated_at": "2026-10-03T16:20:21.282+00:00",
+        "latest_check": null,
+        "checks": [],
+        "photos": [
+          {
+            "id": "img_83648db2d02747289f40",
+            "url": "/api/photos/img_83648db2d02747289f40",
+            "sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+            "revision": 1,
+            "created_at": "2026-10-03T16:20:21.282+00:00",
+            "width": 768,
+            "height": 576,
+            "quality": {
+              "warning": null
+            },
+            "kind": "root_photo",
+            "scope_mode": "whole_image",
+            "root_photo_id": "img_83648db2d02747289f40",
+            "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+            "document_source": {
+              "source_note": "Automated engineering use of an exposed public development photo; not a user study. v03-screws-screws_344-8d389e404b12",
+              "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+              "license_note": "MVTec · CC BY-NC-SA 4.0",
+              "schema_version": 1,
+              "kind": "user_declared_photo",
+              "verification": "user_declared_unverified",
+              "physical_completion_allowed": false,
+              "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+              "storage_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+              "original_root_photo_id": "img_83648db2d02747289f40",
+              "declared_at": "2026-10-03T16:20:21.282+00:00",
+              "statement_sha256": "d0ef53961235838d3cccfef84b4c992780cc7de10a8d208275b64a0f77a447e1",
+              "binding_sha256": "df37d0083098c0fa848d5383202dd98a9690c90d543b976b0101c8cfdd9cbfe2"
+            },
+            "physical_capture": false,
+            "capture_kind": "user_declared_photo_upload"
+          }
+        ],
+        "references": {},
+        "reference_history": [],
+        "events": [
+          {
+            "id": "evt_c61807f8834b49e5a773",
+            "kind": "order_created",
+            "message": "주문 생성 / 已创建订单",
+            "created_at": "2026-10-03T16:20:21.282+00:00",
+            "payload": {}
+          },
+          {
+            "id": "evt_a37ea80ee4274466af4e",
+            "kind": "photo_document_registered",
+            "message": "사용자 자료 등록 · 출처 미인증 / 已登记用户资料，来源未经认证",
+            "created_at": "2026-10-03T16:20:21.282+00:00",
+            "payload": {
+              "source": {
+                "source_note": "Automated engineering use of an exposed public development photo; not a user study. v03-screws-screws_344-8d389e404b12",
+                "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+                "license_note": "MVTec · CC BY-NC-SA 4.0",
+                "schema_version": 1,
+                "kind": "user_declared_photo",
+                "verification": "user_declared_unverified",
+                "physical_completion_allowed": false,
+                "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+                "storage_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+                "original_root_photo_id": "img_83648db2d02747289f40",
+                "declared_at": "2026-10-03T16:20:21.282+00:00",
+                "statement_sha256": "d0ef53961235838d3cccfef84b4c992780cc7de10a8d208275b64a0f77a447e1",
+                "binding_sha256": "df37d0083098c0fa848d5383202dd98a9690c90d543b976b0101c8cfdd9cbfe2"
+              },
+              "photo_id": "img_83648db2d02747289f40",
+              "physical_capture": false
+            }
+          }
+        ],
+        "completions": [],
+        "manual_reviews": [],
+        "reopenings": [],
+        "evidence_epoch": 1,
+        "active_inspection": null,
+        "revisions": [
+          {
+            "revision": 1,
+            "requirements": {
+              "bolt": 2,
+              "nut": 0,
+              "washer": 0,
+              "bracket": 0
+            },
+            "instruction": "최초 주문 / 初始订单",
+            "created_at": "2026-10-03T16:20:21.282+00:00"
+          }
+        ],
+        "document_source": {
+          "source_note": "Automated engineering use of an exposed public development photo; not a user study. v03-screws-screws_344-8d389e404b12",
+          "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+          "license_note": "MVTec · CC BY-NC-SA 4.0",
+          "schema_version": 1,
+          "kind": "user_declared_photo",
+          "verification": "user_declared_unverified",
+          "physical_completion_allowed": false,
+          "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+          "storage_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "original_root_photo_id": "img_83648db2d02747289f40",
+          "declared_at": "2026-10-03T16:20:21.282+00:00",
+          "statement_sha256": "d0ef53961235838d3cccfef84b4c992780cc7de10a8d208275b64a0f77a447e1",
+          "binding_sha256": "df37d0083098c0fa848d5383202dd98a9690c90d543b976b0101c8cfdd9cbfe2"
+        }
+      },
+      "error": null,
+      "live_binding": {
+        "status": "current",
+        "reason": null
+      }
+    }
+  ],
+  "limitations": [
+    "Machine assistance on a stored photo document; no human validation or measured user-efficiency claim.",
+    "The rule planner routes real model findings. It does not certify correctness, independently review the image, or repair a scene.",
+    "The goal preserves the supplied BOM. Source and license notes are user declarations, not authenticated rights.",
+    "An archived finding describes its saved snapshot. A later order, photo, check or runtime change makes it historical."
+  ],
+  "error": null
+}

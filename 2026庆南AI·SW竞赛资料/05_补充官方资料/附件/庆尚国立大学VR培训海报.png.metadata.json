@@ -1,0 +1,16 @@
+{
+  "url": "https://www.gnu.ac.kr/common/nttEditorImgView.do?imgKey=45e9307f4043b4f9b18c5bb8eb6d6302",
+  "path": "05_补充官方资料/附件/庆尚国立大学VR培训海报.png",
+  "source": "https://www.gnu.ac.kr/enfrance/na/ntt/selectNttInfo.do?mi=0&nttSn=8530305",
+  "kind": "content_image",
+  "retrieved_at": "2026-09-24T16:33:50.066657+09:00",
+  "http_status": 200,
+  "final_url": "https://www.gnu.ac.kr/common/nttEditorImgView.do?imgKey=45e9307f4043b4f9b18c5bb8eb6d6302",
+  "content_type": "application/octer-stream",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": "attachment; filename=\"\"VR 경진대회 포스터.png\"\"",
+  "bytes": 1673136,
+  "sha256": "5e690b62e98dca32523c803e8fb4a615dfcad9c588a1608afc18a9b63230f37f",
+  "magic_hex": "89504e470d0a1a0a0000000d49484452"
+}

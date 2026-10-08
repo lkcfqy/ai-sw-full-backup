@@ -1,0 +1,16 @@
+{
+  "url": "https://www.changwon.ac.kr/common/nttEditorImgView.do?imgKey=e0873eb2cf7a7b95a8f5bb75934602d2",
+  "path": "01_昌原大学公告/附件/正文海报_2.png",
+  "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+  "kind": "content_image",
+  "retrieved_at": "2026-09-24T16:29:05.430766+09:00",
+  "http_status": 200,
+  "final_url": "https://www.changwon.ac.kr/common/nttEditorImgView.do?imgKey=e0873eb2cf7a7b95a8f5bb75934602d2",
+  "content_type": "application/octer-stream",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": "attachment; filename=\"\"3. ì 4í ê²½ë¨ AI SW ê²½ì§ëí_í¬ì¤í°.png\"\"",
+  "bytes": 2893166,
+  "sha256": "4f43a457b5a919e9f5e101a634360dc603067acefb0e6884b3be2034322e1cd4",
+  "magic_hex": "89504e470d0a1a0a0000000d49484452"
+}

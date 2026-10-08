@@ -1,0 +1,200 @@
+{
+  "schema": "kitguard.v08.manta-classifier.decision.v1",
+  "created_at_utc": "2026-10-02T03:35:57.730278+00:00",
+  "decision": "internal_component_gate_passed_continue_development_diagnostics_only",
+  "independent_audit_passed": true,
+  "selected_epoch": 10,
+  "validation_denominator": 256,
+  "validation_groups": 8,
+  "all_prepared_groups": 32,
+  "CWUEN": {
+    "C": 256,
+    "W": 0,
+    "U": 0,
+    "E": 0,
+    "N": 0
+  },
+  "forced_argmax_CWUEN": {
+    "C": 256,
+    "W": 0,
+    "U": 0,
+    "E": 0,
+    "N": 0
+  },
+  "per_class": {
+    "nut": {
+      "denominator": 128,
+      "group_count": 4,
+      "CWUEN": {
+        "C": 128,
+        "W": 0,
+        "U": 0,
+        "E": 0,
+        "N": 0
+      },
+      "group_macro_correct_coverage": 1.0
+    },
+    "yellow_green_washer": {
+      "denominator": 128,
+      "group_count": 4,
+      "CWUEN": {
+        "C": 128,
+        "W": 0,
+        "U": 0,
+        "E": 0,
+        "N": 0
+      },
+      "group_macro_correct_coverage": 1.0
+    }
+  },
+  "constant_identity_baselines": {
+    "nut": {
+      "C": 128,
+      "W": 128,
+      "U": 0,
+      "E": 0,
+      "N": 0
+    },
+    "yellow_green_washer": {
+      "C": 128,
+      "W": 128,
+      "U": 0,
+      "E": 0,
+      "N": 0
+    }
+  },
+  "conditions": {
+    "every_class_group_macro_correct_coverage_at_least_0_75": true,
+    "W_equals_0": true,
+    "E_equals_0": true,
+    "N_equals_0": true,
+    "full_10_epochs_and_final_epoch_only": true,
+    "original_backbone_all_262_tensors_unchanged": true,
+    "head_weight_and_bias_updated": true,
+    "all_1024_input_tensors_rebuilt_equal": true
+  },
+  "production_promotion": false,
+  "production_unchanged": true,
+  "new_followup_runs_started_by_this_decision": false,
+  "new_physical_holdout_claim": false,
+  "author_test_pixels_used": false,
+  "human_participants": 0,
+  "old51_errors_declared_fixed": false,
+  "mixed_BOM_improvement_established": false,
+  "license": "Author CC BY-NC-SA4.0 noncommercial restriction retained; Figshare metadata conflict unresolved",
+  "limitations": [
+    "Saved raw/weight/data consistency audit, not attestation of the historical physical execution.",
+    "Wall clocks and historical forward flags are retained records, not newly measured calls.",
+    "Softmax/logit check uses 2e-6 numerical tolerance; exact .9 decision uses saved probabilities without tolerance.",
+    "All validation comes from author-train records with proxy grouping; 8 records had declared image layout QA.",
+    "Passing internal continuation gate permits only further development diagnostics, not production promotion.",
+    "Shape, brightness, crop dimensions and padding can remain shortcuts; silver mixed-hardware transfer unproven."
+  ],
+  "bindings": [
+    {
+      "path": "docs/v0.8/manta_classifier_freeze_v1/freeze.json",
+      "sha256": "226f739d011c5f4095888251b572663fd2c12a485c6b48d8c36e206553111f9e",
+      "bytes": 685
+    },
+    {
+      "path": "docs/v0.8/manta_classifier_freeze_v1/protocol.json",
+      "sha256": "1173ef3b587ce7048b35e958c61ca27f5bf2882d52f8d020eeeb62adbcdda654",
+      "bytes": 773575
+    },
+    {
+      "path": "docs/v0.8/MANTA_CLASSIFIER_RESULT_V1.md",
+      "sha256": "54bbd93ed185d25f23c6f94792b16004b1fc9cb98ae754f30710eb1739862bfa",
+      "bytes": 5760
+    },
+    {
+      "path": "docs/v0.8/MANTA_CLASSIFIER_PREPARATION_RESULT.md",
+      "sha256": "5078a6826a0d29cb36aefa54a58063a62ccdd30bb5ff9a82584d020ea5ab3120",
+      "bytes": 5681
+    },
+    {
+      "path": "datasets/derived/v0.8/manta_classifier_v1/preparation.json",
+      "sha256": "c2152eae56ca7c0920f8cdf4b0d552ebf3fd90d67d5a877aa4f75b21b08c3eeb",
+      "bytes": 3656
+    },
+    {
+      "path": "datasets/derived/v0.8/manta_classifier_v1/visual_review.json",
+      "sha256": "e5dc7399a5987b0c138498edf0c8a57b7bd1f6451af7324ee7157f05ed2411a3",
+      "bytes": 24262
+    },
+    {
+      "path": "datasets/derived/v0.8/manta_classifier_v1/root-layout-review.json",
+      "sha256": "383c6daf594542a9e44c4dfe880ce49d54a57f6d685c845d4973fea4a4e95778",
+      "bytes": 23047
+    },
+    {
+      "path": "test-results/v0.8-manta-classifier-training-preflight-v1/plan.json",
+      "sha256": "8a178cb097792b6c2618b4dce86c343a3d799c870b4ed1ff7c658c6ffabb85d6",
+      "bytes": 2715284
+    },
+    {
+      "path": "test-results/v0.8-manta-classifier-training-approval-v1.json",
+      "sha256": "f0c053c049de8cad44060f37cbb61174148e2a48f69e8cb95644f385bf375e67",
+      "bytes": 2041
+    },
+    {
+      "path": "test-results/v0.8-manta-classifier-auditor-v1/freeze.json",
+      "sha256": "366448c649a31733299c16a54a2c8e9bd4f13dd78e0f5155a7a4d20199e2a7da",
+      "bytes": 3297
+    },
+    {
+      "path": "test-results/v0.8-manta-classifier-independent-audit-v1.json",
+      "sha256": "b9df04653db0e0ded4b6db2e0165e74508cc2c02a20829f98f25a5f1a9c57afd",
+      "bytes": 118039
+    },
+    {
+      "path": "test-results/v0.8-manta-classifier-independent-audit-v1.log",
+      "sha256": "b43bc34831c3e3b2b7698c9a1b83cb293912c2bda75df4bc917f532b3de0a0cd",
+      "bytes": 181
+    },
+    {
+      "path": "training-runs/v0.8/manta_classifier_v1/run.json",
+      "sha256": "2985d6152377b9031d7fd067c2974952c03c35a6d1018957a2e74ea74abfd1e9",
+      "bytes": 2093
+    },
+    {
+      "path": "training-runs/v0.8/manta_classifier_v1/final_predictions.json",
+      "sha256": "1e8b6dd9472959030bb95c380239fea0cb5c5c3e9b426010f37c6da0a00717db",
+      "bytes": 144240
+    },
+    {
+      "path": "training-runs/v0.8/manta_classifier_v1/analysis.json",
+      "sha256": "c7487be2da3bd9b6fda46ae573f407c377e8e200791f06d8ffe8e9e9504cf7e6",
+      "bytes": 8750
+    },
+    {
+      "path": "training-runs/v0.8/manta_classifier_v1/history.json",
+      "sha256": "b77cd811fc194fbf26e6471bfbc297b532f7a9df6929519258982880ae3d092f",
+      "bytes": 6464
+    },
+    {
+      "path": "training-runs/v0.8/manta_classifier_v1/artifact_inventory.json",
+      "sha256": "74db4fcd8248dcb48091b592754e10baafa39a2b5c7dd696ef033c0fe7a88cf2",
+      "bytes": 9300
+    },
+    {
+      "path": "training-runs/v0.8/manta_classifier_v1/tensor_hashes.json",
+      "sha256": "748bac2ef7b1fb15f40e7dcd9f641d6164bba9d1c413c90651e897122509fdc0",
+      "bytes": 87043
+    },
+    {
+      "path": "training-runs/v0.8/manta_classifier_v1/initial.pt",
+      "sha256": "39870fa8e7c92450cca87110f6a9fa90c8794832931590d2931d1814b0dd9c88",
+      "bytes": 12070831
+    },
+    {
+      "path": "training-runs/v0.8/manta_classifier_v1/final.pt",
+      "sha256": "ea29bfcf33dcf680e1b3ac2afa26de366991d029a42a3b5fe7ef7a5be1b3f985",
+      "bytes": 12079083
+    },
+    {
+      "path": "training-runs/v0.8/manta_classifier_v1/epoch-10.pt",
+      "sha256": "ff1179864316fbb9f76fad0fe52181c39cfa1bd9093e4ca5782c9609f193fa3f",
+      "bytes": 18717
+    }
+  ]
+}

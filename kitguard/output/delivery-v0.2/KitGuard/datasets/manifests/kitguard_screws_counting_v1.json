@@ -1,0 +1,1241 @@
+{
+  "schema_version": 1,
+  "dataset": "MVTec Screws v1.0 / public counting stress test",
+  "source_manifest": "datasets/manifests/mvtec_screws/manifest.json",
+  "source_manifest_sha256": "159bbcf94c26eaa1305b2d0f4dada8b902d6cb19710227b2cc2d1fabdf1e6159",
+  "author_page": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+  "license": "CC-BY-NC-SA-4.0",
+  "mapping": {
+    "1": "bolt",
+    "2": "bolt",
+    "3": "bolt",
+    "4": "bolt",
+    "5": "bolt",
+    "6": "bolt",
+    "7": "nut",
+    "8": "bolt",
+    "9": "nut",
+    "10": "nut",
+    "11": "nut",
+    "12": "bolt",
+    "13": "bolt"
+  },
+  "mapping_note": "Whole-frame counts derived from upstream object instances: bolt is the runtime's broad headed threaded fastener class (IDs 1-6,8,12,13, including wood screws), nut is IDs 7,9,10,11. This projection does not validate fine SKU/type/length distinctions. No washer/bracket positive examples; no model-generated labels.",
+  "selection_seed": "kitguard-public-counting-v1-2026-09-26",
+  "selection_rule": "All original photographs with annotated total 1..12; 16 source-train cases by seeded SHA order for development, all 37 source-test eligible cases reserved for holdout. No model outcomes used for selection. Source-val unused. All cases exceed current per-category order cap; report counting only.",
+  "cases": [
+    {
+      "id": "screws_299",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_299.png",
+      "sha256": "046fae669ee2d9b191f249b3a7cc7b5698caa8079ac4a54ab2db0c5a94e9c6c6",
+      "source_id": "mvtec_screws_v1.0/screws_299.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 10,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "7": 2,
+        "3": 2,
+        "12": 2,
+        "13": 2,
+        "4": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_123",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_123.png",
+      "sha256": "20d61a6d43843f1afc1eec8f2ace37a62dd6f9427984f18f57f3471f8470926a",
+      "source_id": "mvtec_screws_v1.0/screws_123.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 5,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "11": 1,
+        "8": 1,
+        "7": 1,
+        "6": 1,
+        "10": 1,
+        "12": 1,
+        "5": 1,
+        "13": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_339",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_339.png",
+      "sha256": "66ed75e6c79e4ddbbb6acc388e1d423c9fae131e77ce29f43dba1a9f8b993cb8",
+      "source_id": "mvtec_screws_v1.0/screws_339.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 10,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "3": 2,
+        "7": 2,
+        "12": 2,
+        "4": 2,
+        "13": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_104",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_104.png",
+      "sha256": "b7d87fa8d1bbc560759fd47600710dd60ce575f4ee8c7762329e2d1d4425f994",
+      "source_id": "mvtec_screws_v1.0/screws_104.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 5,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "8": 1,
+        "11": 1,
+        "10": 1,
+        "7": 1,
+        "6": 1,
+        "5": 1,
+        "13": 1,
+        "12": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_049",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_049.png",
+      "sha256": "20c834a360897b8efce22cc4270052037079155c307a8c6384a8a311ad4b2bec",
+      "source_id": "mvtec_screws_v1.0/screws_049.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 3,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "11": 1,
+        "10": 1,
+        "2": 1,
+        "12": 1,
+        "4": 1,
+        "3": 1,
+        "13": 1,
+        "1": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_244",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_244.png",
+      "sha256": "3acc5a91285f00ffcec05e26ca43215e563b56b77e7b67843818f6d553b2fbb5",
+      "source_id": "mvtec_screws_v1.0/screws_244.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 6,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 2,
+        "11": 2,
+        "10": 2,
+        "13": 2,
+        "12": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_135",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_135.png",
+      "sha256": "7f437d5bfbebe150531ac2c34640471576e8c6da2a1563cd9bbf636747799202",
+      "source_id": "mvtec_screws_v1.0/screws_135.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 8,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "3": 3,
+        "1": 1,
+        "4": 2,
+        "2": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_229",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_229.png",
+      "sha256": "bf0786c9ff5b9f3b23e7cda07e392750a17c8a98562debc5d31f9962e83c0a25",
+      "source_id": "mvtec_screws_v1.0/screws_229.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 6,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 2,
+        "11": 2,
+        "10": 2,
+        "13": 2,
+        "12": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_030",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_030.png",
+      "sha256": "0d5979bcb564620f6794f95f31a5df1527a96d5feaa9419e7600e1d113f855b3",
+      "source_id": "mvtec_screws_v1.0/screws_030.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "7": 2,
+        "6": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_032",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_032.png",
+      "sha256": "05bf9b54dc03299a184acce02d41c3a2b00e5b9e68f8d961d02a6b7d6e592f5d",
+      "source_id": "mvtec_screws_v1.0/screws_032.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "6": 2,
+        "7": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_292",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_292.png",
+      "sha256": "ec8e606e9cea06b5848d2efc2342a55fd96143b4ea5ce60d796d53882af761e3",
+      "source_id": "mvtec_screws_v1.0/screws_292.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 9,
+        "nut": 3,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "8": 1,
+        "11": 1,
+        "3": 1,
+        "5": 1,
+        "10": 1,
+        "12": 1,
+        "6": 1,
+        "2": 1,
+        "1": 1,
+        "4": 1,
+        "13": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_114",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_114.png",
+      "sha256": "c5505c5f3c50278e6b3100246b059932b66cc94d80578910669f2b5167b51c2f",
+      "source_id": "mvtec_screws_v1.0/screws_114.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 5,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "8": 1,
+        "11": 1,
+        "6": 1,
+        "7": 1,
+        "10": 1,
+        "12": 1,
+        "5": 1,
+        "13": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_253",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_253.png",
+      "sha256": "10bd98970f118396d380f86afbdf669e5a3409cfa7c3eccaf553dd78aaba07a0",
+      "source_id": "mvtec_screws_v1.0/screws_253.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 6,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 2,
+        "11": 2,
+        "10": 2,
+        "12": 2,
+        "13": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_167",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_167.png",
+      "sha256": "827ae2dacf221c3370939c0d1956a93ad476bd71b61a33124198fa683d6223b5",
+      "source_id": "mvtec_screws_v1.0/screws_167.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "6": 2,
+        "7": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_322",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_322.png",
+      "sha256": "bf6d2e92012a066ec67163e04aae11d21e1b60387cce1b635382a2c298af2443",
+      "source_id": "mvtec_screws_v1.0/screws_322.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 10,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "7": 2,
+        "12": 2,
+        "13": 2,
+        "4": 2,
+        "3": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_117",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_117.png",
+      "sha256": "2b23fbc19342b7b34ebd324730a23f28ed68d1762ba7d029be214760402e7c11",
+      "source_id": "mvtec_screws_v1.0/screws_117.png",
+      "split": "development",
+      "upstream_split": "train",
+      "ground_truth": {
+        "bolt": 5,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "8": 1,
+        "11": 1,
+        "6": 1,
+        "7": 1,
+        "12": 1,
+        "10": 1,
+        "13": 1,
+        "5": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_246",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_246.png",
+      "sha256": "3b13527585e772dab2008dd39749dd33a4e577fe935098089117b1785e9cfcfd",
+      "source_id": "mvtec_screws_v1.0/screws_246.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 6,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "11": 2,
+        "9": 2,
+        "10": 2,
+        "13": 2,
+        "12": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_249",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_249.png",
+      "sha256": "3b8bd8cfc6395de4cf706b81a60b6582555534c6c34622a60ad32c4530c7f54d",
+      "source_id": "mvtec_screws_v1.0/screws_249.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 6,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 2,
+        "11": 2,
+        "10": 2,
+        "12": 2,
+        "13": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_317",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_317.png",
+      "sha256": "6aaf9eafcc106cbf65ed89c1588c2c313e24afb49f8fae0e39d9b8326a7f1207",
+      "source_id": "mvtec_screws_v1.0/screws_317.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 10,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "3": 2,
+        "7": 2,
+        "13": 2,
+        "12": 2,
+        "4": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_022",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_022.png",
+      "sha256": "9ef8b45c79cf102c0bca5249f0eb99412f56f16a5540d4e4f17d28a89968b77d",
+      "source_id": "mvtec_screws_v1.0/screws_022.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "6": 2,
+        "7": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_152",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_152.png",
+      "sha256": "12f06ba17028dab45e18eb4ded4ab74df1e2e9b86599431b4b9587b01c9d992a",
+      "source_id": "mvtec_screws_v1.0/screws_152.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 8,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "3": 2,
+        "1": 2,
+        "4": 2,
+        "2": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_169",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_169.png",
+      "sha256": "1bb38dd2f5c52d486c4371706e5d6f3e318596a7742a310b1c87c0b59dfddb5a",
+      "source_id": "mvtec_screws_v1.0/screws_169.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "6": 2,
+        "7": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_219",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_219.png",
+      "sha256": "434f4183abbfc983eed4c13500dde60d53e189a4852a67f4f0ae5544b416f64f",
+      "source_id": "mvtec_screws_v1.0/screws_219.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "6": 2,
+        "7": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_044",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_044.png",
+      "sha256": "df10d1fe5cf7b61f0b73ea9b298dd75a7bad9ef7ac3e874c5686385fc6740a34",
+      "source_id": "mvtec_screws_v1.0/screws_044.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 3,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "11": 1,
+        "3": 1,
+        "10": 1,
+        "12": 1,
+        "1": 1,
+        "13": 1,
+        "4": 1,
+        "2": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_220",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_220.png",
+      "sha256": "f202f0fe241d3228eca0c68ae6904292b73fa7bae70816ccf8d6c2f75910aab8",
+      "source_id": "mvtec_screws_v1.0/screws_220.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "5": 2,
+        "6": 2,
+        "7": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_252",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_252.png",
+      "sha256": "afbfb51cf3de409490c3d97cad8bd84de3ec1bca5686bdb7cf222015e4e38895",
+      "source_id": "mvtec_screws_v1.0/screws_252.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 6,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 2,
+        "11": 2,
+        "10": 2,
+        "12": 2,
+        "13": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_231",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_231.png",
+      "sha256": "f1fc594a1768c85aa84652b1fd9b8876e51bbee0a712b84cd609cebaf236a87b",
+      "source_id": "mvtec_screws_v1.0/screws_231.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 6,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 2,
+        "11": 2,
+        "10": 2,
+        "13": 2,
+        "12": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_330",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_330.png",
+      "sha256": "af3b740b82de5ff6841487038f82aa46819802af3b3f25c1b1783827356802af",
+      "source_id": "mvtec_screws_v1.0/screws_330.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "11": 2,
+        "6": 2,
+        "10": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_064",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_064.png",
+      "sha256": "26a5b71bfb7a67ba37b85732ea606ba8b46328456faaac203c7224da2829e34e",
+      "source_id": "mvtec_screws_v1.0/screws_064.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 7,
+        "nut": 1,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 1,
+        "7": 1,
+        "2": 1,
+        "6": 1,
+        "3": 1,
+        "5": 1,
+        "1": 1,
+        "4": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_102",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_102.png",
+      "sha256": "069a1d3b049e6a0af0519f9d96e443dd3a316f286a25d61f2cb56110291b7cf0",
+      "source_id": "mvtec_screws_v1.0/screws_102.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 5,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "8": 1,
+        "11": 1,
+        "6": 1,
+        "12": 1,
+        "7": 1,
+        "13": 1,
+        "10": 1,
+        "5": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_161",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_161.png",
+      "sha256": "8a8e8dca0eb486b6254beb825764e0da421a6afb6b1e3157f4a5d87365d8e9bb",
+      "source_id": "mvtec_screws_v1.0/screws_161.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "6": 2,
+        "7": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_331",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_331.png",
+      "sha256": "3173d07d36fe272c370b4c08cc37dfba7537f096127f07df4c44d328ca03c6fb",
+      "source_id": "mvtec_screws_v1.0/screws_331.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "11": 2,
+        "6": 2,
+        "5": 2,
+        "10": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_298",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_298.png",
+      "sha256": "43c1e731a606660b5405d01eb20970e6c625aa271388a94ba91db4802782bb49",
+      "source_id": "mvtec_screws_v1.0/screws_298.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 10,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "7": 2,
+        "12": 2,
+        "13": 2,
+        "3": 2,
+        "4": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_225",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_225.png",
+      "sha256": "ba113bc0992db6b1b791718de57e3769ce9ca4bde7ffb2a6f0c925bb73edab16",
+      "source_id": "mvtec_screws_v1.0/screws_225.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "6": 2,
+        "7": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_045",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_045.png",
+      "sha256": "a4fe8436f899d2ee648c54756199f8d2937bf42f149c86d5605fb83dc39f13aa",
+      "source_id": "mvtec_screws_v1.0/screws_045.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 3,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "11": 1,
+        "10": 1,
+        "2": 1,
+        "12": 1,
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "13": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_151",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_151.png",
+      "sha256": "86741f69bacc6e982d1a1055833489327afe489c762e95bb646e47e5353fb13d",
+      "source_id": "mvtec_screws_v1.0/screws_151.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 8,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "2": 2,
+        "1": 2,
+        "3": 2,
+        "4": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_106",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_106.png",
+      "sha256": "8fdf815c7e84fc5dc112cc5165aff431729976d98dc0c3e77b4e2cd599a22d7e",
+      "source_id": "mvtec_screws_v1.0/screws_106.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 5,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "8": 1,
+        "11": 1,
+        "7": 1,
+        "10": 1,
+        "6": 1,
+        "12": 1,
+        "5": 1,
+        "13": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_310",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_310.png",
+      "sha256": "047669d235926848ad6b1cf5f3b717c7837003a8947ab9d1bd8abf5428900c33",
+      "source_id": "mvtec_screws_v1.0/screws_310.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "6": 2,
+        "11": 2,
+        "10": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_065",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_065.png",
+      "sha256": "77c4cb69273b7cd7e3ddc8c5627cf720b3363429d3473b7d396c5f7d9fcc314c",
+      "source_id": "mvtec_screws_v1.0/screws_065.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 7,
+        "nut": 1,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 1,
+        "6": 1,
+        "7": 1,
+        "3": 1,
+        "5": 1,
+        "1": 1,
+        "2": 1,
+        "4": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_162",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_162.png",
+      "sha256": "42baa99be24f7dd39ceb35e8ad1b47e242415a643ca7c93b5a64221cc6c69750",
+      "source_id": "mvtec_screws_v1.0/screws_162.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "7": 2,
+        "6": 2,
+        "5": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_140",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_140.png",
+      "sha256": "71736b49c5aecfe3b18aae3eb76eb35de812c14d35311af5fa8b27e07fa30c38",
+      "source_id": "mvtec_screws_v1.0/screws_140.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 8,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "3": 2,
+        "4": 2,
+        "1": 2,
+        "2": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_158",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_158.png",
+      "sha256": "494bf10d928ae93cb289a5fa85a1cc0d52ded87e048cec932abd9518a82ab853",
+      "source_id": "mvtec_screws_v1.0/screws_158.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 8,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "3": 2,
+        "4": 2,
+        "1": 2,
+        "2": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_305",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_305.png",
+      "sha256": "18aa2344a671ea9db7f7fded667fa34b3182df9f133dc6690366e21177f6c7e9",
+      "source_id": "mvtec_screws_v1.0/screws_305.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 10,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "7": 2,
+        "12": 2,
+        "3": 2,
+        "4": 2,
+        "13": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_157",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_157.png",
+      "sha256": "40c40db1177b6a514e10610699277ffdff4fe730713c184c731dce894e96458a",
+      "source_id": "mvtec_screws_v1.0/screws_157.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 8,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "3": 2,
+        "1": 2,
+        "2": 2,
+        "4": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_042",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_042.png",
+      "sha256": "e8a32e2854546bc5e60f45e113cc5b3f2578787f77307f96c9e7e6e9994e823c",
+      "source_id": "mvtec_screws_v1.0/screws_042.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 3,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "11": 1,
+        "10": 1,
+        "1": 1,
+        "12": 1,
+        "3": 1,
+        "13": 1,
+        "2": 1,
+        "4": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_126",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_126.png",
+      "sha256": "9b03c858d6da063dc4775d623950a5f95458618ec6ca9e5f26f7f0995e30a6f9",
+      "source_id": "mvtec_screws_v1.0/screws_126.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 5,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "11": 1,
+        "8": 1,
+        "6": 1,
+        "7": 1,
+        "5": 1,
+        "13": 1,
+        "10": 1,
+        "12": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_108",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_108.png",
+      "sha256": "60f632681c2e8c2410cd87e0050868a252a5ea282d779d792d9bc732b22ca4d5",
+      "source_id": "mvtec_screws_v1.0/screws_108.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 5,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 1,
+        "8": 1,
+        "11": 1,
+        "7": 1,
+        "6": 1,
+        "10": 1,
+        "12": 1,
+        "5": 1,
+        "13": 1
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_174",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_174.png",
+      "sha256": "84baf92c7b844e7434b7012779885e06db832b9662cd620a166e84ccfd2026b6",
+      "source_id": "mvtec_screws_v1.0/screws_174.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 6,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "5": 2,
+        "7": 2,
+        "6": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_238",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_238.png",
+      "sha256": "2e62bdd5097cd8a890ddb4172964df2b09c5eaa3a3a4c705efe2e6b0682469f7",
+      "source_id": "mvtec_screws_v1.0/screws_238.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 6,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 2,
+        "11": 2,
+        "10": 2,
+        "12": 2,
+        "13": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_242",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_242.png",
+      "sha256": "9e21b490720d7c831c09b98a582fef751f53b0f33af7f1e434f94a6902a4b8e3",
+      "source_id": "mvtec_screws_v1.0/screws_242.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 6,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 2,
+        "11": 2,
+        "10": 2,
+        "12": 2,
+        "13": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_245",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_245.png",
+      "sha256": "74b8c1508b631b772daeff11ad30591f66cac3fb299cdcf9f7bd5f0b79677640",
+      "source_id": "mvtec_screws_v1.0/screws_245.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 4,
+        "nut": 6,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "9": 2,
+        "11": 2,
+        "10": 2,
+        "13": 2,
+        "12": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_323",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_323.png",
+      "sha256": "7c4a08ead01f1795e47b9f5726288a0e20d568341f2a7eb3d08c9cf56316bba2",
+      "source_id": "mvtec_screws_v1.0/screws_323.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 10,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "8": 2,
+        "7": 2,
+        "3": 2,
+        "12": 2,
+        "4": 2,
+        "13": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    },
+    {
+      "id": "screws_136",
+      "image": "datasets/raw/mvtec_screws_v1.0/images/screws_136.png",
+      "sha256": "268f140917d0a2b5668b79f5e4f8a6288723833ada91ee0284d6600b00b82edc",
+      "source_id": "mvtec_screws_v1.0/screws_136.png",
+      "split": "holdout",
+      "upstream_split": "test",
+      "ground_truth": {
+        "bolt": 8,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "original_category_counts": {
+        "3": 2,
+        "2": 2,
+        "1": 2,
+        "4": 2
+      },
+      "scope": "counting_stress_outside_order_per_part_limit"
+    }
+  ]
+}

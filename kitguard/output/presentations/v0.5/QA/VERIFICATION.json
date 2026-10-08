@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "verified_at": "2026-09-26T16:00:57.024083+00:00",
+  "final_pptx": "output/presentations/v0.5/KitGuard_v0.5_보충발표_KO_v2.pptx",
+  "sha256": "89f3e9da2a5a8dd957170a8669542901eaa05cb70ec2d0e1cd0437026c814aac",
+  "slide_count": 4,
+  "native_shape_counts": [
+    6,
+    10,
+    12,
+    12
+  ],
+  "notes_present": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "artifact_tool_finalizer_receipt": "tmp/presentations-v05/validation-v2.json",
+  "finalizer_receipt_sha256": "c7e69d3bf35f86ae01a11534b9eae76b105a061704ec26cd7ffd807832ee2a8c",
+  "render_method": "bundled LibreOffice headless via render_slides.py",
+  "bundled_soffice": "/Users/lkc/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+  "rendered_slides": {
+    "slide-1.png": "cfc8c63551cdda439e7446e4b9c28b53e767c76200642cd67d4e0a79631ec18f",
+    "slide-2.png": "85a424d0bcfe8ce731d24a4f1669c96e89266a350d34df4d12d02414b55ab5c3",
+    "slide-3.png": "101298c8ca86446c70e8df84698188e282d9882da45a1d86b5d7096e4f5e1844",
+    "slide-4.png": "9ef91ce6965f4d74ce4d8f0767c1f1faaaea1b9611255338369c774bcfb179c1"
+  },
+  "visual_review": "All four rendered final slides inspected individually. Korean text fits, no unintended overlaps/clipping. Slide 2 enlarged actual HTML scope screenshot and actual view JPEG; no synthetic visual evidence.",
+  "limits": "No Microsoft PowerPoint GUI check. Native text/editable slide objects; embedded photographic evidence remains raster. Apple SD Gothic Neo font may substitute on other platforms. Not a replacement for v0.3 main deck.",
+  "licenses": {
+    "LICENSE": "103d4e256fe907508825cbf2e4b5db6eaa76168aa73879817ded305eee02f54b",
+    "CITATION.bib": "6adbfd163e70aeb536cbd2fe70ebd4e0365596a73e876449a3c9ab9e99ede104"
+  }
+}

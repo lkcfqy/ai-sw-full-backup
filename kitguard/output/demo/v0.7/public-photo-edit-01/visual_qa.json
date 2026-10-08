@@ -1,0 +1,111 @@
+{
+  "schema": "kitguard.v07.video-visual-qa.v1",
+  "status": "passed",
+  "checked_at": "2026-10-01T22:20:04.048980+00:00",
+  "reviewer": "Codex visual inspection of tool-rendered frame images",
+  "video_sha256": "d0d88b67ac3a4ae489758d78799913d113a8309584ac4cb1575d707911a2c826",
+  "scope": "17 extracted frames: opening, midpoint of every one of 15 screenshot segments, and closing. Not a claim of manually inspecting all 3432 encoded frames. Full video decode verified separately.",
+  "frames": [
+    {
+      "path": "qa/opening.png",
+      "video_seconds": 2,
+      "sha256": "93d80c0b709447c3e49afe24e380da3ba702570893868312a78e9e60825ea64b"
+    },
+    {
+      "path": "qa/01-public-library.png",
+      "video_seconds": 10.0,
+      "sha256": "15dca8883bf82fcd1e8ffbda2d012743901a38135a6697fa636bfd5eacaa0415"
+    },
+    {
+      "path": "qa/02-r1-before-inference.png",
+      "video_seconds": 18.0,
+      "sha256": "0452f322a4c5ebf117dc0ccc6d867d8bd6c41c2f313fa364ec022e895ed5725f"
+    },
+    {
+      "path": "qa/03-real-inference-running.png",
+      "video_seconds": 25.0,
+      "sha256": "60cfe7a6a8c8278fda2157c43a5bb024c51c9ad41a651ab53536e41d4a1adc4e"
+    },
+    {
+      "path": "qa/04-r1-actual-difference.png",
+      "video_seconds": 33.5,
+      "sha256": "08aeb9e04e1801eb4be376f66ba20a67c665b1c9f8ae7728e68e55f7ff6aaa9d"
+    },
+    {
+      "path": "qa/05-digital-review-form.png",
+      "video_seconds": 42.5,
+      "sha256": "abaacb3a640f46f222e3234da5ef68ed0f873af76199b46d585609ef3a485a77"
+    },
+    {
+      "path": "qa/06-natural-instruction.png",
+      "video_seconds": 50.5,
+      "sha256": "7275b6170ba39c1092166ce952dab431494f23fbab88fd6c0ca713e62f0f6465"
+    },
+    {
+      "path": "qa/07-model-proposal-before-approval.png",
+      "video_seconds": 60.0,
+      "sha256": "17ef381aee1cc94cb8d95f4fa21f2dc40e79b49d69fce746f50407ab454130f7"
+    },
+    {
+      "path": "qa/08-r2-invalidates-r1.png",
+      "video_seconds": 70.0,
+      "sha256": "e84d98a96ab60121efc8c42050ccbb85e51049218767030f4985ee85a550fc07"
+    },
+    {
+      "path": "qa/09-explicit-same-photo-replay.png",
+      "video_seconds": 79.5,
+      "sha256": "012daa128c27b672b3a185a0ec233504b0fa4adf7e067466597097a68b7e948f"
+    },
+    {
+      "path": "qa/10-r2-real-result.png",
+      "video_seconds": 89.5,
+      "sha256": "43bdafdd5e724b606b763306a799631bcf8a30127585dac0c6990b647b2558b6"
+    },
+    {
+      "path": "qa/11-versioned-digital-reviews.png",
+      "video_seconds": 99.5,
+      "sha256": "62cc76ea57d5d60ec103f76ccf71664d9fad451683454e3c645ec8356b824f09"
+    },
+    {
+      "path": "qa/12-real-tool-trace.png",
+      "video_seconds": 108.5,
+      "sha256": "f98582a46173adcf4e052d9b28722d4513b47139c9abb0a6306ff014244f7ab0"
+    },
+    {
+      "path": "qa/13-evidence-download.png",
+      "video_seconds": 116.0,
+      "sha256": "d0691e4124298b32694952f4756ace8b90b28d5c1999724fce2dcb36571a4874"
+    },
+    {
+      "path": "qa/14-offline-evidence.png",
+      "video_seconds": 123.0,
+      "sha256": "e68f4d78b63c361089b4d1ea5479207fe79bb043af425a23bc680a79c5912383"
+    },
+    {
+      "path": "qa/15-offline-versioned-reviews.png",
+      "video_seconds": 131.5,
+      "sha256": "b7d78642b58f89fdf03ba7caa56f870e9a2bd4f76632533e5b7f568af06e5300"
+    },
+    {
+      "path": "qa/closing.png",
+      "video_seconds": 140,
+      "sha256": "1c2a8206aeef0ae646c53e219b3accd4ab1970dbee042142ba2350c35b5796bc"
+    }
+  ],
+  "checks": {
+    "korean_glyphs_legible": true,
+    "captions_fit_and_do_not_cover_ui": true,
+    "chapter_labels_match_capture": true,
+    "persistent_edited_actual_screens_label_visible": true,
+    "opening_discloses_condensed_wait_and_operations": true,
+    "bag_latency_captions_match_51488_and_46614_ms": true,
+    "digital_review_is_explicitly_automation_not_real_user_validation": true,
+    "offline_evidence_source_and_review_scope_visible": true,
+    "whole_original_capture_proportions_retained": true
+  },
+  "limitations": [
+    "Screenshots retain their original scroll positions and visible UI, including historically captured wording; the video does not imply an uninterrupted realtime recording.",
+    "Readability of small source UI text is limited by original 1265x712 JPEG captures; independent Korean captions remain readable at 1080p.",
+    "No physical action, real-user study or new holdout result is claimed."
+  ]
+}

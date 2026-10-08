@@ -1,0 +1,51 @@
+{
+  "schema": "kitguard.v08.three-class-shadow.threshold-exploration.plan.v1",
+  "created_at_utc": "2026-10-02T00:47:39.023892+00:00",
+  "status": "post_hoc_exploratory_plan_saved_before_threshold_recomputation",
+  "thresholds": [
+    0.5,
+    0.7,
+    0.9,
+    0.95,
+    0.99,
+    0.995,
+    0.999
+  ],
+  "motivation": "After original 0.5 rejection and root overlay review, inspect precision/abstention tradeoff of higher score cutoffs. These thresholds are post-hoc, not preregistered original method.",
+  "data_scope": "All 51 already exposed old development cases; saved detector outputs only, expected 643 boxes after original score-floor/NMS boundary. No image reads or model calls.",
+  "comparison": "Use same frozen fuse/outcome/panel functions; only >= score retention threshold changes. Preserve raw order, cross-class duplicates and original G unknown/issues/action.",
+  "reports": [
+    "C/W/U/E/N full51",
+    "original41C lost",
+    "original3W destinations",
+    "LOCO original14C retained",
+    "all_four and source_supported any-false-ready images/51",
+    "per-case trigger indices and transitions"
+  ],
+  "threshold_selection": "No preferred/new official threshold chosen automatically. Multiple comparisons and post-hoc selection bias disclosed; no production promotion or new-holdout claim.",
+  "original_decision": "Original 0.5 frozen run/protocol and candidate rejection remain unchanged. Verify 0.5 recomputation exactly reproduces saved fusion and aggregate metrics.",
+  "execution": "Pure Python JSON/stdlib CPU only; do not import torch/torchvision/MLX, decode images, retrain or rerun inference.",
+  "inputs": [
+    {
+      "path": "evaluation-runs/v0.8/three_class_shadow_v1/run.json",
+      "sha256": "0bb84a0f85bc09d18893993f8849f5775db56f63cc61461b7b368d265a072802"
+    },
+    {
+      "path": "evaluation-runs/v0.8/three_class_shadow_v1/freeze.json",
+      "sha256": "6ba1690a369a90d73d39a8d4acc74547ee6b4f526149b54b0dcbb0167dbef1d1"
+    },
+    {
+      "path": "evaluation-runs/v0.8/three_class_shadow_v1/predictions.jsonl",
+      "sha256": "6ed0c022880d19fffebe32b58df11f1647c77435b5f10bd2441a9f1c4a78e18b"
+    },
+    {
+      "path": "evaluation-runs/v0.8/three_class_shadow_v1/analysis.json",
+      "sha256": "05e8fe81602fa67b60cca0db6cbdcb49001c4ee0bf65117d8f437cc94f503a9a"
+    },
+    {
+      "path": "docs/v0.8/three_class_shadow_freeze_v1/source_snapshot/probe_three_class_shadow.py",
+      "sha256": "11b0b8d72ee0671143a1a6cb290e0ba5a1423f337893d906ded2c9569e236cfd"
+    }
+  ],
+  "output": "evaluation-runs/v0.8/three_class_threshold_exploration_v1/analysis.json"
+}

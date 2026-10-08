@@ -1,0 +1,102 @@
+{
+  "schema": "kitguard.v08.real-history-video-final.v1",
+  "status": "passed",
+  "completed_at": "2026-10-02T03:10:24.626417+00:00",
+  "video": {
+    "path": "output/demo/v0.8/photo-document-edit-01/KitGuard_v08_photo_document_edit_ko.mp4",
+    "sha256": "faeb3b16fee34370a2b04e2beacc726b8c7a419d90d18180bceb7f9dc9320857",
+    "bytes": 2374331
+  },
+  "video_path": "output/demo/v0.8/photo-document-edit-01/KitGuard_v08_photo_document_edit_ko.mp4",
+  "sha256": "faeb3b16fee34370a2b04e2beacc726b8c7a419d90d18180bceb7f9dc9320857",
+  "duration_seconds": 135.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "decoded_frames": 3240,
+  "full_decode_passed": true,
+  "ffprobe_available": false,
+  "verification_method": "FFmpeg stream metadata plus successful complete decode; ffprobe unavailable",
+  "audio_tracks": 0,
+  "silent": true,
+  "visual_qa_passed": true,
+  "independent_peer_review_passed": true,
+  "human_participants": 0,
+  "new_model_calls": 0,
+  "original_inputs_unchanged": true,
+  "continuous_screen_recording": false,
+  "visual_qa_scope": "6 prepared scene frames and 23 distinct exact decoded samples covering every scene midpoint, first/last, and both sides of all five actual cuts; not human feedback or a claim to visually inspect all 3240 frames.",
+  "edit_cut_quantization_seconds": 0.041666666666666664,
+  "cut_quantization_note": "Five hard cuts each occur one 24fps frame before nominal integer scene start; captions and screenshots transition together. ENCODED_TIMELINE has measured frame indexes; actual API timings remain 50.909s and47.728s.",
+  "source_script": {
+    "path": "scripts/v08/build_demo_video.py",
+    "sha256": "f5d1cf0fd53900101fa5f3a495f1b188956f7123a24746c0d21e5c9dda18daa3"
+  },
+  "caption_plan": {
+    "path": "scripts/v08/demo_video_ko.json",
+    "sha256": "41476fd6014466e016a95369d25e51af3f672d5c3aaf929134dd0f936ba1c8bc"
+  },
+  "contracts": {
+    "path": "tests/test_demo_video_v08.py",
+    "sha256": "4dc2b27423bd8fd974558b862f75f7cb69e8d27841887e50fe997283dac31b0e",
+    "passed": 5,
+    "scope": "Source/timing/backend/currentness and bounded edit plan; no model or browser"
+  },
+  "evidence": {
+    "PREPARATION.json": {
+      "path": "output/demo/v0.8/photo-document-edit-01/PREPARATION.json",
+      "sha256": "593d5ddd66b23d11e30170efd06e11db67eb8ccac4a2707f9e016eb8387b023c"
+    },
+    "SOURCE_INDEX.json": {
+      "path": "output/demo/v0.8/photo-document-edit-01/SOURCE_INDEX.json",
+      "sha256": "65fb880e118d2948907487597ce1de79a81a1cfaafb3473c5fc32e6a0b0117f1"
+    },
+    "SOURCE_JSON_COPIES.json": {
+      "path": "output/demo/v0.8/photo-document-edit-01/SOURCE_JSON_COPIES.json",
+      "sha256": "37c9eb632c73a3dc845ec26ab7bbeeb6b5b78ea9d5ed0252e17e1375f025a9e2"
+    },
+    "EDIT_PLAN.json": {
+      "path": "output/demo/v0.8/photo-document-edit-01/EDIT_PLAN.json",
+      "sha256": "41476fd6014466e016a95369d25e51af3f672d5c3aaf929134dd0f936ba1c8bc"
+    },
+    "TIMELINE.json": {
+      "path": "output/demo/v0.8/photo-document-edit-01/TIMELINE.json",
+      "sha256": "2b1dc886359e5139973f3c2af6ed395a361d762c5d045887a1b489a190d32eb8"
+    },
+    "ENCODED_TIMELINE.json": {
+      "path": "output/demo/v0.8/photo-document-edit-01/ENCODED_TIMELINE.json",
+      "sha256": "d95ccabecfa1236468fa82c505da3d2c07206ca43ad40bd86ece333843033a65"
+    },
+    "receipt.json": {
+      "path": "output/demo/v0.8/photo-document-edit-01/receipt.json",
+      "sha256": "12953ab4c6d21453241a7ed2b1f8a361399cd0febedc071bf55a748ecd49bde8"
+    },
+    "VISUAL_QA.json": {
+      "path": "output/demo/v0.8/photo-document-edit-01/VISUAL_QA.json",
+      "sha256": "9bc129ff1d5226ce8acd81849ef8332b79aacbf3e1456bb102ab9a37577c3a97"
+    },
+    "PEER_ENCODE_APPROVAL.json": {
+      "path": "output/demo/v0.8/photo-document-edit-01/PEER_ENCODE_APPROVAL.json",
+      "sha256": "a712d45995cd7b6a474ea16c2d908af0656a7105c0da343e85389591a6bdc4e5"
+    },
+    "PEER_FINAL_REVIEW.json": {
+      "path": "output/demo/v0.8/photo-document-edit-01/PEER_FINAL_REVIEW.json",
+      "sha256": "53d01937da9442cfeda549da428fcdb1bdfd196ab934ab57f2cdf3facb4e4622"
+    },
+    "full-decode.log": {
+      "path": "output/demo/v0.8/photo-document-edit-01/full-decode.log",
+      "sha256": "412b2fe5bffab013a6767aeb7bc94d00f160ad20774d1047bf095a89b625cd4c"
+    },
+    "commands.jsonl": {
+      "path": "output/demo/v0.8/photo-document-edit-01/commands.jsonl",
+      "sha256": "f6bd5fcb3a1474bd6f44b23d4fa1cc23961ed5c62556b1b27b180504f2470fcc"
+    }
+  },
+  "independent_peer_original": {
+    "path": "test-results/v0.8-video-peer-review-v1/final-review.json",
+    "sha256": "53d01937da9442cfeda549da428fcdb1bdfd196ab934ab57f2cdf3facb4e4622"
+  },
+  "scope": "Existing real MLX API history and subsequent read-only browser stills; engineering opinions are ENGINEERING-AGENT inconclusive, no human validation/physical work/accuracy evaluation. No new source images or model execution."
+}

@@ -1,0 +1,832 @@
+{
+  "schema_version": 1,
+  "kind": "kitguard_fixed_state_study",
+  "study": {
+    "cases": [
+      {
+        "confirmed_independent": true,
+        "demo_source": {
+          "derived_view": true,
+          "kind": "public_photo_demo",
+          "license": "MVTec · CC BY-NC-SA 4.0",
+          "physical_completion_allowed": false,
+          "sample_id": "mixed-screws",
+          "source_case_id": "v03-screws-screws_344-8d389e404b12",
+          "source_note": "굵은 종류만 검사, 규격·SKU 검증 아님 / 检查粗类别，不验证规格或SKU",
+          "source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+          "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws"
+        },
+        "evidence_epoch": 2,
+        "id": "case_5495e4a05e054c9c9974",
+        "inspection_scope": {
+          "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+          "derivation": "pillow_root_crop_rgb_jpeg95_v1",
+          "mode": "region",
+          "region_xyxy": [
+            0,
+            0,
+            768,
+            576
+          ],
+          "root_created_at": "2026-09-26T15:42:56.747+00:00",
+          "root_height": 576,
+          "root_photo_id": "img_5ac28b27cb9e45d0bb0f",
+          "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "root_source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+          "root_width": 768,
+          "scope_confirmed_at": "2026-09-26T15:42:56.752+00:00",
+          "scope_declaration": "operator_all_required_items_inside",
+          "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+          "view_photo_id": "img_98052ab5e608432a92ab",
+          "view_sha256": "5d1ea6976927e6d3b0e723511afb7fde9d889fa1cb0c84c555accac0b492d6b5"
+        },
+        "label": "mixed-screws · scripted author truth · full-frame region",
+        "order_id": "ord_e14c97036fc54c198a55",
+        "photo_id": "img_98052ab5e608432a92ab",
+        "photo_sha256": "5d1ea6976927e6d3b0e723511afb7fde9d889fa1cb0c84c555accac0b492d6b5",
+        "reference_ids": {},
+        "reference_sha256": {},
+        "registered_at": "2026-09-26T15:42:56.767+00:00",
+        "requirements": {
+          "bolt": 3,
+          "bracket": 0,
+          "nut": 0,
+          "washer": 0
+        },
+        "revision": 1,
+        "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+        "source_note": "SCRIPTED AUTHOR-TRUTH PUBLIC REPLAY; NOT HUMAN TIMING OR FIELD EVIDENCE. 自动录入作者真值，非真人计时、非现场。",
+        "trials": {
+          "kitguard": {
+            "check": {
+              "action": {
+                "kind": "none",
+                "message": "영역 안 수량이 일치합니다. 영역 밖은 검사하지 않았습니다. 실물을 확인하세요 / 选区内数量与要求一致，框外未核验，请核对实物",
+                "region": null
+              },
+              "backend": "mlx",
+              "created_at": "2026-09-26T15:43:25.030+00:00",
+              "decision": "ready",
+              "differences": [
+                {
+                  "delta": 0,
+                  "observed": 3,
+                  "part": "bolt",
+                  "required": 3
+                },
+                {
+                  "delta": 0,
+                  "observed": 0,
+                  "part": "nut",
+                  "required": 0
+                },
+                {
+                  "delta": 0,
+                  "observed": 0,
+                  "part": "washer",
+                  "required": 0
+                },
+                {
+                  "delta": 0,
+                  "observed": 0,
+                  "part": "bracket",
+                  "required": 0
+                }
+              ],
+              "evidence_epoch": 2,
+              "evidence_feedback": null,
+              "id": "chk_49df57c33f2a48bdb4e8",
+              "inspection_scope": {
+                "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                "derivation": "pillow_root_crop_rgb_jpeg95_v1",
+                "mode": "region",
+                "region_xyxy": [
+                  0,
+                  0,
+                  768,
+                  576
+                ],
+                "root_created_at": "2026-09-26T15:42:56.747+00:00",
+                "root_height": 576,
+                "root_photo_id": "img_5ac28b27cb9e45d0bb0f",
+                "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+                "root_source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+                "root_width": 768,
+                "scope_confirmed_at": "2026-09-26T15:42:56.752+00:00",
+                "scope_declaration": "operator_all_required_items_inside",
+                "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+                "view_photo_id": "img_98052ab5e608432a92ab",
+                "view_sha256": "5d1ea6976927e6d3b0e723511afb7fde9d889fa1cb0c84c555accac0b492d6b5"
+              },
+              "issues": [],
+              "latency_ms": 15173,
+              "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+              "object_evidence": {
+                "coordinate_frame": "normalized_original",
+                "objects": [
+                  {
+                    "center": [
+                      0.25,
+                      0.17
+                    ],
+                    "part": "bolt"
+                  },
+                  {
+                    "center": [
+                      0.14,
+                      0.72
+                    ],
+                    "part": "bolt"
+                  },
+                  {
+                    "center": [
+                      0.57,
+                      0.59
+                    ],
+                    "part": "bolt"
+                  }
+                ],
+                "protocol": "spatial_inventory_v1",
+                "uncertain_parts": []
+              },
+              "observation_context": null,
+              "observation_verification": {
+                "clear_agreement": true,
+                "counts_agree": true,
+                "mode": "spatial_consensus",
+                "passes": [
+                  {
+                    "action": {
+                      "kind": "none",
+                      "message": "All visible hardware objects identified.",
+                      "region": null
+                    },
+                    "input_sha256": "0d10cb5375f303d2fb9da2b9b17ccea32a52c1b44223721bffe15aca7f4153a9",
+                    "issues": [],
+                    "objects": [
+                      {
+                        "center": [
+                          0.25,
+                          0.17
+                        ],
+                        "part": "bolt"
+                      },
+                      {
+                        "center": [
+                          0.14,
+                          0.72
+                        ],
+                        "part": "bolt"
+                      },
+                      {
+                        "center": [
+                          0.57,
+                          0.59
+                        ],
+                        "part": "bolt"
+                      }
+                    ],
+                    "observed": {
+                      "bolt": 3,
+                      "bracket": 0,
+                      "nut": 0,
+                      "washer": 0
+                    },
+                    "transform": "original",
+                    "uncertain_parts": []
+                  },
+                  {
+                    "action": {
+                      "kind": "none",
+                      "message": "All visible hardware objects identified.",
+                      "region": null
+                    },
+                    "input_sha256": "c47dcbc0bf8d779a88223c403dea454f413415cd5edbf4fc90ae240646941d0e",
+                    "issues": [],
+                    "objects": [
+                      {
+                        "center": [
+                          0.59,
+                          0.42
+                        ],
+                        "part": "bolt"
+                      },
+                      {
+                        "center": [
+                          0.18,
+                          0.75
+                        ],
+                        "part": "bolt"
+                      },
+                      {
+                        "center": [
+                          0.72,
+                          0.85
+                        ],
+                        "part": "bolt"
+                      }
+                    ],
+                    "observed": {
+                      "bolt": 3,
+                      "bracket": 0,
+                      "nut": 0,
+                      "washer": 0
+                    },
+                    "transform": "rotate_90_ccw",
+                    "uncertain_parts": []
+                  }
+                ],
+                "same_model_correlated_calls": true
+              },
+              "observed": {
+                "bolt": 3,
+                "bracket": 0,
+                "nut": 0,
+                "washer": 0
+              },
+              "order_id": "ord_e14c97036fc54c198a55",
+              "photo_id": "img_98052ab5e608432a92ab",
+              "photo_sha256": "5d1ea6976927e6d3b0e723511afb7fde9d889fa1cb0c84c555accac0b492d6b5",
+              "reference_ids": {},
+              "requirements_snapshot": {
+                "bolt": 3,
+                "bracket": 0,
+                "nut": 0,
+                "washer": 0
+              },
+              "revision": 1,
+              "runtime_identity": {
+                "image_max_side": 1536,
+                "label": "Qwen3.6-27B · MLX 4-bit · local",
+                "observation_mode": "spatial_guarded",
+                "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+                "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+                "revision": "c000ac2c2057d94be3fa931000c31723aac53282"
+              },
+              "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+              "tool_trace": [
+                {
+                  "latency_ms": 15173,
+                  "model": "Qwen3.6-27B · MLX 4-bit · local",
+                  "status": "completed",
+                  "step": "observe_image"
+                },
+                {
+                  "listed_objects": 3,
+                  "status": "completed",
+                  "step": "derive_counts_from_object_list",
+                  "uncertain_parts": []
+                },
+                {
+                  "clear_agreement": true,
+                  "same_model_correlated_calls": true,
+                  "status": "completed",
+                  "step": "compare_orientation_observations"
+                },
+                {
+                  "revision": 1,
+                  "status": "completed",
+                  "step": "compare_current_requirements"
+                },
+                {
+                  "status": "not_applicable",
+                  "step": "review_previous_evidence"
+                },
+                {
+                  "action_kind": "none",
+                  "decision": "ready",
+                  "status": "completed",
+                  "step": "choose_next_action"
+                },
+                {
+                  "evidence_epoch": 2,
+                  "revision": 1,
+                  "status": "completed",
+                  "step": "commit_current_evidence"
+                }
+              ],
+              "valid": true
+            },
+            "check_index": 0,
+            "elapsed_ms": 15187,
+            "event_index": 3,
+            "evidence": {
+              "captured_at": "2026-09-26T15:43:25.041+00:00",
+              "checks": [
+                {
+                  "action": {
+                    "kind": "none",
+                    "message": "영역 안 수량이 일치합니다. 영역 밖은 검사하지 않았습니다. 실물을 확인하세요 / 选区内数量与要求一致，框外未核验，请核对实物",
+                    "region": null
+                  },
+                  "backend": "mlx",
+                  "created_at": "2026-09-26T15:43:25.030+00:00",
+                  "decision": "ready",
+                  "differences": [
+                    {
+                      "delta": 0,
+                      "observed": 3,
+                      "part": "bolt",
+                      "required": 3
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 0,
+                      "part": "nut",
+                      "required": 0
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 0,
+                      "part": "washer",
+                      "required": 0
+                    },
+                    {
+                      "delta": 0,
+                      "observed": 0,
+                      "part": "bracket",
+                      "required": 0
+                    }
+                  ],
+                  "evidence_epoch": 2,
+                  "evidence_feedback": null,
+                  "id": "chk_49df57c33f2a48bdb4e8",
+                  "inspection_scope": {
+                    "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                    "derivation": "pillow_root_crop_rgb_jpeg95_v1",
+                    "mode": "region",
+                    "region_xyxy": [
+                      0,
+                      0,
+                      768,
+                      576
+                    ],
+                    "root_created_at": "2026-09-26T15:42:56.747+00:00",
+                    "root_height": 576,
+                    "root_photo_id": "img_5ac28b27cb9e45d0bb0f",
+                    "root_photo_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+                    "root_source_sha256": "dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb",
+                    "root_width": 768,
+                    "scope_confirmed_at": "2026-09-26T15:42:56.752+00:00",
+                    "scope_declaration": "operator_all_required_items_inside",
+                    "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+                    "view_photo_id": "img_98052ab5e608432a92ab",
+                    "view_sha256": "5d1ea6976927e6d3b0e723511afb7fde9d889fa1cb0c84c555accac0b492d6b5"
+                  },
+                  "issues": [],
+                  "latency_ms": 15173,
+                  "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+                  "object_evidence": {
+                    "coordinate_frame": "normalized_original",
+                    "objects": [
+                      {
+                        "center": [
+                          0.25,
+                          0.17
+                        ],
+                        "part": "bolt"
+                      },
+                      {
+                        "center": [
+                          0.14,
+                          0.72
+                        ],
+                        "part": "bolt"
+                      },
+                      {
+                        "center": [
+                          0.57,
+                          0.59
+                        ],
+                        "part": "bolt"
+                      }
+                    ],
+                    "protocol": "spatial_inventory_v1",
+                    "uncertain_parts": []
+                  },
+                  "observation_context": null,
+                  "observation_verification": {
+                    "clear_agreement": true,
+                    "counts_agree": true,
+                    "mode": "spatial_consensus",
+                    "passes": [
+                      {
+                        "action": {
+                          "kind": "none",
+                          "message": "All visible hardware objects identified.",
+                          "region": null
+                        },
+                        "input_sha256": "0d10cb5375f303d2fb9da2b9b17ccea32a52c1b44223721bffe15aca7f4153a9",
+                        "issues": [],
+                        "objects": [
+                          {
+                            "center": [
+                              0.25,
+                              0.17
+                            ],
+                            "part": "bolt"
+                          },
+                          {
+                            "center": [
+                              0.14,
+                              0.72
+                            ],
+                            "part": "bolt"
+                          },
+                          {
+                            "center": [
+                              0.57,
+                              0.59
+                            ],
+                            "part": "bolt"
+                          }
+                        ],
+                        "observed": {
+                          "bolt": 3,
+                          "bracket": 0,
+                          "nut": 0,
+                          "washer": 0
+                        },
+                        "transform": "original",
+                        "uncertain_parts": []
+                      },
+                      {
+                        "action": {
+                          "kind": "none",
+                          "message": "All visible hardware objects identified.",
+                          "region": null
+                        },
+                        "input_sha256": "c47dcbc0bf8d779a88223c403dea454f413415cd5edbf4fc90ae240646941d0e",
+                        "issues": [],
+                        "objects": [
+                          {
+                            "center": [
+                              0.59,
+                              0.42
+                            ],
+                            "part": "bolt"
+                          },
+                          {
+                            "center": [
+                              0.18,
+                              0.75
+                            ],
+                            "part": "bolt"
+                          },
+                          {
+                            "center": [
+                              0.72,
+                              0.85
+                            ],
+                            "part": "bolt"
+                          }
+                        ],
+                        "observed": {
+                          "bolt": 3,
+                          "bracket": 0,
+                          "nut": 0,
+                          "washer": 0
+                        },
+                        "transform": "rotate_90_ccw",
+                        "uncertain_parts": []
+                      }
+                    ],
+                    "same_model_correlated_calls": true
+                  },
+                  "observed": {
+                    "bolt": 3,
+                    "bracket": 0,
+                    "nut": 0,
+                    "washer": 0
+                  },
+                  "order_id": "ord_e14c97036fc54c198a55",
+                  "photo_id": "img_98052ab5e608432a92ab",
+                  "photo_sha256": "5d1ea6976927e6d3b0e723511afb7fde9d889fa1cb0c84c555accac0b492d6b5",
+                  "reference_ids": {},
+                  "requirements_snapshot": {
+                    "bolt": 3,
+                    "bracket": 0,
+                    "nut": 0,
+                    "washer": 0
+                  },
+                  "revision": 1,
+                  "runtime_identity": {
+                    "image_max_side": 1536,
+                    "label": "Qwen3.6-27B · MLX 4-bit · local",
+                    "observation_mode": "spatial_guarded",
+                    "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+                    "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+                    "revision": "c000ac2c2057d94be3fa931000c31723aac53282"
+                  },
+                  "source_family_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+                  "tool_trace": [
+                    {
+                      "latency_ms": 15173,
+                      "model": "Qwen3.6-27B · MLX 4-bit · local",
+                      "status": "completed",
+                      "step": "observe_image"
+                    },
+                    {
+                      "listed_objects": 3,
+                      "status": "completed",
+                      "step": "derive_counts_from_object_list",
+                      "uncertain_parts": []
+                    },
+                    {
+                      "clear_agreement": true,
+                      "same_model_correlated_calls": true,
+                      "status": "completed",
+                      "step": "compare_orientation_observations"
+                    },
+                    {
+                      "revision": 1,
+                      "status": "completed",
+                      "step": "compare_current_requirements"
+                    },
+                    {
+                      "status": "not_applicable",
+                      "step": "review_previous_evidence"
+                    },
+                    {
+                      "action_kind": "none",
+                      "decision": "ready",
+                      "status": "completed",
+                      "step": "choose_next_action"
+                    },
+                    {
+                      "evidence_epoch": 2,
+                      "revision": 1,
+                      "status": "completed",
+                      "step": "commit_current_evidence"
+                    }
+                  ],
+                  "valid": true
+                }
+              ],
+              "events": [
+                {
+                  "created_at": "2026-09-26T15:43:09.857+00:00",
+                  "id": "evt_9b87df2764a94d4eb710",
+                  "kind": "inspection_started",
+                  "message": "실물 관찰 시작 / 开始观察实物",
+                  "payload": {
+                    "photo_id": "img_98052ab5e608432a92ab"
+                  }
+                },
+                {
+                  "created_at": "2026-09-26T15:43:25.033+00:00",
+                  "id": "evt_32213bae7b074222a43b",
+                  "kind": "inspection_completed",
+                  "message": "영역 안 수량이 일치합니다. 영역 밖은 검사하지 않았습니다. 실물을 확인하세요 / 选区内数量与要求一致，框外未核验，请核对实物",
+                  "payload": {
+                    "check_id": "chk_49df57c33f2a48bdb4e8",
+                    "decision": "ready",
+                    "revision": 1
+                  }
+                }
+              ],
+              "order_revision_at_capture": 1,
+              "other_order_exposures": []
+            },
+            "finished_at": "2026-09-26T15:43:25.041+00:00",
+            "id": "trial_4390ff20a83e42e7b059",
+            "manual_counts": null,
+            "method": "kitguard",
+            "note": "",
+            "order_id": "ord_e14c97036fc54c198a55",
+            "photo_id": "img_98052ab5e608432a92ab",
+            "revision": 1,
+            "started_at": "2026-09-26T15:43:09.854+00:00",
+            "status": "completed"
+          },
+          "manual": {
+            "check": null,
+            "check_index": 0,
+            "elapsed_ms": 6,
+            "event_index": 3,
+            "evidence": {
+              "captured_at": "2026-09-26T15:43:09.848+00:00",
+              "checks": [],
+              "events": [],
+              "order_revision_at_capture": 1,
+              "other_order_exposures": []
+            },
+            "finished_at": "2026-09-26T15:43:09.848+00:00",
+            "id": "trial_99c9a67a0da74552831b",
+            "manual_counts": {
+              "bolt": 3,
+              "bracket": 0,
+              "nut": 0,
+              "washer": 0
+            },
+            "method": "manual",
+            "note": "SCRIPTED AUTHOR-TRUTH PUBLIC REPLAY; NOT HUMAN TIMING OR FIELD EVIDENCE. 自动录入作者真值，非真人计时、非现场。",
+            "order_id": "ord_e14c97036fc54c198a55",
+            "photo_id": "img_98052ab5e608432a92ab",
+            "revision": 1,
+            "started_at": "2026-09-26T15:43:09.842+00:00",
+            "status": "completed"
+          }
+        },
+        "truth": {
+          "bolt": 3,
+          "bracket": 0,
+          "nut": 0,
+          "washer": 0
+        },
+        "truth_commitment": "18bfb75935a495c442ad69b6a08e0b9edfd31cc57b090dbe3514ff827fd199ea",
+        "truth_nonce": "c0b4d744923e9ffea77e2badbdd96afdeb36706482df2af5bb4c4d2a1c72946b"
+      }
+    ],
+    "closed_at": "2026-09-26T15:43:25.056+00:00",
+    "created_at": "2026-09-26T15:42:56.762+00:00",
+    "events": [
+      {
+        "created_at": "2026-09-26T15:42:56.762+00:00",
+        "kind": "created",
+        "payload": {}
+      },
+      {
+        "created_at": "2026-09-26T15:42:56.767+00:00",
+        "kind": "case_registered",
+        "payload": {
+          "case_id": "case_5495e4a05e054c9c9974",
+          "truth_commitment": "18bfb75935a495c442ad69b6a08e0b9edfd31cc57b090dbe3514ff827fd199ea"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:42:56.772+00:00",
+        "kind": "frozen",
+        "payload": {}
+      },
+      {
+        "created_at": "2026-09-26T15:43:09.842+00:00",
+        "kind": "trial_started",
+        "payload": {
+          "case_id": "case_5495e4a05e054c9c9974",
+          "method": "manual",
+          "trial_id": "trial_99c9a67a0da74552831b"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:43:09.848+00:00",
+        "kind": "trial_finished",
+        "payload": {
+          "status": "completed",
+          "trial_id": "trial_99c9a67a0da74552831b"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:43:09.854+00:00",
+        "kind": "trial_started",
+        "payload": {
+          "case_id": "case_5495e4a05e054c9c9974",
+          "method": "kitguard",
+          "trial_id": "trial_4390ff20a83e42e7b059"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:43:25.041+00:00",
+        "kind": "trial_finished",
+        "payload": {
+          "status": "completed",
+          "trial_id": "trial_4390ff20a83e42e7b059"
+        }
+      },
+      {
+        "created_at": "2026-09-26T15:43:25.056+00:00",
+        "kind": "closed",
+        "payload": {}
+      }
+    ],
+    "frozen_at": "2026-09-26T15:42:56.772+00:00",
+    "id": "study_814ea9d7ee8a453485ce",
+    "limitations": [
+      "출처·독립 계수는 작업자의 선언입니다 / 来源与独立计数是操作者声明，软件不能证明现场真实性。",
+      "정답 잠금은 블라인드 실험이 아닙니다 / 真值先锁定不等于盲测；同一浏览器没有人员隔离。",
+      "수동 후 AI 순서에는 학습 효과가 있습니다 / 固定先人工后AI可能产生学习效应，不能据此宣称因果效率提升。",
+      "준비·촬영 이후의 시간입니다 / 计时从准备和拍照之后开始，包含等待与操作，不是完整实物作业时间。",
+      "한 사례는 고정된 물체 상태입니다 / 每个案例只对应一个固定实物状态；补件后须新登记真值，不计连续补件成功率。",
+      "공개 사진·공학 테스트는 현장 결과가 아닙니다 / 公开回放和工程替身不是现场效果；三种来源分别记录。",
+      "중단·미실행도 분모에 포함합니다 / 失败、放弃、中断及未开始都保留；已返回的错误不会被放弃状态隐藏。",
+      "해시는 서명이 아닙니다 / 散列用于核对内容，不是签名、人员身份或实物真实性证明。"
+    ],
+    "note": "SCRIPTED AUTHOR-TRUTH PUBLIC REPLAY; NOT HUMAN TIMING OR FIELD EVIDENCE. 自动录入作者真值，非真人计时、非现场。",
+    "participant_code": "scripted_replay",
+    "planned_cases": 1,
+    "protocol": {
+      "inspection_scope_policy": "operator_region_v1",
+      "max_cases": 48,
+      "methods": [
+        "manual",
+        "kitguard"
+      ],
+      "missing": "Every planned slot remains in each method denominator",
+      "name": "fixed_state_manual_then_kitguard_v1",
+      "repeat": "One start per method; all inspection attempts and returned checks retained",
+      "timing": "Server monotonic start-to-terminal after photo/setup; not full physical work time",
+      "truth_policy": "Two matching entries and an operator declaration, sealed before either method starts"
+    },
+    "protocol_sha256": "3205020ea0e502a2b64db70ccc9e57a773fbd1e547d74a39eda35ef7c0702e93",
+    "recorder_source_sha256": "c74f7de108ea574bbca66c9311116ba1b5bc152805c83512819c9d0350cbe12f",
+    "runtime_identity": {
+      "app_version": "0.5.0",
+      "image_max_side": 1536,
+      "observation_mode": "spatial_guarded",
+      "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+      "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+      "revision": "c000ac2c2057d94be3fa931000c31723aac53282"
+    },
+    "source_kind": "public_replay",
+    "status": "closed",
+    "title": "PUBLIC DEVELOPMENT REGION · actual MLX",
+    "report": {
+      "scope": "fixed_state_manual_then_kitguard_v1",
+      "source_kind": "public_replay",
+      "planned_cases": 1,
+      "registered_cases": 1,
+      "methods": {
+        "manual": {
+          "started": 1,
+          "completed": 1,
+          "correct": 1,
+          "wrong": 0,
+          "uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "interrupted": 0,
+          "not_started": 0,
+          "planned": 1,
+          "correct_fraction": 1.0,
+          "terminal_elapsed_ms": {
+            "n": 1,
+            "median": 6,
+            "max": 6
+          },
+          "completed_elapsed_ms": {
+            "n": 1,
+            "median": 6,
+            "max": 6
+          },
+          "false_ready": null,
+          "returned_checks": {
+            "total": 0,
+            "scorable": 0,
+            "wrong_clear": 0,
+            "false_ready": 0,
+            "uncertain": 0,
+            "multiple_attempt_trials": 0,
+            "ineligible_backend_or_identity": 0
+          }
+        },
+        "kitguard": {
+          "started": 1,
+          "completed": 1,
+          "correct": 1,
+          "wrong": 0,
+          "uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "interrupted": 0,
+          "not_started": 0,
+          "planned": 1,
+          "correct_fraction": 1.0,
+          "terminal_elapsed_ms": {
+            "n": 1,
+            "median": 15187,
+            "max": 15187
+          },
+          "completed_elapsed_ms": {
+            "n": 1,
+            "median": 15187,
+            "max": 15187
+          },
+          "false_ready": {
+            "numerator": 0,
+            "denominator": 0
+          },
+          "returned_checks": {
+            "total": 1,
+            "scorable": 1,
+            "wrong_clear": 0,
+            "false_ready": 0,
+            "uncertain": 0,
+            "multiple_attempt_trials": 0,
+            "ineligible_backend_or_identity": 0
+          }
+        }
+      },
+      "paired_completed_cases": 1,
+      "limitations": [
+        "출처·독립 계수는 작업자의 선언입니다 / 来源与独立计数是操作者声明，软件不能证明现场真实性。",
+        "정답 잠금은 블라인드 실험이 아닙니다 / 真值先锁定不等于盲测；同一浏览器没有人员隔离。",
+        "수동 후 AI 순서에는 학습 효과가 있습니다 / 固定先人工后AI可能产生学习效应，不能据此宣称因果效率提升。",
+        "준비·촬영 이후의 시간입니다 / 计时从准备和拍照之后开始，包含等待与操作，不是完整实物作业时间。",
+        "한 사례는 고정된 물체 상태입니다 / 每个案例只对应一个固定实物状态；补件后须新登记真值，不计连续补件成功率。",
+        "공개 사진·공학 테스트는 현장 결과가 아닙니다 / 公开回放和工程替身不是现场效果；三种来源分别记录。",
+        "중단·미실행도 분모에 포함합니다 / 失败、放弃、中断及未开始都保留；已返回的错误不会被放弃状态隐藏。",
+        "해시는 서명이 아닙니다 / 散列用于核对内容，不是签名、人员身份或实物真实性证明。"
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "scene": 1,
+    "start_seconds": 0,
+    "end_seconds": 20,
+    "original_screenshot": "r2-ko.jpg",
+    "rendered_frame": "scenes/scene-01.png",
+    "frame_sha256": "c4e3bb6ed92ba627d025443001dd6ffd0325a8a3526a4ab18322b851fb548b9e",
+    "ass_sha256": "528c50f5cd5bd3e72f5dca8c6730d368ef93cafc93c6ee1100e7895c7a62702d"
+  },
+  {
+    "scene": 2,
+    "start_seconds": 20,
+    "end_seconds": 45,
+    "original_screenshot": "r1-history-zh.jpg",
+    "rendered_frame": "scenes/scene-02.png",
+    "frame_sha256": "e5847304f586d137be6baabefe488537a748958a1431ae1228392cb3ac4a6558",
+    "ass_sha256": "511b5d41c2f3fab8f2302e279948244d40e1c71e96decf13250b8d0b2c96d204"
+  },
+  {
+    "scene": 3,
+    "start_seconds": 45,
+    "end_seconds": 70,
+    "original_screenshot": "r2-zh.jpg",
+    "rendered_frame": "scenes/scene-03.png",
+    "frame_sha256": "bf0bf17608100034de21164c8f7c99bc01dd35fd1655369a7981df9153aa1eca",
+    "ass_sha256": "1fbd51a7f8c7f19304f598a16c24336c9bf40ae207e29c2f59d8e8aa0d7f4bbb"
+  },
+  {
+    "scene": 4,
+    "start_seconds": 70,
+    "end_seconds": 95,
+    "original_screenshot": "reviews-ko.jpg",
+    "rendered_frame": "scenes/scene-04.png",
+    "frame_sha256": "4e05bebba131d93e4bd370ef359060a4496cbcc37ba19e609b9ddd19bc1ba9a5",
+    "ass_sha256": "e87d83dce9eb136cab016b4dc72ed8ec29a01a0a07e5bdfc8d9f7fe2bfb63035"
+  },
+  {
+    "scene": 5,
+    "start_seconds": 95,
+    "end_seconds": 115,
+    "original_screenshot": "reviews-zh.jpg",
+    "rendered_frame": "scenes/scene-05.png",
+    "frame_sha256": "f0939c4dac0dca471a52e63609adaf81d7db58ab172d08fd58b93109795372ee",
+    "ass_sha256": "051095abd3a265f396e889993b9a3916481c10551c9cefa3c0fa4381dce4d503"
+  },
+  {
+    "scene": 6,
+    "start_seconds": 115,
+    "end_seconds": 135,
+    "original_screenshot": null,
+    "rendered_frame": "scenes/scene-06.png",
+    "frame_sha256": "0a60e49a7bf425b2ff4a0891b35638d30dd7649e390efe1e41d31270584993c2",
+    "ass_sha256": "22f4b8ff35863b626f2133592d190c6ed16de007fee8667416e3ed1dffe140a3"
+  }
+]

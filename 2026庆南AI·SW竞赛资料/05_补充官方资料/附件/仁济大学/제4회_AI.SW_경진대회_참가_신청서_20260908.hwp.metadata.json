@@ -1,0 +1,17 @@
+{
+  "url": "https://sw.inje.ac.kr/bbs/download.php?bo_table=news&wr_id=71&no=1&nonce=7234386d745365313776%7C1790243693%7C3758720afa38bc9ecaeb306f63c568f4b877b0aa",
+  "path": "05_补充官方资料/附件/仁济大学/제4회_AI.SW_경진대회_참가_신청서_20260908.hwp",
+  "source": "https://sw.inje.ac.kr/bbs/board.php?bo_table=news&wr_id=71",
+  "kind": "attachment",
+  "cookie_jar": "/var/folders/57/my3v7tgs1mn9cxsptzl_jv6m0000gn/T/tmphcqxpvqc/cookies.txt",
+  "retrieved_at": "2026-09-24T16:35:48.540469+09:00",
+  "http_status": 200,
+  "final_url": "https://sw.inje.ac.kr/bbs/download.php?bo_table=news&wr_id=71&no=1&nonce=7234386d745365313776%7C1790243693%7C3758720afa38bc9ecaeb306f63c568f4b877b0aa",
+  "content_type": "file/unknown",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": "attachment; filename=\"%EC%A0%9C4%ED%9A%8C_AI.SW_%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C_%EC%B0%B8%EA%B0%80_%EC%8B%A0%EC%B2%AD%EC%84%9C_20260908.hwp\"",
+  "bytes": 80384,
+  "sha256": "4b262808bde99222b2947a3f6de9551e4bae9d36f6ba4e33be8c2452ebf6301b",
+  "magic_hex": "d0cf11e0a1b11ae10000000000000000"
+}

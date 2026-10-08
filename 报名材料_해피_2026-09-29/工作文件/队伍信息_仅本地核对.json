@@ -1,0 +1,56 @@
+{
+  "team_name": "해피",
+  "project_name": "KitGuard",
+  "division": "일반부",
+  "member_count": 2,
+  "school": "국립창원대학교",
+  "department": "인공지능융합공학과",
+  "leader": {
+    "name": "남청청",
+    "student_id": "20267927",
+    "phone": "010-6728-3265",
+    "phone_international": "+821067283265",
+    "email": "3246599898@qq.com",
+    "course": "석·박사통합과정",
+    "year": "1년차",
+    "address": "경상남도 창원시 의창구 창원대학로 20, 국립창원대학교 학생생활관 5동 510호실",
+    "enrollment_proof": {
+      "archived_file": "/Users/lkc/Downloads/AI·SW/报名材料_해피_2026-09-29/02_资格证明放这里/04_재학증명서_남청청.pdf",
+      "course_on_certificate": "석박사통합",
+      "enrollment_semester": 1,
+      "admission_date": "2026-09-01",
+      "issue_date": "2026-09-28",
+      "sha256": "7d8ea64795a6d38a70146876747699b8f49cdfe5e41d9260f06f9cfa73f8d3b6",
+      "reviewed_date": "2026-09-28"
+    }
+  },
+  "member": {
+    "name": "이개심",
+    "student_id": "20267645",
+    "phone": "010-3915-7350",
+    "phone_international": "+821039157350",
+    "email": "lkcfqy@gmail.com",
+    "course": "박사과정",
+    "year": "1년차",
+    "city_county": "경상남도 창원시",
+    "enrollment_proof": {
+      "archived_file": "/Users/lkc/Downloads/AI·SW/报名材料_해피_2026-09-29/02_资格证明放这里/05_재학증명서_이개심.pdf",
+      "course_on_certificate": "박사",
+      "enrollment_semester": 1,
+      "admission_date": "2026-09-01",
+      "issue_date": "2026-09-01",
+      "sha256": "704656d6eb524ecce88f2c2a883bfb937698ea1945a22fe9ab1707fa00542e24",
+      "reviewed_date": "2026-09-28"
+    },
+    "address": "경상남도 창원시 의창구 창원대학로 20, 국립창원대학교 학생생활관 7동 1111호실"
+  },
+  "notes": "학생번호 및 팀원 이메일은 공식 원서 입력란이 없어 원서에 추가하지 않음. 2026-09-28 제출된 재학증명서에서 두 사람의 성명·학번·학과와 학적을 대조함. 팀장 증명서 표기는 석박사통합, 팀원은 박사이며 모두 재학 1학기. 분담은 계획안.",
+  "address_verification": {
+    "date": "2026-09-28",
+    "source": "User supplied residence information; no residency-document verification.",
+    "campus_road_address_source": "https://www.changwon.ac.kr/dorm/main.do",
+    "leader_form_address": "경상남도 창원시 의창구 창원대학로 20, 국립창원대학교 학생생활관 5동 510호실",
+    "member_form_address": "경상남도 창원시",
+    "reason_for_member_short_address": "Official team-member address field requests city/county only."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "version": "0.9.0.dev4",
+  "material_revision": "20261005",
+  "final_materials_frozen": true,
+  "status": "pass",
+  "artifacts": {
+    "KitGuard_report_5p.pdf": {
+      "bytes": 197390,
+      "sha256": "cd8f3a139562c16f547d7118f3ff2406f7af150be1f2c7baf2830b1311672ce4"
+    },
+    "KitGuard_agent_1p.pdf": {
+      "bytes": 74193,
+      "sha256": "ff913fe38b5dc727f083a0d38782209409b4fc9d56198b86ae82090a5a1146e7"
+    },
+    "KitGuard_presentation_9slides.pptx": {
+      "bytes": 136486,
+      "sha256": "46099c5695d414f181e6219f6f2514249b49d5dd9ea65246a938327f768a9259"
+    },
+    "KitGuard_presentation_9slides.pdf": {
+      "bytes": 609654,
+      "sha256": "2810ec36bf0595afffa1e63b400c1319d7316bcc6bdaac36686fd79d3251ed91"
+    }
+  },
+  "visual_qa": {
+    "report_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "agent_pages": [
+      1
+    ],
+    "pptx_final_rendered_slides": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "ppt_pdf_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "each_page_individually_inspected": true,
+    "findings": []
+  },
+  "pptx_structure": "9 slides; 4 native editable tables; package integrity, geometry, heading fit, font policy and first-party import passed",
+  "ppt_pdf_conversion": "Bundled LibreOffice with private fontconfig; all native PPT text segments preserved and all 9 PDF pages visually inspected",
+  "native_powerpoint_verified": false,
+  "revisions": [
+    "Team leader 남청청 and member 이개심; 일반부; 국립창원대학교",
+    "Standardized source filename KitGuard_source.zip",
+    "Concrete 2/2/2/0 to 3/2/2/0 stale-ready ablation",
+    "LOCO24 separate same-domain fixed evaluation; no 51+24 pooling",
+    "10/5 live engineering replay: 3 scenarios, 4 real MLX; no new accuracy denominator",
+    "0.9.0.dev4 observation core unchanged; material revision only",
+    "No claims of first place, actual human efficiency, physical completion or proven business demand"
+  ],
+  "builders": [
+    "scripts/submission/build_materials.py",
+    "scripts/submission/build_slides.mjs",
+    "scripts/submission/export_presentation_pdf.py"
+  ]
+}

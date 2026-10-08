@@ -1,0 +1,88 @@
+{
+  "surface": "report",
+  "title": "KitGuard 自检与竞争力评估",
+  "generatedAt": "2026-09-26T09:54:35.474930+00:00",
+  "buildStatus": "creating",
+  "status": "observed",
+  "report": {
+    "asOf": "2026-09-26T09:50:46.950449+00:00"
+  },
+  "filters": [],
+  "queries": {
+    "benchmark_runs": {
+      "rows": [
+        {
+          "run": "screws_development_baseline_v1",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "dataset": "MVTec Screws",
+          "split": "development",
+          "images": 16,
+          "exact": 1,
+          "accuracy": 0.0625,
+          "actionable": 0,
+          "wrongActionable": 0,
+          "errors": 0,
+          "medianMs": 5455.5,
+          "eligible": 0
+        },
+        {
+          "run": "screws_development_v2",
+          "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "dataset": "MVTec Screws",
+          "split": "development",
+          "images": 16,
+          "exact": 3,
+          "accuracy": 0.1875,
+          "actionable": 16,
+          "wrongActionable": 13,
+          "errors": 0,
+          "medianMs": 3123.5,
+          "eligible": 0
+        }
+      ],
+      "source": {
+        "label": "本机真实模型运行，逐例保留失败",
+        "files": [
+          "evaluation-runs/screws_development_baseline_v1/run.json",
+          "evaluation-runs/screws_development_v2/run.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "完整计数正确率",
+            "definition": "四类计数全部等于作者标注的原图数 / 全部预先选定图片数；拒绝及失败不排除",
+            "componentIds": [
+              "benchmark-table",
+              "benchmark-findings",
+              "report-summary"
+            ]
+          },
+          {
+            "label": "可执行",
+            "definition": "四类数量均非null、issues为空、action.kind为none，不代表计数一定正确。",
+            "componentIds": [
+              "benchmark-table",
+              "benchmark-findings"
+            ]
+          },
+          {
+            "label": "中位耗时",
+            "definition": "单例真实observe端到端耗时中位数，单位毫秒；包含当次冷加载。",
+            "componentIds": [
+              "benchmark-table"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "运行与复算",
+            "detail": "scripts/run_benchmark.py读取预先冻结的manifest及SHA，运行本地MLX；kitguard/evaluation.py按每个原图计分。开发集反复调试，不是留出性能。"
+          }
+        ],
+        "caveats": [
+          "当前Screws每个原图至少一类超过产品每类3件上限，只是计数压力测试；匹配工单性能分母为0。",
+          "公开照片可能已被基础模型预训练使用；缺连续实物操作及真人基线。"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "url": "https://knnews.co.kr/news/articleView.php?gubun=commission&idxno=1550460",
+  "path": "08_媒体及公开转载/庆南新闻_20260909.html",
+  "source": "public web search",
+  "kind": "media_repost",
+  "retrieved_at": "2026-09-24T16:39:43.228628+09:00",
+  "http_status": 200,
+  "final_url": "https://knnews.co.kr/news/articleView.php?gubun=commission&idxno=1550460",
+  "content_type": "text/html; charset=UTF-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 74285,
+  "sha256": "71d2cee3afaa64d4198020f2e5fb9295ef60e68a95fb359b740eaccefa2803ee",
+  "magic_hex": "0d0a3c21444f43545950452068746d6c"
+}

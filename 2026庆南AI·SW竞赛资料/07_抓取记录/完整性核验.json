@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-24T16:50:48.884457+09:00",
+  "source_files_verified": 46,
+  "hwp_valid": 8,
+  "xml_valid": 8,
+  "local_links_checked": 119,
+  "local_image_links": 10,
+  "coverage_checks": {
+    "昌原大学公告附件": true,
+    "昌原大学正文图片": true,
+    "协会两份修订文件与海报": true,
+    "赛事官网全部当前公告附件": true,
+    "仁济大学公告两附件": true,
+    "GNU航空航天公告六附件": true,
+    "协会答疑保存": true,
+    "HWP含表格文本": true
+  },
+  "issues": []
+}

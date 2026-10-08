@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "presentation": "output/presentations/v0.7-final/KitGuard_발표_v0.7.0_v2.pptx",
+  "sha256": "e00a14ae73ba953dfd8272cae8a7bd3d0a51adbb1a8901a0b3972e7e026bb50f",
+  "slides": 8,
+  "visual_renderer": "Artifact Tool; full-size individual PNG review",
+  "native_powerpoint_opened": false,
+  "source_hashes_current": true,
+  "native_table_slides": [
+    4,
+    5,
+    6
+  ],
+  "slides_reviewed": [
+    {
+      "slide": 1,
+      "status": "passed",
+      "png_sha256": "192df8014a22ce2cf8ac998179df66e64951cc12b98d72b58c332d672a7300b5",
+      "note": "Individually inspected at full size; v2 PNG byte-identical to inspected v1."
+    },
+    {
+      "slide": 2,
+      "status": "passed",
+      "png_sha256": "5787b029cc39eaf2539386a82878b5e1ba1de89b258833ece27df0a5f51c0239",
+      "note": "Revised editable flow arrows and one-line node labels inspected in v2."
+    },
+    {
+      "slide": 3,
+      "status": "passed",
+      "png_sha256": "0bb420704cbebfc5761f004dcf17b229da611982ce60a50ed3e873be90c88476",
+      "note": "Individually inspected at full size; v2 PNG byte-identical to inspected v1."
+    },
+    {
+      "slide": 4,
+      "status": "passed",
+      "png_sha256": "7ea5205ab8c56c30bb410833bdab8943a8bcfdc495a28dc7bdac54c6aeaf1ed1",
+      "note": "Individually inspected at full size; v2 PNG byte-identical to inspected v1."
+    },
+    {
+      "slide": 5,
+      "status": "passed",
+      "png_sha256": "ce3443e3b7886e336164d0e90b0d3e22b9da6a511026c5f7588886a8cafa950f",
+      "note": "Individually inspected at full size; v2 PNG byte-identical to inspected v1."
+    },
+    {
+      "slide": 6,
+      "status": "passed",
+      "png_sha256": "b0401f3c870b4c6480a41a37849b9c88e38f8bdd56f82c11bafe6a7943310dac",
+      "note": "Individually inspected at full size; v2 PNG byte-identical to inspected v1."
+    },
+    {
+      "slide": 7,
+      "status": "passed",
+      "png_sha256": "0ea341c8e67c25df99ee31f48a18ac7bed04f25262abf4ff5d1733b6ea4c61f6",
+      "note": "Individually inspected at full size; v2 PNG byte-identical to inspected v1."
+    },
+    {
+      "slide": 8,
+      "status": "passed",
+      "png_sha256": "34083cec2b944e1d748dfa8309436d7dd7d8f8c276f8f90cb47e50371435f1e8",
+      "note": "Individually inspected at full size; v2 PNG byte-identical to inspected v1."
+    }
+  ],
+  "facts": "Full153 completed and independently audited; C/W/U/E/N,51 denominators,false-ready,P50/P90; both enhancement gates fail; candidate no promotion; historical64/development28 separate; R1→R2 operator approval; real failure crop and explicit author truth.",
+  "finalizer": ".presentation-v07-build/final-v2/validation.json"
+}

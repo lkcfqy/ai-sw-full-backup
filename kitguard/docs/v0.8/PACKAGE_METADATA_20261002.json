@@ -1,0 +1,808 @@
+{
+  "schema": "kitguard.source-disclosure.package-metadata.v1",
+  "created_at_utc": "2026-10-02T03:08:39.616988+00:00",
+  "python": "3.12.14",
+  "scope": "Selected installed distributions in project .venv; not a complete SBOM or certification of dataset/weight rights. Metadata-only read; no imported model or image.",
+  "requirements_lock": {
+    "path": "requirements-lock.txt",
+    "sha256": "1ce8c4696cd3f50af5b75c7d6d277dd1738caf4e4641d0e85f7aa7ef50369b3c"
+  },
+  "distributions": [
+    {
+      "name": "fastapi",
+      "version": "0.141.1",
+      "license_expression": "MIT",
+      "license_field": null,
+      "license_classifiers": [],
+      "project_urls": [
+        "Homepage, https://github.com/fastapi/fastapi",
+        "Documentation, https://fastapi.tiangolo.com/",
+        "Repository, https://github.com/fastapi/fastapi",
+        "Issues, https://github.com/fastapi/fastapi/issues",
+        "Changelog, https://fastapi.tiangolo.com/release-notes/"
+      ],
+      "metadata_sha256": "1010c29547b4026bdb3cd1c406e0570b9d79bb448b5a61fa4d5bb5a5eb0b752c",
+      "license_files": [
+        {
+          "distribution_relative_path": "fastapi-0.141.1.dist-info/licenses/LICENSE",
+          "bytes": 1086,
+          "sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e"
+        }
+      ]
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "license_expression": "BSD-3-Clause",
+      "license_field": null,
+      "license_classifiers": [],
+      "project_urls": [
+        "Changelog, https://uvicorn.dev/release-notes",
+        "Funding, https://github.com/sponsors/Kludex",
+        "Homepage, https://uvicorn.dev/",
+        "Source, https://github.com/Kludex/uvicorn"
+      ],
+      "metadata_sha256": "9399e5ddda3d26e842d6fb5420c38b0857aac568d53badbdc224b3a21339efa8",
+      "license_files": [
+        {
+          "distribution_relative_path": "uvicorn-0.54.0.dist-info/licenses/LICENSE.md",
+          "bytes": 1526,
+          "sha256": "efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371"
+        }
+      ]
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.5",
+      "license_expression": "MIT",
+      "license_field": null,
+      "license_classifiers": [],
+      "project_urls": [
+        "Homepage, https://github.com/pydantic/pydantic",
+        "Documentation, https://docs.pydantic.dev",
+        "Funding, https://github.com/sponsors/samuelcolvin",
+        "Source, https://github.com/pydantic/pydantic",
+        "Changelog, https://docs.pydantic.dev/latest/changelog/"
+      ],
+      "metadata_sha256": "0685830d13647bd6f3f05526043d32a8b2a221d86b53773053d6c52bb17a9c07",
+      "license_files": [
+        {
+          "distribution_relative_path": "pydantic-2.13.5.dist-info/licenses/LICENSE",
+          "bytes": 1129,
+          "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+        }
+      ]
+    },
+    {
+      "name": "python-multipart",
+      "version": "0.0.32",
+      "license_expression": "Apache-2.0",
+      "license_field": null,
+      "license_classifiers": [
+        "License :: OSI Approved :: Apache Software License"
+      ],
+      "project_urls": [
+        "Homepage, https://github.com/Kludex/python-multipart",
+        "Documentation, https://kludex.github.io/python-multipart/",
+        "Changelog, https://github.com/Kludex/python-multipart/blob/master/CHANGELOG.md",
+        "Source, https://github.com/Kludex/python-multipart"
+      ],
+      "metadata_sha256": "e9d399d7dea5eddf0e4d24b5c24687a82e7e50bf2c2b30f8f8a06a64d887dd86",
+      "license_files": [
+        {
+          "distribution_relative_path": "python_multipart-0.0.32.dist-info/licenses/LICENSE.txt",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "license_expression": "MIT-CMU",
+      "license_field": null,
+      "license_classifiers": [],
+      "project_urls": [
+        "Release notes, https://pillow.readthedocs.io/en/stable/releasenotes/index.html",
+        "Changelog, https://github.com/python-pillow/Pillow/releases",
+        "Documentation, https://pillow.readthedocs.io",
+        "Funding, https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=pypi",
+        "Homepage, https://python-pillow.github.io",
+        "Mastodon, https://fosstodon.org/@pillow",
+        "Source, https://github.com/python-pillow/Pillow"
+      ],
+      "metadata_sha256": "8fc07146cab33ef7582361dab6eac596d340b03ec648f18217da7894f73838c8",
+      "license_files": [
+        {
+          "distribution_relative_path": "pillow-12.3.0.dist-info/licenses/LICENSE",
+          "bytes": 70307,
+          "sha256": "dda12a98c1979cf3d94df1cff45d27a4cb3f04a60c76f76902ac54cac03ec0ce"
+        }
+      ]
+    },
+    {
+      "name": "mlx",
+      "version": "0.32.2",
+      "license_expression": null,
+      "license_field": "MIT",
+      "license_classifiers": [],
+      "project_urls": [],
+      "metadata_sha256": "d3454348122b9b131c3b8f97587635e0b13baa6d7805da27e1334d39214f1a41",
+      "license_files": [
+        {
+          "distribution_relative_path": "mlx-0.32.2.dist-info/licenses/LICENSE",
+          "bytes": 1066,
+          "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01"
+        }
+      ]
+    },
+    {
+      "name": "mlx-vlm",
+      "version": "0.7.3",
+      "license_expression": null,
+      "license_field": "MIT",
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "project_urls": [
+        "Homepage, https://github.com/Blaizzy/mlx-vlm",
+        "Repository, https://github.com/Blaizzy/mlx-vlm",
+        "Issues, https://github.com/Blaizzy/mlx-vlm/issues"
+      ],
+      "metadata_sha256": "4536c02704bf07069605645cd4cb12e715a4a86b1e7ca8c31af163b7e9f74494",
+      "license_files": [
+        {
+          "distribution_relative_path": "mlx_vlm-0.7.3.dist-info/licenses/LICENSE",
+          "bytes": 1069,
+          "sha256": "f74c448746be3376e27dee43e2be9ec9d55f4820cd7466c603a6c7d1fd2d25b8"
+        }
+      ]
+    },
+    {
+      "name": "transformers",
+      "version": "5.17.0",
+      "license_expression": null,
+      "license_field": "Apache 2.0 License",
+      "license_classifiers": [],
+      "project_urls": [],
+      "metadata_sha256": "cd295c5ad2c605e3c04456740df174e6a1bf5418eb2563788dc2163253f6d882",
+      "license_files": [
+        {
+          "distribution_relative_path": "transformers-5.17.0.dist-info/licenses/LICENSE",
+          "bytes": 11418,
+          "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049"
+        }
+      ]
+    },
+    {
+      "name": "torch",
+      "version": "2.14.0",
+      "license_expression": "Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND MIT",
+      "license_field": null,
+      "license_classifiers": [],
+      "project_urls": [
+        "Homepage, https://pytorch.org",
+        "Repository, https://github.com/pytorch/pytorch",
+        "Documentation, https://pytorch.org/docs",
+        "Issue Tracker, https://github.com/pytorch/pytorch/issues",
+        "Forum, https://discuss.pytorch.org"
+      ],
+      "metadata_sha256": "45eb688ebf1a2a131e65cd00292e19405019e8ae94f3b5c9f538f86381fd6e3d",
+      "license_files": [
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/LICENSE",
+          "bytes": 3464,
+          "sha256": "bd018feef8825e88181c84eb7e3aa4eafb8f08a20d9fd6ef948569610c4a3e43"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/FP16/LICENSE",
+          "bytes": 1157,
+          "sha256": "17e4f539024be2749ee729d1e2f01d24cef12ece8c9bf18e91a4349be29c80bf"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/FXdiv/LICENSE",
+          "bytes": 1117,
+          "sha256": "7cac00006125b1486a27e4801ed66357236e984c540bd323945ab7b66b078ec3"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/NNPACK/LICENSE",
+          "bytes": 1352,
+          "sha256": "ab09e33621f513ebdd1ef685b324f39c1f6bee9221d15600bafd958322df1231"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/NVTX/LICENSE.txt",
+          "bytes": 12483,
+          "sha256": "abdfd8a6738b27cd1504e091f77b682dbae928339f040b8a6f59a548245991a0"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/NVTX/docs/LICENSE.txt",
+          "bytes": 12483,
+          "sha256": "abdfd8a6738b27cd1504e091f77b682dbae928339f040b8a6f59a548245991a0"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/NVTX/python/LICENSE.txt",
+          "bytes": 12483,
+          "sha256": "abdfd8a6738b27cd1504e091f77b682dbae928339f040b8a6f59a548245991a0"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/NVTX/rust/LICENSE",
+          "bytes": 12449,
+          "sha256": "e165ed77854f47fb208850d23d935a9f0ab8bb4527381466beeb16025e2f6e9e"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/VulkanMemoryAllocator/LICENSE.txt",
+          "bytes": 1099,
+          "sha256": "8d70e4cf2a9941f6454da71cd60e38484dd3e34810c824760d550e982af6d97a"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/XNNPACK/LICENSE",
+          "bytes": 1560,
+          "sha256": "63f519e15726f4c4f830bd958f694c84fecb4e0a4cacc527d2696bb71ef95ada"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/aiter/3rdparty/composable_kernel/LICENSE",
+          "bytes": 1726,
+          "sha256": "20f3b83dfda01bd18d285e0edbb9d044be6dde04cdf76a1ec18d9fc7127936bf"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/aiter/LICENSE",
+          "bytes": 1100,
+          "sha256": "0baca809927cad448401b252ce3bae12687c2987597ad7088cf3423f872d5bcd"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/benchmark/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/composable_kernel/LICENSE",
+          "bytes": 1726,
+          "sha256": "20f3b83dfda01bd18d285e0edbb9d044be6dde04cdf76a1ec18d9fc7127936bf"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/cpp-httplib/LICENSE",
+          "bytes": 1075,
+          "sha256": "4b45cbe16d7b71b89ae6127e26e0d90a029198ca5e958ad8e3d0b8bbed364d8b"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/cpuinfo/LICENSE",
+          "bytes": 1424,
+          "sha256": "8e7e60636c3aa0cb03571a1a841ce5697f9551ff92b3c426c2561613d15ade70"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/cpuinfo/deps/clog/LICENSE",
+          "bytes": 1384,
+          "sha256": "68a14c3e79add023eecd83d611e73f05b8bf1d16852efeb7eb4033a96736da9e"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/cudnn_frontend/LICENSE.txt",
+          "bytes": 1148,
+          "sha256": "3fc4b473a2c08768a8066bf7e4a58a1185060f3ad674f2ca9e2011bca4adf2ce"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/cutlass/LICENSE.txt",
+          "bytes": 1861,
+          "sha256": "ad1513ca983da737a6843364ad19e8424a56d860736c2da773b8c5be527e1475"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/cutlass/python/LICENSE.txt",
+          "bytes": 1547,
+          "sha256": "00bf1806f664ac1afe4221f5f04b384fb6f1ca6eb33efcb6dccf599eb06d08b9"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/LICENSE",
+          "bytes": 1535,
+          "sha256": "12c2370ec32e78115dcd71ba22cdcb1297320fdc4ade81f798136d42357c58b8"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/external/composable_kernel/LICENSE",
+          "bytes": 1726,
+          "sha256": "20f3b83dfda01bd18d285e0edbb9d044be6dde04cdf76a1ec18d9fc7127936bf"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/external/cpuinfo/LICENSE",
+          "bytes": 1424,
+          "sha256": "8e7e60636c3aa0cb03571a1a841ce5697f9551ff92b3c426c2561613d15ade70"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/external/cpuinfo/deps/clog/LICENSE",
+          "bytes": 1384,
+          "sha256": "68a14c3e79add023eecd83d611e73f05b8bf1d16852efeb7eb4033a96736da9e"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/external/cutlass/LICENSE.txt",
+          "bytes": 1854,
+          "sha256": "80a7a18b73d41f64dd9ca881af35938f8de88b18c728703251f4c94d1299884d"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/external/cutlass/python/LICENSE.txt",
+          "bytes": 1547,
+          "sha256": "42fec630f410aa308f70a51a89fadcd19586fa620f9831a32bee528a9a10000e"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/external/googletest/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/external/hipify_torch/LICENSE.txt",
+          "bytes": 1112,
+          "sha256": "ecf819d55b17c2f091b3ba0934d044368aa0680d8a81374860306aa2b91aa1eb"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/fbgemm_gpu/experimental/hstu/LICENSE",
+          "bytes": 1558,
+          "sha256": "8c9ccb96c065e706135b6cbad279b721da6156e51f3a5f27c6b3329af9416d73"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/fbgemm_gpu/src/quantize_ops/mx/LICENSE",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fbgemm/fbgemm_gpu/test/quantize/mx/LICENSE",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/flash-attention/LICENSE",
+          "bytes": 1558,
+          "sha256": "8c9ccb96c065e706135b6cbad279b721da6156e51f3a5f27c6b3329af9416d73"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/flash-attention/csrc/composable_kernel/LICENSE",
+          "bytes": 1726,
+          "sha256": "20f3b83dfda01bd18d285e0edbb9d044be6dde04cdf76a1ec18d9fc7127936bf"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/flash-attention/csrc/cutlass/LICENSE.txt",
+          "bytes": 1854,
+          "sha256": "80a7a18b73d41f64dd9ca881af35938f8de88b18c728703251f4c94d1299884d"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/flash-attention/csrc/cutlass/python/LICENSE.txt",
+          "bytes": 1547,
+          "sha256": "42fec630f410aa308f70a51a89fadcd19586fa620f9831a32bee528a9a10000e"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/flash-attention/flash_attn/cute/LICENSE",
+          "bytes": 1558,
+          "sha256": "8c9ccb96c065e706135b6cbad279b721da6156e51f3a5f27c6b3329af9416d73"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/flash-attention/third_party/aiter/3rdparty/composable_kernel/LICENSE",
+          "bytes": 1726,
+          "sha256": "20f3b83dfda01bd18d285e0edbb9d044be6dde04cdf76a1ec18d9fc7127936bf"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/flash-attention/third_party/aiter/LICENSE",
+          "bytes": 1100,
+          "sha256": "0baca809927cad448401b252ce3bae12687c2987597ad7088cf3423f872d5bcd"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/flatbuffers/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/flatbuffers/dart/LICENSE",
+          "bytes": 11341,
+          "sha256": "edd9b3459bee4c79b549a5ef66d06d12bd144ddb8d08e0b448fb421267f43dd5"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/flatbuffers/swift/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/fmt/LICENSE",
+          "bytes": 1094,
+          "sha256": "a65fcc5a1095fc33cc37e4fff69366e49d7e92f613558a2b95ed1b70e33758b4"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/gemmlowp/gemmlowp/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/gloo/LICENSE",
+          "bytes": 1525,
+          "sha256": "2afbc572cf7f60888159bc2ca48ba58f8adec06682ae5de820d61449d1eeea81"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/googletest/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/ideep/LICENSE",
+          "bytes": 1062,
+          "sha256": "a26add03107a53a605a89711b9b7dbd4f5dd668ae193a912e01a879366a23b0e"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/ideep/mkl-dnn/LICENSE",
+          "bytes": 11607,
+          "sha256": "e9fc874fc09801b9acf3411ba72394098473704d832d713404b6c4861a086318"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/ideep/mkl-dnn/third_party/gtest/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/ideep/mkl-dnn/third_party/opencl/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/kineto/LICENSE",
+          "bytes": 1609,
+          "sha256": "6f3d59b9103e72e5c977eecf61b261c2e1546a9be2995847e3ee2d31021fd39b"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/kineto/libkineto/third_party/dynolog_headers/LICENSE",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/kineto/libkineto/third_party/fmt/LICENSE",
+          "bytes": 1431,
+          "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/kineto/libkineto/third_party/googletest/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/llvm-openmp/LICENSE.txt",
+          "bytes": 17003,
+          "sha256": "68395143f21a9aa29b8232168c71892af5ec4f1ae2529571cd250a71c9e37a03"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/mimalloc/LICENSE",
+          "bytes": 1096,
+          "sha256": "82ade5d7d9b029044b5fbbc326207fc47c2d44ee4dd71e8a559c36d728217de9"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/miniz-3.0.2/LICENSE",
+          "bytes": 1184,
+          "sha256": "0115478d567121238cf6cc1c0c361926cf07a49d9e4c9e66da97fac6a01646b3"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/mslk/LICENSE",
+          "bytes": 1533,
+          "sha256": "44519cbe722d7bf092cd7e0fa26558b9e3905b88fca4c0c278e2733a9f6b4cf9"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/mslk/external/composable_kernel/LICENSE",
+          "bytes": 1726,
+          "sha256": "20f3b83dfda01bd18d285e0edbb9d044be6dde04cdf76a1ec18d9fc7127936bf"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/mslk/external/cutlass/LICENSE.txt",
+          "bytes": 1854,
+          "sha256": "80a7a18b73d41f64dd9ca881af35938f8de88b18c728703251f4c94d1299884d"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/mslk/external/cutlass/python/LICENSE.txt",
+          "bytes": 1547,
+          "sha256": "42fec630f410aa308f70a51a89fadcd19586fa620f9831a32bee528a9a10000e"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/mslk/external/googletest/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/mslk/external/hipify_torch/LICENSE.txt",
+          "bytes": 1112,
+          "sha256": "ecf819d55b17c2f091b3ba0934d044368aa0680d8a81374860306aa2b91aa1eb"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/mslk/mslk/attention/flash_attn/LICENSE",
+          "bytes": 1558,
+          "sha256": "8c9ccb96c065e706135b6cbad279b721da6156e51f3a5f27c6b3329af9416d73"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/nccl/LICENSE.txt",
+          "bytes": 13261,
+          "sha256": "c1f53beabe4dbf05bd87c00f7ca6084c0cb541c3f7bf8edab7913f266018b7be"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/nccl/bindings/nccl4py/LICENSE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/nccl/contrib/nccl_checkpoint/python/LICENSE.txt",
+          "bytes": 11365,
+          "sha256": "89374f8cc48236dccfcd0cea43974f7ee4f4bf77c8649da71c7c4cfef515f0d7"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/nccl/contrib/nccl_ep/LICENSE.txt",
+          "bytes": 11365,
+          "sha256": "89374f8cc48236dccfcd0cea43974f7ee4f4bf77c8649da71c7c4cfef515f0d7"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/nccl/contrib/nccl_ubx/LICENSE.txt",
+          "bytes": 11365,
+          "sha256": "89374f8cc48236dccfcd0cea43974f7ee4f4bf77c8649da71c7c4cfef515f0d7"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/onnx/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/onnx/third_party/pybind11/LICENSE",
+          "bytes": 1684,
+          "sha256": "83965b843b98f670d3a85bd041ed4b372c8ec50d7b4a5995a83ac697ba675dcb"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/perfetto/LICENSE",
+          "bytes": 14990,
+          "sha256": "9a682a56cffc9524dfa9b0b1c0dca9cb81a19e96d5bd0793aaf02c08a95ee7ca"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/protobuf/LICENSE",
+          "bytes": 1732,
+          "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/protobuf/third_party/benchmark/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/protobuf/third_party/googletest/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/protobuf/third_party/googletest/googlemock/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/protobuf/third_party/googletest/googlemock/scripts/generator/LICENSE",
+          "bytes": 11386,
+          "sha256": "5e0df8c845c742e76f2f64d2d9ce1b7e74a2422fddbc577ae6a56319083de0bf"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/protobuf/third_party/googletest/googletest/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/protobuf/third_party/utf8_range/LICENSE",
+          "bytes": 1065,
+          "sha256": "5a629d2b868081d8af08bbce5d038116f3a0e2e0d4ce9adf4d53f14e76b6b2e0"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/psimd/LICENSE",
+          "bytes": 1162,
+          "sha256": "984ce1e0b8ee89d234e28b960381f240e03a07a8031f35012f9c3256f56964e2"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/pthreadpool/LICENSE",
+          "bytes": 1378,
+          "sha256": "57814a606b4d0fb087d9a534919084b6c11b58a4174cb5a4aef200187780dc3a"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/pybind11/LICENSE",
+          "bytes": 1684,
+          "sha256": "83965b843b98f670d3a85bd041ed4b372c8ec50d7b4a5995a83ac697ba675dcb"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/python-peachpy/LICENSE.rst",
+          "bytes": 1443,
+          "sha256": "e6d6fdbfc09c9cc1bfc55946ca9690dd9276deeaed2b72ac7fc5c79bde80ff32"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/sleef/LICENSE.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/tensorpipe/LICENSE.txt",
+          "bytes": 1535,
+          "sha256": "f4dcef0d1f0520b414d5bfaeed8df02f188e4ec05c0a17bf1c18f25f6cc66245"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/tensorpipe/third_party/googletest/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/tensorpipe/third_party/googletest/googlemock/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/tensorpipe/third_party/googletest/googlemock/scripts/generator/LICENSE",
+          "bytes": 11386,
+          "sha256": "5e0df8c845c742e76f2f64d2d9ce1b7e74a2422fddbc577ae6a56319083de0bf"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/tensorpipe/third_party/googletest/googletest/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/tensorpipe/third_party/libnop/LICENSE",
+          "bytes": 577,
+          "sha256": "876e8f7432440974ee5543a2aa1344370ef1f2f7949ad98a1f3899cf722d5631"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/tensorpipe/third_party/libuv/LICENSE",
+          "bytes": 1079,
+          "sha256": "16de0c32b265cb7d46a6d3bd614f259dd4d693a5e26b3407b04aae8d73041f0c"
+        },
+        {
+          "distribution_relative_path": "torch-2.14.0.dist-info/licenses/third_party/tensorpipe/third_party/pybind11/LICENSE",
+          "bytes": 1676,
+          "sha256": "9a37ea54aa3cf12c7f3292799f20822ffd4b9b7142b36a7a9997b28c39264dc9"
+        }
+      ]
+    },
+    {
+      "name": "torchvision",
+      "version": "0.29.0",
+      "license_expression": null,
+      "license_field": "BSD",
+      "license_classifiers": [],
+      "project_urls": [],
+      "metadata_sha256": "256149eea9516f6996e0a2dbbf339571ca795698078de6bc405fe1a42ad334c7",
+      "license_files": [
+        {
+          "distribution_relative_path": "torchvision-0.29.0.dist-info/LICENSE",
+          "bytes": 1517,
+          "sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d"
+        }
+      ]
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.3",
+      "license_expression": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+      "license_field": null,
+      "license_classifiers": [],
+      "project_urls": [
+        "homepage, https://numpy.org",
+        "documentation, https://numpy.org/doc/",
+        "source, https://github.com/numpy/numpy",
+        "download, https://pypi.org/project/numpy/#files",
+        "tracker, https://github.com/numpy/numpy/issues",
+        "release notes, https://numpy.org/doc/stable/release"
+      ],
+      "metadata_sha256": "451a9b8028000588e66b0b415587b6aef0bbc51a96d8e8a0cba0dc23acf64f99",
+      "license_files": [
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/LICENSE.txt",
+          "bytes": 46826,
+          "sha256": "649a589ab31076e79e9ce62ba24eae9959598124176640dbc95f87bd10f34fcf"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+          "bytes": 1018,
+          "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+          "bytes": 690,
+          "sha256": "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+          "bytes": 20785,
+          "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+          "bytes": 1414,
+          "sha256": "f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+          "bytes": 1514,
+          "sha256": "211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+          "bytes": 1543,
+          "sha256": "c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+          "bytes": 1498,
+          "sha256": "a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+          "bytes": 2266,
+          "sha256": "a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/ma/LICENSE",
+          "bytes": 1593,
+          "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/random/LICENSE.md",
+          "bytes": 3511,
+          "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+          "bytes": 2745,
+          "sha256": "469778be8f33d54e1bcaab28c281cc472916d2d273f835e55bc487d30503face"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+          "bytes": 2926,
+          "sha256": "0e111337b25494a773106695f0e799f642b8567aaacca4f116a74a8177179156"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+          "bytes": 1154,
+          "sha256": "e7d4f4fb20358f314210a892ae17351e04993813646f697ec387385ca2a36918"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+          "bytes": 1509,
+          "sha256": "6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+          "bytes": 1226,
+          "sha256": "9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f"
+        },
+        {
+          "distribution_relative_path": "numpy-2.5.3.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+          "bytes": 332,
+          "sha256": "268b0ca06759d31ea3ca68dd35f20e877916e927b1c2a835e4592a3c4354b1f9"
+        }
+      ]
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.33.0",
+      "license_expression": null,
+      "license_field": "Apache-2.0",
+      "license_classifiers": [
+        "License :: OSI Approved :: Apache Software License"
+      ],
+      "project_urls": [],
+      "metadata_sha256": "bee565776d66f486d224f74024b656a69ed42e2639d80b18811fca4365adc42e",
+      "license_files": [
+        {
+          "distribution_relative_path": "huggingface_hub-1.33.0.dist-info/licenses/LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0",
+      "license_expression": null,
+      "license_field": null,
+      "license_classifiers": [
+        "License :: OSI Approved :: Apache Software License"
+      ],
+      "project_urls": [
+        "Homepage, https://github.com/huggingface/safetensors",
+        "Source, https://github.com/huggingface/safetensors"
+      ],
+      "metadata_sha256": "645be7b8d55e91534f991d144dc9e279581ea8dbea1a8c5b0be14e529d01e345",
+      "license_files": [
+        {
+          "distribution_relative_path": "safetensors-0.8.0.dist-info/licenses/LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    }
+  ]
+}

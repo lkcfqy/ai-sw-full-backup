@@ -1,0 +1,13 @@
+{
+  "source_sha256": "7c5bb6422c15f51504a022695dab31334157868a5fd7ac830d65cf5764c20764",
+  "revised_sha256": "13d98bc53815990ddc9cbac00b79607865d4e7146657e19f7c3ed0a13af4ee21",
+  "changed_paragraphs": 4,
+  "signature_image_and_other_streams_unchanged": true,
+  "official_clauses_and_identity_fields_unchanged": true,
+  "native_layout_verification": "Passed: 4 pages opened and printed in Hancom Office HWP, then visually checked",
+  "native_pages": 4,
+  "signature_page": 4,
+  "application_date": "2026-09-29",
+  "applicant_added_early_development_explanations_removed": true,
+  "official_consent_documents_unchanged": true
+}

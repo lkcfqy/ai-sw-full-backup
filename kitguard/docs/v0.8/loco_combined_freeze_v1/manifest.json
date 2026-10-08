@@ -1,0 +1,846 @@
+{
+  "schema": "kitguard.v08.loco-combined.manifest.v1",
+  "truth_rule": "author_combined_quantity_defect_rule_v1",
+  "cases": [
+    {
+      "source_id": "screw_bag/test/logical_anomalies/134",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/134.png",
+        "sha256": "c52dd203178695f61a63a631cc1384a0170be5e6c46c14b05caebbbfb1ac2acf"
+      },
+      "source_sha256": "c52dd203178695f61a63a631cc1384a0170be5e6c46c14b05caebbbfb1ac2acf",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 2,
+          "pixel_value": 248,
+          "defect_name": "2_additional_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/134/000.png",
+          "mask_sha256": "3cf546de09ba2ca9d8cb782a56ded604a052a34d084aa640ec9e7e3e1f233402"
+        },
+        {
+          "part": "washer",
+          "delta": -2,
+          "pixel_value": 240,
+          "defect_name": "2_missing_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/134/001.png",
+          "mask_sha256": "7e2f35e2fc0857ca4978834d37f1fdcb376164d5450b41e900868bb65288c011"
+        }
+      ],
+      "source_rgb_sha256": "be18774dba2644022660665bb2fa579cc91c59630fed309dd1df75c79b83a1fe",
+      "id": "case-001"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/136",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/136.png",
+        "sha256": "e57f578677473e854614e5a8390a5d40b23f46a6929730422a0b62a5ffa1bc69"
+      },
+      "source_sha256": "e57f578677473e854614e5a8390a5d40b23f46a6929730422a0b62a5ffa1bc69",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 1,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 1,
+          "pixel_value": 249,
+          "defect_name": "1_additional_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/136/000.png",
+          "mask_sha256": "958f2b506c79ad018daf29f92050bb0874bb66a66620313555038cfbd7b63a51"
+        },
+        {
+          "part": "washer",
+          "delta": -1,
+          "pixel_value": 241,
+          "defect_name": "1_missing_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/136/001.png",
+          "mask_sha256": "c7250db7319dd96368d44f19db3557107f4620e375eca51e3aa3d8954e14dc20"
+        }
+      ],
+      "source_rgb_sha256": "429758a383979108aa4207f4d3115efa0e1e9ed0f3c8cbed5214798753b87d04",
+      "id": "case-002"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/113",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/113.png",
+        "sha256": "ef8eea61cf19b13e40bcb736097dfb8e5ab28465ecf7bcee997e7571a5ac7f83"
+      },
+      "source_sha256": "ef8eea61cf19b13e40bcb736097dfb8e5ab28465ecf7bcee997e7571a5ac7f83",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 2,
+          "pixel_value": 248,
+          "defect_name": "2_additional_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/113/000.png",
+          "mask_sha256": "789b65844d604032a22fd5acf4cfc47448170c76e91b5fe0321f781c8a4a6ae2"
+        },
+        {
+          "part": "washer",
+          "delta": -2,
+          "pixel_value": 240,
+          "defect_name": "2_missing_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/113/001.png",
+          "mask_sha256": "753631d375f09466c78baeca3c34f31c4defe20287263d5eabb6e1d1a0a0ae9a"
+        }
+      ],
+      "source_rgb_sha256": "c27a1377dc66417d4455794972bd8907009e935ca4d9bbd9c52b0f587d43bad9",
+      "id": "case-003"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/117",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/117.png",
+        "sha256": "3d37982f691ac7111f8b2e782943a471c5eaed92c54cb1cd764f8baa0b4edb1e"
+      },
+      "source_sha256": "3d37982f691ac7111f8b2e782943a471c5eaed92c54cb1cd764f8baa0b4edb1e",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 3,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 1,
+          "pixel_value": 247,
+          "defect_name": "1_additional_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/117/000.png",
+          "mask_sha256": "d048daecb9faadc637153aa35cd1844bc3bab5a6a04ce8396692f1be2da6e4a1"
+        },
+        {
+          "part": "nut",
+          "delta": -1,
+          "pixel_value": 243,
+          "defect_name": "1_missing_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/117/001.png",
+          "mask_sha256": "54d0be2ab7f0d9c7aa8c23a8061b8720593c7d33f4ab7290be301c112765dd71"
+        }
+      ],
+      "source_rgb_sha256": "bacc548662949b3080ada2a5463e36e24d1378cba040588cceff8b84a76a7982",
+      "id": "case-004"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/127",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/127.png",
+        "sha256": "e4f0d6c91dd2edfd2053076da57aaaf909f0ee897e030bc7865eb4e2ec702f55"
+      },
+      "source_sha256": "e4f0d6c91dd2edfd2053076da57aaaf909f0ee897e030bc7865eb4e2ec702f55",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 2,
+          "pixel_value": 248,
+          "defect_name": "2_additional_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/127/000.png",
+          "mask_sha256": "af89aee32cff0b7a57f8bed5443087dc1ae90fa8ac9cec0e38f1af33885b7e42"
+        },
+        {
+          "part": "washer",
+          "delta": -2,
+          "pixel_value": 240,
+          "defect_name": "2_missing_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/127/001.png",
+          "mask_sha256": "aad8733ace3e0bf6bf75fa354a17e9a314697adbd942025fcccb016e2455d8bd"
+        }
+      ],
+      "source_rgb_sha256": "020e9ece68306da3d336fee223e1e5c6eafb9b60b46b0cdadb12d09213d6f060",
+      "id": "case-005"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/129",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/129.png",
+        "sha256": "43ee6202f5d419d12d43c4c9bc61bc9884d5ea844faa826239bf5c2adb900341"
+      },
+      "source_sha256": "43ee6202f5d419d12d43c4c9bc61bc9884d5ea844faa826239bf5c2adb900341",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 2,
+          "pixel_value": 248,
+          "defect_name": "2_additional_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/129/000.png",
+          "mask_sha256": "bbc07854b4a9f56aa0d44ad23d7760d516cc37eb2b48f0cbd95deae56dff7bb0"
+        },
+        {
+          "part": "washer",
+          "delta": -2,
+          "pixel_value": 240,
+          "defect_name": "2_missing_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/129/001.png",
+          "mask_sha256": "68c8f4a6bde3c244cd6761ff437708687e5c2ddcccb54585204daa8651da52d4"
+        }
+      ],
+      "source_rgb_sha256": "aa0cfd71ece8c50999845fba6f7999f3336d219775261c3bc61a9ac1b24a693f",
+      "id": "case-006"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/130",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/130.png",
+        "sha256": "7a7c604f6fc7d59b434d9abb03d36b5293e86da1fd9e3f8f68dcae46adc2b700"
+      },
+      "source_sha256": "7a7c604f6fc7d59b434d9abb03d36b5293e86da1fd9e3f8f68dcae46adc2b700",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 1,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 1,
+          "pixel_value": 249,
+          "defect_name": "1_additional_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/130/000.png",
+          "mask_sha256": "1f525e892061ec2a62e248d40b6ba2815f9ad44c1357c8fdc75ffa06da22997a"
+        },
+        {
+          "part": "washer",
+          "delta": -1,
+          "pixel_value": 241,
+          "defect_name": "1_missing_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/130/001.png",
+          "mask_sha256": "6217a420c34fd04f3e17238883a5f56f85cf591614a1bda78832ccf9b31fa9aa"
+        }
+      ],
+      "source_rgb_sha256": "35cac4cb24cef2954bdff870e3f9a70e80fca491a63d2a5118919024a1a1a446",
+      "id": "case-007"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/126",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/126.png",
+        "sha256": "e17e7eb5cd54e02fed631ded62491ac77fffb05c59dc48e1d93f57779957541b"
+      },
+      "source_sha256": "e17e7eb5cd54e02fed631ded62491ac77fffb05c59dc48e1d93f57779957541b",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 0,
+        "washer": 4,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 2,
+          "pixel_value": 246,
+          "defect_name": "2_additional_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/126/000.png",
+          "mask_sha256": "d84c5b582a117872f2f09c1256952f849459b633b8f14625c21a76e7db585749"
+        },
+        {
+          "part": "nut",
+          "delta": -2,
+          "pixel_value": 242,
+          "defect_name": "2_missing_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/126/001.png",
+          "mask_sha256": "8b9bcd7b4aaba89a10db1453a2d7d4ffbac40921828c5fb093475a9963d8454a"
+        }
+      ],
+      "source_rgb_sha256": "06fa769b9ee3bc9874cde1848d8d625f43d3836cb58f6f6eee44e63dba6763b6",
+      "id": "case-008"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/124",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/124.png",
+        "sha256": "88c33451d4634ed05bdea285bd1a5614c568012f735568e1a37332f58af84f13"
+      },
+      "source_sha256": "88c33451d4634ed05bdea285bd1a5614c568012f735568e1a37332f58af84f13",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 0,
+        "washer": 4,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 2,
+          "pixel_value": 246,
+          "defect_name": "2_additional_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/124/000.png",
+          "mask_sha256": "4657b8aedf8eb6791d7c969c0e87e39d27a8e712452ba5c59c3d0876a3641fab"
+        },
+        {
+          "part": "nut",
+          "delta": -2,
+          "pixel_value": 242,
+          "defect_name": "2_missing_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/124/001.png",
+          "mask_sha256": "7a498d97c0a2da0d7cc9afcee3b7bd269a70e2ab8bb88cd8e684e9f953558fa0"
+        }
+      ],
+      "source_rgb_sha256": "151dc1e3190c4c509fdb2bf62e69a3723a5bbb103a0ebd9c8c8add6fb1d1e04c",
+      "id": "case-009"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/120",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/120.png",
+        "sha256": "d2ced19f4946cae0e85feffe5ec96861666667683edb3753500059ca1e756fec"
+      },
+      "source_sha256": "d2ced19f4946cae0e85feffe5ec96861666667683edb3753500059ca1e756fec",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 1,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 1,
+          "pixel_value": 249,
+          "defect_name": "1_additional_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/120/000.png",
+          "mask_sha256": "c5a007adadb4c4f21383584421e5b651ba38e2dd6777375cd34e4de289015426"
+        },
+        {
+          "part": "washer",
+          "delta": -1,
+          "pixel_value": 241,
+          "defect_name": "1_missing_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/120/001.png",
+          "mask_sha256": "e72d6e3d0915632fa417d3dd1095eb7613a0137235f86a429687374396e916b9"
+        }
+      ],
+      "source_rgb_sha256": "b0f0371222466d8560431008098d1c942cd4ffb50977b1bb556ae0d6f4221f71",
+      "id": "case-010"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/121",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/121.png",
+        "sha256": "965962f8140132ed2585ade0723fde33d5495237748a3d5e186b1719ef13d143"
+      },
+      "source_sha256": "965962f8140132ed2585ade0723fde33d5495237748a3d5e186b1719ef13d143",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 2,
+          "pixel_value": 248,
+          "defect_name": "2_additional_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/121/000.png",
+          "mask_sha256": "1440ee935ac80c58be8c6d6549a1cf0adf16f0901e2dc86f7db0d057b5ca8a1c"
+        },
+        {
+          "part": "washer",
+          "delta": -2,
+          "pixel_value": 240,
+          "defect_name": "2_missing_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/121/001.png",
+          "mask_sha256": "982221a03f046d47683aed895b1f22e08588e5b7a177ab9d207d1dfd537a141b"
+        }
+      ],
+      "source_rgb_sha256": "f46e2d2ca18bb414a30378b92cc8f6f4f09ce0dd74614035676188e465844c1d",
+      "id": "case-011"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/128",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/128.png",
+        "sha256": "91a65e274041432e1468af1abfa0c236437b8cfdd14bb61544b099ed8807ffa6"
+      },
+      "source_sha256": "91a65e274041432e1468af1abfa0c236437b8cfdd14bb61544b099ed8807ffa6",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 0,
+        "washer": 4,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 2,
+          "pixel_value": 246,
+          "defect_name": "2_additional_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/128/000.png",
+          "mask_sha256": "53fc417290662adcfc2567edbd95bae26adbc8c2f593232785b2d08854b73e9e"
+        },
+        {
+          "part": "nut",
+          "delta": -2,
+          "pixel_value": 242,
+          "defect_name": "2_missing_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/128/001.png",
+          "mask_sha256": "c4aaf08aafeb61e0e5f526aa6011324b3ce5e20a052eb2368bbed63810b1624b"
+        }
+      ],
+      "source_rgb_sha256": "30d51f9f7b95cabbcd09bc427032290ed8dd76ce4c3167c21129a1c73e7c370d",
+      "id": "case-012"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/123",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/123.png",
+        "sha256": "d5971df601db379bb81636c22c1c9efbd42532b09cd425b755dd4b29febfddf2"
+      },
+      "source_sha256": "d5971df601db379bb81636c22c1c9efbd42532b09cd425b755dd4b29febfddf2",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 3,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 1,
+          "pixel_value": 247,
+          "defect_name": "1_additional_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/123/000.png",
+          "mask_sha256": "b7e0692d9e94b5fd1fc8b3a008158b74c91f3f5f0c87cd09a7bac05a360764b8"
+        },
+        {
+          "part": "nut",
+          "delta": -1,
+          "pixel_value": 243,
+          "defect_name": "1_missing_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/123/001.png",
+          "mask_sha256": "a06763102cf3bd20b649e6e9f0aa9fd808d24a67e355da5b97d3c55ff23e0764"
+        }
+      ],
+      "source_rgb_sha256": "516ecd6bb0aa40e4c0a8440390c3645f67fca6dee26f1d0eebfc24d0d7a13c46",
+      "id": "case-013"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/118",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/118.png",
+        "sha256": "1b33d8df043260861885ca9e33b6d6939f61f60de335e453a30259dbd4c59bf8"
+      },
+      "source_sha256": "1b33d8df043260861885ca9e33b6d6939f61f60de335e453a30259dbd4c59bf8",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 3,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 1,
+          "pixel_value": 247,
+          "defect_name": "1_additional_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/118/000.png",
+          "mask_sha256": "825041cdd356b68ab4f4b45f3b153f022c6f25c0a7feaa23b373fd47a7f489f8"
+        },
+        {
+          "part": "nut",
+          "delta": -1,
+          "pixel_value": 243,
+          "defect_name": "1_missing_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/118/001.png",
+          "mask_sha256": "a562a42fb242f0262184521229b9be7cada973e3d3fe0e8c9965c2e877590385"
+        }
+      ],
+      "source_rgb_sha256": "d7ef6eb052945b74ed71eb4d5225c14b804eb961d87c3df7e639789c0e7b551f",
+      "id": "case-014"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/132",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/132.png",
+        "sha256": "c518742ca76283c9db838e07f1e824f66b0eb124a7b133e553c53201fc0a431b"
+      },
+      "source_sha256": "c518742ca76283c9db838e07f1e824f66b0eb124a7b133e553c53201fc0a431b",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 0,
+        "washer": 4,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 2,
+          "pixel_value": 246,
+          "defect_name": "2_additional_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/132/000.png",
+          "mask_sha256": "042bd1fa57b2356c8dc3ba6088fead3f97a43a4a230d546977cda9383de98a94"
+        },
+        {
+          "part": "nut",
+          "delta": -2,
+          "pixel_value": 242,
+          "defect_name": "2_missing_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/132/001.png",
+          "mask_sha256": "a2077611df4bdf5907a34df88149cd350593f40243a809db25051aae2f75e0bf"
+        }
+      ],
+      "source_rgb_sha256": "ef3f07d9c0a79398cc3e860797d7087b97c0b5d5fae1dc55902f7a5091a0f06b",
+      "id": "case-015"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/115",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/115.png",
+        "sha256": "9c68fa16f6d0c576ade08225ee82abfa2691121e907d2b11a007576a71e36be7"
+      },
+      "source_sha256": "9c68fa16f6d0c576ade08225ee82abfa2691121e907d2b11a007576a71e36be7",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 1,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 1,
+          "pixel_value": 249,
+          "defect_name": "1_additional_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/115/000.png",
+          "mask_sha256": "b12b9175e1a3e71b8af0937d32bae794008523f548957d4b05663822ee6c1792"
+        },
+        {
+          "part": "washer",
+          "delta": -1,
+          "pixel_value": 241,
+          "defect_name": "1_missing_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/115/001.png",
+          "mask_sha256": "5751476bc98ac5338b29870922e9699a256d8a393ea586900b774cb5de4b62e5"
+        }
+      ],
+      "source_rgb_sha256": "356968dbfe8491e304283c0f3ea6e9ddd8a3b03c78af57d8fe6280d88f59cadf",
+      "id": "case-016"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/114",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/114.png",
+        "sha256": "720864d6ecb80c92ad8f57bca4153419d553ac8d8445f353f733698b73f5dac7"
+      },
+      "source_sha256": "720864d6ecb80c92ad8f57bca4153419d553ac8d8445f353f733698b73f5dac7",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 4,
+        "washer": 0,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 2,
+          "pixel_value": 248,
+          "defect_name": "2_additional_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/114/000.png",
+          "mask_sha256": "2396226afbe05bf36692ae597450b7c176bc504245e578481d866c9fd008c888"
+        },
+        {
+          "part": "washer",
+          "delta": -2,
+          "pixel_value": 240,
+          "defect_name": "2_missing_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/114/001.png",
+          "mask_sha256": "00698694d2f469f38ad2d1d8013658175fc3b6f5d70828aba569e7ebc91707e7"
+        }
+      ],
+      "source_rgb_sha256": "5e301438a901ba4798c72b335dc28db78ee38bfa3e05afdf673278fc969e940b",
+      "id": "case-017"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/116",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/116.png",
+        "sha256": "c16b3fc453edf495a63e84375496fbcff74f48c6f65a5d71fbe35e33f1becae9"
+      },
+      "source_sha256": "c16b3fc453edf495a63e84375496fbcff74f48c6f65a5d71fbe35e33f1becae9",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 0,
+        "washer": 4,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 2,
+          "pixel_value": 246,
+          "defect_name": "2_additional_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/116/000.png",
+          "mask_sha256": "5700193fd7059212cd26a50ea205ded280c94f59454dcf646dc9ed0dfaa49a9c"
+        },
+        {
+          "part": "nut",
+          "delta": -2,
+          "pixel_value": 242,
+          "defect_name": "2_missing_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/116/001.png",
+          "mask_sha256": "1904ad322a9ba34830d5aa27c8639484684565036dfb0c1be65f1258d83b6f60"
+        }
+      ],
+      "source_rgb_sha256": "cf5803c501591b5819ce2bafa163ed88417262409acd679d52b6ee5365ff3602",
+      "id": "case-018"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/119",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/119.png",
+        "sha256": "b9692bdfe9f6001dab1b7688993e561b2176b4197533dc49bfdde2763a4930b3"
+      },
+      "source_sha256": "b9692bdfe9f6001dab1b7688993e561b2176b4197533dc49bfdde2763a4930b3",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 1,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 1,
+          "pixel_value": 249,
+          "defect_name": "1_additional_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/119/000.png",
+          "mask_sha256": "4c2acb98dd482385836330cc2177b4d56c86a5ee87720ab3632d2c596855958f"
+        },
+        {
+          "part": "washer",
+          "delta": -1,
+          "pixel_value": 241,
+          "defect_name": "1_missing_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/119/001.png",
+          "mask_sha256": "56a38031e0dd7ac628a61af29b3c2ccbe19338d466e434797c45be75841f4e5b"
+        }
+      ],
+      "source_rgb_sha256": "8bd0e8d2c4128210d1f673bd6fe1dbd096ada626cd411361c4a033fa0c7c544d",
+      "id": "case-019"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/122",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/122.png",
+        "sha256": "4a78a3b787405848a2ac19fabadadac956d3a116b0b2cdcbbbeb44a5228e34c3"
+      },
+      "source_sha256": "4a78a3b787405848a2ac19fabadadac956d3a116b0b2cdcbbbeb44a5228e34c3",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 3,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 1,
+          "pixel_value": 247,
+          "defect_name": "1_additional_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/122/000.png",
+          "mask_sha256": "43c208d0ac23f035eee3b3159594cac3948e62abef2d00892d3e903f50f3fd73"
+        },
+        {
+          "part": "nut",
+          "delta": -1,
+          "pixel_value": 243,
+          "defect_name": "1_missing_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/122/001.png",
+          "mask_sha256": "c10508b1ad42c76f8307af21ea4a943ec47969b6296476952d6452ce311e315c"
+        }
+      ],
+      "source_rgb_sha256": "03028d697787fdd60ae306830b2b023eeb706d7b476ee46fa26cc7f7bb285db4",
+      "id": "case-020"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/125",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/125.png",
+        "sha256": "2914fa69cf62942c98964568902abc5847addcb34a4622e04d1b4d604e8a03e7"
+      },
+      "source_sha256": "2914fa69cf62942c98964568902abc5847addcb34a4622e04d1b4d604e8a03e7",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 3,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 1,
+          "pixel_value": 247,
+          "defect_name": "1_additional_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/125/000.png",
+          "mask_sha256": "f3d527c8b8a2c163faf933a4649be0fef3ad54895470db4b5ad523dde799fe2f"
+        },
+        {
+          "part": "nut",
+          "delta": -1,
+          "pixel_value": 243,
+          "defect_name": "1_missing_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/125/001.png",
+          "mask_sha256": "007d64505c1108fce4ee61388ee82da6853561d843a8d74dfaed22b9034022d7"
+        }
+      ],
+      "source_rgb_sha256": "edf5c2b756e6079346e878fe143e03cef17badcfef1aabf9827ea663c44db2b4",
+      "id": "case-021"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/131",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/131.png",
+        "sha256": "7292c3fee2d5eab0a18d1e6c338f0fe96c5cd7291c5e639d2bf7489f06750e73"
+      },
+      "source_sha256": "7292c3fee2d5eab0a18d1e6c338f0fe96c5cd7291c5e639d2bf7489f06750e73",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 1,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "nut",
+          "delta": 1,
+          "pixel_value": 249,
+          "defect_name": "1_additional_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/131/000.png",
+          "mask_sha256": "9ddc3ac1e570e0f214183893dd196bd8f18d5034c17d02d527278267434216e4"
+        },
+        {
+          "part": "washer",
+          "delta": -1,
+          "pixel_value": 241,
+          "defect_name": "1_missing_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/131/001.png",
+          "mask_sha256": "7fdf8d2577ede4893f1fd3214fb7ff0f7d62d5305ab33b0980113d0ed4a6c18e"
+        }
+      ],
+      "source_rgb_sha256": "36dcabe2c54292b6d19a07d8a092c774f9c648b2ff955357a5945b40a201d715",
+      "id": "case-022"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/135",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/135.png",
+        "sha256": "5b95cbffcec28df264d5f37a5ffc2faa5b15bc07580f53bbb07710659c8137cd"
+      },
+      "source_sha256": "5b95cbffcec28df264d5f37a5ffc2faa5b15bc07580f53bbb07710659c8137cd",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 3,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 1,
+          "pixel_value": 247,
+          "defect_name": "1_additional_washer",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/135/000.png",
+          "mask_sha256": "3ba02b0a6c2376cdd5e69db130fe6fd4a1a48c9d13ff787b5efdcd0b1797c7b6"
+        },
+        {
+          "part": "nut",
+          "delta": -1,
+          "pixel_value": 243,
+          "defect_name": "1_missing_nut",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/135/001.png",
+          "mask_sha256": "174f7f5326ea37b08139536d17ff19b2133b1e4f0c34b6b49844b61a23aeadca"
+        }
+      ],
+      "source_rgb_sha256": "7b44df4f5b7ec784bc0ab8aa0474feab248227e58944b0d66c743d70b7ed69d4",
+      "id": "case-023"
+    },
+    {
+      "source_id": "screw_bag/test/logical_anomalies/133",
+      "source": {
+        "path": "datasets/raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/133.png",
+        "sha256": "316de28d97167205ef6d31780fa0c7cefe54f83c22b2262fd7c093c865c4b3fb"
+      },
+      "source_sha256": "316de28d97167205ef6d31780fa0c7cefe54f83c22b2262fd7c093c865c4b3fb",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 0,
+        "washer": 4,
+        "bracket": 0
+      },
+      "truth_rule": "author_combined_quantity_defect_rule_v1",
+      "deltas": [
+        {
+          "part": "washer",
+          "delta": 2,
+          "pixel_value": 246,
+          "defect_name": "2_additional_washers",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/133/000.png",
+          "mask_sha256": "66fab67ea935880e85ac8cd858a657c1e8564ab55857c962e5e35c41760febea"
+        },
+        {
+          "part": "nut",
+          "delta": -2,
+          "pixel_value": 242,
+          "defect_name": "2_missing_nuts",
+          "mask": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/133/001.png",
+          "mask_sha256": "cbd97549b6c190fd49ea7c53a71352c5ca6a49a7fcba3e9cc36dc552e2e7f84c"
+        }
+      ],
+      "source_rgb_sha256": "0f7956f62b41deb8f8eed1396304ce919f45f5075854c360226ab2e41acac92c",
+      "id": "case-024"
+    }
+  ]
+}

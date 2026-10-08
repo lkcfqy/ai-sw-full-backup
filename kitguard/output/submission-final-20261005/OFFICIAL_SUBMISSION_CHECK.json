@@ -1,0 +1,37 @@
+{
+  "schema": "kitguard.official-submission-check.v1",
+  "checked_at_utc": "2026-10-05T09:09:19.907257+00:00",
+  "sources": {
+    "notice": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=5",
+    "rules": "https://contest.gnict.org/rule.php",
+    "application": "https://contest.gnict.org/apply.php",
+    "final_form": "https://forms.gle/FUVSCAtjd8w8ksRg8"
+  },
+  "form_pages_inspected": [
+    "introduction",
+    "team_information_and_upload"
+  ],
+  "deadline": "2026-10-06T12:00:00+09:00",
+  "upload_count": 1,
+  "upload_format": "ZIP",
+  "max_upload_GB": 10,
+  "official_filename_pattern": "신청구분_신청분야 코드_팀장명.zip",
+  "final_filename": "일반부_20_남청청.zip",
+  "division": "일반부",
+  "track_code": "20",
+  "limits": {
+    "report_pages_max": 5,
+    "agent_explanation_pages": 1,
+    "source": "executable source ZIP with documentation",
+    "video_seconds_max": 180,
+    "presentation_slides_max": 10
+  },
+  "minimum": "Level 2 functional prototype with actual end-to-end execution; Level 3 MVP recommended",
+  "reuse_and_ai_assistance": "allowed with contribution, source and rights disclosure",
+  "new_humans_or_physical_purchases_required": false,
+  "document_sha256": "7f47dac1f5d6fc435cebb4700d4a18df18adc33e62024d517ee1abe42e28bb2c",
+  "redacted_upload_page_sha256": "fa04787d7ad7af5b9435ca88cd6d5f242acbc127292d5c116c8b4ff1423bfb3b",
+  "submission_performed": false,
+  "official_receipt_obtained": false,
+  "remaining_user_action": "Fill true registered team information, upload the one final ZIP, complete later required questions, submit and save confirmation."
+}

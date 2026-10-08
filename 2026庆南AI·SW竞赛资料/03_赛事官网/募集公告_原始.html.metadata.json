@@ -1,0 +1,18 @@
+{
+  "url": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=1",
+  "path": "03_赛事官网/募集公告_原始.html",
+  "source": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=1",
+  "kind": "webpage",
+  "refresh": true,
+  "cookie_jar": "/var/folders/57/my3v7tgs1mn9cxsptzl_jv6m0000gn/T/tmpr2gsxdks/cookies.txt",
+  "retrieved_at": "2026-09-24T16:35:46.690867+09:00",
+  "http_status": 200,
+  "final_url": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=1",
+  "content_type": "text/html; charset=utf-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 17319,
+  "sha256": "cfb45d6fbb26c87036f7aeb5a8a811c145375bc9a448c44417803f80d3ff0f9e",
+  "magic_hex": "3c21646f63747970652068746d6c3e0a"
+}

@@ -1,0 +1,303 @@
+{
+  "schema": "kitguard.v08.video-independent-peer-review.v1",
+  "status": "passed",
+  "reviewed_at": "2026-10-02T03:09:37.128375+00:00",
+  "reviewer": "AI agent /root/contest_requirements",
+  "video": {
+    "path": "output/demo/v0.8/photo-document-edit-01/KitGuard_v08_photo_document_edit_ko.mp4",
+    "sha256": "faeb3b16fee34370a2b04e2beacc726b8c7a419d90d18180bceb7f9dc9320857",
+    "bytes": 2374331
+  },
+  "evidence": [
+    {
+      "path": "output/demo/v0.8/photo-document-edit-01/receipt.json",
+      "sha256": "12953ab4c6d21453241a7ed2b1f8a361399cd0febedc071bf55a748ecd49bde8"
+    },
+    {
+      "path": "output/demo/v0.8/photo-document-edit-01/PREPARATION.json",
+      "sha256": "593d5ddd66b23d11e30170efd06e11db67eb8ccac4a2707f9e016eb8387b023c"
+    },
+    {
+      "path": "output/demo/v0.8/photo-document-edit-01/SOURCE_INDEX.json",
+      "sha256": "65fb880e118d2948907487597ce1de79a81a1cfaafb3473c5fc32e6a0b0117f1"
+    },
+    {
+      "path": "output/demo/v0.8/photo-document-edit-01/TIMELINE.json",
+      "sha256": "2b1dc886359e5139973f3c2af6ed395a361d762c5d045887a1b489a190d32eb8"
+    },
+    {
+      "path": "output/demo/v0.8/photo-document-edit-01/full-decode.log",
+      "sha256": "412b2fe5bffab013a6767aeb7bc94d00f160ad20774d1047bf095a89b625cd4c"
+    },
+    {
+      "path": "output/demo/v0.8/photo-document-edit-01/qa-exact/index.json",
+      "sha256": "e7ac1e55c215379cc95c02cd1383c2b1c08d24785195bef3325157f65e0afff1"
+    },
+    {
+      "path": "output/demo/v0.8/photo-document-edit-01/qa-boundary-before/index.json",
+      "sha256": "ca695a5204a571475fbd777c1402380d457d7172f84b49bd603a3bd5c404e52f"
+    },
+    {
+      "path": "scripts/v08/build_demo_video.py",
+      "sha256": "f5d1cf0fd53900101fa5f3a495f1b188956f7123a24746c0d21e5c9dda18daa3"
+    },
+    {
+      "path": "scripts/v08/demo_video_ko.json",
+      "sha256": "41476fd6014466e016a95369d25e51af3f672d5c3aaf929134dd0f936ba1c8bc"
+    },
+    {
+      "path": "test-results/v0.8-video-peer-review-v1/encode-approval.json",
+      "sha256": "a712d45995cd7b6a474ea16c2d908af0656a7105c0da343e85389591a6bdc4e5"
+    }
+  ],
+  "duration_seconds": 135.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "decoded_frames_in_author_log": 3240,
+  "audio_tracks": 0,
+  "full_decode_scope": "Read and verified hash-bound author FFmpeg full-decode log and stream facts; reviewer did not re-encode or repeat full decode.",
+  "visual_scope": "Six prepared scenes individually viewed before encode;18 encoded time-seek samples individually viewed;all18 exact-index samples proven pixel-identical;five additional exact prior-transition samples individually viewed.",
+  "frame_checks": [
+    {
+      "frame_index": 0,
+      "seconds": 0.0,
+      "path": "qa-exact/selected-01.png",
+      "sha256": "4f71f19b96ec9082fa2ae22f2454ba5689dc7dd755df3217454cd1e12907843b",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-0000.png"
+    },
+    {
+      "frame_index": 240,
+      "seconds": 10.0,
+      "path": "qa-exact/selected-02.png",
+      "sha256": "0e043237a630c408f04f798c32d46f37819b45a73b485a092a8a619c4876746e",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-0240.png"
+    },
+    {
+      "frame_index": 479,
+      "seconds": 19.958333333333332,
+      "path": "qa-exact/selected-03.png",
+      "sha256": "45387e1a43223fa9ec599f58e97fc68a5d009e552b2e2cd994f434c0bc6eeec4",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-0479.png"
+    },
+    {
+      "frame_index": 480,
+      "seconds": 20.0,
+      "path": "qa-exact/selected-04.png",
+      "sha256": "494ce9a3c53f18344bb3e5d0b68731f81e18964cb1a26a9a6fbf33d34074f479",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-0480.png"
+    },
+    {
+      "frame_index": 780,
+      "seconds": 32.5,
+      "path": "qa-exact/selected-05.png",
+      "sha256": "f8f633f7cb4dceb0cad27e8342ebea0ad2a030dc28e26255fc08cedd5bf28499",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-0780.png"
+    },
+    {
+      "frame_index": 1079,
+      "seconds": 44.958333333333336,
+      "path": "qa-exact/selected-06.png",
+      "sha256": "3048e8f413fa48f887440bd26c84be1ec151eb78743730352dbfa5f9a0dcdc2b",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-1079.png"
+    },
+    {
+      "frame_index": 1080,
+      "seconds": 45.0,
+      "path": "qa-exact/selected-07.png",
+      "sha256": "0854b09cb36429a1ae65948292aa6bb9aeaf7b645691732686a6a21b9d505fd7",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-1080.png"
+    },
+    {
+      "frame_index": 1380,
+      "seconds": 57.5,
+      "path": "qa-exact/selected-08.png",
+      "sha256": "8c96432e5b0a880b3f51d791f9f9b5a200278234eef5df172c384f538d8b6954",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-1380.png"
+    },
+    {
+      "frame_index": 1679,
+      "seconds": 69.95833333333333,
+      "path": "qa-exact/selected-09.png",
+      "sha256": "84cbf41fe15c8a029575f9e123dc239250012790ce631772ea83746de7680a31",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-1679.png"
+    },
+    {
+      "frame_index": 1680,
+      "seconds": 70.0,
+      "path": "qa-exact/selected-10.png",
+      "sha256": "19314042765c99fdec0508a85dcc1262365fdd357d895ec64a37034a7a6f48a9",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-1680.png"
+    },
+    {
+      "frame_index": 1980,
+      "seconds": 82.5,
+      "path": "qa-exact/selected-11.png",
+      "sha256": "b943b8a8843f28e4547ef94e14905da106019df205fe08b2b7d4e36520450e98",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-1980.png"
+    },
+    {
+      "frame_index": 2279,
+      "seconds": 94.95833333333333,
+      "path": "qa-exact/selected-12.png",
+      "sha256": "f1f5e400c3648d6eb8d9c5f0985541266c99752e946dc29cbd0d1a01527e9331",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-2279.png"
+    },
+    {
+      "frame_index": 2280,
+      "seconds": 95.0,
+      "path": "qa-exact/selected-13.png",
+      "sha256": "98ebb3a4f1e2cbcd0bb2593ce9a367bf5afeab8853e4e3423cb1dc207991e669",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-2280.png"
+    },
+    {
+      "frame_index": 2520,
+      "seconds": 105.0,
+      "path": "qa-exact/selected-14.png",
+      "sha256": "e42b2fdb1844b04ea0987f640579dea973aa057438ba1c09668d122f8733aab4",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-2520.png"
+    },
+    {
+      "frame_index": 2759,
+      "seconds": 114.95833333333333,
+      "path": "qa-exact/selected-15.png",
+      "sha256": "d0e8a40e88a22a4dbd769b0b329378e425b8ae9755bcf4bb05b7cb35c82471a8",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-2759.png"
+    },
+    {
+      "frame_index": 2760,
+      "seconds": 115.0,
+      "path": "qa-exact/selected-16.png",
+      "sha256": "5139e29bfb97eccb3cbca07232ee4e9a4889b2b1dc0eac6a2f76f7a2c431e93e",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-2760.png"
+    },
+    {
+      "frame_index": 3000,
+      "seconds": 125.0,
+      "path": "qa-exact/selected-17.png",
+      "sha256": "4c62643d9f5f00cc5a302905cf3a491f4ed59c5e7d11d35cebc135976cf11d11",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-3000.png"
+    },
+    {
+      "frame_index": 3239,
+      "seconds": 134.95833333333334,
+      "path": "qa-exact/selected-18.png",
+      "sha256": "06572f0942d1f3eb83e4411bb68d878b9d09787a05afcf85481ab7f157ef87d9",
+      "visual_review": "Exact pixels equal previously individually viewed time-seek sample; readable and no observed clipping.",
+      "pixel_equivalent_to": "output/demo/v0.8/photo-document-edit-01/qa/frame-3239.png"
+    },
+    {
+      "frame_index": 478,
+      "seconds": 19.916666666666668,
+      "path": "qa-boundary-before/selected-01.png",
+      "sha256": "3e4abc86c72c7e59c3abd13f7496fdc5c9d76e74e7d4976f259c2b63088126e9",
+      "visually_viewed": true,
+      "observed_scene": 1,
+      "visual_review": "Correct prior scene before actual transition; readable Korean captions and permanent scope label; no clipping/garbled glyphs."
+    },
+    {
+      "frame_index": 1078,
+      "seconds": 44.916666666666664,
+      "path": "qa-boundary-before/selected-02.png",
+      "sha256": "7567d063e93f8b8b5911a4cae9596213354fe415611b637e3edaf5a6cf6192f0",
+      "visually_viewed": true,
+      "observed_scene": 2,
+      "visual_review": "Correct prior scene before actual transition; readable Korean captions and permanent scope label; no clipping/garbled glyphs."
+    },
+    {
+      "frame_index": 1678,
+      "seconds": 69.91666666666667,
+      "path": "qa-boundary-before/selected-03.png",
+      "sha256": "f228a4cbc379e188a153433aa6486672deeae990bdfb29e71296c879dbf71db3",
+      "visually_viewed": true,
+      "observed_scene": 3,
+      "visual_review": "Correct prior scene before actual transition; readable Korean captions and permanent scope label; no clipping/garbled glyphs."
+    },
+    {
+      "frame_index": 2278,
+      "seconds": 94.91666666666667,
+      "path": "qa-boundary-before/selected-04.png",
+      "sha256": "883eff1679eca8ba1b4d348b46e4702c62edde1c75d81c2b0196b9c40d88d55a",
+      "visually_viewed": true,
+      "observed_scene": 4,
+      "visual_review": "Correct prior scene before actual transition; readable Korean captions and permanent scope label; no clipping/garbled glyphs."
+    },
+    {
+      "frame_index": 2758,
+      "seconds": 114.91666666666667,
+      "path": "qa-boundary-before/selected-05.png",
+      "sha256": "9130e83c1fa275341f146a35c19b7861b22173cab022ce49080b0187c8b62e85",
+      "visually_viewed": true,
+      "observed_scene": 5,
+      "visual_review": "Correct prior scene before actual transition; readable Korean captions and permanent scope label; no clipping/garbled glyphs."
+    }
+  ],
+  "transition_quantization": {
+    "status": "documented_nonblocking",
+    "nominal_cut_seconds": [
+      20,
+      45,
+      70,
+      95,
+      115
+    ],
+    "actual_first_new_scene_frame_indices": [
+      479,
+      1079,
+      1679,
+      2279,
+      2759
+    ],
+    "actual_last_old_scene_frame_indices": [
+      478,
+      1078,
+      1678,
+      2278,
+      2758
+    ],
+    "advance_frames": 1,
+    "advance_seconds": 0.041666666666666664,
+    "explanation": "25fps still-image concat to24fps output yields one-frame earlier cuts. Composite screenshot and subtitles change together; total135s and source inference timings are unaffected. Original QA and encoding receipt retained."
+  },
+  "facts_verified": [
+    "Persistent edited API-records plus browser-stills disclosure; no continuous recording or live-click claim.",
+    "R1 requirement3/observation2/difference-1/correct50.909s preserved as invalid historical evidence afterR2.",
+    "R2 requirement3to2 is preset explicit ENGINEERING-AGENT API change, not model-demand adjustment or replenishment.",
+    "Same-photo replay itself0modelcalls; newR2 inference47.728s;two inspections six actual generations;no references.",
+    "BOM comparison performed by program after new observation; no claim BOM given to VLM.",
+    "Two ENGINEERING-AGENT inconclusive opinions,0real users,0physical completions;no accuracy or acceptance claim.",
+    "Download fact card distinguishes Chrome4verified payloads from API6ZIPmembers;no fabricated click animation.",
+    "Browserupload/filevisual limits and preview version retained."
+  ],
+  "original_inputs_unchanged_after_encoding": true,
+  "human_participants": 0,
+  "new_model_calls": 0,
+  "new_browser_operations": 0,
+  "continuous_screen_recording": false,
+  "reviewer_modified_author_source": false,
+  "remaining_limitations": [
+    "Silent edited screenshots and factual cards, not a captured interactive upload-to-model session.",
+    "Original browser upload and file:// visual verification remain unverified.",
+    "Engineering opinions are inconclusive automated records, not human feedback or accuracy approval.",
+    "Small UI background text remains documentary; prominent Korean fact captions carry main message."
+  ]
+}

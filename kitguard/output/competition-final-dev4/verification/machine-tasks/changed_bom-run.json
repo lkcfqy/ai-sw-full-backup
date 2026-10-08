@@ -1,0 +1,4065 @@
+{
+  "schema_version": 1,
+  "id": "mission_eac2a4b8ecaf4288950e",
+  "version": "0.9.0.dev4",
+  "scenario": "order",
+  "status": "completed",
+  "created_at": "2026-10-03T16:23:53.737+00:00",
+  "finished_at": "2026-10-03T16:24:43.157+00:00",
+  "elapsed_ms": 49417,
+  "cancel_requested": false,
+  "purpose": "machine_assistance",
+  "human_participants": 0,
+  "physical_completions": 0,
+  "runtime_identity": {
+    "label": "Qwen3.6-27B · MLX 4-bit · local",
+    "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+    "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+    "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+    "observation_mode": "spatial_guarded",
+    "image_max_side": 1536
+  },
+  "protocol": {
+    "name": "bound_photo_document_goal_v1",
+    "cases": [],
+    "goal": "Produce current-version machine findings and an inspectable digital evidence package.",
+    "plan": [
+      "verify_bound_order",
+      "run_local_vision",
+      "route_from_saved_check",
+      "package_machine_evidence"
+    ],
+    "revision_policy": "No automatic revision. Any input change invalidates the accepted goal; start a new goal explicitly.",
+    "uncertainty_policy": "Stop that case at needs_more_evidence; do not repeatedly infer the same pixels to force agreement.",
+    "timing": "Server monotonic for the entire mission, includes preparation and all model waits; restart is unknown.",
+    "scope": "One current digital order supplied by the operator; source declarations remain unverified."
+  },
+  "protocol_sha256": "2571dfc1efc9abd4ab2c1d422693797374284d215119da023363e8813c5b3a6b",
+  "planned_cases": 1,
+  "planned_checks": 1,
+  "cases": [
+    {
+      "id": "order",
+      "sample_id": null,
+      "bom": {
+        "bolt": 3,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "revision_bom": null,
+      "goal_binding": {
+        "order_id": "ord_9465b8c5052240fea8c0",
+        "revision": 2,
+        "evidence_epoch": 3,
+        "photo_id": "img_4dfe4da87d4640eab9f9",
+        "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+        "requirements": {
+          "bolt": 3,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "inspection_scope": {
+          "mode": "whole_image",
+          "view_photo_id": "img_4dfe4da87d4640eab9f9",
+          "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "root_photo_id": "img_4dfe4da87d4640eab9f9",
+          "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "root_width": 1600,
+          "root_height": 1100,
+          "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+          "root_created_at": "2026-10-03T16:23:53.729+00:00",
+          "region_xyxy": null,
+          "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+          "derivation": "normalized_root_bytes_v1",
+          "scope_declaration": null,
+          "scope_confirmed_at": null
+        },
+        "reference_ids": {},
+        "source_sha256": "ff90fe1b6e4255ee72666587465c42e9dfd9e482ead0517269e5e54c25a6ff35"
+      },
+      "status": "completed",
+      "order_id": "ord_9465b8c5052240fea8c0",
+      "finding": "quantity_difference",
+      "steps": [
+        {
+          "index": 1,
+          "tool": "verify_bound_order",
+          "reason": "Verify the accepted version, photo, BOM and scope; never revise the operator's input.",
+          "status": "completed",
+          "started_at": "2026-10-03T16:23:53.739+00:00",
+          "finished_at": "2026-10-03T16:23:53.742+00:00",
+          "binding": {
+            "order_id": "ord_9465b8c5052240fea8c0",
+            "revision": 2,
+            "evidence_epoch": 3,
+            "photo_id": "img_4dfe4da87d4640eab9f9",
+            "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "requirements": {
+              "bolt": 3,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "inspection_scope": {
+              "mode": "whole_image",
+              "view_photo_id": "img_4dfe4da87d4640eab9f9",
+              "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_photo_id": "img_4dfe4da87d4640eab9f9",
+              "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_width": 1600,
+              "root_height": 1100,
+              "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "root_created_at": "2026-10-03T16:23:53.729+00:00",
+              "region_xyxy": null,
+              "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+              "derivation": "normalized_root_bytes_v1",
+              "scope_declaration": null,
+              "scope_confirmed_at": null
+            },
+            "reference_ids": {},
+            "source_sha256": "ff90fe1b6e4255ee72666587465c42e9dfd9e482ead0517269e5e54c25a6ff35"
+          },
+          "result": {
+            "order_id": "ord_9465b8c5052240fea8c0",
+            "photo_id": "img_4dfe4da87d4640eab9f9",
+            "source": {
+              "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+              "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+              "license_note": "MVTec · CC BY-NC-SA 4.0",
+              "schema_version": 1,
+              "kind": "user_declared_photo",
+              "verification": "user_declared_unverified",
+              "physical_completion_allowed": false,
+              "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "original_root_photo_id": "img_a28df803fa29476b80dc",
+              "declared_at": "2026-10-03T16:23:04.888+00:00",
+              "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+              "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+            },
+            "input_binding_sha256": "2b23dae60020348b6733e63b0f5f70a8a7215caccd1611a24f7f046ebdcfd414"
+          }
+        },
+        {
+          "index": 2,
+          "tool": "local_vision",
+          "reason": "A fresh check is required for this exact version and photograph.",
+          "status": "completed",
+          "started_at": "2026-10-03T16:23:53.743+00:00",
+          "finished_at": "2026-10-03T16:24:43.151+00:00",
+          "binding": {
+            "order_id": "ord_9465b8c5052240fea8c0",
+            "revision": 2,
+            "photo_id": "img_4dfe4da87d4640eab9f9",
+            "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "evidence_epoch": 3
+          },
+          "result": {
+            "check_id": "chk_0a9d74287cc54c5f931c",
+            "decision": "correct",
+            "latency_ms": 49379,
+            "check_sha256": "c4161927a4dee3c331935f542632b63aeb6c918120707f46f653f5228573f10c"
+          },
+          "job_id": "job_a397d3d0100349de8112"
+        },
+        {
+          "index": 3,
+          "tool": "list_differences",
+          "reason": "The stored count comparison has a nonzero difference; preserve the BOM and list the differences.",
+          "status": "completed",
+          "started_at": "2026-10-03T16:24:43.152+00:00",
+          "finished_at": "2026-10-03T16:24:43.153+00:00",
+          "binding": {
+            "check_id": "chk_0a9d74287cc54c5f931c"
+          },
+          "result": {
+            "finding": "quantity_difference",
+            "differences": [
+              {
+                "part": "bolt",
+                "required": 3,
+                "observed": 2,
+                "delta": -1
+              },
+              {
+                "part": "nut",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "washer",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "bracket",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              }
+            ],
+            "uncertain_action": null
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "chk_0a9d74287cc54c5f931c",
+          "order_id": "ord_9465b8c5052240fea8c0",
+          "revision": 2,
+          "photo_id": "img_4dfe4da87d4640eab9f9",
+          "decision": "correct",
+          "observed": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "differences": [
+            {
+              "part": "bolt",
+              "required": 3,
+              "observed": 2,
+              "delta": -1
+            },
+            {
+              "part": "nut",
+              "required": 2,
+              "observed": 2,
+              "delta": 0
+            },
+            {
+              "part": "washer",
+              "required": 2,
+              "observed": 2,
+              "delta": 0
+            },
+            {
+              "part": "bracket",
+              "required": 0,
+              "observed": 0,
+              "delta": 0
+            }
+          ],
+          "issues": [],
+          "action": {
+            "kind": "add_remove",
+            "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+            "region": null
+          },
+          "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+          "backend": "mlx",
+          "latency_ms": 49379,
+          "created_at": "2026-10-03T16:24:43.128+00:00",
+          "valid": true,
+          "requirements_snapshot": {
+            "bolt": 3,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "inspection_scope": {
+            "mode": "whole_image",
+            "view_photo_id": "img_4dfe4da87d4640eab9f9",
+            "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "root_photo_id": "img_4dfe4da87d4640eab9f9",
+            "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "root_width": 1600,
+            "root_height": 1100,
+            "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+            "root_created_at": "2026-10-03T16:23:53.729+00:00",
+            "region_xyxy": null,
+            "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+            "derivation": "normalized_root_bytes_v1",
+            "scope_declaration": null,
+            "scope_confirmed_at": null
+          },
+          "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "observation_verification": {
+            "mode": "spatial_consensus",
+            "same_model_correlated_calls": true,
+            "counts_agree": true,
+            "clear_agreement": true,
+            "passes": [
+              {
+                "transform": "original",
+                "input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+                "observed": {
+                  "bolt": 2,
+                  "nut": 2,
+                  "washer": 2,
+                  "bracket": 0
+                },
+                "issues": [],
+                "action": {
+                  "kind": "none",
+                  "message": "All visible hardware objects identified.",
+                  "region": null
+                },
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.33,
+                      0.52
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.53,
+                      0.5
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.29,
+                      0.43
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.4,
+                      0.55
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.36,
+                      0.38
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.46,
+                      0.48
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              },
+              {
+                "transform": "rotate_90_ccw",
+                "input_sha256": "740e927dbb9d6d12ab4cefb55e536e7fc295e35a2211fb91a5e213aace3ed95c",
+                "observed": {
+                  "bolt": 2,
+                  "nut": 2,
+                  "washer": 2,
+                  "bracket": 0
+                },
+                "issues": [],
+                "action": {
+                  "kind": "none",
+                  "message": "All visible hardware objects identified.",
+                  "region": null
+                },
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.5,
+                      0.46
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.52,
+                      0.66
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.55,
+                      0.59
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.43,
+                      0.69
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.47,
+                      0.53
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.38,
+                      0.63
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              }
+            ]
+          },
+          "identity_verification": {
+            "protocol": "identity_geometry_v2",
+            "same_model_correlated_calls": true,
+            "response": {
+              "objects": [
+                {
+                  "id": "p003",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p004",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p005",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p006",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ]
+            },
+            "blocked_categories": [],
+            "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "full_input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+            "crops": [
+              {
+                "id": "p003",
+                "object_index": 3,
+                "original_part": "nut",
+                "center": [
+                  0.29,
+                  0.43
+                ],
+                "rect_source_px": [
+                  331,
+                  340,
+                  596,
+                  605
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5026893939393938,
+                  0.5021590909090908
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p003.png",
+                "crop_sha256": "7ef67ff1136d8148b5b49d8b3e7db41f00d173f71e50e59d84ade330c4cadade",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p003-pixels.png",
+                "pixel_crop_sha256": "abaf05e3de74773b1255dc6a255b23ef4df2c4e57dbecdfb862616e89336bc8f",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              },
+              {
+                "id": "p004",
+                "object_index": 4,
+                "original_part": "nut",
+                "center": [
+                  0.4,
+                  0.55
+                ],
+                "rect_source_px": [
+                  507,
+                  472,
+                  772,
+                  737
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5022727272727273,
+                  0.5017045454545457
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p004.png",
+                "crop_sha256": "0517491162f708a1fb6da27f34df0f39edc85d969b23ed6b5c5926d84e46936b",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p004-pixels.png",
+                "pixel_crop_sha256": "8348f02b09dc1749c634c4a686e6456a3cdec297c946ddde67bc190eb7f5abbf",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              },
+              {
+                "id": "p005",
+                "object_index": 5,
+                "original_part": "washer",
+                "center": [
+                  0.36,
+                  0.38
+                ],
+                "rect_source_px": [
+                  443,
+                  285,
+                  708,
+                  550
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5024242424242423,
+                  0.5023484848484848
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p005.png",
+                "crop_sha256": "f6c388bcf5114aed93215332a387948ad9154b03f9695726e143d5b4ca1a2903",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p005-pixels.png",
+                "pixel_crop_sha256": "b0018a44828ee1e35b0a577ad35e3d246bdb9334ed8219d9941624312d9c5d69",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              },
+              {
+                "id": "p006",
+                "object_index": 6,
+                "original_part": "washer",
+                "center": [
+                  0.46,
+                  0.48
+                ],
+                "rect_source_px": [
+                  603,
+                  395,
+                  868,
+                  660
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5020454545454548,
+                  0.501969696969697
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p006.png",
+                "crop_sha256": "ded37640876883aa04f4302c609b5755003b89a08015404538b40ebe06ccef3e",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p006-pixels.png",
+                "pixel_crop_sha256": "ad892ff0d11ee5d544cb1fa1024d0fca34c2b0b205cebb3b8d9b2c0b1b6de330",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              }
+            ]
+          },
+          "object_evidence": {
+            "protocol": "spatial_inventory_v1",
+            "coordinate_frame": "normalized_original",
+            "objects": [
+              {
+                "part": "bolt",
+                "center": [
+                  0.33,
+                  0.52
+                ]
+              },
+              {
+                "part": "bolt",
+                "center": [
+                  0.53,
+                  0.5
+                ]
+              },
+              {
+                "part": "nut",
+                "center": [
+                  0.29,
+                  0.43
+                ]
+              },
+              {
+                "part": "nut",
+                "center": [
+                  0.4,
+                  0.55
+                ]
+              },
+              {
+                "part": "washer",
+                "center": [
+                  0.36,
+                  0.38
+                ]
+              },
+              {
+                "part": "washer",
+                "center": [
+                  0.46,
+                  0.48
+                ]
+              }
+            ],
+            "uncertain_parts": []
+          },
+          "reference_evidence": {
+            "protocol": "reference_inputs_v1",
+            "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+            "observation_mode": "spatial_guarded",
+            "preprocessing": "exif_transpose_rgb_thumbnail_lanczos_png_v1",
+            "pillow_version": "12.3.0",
+            "max_side": 512,
+            "prepared_bytes_retained": false,
+            "guarded_identity_uses_references": false,
+            "images": [],
+            "stages": [
+              {
+                "stage": "original",
+                "reference_image_indices": [],
+                "status": "completed"
+              },
+              {
+                "stage": "rotate_90_ccw",
+                "reference_image_indices": [],
+                "status": "completed"
+              },
+              {
+                "stage": "identity",
+                "reference_image_indices": [],
+                "status": "completed"
+              }
+            ]
+          },
+          "reference_ids": {},
+          "evidence_feedback": null,
+          "tool_trace": [
+            {
+              "step": "observe_image",
+              "status": "completed",
+              "model": "Qwen3.6-27B · MLX 4-bit · local",
+              "latency_ms": 49379
+            },
+            {
+              "step": "derive_counts_from_object_list",
+              "status": "completed",
+              "listed_objects": 6,
+              "uncertain_parts": []
+            },
+            {
+              "step": "compare_orientation_observations",
+              "status": "completed",
+              "clear_agreement": true,
+              "same_model_correlated_calls": true
+            },
+            {
+              "step": "verify_local_identity",
+              "status": "completed",
+              "blocked_categories": [],
+              "same_model_correlated_calls": true
+            },
+            {
+              "step": "compare_current_requirements",
+              "status": "completed",
+              "revision": 2
+            },
+            {
+              "step": "review_previous_evidence",
+              "status": "not_applicable"
+            },
+            {
+              "step": "choose_next_action",
+              "status": "completed",
+              "decision": "correct",
+              "action_kind": "add_remove"
+            },
+            {
+              "step": "commit_current_evidence",
+              "status": "completed",
+              "revision": 2,
+              "evidence_epoch": 3
+            }
+          ],
+          "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "observation_context": null,
+          "runtime_identity": {
+            "label": "Qwen3.6-27B · MLX 4-bit · local",
+            "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+            "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+            "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+            "observation_mode": "spatial_guarded",
+            "image_max_side": 1536
+          },
+          "evidence_epoch": 3
+        }
+      ],
+      "snapshot": {
+        "id": "ord_9465b8c5052240fea8c0",
+        "title": "[MACHINE TASK] matching",
+        "requirements": {
+          "bolt": 3,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "revision": 2,
+        "status": "needs_action",
+        "created_at": "2026-10-03T16:23:04.888+00:00",
+        "updated_at": "2026-10-03T16:24:43.128+00:00",
+        "latest_check": {
+          "id": "chk_0a9d74287cc54c5f931c",
+          "order_id": "ord_9465b8c5052240fea8c0",
+          "revision": 2,
+          "photo_id": "img_4dfe4da87d4640eab9f9",
+          "decision": "correct",
+          "observed": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "differences": [
+            {
+              "part": "bolt",
+              "required": 3,
+              "observed": 2,
+              "delta": -1
+            },
+            {
+              "part": "nut",
+              "required": 2,
+              "observed": 2,
+              "delta": 0
+            },
+            {
+              "part": "washer",
+              "required": 2,
+              "observed": 2,
+              "delta": 0
+            },
+            {
+              "part": "bracket",
+              "required": 0,
+              "observed": 0,
+              "delta": 0
+            }
+          ],
+          "issues": [],
+          "action": {
+            "kind": "add_remove",
+            "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+            "region": null
+          },
+          "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+          "backend": "mlx",
+          "latency_ms": 49379,
+          "created_at": "2026-10-03T16:24:43.128+00:00",
+          "valid": true,
+          "requirements_snapshot": {
+            "bolt": 3,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "inspection_scope": {
+            "mode": "whole_image",
+            "view_photo_id": "img_4dfe4da87d4640eab9f9",
+            "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "root_photo_id": "img_4dfe4da87d4640eab9f9",
+            "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "root_width": 1600,
+            "root_height": 1100,
+            "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+            "root_created_at": "2026-10-03T16:23:53.729+00:00",
+            "region_xyxy": null,
+            "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+            "derivation": "normalized_root_bytes_v1",
+            "scope_declaration": null,
+            "scope_confirmed_at": null
+          },
+          "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "observation_verification": {
+            "mode": "spatial_consensus",
+            "same_model_correlated_calls": true,
+            "counts_agree": true,
+            "clear_agreement": true,
+            "passes": [
+              {
+                "transform": "original",
+                "input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+                "observed": {
+                  "bolt": 2,
+                  "nut": 2,
+                  "washer": 2,
+                  "bracket": 0
+                },
+                "issues": [],
+                "action": {
+                  "kind": "none",
+                  "message": "All visible hardware objects identified.",
+                  "region": null
+                },
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.33,
+                      0.52
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.53,
+                      0.5
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.29,
+                      0.43
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.4,
+                      0.55
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.36,
+                      0.38
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.46,
+                      0.48
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              },
+              {
+                "transform": "rotate_90_ccw",
+                "input_sha256": "740e927dbb9d6d12ab4cefb55e536e7fc295e35a2211fb91a5e213aace3ed95c",
+                "observed": {
+                  "bolt": 2,
+                  "nut": 2,
+                  "washer": 2,
+                  "bracket": 0
+                },
+                "issues": [],
+                "action": {
+                  "kind": "none",
+                  "message": "All visible hardware objects identified.",
+                  "region": null
+                },
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.5,
+                      0.46
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.52,
+                      0.66
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.55,
+                      0.59
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.43,
+                      0.69
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.47,
+                      0.53
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.38,
+                      0.63
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              }
+            ]
+          },
+          "identity_verification": {
+            "protocol": "identity_geometry_v2",
+            "same_model_correlated_calls": true,
+            "response": {
+              "objects": [
+                {
+                  "id": "p003",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p004",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p005",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p006",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ]
+            },
+            "blocked_categories": [],
+            "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "full_input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+            "crops": [
+              {
+                "id": "p003",
+                "object_index": 3,
+                "original_part": "nut",
+                "center": [
+                  0.29,
+                  0.43
+                ],
+                "rect_source_px": [
+                  331,
+                  340,
+                  596,
+                  605
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5026893939393938,
+                  0.5021590909090908
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p003.png",
+                "crop_sha256": "7ef67ff1136d8148b5b49d8b3e7db41f00d173f71e50e59d84ade330c4cadade",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p003-pixels.png",
+                "pixel_crop_sha256": "abaf05e3de74773b1255dc6a255b23ef4df2c4e57dbecdfb862616e89336bc8f",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              },
+              {
+                "id": "p004",
+                "object_index": 4,
+                "original_part": "nut",
+                "center": [
+                  0.4,
+                  0.55
+                ],
+                "rect_source_px": [
+                  507,
+                  472,
+                  772,
+                  737
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5022727272727273,
+                  0.5017045454545457
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p004.png",
+                "crop_sha256": "0517491162f708a1fb6da27f34df0f39edc85d969b23ed6b5c5926d84e46936b",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p004-pixels.png",
+                "pixel_crop_sha256": "8348f02b09dc1749c634c4a686e6456a3cdec297c946ddde67bc190eb7f5abbf",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              },
+              {
+                "id": "p005",
+                "object_index": 5,
+                "original_part": "washer",
+                "center": [
+                  0.36,
+                  0.38
+                ],
+                "rect_source_px": [
+                  443,
+                  285,
+                  708,
+                  550
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5024242424242423,
+                  0.5023484848484848
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p005.png",
+                "crop_sha256": "f6c388bcf5114aed93215332a387948ad9154b03f9695726e143d5b4ca1a2903",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p005-pixels.png",
+                "pixel_crop_sha256": "b0018a44828ee1e35b0a577ad35e3d246bdb9334ed8219d9941624312d9c5d69",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              },
+              {
+                "id": "p006",
+                "object_index": 6,
+                "original_part": "washer",
+                "center": [
+                  0.46,
+                  0.48
+                ],
+                "rect_source_px": [
+                  603,
+                  395,
+                  868,
+                  660
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5020454545454548,
+                  0.501969696969697
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p006.png",
+                "crop_sha256": "ded37640876883aa04f4302c609b5755003b89a08015404538b40ebe06ccef3e",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p006-pixels.png",
+                "pixel_crop_sha256": "ad892ff0d11ee5d544cb1fa1024d0fca34c2b0b205cebb3b8d9b2c0b1b6de330",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              }
+            ]
+          },
+          "object_evidence": {
+            "protocol": "spatial_inventory_v1",
+            "coordinate_frame": "normalized_original",
+            "objects": [
+              {
+                "part": "bolt",
+                "center": [
+                  0.33,
+                  0.52
+                ]
+              },
+              {
+                "part": "bolt",
+                "center": [
+                  0.53,
+                  0.5
+                ]
+              },
+              {
+                "part": "nut",
+                "center": [
+                  0.29,
+                  0.43
+                ]
+              },
+              {
+                "part": "nut",
+                "center": [
+                  0.4,
+                  0.55
+                ]
+              },
+              {
+                "part": "washer",
+                "center": [
+                  0.36,
+                  0.38
+                ]
+              },
+              {
+                "part": "washer",
+                "center": [
+                  0.46,
+                  0.48
+                ]
+              }
+            ],
+            "uncertain_parts": []
+          },
+          "reference_evidence": {
+            "protocol": "reference_inputs_v1",
+            "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+            "observation_mode": "spatial_guarded",
+            "preprocessing": "exif_transpose_rgb_thumbnail_lanczos_png_v1",
+            "pillow_version": "12.3.0",
+            "max_side": 512,
+            "prepared_bytes_retained": false,
+            "guarded_identity_uses_references": false,
+            "images": [],
+            "stages": [
+              {
+                "stage": "original",
+                "reference_image_indices": [],
+                "status": "completed"
+              },
+              {
+                "stage": "rotate_90_ccw",
+                "reference_image_indices": [],
+                "status": "completed"
+              },
+              {
+                "stage": "identity",
+                "reference_image_indices": [],
+                "status": "completed"
+              }
+            ]
+          },
+          "reference_ids": {},
+          "evidence_feedback": null,
+          "tool_trace": [
+            {
+              "step": "observe_image",
+              "status": "completed",
+              "model": "Qwen3.6-27B · MLX 4-bit · local",
+              "latency_ms": 49379
+            },
+            {
+              "step": "derive_counts_from_object_list",
+              "status": "completed",
+              "listed_objects": 6,
+              "uncertain_parts": []
+            },
+            {
+              "step": "compare_orientation_observations",
+              "status": "completed",
+              "clear_agreement": true,
+              "same_model_correlated_calls": true
+            },
+            {
+              "step": "verify_local_identity",
+              "status": "completed",
+              "blocked_categories": [],
+              "same_model_correlated_calls": true
+            },
+            {
+              "step": "compare_current_requirements",
+              "status": "completed",
+              "revision": 2
+            },
+            {
+              "step": "review_previous_evidence",
+              "status": "not_applicable"
+            },
+            {
+              "step": "choose_next_action",
+              "status": "completed",
+              "decision": "correct",
+              "action_kind": "add_remove"
+            },
+            {
+              "step": "commit_current_evidence",
+              "status": "completed",
+              "revision": 2,
+              "evidence_epoch": 3
+            }
+          ],
+          "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "observation_context": null,
+          "runtime_identity": {
+            "label": "Qwen3.6-27B · MLX 4-bit · local",
+            "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+            "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+            "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+            "observation_mode": "spatial_guarded",
+            "image_max_side": 1536
+          },
+          "evidence_epoch": 3
+        },
+        "checks": [
+          {
+            "id": "chk_6db657d553114ad0852f",
+            "order_id": "ord_9465b8c5052240fea8c0",
+            "revision": 1,
+            "photo_id": "img_a28df803fa29476b80dc",
+            "decision": "ready",
+            "observed": {
+              "bolt": 2,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "differences": [
+              {
+                "part": "bolt",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "nut",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "washer",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "bracket",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              }
+            ],
+            "issues": [],
+            "action": {
+              "kind": "none",
+              "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+              "region": null
+            },
+            "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+            "backend": "mlx",
+            "latency_ms": 48501,
+            "created_at": "2026-10-03T16:23:53.408+00:00",
+            "valid": false,
+            "requirements_snapshot": {
+              "bolt": 2,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "inspection_scope": {
+              "mode": "whole_image",
+              "view_photo_id": "img_a28df803fa29476b80dc",
+              "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_photo_id": "img_a28df803fa29476b80dc",
+              "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_width": 1600,
+              "root_height": 1100,
+              "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "root_created_at": "2026-10-03T16:23:04.887+00:00",
+              "region_xyxy": null,
+              "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+              "derivation": "normalized_root_bytes_v1",
+              "scope_declaration": null,
+              "scope_confirmed_at": null
+            },
+            "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "observation_verification": {
+              "mode": "spatial_consensus",
+              "same_model_correlated_calls": true,
+              "counts_agree": true,
+              "clear_agreement": true,
+              "passes": [
+                {
+                  "transform": "original",
+                  "input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+                  "observed": {
+                    "bolt": 2,
+                    "nut": 2,
+                    "washer": 2,
+                    "bracket": 0
+                  },
+                  "issues": [],
+                  "action": {
+                    "kind": "none",
+                    "message": "All visible hardware objects identified.",
+                    "region": null
+                  },
+                  "objects": [
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.33,
+                        0.52
+                      ]
+                    },
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.53,
+                        0.5
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.29,
+                        0.43
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.4,
+                        0.55
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.36,
+                        0.38
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.46,
+                        0.48
+                      ]
+                    }
+                  ],
+                  "uncertain_parts": []
+                },
+                {
+                  "transform": "rotate_90_ccw",
+                  "input_sha256": "740e927dbb9d6d12ab4cefb55e536e7fc295e35a2211fb91a5e213aace3ed95c",
+                  "observed": {
+                    "bolt": 2,
+                    "nut": 2,
+                    "washer": 2,
+                    "bracket": 0
+                  },
+                  "issues": [],
+                  "action": {
+                    "kind": "none",
+                    "message": "All visible hardware objects identified.",
+                    "region": null
+                  },
+                  "objects": [
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.5,
+                        0.46
+                      ]
+                    },
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.52,
+                        0.66
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.55,
+                        0.59
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.43,
+                        0.69
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.47,
+                        0.53
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.38,
+                        0.63
+                      ]
+                    }
+                  ],
+                  "uncertain_parts": []
+                }
+              ]
+            },
+            "identity_verification": {
+              "protocol": "identity_geometry_v2",
+              "same_model_correlated_calls": true,
+              "response": {
+                "objects": [
+                  {
+                    "id": "p003",
+                    "part": "nut",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  },
+                  {
+                    "id": "p004",
+                    "part": "nut",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  },
+                  {
+                    "id": "p005",
+                    "part": "washer",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  },
+                  {
+                    "id": "p006",
+                    "part": "washer",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  }
+                ]
+              },
+              "blocked_categories": [],
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "full_input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+              "crops": [
+                {
+                  "id": "p003",
+                  "object_index": 3,
+                  "original_part": "nut",
+                  "center": [
+                    0.29,
+                    0.43
+                  ],
+                  "rect_source_px": [
+                    331,
+                    340,
+                    596,
+                    605
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5026893939393938,
+                    0.5021590909090908
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p003.png",
+                  "crop_sha256": "7ef67ff1136d8148b5b49d8b3e7db41f00d173f71e50e59d84ade330c4cadade",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p003-pixels.png",
+                  "pixel_crop_sha256": "abaf05e3de74773b1255dc6a255b23ef4df2c4e57dbecdfb862616e89336bc8f",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                },
+                {
+                  "id": "p004",
+                  "object_index": 4,
+                  "original_part": "nut",
+                  "center": [
+                    0.4,
+                    0.55
+                  ],
+                  "rect_source_px": [
+                    507,
+                    472,
+                    772,
+                    737
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5022727272727273,
+                    0.5017045454545457
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p004.png",
+                  "crop_sha256": "0517491162f708a1fb6da27f34df0f39edc85d969b23ed6b5c5926d84e46936b",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p004-pixels.png",
+                  "pixel_crop_sha256": "8348f02b09dc1749c634c4a686e6456a3cdec297c946ddde67bc190eb7f5abbf",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                },
+                {
+                  "id": "p005",
+                  "object_index": 5,
+                  "original_part": "washer",
+                  "center": [
+                    0.36,
+                    0.38
+                  ],
+                  "rect_source_px": [
+                    443,
+                    285,
+                    708,
+                    550
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5024242424242423,
+                    0.5023484848484848
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p005.png",
+                  "crop_sha256": "f6c388bcf5114aed93215332a387948ad9154b03f9695726e143d5b4ca1a2903",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p005-pixels.png",
+                  "pixel_crop_sha256": "b0018a44828ee1e35b0a577ad35e3d246bdb9334ed8219d9941624312d9c5d69",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                },
+                {
+                  "id": "p006",
+                  "object_index": 6,
+                  "original_part": "washer",
+                  "center": [
+                    0.46,
+                    0.48
+                  ],
+                  "rect_source_px": [
+                    603,
+                    395,
+                    868,
+                    660
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5020454545454548,
+                    0.501969696969697
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p006.png",
+                  "crop_sha256": "ded37640876883aa04f4302c609b5755003b89a08015404538b40ebe06ccef3e",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p006-pixels.png",
+                  "pixel_crop_sha256": "ad892ff0d11ee5d544cb1fa1024d0fca34c2b0b205cebb3b8d9b2c0b1b6de330",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                }
+              ]
+            },
+            "object_evidence": {
+              "protocol": "spatial_inventory_v1",
+              "coordinate_frame": "normalized_original",
+              "objects": [
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.33,
+                    0.52
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.53,
+                    0.5
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.29,
+                    0.43
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.4,
+                    0.55
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.36,
+                    0.38
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.46,
+                    0.48
+                  ]
+                }
+              ],
+              "uncertain_parts": []
+            },
+            "reference_evidence": {
+              "protocol": "reference_inputs_v1",
+              "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+              "observation_mode": "spatial_guarded",
+              "preprocessing": "exif_transpose_rgb_thumbnail_lanczos_png_v1",
+              "pillow_version": "12.3.0",
+              "max_side": 512,
+              "prepared_bytes_retained": false,
+              "guarded_identity_uses_references": false,
+              "images": [],
+              "stages": [
+                {
+                  "stage": "original",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                },
+                {
+                  "stage": "rotate_90_ccw",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                },
+                {
+                  "stage": "identity",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                }
+              ]
+            },
+            "reference_ids": {},
+            "evidence_feedback": null,
+            "tool_trace": [
+              {
+                "step": "observe_image",
+                "status": "completed",
+                "model": "Qwen3.6-27B · MLX 4-bit · local",
+                "latency_ms": 48501
+              },
+              {
+                "step": "derive_counts_from_object_list",
+                "status": "completed",
+                "listed_objects": 6,
+                "uncertain_parts": []
+              },
+              {
+                "step": "compare_orientation_observations",
+                "status": "completed",
+                "clear_agreement": true,
+                "same_model_correlated_calls": true
+              },
+              {
+                "step": "verify_local_identity",
+                "status": "completed",
+                "blocked_categories": [],
+                "same_model_correlated_calls": true
+              },
+              {
+                "step": "compare_current_requirements",
+                "status": "completed",
+                "revision": 1
+              },
+              {
+                "step": "review_previous_evidence",
+                "status": "not_applicable"
+              },
+              {
+                "step": "choose_next_action",
+                "status": "completed",
+                "decision": "ready",
+                "action_kind": "none"
+              },
+              {
+                "step": "commit_current_evidence",
+                "status": "completed",
+                "revision": 1,
+                "evidence_epoch": 1
+              }
+            ],
+            "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "observation_context": null,
+            "runtime_identity": {
+              "label": "Qwen3.6-27B · MLX 4-bit · local",
+              "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+              "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+              "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+              "observation_mode": "spatial_guarded",
+              "image_max_side": 1536
+            },
+            "evidence_epoch": 1
+          },
+          {
+            "id": "chk_0a9d74287cc54c5f931c",
+            "order_id": "ord_9465b8c5052240fea8c0",
+            "revision": 2,
+            "photo_id": "img_4dfe4da87d4640eab9f9",
+            "decision": "correct",
+            "observed": {
+              "bolt": 2,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "differences": [
+              {
+                "part": "bolt",
+                "required": 3,
+                "observed": 2,
+                "delta": -1
+              },
+              {
+                "part": "nut",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "washer",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "bracket",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              }
+            ],
+            "issues": [],
+            "action": {
+              "kind": "add_remove",
+              "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+              "region": null
+            },
+            "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+            "backend": "mlx",
+            "latency_ms": 49379,
+            "created_at": "2026-10-03T16:24:43.128+00:00",
+            "valid": true,
+            "requirements_snapshot": {
+              "bolt": 3,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "inspection_scope": {
+              "mode": "whole_image",
+              "view_photo_id": "img_4dfe4da87d4640eab9f9",
+              "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_photo_id": "img_4dfe4da87d4640eab9f9",
+              "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_width": 1600,
+              "root_height": 1100,
+              "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "root_created_at": "2026-10-03T16:23:53.729+00:00",
+              "region_xyxy": null,
+              "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+              "derivation": "normalized_root_bytes_v1",
+              "scope_declaration": null,
+              "scope_confirmed_at": null
+            },
+            "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "observation_verification": {
+              "mode": "spatial_consensus",
+              "same_model_correlated_calls": true,
+              "counts_agree": true,
+              "clear_agreement": true,
+              "passes": [
+                {
+                  "transform": "original",
+                  "input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+                  "observed": {
+                    "bolt": 2,
+                    "nut": 2,
+                    "washer": 2,
+                    "bracket": 0
+                  },
+                  "issues": [],
+                  "action": {
+                    "kind": "none",
+                    "message": "All visible hardware objects identified.",
+                    "region": null
+                  },
+                  "objects": [
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.33,
+                        0.52
+                      ]
+                    },
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.53,
+                        0.5
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.29,
+                        0.43
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.4,
+                        0.55
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.36,
+                        0.38
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.46,
+                        0.48
+                      ]
+                    }
+                  ],
+                  "uncertain_parts": []
+                },
+                {
+                  "transform": "rotate_90_ccw",
+                  "input_sha256": "740e927dbb9d6d12ab4cefb55e536e7fc295e35a2211fb91a5e213aace3ed95c",
+                  "observed": {
+                    "bolt": 2,
+                    "nut": 2,
+                    "washer": 2,
+                    "bracket": 0
+                  },
+                  "issues": [],
+                  "action": {
+                    "kind": "none",
+                    "message": "All visible hardware objects identified.",
+                    "region": null
+                  },
+                  "objects": [
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.5,
+                        0.46
+                      ]
+                    },
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.52,
+                        0.66
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.55,
+                        0.59
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.43,
+                        0.69
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.47,
+                        0.53
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.38,
+                        0.63
+                      ]
+                    }
+                  ],
+                  "uncertain_parts": []
+                }
+              ]
+            },
+            "identity_verification": {
+              "protocol": "identity_geometry_v2",
+              "same_model_correlated_calls": true,
+              "response": {
+                "objects": [
+                  {
+                    "id": "p003",
+                    "part": "nut",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  },
+                  {
+                    "id": "p004",
+                    "part": "nut",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  },
+                  {
+                    "id": "p005",
+                    "part": "washer",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  },
+                  {
+                    "id": "p006",
+                    "part": "washer",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  }
+                ]
+              },
+              "blocked_categories": [],
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "full_input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+              "crops": [
+                {
+                  "id": "p003",
+                  "object_index": 3,
+                  "original_part": "nut",
+                  "center": [
+                    0.29,
+                    0.43
+                  ],
+                  "rect_source_px": [
+                    331,
+                    340,
+                    596,
+                    605
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5026893939393938,
+                    0.5021590909090908
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p003.png",
+                  "crop_sha256": "7ef67ff1136d8148b5b49d8b3e7db41f00d173f71e50e59d84ade330c4cadade",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p003-pixels.png",
+                  "pixel_crop_sha256": "abaf05e3de74773b1255dc6a255b23ef4df2c4e57dbecdfb862616e89336bc8f",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                },
+                {
+                  "id": "p004",
+                  "object_index": 4,
+                  "original_part": "nut",
+                  "center": [
+                    0.4,
+                    0.55
+                  ],
+                  "rect_source_px": [
+                    507,
+                    472,
+                    772,
+                    737
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5022727272727273,
+                    0.5017045454545457
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p004.png",
+                  "crop_sha256": "0517491162f708a1fb6da27f34df0f39edc85d969b23ed6b5c5926d84e46936b",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p004-pixels.png",
+                  "pixel_crop_sha256": "8348f02b09dc1749c634c4a686e6456a3cdec297c946ddde67bc190eb7f5abbf",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                },
+                {
+                  "id": "p005",
+                  "object_index": 5,
+                  "original_part": "washer",
+                  "center": [
+                    0.36,
+                    0.38
+                  ],
+                  "rect_source_px": [
+                    443,
+                    285,
+                    708,
+                    550
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5024242424242423,
+                    0.5023484848484848
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p005.png",
+                  "crop_sha256": "f6c388bcf5114aed93215332a387948ad9154b03f9695726e143d5b4ca1a2903",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p005-pixels.png",
+                  "pixel_crop_sha256": "b0018a44828ee1e35b0a577ad35e3d246bdb9334ed8219d9941624312d9c5d69",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                },
+                {
+                  "id": "p006",
+                  "object_index": 6,
+                  "original_part": "washer",
+                  "center": [
+                    0.46,
+                    0.48
+                  ],
+                  "rect_source_px": [
+                    603,
+                    395,
+                    868,
+                    660
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5020454545454548,
+                    0.501969696969697
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p006.png",
+                  "crop_sha256": "ded37640876883aa04f4302c609b5755003b89a08015404538b40ebe06ccef3e",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p006-pixels.png",
+                  "pixel_crop_sha256": "ad892ff0d11ee5d544cb1fa1024d0fca34c2b0b205cebb3b8d9b2c0b1b6de330",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                }
+              ]
+            },
+            "object_evidence": {
+              "protocol": "spatial_inventory_v1",
+              "coordinate_frame": "normalized_original",
+              "objects": [
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.33,
+                    0.52
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.53,
+                    0.5
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.29,
+                    0.43
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.4,
+                    0.55
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.36,
+                    0.38
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.46,
+                    0.48
+                  ]
+                }
+              ],
+              "uncertain_parts": []
+            },
+            "reference_evidence": {
+              "protocol": "reference_inputs_v1",
+              "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+              "observation_mode": "spatial_guarded",
+              "preprocessing": "exif_transpose_rgb_thumbnail_lanczos_png_v1",
+              "pillow_version": "12.3.0",
+              "max_side": 512,
+              "prepared_bytes_retained": false,
+              "guarded_identity_uses_references": false,
+              "images": [],
+              "stages": [
+                {
+                  "stage": "original",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                },
+                {
+                  "stage": "rotate_90_ccw",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                },
+                {
+                  "stage": "identity",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                }
+              ]
+            },
+            "reference_ids": {},
+            "evidence_feedback": null,
+            "tool_trace": [
+              {
+                "step": "observe_image",
+                "status": "completed",
+                "model": "Qwen3.6-27B · MLX 4-bit · local",
+                "latency_ms": 49379
+              },
+              {
+                "step": "derive_counts_from_object_list",
+                "status": "completed",
+                "listed_objects": 6,
+                "uncertain_parts": []
+              },
+              {
+                "step": "compare_orientation_observations",
+                "status": "completed",
+                "clear_agreement": true,
+                "same_model_correlated_calls": true
+              },
+              {
+                "step": "verify_local_identity",
+                "status": "completed",
+                "blocked_categories": [],
+                "same_model_correlated_calls": true
+              },
+              {
+                "step": "compare_current_requirements",
+                "status": "completed",
+                "revision": 2
+              },
+              {
+                "step": "review_previous_evidence",
+                "status": "not_applicable"
+              },
+              {
+                "step": "choose_next_action",
+                "status": "completed",
+                "decision": "correct",
+                "action_kind": "add_remove"
+              },
+              {
+                "step": "commit_current_evidence",
+                "status": "completed",
+                "revision": 2,
+                "evidence_epoch": 3
+              }
+            ],
+            "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "observation_context": null,
+            "runtime_identity": {
+              "label": "Qwen3.6-27B · MLX 4-bit · local",
+              "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+              "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+              "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+              "observation_mode": "spatial_guarded",
+              "image_max_side": 1536
+            },
+            "evidence_epoch": 3
+          }
+        ],
+        "photos": [
+          {
+            "id": "img_a28df803fa29476b80dc",
+            "url": "/api/photos/img_a28df803fa29476b80dc",
+            "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+            "revision": 1,
+            "created_at": "2026-10-03T16:23:04.887+00:00",
+            "width": 1600,
+            "height": 1100,
+            "quality": {
+              "warning": null
+            },
+            "kind": "root_photo",
+            "scope_mode": "whole_image",
+            "root_photo_id": "img_a28df803fa29476b80dc",
+            "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "document_source": {
+              "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+              "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+              "license_note": "MVTec · CC BY-NC-SA 4.0",
+              "schema_version": 1,
+              "kind": "user_declared_photo",
+              "verification": "user_declared_unverified",
+              "physical_completion_allowed": false,
+              "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "original_root_photo_id": "img_a28df803fa29476b80dc",
+              "declared_at": "2026-10-03T16:23:04.888+00:00",
+              "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+              "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+            },
+            "physical_capture": false,
+            "capture_kind": "user_declared_photo_upload"
+          },
+          {
+            "id": "img_4dfe4da87d4640eab9f9",
+            "url": "/api/photos/img_4dfe4da87d4640eab9f9",
+            "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+            "revision": 2,
+            "created_at": "2026-10-03T16:23:53.729+00:00",
+            "width": 1600,
+            "height": 1100,
+            "quality": {
+              "warning": null
+            },
+            "kind": "root_photo",
+            "scope_mode": "whole_image",
+            "root_photo_id": "img_4dfe4da87d4640eab9f9",
+            "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "document_source": {
+              "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+              "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+              "license_note": "MVTec · CC BY-NC-SA 4.0",
+              "schema_version": 1,
+              "kind": "user_declared_photo",
+              "verification": "user_declared_unverified",
+              "physical_completion_allowed": false,
+              "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "original_root_photo_id": "img_a28df803fa29476b80dc",
+              "declared_at": "2026-10-03T16:23:04.888+00:00",
+              "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+              "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+            },
+            "physical_capture": false,
+            "capture_kind": "photo_document_replay",
+            "replay_of_photo_id": "img_a28df803fa29476b80dc"
+          }
+        ],
+        "references": {},
+        "reference_history": [],
+        "events": [
+          {
+            "id": "evt_297c61c9b48e43ecb25a",
+            "kind": "order_created",
+            "message": "주문 생성 / 已创建订单",
+            "created_at": "2026-10-03T16:23:04.888+00:00",
+            "payload": {}
+          },
+          {
+            "id": "evt_9cb2b92f02c1482ba83e",
+            "kind": "photo_document_registered",
+            "message": "사용자 자료 등록 · 출처 미인증 / 已登记用户资料，来源未经认证",
+            "created_at": "2026-10-03T16:23:04.888+00:00",
+            "payload": {
+              "source": {
+                "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+                "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+                "license_note": "MVTec · CC BY-NC-SA 4.0",
+                "schema_version": 1,
+                "kind": "user_declared_photo",
+                "verification": "user_declared_unverified",
+                "physical_completion_allowed": false,
+                "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+                "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "original_root_photo_id": "img_a28df803fa29476b80dc",
+                "declared_at": "2026-10-03T16:23:04.888+00:00",
+                "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+                "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+              },
+              "photo_id": "img_a28df803fa29476b80dc",
+              "physical_capture": false
+            }
+          },
+          {
+            "id": "evt_7097a2798c6a42d0ba3c",
+            "kind": "inspection_started",
+            "message": "사진 관찰 시작 / 开始观察照片",
+            "created_at": "2026-10-03T16:23:04.898+00:00",
+            "payload": {
+              "photo_id": "img_a28df803fa29476b80dc"
+            }
+          },
+          {
+            "id": "evt_b2725f8db38e488e893d",
+            "kind": "inspection_completed",
+            "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+            "created_at": "2026-10-03T16:23:53.408+00:00",
+            "payload": {
+              "check_id": "chk_6db657d553114ad0852f",
+              "decision": "ready",
+              "revision": 1
+            }
+          },
+          {
+            "id": "evt_ef2c90d683f042b78daa",
+            "kind": "revision_approved",
+            "message": "주문 변경 승인 · 이전 검증 무효 / 已确认改版，旧核验失效",
+            "created_at": "2026-10-03T16:23:53.715+00:00",
+            "payload": {
+              "revision": 2,
+              "requirements": {
+                "bolt": 3,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "instruction": "PREDECLARED MACHINE TASK: incoming R2, not AI-derived correction"
+            }
+          },
+          {
+            "id": "evt_c32ae97e2a5b440aa8b0",
+            "kind": "public_photo_replayed",
+            "message": "자료 사진 재사용 · 새 AI 검증 필요 / 复用资料照片，需重新运行AI",
+            "created_at": "2026-10-03T16:23:53.730+00:00",
+            "payload": {
+              "id": "replay_b6fbf9613da44a3d8afc",
+              "scope": "photo_document_digital_review",
+              "order_id": "ord_9465b8c5052240fea8c0",
+              "created_at": "2026-10-03T16:23:53.729+00:00",
+              "revision": 2,
+              "evidence_epoch": 3,
+              "previous_photo_id": "img_a28df803fa29476b80dc",
+              "photo_id": "img_4dfe4da87d4640eab9f9",
+              "created_photo_ids": [
+                "img_4dfe4da87d4640eab9f9"
+              ],
+              "inspection_scope": {
+                "mode": "whole_image",
+                "view_photo_id": "img_4dfe4da87d4640eab9f9",
+                "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "root_photo_id": "img_4dfe4da87d4640eab9f9",
+                "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "root_width": 1600,
+                "root_height": 1100,
+                "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+                "root_created_at": "2026-10-03T16:23:53.729+00:00",
+                "region_xyxy": null,
+                "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                "derivation": "normalized_root_bytes_v1",
+                "scope_declaration": null,
+                "scope_confirmed_at": null
+              },
+              "source": {
+                "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+                "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+                "license_note": "MVTec · CC BY-NC-SA 4.0",
+                "schema_version": 1,
+                "kind": "user_declared_photo",
+                "verification": "user_declared_unverified",
+                "physical_completion_allowed": false,
+                "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+                "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "original_root_photo_id": "img_a28df803fa29476b80dc",
+                "declared_at": "2026-10-03T16:23:04.888+00:00",
+                "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+                "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+              },
+              "physical_capture": false,
+              "requires_new_inference": true
+            }
+          },
+          {
+            "id": "evt_890bf4bf1ea14538bfd0",
+            "kind": "inspection_started",
+            "message": "사진 관찰 시작 / 开始观察照片",
+            "created_at": "2026-10-03T16:23:53.745+00:00",
+            "payload": {
+              "photo_id": "img_4dfe4da87d4640eab9f9"
+            }
+          },
+          {
+            "id": "evt_3bcceacbb4924406a05c",
+            "kind": "inspection_completed",
+            "message": "볼트/螺栓 추가/补充 1 → 다시 촬영 / 然后重新拍摄",
+            "created_at": "2026-10-03T16:24:43.128+00:00",
+            "payload": {
+              "check_id": "chk_0a9d74287cc54c5f931c",
+              "decision": "correct",
+              "revision": 2
+            }
+          }
+        ],
+        "completions": [],
+        "manual_reviews": [],
+        "reopenings": [],
+        "evidence_epoch": 3,
+        "active_inspection": null,
+        "revisions": [
+          {
+            "revision": 1,
+            "requirements": {
+              "bolt": 2,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "instruction": "최초 주문 / 初始订单",
+            "created_at": "2026-10-03T16:23:04.888+00:00"
+          },
+          {
+            "revision": 2,
+            "requirements": {
+              "bolt": 3,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "instruction": "PREDECLARED MACHINE TASK: incoming R2, not AI-derived correction",
+            "created_at": "2026-10-03T16:23:53.715+00:00"
+          }
+        ],
+        "document_source": {
+          "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+          "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+          "license_note": "MVTec · CC BY-NC-SA 4.0",
+          "schema_version": 1,
+          "kind": "user_declared_photo",
+          "verification": "user_declared_unverified",
+          "physical_completion_allowed": false,
+          "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+          "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "original_root_photo_id": "img_a28df803fa29476b80dc",
+          "declared_at": "2026-10-03T16:23:04.888+00:00",
+          "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+          "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+        },
+        "public_replays": [
+          {
+            "id": "replay_b6fbf9613da44a3d8afc",
+            "scope": "photo_document_digital_review",
+            "order_id": "ord_9465b8c5052240fea8c0",
+            "created_at": "2026-10-03T16:23:53.729+00:00",
+            "revision": 2,
+            "evidence_epoch": 3,
+            "previous_photo_id": "img_a28df803fa29476b80dc",
+            "photo_id": "img_4dfe4da87d4640eab9f9",
+            "created_photo_ids": [
+              "img_4dfe4da87d4640eab9f9"
+            ],
+            "inspection_scope": {
+              "mode": "whole_image",
+              "view_photo_id": "img_4dfe4da87d4640eab9f9",
+              "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_photo_id": "img_4dfe4da87d4640eab9f9",
+              "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_width": 1600,
+              "root_height": 1100,
+              "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "root_created_at": "2026-10-03T16:23:53.729+00:00",
+              "region_xyxy": null,
+              "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+              "derivation": "normalized_root_bytes_v1",
+              "scope_declaration": null,
+              "scope_confirmed_at": null
+            },
+            "source": {
+              "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+              "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+              "license_note": "MVTec · CC BY-NC-SA 4.0",
+              "schema_version": 1,
+              "kind": "user_declared_photo",
+              "verification": "user_declared_unverified",
+              "physical_completion_allowed": false,
+              "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "original_root_photo_id": "img_a28df803fa29476b80dc",
+              "declared_at": "2026-10-03T16:23:04.888+00:00",
+              "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+              "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+            },
+            "physical_capture": false,
+            "requires_new_inference": true
+          }
+        ]
+      },
+      "prepared_snapshot": {
+        "id": "ord_9465b8c5052240fea8c0",
+        "title": "[MACHINE TASK] matching",
+        "requirements": {
+          "bolt": 3,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "revision": 2,
+        "status": "pending",
+        "created_at": "2026-10-03T16:23:04.888+00:00",
+        "updated_at": "2026-10-03T16:23:53.730+00:00",
+        "latest_check": {
+          "id": "chk_6db657d553114ad0852f",
+          "order_id": "ord_9465b8c5052240fea8c0",
+          "revision": 1,
+          "photo_id": "img_a28df803fa29476b80dc",
+          "decision": "ready",
+          "observed": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "differences": [
+            {
+              "part": "bolt",
+              "required": 2,
+              "observed": 2,
+              "delta": 0
+            },
+            {
+              "part": "nut",
+              "required": 2,
+              "observed": 2,
+              "delta": 0
+            },
+            {
+              "part": "washer",
+              "required": 2,
+              "observed": 2,
+              "delta": 0
+            },
+            {
+              "part": "bracket",
+              "required": 0,
+              "observed": 0,
+              "delta": 0
+            }
+          ],
+          "issues": [],
+          "action": {
+            "kind": "none",
+            "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+            "region": null
+          },
+          "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+          "backend": "mlx",
+          "latency_ms": 48501,
+          "created_at": "2026-10-03T16:23:53.408+00:00",
+          "valid": false,
+          "requirements_snapshot": {
+            "bolt": 2,
+            "nut": 2,
+            "washer": 2,
+            "bracket": 0
+          },
+          "inspection_scope": {
+            "mode": "whole_image",
+            "view_photo_id": "img_a28df803fa29476b80dc",
+            "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "root_photo_id": "img_a28df803fa29476b80dc",
+            "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "root_width": 1600,
+            "root_height": 1100,
+            "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+            "root_created_at": "2026-10-03T16:23:04.887+00:00",
+            "region_xyxy": null,
+            "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+            "derivation": "normalized_root_bytes_v1",
+            "scope_declaration": null,
+            "scope_confirmed_at": null
+          },
+          "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "observation_verification": {
+            "mode": "spatial_consensus",
+            "same_model_correlated_calls": true,
+            "counts_agree": true,
+            "clear_agreement": true,
+            "passes": [
+              {
+                "transform": "original",
+                "input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+                "observed": {
+                  "bolt": 2,
+                  "nut": 2,
+                  "washer": 2,
+                  "bracket": 0
+                },
+                "issues": [],
+                "action": {
+                  "kind": "none",
+                  "message": "All visible hardware objects identified.",
+                  "region": null
+                },
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.33,
+                      0.52
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.53,
+                      0.5
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.29,
+                      0.43
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.4,
+                      0.55
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.36,
+                      0.38
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.46,
+                      0.48
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              },
+              {
+                "transform": "rotate_90_ccw",
+                "input_sha256": "740e927dbb9d6d12ab4cefb55e536e7fc295e35a2211fb91a5e213aace3ed95c",
+                "observed": {
+                  "bolt": 2,
+                  "nut": 2,
+                  "washer": 2,
+                  "bracket": 0
+                },
+                "issues": [],
+                "action": {
+                  "kind": "none",
+                  "message": "All visible hardware objects identified.",
+                  "region": null
+                },
+                "objects": [
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.5,
+                      0.46
+                    ]
+                  },
+                  {
+                    "part": "bolt",
+                    "center": [
+                      0.52,
+                      0.66
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.55,
+                      0.59
+                    ]
+                  },
+                  {
+                    "part": "nut",
+                    "center": [
+                      0.43,
+                      0.69
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.47,
+                      0.53
+                    ]
+                  },
+                  {
+                    "part": "washer",
+                    "center": [
+                      0.38,
+                      0.63
+                    ]
+                  }
+                ],
+                "uncertain_parts": []
+              }
+            ]
+          },
+          "identity_verification": {
+            "protocol": "identity_geometry_v2",
+            "same_model_correlated_calls": true,
+            "response": {
+              "objects": [
+                {
+                  "id": "p003",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p004",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p005",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p006",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ]
+            },
+            "blocked_categories": [],
+            "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "full_input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+            "crops": [
+              {
+                "id": "p003",
+                "object_index": 3,
+                "original_part": "nut",
+                "center": [
+                  0.29,
+                  0.43
+                ],
+                "rect_source_px": [
+                  331,
+                  340,
+                  596,
+                  605
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5026893939393938,
+                  0.5021590909090908
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p003.png",
+                "crop_sha256": "7ef67ff1136d8148b5b49d8b3e7db41f00d173f71e50e59d84ade330c4cadade",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p003-pixels.png",
+                "pixel_crop_sha256": "abaf05e3de74773b1255dc6a255b23ef4df2c4e57dbecdfb862616e89336bc8f",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              },
+              {
+                "id": "p004",
+                "object_index": 4,
+                "original_part": "nut",
+                "center": [
+                  0.4,
+                  0.55
+                ],
+                "rect_source_px": [
+                  507,
+                  472,
+                  772,
+                  737
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5022727272727273,
+                  0.5017045454545457
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p004.png",
+                "crop_sha256": "0517491162f708a1fb6da27f34df0f39edc85d969b23ed6b5c5926d84e46936b",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p004-pixels.png",
+                "pixel_crop_sha256": "8348f02b09dc1749c634c4a686e6456a3cdec297c946ddde67bc190eb7f5abbf",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              },
+              {
+                "id": "p005",
+                "object_index": 5,
+                "original_part": "washer",
+                "center": [
+                  0.36,
+                  0.38
+                ],
+                "rect_source_px": [
+                  443,
+                  285,
+                  708,
+                  550
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5024242424242423,
+                  0.5023484848484848
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p005.png",
+                "crop_sha256": "f6c388bcf5114aed93215332a387948ad9154b03f9695726e143d5b4ca1a2903",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p005-pixels.png",
+                "pixel_crop_sha256": "b0018a44828ee1e35b0a577ad35e3d246bdb9334ed8219d9941624312d9c5d69",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              },
+              {
+                "id": "p006",
+                "object_index": 6,
+                "original_part": "washer",
+                "center": [
+                  0.46,
+                  0.48
+                ],
+                "rect_source_px": [
+                  603,
+                  395,
+                  868,
+                  660
+                ],
+                "source_size": [
+                  1600,
+                  1100
+                ],
+                "target_center_crop": [
+                  0.5020454545454548,
+                  0.501969696969697
+                ],
+                "crop_source_size": [
+                  265,
+                  265
+                ],
+                "crop_size": [
+                  512,
+                  512
+                ],
+                "crop_file": "p006.png",
+                "crop_sha256": "ded37640876883aa04f4302c609b5755003b89a08015404538b40ebe06ccef3e",
+                "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "pixel_crop_file": "p006-pixels.png",
+                "pixel_crop_sha256": "ad892ff0d11ee5d544cb1fa1024d0fca34c2b0b205cebb3b8d9b2c0b1b6de330",
+                "resampling": "LANCZOS",
+                "interpolation_creates_information": false
+              }
+            ]
+          },
+          "object_evidence": {
+            "protocol": "spatial_inventory_v1",
+            "coordinate_frame": "normalized_original",
+            "objects": [
+              {
+                "part": "bolt",
+                "center": [
+                  0.33,
+                  0.52
+                ]
+              },
+              {
+                "part": "bolt",
+                "center": [
+                  0.53,
+                  0.5
+                ]
+              },
+              {
+                "part": "nut",
+                "center": [
+                  0.29,
+                  0.43
+                ]
+              },
+              {
+                "part": "nut",
+                "center": [
+                  0.4,
+                  0.55
+                ]
+              },
+              {
+                "part": "washer",
+                "center": [
+                  0.36,
+                  0.38
+                ]
+              },
+              {
+                "part": "washer",
+                "center": [
+                  0.46,
+                  0.48
+                ]
+              }
+            ],
+            "uncertain_parts": []
+          },
+          "reference_evidence": {
+            "protocol": "reference_inputs_v1",
+            "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+            "observation_mode": "spatial_guarded",
+            "preprocessing": "exif_transpose_rgb_thumbnail_lanczos_png_v1",
+            "pillow_version": "12.3.0",
+            "max_side": 512,
+            "prepared_bytes_retained": false,
+            "guarded_identity_uses_references": false,
+            "images": [],
+            "stages": [
+              {
+                "stage": "original",
+                "reference_image_indices": [],
+                "status": "completed"
+              },
+              {
+                "stage": "rotate_90_ccw",
+                "reference_image_indices": [],
+                "status": "completed"
+              },
+              {
+                "stage": "identity",
+                "reference_image_indices": [],
+                "status": "completed"
+              }
+            ]
+          },
+          "reference_ids": {},
+          "evidence_feedback": null,
+          "tool_trace": [
+            {
+              "step": "observe_image",
+              "status": "completed",
+              "model": "Qwen3.6-27B · MLX 4-bit · local",
+              "latency_ms": 48501
+            },
+            {
+              "step": "derive_counts_from_object_list",
+              "status": "completed",
+              "listed_objects": 6,
+              "uncertain_parts": []
+            },
+            {
+              "step": "compare_orientation_observations",
+              "status": "completed",
+              "clear_agreement": true,
+              "same_model_correlated_calls": true
+            },
+            {
+              "step": "verify_local_identity",
+              "status": "completed",
+              "blocked_categories": [],
+              "same_model_correlated_calls": true
+            },
+            {
+              "step": "compare_current_requirements",
+              "status": "completed",
+              "revision": 1
+            },
+            {
+              "step": "review_previous_evidence",
+              "status": "not_applicable"
+            },
+            {
+              "step": "choose_next_action",
+              "status": "completed",
+              "decision": "ready",
+              "action_kind": "none"
+            },
+            {
+              "step": "commit_current_evidence",
+              "status": "completed",
+              "revision": 1,
+              "evidence_epoch": 1
+            }
+          ],
+          "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "observation_context": null,
+          "runtime_identity": {
+            "label": "Qwen3.6-27B · MLX 4-bit · local",
+            "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+            "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+            "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+            "observation_mode": "spatial_guarded",
+            "image_max_side": 1536
+          },
+          "evidence_epoch": 1
+        },
+        "checks": [
+          {
+            "id": "chk_6db657d553114ad0852f",
+            "order_id": "ord_9465b8c5052240fea8c0",
+            "revision": 1,
+            "photo_id": "img_a28df803fa29476b80dc",
+            "decision": "ready",
+            "observed": {
+              "bolt": 2,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "differences": [
+              {
+                "part": "bolt",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "nut",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "washer",
+                "required": 2,
+                "observed": 2,
+                "delta": 0
+              },
+              {
+                "part": "bracket",
+                "required": 0,
+                "observed": 0,
+                "delta": 0
+              }
+            ],
+            "issues": [],
+            "action": {
+              "kind": "none",
+              "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+              "region": null
+            },
+            "model_label": "Qwen3.6-27B · MLX 4-bit · local",
+            "backend": "mlx",
+            "latency_ms": 48501,
+            "created_at": "2026-10-03T16:23:53.408+00:00",
+            "valid": false,
+            "requirements_snapshot": {
+              "bolt": 2,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "inspection_scope": {
+              "mode": "whole_image",
+              "view_photo_id": "img_a28df803fa29476b80dc",
+              "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_photo_id": "img_a28df803fa29476b80dc",
+              "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_width": 1600,
+              "root_height": 1100,
+              "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "root_created_at": "2026-10-03T16:23:04.887+00:00",
+              "region_xyxy": null,
+              "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+              "derivation": "normalized_root_bytes_v1",
+              "scope_declaration": null,
+              "scope_confirmed_at": null
+            },
+            "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "observation_verification": {
+              "mode": "spatial_consensus",
+              "same_model_correlated_calls": true,
+              "counts_agree": true,
+              "clear_agreement": true,
+              "passes": [
+                {
+                  "transform": "original",
+                  "input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+                  "observed": {
+                    "bolt": 2,
+                    "nut": 2,
+                    "washer": 2,
+                    "bracket": 0
+                  },
+                  "issues": [],
+                  "action": {
+                    "kind": "none",
+                    "message": "All visible hardware objects identified.",
+                    "region": null
+                  },
+                  "objects": [
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.33,
+                        0.52
+                      ]
+                    },
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.53,
+                        0.5
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.29,
+                        0.43
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.4,
+                        0.55
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.36,
+                        0.38
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.46,
+                        0.48
+                      ]
+                    }
+                  ],
+                  "uncertain_parts": []
+                },
+                {
+                  "transform": "rotate_90_ccw",
+                  "input_sha256": "740e927dbb9d6d12ab4cefb55e536e7fc295e35a2211fb91a5e213aace3ed95c",
+                  "observed": {
+                    "bolt": 2,
+                    "nut": 2,
+                    "washer": 2,
+                    "bracket": 0
+                  },
+                  "issues": [],
+                  "action": {
+                    "kind": "none",
+                    "message": "All visible hardware objects identified.",
+                    "region": null
+                  },
+                  "objects": [
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.5,
+                        0.46
+                      ]
+                    },
+                    {
+                      "part": "bolt",
+                      "center": [
+                        0.52,
+                        0.66
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.55,
+                        0.59
+                      ]
+                    },
+                    {
+                      "part": "nut",
+                      "center": [
+                        0.43,
+                        0.69
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.47,
+                        0.53
+                      ]
+                    },
+                    {
+                      "part": "washer",
+                      "center": [
+                        0.38,
+                        0.63
+                      ]
+                    }
+                  ],
+                  "uncertain_parts": []
+                }
+              ]
+            },
+            "identity_verification": {
+              "protocol": "identity_geometry_v2",
+              "same_model_correlated_calls": true,
+              "response": {
+                "objects": [
+                  {
+                    "id": "p003",
+                    "part": "nut",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  },
+                  {
+                    "id": "p004",
+                    "part": "nut",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  },
+                  {
+                    "id": "p005",
+                    "part": "washer",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  },
+                  {
+                    "id": "p006",
+                    "part": "washer",
+                    "status": "independent_object",
+                    "opening": "through_hole",
+                    "issue": ""
+                  }
+                ]
+              },
+              "blocked_categories": [],
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "full_input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+              "crops": [
+                {
+                  "id": "p003",
+                  "object_index": 3,
+                  "original_part": "nut",
+                  "center": [
+                    0.29,
+                    0.43
+                  ],
+                  "rect_source_px": [
+                    331,
+                    340,
+                    596,
+                    605
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5026893939393938,
+                    0.5021590909090908
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p003.png",
+                  "crop_sha256": "7ef67ff1136d8148b5b49d8b3e7db41f00d173f71e50e59d84ade330c4cadade",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p003-pixels.png",
+                  "pixel_crop_sha256": "abaf05e3de74773b1255dc6a255b23ef4df2c4e57dbecdfb862616e89336bc8f",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                },
+                {
+                  "id": "p004",
+                  "object_index": 4,
+                  "original_part": "nut",
+                  "center": [
+                    0.4,
+                    0.55
+                  ],
+                  "rect_source_px": [
+                    507,
+                    472,
+                    772,
+                    737
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5022727272727273,
+                    0.5017045454545457
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p004.png",
+                  "crop_sha256": "0517491162f708a1fb6da27f34df0f39edc85d969b23ed6b5c5926d84e46936b",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p004-pixels.png",
+                  "pixel_crop_sha256": "8348f02b09dc1749c634c4a686e6456a3cdec297c946ddde67bc190eb7f5abbf",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                },
+                {
+                  "id": "p005",
+                  "object_index": 5,
+                  "original_part": "washer",
+                  "center": [
+                    0.36,
+                    0.38
+                  ],
+                  "rect_source_px": [
+                    443,
+                    285,
+                    708,
+                    550
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5024242424242423,
+                    0.5023484848484848
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p005.png",
+                  "crop_sha256": "f6c388bcf5114aed93215332a387948ad9154b03f9695726e143d5b4ca1a2903",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p005-pixels.png",
+                  "pixel_crop_sha256": "b0018a44828ee1e35b0a577ad35e3d246bdb9334ed8219d9941624312d9c5d69",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                },
+                {
+                  "id": "p006",
+                  "object_index": 6,
+                  "original_part": "washer",
+                  "center": [
+                    0.46,
+                    0.48
+                  ],
+                  "rect_source_px": [
+                    603,
+                    395,
+                    868,
+                    660
+                  ],
+                  "source_size": [
+                    1600,
+                    1100
+                  ],
+                  "target_center_crop": [
+                    0.5020454545454548,
+                    0.501969696969697
+                  ],
+                  "crop_source_size": [
+                    265,
+                    265
+                  ],
+                  "crop_size": [
+                    512,
+                    512
+                  ],
+                  "crop_file": "p006.png",
+                  "crop_sha256": "ded37640876883aa04f4302c609b5755003b89a08015404538b40ebe06ccef3e",
+                  "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                  "pixel_crop_file": "p006-pixels.png",
+                  "pixel_crop_sha256": "ad892ff0d11ee5d544cb1fa1024d0fca34c2b0b205cebb3b8d9b2c0b1b6de330",
+                  "resampling": "LANCZOS",
+                  "interpolation_creates_information": false
+                }
+              ]
+            },
+            "object_evidence": {
+              "protocol": "spatial_inventory_v1",
+              "coordinate_frame": "normalized_original",
+              "objects": [
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.33,
+                    0.52
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.53,
+                    0.5
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.29,
+                    0.43
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.4,
+                    0.55
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.36,
+                    0.38
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.46,
+                    0.48
+                  ]
+                }
+              ],
+              "uncertain_parts": []
+            },
+            "reference_evidence": {
+              "protocol": "reference_inputs_v1",
+              "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+              "observation_mode": "spatial_guarded",
+              "preprocessing": "exif_transpose_rgb_thumbnail_lanczos_png_v1",
+              "pillow_version": "12.3.0",
+              "max_side": 512,
+              "prepared_bytes_retained": false,
+              "guarded_identity_uses_references": false,
+              "images": [],
+              "stages": [
+                {
+                  "stage": "original",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                },
+                {
+                  "stage": "rotate_90_ccw",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                },
+                {
+                  "stage": "identity",
+                  "reference_image_indices": [],
+                  "status": "completed"
+                }
+              ]
+            },
+            "reference_ids": {},
+            "evidence_feedback": null,
+            "tool_trace": [
+              {
+                "step": "observe_image",
+                "status": "completed",
+                "model": "Qwen3.6-27B · MLX 4-bit · local",
+                "latency_ms": 48501
+              },
+              {
+                "step": "derive_counts_from_object_list",
+                "status": "completed",
+                "listed_objects": 6,
+                "uncertain_parts": []
+              },
+              {
+                "step": "compare_orientation_observations",
+                "status": "completed",
+                "clear_agreement": true,
+                "same_model_correlated_calls": true
+              },
+              {
+                "step": "verify_local_identity",
+                "status": "completed",
+                "blocked_categories": [],
+                "same_model_correlated_calls": true
+              },
+              {
+                "step": "compare_current_requirements",
+                "status": "completed",
+                "revision": 1
+              },
+              {
+                "step": "review_previous_evidence",
+                "status": "not_applicable"
+              },
+              {
+                "step": "choose_next_action",
+                "status": "completed",
+                "decision": "ready",
+                "action_kind": "none"
+              },
+              {
+                "step": "commit_current_evidence",
+                "status": "completed",
+                "revision": 1,
+                "evidence_epoch": 1
+              }
+            ],
+            "photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "observation_context": null,
+            "runtime_identity": {
+              "label": "Qwen3.6-27B · MLX 4-bit · local",
+              "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+              "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+              "observer_protocol_sha256": "2f9218a6073d43fe8730cd044868df2a2c01db37a0a0a9512d888cce5b21702b",
+              "observation_mode": "spatial_guarded",
+              "image_max_side": 1536
+            },
+            "evidence_epoch": 1
+          }
+        ],
+        "photos": [
+          {
+            "id": "img_a28df803fa29476b80dc",
+            "url": "/api/photos/img_a28df803fa29476b80dc",
+            "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+            "revision": 1,
+            "created_at": "2026-10-03T16:23:04.887+00:00",
+            "width": 1600,
+            "height": 1100,
+            "quality": {
+              "warning": null
+            },
+            "kind": "root_photo",
+            "scope_mode": "whole_image",
+            "root_photo_id": "img_a28df803fa29476b80dc",
+            "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "document_source": {
+              "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+              "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+              "license_note": "MVTec · CC BY-NC-SA 4.0",
+              "schema_version": 1,
+              "kind": "user_declared_photo",
+              "verification": "user_declared_unverified",
+              "physical_completion_allowed": false,
+              "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "original_root_photo_id": "img_a28df803fa29476b80dc",
+              "declared_at": "2026-10-03T16:23:04.888+00:00",
+              "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+              "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+            },
+            "physical_capture": false,
+            "capture_kind": "user_declared_photo_upload"
+          },
+          {
+            "id": "img_4dfe4da87d4640eab9f9",
+            "url": "/api/photos/img_4dfe4da87d4640eab9f9",
+            "sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+            "revision": 2,
+            "created_at": "2026-10-03T16:23:53.729+00:00",
+            "width": 1600,
+            "height": 1100,
+            "quality": {
+              "warning": null
+            },
+            "kind": "root_photo",
+            "scope_mode": "whole_image",
+            "root_photo_id": "img_4dfe4da87d4640eab9f9",
+            "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+            "document_source": {
+              "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+              "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+              "license_note": "MVTec · CC BY-NC-SA 4.0",
+              "schema_version": 1,
+              "kind": "user_declared_photo",
+              "verification": "user_declared_unverified",
+              "physical_completion_allowed": false,
+              "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "original_root_photo_id": "img_a28df803fa29476b80dc",
+              "declared_at": "2026-10-03T16:23:04.888+00:00",
+              "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+              "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+            },
+            "physical_capture": false,
+            "capture_kind": "photo_document_replay",
+            "replay_of_photo_id": "img_a28df803fa29476b80dc"
+          }
+        ],
+        "references": {},
+        "reference_history": [],
+        "events": [
+          {
+            "id": "evt_297c61c9b48e43ecb25a",
+            "kind": "order_created",
+            "message": "주문 생성 / 已创建订单",
+            "created_at": "2026-10-03T16:23:04.888+00:00",
+            "payload": {}
+          },
+          {
+            "id": "evt_9cb2b92f02c1482ba83e",
+            "kind": "photo_document_registered",
+            "message": "사용자 자료 등록 · 출처 미인증 / 已登记用户资料，来源未经认证",
+            "created_at": "2026-10-03T16:23:04.888+00:00",
+            "payload": {
+              "source": {
+                "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+                "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+                "license_note": "MVTec · CC BY-NC-SA 4.0",
+                "schema_version": 1,
+                "kind": "user_declared_photo",
+                "verification": "user_declared_unverified",
+                "physical_completion_allowed": false,
+                "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+                "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "original_root_photo_id": "img_a28df803fa29476b80dc",
+                "declared_at": "2026-10-03T16:23:04.888+00:00",
+                "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+                "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+              },
+              "photo_id": "img_a28df803fa29476b80dc",
+              "physical_capture": false
+            }
+          },
+          {
+            "id": "evt_7097a2798c6a42d0ba3c",
+            "kind": "inspection_started",
+            "message": "사진 관찰 시작 / 开始观察照片",
+            "created_at": "2026-10-03T16:23:04.898+00:00",
+            "payload": {
+              "photo_id": "img_a28df803fa29476b80dc"
+            }
+          },
+          {
+            "id": "evt_b2725f8db38e488e893d",
+            "kind": "inspection_completed",
+            "message": "수량이 일치합니다. 실물을 확인한 뒤 완료하세요 / 数量相符，请核对实物后确认完成",
+            "created_at": "2026-10-03T16:23:53.408+00:00",
+            "payload": {
+              "check_id": "chk_6db657d553114ad0852f",
+              "decision": "ready",
+              "revision": 1
+            }
+          },
+          {
+            "id": "evt_ef2c90d683f042b78daa",
+            "kind": "revision_approved",
+            "message": "주문 변경 승인 · 이전 검증 무효 / 已确认改版，旧核验失效",
+            "created_at": "2026-10-03T16:23:53.715+00:00",
+            "payload": {
+              "revision": 2,
+              "requirements": {
+                "bolt": 3,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "instruction": "PREDECLARED MACHINE TASK: incoming R2, not AI-derived correction"
+            }
+          },
+          {
+            "id": "evt_c32ae97e2a5b440aa8b0",
+            "kind": "public_photo_replayed",
+            "message": "자료 사진 재사용 · 새 AI 검증 필요 / 复用资料照片，需重新运行AI",
+            "created_at": "2026-10-03T16:23:53.730+00:00",
+            "payload": {
+              "id": "replay_b6fbf9613da44a3d8afc",
+              "scope": "photo_document_digital_review",
+              "order_id": "ord_9465b8c5052240fea8c0",
+              "created_at": "2026-10-03T16:23:53.729+00:00",
+              "revision": 2,
+              "evidence_epoch": 3,
+              "previous_photo_id": "img_a28df803fa29476b80dc",
+              "photo_id": "img_4dfe4da87d4640eab9f9",
+              "created_photo_ids": [
+                "img_4dfe4da87d4640eab9f9"
+              ],
+              "inspection_scope": {
+                "mode": "whole_image",
+                "view_photo_id": "img_4dfe4da87d4640eab9f9",
+                "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "root_photo_id": "img_4dfe4da87d4640eab9f9",
+                "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "root_width": 1600,
+                "root_height": 1100,
+                "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+                "root_created_at": "2026-10-03T16:23:53.729+00:00",
+                "region_xyxy": null,
+                "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+                "derivation": "normalized_root_bytes_v1",
+                "scope_declaration": null,
+                "scope_confirmed_at": null
+              },
+              "source": {
+                "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+                "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+                "license_note": "MVTec · CC BY-NC-SA 4.0",
+                "schema_version": 1,
+                "kind": "user_declared_photo",
+                "verification": "user_declared_unverified",
+                "physical_completion_allowed": false,
+                "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+                "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+                "original_root_photo_id": "img_a28df803fa29476b80dc",
+                "declared_at": "2026-10-03T16:23:04.888+00:00",
+                "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+                "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+              },
+              "physical_capture": false,
+              "requires_new_inference": true
+            }
+          }
+        ],
+        "completions": [],
+        "manual_reviews": [],
+        "reopenings": [],
+        "evidence_epoch": 3,
+        "active_inspection": null,
+        "revisions": [
+          {
+            "revision": 1,
+            "requirements": {
+              "bolt": 2,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "instruction": "최초 주문 / 初始订单",
+            "created_at": "2026-10-03T16:23:04.888+00:00"
+          },
+          {
+            "revision": 2,
+            "requirements": {
+              "bolt": 3,
+              "nut": 2,
+              "washer": 2,
+              "bracket": 0
+            },
+            "instruction": "PREDECLARED MACHINE TASK: incoming R2, not AI-derived correction",
+            "created_at": "2026-10-03T16:23:53.715+00:00"
+          }
+        ],
+        "document_source": {
+          "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+          "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+          "license_note": "MVTec · CC BY-NC-SA 4.0",
+          "schema_version": 1,
+          "kind": "user_declared_photo",
+          "verification": "user_declared_unverified",
+          "physical_completion_allowed": false,
+          "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+          "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "original_root_photo_id": "img_a28df803fa29476b80dc",
+          "declared_at": "2026-10-03T16:23:04.888+00:00",
+          "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+          "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+        },
+        "public_replays": [
+          {
+            "id": "replay_b6fbf9613da44a3d8afc",
+            "scope": "photo_document_digital_review",
+            "order_id": "ord_9465b8c5052240fea8c0",
+            "created_at": "2026-10-03T16:23:53.729+00:00",
+            "revision": 2,
+            "evidence_epoch": 3,
+            "previous_photo_id": "img_a28df803fa29476b80dc",
+            "photo_id": "img_4dfe4da87d4640eab9f9",
+            "created_photo_ids": [
+              "img_4dfe4da87d4640eab9f9"
+            ],
+            "inspection_scope": {
+              "mode": "whole_image",
+              "view_photo_id": "img_4dfe4da87d4640eab9f9",
+              "view_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_photo_id": "img_4dfe4da87d4640eab9f9",
+              "root_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "source_family_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "root_width": 1600,
+              "root_height": 1100,
+              "root_source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "root_created_at": "2026-10-03T16:23:53.729+00:00",
+              "region_xyxy": null,
+              "coordinate_space": "normalized_root_pixels_xyxy_half_open_v1",
+              "derivation": "normalized_root_bytes_v1",
+              "scope_declaration": null,
+              "scope_confirmed_at": null
+            },
+            "source": {
+              "source_note": "Automated engineering use of an exposed public development photo; not a user study. mvtec-loco-screw_bag-train-good-016",
+              "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+              "license_note": "MVTec · CC BY-NC-SA 4.0",
+              "schema_version": 1,
+              "kind": "user_declared_photo",
+              "verification": "user_declared_unverified",
+              "physical_completion_allowed": false,
+              "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+              "storage_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "original_root_photo_id": "img_a28df803fa29476b80dc",
+              "declared_at": "2026-10-03T16:23:04.888+00:00",
+              "statement_sha256": "eec0e62a23a9a5fb1436a6a2fc0614800a502f3bc86bd40fe3dbecd467ac07ee",
+              "binding_sha256": "48b982f1452a0631a1606e5651701fb16ca559a57caf751f8c11544c58c9f9f4"
+            },
+            "physical_capture": false,
+            "requires_new_inference": true
+          }
+        ]
+      },
+      "error": null,
+      "live_binding": {
+        "status": "current",
+        "reason": null
+      }
+    }
+  ],
+  "limitations": [
+    "Machine assistance on a stored photo document; no human validation or measured user-efficiency claim.",
+    "The rule planner routes real model findings. It does not certify correctness, independently review the image, or repair a scene.",
+    "The goal preserves the supplied BOM. Source and license notes are user declarations, not authenticated rights.",
+    "An archived finding describes its saved snapshot. A later order, photo, check or runtime change makes it historical."
+  ],
+  "error": null
+}

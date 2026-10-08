@@ -1,0 +1,728 @@
+{
+  "schema": "kitguard.v07.screenshot-video.v1",
+  "status": "failed",
+  "format": "Edited explanation of actual captured UI screenshots, not continuous realtime screen recording",
+  "continuous_realtime_recording": false,
+  "original_capture_files_modified": false,
+  "editing": "Whole original screenshots scaled proportionally, letterboxed; independent title/caption layers",
+  "waiting_and_operation_intervals_condensed": true,
+  "duration_seconds": 143,
+  "capture_timeline_sha256": "3f158271798f4fd7e0847d920448a22ba0ba3eebe4da3a12fcf053d9dd485a97",
+  "caption_plan_sha256": "e0e06c90f600f8c44f8a35e7b0fca97b863653cd906899429562d419e4d97c9c",
+  "inputs": [
+    {
+      "file": "01-public-library.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/01-public-library.png",
+      "sha256": "0143b98a11aa3aded907a05dfebfa37861ec3718e56889b60697a975a7906c47",
+      "bytes": 51187,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "01-public-library.png",
+      "captured_at": "2026-10-01T21:20:00.448Z",
+      "url": "http://127.0.0.1:8765/static/demo.html"
+    },
+    {
+      "file": "02-r1-before-inference.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/02-r1-before-inference.png",
+      "sha256": "b7c2f2b1f326f4baf53aa53c715713b9ed6ab64255af1c1a686ce1d5b0fe0521",
+      "bytes": 67950,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "02-r1-before-inference.png",
+      "captured_at": "2026-10-01T21:20:05.936Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "03-real-inference-running.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/03-real-inference-running.png",
+      "sha256": "8dbd09322c0da219d289b3c31098e78262165f8d10bb9ca7dd0923c6975ee29d",
+      "bytes": 69142,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "03-real-inference-running.png",
+      "captured_at": "2026-10-01T21:20:42.733Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "04-r1-actual-difference.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/04-r1-actual-difference.png",
+      "sha256": "f001d785a78d389b0e5749d7a2bf9db87d4f1b681e99609a194377c42a6a996e",
+      "bytes": 73427,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "04-r1-actual-difference.png",
+      "captured_at": "2026-10-01T21:21:17.227Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "05-digital-review-form.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/05-digital-review-form.png",
+      "sha256": "c4626c6e8d01158c5999357e09637ce508e11cc1387a80ac53d7a313468264cc",
+      "bytes": 50550,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "05-digital-review-form.png",
+      "captured_at": "2026-10-01T21:21:27.396Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "06-natural-instruction.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/06-natural-instruction.png",
+      "sha256": "913a2c93082968520abc1c3dc4d5885177f573379329550817b8ec0033c80f09",
+      "bytes": 38325,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "06-natural-instruction.png",
+      "captured_at": "2026-10-01T21:21:43.719Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "07-model-proposal-before-approval.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/07-model-proposal-before-approval.png",
+      "sha256": "4332b3513e489f6e2bb21ecc13d5b0edad58534be01a481bbb048be7db6f3fb6",
+      "bytes": 39986,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "07-model-proposal-before-approval.png",
+      "captured_at": "2026-10-01T21:22:39.855Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "08-r2-invalidates-r1.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/08-r2-invalidates-r1.png",
+      "sha256": "26da05e9a4bddd9cff5968f1f6e14b64623d189948fb277b5e32b27255c6e817",
+      "bytes": 69000,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "08-r2-invalidates-r1.png",
+      "captured_at": "2026-10-01T21:22:40.161Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "09-explicit-same-photo-replay.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/09-explicit-same-photo-replay.png",
+      "sha256": "2ca5cc0d5a1d16363959895b14f523e9d29df97db0800bf03f254edb3ccb4237",
+      "bytes": 38477,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "09-explicit-same-photo-replay.png",
+      "captured_at": "2026-10-01T21:22:46.270Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "10-r2-real-result.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/10-r2-real-result.png",
+      "sha256": "5419787d6f11b7e16d183b30dee47e6b7f3fe9410f889932f771d20e37865f3e",
+      "bytes": 73160,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "10-r2-real-result.png",
+      "captured_at": "2026-10-01T21:24:11.602Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "11-versioned-digital-reviews.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/11-versioned-digital-reviews.png",
+      "sha256": "8daa6be20e241bfd76220b190800d7cad4e0fb494879f47b9d008d70eeef2c1f",
+      "bytes": 65420,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "11-versioned-digital-reviews.png",
+      "captured_at": "2026-10-01T21:24:21.071Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "12-real-tool-trace.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/12-real-tool-trace.png",
+      "sha256": "5fd3e8561b2c84116301aad6497887693dc6ebe00d4ae98532fd79649409f985",
+      "bytes": 47676,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "12-real-tool-trace.png",
+      "captured_at": "2026-10-01T21:27:46.488Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "13-evidence-download.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/13-evidence-download.png",
+      "sha256": "61b180bfa95490d5d04bf7e5a742d7ae5694d9196b3e02ab6290abd7fda4f1b5",
+      "bytes": 68731,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "13-evidence-download.png",
+      "captured_at": "2026-10-01T21:28:12.644Z",
+      "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+    },
+    {
+      "file": "14-offline-evidence.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/14-offline-evidence.png",
+      "sha256": "733607581ed0210e94a65b5d1e003212934295930d59662f337dbd536ebc8f1c",
+      "bytes": 65996,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "14-offline-evidence.png",
+      "captured_at": "2026-10-01T21:29:03.192Z",
+      "url": "http://127.0.0.1:8766/OPEN_ME.html"
+    },
+    {
+      "file": "15-offline-versioned-reviews.png",
+      "source_path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/public-review-v07/demonstration/15-offline-versioned-reviews.png",
+      "sha256": "d8fe37051298f8aed4388680fb429b12104f04bcfb41aadb0fc3872aceeaffed",
+      "bytes": 68861,
+      "dimensions": [
+        1265,
+        712
+      ],
+      "file_format": "JPEG",
+      "name": "15-offline-versioned-reviews.png",
+      "captured_at": "2026-10-01T21:29:03.633Z",
+      "url": "http://127.0.0.1:8766/OPEN_ME.html"
+    }
+  ],
+  "render_inputs": [
+    {
+      "original_file": "01-public-library.png",
+      "path": "render-inputs/01-public-library.jpg",
+      "file_format": "JPEG",
+      "sha256": "0143b98a11aa3aded907a05dfebfa37861ec3718e56889b60697a975a7906c47",
+      "bytes": 51187,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "02-r1-before-inference.png",
+      "path": "render-inputs/02-r1-before-inference.jpg",
+      "file_format": "JPEG",
+      "sha256": "b7c2f2b1f326f4baf53aa53c715713b9ed6ab64255af1c1a686ce1d5b0fe0521",
+      "bytes": 67950,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "03-real-inference-running.png",
+      "path": "render-inputs/03-real-inference-running.jpg",
+      "file_format": "JPEG",
+      "sha256": "8dbd09322c0da219d289b3c31098e78262165f8d10bb9ca7dd0923c6975ee29d",
+      "bytes": 69142,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "04-r1-actual-difference.png",
+      "path": "render-inputs/04-r1-actual-difference.jpg",
+      "file_format": "JPEG",
+      "sha256": "f001d785a78d389b0e5749d7a2bf9db87d4f1b681e99609a194377c42a6a996e",
+      "bytes": 73427,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "05-digital-review-form.png",
+      "path": "render-inputs/05-digital-review-form.jpg",
+      "file_format": "JPEG",
+      "sha256": "c4626c6e8d01158c5999357e09637ce508e11cc1387a80ac53d7a313468264cc",
+      "bytes": 50550,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "06-natural-instruction.png",
+      "path": "render-inputs/06-natural-instruction.jpg",
+      "file_format": "JPEG",
+      "sha256": "913a2c93082968520abc1c3dc4d5885177f573379329550817b8ec0033c80f09",
+      "bytes": 38325,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "07-model-proposal-before-approval.png",
+      "path": "render-inputs/07-model-proposal-before-approval.jpg",
+      "file_format": "JPEG",
+      "sha256": "4332b3513e489f6e2bb21ecc13d5b0edad58534be01a481bbb048be7db6f3fb6",
+      "bytes": 39986,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "08-r2-invalidates-r1.png",
+      "path": "render-inputs/08-r2-invalidates-r1.jpg",
+      "file_format": "JPEG",
+      "sha256": "26da05e9a4bddd9cff5968f1f6e14b64623d189948fb277b5e32b27255c6e817",
+      "bytes": 69000,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "09-explicit-same-photo-replay.png",
+      "path": "render-inputs/09-explicit-same-photo-replay.jpg",
+      "file_format": "JPEG",
+      "sha256": "2ca5cc0d5a1d16363959895b14f523e9d29df97db0800bf03f254edb3ccb4237",
+      "bytes": 38477,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "10-r2-real-result.png",
+      "path": "render-inputs/10-r2-real-result.jpg",
+      "file_format": "JPEG",
+      "sha256": "5419787d6f11b7e16d183b30dee47e6b7f3fe9410f889932f771d20e37865f3e",
+      "bytes": 73160,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "11-versioned-digital-reviews.png",
+      "path": "render-inputs/11-versioned-digital-reviews.jpg",
+      "file_format": "JPEG",
+      "sha256": "8daa6be20e241bfd76220b190800d7cad4e0fb494879f47b9d008d70eeef2c1f",
+      "bytes": 65420,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "12-real-tool-trace.png",
+      "path": "render-inputs/12-real-tool-trace.jpg",
+      "file_format": "JPEG",
+      "sha256": "5fd3e8561b2c84116301aad6497887693dc6ebe00d4ae98532fd79649409f985",
+      "bytes": 47676,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "13-evidence-download.png",
+      "path": "render-inputs/13-evidence-download.jpg",
+      "file_format": "JPEG",
+      "sha256": "61b180bfa95490d5d04bf7e5a742d7ae5694d9196b3e02ab6290abd7fda4f1b5",
+      "bytes": 68731,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "14-offline-evidence.png",
+      "path": "render-inputs/14-offline-evidence.jpg",
+      "file_format": "JPEG",
+      "sha256": "733607581ed0210e94a65b5d1e003212934295930d59662f337dbd536ebc8f1c",
+      "bytes": 65996,
+      "method": "byte_identical_copy_with_codec_extension"
+    },
+    {
+      "original_file": "15-offline-versioned-reviews.png",
+      "path": "render-inputs/15-offline-versioned-reviews.jpg",
+      "file_format": "JPEG",
+      "sha256": "d8fe37051298f8aed4388680fb429b12104f04bcfb41aadb0fc3872aceeaffed",
+      "bytes": 68861,
+      "method": "byte_identical_copy_with_codec_extension"
+    }
+  ],
+  "edit_timeline": [
+    {
+      "file": "01-public-library.png",
+      "seconds": 8,
+      "chapter": "01 · 출처가 있는 공개 사진",
+      "caption": [
+        "사용 조건이 표시된 공개 사진을 선택합니다.",
+        "새 주문은 실제 모델 관찰을 시작하기 전 상태입니다."
+      ],
+      "start_seconds": 6,
+      "end_seconds": 14
+    },
+    {
+      "file": "02-r1-before-inference.png",
+      "seconds": 8,
+      "chapter": "02 · R1 주문과 사진",
+      "caption": [
+        "주문 수량과 사진 출처를 먼저 연결합니다.",
+        "검사 버튼을 누르면 이 컴퓨터의 모델이 관찰합니다."
+      ],
+      "start_seconds": 14,
+      "end_seconds": 22
+    },
+    {
+      "file": "03-real-inference-running.png",
+      "seconds": 6,
+      "chapter": "03 · 실제 로컬 추론",
+      "caption": [
+        "사진 관찰은 실제 로컬 모델에서 실행됩니다.",
+        "이 영상은 추론 대기와 조작 시간을 축약했습니다."
+      ],
+      "start_seconds": 22,
+      "end_seconds": 28
+    },
+    {
+      "file": "04-r1-actual-difference.png",
+      "seconds": 11,
+      "chapter": "04 · R1 수량 차이",
+      "caption": [
+        "볼트 관찰은 2개, R1 주문은 3개입니다.",
+        "수량 차이 1개를 표시합니다. 실제 추론: 51.488초"
+      ],
+      "start_seconds": 28,
+      "end_seconds": 39
+    },
+    {
+      "file": "05-digital-review-form.png",
+      "seconds": 7,
+      "chapter": "05 · 검토 의견은 별도 기록",
+      "caption": [
+        "AI 원판단과 검토 의견은 구분해서 저장합니다.",
+        "이 영상의 검토 입력은 자동화 시연 기록입니다."
+      ],
+      "start_seconds": 39,
+      "end_seconds": 46
+    },
+    {
+      "file": "06-natural-instruction.png",
+      "seconds": 9,
+      "chapter": "06 · 자연어로 변경 요청",
+      "caption": [
+        "볼트를 2개로 변경하고 나머지는 유지해 주세요.",
+        "자연어 입력은 아직 주문을 바꾸지 않습니다."
+      ],
+      "start_seconds": 46,
+      "end_seconds": 55
+    },
+    {
+      "file": "07-model-proposal-before-approval.png",
+      "seconds": 10,
+      "chapter": "07 · 제안 확인과 명시적 승인",
+      "caption": [
+        "모델의 변경 제안은 볼트 3개 → 2개입니다.",
+        "제안을 확인한 뒤 R2 적용을 승인합니다."
+      ],
+      "start_seconds": 55,
+      "end_seconds": 65
+    },
+    {
+      "file": "08-r2-invalidates-r1.png",
+      "seconds": 10,
+      "chapter": "08 · 이전 검사 무효화",
+      "caption": [
+        "승인하면 새 주문 버전 R2가 생성됩니다.",
+        "R1의 검사 결과로 R2를 확정할 수 없습니다."
+      ],
+      "start_seconds": 65,
+      "end_seconds": 75
+    },
+    {
+      "file": "09-explicit-same-photo-replay.png",
+      "seconds": 9,
+      "chapter": "09 · 같은 공개 사진 재사용",
+      "caption": [
+        "같은 공개 사진을 재사용함을 명시적으로 확인합니다.",
+        "새 촬영이나 부품 보충으로 기록하지 않습니다."
+      ],
+      "start_seconds": 75,
+      "end_seconds": 84
+    },
+    {
+      "file": "10-r2-real-result.png",
+      "seconds": 11,
+      "chapter": "10 · R2 실제 재검사",
+      "caption": [
+        "같은 사진도 R2 요구 수량으로 새로 검사합니다.",
+        "이번 관찰은 주문과 일치합니다. 실제 추론: 46.614초"
+      ],
+      "start_seconds": 84,
+      "end_seconds": 95
+    },
+    {
+      "file": "11-versioned-digital-reviews.png",
+      "seconds": 9,
+      "chapter": "11 · 버전별 디지털 검토",
+      "caption": [
+        "R1과 R2의 AI 판단·검토 기록을 따로 보존합니다.",
+        "자동화 시연으로 남긴 의견이며, 실제 사용자 검증은 아닙니다."
+      ],
+      "start_seconds": 95,
+      "end_seconds": 104
+    },
+    {
+      "file": "12-real-tool-trace.png",
+      "seconds": 9,
+      "chapter": "12 · 실제 실행 단계",
+      "caption": [
+        "이미지 관찰 → 물체 목록에서 수량 계산 → 관찰 대조.",
+        "서버가 저장한 실행 기록을 검사 결과와 함께 확인합니다."
+      ],
+      "start_seconds": 104,
+      "end_seconds": 113
+    },
+    {
+      "file": "13-evidence-download.png",
+      "seconds": 6,
+      "chapter": "13 · 증거 내보내기",
+      "caption": [
+        "사진과 주문 버전, 검사·검토 기록을 내보냅니다.",
+        "증거 ZIP은 읽기 전용 보고서와 원본 JSON을 담습니다."
+      ],
+      "start_seconds": 113,
+      "end_seconds": 119
+    },
+    {
+      "file": "14-offline-evidence.png",
+      "seconds": 8,
+      "chapter": "14 · 오프라인 증거 보고서",
+      "caption": [
+        "내보낸 보고서에서 기록과 SHA-256 목록을 확인합니다.",
+        "공개 사진 디지털 검토이며 실물 완료를 승인하지 않습니다."
+      ],
+      "start_seconds": 119,
+      "end_seconds": 127
+    },
+    {
+      "file": "15-offline-versioned-reviews.png",
+      "seconds": 9,
+      "chapter": "15 · 출처와 적용 범위 보존",
+      "caption": [
+        "출처·이용 허락과 검토 기록의 적용 버전을 남깁니다.",
+        "이전 검토가 현재 주문의 증거로 바뀌지 않습니다."
+      ],
+      "start_seconds": 127,
+      "end_seconds": 136
+    }
+  ],
+  "source_evidence": {
+    "artifacts": {
+      "order.json": {
+        "sha256": "7cee00d6c4eb7a6f6cfe4db83f672e88c69acf4b4ca0edacbbd71b38155606fb",
+        "bytes": 96884
+      },
+      "review-summary.json": {
+        "sha256": "a30da22d4f027d954111af083f8e86bd8fdd6f7d5ed63582fb99a3f9880a9345",
+        "bytes": 41957
+      },
+      "verification.json": {
+        "sha256": "4943f842cf38f77137590d610b40e507dd1356e4aa50e8cc4694752fdc566ca7",
+        "bytes": 4726
+      },
+      "evidence.zip": {
+        "sha256": "ff7c35eaa1dc94930a392b5745fa9aca214dffde5142dde3c67fa82da3828783",
+        "bytes": 1032891
+      }
+    },
+    "audit": {
+      "schema": "kitguard.v07.browser-evidence-audit.v1",
+      "verified_at": "2026-10-01T21:31:59.375355+00:00",
+      "order_id": "ord_01a0e1e0cd8f49b3bb67",
+      "automation_engineering_trial": true,
+      "real_user_validation": false,
+      "physical_action_validated": false,
+      "checks": [
+        {
+          "revision": 1,
+          "id": "chk_3762a749c68642a8ad61",
+          "decision": "correct",
+          "latency_ms": 51488,
+          "valid": false
+        },
+        {
+          "revision": 2,
+          "id": "chk_1cec9578d28246faaf7b",
+          "decision": "ready",
+          "latency_ms": 46614,
+          "valid": true
+        }
+      ],
+      "same_photo_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+      "public_reviews": 2,
+      "public_replays": 1,
+      "physical_completions": 0,
+      "zip_hashes_verified": 4,
+      "zip_sha256": "ff7c35eaa1dc94930a392b5745fa9aca214dffde5142dde3c67fa82da3828783",
+      "screenshots": [
+        {
+          "sha256": "0143b98a11aa3aded907a05dfebfa37861ec3718e56889b60697a975a7906c47",
+          "name": "01-public-library.png",
+          "captured_at": "2026-10-01T21:20:00.448Z",
+          "url": "http://127.0.0.1:8765/static/demo.html"
+        },
+        {
+          "sha256": "b7c2f2b1f326f4baf53aa53c715713b9ed6ab64255af1c1a686ce1d5b0fe0521",
+          "name": "02-r1-before-inference.png",
+          "captured_at": "2026-10-01T21:20:05.936Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "8dbd09322c0da219d289b3c31098e78262165f8d10bb9ca7dd0923c6975ee29d",
+          "name": "03-real-inference-running.png",
+          "captured_at": "2026-10-01T21:20:42.733Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "f001d785a78d389b0e5749d7a2bf9db87d4f1b681e99609a194377c42a6a996e",
+          "name": "04-r1-actual-difference.png",
+          "captured_at": "2026-10-01T21:21:17.227Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "c4626c6e8d01158c5999357e09637ce508e11cc1387a80ac53d7a313468264cc",
+          "name": "05-digital-review-form.png",
+          "captured_at": "2026-10-01T21:21:27.396Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "913a2c93082968520abc1c3dc4d5885177f573379329550817b8ec0033c80f09",
+          "name": "06-natural-instruction.png",
+          "captured_at": "2026-10-01T21:21:43.719Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "4332b3513e489f6e2bb21ecc13d5b0edad58534be01a481bbb048be7db6f3fb6",
+          "name": "07-model-proposal-before-approval.png",
+          "captured_at": "2026-10-01T21:22:39.855Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "26da05e9a4bddd9cff5968f1f6e14b64623d189948fb277b5e32b27255c6e817",
+          "name": "08-r2-invalidates-r1.png",
+          "captured_at": "2026-10-01T21:22:40.161Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "2ca5cc0d5a1d16363959895b14f523e9d29df97db0800bf03f254edb3ccb4237",
+          "name": "09-explicit-same-photo-replay.png",
+          "captured_at": "2026-10-01T21:22:46.270Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "5419787d6f11b7e16d183b30dee47e6b7f3fe9410f889932f771d20e37865f3e",
+          "name": "10-r2-real-result.png",
+          "captured_at": "2026-10-01T21:24:11.602Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "8daa6be20e241bfd76220b190800d7cad4e0fb494879f47b9d008d70eeef2c1f",
+          "name": "11-versioned-digital-reviews.png",
+          "captured_at": "2026-10-01T21:24:21.071Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "5fd3e8561b2c84116301aad6497887693dc6ebe00d4ae98532fd79649409f985",
+          "name": "12-real-tool-trace.png",
+          "captured_at": "2026-10-01T21:27:46.488Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "61b180bfa95490d5d04bf7e5a742d7ae5694d9196b3e02ab6290abd7fda4f1b5",
+          "name": "13-evidence-download.png",
+          "captured_at": "2026-10-01T21:28:12.644Z",
+          "url": "http://127.0.0.1:8765/?order=ord_01a0e1e0cd8f49b3bb67"
+        },
+        {
+          "sha256": "733607581ed0210e94a65b5d1e003212934295930d59662f337dbd536ebc8f1c",
+          "name": "14-offline-evidence.png",
+          "captured_at": "2026-10-01T21:29:03.192Z",
+          "url": "http://127.0.0.1:8766/OPEN_ME.html"
+        },
+        {
+          "sha256": "d8fe37051298f8aed4388680fb429b12104f04bcfb41aadb0fc3872aceeaffed",
+          "name": "15-offline-versioned-reviews.png",
+          "captured_at": "2026-10-01T21:29:03.633Z",
+          "url": "http://127.0.0.1:8766/OPEN_ME.html"
+        }
+      ]
+    },
+    "source": {
+      "sample_id": "bag-revision",
+      "source_case_id": "mvtec-loco-screw_bag-train-good-016",
+      "source_sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+      "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+      "license": "MVTec · CC BY-NC-SA 4.0",
+      "source_note": "공개 사진의 관찰과 수량 변경 흐름 / 用公开照片体验核验与改版",
+      "derived_view": false,
+      "kind": "public_photo_demo",
+      "physical_completion_allowed": false
+    },
+    "order_id": "ord_01a0e1e0cd8f49b3bb67",
+    "checks": [
+      {
+        "revision": 1,
+        "decision": "correct",
+        "latency_ms": 51488,
+        "valid": false,
+        "required_bolt": 3
+      },
+      {
+        "revision": 2,
+        "decision": "ready",
+        "latency_ms": 46614,
+        "valid": true,
+        "required_bolt": 2
+      }
+    ]
+  },
+  "builder_sha256": "16dd2e33058113e2793af3a4528829155946de6bc30fcfe41e67d6df98c9629f",
+  "unused_material": "Earlier interrupted continuous-capture attempt video/00000.png is not used",
+  "claims": "Technical demonstration on existing public development photos; no new holdout scores or genuine user feedback",
+  "ffmpeg": "/Users/lkc/Downloads/AI·SW/kitguard/.tools/imageio-ffmpeg/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+  "ffmpeg_version": "ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+  "ffmpeg_sha256": "6d175a4743ca50256e89a8cdd731100f9cee33bd79aeea46894d209410dc6617",
+  "ffprobe": null,
+  "ffprobe_version": null,
+  "font": {
+    "source_path": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+    "sha256": "876af2cd4854644e7f3e7feb2f688997fdb3343c6df6693611209c9dfb47ccec"
+  },
+  "command": [
+    "/Users/lkc/Downloads/AI·SW/kitguard/.tools/imageio-ffmpeg/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "-hide_banner",
+    "-nostdin",
+    "-n",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "shots.ffconcat",
+    "-vf",
+    "fps=24,scale=1792:850:force_original_aspect_ratio=decrease:flags=lanczos,pad=1920:1080:(ow-iw)/2:68:color=0x173A30,setsar=1,drawbox=x=0:y=0:w=iw:h=ih:color=0x173A30:t=fill:enable='lt(t,6)+gte(t,136)',ass=captions.ass:fontsdir=/var/folders/57/my3v7tgs1mn9cxsptzl_jv6m0000gn/T/kitguard-video-font-s86kt53g,format=yuv420p",
+    "-t",
+    "143",
+    "-an",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "18",
+    "-r",
+    "24",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=KitGuard public-photo review — edited actual UI screenshots",
+    "-metadata",
+    "comment=Not continuous realtime recording; waiting and operation intervals condensed",
+    "KitGuard_v07_public_photo_walkthrough.mp4"
+  ],
+  "error": "ValueError: FFmpeg did not confirm expected duration/H.264/1920x1080/yuv420p"
+}

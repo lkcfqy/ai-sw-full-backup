@@ -1,0 +1,13 @@
+{
+  "source_sha256": "0b7d406056ca68357919e87f2375e92121a600b6806c4f87ecdfc309a87cddd0",
+  "revised_sha256": "7c5bb6422c15f51504a022695dab31334157868a5fd7ac830d65cf5764c20764",
+  "changed_paragraphs": 10,
+  "signature_image_and_other_streams_unchanged": true,
+  "official_clauses_and_identity_fields_unchanged": true,
+  "native_layout_verification": "Passed: opened in Hancom Office HWP; all 4 printed pages visually inspected",
+  "native_pages": 4,
+  "signature_page": 4,
+  "body_overflow_or_signature_overlap": false,
+  "application_date": "2026-09-29",
+  "consent_dates_unchanged": "2026-09-28"
+}

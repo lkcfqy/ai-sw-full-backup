@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/mete0r/pyhwp/master/tests/hwp5_tests/fixtures/shapepict-scaled.hwp

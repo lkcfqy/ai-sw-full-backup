@@ -1,0 +1,839 @@
+[
+  {
+    "name": "health-before",
+    "method": "GET",
+    "endpoint": "/api/health",
+    "started_at": "2026-09-26T15:42:56.691714+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "928",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 13,
+    "response_sha256": "055ca65a30e488683553d77e3b410852d7cd68578385c2e2115a0a5bb6f86f2a",
+    "response_bytes": 928
+  },
+  {
+    "name": "orders-before",
+    "method": "GET",
+    "endpoint": "/api/orders",
+    "started_at": "2026-09-26T15:42:56.705381+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "13",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 1,
+    "response_sha256": "e031acd7d2a0a13081112896146071e885399a95d98315a55efcd0d0e1817b10",
+    "response_bytes": 13
+  },
+  {
+    "name": "create-a41",
+    "method": "POST",
+    "endpoint": "/api/orders",
+    "started_at": "2026-09-26T15:42:56.707183+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "title": "PUBLIC InO A41 AUTHOR REGION · development integration",
+      "requirements": {
+        "bolt": 0,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 1
+      }
+    },
+    "request_body_sha256": "ae1a8c66b803f684659c181de72eb99964c1a3956bddec91cf13c4736cb2484f",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "778",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 201,
+    "elapsed_ms": 2,
+    "response_sha256": "c796c6abc043fc8476245d2c3d90c1171db5bdd162f271f3107d923ab5583d59",
+    "response_bytes": 778
+  },
+  {
+    "name": "upload-a41",
+    "method": "POST",
+    "endpoint": "/api/orders/ord_801e667e23324b60a017/photos",
+    "started_at": "2026-09-26T15:42:56.709317+00:00",
+    "headers": {
+      "Content-Type": "multipart/form-data; boundary=KitGuardV05IndependentFixedBoundary"
+    },
+    "body": null,
+    "request_body_sha256": "2a841264fda27c59eadf982df39d0d92ef42723baeaed0b3d37b2c80fa292213",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "2243",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 201,
+    "elapsed_ms": 16,
+    "response_sha256": "c56d63eca68212c2f4efb3c4c6579a99ad45b607b1dbd8dc6d8c5a734065e8ce",
+    "response_bytes": 2243
+  },
+  {
+    "name": "select-ino-A41-author-region",
+    "method": "POST",
+    "endpoint": "/api/orders/ord_801e667e23324b60a017/inspection-region",
+    "started_at": "2026-09-26T15:42:56.726119+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "expected_revision": 1,
+      "expected_photo_id": "img_ce3172a039cb4053947e",
+      "expected_evidence_epoch": 1,
+      "root_photo_id": "img_ce3172a039cb4053947e",
+      "mode": "region",
+      "region_xyxy": [
+        436,
+        511,
+        606,
+        627
+      ],
+      "confirmed_all_items_inside": true
+    },
+    "request_body_sha256": "ba43ef253910197e38c0b3ce21c833fb2785c0159fe35acfbe9b4ec5d50bb5b7",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "3964",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 5,
+    "response_sha256": "69522500a9330b297b3b9ab3bf6b4c64cafdff3d918a318cbf94e10d1ab15195",
+    "response_bytes": 3964
+  },
+  {
+    "name": "root-ino-A41-author-region",
+    "method": "GET",
+    "endpoint": "/api/photos/img_ce3172a039cb4053947e",
+    "started_at": "2026-09-26T15:42:56.731535+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-type": "image/jpeg",
+      "accept-ranges": "bytes",
+      "content-length": "196166",
+      "last-modified": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "etag": "\"3556b398c59ffbc1548f5be25afda89e\"",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 2,
+    "response_sha256": "4df848a897627d659fa670fc76991f6f9c762dbfd7fced5cc4b961c7ffb3d72f",
+    "response_bytes": 196166
+  },
+  {
+    "name": "view-ino-A41-author-region",
+    "method": "GET",
+    "endpoint": "/api/photos/img_df368e7fc26143c7951c",
+    "started_at": "2026-09-26T15:42:56.734761+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-type": "image/jpeg",
+      "accept-ranges": "bytes",
+      "content-length": "5789",
+      "last-modified": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "etag": "\"e41c379e41ac51d046fa89fe45cd8501\"",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 1,
+    "response_sha256": "7e360c775c03b810b50a0d9e1c80e44d508fdd27da8084defce6eb3297e0b484",
+    "response_bytes": 5789
+  },
+  {
+    "name": "create-mixed",
+    "method": "POST",
+    "endpoint": "/api/public-demos/mixed-screws/orders",
+    "started_at": "2026-09-26T15:42:56.739116+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {},
+    "request_body_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "2730",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 201,
+    "elapsed_ms": 10,
+    "response_sha256": "b4159ba1ed8226a368ff2b05d0c5b921fd57ed7a6cd84bac1770adcd812a91d9",
+    "response_bytes": 2730
+  },
+  {
+    "name": "select-mixed-screws-full-region",
+    "method": "POST",
+    "endpoint": "/api/orders/ord_e14c97036fc54c198a55/inspection-region",
+    "started_at": "2026-09-26T15:42:56.749431+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "expected_revision": 1,
+      "expected_photo_id": "img_5ac28b27cb9e45d0bb0f",
+      "expected_evidence_epoch": 1,
+      "root_photo_id": "img_5ac28b27cb9e45d0bb0f",
+      "mode": "region",
+      "region_xyxy": [
+        0,
+        0,
+        768,
+        576
+      ],
+      "confirmed_all_items_inside": true
+    },
+    "request_body_sha256": "f396014d4b1ab1a22d01c9b967327424d2cf186134c49d61c35ad5f69ff518c2",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "5410",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 5,
+    "response_sha256": "6c738a49c8321f25aaf00366ad586a8254fee4983af4d2ba2b186b284254991a",
+    "response_bytes": 5410
+  },
+  {
+    "name": "root-mixed-screws-full-region",
+    "method": "GET",
+    "endpoint": "/api/photos/img_5ac28b27cb9e45d0bb0f",
+    "started_at": "2026-09-26T15:42:56.754747+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-type": "image/jpeg",
+      "accept-ranges": "bytes",
+      "content-length": "190021",
+      "last-modified": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "etag": "\"2cb25d4ca3d55959e62cda9f2509f3bc\"",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 2,
+    "response_sha256": "b0da289149ca6352101fd5f8dbbb72522feb75d3c70a02f4a8ed03f374b74543",
+    "response_bytes": 190021
+  },
+  {
+    "name": "view-mixed-screws-full-region",
+    "method": "GET",
+    "endpoint": "/api/photos/img_98052ab5e608432a92ab",
+    "started_at": "2026-09-26T15:42:56.757143+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-type": "image/jpeg",
+      "accept-ranges": "bytes",
+      "content-length": "183606",
+      "last-modified": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "etag": "\"18b27992c7c2a80e6ba06c61a7850c0c\"",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 2,
+    "response_sha256": "5d1ea6976927e6d3b0e723511afb7fde9d889fa1cb0c84c555accac0b492d6b5",
+    "response_bytes": 183606
+  },
+  {
+    "name": "create-study",
+    "method": "POST",
+    "endpoint": "/api/studies",
+    "started_at": "2026-09-26T15:42:56.762066+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "title": "PUBLIC DEVELOPMENT REGION · actual MLX",
+      "source_kind": "public_replay",
+      "planned_cases": 1,
+      "participant_code": "scripted_replay",
+      "note": "SCRIPTED AUTHOR-TRUTH PUBLIC REPLAY; NOT HUMAN TIMING OR FIELD EVIDENCE. 自动录入作者真值，非真人计时、非现场。"
+    },
+    "request_body_sha256": "e1156e44bca36349d99a7eaae8a139b0273a16322cb45332fbc2020f8db5ad73",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "2217",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 201,
+    "elapsed_ms": 2,
+    "response_sha256": "96ba28b0787a6b0f9e6e25fdc1218dac882e209109c0ce1d1a1bcdfc58443bd7",
+    "response_bytes": 2217
+  },
+  {
+    "name": "register-mixed",
+    "method": "POST",
+    "endpoint": "/api/studies/study_814ea9d7ee8a453485ce/cases",
+    "started_at": "2026-09-26T15:42:56.764145+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "label": "mixed-screws · scripted author truth · full-frame region",
+      "order_id": "ord_e14c97036fc54c198a55",
+      "expected_revision": 1,
+      "photo_id": "img_98052ab5e608432a92ab",
+      "truth": {
+        "bolt": 3,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "truth_repeat": {
+        "bolt": 3,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "confirmed_independent": true,
+      "source_note": "SCRIPTED AUTHOR-TRUTH PUBLIC REPLAY; NOT HUMAN TIMING OR FIELD EVIDENCE. 自动录入作者真值，非真人计时、非现场。"
+    },
+    "request_body_sha256": "7a6a01b46463ebc8d765e7abd01299ad96bb7b228c1722d0b470c62573d25d67",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "4543",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 201,
+    "elapsed_ms": 4,
+    "response_sha256": "8fd87a49477768e08f2f200d59962d4266acf7bf2ca1737cafd3d6ea948cb68c",
+    "response_bytes": 4543
+  },
+  {
+    "name": "freeze-study",
+    "method": "POST",
+    "endpoint": "/api/studies/study_814ea9d7ee8a453485ce/freeze",
+    "started_at": "2026-09-26T15:42:56.769143+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "confirmed": true
+    },
+    "request_body_sha256": "cdafc8c1296543876052269c079cb22816a40dff695b2608be2c662554381a6d",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "5070",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 5,
+    "response_sha256": "18301f27644ca868d4dab7249909f88dacfc0903fd6ae2f961ee29fbe5f57c0e",
+    "response_bytes": 5070
+  },
+  {
+    "name": "inspect-ino-A41-author-region",
+    "method": "POST",
+    "endpoint": "/api/orders/ord_801e667e23324b60a017/inspect",
+    "started_at": "2026-09-26T15:42:56.774421+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "photo_id": "img_df368e7fc26143c7951c",
+      "expected_revision": 1
+    },
+    "request_body_sha256": "795165756e8fe3b9966efdee5ee97ac48376233cf01a71ec4fb917717430c132",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:42:56 GMT",
+      "server": "uvicorn",
+      "content-length": "15483",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 13052,
+    "response_sha256": "a852a61a147d12922856260bdd0b08608e0ef708c1102c01191bcaae5a7d3c0e",
+    "response_bytes": 15483
+  },
+  {
+    "name": "order-after-ino-A41-author-region",
+    "method": "GET",
+    "endpoint": "/api/orders/ord_801e667e23324b60a017",
+    "started_at": "2026-09-26T15:43:09.827197+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:09 GMT",
+      "server": "uvicorn",
+      "content-length": "11542",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 2,
+    "response_sha256": "4c349f622f25056716ff34cb72e52611a73d01a60a4391c8ca531bcecabc2d17",
+    "response_bytes": 11542
+  },
+  {
+    "name": "order-zip-ino-A41-author-region",
+    "method": "GET",
+    "endpoint": "/api/orders/ord_801e667e23324b60a017/evidence.zip",
+    "started_at": "2026-09-26T15:43:09.829799+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:09 GMT",
+      "server": "uvicorn",
+      "content-type": "application/zip",
+      "accept-ranges": "bytes",
+      "content-disposition": "attachment; filename=\"kitguard-ord_801e667e23324b60a017-evidence.zip\"",
+      "content-length": "276570",
+      "last-modified": "Sat, 26 Sep 2026 15:43:09 GMT",
+      "etag": "\"dc5564aade65ab62595f77e4999330e2\"",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 8,
+    "response_sha256": "32881a41677a50c68c65163e3cdf0555d7fe9fc3ae63a9d8fcde9e2787a4aeb7",
+    "response_bytes": 276570
+  },
+  {
+    "name": "manual-start",
+    "method": "POST",
+    "endpoint": "/api/studies/study_814ea9d7ee8a453485ce/cases/case_5495e4a05e054c9c9974/start",
+    "started_at": "2026-09-26T15:43:09.838716+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "method": "manual"
+    },
+    "request_body_sha256": "d3e7a413ca1a411fab831dd5ed9bc855032797d4d82c9b55dfa54cdb2d5a6d30",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:09 GMT",
+      "server": "uvicorn",
+      "content-length": "5965",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 5,
+    "response_sha256": "95fbb62c2fffe7d32808f100807163dc9700c0ccce980502d096667a53264d8a",
+    "response_bytes": 5965
+  },
+  {
+    "name": "manual-scripted",
+    "method": "POST",
+    "endpoint": "/api/studies/study_814ea9d7ee8a453485ce/trials/trial_99c9a67a0da74552831b/finish",
+    "started_at": "2026-09-26T15:43:09.844600+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "outcome": "completed",
+      "manual_counts": {
+        "bolt": 3,
+        "nut": 0,
+        "washer": 0,
+        "bracket": 0
+      },
+      "note": "SCRIPTED AUTHOR-TRUTH PUBLIC REPLAY; NOT HUMAN TIMING OR FIELD EVIDENCE. 自动录入作者真值，非真人计时、非现场。"
+    },
+    "request_body_sha256": "561bc66fdcf4061f95010247af95f7d02bbdefb17470fba1399199097c464f89",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:09 GMT",
+      "server": "uvicorn",
+      "content-length": "6040",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 5,
+    "response_sha256": "36c045252e1aedf26ab894e8f0a1518984f01eff558a2303efa193e8c0f0d769",
+    "response_bytes": 6040
+  },
+  {
+    "name": "ai-start",
+    "method": "POST",
+    "endpoint": "/api/studies/study_814ea9d7ee8a453485ce/cases/case_5495e4a05e054c9c9974/start",
+    "started_at": "2026-09-26T15:43:09.850621+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "method": "kitguard"
+    },
+    "request_body_sha256": "40a2aae83896643785a766018c92676095e7ac07ef7dd1a938b46a20dee382a9",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:09 GMT",
+      "server": "uvicorn",
+      "content-length": "6941",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 5,
+    "response_sha256": "2a8c2d988150b510f7f59164b54ce00b421689804a6b2baa9243460b98e82542",
+    "response_bytes": 6941
+  },
+  {
+    "name": "inspect-mixed-screws-full-region",
+    "method": "POST",
+    "endpoint": "/api/orders/ord_e14c97036fc54c198a55/inspect",
+    "started_at": "2026-09-26T15:43:09.856618+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "photo_id": "img_98052ab5e608432a92ab",
+      "expected_revision": 1
+    },
+    "request_body_sha256": "f5365bf4b198ea18aa5ee4fa4ef5374920252e8de966742ce9f06954156b43ed",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:09 GMT",
+      "server": "uvicorn",
+      "content-length": "17006",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 15179,
+    "response_sha256": "6de2c719ec584417b74316be043a5c2a59ff469aaea5e80c11cb4e7b5f17f877",
+    "response_bytes": 17006
+  },
+  {
+    "name": "ai-finish",
+    "method": "POST",
+    "endpoint": "/api/studies/study_814ea9d7ee8a453485ce/trials/trial_4390ff20a83e42e7b059/finish",
+    "started_at": "2026-09-26T15:43:25.036500+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "outcome": "completed",
+      "check_id": "chk_49df57c33f2a48bdb4e8"
+    },
+    "request_body_sha256": "bfc9758c4f912377de7324afb9364a6fb28ca2e523d0d01c7fd428840e082d9d",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:24 GMT",
+      "server": "uvicorn",
+      "content-length": "15673",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 7,
+    "response_sha256": "4dc3122cf3371b4a63267e158578c7ec2cf074403a06abd6fc417be11e4815f3",
+    "response_bytes": 15673
+  },
+  {
+    "name": "order-after-mixed-screws-full-region",
+    "method": "GET",
+    "endpoint": "/api/orders/ord_e14c97036fc54c198a55",
+    "started_at": "2026-09-26T15:43:25.043992+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:24 GMT",
+      "server": "uvicorn",
+      "content-length": "12879",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 1,
+    "response_sha256": "6393dbacc68cfdcb0f9b88c259ca7512c8903169a8dafc853f58afcfcd8e76c8",
+    "response_bytes": 12879
+  },
+  {
+    "name": "order-zip-mixed-screws-full-region",
+    "method": "GET",
+    "endpoint": "/api/orders/ord_e14c97036fc54c198a55/evidence.zip",
+    "started_at": "2026-09-26T15:43:25.046531+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:24 GMT",
+      "server": "uvicorn",
+      "content-type": "application/zip",
+      "accept-ranges": "bytes",
+      "content-disposition": "attachment; filename=\"kitguard-ord_e14c97036fc54c198a55-evidence.zip\"",
+      "content-length": "458805",
+      "last-modified": "Sat, 26 Sep 2026 15:43:25 GMT",
+      "etag": "\"1734cbd2bec7bc7cfbf78ed008f472fa\"",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 8,
+    "response_sha256": "8792869899fa53e43a3013baed1f8a3ca350934ac4f14225d5ecf2da9c763dd3",
+    "response_bytes": 458805
+  },
+  {
+    "name": "close-study",
+    "method": "POST",
+    "endpoint": "/api/studies/study_814ea9d7ee8a453485ce/close",
+    "started_at": "2026-09-26T15:43:25.055880+00:00",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "confirmed": true
+    },
+    "request_body_sha256": "cdafc8c1296543876052269c079cb22816a40dff695b2608be2c662554381a6d",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:24 GMT",
+      "server": "uvicorn",
+      "content-length": "18115",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 3,
+    "response_sha256": "cd7569cffe23629a802d531daf9948bf117aa9b2f1fe913710d80677a3e2c7c4",
+    "response_bytes": 18115
+  },
+  {
+    "name": "study-export-export",
+    "method": "GET",
+    "endpoint": "/api/studies/study_814ea9d7ee8a453485ce/export",
+    "started_at": "2026-09-26T15:43:25.059663+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:24 GMT",
+      "server": "uvicorn",
+      "content-disposition": "attachment; filename=\"kitguard-study_814ea9d7ee8a453485ce.json\"",
+      "content-length": "32891",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 5,
+    "response_sha256": "eb7117dbf14255164d6f5d9033f67ebc517d00f2a0f7e628c8aea984ed68700e",
+    "response_bytes": 32891
+  },
+  {
+    "name": "study-export-report-html",
+    "method": "GET",
+    "endpoint": "/api/studies/study_814ea9d7ee8a453485ce/report.html",
+    "started_at": "2026-09-26T15:43:25.065541+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:24 GMT",
+      "server": "uvicorn",
+      "content-disposition": "attachment; filename=\"kitguard-study_814ea9d7ee8a453485ce-report.html\"",
+      "content-length": "19047",
+      "content-type": "text/html; charset=utf-8",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 5,
+    "response_sha256": "683319a246fb0abfd91ab188b604e3edcc0b12c404df991d969738c33fcbeedd",
+    "response_bytes": 19047
+  },
+  {
+    "name": "study-export-evidence-zip",
+    "method": "GET",
+    "endpoint": "/api/studies/study_814ea9d7ee8a453485ce/evidence.zip",
+    "started_at": "2026-09-26T15:43:25.070964+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:24 GMT",
+      "server": "uvicorn",
+      "content-type": "application/zip",
+      "accept-ranges": "bytes",
+      "content-disposition": "attachment; filename=\"kitguard-study_814ea9d7ee8a453485ce-study.zip\"",
+      "content-length": "387801",
+      "last-modified": "Sat, 26 Sep 2026 15:43:25 GMT",
+      "etag": "\"fbf70ceb8272ab9cb83b3a3d2b6faf38\"",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 13,
+    "response_sha256": "df70c0b5fbc48b846ad6dbde6c299fbeabe71362d3dc20a3e8d17dec95994300",
+    "response_bytes": 387801
+  },
+  {
+    "name": "health-after",
+    "method": "GET",
+    "endpoint": "/api/health",
+    "started_at": "2026-09-26T15:43:25.084944+00:00",
+    "headers": {},
+    "body": null,
+    "request_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_headers": {
+      "date": "Sat, 26 Sep 2026 15:43:24 GMT",
+      "server": "uvicorn",
+      "content-length": "3020",
+      "content-type": "application/json",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+      "cache-control": "no-store",
+      "Connection": "close"
+    },
+    "status": 200,
+    "elapsed_ms": 1,
+    "response_sha256": "32a7eeeac43877c2b55997a068391169b805dadd9e130f13634bb4cb57a70a06",
+    "response_bytes": 3020
+  }
+]

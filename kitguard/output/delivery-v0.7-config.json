@@ -1,0 +1,100 @@
+{
+  "version": "0.7.0",
+  "primary": {
+    "report": "output/pdf/v0.7-final/KitGuard_결과보고서_v0.7.pdf",
+    "technical": "output/pdf/v0.7-final/KitGuard_Agent_기술설명_v0.7.pdf",
+    "source": "output/KitGuard_source_v0.7.0.zip",
+    "video": "output/demo/v0.7/public-photo-edit-01/KitGuard_v07_public_photo_walkthrough.mp4",
+    "slides": "output/presentations/v0.7-final/KitGuard_발표_v0.7.0_v2.pptx"
+  },
+  "checks": {
+    "source": "output/KitGuard_source_v0.7.0.zip.verification.json",
+    "video": "output/demo/v0.7/public-photo-edit-01/video_receipt.json",
+    "tests": "test-results/v07-final-20261002-r2.xml",
+    "evaluation_run": "evaluation-runs/v0.7/public_paired_v1/run.json",
+    "evaluation_analysis": "evaluation-runs/v0.7/public_paired_v1/analysis.json",
+    "evaluation_freeze": "docs/v0.7/public_paired_freeze_v1/freeze.json",
+    "evaluation_audit": "test-results/v0.7/public-paired-audit-v1.json"
+  },
+  "summary": [
+    "공개 출처 51장 × 3방법 = 153회 실제 관찰, 전수 독립 재검산 완료. Inventory C46/W5/U0, 기본 Guarded C41/W3/U7, Selective C46/W4/U1. 모두 실행 오류·미실행 0. C=정확·명확, W=오류·명확, U=미확인.",
+    "默认方案仍有3张错误，未达到预设安全与覆盖门槛；候选虽然更快却多出1张错误，因此不晋升。四类合法订单面板的照片级错误就绪分别为5/51、3/51、4/51；受限来源面板的0不能替代该结果。",
+    "公开照片数字审查、改版失效、同图重新推理与离线证据已做真实本地浏览器验收。1,156项软件测试通过不等于识别零错；工程审查不计为真人参与或实物完工。",
+    "源码包含3张获许可的开发演示照片，不含模型权重、私人数据库和完整实验图片。解压运行检查使用本机已有依赖，不是全新机器安装验证。报告及Markdown中的仓库相对路径按源码目录解释。",
+    "真实开发从2026-09-26开始，沿用赛前原型的资格仍待主办方确认。本地交付已整理，不表示已向比赛平台提交，也不保证名次。"
+  ],
+  "evidence": [
+    {
+      "title": "完整中文评估 / Evaluation",
+      "path": "docs/v0.7/FINAL_EVALUATION.md"
+    },
+    {
+      "title": "逐错例原文复核 / Failure review",
+      "path": "docs/v0.7/PUBLIC51_FAILURE_REVIEW.md"
+    },
+    {
+      "title": "错例哈希索引 / Failure evidence hashes",
+      "path": "docs/v0.7/PUBLIC51_FAILURE_EVIDENCE.json"
+    },
+    {
+      "title": "51图完整指标 / Paired analysis",
+      "path": "evaluation-runs/v0.7/public_paired_v1/analysis.json"
+    },
+    {
+      "title": "153次独立审计 / Independent audit",
+      "path": "test-results/v0.7/public-paired-audit-v1.json"
+    },
+    {
+      "title": "实验冻结 / Experiment freeze",
+      "path": "docs/v0.7/public_paired_freeze_v1/freeze.json"
+    },
+    {
+      "title": "最终应用与实验兼容 / Release method compatibility",
+      "path": "test-results/v0.7/release-method-compatibility-v1.json"
+    },
+    {
+      "title": "软件测试 / Software tests",
+      "path": "test-results/v07-final-20261002-r2.xml"
+    },
+    {
+      "title": "袋装套件离线证据 ZIP / Bag review evidence",
+      "path": "test-results/browser/public-review-v07/demonstration/evidence.zip"
+    },
+    {
+      "title": "小零件补资料证据 ZIP / Small-part evidence",
+      "path": "test-results/browser/public-review-v07/final-acceptance/small-part-r1-evidence.zip"
+    },
+    {
+      "title": "异常分支实际检查 / Exception acceptance",
+      "path": "test-results/browser/public-review-v07/final-acceptance/api-verification.json"
+    },
+    {
+      "title": "离线与视口验收边界 / Offline and layout scope",
+      "path": "test-results/browser/public-review-v07/final-acceptance/offline-and-layout-verification.json"
+    },
+    {
+      "title": "可选真人试用说明 / Optional user trial",
+      "path": "docs/v0.7/PUBLIC_USER_CHECK_KO_ZH.md"
+    },
+    {
+      "title": "开发期贡献与资格说明 / Contribution disclosure",
+      "path": "docs/v0.7/CONTEST_PERIOD_CONTRIBUTIONS.md"
+    },
+    {
+      "title": "源码解压运行检查 / Source runtime check",
+      "path": "output/KitGuard_source_v0.7.0.zip.verification.json"
+    },
+    {
+      "title": "视频生成与解码记录 / Video verification",
+      "path": "output/demo/v0.7/public-photo-edit-01/video_receipt.json"
+    },
+    {
+      "title": "PDF逐页QA / PDF verification",
+      "path": "output/pdf/v0.7-final/QA.json"
+    },
+    {
+      "title": "幻灯片渲染QA / Slides verification",
+      "path": "test-results/v0.7/presentation-final-qa.json"
+    }
+  ]
+}

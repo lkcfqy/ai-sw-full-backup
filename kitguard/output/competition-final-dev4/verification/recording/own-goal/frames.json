@@ -1,0 +1,71 @@
+{
+  "method": "Timed snapshots from real browser UI, wall-time gaps retained; not a native continuous screen recording",
+  "start": 1791044489187,
+  "frames": [
+    {
+      "path": "0000.jpg",
+      "at": 1791044489261,
+      "event": "current goal before submit"
+    },
+    {
+      "path": "0001.jpg",
+      "at": 1791044501888
+    },
+    {
+      "path": "0002.jpg",
+      "at": 1791044503113
+    },
+    {
+      "path": "0003.jpg",
+      "at": 1791044504431
+    },
+    {
+      "path": "0004.jpg",
+      "at": 1791044505654
+    },
+    {
+      "path": "0005.jpg",
+      "at": 1791044506876
+    },
+    {
+      "path": "0006.jpg",
+      "at": 1791044508103
+    },
+    {
+      "path": "0007.jpg",
+      "at": 1791044509327
+    },
+    {
+      "path": "0008.jpg",
+      "at": 1791044510554
+    },
+    {
+      "path": "0009.jpg",
+      "at": 1791044511784
+    },
+    {
+      "path": "0010.jpg",
+      "at": 1791044513094
+    },
+    {
+      "path": "0011.jpg",
+      "at": 1791044514413
+    },
+    {
+      "path": "0012.jpg",
+      "at": 1791044515741
+    },
+    {
+      "path": "0013.jpg",
+      "at": 1791044516972
+    },
+    {
+      "path": "0014.jpg",
+      "at": 1791044518283
+    },
+    {
+      "path": "0015.jpg",
+      "at": 1791044519505
+    }
+  ]
+}

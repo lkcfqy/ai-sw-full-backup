@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-09-26T15:15:06.150445+00:00",
+  "audit_script_sha256": "ae2b85d100e6dae673b0bdd1e80b7aee808d2d3d22a7c5b46382ec987c2d5a5f",
+  "run_directory": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/v04_ino_two_bracket_v1",
+  "manifest_sha256": "603d26994ba1565de1381293d6782ead26a5eac13eb67dfce38f46116a980c33",
+  "freeze_sha256": "636111211408a5c435e67302aa98689611b159f1b4fa626e27531647637b32bc",
+  "passed": true,
+  "checks": 159,
+  "failures": [],
+  "independent_summary": {
+    "planned_cases": 1,
+    "outcomes": {
+      "C_b": 1,
+      "W_b": 0,
+      "U_b": 0,
+      "E": 0
+    },
+    "author_bracket_count_agreement_fraction": 1.0,
+    "outcome_by_application_clarity": {
+      "C_b": {
+        "app_clear": 1,
+        "app_not_clear": 0
+      },
+      "W_b": {
+        "app_clear": 0,
+        "app_not_clear": 0
+      },
+      "U_b": {
+        "app_clear": 0,
+        "app_not_clear": 0
+      }
+    },
+    "paired_first_final": {
+      "cases": 1,
+      "transitions": {
+        "C_b->C_b": 1,
+        "C_b->W_b": 0,
+        "C_b->U_b": 0,
+        "C_b->E": 0,
+        "W_b->C_b": 0,
+        "W_b->W_b": 0,
+        "W_b->U_b": 0,
+        "W_b->E": 0,
+        "U_b->C_b": 0,
+        "U_b->W_b": 0,
+        "U_b->U_b": 0,
+        "U_b->E": 0
+      }
+    },
+    "constant_one_baseline": {
+      "correct": 0,
+      "denominator": 1,
+      "fraction": 0.0
+    },
+    "by_view_kind": {
+      "full_image": {
+        "cases": 0,
+        "outcomes": {
+          "C_b": 0,
+          "W_b": 0,
+          "U_b": 0,
+          "E": 0
+        }
+      },
+      "author_box_roi": {
+        "cases": 1,
+        "outcomes": {
+          "C_b": 1,
+          "W_b": 0,
+          "U_b": 0,
+          "E": 0
+        }
+      }
+    },
+    "median_pipeline_latency_ms": 15411,
+    "pipeline_latency_n": 1
+  },
+  "input_reconstruction": [
+    {
+      "id": "ino-two-bracket-F-52",
+      "author_view_rebuilt": true,
+      "normalized_available": true,
+      "png_files_verified": 2,
+      "generation_calls_verified": 2,
+      "identity_crops_rebuilt": 0
+    }
+  ],
+  "independence": "No runner scoring/preparation/app/model imports. Original author labels and pixels independently reconstructed using Pillow. No GPU."
+}

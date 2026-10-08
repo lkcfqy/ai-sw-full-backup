@@ -1,0 +1,49 @@
+{
+  "checked_at_utc": "2026-09-26T10:21:08.380773+00:00",
+  "mvtec_screws": {
+    "archive_published_mirror_sha256_matches": true,
+    "original_photos_fully_decoded": 384,
+    "original_archive_members": 394,
+    "local_archive_verification_markers": 1,
+    "all_original_png_dimensions": [
+      1920,
+      1440
+    ],
+    "all_split_vs_global_category_counts_agree": true,
+    "original_unique_annotations": 4427,
+    "author_documented_annotations": 4426,
+    "kitguard_per_class_at_most_3_images": 0
+  },
+  "mvtec_loco_screw_bag": {
+    "full_archive_verification_pending": false,
+    "complete_received_category_original_members": 1007,
+    "original_photos_fully_decoded": 761,
+    "original_masks_fully_decoded": 243,
+    "original_license_readme_and_defect_config_files": 3,
+    "all_original_png_dimensions": [
+      1600,
+      1100
+    ],
+    "counts_match_author_paper": true,
+    "strict_quantity_anomaly_candidates": 48,
+    "frozen_development_images": 16,
+    "frozen_holdout_images": 48,
+    "benchmark_case_paths_and_sha256_verified": 64,
+    "full_archive_bytes": 6126996224,
+    "full_archive_sha256": "9e7c84dba550fd2e59d8e9e231c929c45ba737b6b6a6d3814100f54d63aae687",
+    "staging_vs_verified_original_files_compared": 1007,
+    "staging_vs_verified_differences": 0,
+    "staging_vs_verified_benchmark_case_identity_match": true,
+    "source_integrity_audit": "datasets/manifests/mvtec_loco_screw_bag/pending_to_verified_audit.json"
+  },
+  "downloader_checks": [
+    "path traversal rejected",
+    "symlink rejected",
+    "hardlink rejected",
+    "selective category extraction keeps distinct root/category README files",
+    "partial HTTP range resumes exact missing suffix",
+    "mixed/multiple/structural mask labels do not become exact count truth",
+    "deterministic frozen case selection preserved on rerun"
+  ],
+  "accuracy_claim": "These are source integrity and software checks, not recognition accuracy measurements."
+}

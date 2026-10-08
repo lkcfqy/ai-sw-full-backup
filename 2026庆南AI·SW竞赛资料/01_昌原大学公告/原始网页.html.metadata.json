@@ -1,0 +1,15 @@
+{
+  "local_path": "01_昌原大学公告/原始网页.html",
+  "source_url": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+  "final_url": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "size": 89778,
+  "headers": {
+    "Content-Language": "en-US",
+    "Date": "Thu, 24 Sep 2026 07:27:04 GMT",
+    "Set-Cookie": "WMONID=-oQBqiyfjt9; Expires=Fri, 24-Sep-2027 16:27:03 GMT; Path=/",
+    "Connection": "close",
+    "Content-Type": "text/html; charset=UTF-8"
+  }
+}

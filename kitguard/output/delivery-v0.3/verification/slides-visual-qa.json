@@ -1,0 +1,78 @@
+{
+  "created_at": "2026-09-26T13:31:56.602612+00:00",
+  "result": "pass",
+  "presentation": "output/presentations/KitGuard_검증보충_v0.3.pptx",
+  "presentation_sha256": "4cfe783b4ce5561c35df087558639abfd33f4f51bc75685ed5f6e935e2502c26",
+  "pages": 6,
+  "render_engine": "ArtifactTool import of finalized PPTX and PNG export, 1920x1080 each",
+  "slides": [
+    {
+      "slide": 1,
+      "render": "output/presentations/qa-v0.3/slide-1.png",
+      "sha256": "8b286ed4ebb1f1bf1039ee548f5025781fca380c3dc1332804ff8e36ad8a4ec8",
+      "individually_viewed_at_full_resolution": true,
+      "result": "pass"
+    },
+    {
+      "slide": 2,
+      "render": "output/presentations/qa-v0.3/slide-2.png",
+      "sha256": "079aab1ff1a8fb317d27c1d568d940735abe64591f6f782d45f87fd3af9c387e",
+      "individually_viewed_at_full_resolution": true,
+      "result": "pass"
+    },
+    {
+      "slide": 3,
+      "render": "output/presentations/qa-v0.3/slide-3.png",
+      "sha256": "6379a17c5590babc842e8f24ea8d18faf3f83ca69ce732a4dc44325721018478",
+      "individually_viewed_at_full_resolution": true,
+      "result": "pass"
+    },
+    {
+      "slide": 4,
+      "render": "output/presentations/qa-v0.3/slide-4.png",
+      "sha256": "18a39c0a9461aad9766f0b981df1974f7f5998c65b6d7fb7432ef5aefb8e798a",
+      "individually_viewed_at_full_resolution": true,
+      "result": "pass"
+    },
+    {
+      "slide": 5,
+      "render": "output/presentations/qa-v0.3/slide-5.png",
+      "sha256": "91066723f25e38ede707a521e205e9ee5b8bdc38f6f9005412168fdbe202d329",
+      "individually_viewed_at_full_resolution": true,
+      "result": "pass"
+    },
+    {
+      "slide": 6,
+      "render": "output/presentations/qa-v0.3/slide-6.png",
+      "sha256": "28ca3d4a859da79b4d2915bb71b65d84b87190fa3fa451804dd680f24b525a5b",
+      "individually_viewed_at_full_resolution": true,
+      "result": "pass"
+    }
+  ],
+  "native_tables": [
+    3,
+    4,
+    6
+  ],
+  "editable_architecture_slide": 2,
+  "source_validation": "Complete gate/audit for 28 development and 64 holdout, actual completed candidate-real-api-v2 receipt, JUnit428, HTTP response hashes and saved public demo orders checked before creation",
+  "content_checks": [
+    "C/W/U/E denominators match completed grouped gate; 59C/0W/5U/0E, not raw invented60",
+    "Two first-pass errors blocked, three correct first-pass results abstained",
+    "Correct API decision means quantity adjustment needed, ready remains physical-confirmation-pending",
+    "4 actual inspection requests and1 actual NL request are separate; low-level model calls not conflated",
+    "Actual whole Korean screenshots preserve original aspect ratio; no physical replenishment claim",
+    "90-degree CCW actual rotation, not180",
+    "Korean line breaks, table readability, slide footers and margins inspected on all6 final slides",
+    "Previous visual revision retained privately; old v0.2 deck unchanged"
+  ],
+  "powerpoint_opened": false,
+  "google_slides_opened": false,
+  "libreoffice_used": false,
+  "limitations": [
+    "Screenshots contain public development photographs and are software/API evidence, not new test scenes or field task completion",
+    "Rendered visual verification does not establish native PowerPoint/Google Slides application behavior",
+    "No external preregistration, contest score, first-place guarantee, field generalization or operator time saving claim"
+  ],
+  "manual_arithmetic_note": "Native checker does not parse vector cells as summable amounts; exact C/W/U/E sums and rates are independently checked by the shared evidence validator and compared to displayed text."
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "verifier": "independent_study_export_v1",
+  "status": "verified_internal_consistency",
+  "verified_at": "2026-09-26T14:50:37.100698+00:00",
+  "errors": [],
+  "limitations": [
+    "Internal consistency only; an entirely rewritten unsigned document cannot be authenticated.",
+    "No image bytes are provided, so stored image digests are checked as bindings, not recomputed.",
+    "Elapsed milliseconds are checked and summarized, not independently remeasured.",
+    "Self-reported sources, independent counting, and physical reality are not verified.",
+    "Checks/events omitted consistently from all document sections cannot be detected without an external log."
+  ],
+  "physical_authenticity_verified": false,
+  "photo_bytes_verified": false,
+  "signature_verified": false,
+  "study_id": "study_d2cf19099c274ae38f39",
+  "source_kind": "engineering_fixture",
+  "planned_cases": 6,
+  "registered_cases": 6,
+  "checked_trials": 9,
+  "recomputed_methods": {
+    "manual": {
+      "correct": 3,
+      "wrong": 1,
+      "uncertain": 0,
+      "failed": 0,
+      "abandoned": 1,
+      "interrupted": 0,
+      "not_started": 1,
+      "planned": 6,
+      "started": 5,
+      "completed": 4,
+      "correct_fraction": 0.5,
+      "terminal_elapsed_ms": {
+        "n": 5,
+        "median": 67,
+        "max": 618
+      },
+      "completed_elapsed_ms": {
+        "n": 4,
+        "median": 66.5,
+        "max": 618
+      },
+      "false_ready": null,
+      "returned_checks": {
+        "total": 0,
+        "scorable": 0,
+        "wrong_clear": 0,
+        "false_ready": 0,
+        "uncertain": 0,
+        "multiple_attempt_trials": 0,
+        "ineligible_backend_or_identity": 0
+      }
+    },
+    "kitguard": {
+      "correct": 1,
+      "wrong": 1,
+      "uncertain": 1,
+      "failed": 1,
+      "abandoned": 0,
+      "interrupted": 0,
+      "not_started": 2,
+      "planned": 6,
+      "started": 4,
+      "completed": 3,
+      "correct_fraction": 0.16666666666666666,
+      "terminal_elapsed_ms": {
+        "n": 4,
+        "median": 290.0,
+        "max": 906
+      },
+      "completed_elapsed_ms": {
+        "n": 3,
+        "median": 290,
+        "max": 906
+      },
+      "false_ready": {
+        "numerator": 1,
+        "denominator": 5
+      },
+      "returned_checks": {
+        "total": 3,
+        "scorable": 3,
+        "wrong_clear": 1,
+        "false_ready": 1,
+        "uncertain": 1,
+        "multiple_attempt_trials": 0,
+        "ineligible_backend_or_identity": 0
+      }
+    }
+  },
+  "input_sha256": "de03e72310d58b55cf01f6b2d052dcac48609efc0a2250f71423336108c78a8d",
+  "verifier_sha256": "4d2c60a29f9609af3e84b0d4612c6e3a9a0a918b05d5e0ede01cb69358b9919e"
+}

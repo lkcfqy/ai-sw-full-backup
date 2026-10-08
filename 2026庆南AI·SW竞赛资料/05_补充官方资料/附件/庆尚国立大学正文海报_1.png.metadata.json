@@ -1,0 +1,16 @@
+{
+  "url": "https://www.gnu.ac.kr/common/nttEditorImgView.do?imgKey=f2efe25eb96a62496262729d32426a8a",
+  "path": "05_补充官方资料/附件/庆尚国立大学正文海报_1.png",
+  "source": "https://www.gnu.ac.kr/aero/na/ntt/selectNttInfo.do?mi=13821&nttSn=8570562",
+  "kind": "content_image",
+  "retrieved_at": "2026-09-24T16:35:11.809985+09:00",
+  "http_status": 200,
+  "final_url": "https://www.gnu.ac.kr/common/nttEditorImgView.do?imgKey=f2efe25eb96a62496262729d32426a8a",
+  "content_type": "application/octer-stream",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": "attachment; filename=\"\"IMG_135302256.png\"\"",
+  "bytes": 1294252,
+  "sha256": "f55212bf3248db46a493ffa4cf468824131e6126ef26d738167bb063abe1798e",
+  "magic_hex": "89504e470d0a1a0a0000000d49484452"
+}

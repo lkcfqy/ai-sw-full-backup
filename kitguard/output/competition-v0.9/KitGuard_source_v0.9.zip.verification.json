@@ -1,0 +1,43 @@
+{
+  "archive_sha256": "87818a5b1742559fac3376b59997da721be8706eb2bc5de5c74bdd99bf0cbe5a",
+  "preview": true,
+  "runtime": {
+    "human_participants": 0,
+    "invalid_upload": 422,
+    "mlx_imported": false,
+    "model_calls": 0,
+    "multipart_create": 201,
+    "physical_complete": 409,
+    "public_samples": [
+      "bag-revision",
+      "small-part",
+      "mixed-screws"
+    ],
+    "root_replace": 409,
+    "routes": {
+      "/": 200,
+      "/?new=photo-document": 200,
+      "/api/orders": 200,
+      "/static/app.js": 200,
+      "/static/audit.js": 200,
+      "/static/demo.css": 200,
+      "/static/demo.html": 200,
+      "/static/demo.js": 200,
+      "/static/digital-resolution.css": 200,
+      "/static/digital-resolution.js": 200,
+      "/static/photo-documents.js": 200,
+      "/static/public-review.css": 200,
+      "/static/public-review.js": 200,
+      "/static/readiness.html": 200,
+      "/static/workflow.js": 200
+    },
+    "synthetic": true,
+    "unverified_source_preserved": true,
+    "version": "0.9.0.dev1",
+    "zip_manifest_verified": true
+  },
+  "scope": "Existing dependencies; synthetic HTTP only, no clean install, model or browser",
+  "shell_syntax": "passed",
+  "status": "passed",
+  "version": "0.9.0.dev1"
+}

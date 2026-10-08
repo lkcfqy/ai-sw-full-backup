@@ -1,0 +1,21 @@
+{
+  "version": "0.9.0.dev4",
+  "duration_requested_seconds": 177.382,
+  "own_goal_seconds": 31.244,
+  "all_raw_wall_seconds": 139.138,
+  "post_completion_hold_seconds": 2,
+  "server_mission_ms": 137071,
+  "human_validation_participants": 0,
+  "physical_completions": 0,
+  "new_accuracy_denominator": 0,
+  "method": "Timed actual browser samples, actual gaps held as still screens; no native continuous recording claim. Full own-goal and all-case timelines retained, final completed screen held2 extra seconds. All model waits retained. Final5sec tool-result still. Separate captions and local Yuna synthetic narration. Screenshots unretouched.",
+  "input_frame_manifests": {
+    "own-goal": "de3a9e3d151053a6e1c60c87e06de6bbabbc679075281293d5a942bea66e345b",
+    "all-cases": "af1a536b727e53e9433d98b72afb6a72bea6084e3c714f5f5cbe15498da06466"
+  },
+  "sha256": "3a4eb4554935d6e9e38ae03a33c0b286246b4d03e7d6356a1671693d879cb9d5",
+  "full_decode": "passed",
+  "visual_qa": "verified_captions_and_actual_input_wait_completion_tool_frames",
+  "native_browser_playback": "verified",
+  "duration_seconds": 177.416667
+}

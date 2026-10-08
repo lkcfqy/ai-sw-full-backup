@@ -1,0 +1,20 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Text,Arial Unicode MS,32,&H00353D12,&H000000FF,&H00F2F8F8,&H00F2F8F8,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,20)\fs24\c&H353D12&\b0}API 실행 기록 + 브라우저 정지 화면 편집 · 연속 녹화 아님 · 실제 사용자 0명
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(1500,20)\fs24\c&H353D12&\b0}KitGuard · 0.8.0.dev1 preview
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,65)\fs44\c&H353D12&\b1}04  같은 사진, 새 버전에서 다시 추론
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,185)\fs30\c&H353D12&\b1}공간 관찰 2회\N+ 조건부 부품 종류 확인
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,415)\fs30\c&H353D12&\b1}수량·버전 비교\N프로그램 도구 실행
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,645)\fs30\c&H353D12&\b1}R2 검사 47.728초\Nready: 디지털 일치
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(448,900)\fs22\c&H646B56&\b0}실제 두 검사 이력 · 로컬 MLX · 이번 실행의 참고 사진 입력 0장
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,944)\fs29\c&H353D12&\b0}두 검사에서 공간 관찰 2회와 조건부 부품 종류 확인이 각각 실행됐습니다: 총 6생성.\N같은 사진에서 새 관찰을 얻고 프로그램이 R2 요구와 비교했습니다. 실물 보충 기록은 아닙니다.
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,1038)\fs19\c&H646B56&\b0}사용한 MVTec LOCO AD 사진: CC BY-NC-SA 4.0 · mvtec.com/research-teaching/datasets/mvtec-loco-ad

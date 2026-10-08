@@ -1,0 +1,44 @@
+{
+  "at": "2026-10-03T18:16:29.678316+00:00",
+  "status": "passed",
+  "scope": "Internal subjective rubric review; supplementary to the five contest deliverables",
+  "report_id": "report:0d8df11f-f7ed-40ba-a79f-747fee96ec7c",
+  "build_status": "complete",
+  "snapshot_sha256": "0f67b79f948f2a331053b50386e4952dab3224f5b9a93bd419cf2f865a3e0233",
+  "portable_html_sha256": "7f23d1f8c782c8dd8893caa33606be0244700eb01fb4897f0d491c19c17c0598",
+  "official_weights_and_all_round_sums": "verified",
+  "rounds": 5,
+  "categories": 7,
+  "candidates": 12,
+  "browser_checks": {
+    "normal_layout": "verified",
+    "narrow_layout": "verified at browser innerWidth 375px / document width 360px; no page overflow",
+    "candidate_pagination": "verified 8 plus 4 rows",
+    "source_inspector": "verified overview and seven-row data preview",
+    "report_console_errors": [],
+    "portal_console_errors": [],
+    "offline_evidence": "3 cases, 4 checks, saved R2, three loaded photos",
+    "native_video": "verified; receipt in verification/video-browser.json"
+  },
+  "screenshots": [
+    {
+      "path": "verification/ui/score-normal-final.png",
+      "sha256": "ede948b5f51a586e7efad6749a02351060d20bcbe05ec73a25b9c30043b16e10"
+    },
+    {
+      "path": "verification/ui/score-narrow-final.png",
+      "sha256": "9b51c4883dff354195e57a6108380eb864bb8ec54964fa2aa36f2f1fb218a8f5"
+    },
+    {
+      "path": "verification/ui/portal.png",
+      "sha256": "025471184dd9ff51eb42568c01ac6ed0805f40b1183645604b1929ce69c549bd"
+    },
+    {
+      "path": "verification/ui/offline-evidence.png",
+      "sha256": "22edbef16d4551230a6c42f4d0f0aeef28716308cf9b8c481094464184985894"
+    }
+  ],
+  "live_preview": "http://127.0.0.1:8797/?view=1",
+  "qualification_receipt": null,
+  "submission_receipt": null
+}

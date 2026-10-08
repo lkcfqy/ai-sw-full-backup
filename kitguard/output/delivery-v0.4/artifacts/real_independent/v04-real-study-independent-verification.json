@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "verifier": "independent_study_export_v1",
+  "status": "verified_internal_consistency",
+  "verified_at": "2026-09-26T15:05:46.495708+00:00",
+  "errors": [],
+  "limitations": [
+    "Internal consistency only; an entirely rewritten unsigned document cannot be authenticated.",
+    "No image bytes are provided, so stored image digests are checked as bindings, not recomputed.",
+    "Elapsed milliseconds are checked and summarized, not independently remeasured.",
+    "Self-reported sources, independent counting, and physical reality are not verified.",
+    "Checks/events omitted consistently from all document sections cannot be detected without an external log."
+  ],
+  "physical_authenticity_verified": false,
+  "photo_bytes_verified": false,
+  "signature_verified": false,
+  "study_id": "study_0fe89d0da49944929c1a",
+  "source_kind": "public_replay",
+  "planned_cases": 3,
+  "registered_cases": 3,
+  "checked_trials": 6,
+  "recomputed_methods": {
+    "manual": {
+      "correct": 3,
+      "wrong": 0,
+      "uncertain": 0,
+      "failed": 0,
+      "abandoned": 0,
+      "interrupted": 0,
+      "not_started": 0,
+      "planned": 3,
+      "started": 3,
+      "completed": 3,
+      "correct_fraction": 1.0,
+      "terminal_elapsed_ms": {
+        "n": 3,
+        "median": 5,
+        "max": 5
+      },
+      "completed_elapsed_ms": {
+        "n": 3,
+        "median": 5,
+        "max": 5
+      },
+      "false_ready": null,
+      "returned_checks": {
+        "total": 0,
+        "scorable": 0,
+        "wrong_clear": 0,
+        "false_ready": 0,
+        "uncertain": 0,
+        "multiple_attempt_trials": 0,
+        "ineligible_backend_or_identity": 0
+      }
+    },
+    "kitguard": {
+      "correct": 2,
+      "wrong": 0,
+      "uncertain": 1,
+      "failed": 0,
+      "abandoned": 0,
+      "interrupted": 0,
+      "not_started": 0,
+      "planned": 3,
+      "started": 3,
+      "completed": 3,
+      "correct_fraction": 0.6666666666666666,
+      "terminal_elapsed_ms": {
+        "n": 3,
+        "median": 20618,
+        "max": 50122
+      },
+      "completed_elapsed_ms": {
+        "n": 3,
+        "median": 20618,
+        "max": 50122
+      },
+      "false_ready": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "returned_checks": {
+        "total": 3,
+        "scorable": 3,
+        "wrong_clear": 0,
+        "false_ready": 0,
+        "uncertain": 1,
+        "multiple_attempt_trials": 0,
+        "ineligible_backend_or_identity": 0
+      }
+    }
+  },
+  "input_sha256": "f4b04b874a2a6df2f5fe72ad246c3f844ae576582896b3fdd565862dcf4fca94",
+  "verifier_sha256": "4d2c60a29f9609af3e84b0d4612c6e3a9a0a918b05d5e0ede01cb69358b9919e"
+}

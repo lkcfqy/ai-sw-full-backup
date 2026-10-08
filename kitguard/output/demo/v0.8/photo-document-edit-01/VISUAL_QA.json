@@ -1,0 +1,60 @@
+{
+  "schema": "kitguard.v08.video-visual-qa.v1",
+  "status": "passed",
+  "checked_at": "2026-10-02T03:08:38.374916+00:00",
+  "reviewer": "AI author /root/public_workflow",
+  "video": {
+    "path": "output/demo/v0.8/photo-document-edit-01/KitGuard_v08_photo_document_edit_ko.mp4",
+    "sha256": "faeb3b16fee34370a2b04e2beacc726b8c7a419d90d18180bceb7f9dc9320857",
+    "bytes": 2374331
+  },
+  "duration_seconds": 135.0,
+  "full_decode_passed": true,
+  "ffprobe_available": false,
+  "audio_tracks": 0,
+  "source_inputs_unchanged": true,
+  "source_json_copies_identical": true,
+  "encoding_receipt_sha256": "12953ab4c6d21453241a7ed2b1f8a361399cd0febedc071bf55a748ecd49bde8",
+  "exact_frame_index": {
+    "path": "output/demo/v0.8/photo-document-edit-01/qa-exact/index.json",
+    "sha256": "e7ac1e55c215379cc95c02cd1383c2b1c08d24785195bef3325157f65e0afff1"
+  },
+  "actual_pre_cut_frames": {
+    "path": "output/demo/v0.8/photo-document-edit-01/qa-boundary-before/index.json",
+    "sha256": "ca695a5204a571475fbd777c1402380d457d7172f84b49bd603a3bd5c404e52f"
+  },
+  "encoded_timeline_sha256": "d95ccabecfa1236468fa82c505da3d2c07206ca43ad40bd86ece333843033a65",
+  "visual_review_scope": {
+    "exact_frames_individually_viewed": 23,
+    "all_six_scene_midpoints": true,
+    "all_five_actual_cut_before_after_pairs": true,
+    "first_last_frames": true,
+    "all_3240_frames_visually_watched": false,
+    "all_3240_frames_machine_decoded": true
+  },
+  "findings": [
+    "All six scene titles, Korean facts/subtitles and persistent edited/noncontinuous/zero-human label legible; no cutoff or missing Korean glyphs.",
+    "R1 Chinese history is translated accurately, R2 explicit API requirement change and same-photo new inference remain distinct.",
+    "ENGINEERING-AGENT opinions remain inconclusive, not human feedback or acceptance; physical completion is zero.",
+    "Last scene is an explicitly labelled fact card, not a invented browser download interaction.",
+    "No synthetic UI, new capture, new model call, audio track or model-accuracy claim.",
+    "Actual five cuts are 1 frame earlier than nominal edit schedule; exact before/after frames recorded. Screenshot and captions always transition together."
+  ],
+  "human_participants": 0,
+  "new_model_calls": 0,
+  "continuous_recording": false,
+  "independent_final_review": "pending separately; preliminary encode approval already present",
+  "cpu_contracts": {
+    "command": ".venv/bin/python -m pytest -q tests/test_demo_video_v08.py",
+    "passed": 5,
+    "warnings": 1,
+    "warning_scope": "existing Starlette test-client deprecation",
+    "ruff": "passed"
+  },
+  "limitations": [
+    "Browser file upload remains unverified due earlier chooser permission limit; no new attempt or permission change",
+    "file:// visual inspection remains unverified due policy; no alternate browser or HTTP workaround",
+    "This pass displays completed real API history, not a new real-time model run or new accuracy evaluation",
+    "Engineer-authored inconclusive digital opinions are not human participation or acceptance of correctness"
+  ]
+}

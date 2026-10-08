@@ -1,0 +1,346 @@
+{
+  "surface": "report",
+  "title": "KitGuard · 开发与比赛自评记录",
+  "generatedAt": "2026-10-03T17:40:05.716293+00:00",
+  "status": "reviewed",
+  "buildStatus": "complete",
+  "filters": [],
+  "report": {
+    "asOf": "2026-10-04"
+  },
+  "queries": {
+    "rubric": {
+      "rows": [
+        {
+          "id": "problem",
+          "name": "问题与主题",
+          "max": 15,
+          "score": 12,
+          "subscores": "5/3/4",
+          "reason": "预先固定任务范围、成功标准与完整分母，5任务达到预定流程结果。目标用户问题与价值仍为场景假设。"
+        },
+        {
+          "id": "agent",
+          "name": "Agent 自主性",
+          "max": 20,
+          "score": 18,
+          "subscores": "3.5/4/3.5/4/3",
+          "reason": "支持当前用户照片与 BOM，接受前冻结输入；真实新推理与分支完成。目标范围仍限于四种粗类别，未支持自由任务规划。"
+        },
+        {
+          "id": "technical",
+          "name": "技术实现",
+          "max": 20,
+          "score": 18.5,
+          "subscores": "7.5/5.5/5.5",
+          "reason": "当前目标、失败归档和过期拒绝有实测；1877项全回归、68项解压源码合同及隔离导入通过。视觉错误和新机器安装边界仍存在。"
+        },
+        {
+          "id": "novelty",
+          "name": "新颖性",
+          "max": 10,
+          "score": 6.5,
+          "subscores": "2.5/4",
+          "reason": "对照明确展示版本保护的差异；对照为自行实现的省略绑定流程，不能证明首创或竞品优势。"
+        },
+        {
+          "id": "effects",
+          "name": "实际效果",
+          "max": 15,
+          "score": 9.5,
+          "subscores": "4/3/2.5",
+          "reason": "五项机器流程和版本消融已完成；补充四次服务器任务时间及容量假设，未验证新图、人效或持续吞吐。"
+        },
+        {
+          "id": "safety",
+          "name": "数据与安全",
+          "max": 10,
+          "score": 8.5,
+          "subscores": "3/2.5/3",
+          "reason": "本地数据、来源与失败边界清楚；已知 51 图中仍有 3 个 false-ready。"
+        },
+        {
+          "id": "business",
+          "name": "商业模式与答辩",
+          "max": 10,
+          "score": 7.5,
+          "subscores": "3.5/2/1/1",
+          "reason": "同版本五件套与讲稿完成，视频和所有页面已检查，来源/AI复用披露齐备。真人答辩和客户验证尚未执行，因此问答项不额外增加。"
+        }
+      ],
+      "source": {
+        "title": "KitGuard official-rubric review",
+        "kind": "local_files_and_official_document",
+        "executedAt": "2026-10-03T17:40:05.716293+00:00",
+        "files": [
+          "docs/scoring/CAPACITY.json",
+          "docs/scoring/PRESENTATION_SCRIPT_KO.md",
+          "docs/scoring/PRIOR_ART_POSITION_KO_ZH.md",
+          "docs/scoring/SOURCE_AI_DISCLOSURE_KO.md",
+          "docs/scoring/ledger.json",
+          "output/competition-final-dev4/KitGuard_presentation_9slides.pptx",
+          "output/competition-final-dev4/KitGuard_report_5p.pdf",
+          "output/competition-final-dev4/RELEASE_ACCEPTANCE.json",
+          "output/competition-final-dev4/video-build.json",
+          "output/competition-v0.9-autonomy/START_HERE.html",
+          "output/competition-v0.9/START_HERE.html",
+          "test-results/scoring-v1/GOAL_ACCEPTANCE.json",
+          "test-results/scoring-v1/full-regression.xml",
+          "test-results/scoring-v1/goal-completed-ko.jpg",
+          "test-results/scoring-v1/goal-contracts.xml",
+          "test-results/scoring-v1/machine-tasks/RESULTS.json",
+          "test-results/scoring-v1/machine-tasks/changed-bom-before.json",
+          "test-results/scoring-v1/machine-tasks/protocol.json",
+          "test-results/scoring-v1/machine-tasks/quantity-run.json",
+          "test-results/scoring-v1/official-rules.docx",
+          "test-results/scoring-v1/release-source-contracts.xml",
+          "test-results/v0.9/autonomy/ACCEPTANCE.json",
+          "test-results/v0.9/autonomy/full-regression-v1.xml"
+        ],
+        "links": [
+          {
+            "label": "比赛官方规则公告",
+            "url": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=5"
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "官方权重",
+            "detail": "读取比赛方正式附件附录4、5；资格与接收未知，不赋0或满分。"
+          },
+          {
+            "title": "证据与自评",
+            "detail": "来源为版本冻结、预定任务、真实模型执行和制品验收。取值是当前开发审查者的主观判断，未按评委评分校准。"
+          },
+          {
+            "title": "停止范围",
+            "detail": "已完成本轮有明确评分缺口且可验证的改善项；其余候选为负面、证据不足或用户约束排除。按已审计候选范围停止，不证明所有未来方案的全局最高分。新独立数据、实际用户/现场效果、商业需求或评委反馈到来后，判断仍可能改变。"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "自评总分",
+            "definition": "官方附录5七项权重下的主观开发自评分相加，满分100，非测量准确率或官方成绩；加分0。",
+            "componentIds": [
+              "rubric-table",
+              "score-summary"
+            ],
+            "formula": "sum(score)",
+            "sourceLineage": [
+              {
+                "files": [
+                  "test-results/scoring-v1/official-rules.docx",
+                  "docs/scoring/ledger.json"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "rounds": {
+      "rows": [
+        {
+          "round": "起点 · dev3",
+          "score": 72.5,
+          "change": 0.0,
+          "evidence": "既有三场景/四次推理；完整材料为dev1"
+        },
+        {
+          "round": "当前资料自主目标",
+          "score": 75.0,
+          "change": 2.5,
+          "evidence": "当前输入目标、失败归档、过期拒绝；1877项回归"
+        },
+        {
+          "round": "预定机器任务对照",
+          "score": 78.5,
+          "change": 3.5,
+          "evidence": "五项预定机器任务；四次新推理和同观测版本消融"
+        },
+        {
+          "round": "容量与部署说明",
+          "score": 79.5,
+          "change": 1.0,
+          "evidence": "四次服务器任务时间推导容量，持续吞吐和客户价格未知"
+        },
+        {
+          "round": "同版本材料与验收",
+          "score": 80.5,
+          "change": 1.0,
+          "evidence": "五页+一页PDF、九页PPT、177秒视频、源码合同68项"
+        }
+      ],
+      "source": {
+        "title": "KitGuard official-rubric review",
+        "kind": "local_files_and_official_document",
+        "executedAt": "2026-10-03T17:40:05.716293+00:00",
+        "files": [
+          "docs/scoring/CAPACITY.json",
+          "docs/scoring/PRESENTATION_SCRIPT_KO.md",
+          "docs/scoring/PRIOR_ART_POSITION_KO_ZH.md",
+          "docs/scoring/SOURCE_AI_DISCLOSURE_KO.md",
+          "docs/scoring/ledger.json",
+          "output/competition-final-dev4/KitGuard_presentation_9slides.pptx",
+          "output/competition-final-dev4/KitGuard_report_5p.pdf",
+          "output/competition-final-dev4/RELEASE_ACCEPTANCE.json",
+          "output/competition-final-dev4/video-build.json",
+          "output/competition-v0.9-autonomy/START_HERE.html",
+          "output/competition-v0.9/START_HERE.html",
+          "test-results/scoring-v1/GOAL_ACCEPTANCE.json",
+          "test-results/scoring-v1/full-regression.xml",
+          "test-results/scoring-v1/goal-completed-ko.jpg",
+          "test-results/scoring-v1/goal-contracts.xml",
+          "test-results/scoring-v1/machine-tasks/RESULTS.json",
+          "test-results/scoring-v1/machine-tasks/changed-bom-before.json",
+          "test-results/scoring-v1/machine-tasks/protocol.json",
+          "test-results/scoring-v1/machine-tasks/quantity-run.json",
+          "test-results/scoring-v1/official-rules.docx",
+          "test-results/scoring-v1/release-source-contracts.xml",
+          "test-results/v0.9/autonomy/ACCEPTANCE.json",
+          "test-results/v0.9/autonomy/full-regression-v1.xml"
+        ],
+        "links": [
+          {
+            "label": "比赛官方规则公告",
+            "url": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=5"
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "官方权重",
+            "detail": "读取比赛方正式附件附录4、5；资格与接收未知，不赋0或满分。"
+          },
+          {
+            "title": "证据与自评",
+            "detail": "来源为版本冻结、预定任务、真实模型执行和制品验收。取值是当前开发审查者的主观判断，未按评委评分校准。"
+          },
+          {
+            "title": "停止范围",
+            "detail": "已完成本轮有明确评分缺口且可验证的改善项；其余候选为负面、证据不足或用户约束排除。按已审计候选范围停止，不证明所有未来方案的全局最高分。新独立数据、实际用户/现场效果、商业需求或评委反馈到来后，判断仍可能改变。"
+          }
+        ],
+        "metricDefinitions": []
+      }
+    },
+    "candidates": {
+      "rows": [
+        {
+          "id": "own_goal",
+          "status": "done",
+          "reason": "真实当前照片与 BOM 目标、过期绑定拒绝、失败输入归档"
+        },
+        {
+          "id": "task_comparison",
+          "status": "done",
+          "reason": "预定至少5个代表机器任务；不声称真人提效或新图准确率"
+        },
+        {
+          "id": "five_same_version",
+          "status": "done",
+          "reason": "5页报告、1页Agent、源码、177秒视频、9张PPT统一dev4；源码、媒体及全页验收完成。"
+        },
+        {
+          "id": "visual_candidates",
+          "status": "negative_evidence",
+          "reason": "以前的 reference/consensus/transfer 候选未满足发布标准，保持失败记录与模型不变"
+        },
+        {
+          "id": "human_field_outcomes",
+          "status": "constraint_excluded",
+          "reason": "用户排除真人招募与实物购买，不编造实际用户收益"
+        },
+        {
+          "id": "customer_pricing",
+          "status": "unknown_not_awarded",
+          "reason": "没有验证需求或付费意愿，定价与收益仅能作为假设"
+        },
+        {
+          "id": "judge_rank",
+          "status": "not_observable",
+          "reason": "其他作品与评委判断未知，不能保证第一"
+        },
+        {
+          "id": "deployment_capacity",
+          "status": "done",
+          "reason": "以四次服务器任务时间建立占用率场景和容量边界；明确是计算假设，客户价格和持续吞吐未知。"
+        },
+        {
+          "id": "prior_art_scope",
+          "status": "done_no_score_change",
+          "reason": "阅读HALCON、Roboflow、Cognex官方资料，收窄独创性主张；未做产品实测，不增加分数。"
+        },
+        {
+          "id": "repeat_exposed_photos",
+          "status": "no_supported_uplift",
+          "reason": "再跑旧图只能补运行记录，不能增加新图或真人分母；没有依据额外计分。"
+        },
+        {
+          "id": "more_feature_count",
+          "status": "no_supported_uplift",
+          "reason": "官方第28条重视3–5核心功能稳定连接。未验证的SKU猜测、自由规划或更多页面没有可计分效果证据。"
+        },
+        {
+          "id": "new_independent_evidence",
+          "status": "unknown_not_awarded",
+          "reason": "新的独立图片/标注与实际部署仍可能改变判断，但当前缺少新评估和改善证据；不把未知效果提前加分。"
+        }
+      ],
+      "source": {
+        "title": "KitGuard official-rubric review",
+        "kind": "local_files_and_official_document",
+        "executedAt": "2026-10-03T17:40:05.716293+00:00",
+        "files": [
+          "docs/scoring/CAPACITY.json",
+          "docs/scoring/PRESENTATION_SCRIPT_KO.md",
+          "docs/scoring/PRIOR_ART_POSITION_KO_ZH.md",
+          "docs/scoring/SOURCE_AI_DISCLOSURE_KO.md",
+          "docs/scoring/ledger.json",
+          "output/competition-final-dev4/KitGuard_presentation_9slides.pptx",
+          "output/competition-final-dev4/KitGuard_report_5p.pdf",
+          "output/competition-final-dev4/RELEASE_ACCEPTANCE.json",
+          "output/competition-final-dev4/video-build.json",
+          "output/competition-v0.9-autonomy/START_HERE.html",
+          "output/competition-v0.9/START_HERE.html",
+          "test-results/scoring-v1/GOAL_ACCEPTANCE.json",
+          "test-results/scoring-v1/full-regression.xml",
+          "test-results/scoring-v1/goal-completed-ko.jpg",
+          "test-results/scoring-v1/goal-contracts.xml",
+          "test-results/scoring-v1/machine-tasks/RESULTS.json",
+          "test-results/scoring-v1/machine-tasks/changed-bom-before.json",
+          "test-results/scoring-v1/machine-tasks/protocol.json",
+          "test-results/scoring-v1/machine-tasks/quantity-run.json",
+          "test-results/scoring-v1/official-rules.docx",
+          "test-results/scoring-v1/release-source-contracts.xml",
+          "test-results/v0.9/autonomy/ACCEPTANCE.json",
+          "test-results/v0.9/autonomy/full-regression-v1.xml"
+        ],
+        "links": [
+          {
+            "label": "比赛官方规则公告",
+            "url": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=5"
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "官方权重",
+            "detail": "读取比赛方正式附件附录4、5；资格与接收未知，不赋0或满分。"
+          },
+          {
+            "title": "证据与自评",
+            "detail": "来源为版本冻结、预定任务、真实模型执行和制品验收。取值是当前开发审查者的主观判断，未按评委评分校准。"
+          },
+          {
+            "title": "停止范围",
+            "detail": "已完成本轮有明确评分缺口且可验证的改善项；其余候选为负面、证据不足或用户约束排除。按已审计候选范围停止，不证明所有未来方案的全局最高分。新独立数据、实际用户/现场效果、商业需求或评委反馈到来后，判断仍可能改变。"
+          }
+        ],
+        "metricDefinitions": []
+      }
+    }
+  },
+  "id": "report:0d8df11f-f7ed-40ba-a79f-747fee96ec7c",
+  "scoreNarrative": "保守自评沿证据推进：72.5 → 75 → 78.5 → 79.5 → 80.5，合计增加8分。已完成当前资料目标、前瞻机器任务对照、容量说明与同版本五件套。问答未实演，用户和识别限制仍扣分。",
+  "screeningContent": 80,
+  "scoringStop": "已完成本轮有明确评分缺口且可验证的改善项；其余候选为负面、证据不足或用户约束排除。按已审计候选范围停止，不证明所有未来方案的全局最高分。新独立数据、实际用户/现场效果、商业需求或评委反馈到来后，判断仍可能改变。"
+}

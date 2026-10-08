@@ -1,0 +1,36 @@
+{
+  "selection": "FFmpeg exact decoded index select=eq(n,...)",
+  "video_sha256": "faeb3b16fee34370a2b04e2beacc726b8c7a419d90d18180bceb7f9dc9320857",
+  "frames": [
+    {
+      "frame_index": 478,
+      "seconds": 19.916666666666668,
+      "path": "qa-boundary-before/selected-01.png",
+      "sha256": "3e4abc86c72c7e59c3abd13f7496fdc5c9d76e74e7d4976f259c2b63088126e9"
+    },
+    {
+      "frame_index": 1078,
+      "seconds": 44.916666666666664,
+      "path": "qa-boundary-before/selected-02.png",
+      "sha256": "7567d063e93f8b8b5911a4cae9596213354fe415611b637e3edaf5a6cf6192f0"
+    },
+    {
+      "frame_index": 1678,
+      "seconds": 69.91666666666667,
+      "path": "qa-boundary-before/selected-03.png",
+      "sha256": "f228a4cbc379e188a153433aa6486672deeae990bdfb29e71296c879dbf71db3"
+    },
+    {
+      "frame_index": 2278,
+      "seconds": 94.91666666666667,
+      "path": "qa-boundary-before/selected-04.png",
+      "sha256": "883eff1679eca8ba1b4d348b46e4702c62edde1c75d81c2b0196b9c40d88d55a"
+    },
+    {
+      "frame_index": 2758,
+      "seconds": 114.91666666666667,
+      "path": "qa-boundary-before/selected-05.png",
+      "sha256": "9130e83c1fa275341f146a35c19b7861b22173cab022ce49080b0187c8b62e85"
+    }
+  ]
+}

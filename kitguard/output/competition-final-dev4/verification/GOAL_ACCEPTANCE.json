@@ -1,0 +1,18 @@
+{
+  "version": "0.9.0.dev4",
+  "tests_passed": 1877,
+  "goal_contracts_passed": 33,
+  "observer_byte_identical_to_dev1": {
+    "kitguard/vision.py": "e0c30d23c2620bfdc4bdf453f828c0a353da957eab89ab3c2ec92b7840f79b08",
+    "kitguard/spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+    "kitguard/consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+    "kitguard/identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696"
+  },
+  "own_goal_mission": "mission_3d0a8c94afc34c729465",
+  "real_mlx_checks": 4,
+  "workflow_tasks_met": 5,
+  "planned_tasks": 5,
+  "human_participants": 0,
+  "physical_completions": 0,
+  "new_accuracy_denominator": 0
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <title>KitGuard — 키팅 검증 워크스페이스</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/spatial.js" defer></script>
+  <script src="/static/audit.js" defer></script>
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">본문으로 건너뛰기</a>
+  <div id="app"></div>
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="order-dialog" class="modal"></dialog>
+  <dialog id="revision-dialog" class="modal modal-wide"></dialog>
+  <dialog id="references-dialog" class="modal modal-wide"></dialog>
+  <dialog id="camera-dialog" class="modal modal-wide"></dialog>
+  <dialog id="complete-dialog" class="modal"></dialog>
+  <dialog id="model-dialog" class="modal"></dialog>
+  <dialog id="audit-dialog" class="modal audit-modal" aria-labelledby="audit-dialog-title"></dialog>
+  <input id="photo-file" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+  <input id="reference-file" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+</body>
+</html>

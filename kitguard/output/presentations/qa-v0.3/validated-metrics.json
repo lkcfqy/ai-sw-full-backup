@@ -1,0 +1,2305 @@
+{
+  "development": {
+    "candidate": {
+      "images": 28,
+      "C": 24,
+      "W": 0,
+      "U": 4,
+      "E": 0,
+      "correct_actionable": {
+        "numerator": 24,
+        "denominator": 28,
+        "rate": 0.8571428571428571
+      },
+      "wrong_actionable_all_images": {
+        "numerator": 0,
+        "denominator": 28,
+        "rate": 0
+      },
+      "actionable_coverage": {
+        "numerator": 24,
+        "denominator": 28,
+        "rate": 0.8571428571428571
+      },
+      "wrong_given_actionable": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0
+      },
+      "abstention": {
+        "numerator": 4,
+        "denominator": 28,
+        "rate": 0.14285714285714285
+      },
+      "errors": {
+        "numerator": 0,
+        "denominator": 28,
+        "rate": 0
+      },
+      "counts_exact_including_nonactionable": {
+        "numerator": 24,
+        "denominator": 28,
+        "rate": 0.8571428571428571
+      },
+      "matched_correct_ready": {
+        "numerator": 24,
+        "denominator": 28,
+        "rate": 0.8571428571428571
+      },
+      "fixed_perturbation_false_ready": {
+        "numerator": 0,
+        "denominator": 28,
+        "rate": 0
+      },
+      "nominal_anomaly_false_ready": {
+        "numerator": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "nominal_normal_ready": {
+        "numerator": 7,
+        "denominator": 8,
+        "rate": 0.875
+      },
+      "panel_any_false_ready": {
+        "numerator": 0,
+        "denominator": 28,
+        "rate": 0
+      },
+      "latency_ms": {
+        "median": 43500.5,
+        "maximum": 53025,
+        "scope": "Observed complete candidate call including app-upload; first/cold row retained"
+      },
+      "latency_note": null
+    },
+    "baseline": {
+      "images": 28,
+      "C": 25,
+      "W": 3,
+      "U": 0,
+      "E": 0,
+      "correct_actionable": {
+        "numerator": 25,
+        "denominator": 28,
+        "rate": 0.8928571428571429
+      },
+      "wrong_actionable_all_images": {
+        "numerator": 3,
+        "denominator": 28,
+        "rate": 0.10714285714285714
+      },
+      "actionable_coverage": {
+        "numerator": 28,
+        "denominator": 28,
+        "rate": 1
+      },
+      "wrong_given_actionable": {
+        "numerator": 3,
+        "denominator": 28,
+        "rate": 0.10714285714285714
+      },
+      "abstention": {
+        "numerator": 0,
+        "denominator": 28,
+        "rate": 0
+      },
+      "errors": {
+        "numerator": 0,
+        "denominator": 28,
+        "rate": 0
+      },
+      "counts_exact_including_nonactionable": {
+        "numerator": 25,
+        "denominator": 28,
+        "rate": 0.8928571428571429
+      },
+      "matched_correct_ready": {
+        "numerator": 25,
+        "denominator": 28,
+        "rate": 0.8928571428571429
+      },
+      "fixed_perturbation_false_ready": {
+        "numerator": 0,
+        "denominator": 28,
+        "rate": 0
+      },
+      "nominal_anomaly_false_ready": {
+        "numerator": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "nominal_normal_ready": {
+        "numerator": 7,
+        "denominator": 8,
+        "rate": 0.875
+      },
+      "panel_any_false_ready": {
+        "numerator": 3,
+        "denominator": 28,
+        "rate": 0.10714285714285714
+      },
+      "latency_ms": null,
+      "latency_note": "No separately measured end-to-end baseline latency; same-run first-pass ablation only"
+    },
+    "groups": {
+      "loco16": {
+        "candidate": {
+          "images": 16,
+          "C": 14,
+          "W": 0,
+          "U": 2,
+          "E": 0,
+          "correct_actionable": {
+            "numerator": 14,
+            "denominator": 16,
+            "rate": 0.875
+          },
+          "wrong_actionable_all_images": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "actionable_coverage": {
+            "numerator": 14,
+            "denominator": 16,
+            "rate": 0.875
+          },
+          "wrong_given_actionable": {
+            "numerator": 0,
+            "denominator": 14,
+            "rate": 0
+          },
+          "abstention": {
+            "numerator": 2,
+            "denominator": 16,
+            "rate": 0.125
+          },
+          "errors": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "counts_exact_including_nonactionable": {
+            "numerator": 14,
+            "denominator": 16,
+            "rate": 0.875
+          },
+          "matched_correct_ready": {
+            "numerator": 14,
+            "denominator": 16,
+            "rate": 0.875
+          },
+          "fixed_perturbation_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "nominal_anomaly_false_ready": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0
+          },
+          "nominal_normal_ready": {
+            "numerator": 7,
+            "denominator": 8,
+            "rate": 0.875
+          },
+          "panel_any_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "latency_ms": {
+            "median": 47264.5,
+            "maximum": 53025,
+            "scope": "Observed complete candidate call including app-upload; first/cold row retained"
+          },
+          "latency_note": null
+        },
+        "baseline": {
+          "images": 16,
+          "C": 15,
+          "W": 1,
+          "U": 0,
+          "E": 0,
+          "correct_actionable": {
+            "numerator": 15,
+            "denominator": 16,
+            "rate": 0.9375
+          },
+          "wrong_actionable_all_images": {
+            "numerator": 1,
+            "denominator": 16,
+            "rate": 0.0625
+          },
+          "actionable_coverage": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "wrong_given_actionable": {
+            "numerator": 1,
+            "denominator": 16,
+            "rate": 0.0625
+          },
+          "abstention": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "errors": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "counts_exact_including_nonactionable": {
+            "numerator": 15,
+            "denominator": 16,
+            "rate": 0.9375
+          },
+          "matched_correct_ready": {
+            "numerator": 15,
+            "denominator": 16,
+            "rate": 0.9375
+          },
+          "fixed_perturbation_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "nominal_anomaly_false_ready": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0
+          },
+          "nominal_normal_ready": {
+            "numerator": 7,
+            "denominator": 8,
+            "rate": 0.875
+          },
+          "panel_any_false_ready": {
+            "numerator": 1,
+            "denominator": 16,
+            "rate": 0.0625
+          },
+          "latency_ms": null,
+          "latency_note": "No separately measured end-to-end baseline latency; same-run first-pass ablation only"
+        },
+        "gate": {
+          "images": 16,
+          "correct_actionable_min": 13,
+          "subgroups": [
+            "normal_constant_222",
+            "quantity_anomaly"
+          ]
+        },
+        "passed": true
+      },
+      "screws12": {
+        "candidate": {
+          "images": 12,
+          "C": 10,
+          "W": 0,
+          "U": 2,
+          "E": 0,
+          "correct_actionable": {
+            "numerator": 10,
+            "denominator": 12,
+            "rate": 0.8333333333333334
+          },
+          "wrong_actionable_all_images": {
+            "numerator": 0,
+            "denominator": 12,
+            "rate": 0
+          },
+          "actionable_coverage": {
+            "numerator": 10,
+            "denominator": 12,
+            "rate": 0.8333333333333334
+          },
+          "wrong_given_actionable": {
+            "numerator": 0,
+            "denominator": 10,
+            "rate": 0
+          },
+          "abstention": {
+            "numerator": 2,
+            "denominator": 12,
+            "rate": 0.16666666666666666
+          },
+          "errors": {
+            "numerator": 0,
+            "denominator": 12,
+            "rate": 0
+          },
+          "counts_exact_including_nonactionable": {
+            "numerator": 10,
+            "denominator": 12,
+            "rate": 0.8333333333333334
+          },
+          "matched_correct_ready": {
+            "numerator": 10,
+            "denominator": 12,
+            "rate": 0.8333333333333334
+          },
+          "fixed_perturbation_false_ready": {
+            "numerator": 0,
+            "denominator": 12,
+            "rate": 0
+          },
+          "nominal_anomaly_false_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "nominal_normal_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "panel_any_false_ready": {
+            "numerator": 0,
+            "denominator": 12,
+            "rate": 0
+          },
+          "latency_ms": {
+            "median": 21378.5,
+            "maximum": 46900,
+            "scope": "Observed complete candidate call including app-upload; first/cold row retained"
+          },
+          "latency_note": null
+        },
+        "baseline": {
+          "images": 12,
+          "C": 10,
+          "W": 2,
+          "U": 0,
+          "E": 0,
+          "correct_actionable": {
+            "numerator": 10,
+            "denominator": 12,
+            "rate": 0.8333333333333334
+          },
+          "wrong_actionable_all_images": {
+            "numerator": 2,
+            "denominator": 12,
+            "rate": 0.16666666666666666
+          },
+          "actionable_coverage": {
+            "numerator": 12,
+            "denominator": 12,
+            "rate": 1
+          },
+          "wrong_given_actionable": {
+            "numerator": 2,
+            "denominator": 12,
+            "rate": 0.16666666666666666
+          },
+          "abstention": {
+            "numerator": 0,
+            "denominator": 12,
+            "rate": 0
+          },
+          "errors": {
+            "numerator": 0,
+            "denominator": 12,
+            "rate": 0
+          },
+          "counts_exact_including_nonactionable": {
+            "numerator": 10,
+            "denominator": 12,
+            "rate": 0.8333333333333334
+          },
+          "matched_correct_ready": {
+            "numerator": 10,
+            "denominator": 12,
+            "rate": 0.8333333333333334
+          },
+          "fixed_perturbation_false_ready": {
+            "numerator": 0,
+            "denominator": 12,
+            "rate": 0
+          },
+          "nominal_anomaly_false_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "nominal_normal_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "panel_any_false_ready": {
+            "numerator": 2,
+            "denominator": 12,
+            "rate": 0.16666666666666666
+          },
+          "latency_ms": null,
+          "latency_note": "No separately measured end-to-end baseline latency; same-run first-pass ablation only"
+        },
+        "gate": {
+          "images": 12,
+          "correct_actionable_min": 10,
+          "subgroups": [
+            "screws_author_safe_crop"
+          ]
+        },
+        "passed": true
+      }
+    },
+    "false_ready_gates": {},
+    "comparison": {
+      "paired_matrix_baseline_rows_candidate_columns": {
+        "C": {
+          "C": 24,
+          "W": 0,
+          "U": 1,
+          "E": 0
+        },
+        "W": {
+          "C": 0,
+          "W": 0,
+          "U": 3,
+          "E": 0
+        },
+        "U": {
+          "C": 0,
+          "W": 0,
+          "U": 0,
+          "E": 0
+        },
+        "E": {
+          "C": 0,
+          "W": 0,
+          "U": 0,
+          "E": 0
+        }
+      },
+      "baseline_wrong": 3,
+      "candidate_wrong": 0,
+      "blocked_baseline_wrong": 3,
+      "introduced_wrong": 0,
+      "correct_to_abstention": 1,
+      "demonstrated_error_blocking_benefit": true,
+      "zero_wrong_both_note": null
+    },
+    "stage_passed": true,
+    "schema_version": 1,
+    "stage": "development",
+    "evaluated_at": "2026-09-26T12:41:29.203317+00:00",
+    "run_path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/v03_guarded_integrated_development_v1",
+    "complete": true,
+    "planned_images": 28,
+    "completed_images": 28,
+    "protocol_sha256": "563bf149286d6cacb7e14992b5ee9d1b1895752fae7f407a4da37ab11d65b8b6",
+    "run_json_sha256": "da1467a6229ae184adea96adba5b1d0a972c5f53c6397e5120e03c6ebe72b3a0",
+    "predictions_sha256": "defa8353d8f0ea2eb89ec3ae8fd0ecb0bc4e90b80caa8a32c075765548d6e9a4",
+    "manifest_sha256": "8e85c97a5dee7d0c571964597a8282b312e7691e66c8c36da541cf41dd2283c6",
+    "run_source_hashes": {
+      "__init__.py": "3b86dd22b956df69e2ac952aa9f77692265aeb7ef0edb12e02dfebcaae1a2ad9",
+      "public_demo_catalog.py": "cc50ea4ed9f3d3c08ea8b59f671403df8961c900e06890aa0e082d1aecb6eddf",
+      "vision.py": "13107205a9c9366876b8e29bffe8f9f91471406d62cddf5b570540c62fee399e",
+      "app.py": "17768fc1c7719c40bbb3545b67cc756884522ef22ed965d219b7799fa33d6424",
+      "schemas.py": "6cc72d010ff65bf4b718f5d5f5445dd4f364d80091e0f036f6076635e0eed886",
+      "evaluation.py": "7f5f7e9840e81cf5896d850248c0491fb8ad24f5228cb58479340c89061f37a3",
+      "feedback.py": "370a8ee1adf606a1d08bd4890422ef4bbbafd7661254dbd1741f294bad76dc64",
+      "store.py": "91af2cd3872ab5617d5d9da374d9b9615c550e740d461eac53bb1477781b7246",
+      "models.py": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+      "instructions.py": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+      "evidence.py": "fabe302951bf5a356e78b32f6a777f3079f665a47f77ab1a98b57d879c1f8469",
+      "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+      "consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+      "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+      "run_benchmark.py": "576c893e5d0e801561368c056528ed2ac140995eed5242ef52e784182c64d824"
+    },
+    "evaluator_sha256": "dea99a7e9f20bcbe9e3ad70753684247d7144d163fbc956e8501123e9cfc3a09",
+    "scoring_source_hashes": {
+      "evaluation.py": "7f5f7e9840e81cf5896d850248c0491fb8ad24f5228cb58479340c89061f37a3",
+      "schemas.py": "6cc72d010ff65bf4b718f5d5f5445dd4f364d80091e0f036f6076635e0eed886",
+      "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+      "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+      "consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+      "app.py": "fe0a27998b071785c5bc0e3d46f2ffeb598402e4e63d1def47702e1cbbd945dc",
+      "feedback.py": "370a8ee1adf606a1d08bd4890422ef4bbbafd7661254dbd1741f294bad76dc64"
+    },
+    "development_gate_passed": null,
+    "development_report_sha256": null,
+    "default_adoption_eligible": false,
+    "scope": "Research benchmark gate only; not contest ranking, field validity, shipping safety or release authorization",
+    "limitations": [
+      "Internal research selection, not contest score or promise of first place.",
+      "Static public photographs; no physical replenishment, operator efficiency, live site or shipping safety validation.",
+      "Unique source IDs are not independent factories or capture sessions; pretrained data overlap unknown.",
+      "No bracket-positive cases; Screws has no washer positives.",
+      "Same model across calls, correlated scene and model-selected crops; agreement and visible-hole attributes can be wrong.",
+      "A false-ready rule simulation is not an actual shipment or human completion.",
+      "0 observed errors is not zero real-world risk; descriptive sample, independent_sample=False.",
+      "September26 predevelopment code eligibility remains subject to organizer confirmation under the official rule."
+    ]
+  },
+  "holdout": {
+    "candidate": {
+      "images": 64,
+      "C": 59,
+      "W": 0,
+      "U": 5,
+      "E": 0,
+      "correct_actionable": {
+        "numerator": 59,
+        "denominator": 64,
+        "rate": 0.921875
+      },
+      "wrong_actionable_all_images": {
+        "numerator": 0,
+        "denominator": 64,
+        "rate": 0
+      },
+      "actionable_coverage": {
+        "numerator": 59,
+        "denominator": 64,
+        "rate": 0.921875
+      },
+      "wrong_given_actionable": {
+        "numerator": 0,
+        "denominator": 59,
+        "rate": 0
+      },
+      "abstention": {
+        "numerator": 5,
+        "denominator": 64,
+        "rate": 0.078125
+      },
+      "errors": {
+        "numerator": 0,
+        "denominator": 64,
+        "rate": 0
+      },
+      "counts_exact_including_nonactionable": {
+        "numerator": 59,
+        "denominator": 64,
+        "rate": 0.921875
+      },
+      "matched_correct_ready": {
+        "numerator": 59,
+        "denominator": 64,
+        "rate": 0.921875
+      },
+      "fixed_perturbation_false_ready": {
+        "numerator": 0,
+        "denominator": 64,
+        "rate": 0
+      },
+      "nominal_anomaly_false_ready": {
+        "numerator": 0,
+        "denominator": 16,
+        "rate": 0
+      },
+      "nominal_normal_ready": {
+        "numerator": 16,
+        "denominator": 16,
+        "rate": 1
+      },
+      "panel_any_false_ready": {
+        "numerator": 0,
+        "denominator": 64,
+        "rate": 0
+      },
+      "latency_ms": {
+        "median": 40579.5,
+        "maximum": 52504,
+        "scope": "Observed complete candidate call including app-upload; first/cold row retained"
+      },
+      "latency_note": null
+    },
+    "baseline": {
+      "images": 64,
+      "C": 62,
+      "W": 2,
+      "U": 0,
+      "E": 0,
+      "correct_actionable": {
+        "numerator": 62,
+        "denominator": 64,
+        "rate": 0.96875
+      },
+      "wrong_actionable_all_images": {
+        "numerator": 2,
+        "denominator": 64,
+        "rate": 0.03125
+      },
+      "actionable_coverage": {
+        "numerator": 64,
+        "denominator": 64,
+        "rate": 1
+      },
+      "wrong_given_actionable": {
+        "numerator": 2,
+        "denominator": 64,
+        "rate": 0.03125
+      },
+      "abstention": {
+        "numerator": 0,
+        "denominator": 64,
+        "rate": 0
+      },
+      "errors": {
+        "numerator": 0,
+        "denominator": 64,
+        "rate": 0
+      },
+      "counts_exact_including_nonactionable": {
+        "numerator": 62,
+        "denominator": 64,
+        "rate": 0.96875
+      },
+      "matched_correct_ready": {
+        "numerator": 62,
+        "denominator": 64,
+        "rate": 0.96875
+      },
+      "fixed_perturbation_false_ready": {
+        "numerator": 0,
+        "denominator": 64,
+        "rate": 0
+      },
+      "nominal_anomaly_false_ready": {
+        "numerator": 0,
+        "denominator": 16,
+        "rate": 0
+      },
+      "nominal_normal_ready": {
+        "numerator": 16,
+        "denominator": 16,
+        "rate": 1
+      },
+      "panel_any_false_ready": {
+        "numerator": 2,
+        "denominator": 64,
+        "rate": 0.03125
+      },
+      "latency_ms": null,
+      "latency_note": "No separately measured end-to-end baseline latency; same-run first-pass ablation only"
+    },
+    "groups": {
+      "loco_normal16": {
+        "candidate": {
+          "images": 16,
+          "C": 16,
+          "W": 0,
+          "U": 0,
+          "E": 0,
+          "correct_actionable": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "wrong_actionable_all_images": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "actionable_coverage": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "wrong_given_actionable": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "abstention": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "errors": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "counts_exact_including_nonactionable": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "matched_correct_ready": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "fixed_perturbation_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "nominal_anomaly_false_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "nominal_normal_ready": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "panel_any_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "latency_ms": {
+            "median": 47271,
+            "maximum": 49113,
+            "scope": "Observed complete candidate call including app-upload; first/cold row retained"
+          },
+          "latency_note": null
+        },
+        "baseline": {
+          "images": 16,
+          "C": 16,
+          "W": 0,
+          "U": 0,
+          "E": 0,
+          "correct_actionable": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "wrong_actionable_all_images": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "actionable_coverage": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "wrong_given_actionable": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "abstention": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "errors": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "counts_exact_including_nonactionable": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "matched_correct_ready": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "fixed_perturbation_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "nominal_anomaly_false_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "nominal_normal_ready": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "panel_any_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "latency_ms": null,
+          "latency_note": "No separately measured end-to-end baseline latency; same-run first-pass ablation only"
+        },
+        "gate": {
+          "images": 16,
+          "correct_actionable_min": 13,
+          "subgroups": [
+            "normal_constant_222"
+          ]
+        },
+        "passed": true
+      },
+      "loco_anomaly16": {
+        "candidate": {
+          "images": 16,
+          "C": 15,
+          "W": 0,
+          "U": 1,
+          "E": 0,
+          "correct_actionable": {
+            "numerator": 15,
+            "denominator": 16,
+            "rate": 0.9375
+          },
+          "wrong_actionable_all_images": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "actionable_coverage": {
+            "numerator": 15,
+            "denominator": 16,
+            "rate": 0.9375
+          },
+          "wrong_given_actionable": {
+            "numerator": 0,
+            "denominator": 15,
+            "rate": 0
+          },
+          "abstention": {
+            "numerator": 1,
+            "denominator": 16,
+            "rate": 0.0625
+          },
+          "errors": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "counts_exact_including_nonactionable": {
+            "numerator": 15,
+            "denominator": 16,
+            "rate": 0.9375
+          },
+          "matched_correct_ready": {
+            "numerator": 15,
+            "denominator": 16,
+            "rate": 0.9375
+          },
+          "fixed_perturbation_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "nominal_anomaly_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "nominal_normal_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "panel_any_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "latency_ms": {
+            "median": 45031,
+            "maximum": 52504,
+            "scope": "Observed complete candidate call including app-upload; first/cold row retained"
+          },
+          "latency_note": null
+        },
+        "baseline": {
+          "images": 16,
+          "C": 16,
+          "W": 0,
+          "U": 0,
+          "E": 0,
+          "correct_actionable": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "wrong_actionable_all_images": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "actionable_coverage": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "wrong_given_actionable": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "abstention": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "errors": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "counts_exact_including_nonactionable": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "matched_correct_ready": {
+            "numerator": 16,
+            "denominator": 16,
+            "rate": 1
+          },
+          "fixed_perturbation_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "nominal_anomaly_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "nominal_normal_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "panel_any_false_ready": {
+            "numerator": 0,
+            "denominator": 16,
+            "rate": 0
+          },
+          "latency_ms": null,
+          "latency_note": "No separately measured end-to-end baseline latency; same-run first-pass ablation only"
+        },
+        "gate": {
+          "images": 16,
+          "correct_actionable_min": 13,
+          "subgroups": [
+            "quantity_anomaly"
+          ]
+        },
+        "passed": true
+      },
+      "screws32": {
+        "candidate": {
+          "images": 32,
+          "C": 28,
+          "W": 0,
+          "U": 4,
+          "E": 0,
+          "correct_actionable": {
+            "numerator": 28,
+            "denominator": 32,
+            "rate": 0.875
+          },
+          "wrong_actionable_all_images": {
+            "numerator": 0,
+            "denominator": 32,
+            "rate": 0
+          },
+          "actionable_coverage": {
+            "numerator": 28,
+            "denominator": 32,
+            "rate": 0.875
+          },
+          "wrong_given_actionable": {
+            "numerator": 0,
+            "denominator": 28,
+            "rate": 0
+          },
+          "abstention": {
+            "numerator": 4,
+            "denominator": 32,
+            "rate": 0.125
+          },
+          "errors": {
+            "numerator": 0,
+            "denominator": 32,
+            "rate": 0
+          },
+          "counts_exact_including_nonactionable": {
+            "numerator": 28,
+            "denominator": 32,
+            "rate": 0.875
+          },
+          "matched_correct_ready": {
+            "numerator": 28,
+            "denominator": 32,
+            "rate": 0.875
+          },
+          "fixed_perturbation_false_ready": {
+            "numerator": 0,
+            "denominator": 32,
+            "rate": 0
+          },
+          "nominal_anomaly_false_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "nominal_normal_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "panel_any_false_ready": {
+            "numerator": 0,
+            "denominator": 32,
+            "rate": 0
+          },
+          "latency_ms": {
+            "median": 22404.5,
+            "maximum": 41594,
+            "scope": "Observed complete candidate call including app-upload; first/cold row retained"
+          },
+          "latency_note": null
+        },
+        "baseline": {
+          "images": 32,
+          "C": 30,
+          "W": 2,
+          "U": 0,
+          "E": 0,
+          "correct_actionable": {
+            "numerator": 30,
+            "denominator": 32,
+            "rate": 0.9375
+          },
+          "wrong_actionable_all_images": {
+            "numerator": 2,
+            "denominator": 32,
+            "rate": 0.0625
+          },
+          "actionable_coverage": {
+            "numerator": 32,
+            "denominator": 32,
+            "rate": 1
+          },
+          "wrong_given_actionable": {
+            "numerator": 2,
+            "denominator": 32,
+            "rate": 0.0625
+          },
+          "abstention": {
+            "numerator": 0,
+            "denominator": 32,
+            "rate": 0
+          },
+          "errors": {
+            "numerator": 0,
+            "denominator": 32,
+            "rate": 0
+          },
+          "counts_exact_including_nonactionable": {
+            "numerator": 30,
+            "denominator": 32,
+            "rate": 0.9375
+          },
+          "matched_correct_ready": {
+            "numerator": 30,
+            "denominator": 32,
+            "rate": 0.9375
+          },
+          "fixed_perturbation_false_ready": {
+            "numerator": 0,
+            "denominator": 32,
+            "rate": 0
+          },
+          "nominal_anomaly_false_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "nominal_normal_ready": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "panel_any_false_ready": {
+            "numerator": 2,
+            "denominator": 32,
+            "rate": 0.0625
+          },
+          "latency_ms": null,
+          "latency_note": "No separately measured end-to-end baseline latency; same-run first-pass ablation only"
+        },
+        "gate": {
+          "images": 32,
+          "correct_actionable_min": 27,
+          "subgroups": [
+            "screws_author_safe_crop"
+          ]
+        },
+        "passed": true
+      }
+    },
+    "false_ready_gates": {
+      "nominal_anomaly_false_ready": {
+        "numerator": 0,
+        "denominator": 16,
+        "rate": 0,
+        "expected_denominator": 16,
+        "passed": true
+      },
+      "fixed_perturbation_false_ready": {
+        "numerator": 0,
+        "denominator": 64,
+        "rate": 0,
+        "expected_denominator": 64,
+        "passed": true
+      },
+      "panel_any_false_ready": {
+        "numerator": 0,
+        "denominator": 64,
+        "rate": 0,
+        "expected_denominator": 64,
+        "passed": true
+      }
+    },
+    "comparison": {
+      "paired_matrix_baseline_rows_candidate_columns": {
+        "C": {
+          "C": 59,
+          "W": 0,
+          "U": 3,
+          "E": 0
+        },
+        "W": {
+          "C": 0,
+          "W": 0,
+          "U": 2,
+          "E": 0
+        },
+        "U": {
+          "C": 0,
+          "W": 0,
+          "U": 0,
+          "E": 0
+        },
+        "E": {
+          "C": 0,
+          "W": 0,
+          "U": 0,
+          "E": 0
+        }
+      },
+      "baseline_wrong": 2,
+      "candidate_wrong": 0,
+      "blocked_baseline_wrong": 2,
+      "introduced_wrong": 0,
+      "correct_to_abstention": 3,
+      "demonstrated_error_blocking_benefit": true,
+      "zero_wrong_both_note": null
+    },
+    "stage_passed": true,
+    "schema_version": 1,
+    "stage": "holdout",
+    "evaluated_at": "2026-09-26T13:20:26.167201+00:00",
+    "run_path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/v03_guarded_holdout_v1",
+    "complete": true,
+    "planned_images": 64,
+    "completed_images": 64,
+    "protocol_sha256": "563bf149286d6cacb7e14992b5ee9d1b1895752fae7f407a4da37ab11d65b8b6",
+    "run_json_sha256": "4e28b4508f5c390ca663c230c5c8d6546fb9dc6913526b8f36cafb7138882280",
+    "predictions_sha256": "4a6ef7c976271cc3096bdd369b897b1db46bec21d2287699f55226308e7536a3",
+    "manifest_sha256": "85f331c47d50256e1e98c3b346bef109e30a98e7e101da6ea3f46c9b7b3dcaf2",
+    "run_source_hashes": {
+      "__init__.py": "3b86dd22b956df69e2ac952aa9f77692265aeb7ef0edb12e02dfebcaae1a2ad9",
+      "public_demo_catalog.py": "cc50ea4ed9f3d3c08ea8b59f671403df8961c900e06890aa0e082d1aecb6eddf",
+      "vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+      "app.py": "fe0a27998b071785c5bc0e3d46f2ffeb598402e4e63d1def47702e1cbbd945dc",
+      "schemas.py": "6cc72d010ff65bf4b718f5d5f5445dd4f364d80091e0f036f6076635e0eed886",
+      "evaluation.py": "7f5f7e9840e81cf5896d850248c0491fb8ad24f5228cb58479340c89061f37a3",
+      "feedback.py": "370a8ee1adf606a1d08bd4890422ef4bbbafd7661254dbd1741f294bad76dc64",
+      "store.py": "91af2cd3872ab5617d5d9da374d9b9615c550e740d461eac53bb1477781b7246",
+      "models.py": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+      "instructions.py": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+      "evidence.py": "230b26b4fd99a47f13f6f523b79faa235e84ae69c72534a2b016e215e7f79300",
+      "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+      "consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+      "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+      "run_benchmark.py": "576c893e5d0e801561368c056528ed2ac140995eed5242ef52e784182c64d824"
+    },
+    "evaluator_sha256": "dea99a7e9f20bcbe9e3ad70753684247d7144d163fbc956e8501123e9cfc3a09",
+    "scoring_source_hashes": {
+      "evaluation.py": "7f5f7e9840e81cf5896d850248c0491fb8ad24f5228cb58479340c89061f37a3",
+      "schemas.py": "6cc72d010ff65bf4b718f5d5f5445dd4f364d80091e0f036f6076635e0eed886",
+      "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+      "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+      "consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+      "app.py": "fe0a27998b071785c5bc0e3d46f2ffeb598402e4e63d1def47702e1cbbd945dc",
+      "feedback.py": "370a8ee1adf606a1d08bd4890422ef4bbbafd7661254dbd1741f294bad76dc64"
+    },
+    "development_gate_passed": true,
+    "development_report_sha256": "fc54ee5cbac231a3aa214235de1d8ae494055ef744d94b0e5fca28ab8a95d4e8",
+    "default_adoption_eligible": true,
+    "scope": "Research benchmark gate only; not contest ranking, field validity, shipping safety or release authorization",
+    "limitations": [
+      "Internal research selection, not contest score or promise of first place.",
+      "Static public photographs; no physical replenishment, operator efficiency, live site or shipping safety validation.",
+      "Unique source IDs are not independent factories or capture sessions; pretrained data overlap unknown.",
+      "No bracket-positive cases; Screws has no washer positives.",
+      "Same model across calls, correlated scene and model-selected crops; agreement and visible-hole attributes can be wrong.",
+      "A false-ready rule simulation is not an actual shipment or human completion.",
+      "0 observed errors is not zero real-world risk; descriptive sample, independent_sample=False.",
+      "September26 predevelopment code eligibility remains subject to organizer confirmation under the official rule."
+    ]
+  },
+  "engineering": {
+    "total": 428,
+    "passed": 428,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "demo_status": "completed",
+  "instruction_outcome": {
+    "sample": "bag-revision",
+    "order_id": "ord_800c0f85d9804e27b53f",
+    "model_task": "instruction_proposal",
+    "instruction": "볼트 2개, 너트 2개, 와셔 2개, 브래킷 0개로 변경해 주세요.",
+    "expected_revision": 1,
+    "intended_requirements": {
+      "bolt": 2,
+      "nut": 2,
+      "washer": 2,
+      "bracket": 0
+    },
+    "http_status": 200,
+    "actual_elapsed_ms": 7924.281083000002,
+    "request_wall_ms": 7924.281083000002,
+    "click_to_result_ms": 7951.932332999997,
+    "response": {
+      "proposal": {
+        "requirements": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "explanation": "미적용 변경 제안: 볼트 3개 → 2개. 승인 후 적용됩니다.",
+        "base_revision": 1
+      }
+    },
+    "proposal": {
+      "requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "explanation": "미적용 변경 제안: 볼트 3개 → 2개. 승인 후 적용됩니다.",
+      "base_revision": 1
+    },
+    "proposal_matches_intended": true,
+    "status": "proposal_returned",
+    "runtime_before": {
+      "available": true,
+      "loaded": true,
+      "label": "Qwen3.6-27B · MLX 4-bit · local",
+      "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+      "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+      "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+      "observer_source_hashes": {
+        "vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+        "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+        "consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+        "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696"
+      },
+      "observation_mode": "spatial_guarded",
+      "image_max_side": 1536,
+      "path": "/Users/lkc/Downloads/AI-Models/Qwen3.6-27B-4bit",
+      "error": null,
+      "load_seconds": 3.083,
+      "last_inference": {
+        "mode": "spatial_guarded",
+        "same_model_correlated_calls": true,
+        "passes": [
+          {
+            "seconds": 14.794,
+            "prompt_tokens": 2046,
+            "generation_tokens": 159,
+            "mlx_reported_peak_memory_gb": 19.107,
+            "finish_reason": "stop"
+          },
+          {
+            "seconds": 14.721,
+            "prompt_tokens": 2046,
+            "generation_tokens": 160,
+            "mlx_reported_peak_memory_gb": 19.114,
+            "finish_reason": "stop"
+          }
+        ],
+        "identity": {
+          "protocol": "identity_geometry_v2",
+          "same_model_correlated_calls": true,
+          "response": {
+            "objects": [
+              {
+                "id": "p003",
+                "part": "nut",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              },
+              {
+                "id": "p004",
+                "part": "nut",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              },
+              {
+                "id": "p005",
+                "part": "washer",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              },
+              {
+                "id": "p006",
+                "part": "washer",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              }
+            ]
+          },
+          "blocked_categories": [],
+          "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "full_input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+          "crops": [
+            {
+              "id": "p003",
+              "object_index": 3,
+              "original_part": "nut",
+              "center": [
+                0.29,
+                0.43
+              ],
+              "rect_source_px": [
+                331,
+                340,
+                596,
+                605
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5026893939393938,
+                0.5021590909090908
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p003.png",
+              "crop_sha256": "7ef67ff1136d8148b5b49d8b3e7db41f00d173f71e50e59d84ade330c4cadade",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p003-pixels.png",
+              "pixel_crop_sha256": "abaf05e3de74773b1255dc6a255b23ef4df2c4e57dbecdfb862616e89336bc8f",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p004",
+              "object_index": 4,
+              "original_part": "nut",
+              "center": [
+                0.4,
+                0.55
+              ],
+              "rect_source_px": [
+                507,
+                472,
+                772,
+                737
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5022727272727273,
+                0.5017045454545457
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p004.png",
+              "crop_sha256": "0517491162f708a1fb6da27f34df0f39edc85d969b23ed6b5c5926d84e46936b",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p004-pixels.png",
+              "pixel_crop_sha256": "8348f02b09dc1749c634c4a686e6456a3cdec297c946ddde67bc190eb7f5abbf",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p005",
+              "object_index": 5,
+              "original_part": "washer",
+              "center": [
+                0.36,
+                0.38
+              ],
+              "rect_source_px": [
+                443,
+                285,
+                708,
+                550
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5024242424242423,
+                0.5023484848484848
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p005.png",
+              "crop_sha256": "f6c388bcf5114aed93215332a387948ad9154b03f9695726e143d5b4ca1a2903",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p005-pixels.png",
+              "pixel_crop_sha256": "b0018a44828ee1e35b0a577ad35e3d246bdb9334ed8219d9941624312d9c5d69",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p006",
+              "object_index": 6,
+              "original_part": "washer",
+              "center": [
+                0.46,
+                0.48
+              ],
+              "rect_source_px": [
+                603,
+                395,
+                868,
+                660
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5020454545454548,
+                0.501969696969697
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p006.png",
+              "crop_sha256": "ded37640876883aa04f4302c609b5755003b89a08015404538b40ebe06ccef3e",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p006-pixels.png",
+              "pixel_crop_sha256": "ad892ff0d11ee5d544cb1fa1024d0fca34c2b0b205cebb3b8d9b2c0b1b6de330",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            }
+          ],
+          "prompt": "Inspect each supplied point using image 1 for full context and its assigned crop. Coordinates are [x,y] in 0..1, from left/top to right/bottom. Return one identity record per ID.\nPoints:\n[{\"id\": \"p003\", \"image\": 2, \"center_in_full_image\": [0.29, 0.43], \"center_in_crop\": [0.5026893939393938, 0.5021590909090908]}, {\"id\": \"p004\", \"image\": 3, \"center_in_full_image\": [0.4, 0.55], \"center_in_crop\": [0.5022727272727273, 0.5017045454545457]}, {\"id\": \"p005\", \"image\": 4, \"center_in_full_image\": [0.36, 0.38], \"center_in_crop\": [0.5024242424242423, 0.5023484848484848]}, {\"id\": \"p006\", \"image\": 5, \"center_in_full_image\": [0.46, 0.48], \"center_in_crop\": [0.5020454545454548, 0.501969696969697]}]",
+          "runtime": {
+            "seconds": 17.718,
+            "prompt_tokens": 3610,
+            "generation_tokens": 149,
+            "mlx_reported_peak_memory_gb": 19.16,
+            "finish_reason": "stop"
+          },
+          "status": "confirmed_candidates"
+        }
+      },
+      "last_observation_attempt": {
+        "status": "completed",
+        "mode": "spatial_guarded",
+        "model": "Qwen3.6-27B · MLX 4-bit · local",
+        "passes": [
+          {
+            "transform": "original",
+            "input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+            "inventory": {
+              "objects": [
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.33,
+                    0.52
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.53,
+                    0.5
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.29,
+                    0.43
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.4,
+                    0.55
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.36,
+                    0.38
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.46,
+                    0.48
+                  ]
+                }
+              ],
+              "uncertain_parts": [],
+              "issues": [],
+              "action": {
+                "kind": "none",
+                "message": "All visible hardware objects identified."
+              }
+            },
+            "count_derivation": {
+              "listed_counts": {
+                "bolt": 2,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "uncertain_parts_applied": [],
+              "action_coerced_to_recapture": false,
+              "duplicate_policy": "No deduplication or geometric correctness assumption; all listed objects retained"
+            },
+            "runtime": {
+              "seconds": 14.794,
+              "prompt_tokens": 2046,
+              "generation_tokens": 159,
+              "mlx_reported_peak_memory_gb": 19.107,
+              "finish_reason": "stop"
+            }
+          },
+          {
+            "transform": "rotate_90_ccw",
+            "input_sha256": "740e927dbb9d6d12ab4cefb55e536e7fc295e35a2211fb91a5e213aace3ed95c",
+            "inventory": {
+              "objects": [
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.5,
+                    0.46
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.52,
+                    0.66
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.55,
+                    0.59
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.43,
+                    0.69
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.47,
+                    0.53
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.38,
+                    0.63
+                  ]
+                }
+              ],
+              "uncertain_parts": [],
+              "issues": [],
+              "action": {
+                "kind": "none",
+                "message": "All visible hardware objects identified."
+              }
+            },
+            "count_derivation": {
+              "listed_counts": {
+                "bolt": 2,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "uncertain_parts_applied": [],
+              "action_coerced_to_recapture": false,
+              "duplicate_policy": "No deduplication or geometric correctness assumption; all listed objects retained"
+            },
+            "runtime": {
+              "seconds": 14.721,
+              "prompt_tokens": 2046,
+              "generation_tokens": 160,
+              "mlx_reported_peak_memory_gb": 19.114,
+              "finish_reason": "stop"
+            }
+          }
+        ],
+        "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+        "identity": {
+          "protocol": "identity_geometry_v2",
+          "same_model_correlated_calls": true,
+          "response": {
+            "objects": [
+              {
+                "id": "p003",
+                "part": "nut",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              },
+              {
+                "id": "p004",
+                "part": "nut",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              },
+              {
+                "id": "p005",
+                "part": "washer",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              },
+              {
+                "id": "p006",
+                "part": "washer",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              }
+            ]
+          },
+          "blocked_categories": [],
+          "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "full_input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+          "crops": [
+            {
+              "id": "p003",
+              "object_index": 3,
+              "original_part": "nut",
+              "center": [
+                0.29,
+                0.43
+              ],
+              "rect_source_px": [
+                331,
+                340,
+                596,
+                605
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5026893939393938,
+                0.5021590909090908
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p003.png",
+              "crop_sha256": "7ef67ff1136d8148b5b49d8b3e7db41f00d173f71e50e59d84ade330c4cadade",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p003-pixels.png",
+              "pixel_crop_sha256": "abaf05e3de74773b1255dc6a255b23ef4df2c4e57dbecdfb862616e89336bc8f",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p004",
+              "object_index": 4,
+              "original_part": "nut",
+              "center": [
+                0.4,
+                0.55
+              ],
+              "rect_source_px": [
+                507,
+                472,
+                772,
+                737
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5022727272727273,
+                0.5017045454545457
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p004.png",
+              "crop_sha256": "0517491162f708a1fb6da27f34df0f39edc85d969b23ed6b5c5926d84e46936b",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p004-pixels.png",
+              "pixel_crop_sha256": "8348f02b09dc1749c634c4a686e6456a3cdec297c946ddde67bc190eb7f5abbf",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p005",
+              "object_index": 5,
+              "original_part": "washer",
+              "center": [
+                0.36,
+                0.38
+              ],
+              "rect_source_px": [
+                443,
+                285,
+                708,
+                550
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5024242424242423,
+                0.5023484848484848
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p005.png",
+              "crop_sha256": "f6c388bcf5114aed93215332a387948ad9154b03f9695726e143d5b4ca1a2903",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p005-pixels.png",
+              "pixel_crop_sha256": "b0018a44828ee1e35b0a577ad35e3d246bdb9334ed8219d9941624312d9c5d69",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p006",
+              "object_index": 6,
+              "original_part": "washer",
+              "center": [
+                0.46,
+                0.48
+              ],
+              "rect_source_px": [
+                603,
+                395,
+                868,
+                660
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5020454545454548,
+                0.501969696969697
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p006.png",
+              "crop_sha256": "ded37640876883aa04f4302c609b5755003b89a08015404538b40ebe06ccef3e",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p006-pixels.png",
+              "pixel_crop_sha256": "ad892ff0d11ee5d544cb1fa1024d0fca34c2b0b205cebb3b8d9b2c0b1b6de330",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            }
+          ],
+          "prompt": "Inspect each supplied point using image 1 for full context and its assigned crop. Coordinates are [x,y] in 0..1, from left/top to right/bottom. Return one identity record per ID.\nPoints:\n[{\"id\": \"p003\", \"image\": 2, \"center_in_full_image\": [0.29, 0.43], \"center_in_crop\": [0.5026893939393938, 0.5021590909090908]}, {\"id\": \"p004\", \"image\": 3, \"center_in_full_image\": [0.4, 0.55], \"center_in_crop\": [0.5022727272727273, 0.5017045454545457]}, {\"id\": \"p005\", \"image\": 4, \"center_in_full_image\": [0.36, 0.38], \"center_in_crop\": [0.5024242424242423, 0.5023484848484848]}, {\"id\": \"p006\", \"image\": 5, \"center_in_full_image\": [0.46, 0.48], \"center_in_crop\": [0.5020454545454548, 0.501969696969697]}]",
+          "runtime": {
+            "seconds": 17.718,
+            "prompt_tokens": 3610,
+            "generation_tokens": 149,
+            "mlx_reported_peak_memory_gb": 19.16,
+            "finish_reason": "stop"
+          },
+          "status": "confirmed_candidates"
+        }
+      }
+    },
+    "runtime_after": {
+      "available": true,
+      "loaded": true,
+      "label": "Qwen3.6-27B · MLX 4-bit · local",
+      "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+      "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+      "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+      "observer_source_hashes": {
+        "vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+        "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+        "consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+        "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696"
+      },
+      "observation_mode": "spatial_guarded",
+      "image_max_side": 1536,
+      "path": "/Users/lkc/Downloads/AI-Models/Qwen3.6-27B-4bit",
+      "error": null,
+      "load_seconds": 3.083,
+      "last_inference": {
+        "seconds": 7.92,
+        "prompt_tokens": 320,
+        "generation_tokens": 121,
+        "mlx_reported_peak_memory_gb": 19.16,
+        "finish_reason": "stop"
+      },
+      "last_observation_attempt": {
+        "status": "completed",
+        "mode": "spatial_guarded",
+        "model": "Qwen3.6-27B · MLX 4-bit · local",
+        "passes": [
+          {
+            "transform": "original",
+            "input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+            "inventory": {
+              "objects": [
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.33,
+                    0.52
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.53,
+                    0.5
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.29,
+                    0.43
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.4,
+                    0.55
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.36,
+                    0.38
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.46,
+                    0.48
+                  ]
+                }
+              ],
+              "uncertain_parts": [],
+              "issues": [],
+              "action": {
+                "kind": "none",
+                "message": "All visible hardware objects identified."
+              }
+            },
+            "count_derivation": {
+              "listed_counts": {
+                "bolt": 2,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "uncertain_parts_applied": [],
+              "action_coerced_to_recapture": false,
+              "duplicate_policy": "No deduplication or geometric correctness assumption; all listed objects retained"
+            },
+            "runtime": {
+              "seconds": 14.794,
+              "prompt_tokens": 2046,
+              "generation_tokens": 159,
+              "mlx_reported_peak_memory_gb": 19.107,
+              "finish_reason": "stop"
+            }
+          },
+          {
+            "transform": "rotate_90_ccw",
+            "input_sha256": "740e927dbb9d6d12ab4cefb55e536e7fc295e35a2211fb91a5e213aace3ed95c",
+            "inventory": {
+              "objects": [
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.5,
+                    0.46
+                  ]
+                },
+                {
+                  "part": "bolt",
+                  "center": [
+                    0.52,
+                    0.66
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.55,
+                    0.59
+                  ]
+                },
+                {
+                  "part": "nut",
+                  "center": [
+                    0.43,
+                    0.69
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.47,
+                    0.53
+                  ]
+                },
+                {
+                  "part": "washer",
+                  "center": [
+                    0.38,
+                    0.63
+                  ]
+                }
+              ],
+              "uncertain_parts": [],
+              "issues": [],
+              "action": {
+                "kind": "none",
+                "message": "All visible hardware objects identified."
+              }
+            },
+            "count_derivation": {
+              "listed_counts": {
+                "bolt": 2,
+                "nut": 2,
+                "washer": 2,
+                "bracket": 0
+              },
+              "uncertain_parts_applied": [],
+              "action_coerced_to_recapture": false,
+              "duplicate_policy": "No deduplication or geometric correctness assumption; all listed objects retained"
+            },
+            "runtime": {
+              "seconds": 14.721,
+              "prompt_tokens": 2046,
+              "generation_tokens": 160,
+              "mlx_reported_peak_memory_gb": 19.114,
+              "finish_reason": "stop"
+            }
+          }
+        ],
+        "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+        "identity": {
+          "protocol": "identity_geometry_v2",
+          "same_model_correlated_calls": true,
+          "response": {
+            "objects": [
+              {
+                "id": "p003",
+                "part": "nut",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              },
+              {
+                "id": "p004",
+                "part": "nut",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              },
+              {
+                "id": "p005",
+                "part": "washer",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              },
+              {
+                "id": "p006",
+                "part": "washer",
+                "status": "independent_object",
+                "opening": "through_hole",
+                "issue": ""
+              }
+            ]
+          },
+          "blocked_categories": [],
+          "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+          "full_input_sha256": "672c8215bca6494f29cc43c29e2bd9efc4b7ad5785363a94f8bf1522c6f64c78",
+          "crops": [
+            {
+              "id": "p003",
+              "object_index": 3,
+              "original_part": "nut",
+              "center": [
+                0.29,
+                0.43
+              ],
+              "rect_source_px": [
+                331,
+                340,
+                596,
+                605
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5026893939393938,
+                0.5021590909090908
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p003.png",
+              "crop_sha256": "7ef67ff1136d8148b5b49d8b3e7db41f00d173f71e50e59d84ade330c4cadade",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p003-pixels.png",
+              "pixel_crop_sha256": "abaf05e3de74773b1255dc6a255b23ef4df2c4e57dbecdfb862616e89336bc8f",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p004",
+              "object_index": 4,
+              "original_part": "nut",
+              "center": [
+                0.4,
+                0.55
+              ],
+              "rect_source_px": [
+                507,
+                472,
+                772,
+                737
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5022727272727273,
+                0.5017045454545457
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p004.png",
+              "crop_sha256": "0517491162f708a1fb6da27f34df0f39edc85d969b23ed6b5c5926d84e46936b",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p004-pixels.png",
+              "pixel_crop_sha256": "8348f02b09dc1749c634c4a686e6456a3cdec297c946ddde67bc190eb7f5abbf",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p005",
+              "object_index": 5,
+              "original_part": "washer",
+              "center": [
+                0.36,
+                0.38
+              ],
+              "rect_source_px": [
+                443,
+                285,
+                708,
+                550
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5024242424242423,
+                0.5023484848484848
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p005.png",
+              "crop_sha256": "f6c388bcf5114aed93215332a387948ad9154b03f9695726e143d5b4ca1a2903",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p005-pixels.png",
+              "pixel_crop_sha256": "b0018a44828ee1e35b0a577ad35e3d246bdb9334ed8219d9941624312d9c5d69",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p006",
+              "object_index": 6,
+              "original_part": "washer",
+              "center": [
+                0.46,
+                0.48
+              ],
+              "rect_source_px": [
+                603,
+                395,
+                868,
+                660
+              ],
+              "source_size": [
+                1600,
+                1100
+              ],
+              "target_center_crop": [
+                0.5020454545454548,
+                0.501969696969697
+              ],
+              "crop_source_size": [
+                265,
+                265
+              ],
+              "crop_size": [
+                512,
+                512
+              ],
+              "crop_file": "p006.png",
+              "crop_sha256": "ded37640876883aa04f4302c609b5755003b89a08015404538b40ebe06ccef3e",
+              "source_sha256": "eb43a537626e945c43b7232a7b4005c637da99cc5e6d661e258e6561e80a7949",
+              "pixel_crop_file": "p006-pixels.png",
+              "pixel_crop_sha256": "ad892ff0d11ee5d544cb1fa1024d0fca34c2b0b205cebb3b8d9b2c0b1b6de330",
+              "resampling": "LANCZOS",
+              "interpolation_creates_information": false
+            }
+          ],
+          "prompt": "Inspect each supplied point using image 1 for full context and its assigned crop. Coordinates are [x,y] in 0..1, from left/top to right/bottom. Return one identity record per ID.\nPoints:\n[{\"id\": \"p003\", \"image\": 2, \"center_in_full_image\": [0.29, 0.43], \"center_in_crop\": [0.5026893939393938, 0.5021590909090908]}, {\"id\": \"p004\", \"image\": 3, \"center_in_full_image\": [0.4, 0.55], \"center_in_crop\": [0.5022727272727273, 0.5017045454545457]}, {\"id\": \"p005\", \"image\": 4, \"center_in_full_image\": [0.36, 0.38], \"center_in_crop\": [0.5024242424242423, 0.5023484848484848]}, {\"id\": \"p006\", \"image\": 5, \"center_in_full_image\": [0.46, 0.48], \"center_in_crop\": [0.5020454545454548, 0.501969696969697]}]",
+          "runtime": {
+            "seconds": 17.718,
+            "prompt_tokens": 3610,
+            "generation_tokens": 149,
+            "mlx_reported_peak_memory_gb": 19.16,
+            "finish_reason": "stop"
+          },
+          "status": "confirmed_candidates"
+        }
+      }
+    },
+    "fallback_used": false,
+    "approval": {
+      "performed": true,
+      "applied": true,
+      "via": "natural_proposal",
+      "automated_ui_action": true,
+      "http_status": 200,
+      "actual_elapsed_ms": 15.58283400000073,
+      "from_revision": 1,
+      "to_revision": 2,
+      "requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    "scope": "Actual local language-model API request. Runtime status is a before/after snapshot, not a separate per-request trace. Approval is an explicit automated UI action, not a human user study."
+  }
+}

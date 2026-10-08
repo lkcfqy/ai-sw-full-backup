@@ -1,0 +1,16 @@
+{
+  "url": "https://contest.gnict.org/bbs/board.php?bo_table=notice",
+  "path": "03_赛事官网/公告目录_原始.html",
+  "source": "https://contest.gnict.org/",
+  "kind": "listing",
+  "retrieved_at": "2026-09-24T16:29:55.485783+09:00",
+  "http_status": 200,
+  "final_url": "https://contest.gnict.org/bbs/board.php?bo_table=notice",
+  "content_type": "text/html; charset=utf-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 14962,
+  "sha256": "982ddc0f2bba84ff883d4b419f0d015d9a9f4040a876895c9ac05f12d4ae42c5",
+  "magic_hex": "3c21646f63747970652068746d6c3e0a"
+}

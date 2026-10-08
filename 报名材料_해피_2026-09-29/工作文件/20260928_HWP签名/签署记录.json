@@ -1,0 +1,39 @@
+{
+  "authorized_by": "User explicitly confirmed both signatures authorized and all four consent groups agreed",
+  "created_at": "2026-09-28T23:37:30.963965+09:00",
+  "files": [
+    {
+      "file": "01_해피_참가신청서_개발계획서_서명본.hwp",
+      "participant": "남청청",
+      "signature_sha256": "703e98e87823c8cf71f8b05de3010642266d80c25ada63e73484abd84e9daf0d",
+      "source_sha256": "e754d669f360ccad0bba9e42c2e35f68f25f210042cc28df03b9a9901a33a1c1",
+      "sha256": "0b7d406056ca68357919e87f2375e92121a600b6806c4f87ecdfc309a87cddd0",
+      "date": "2026년 9월 28일",
+      "consents_accepted": 0,
+      "signature_count": 1,
+      "signature_image_unmodified": true
+    },
+    {
+      "file": "02_참가자_동의서_남청청_서명본.hwp",
+      "participant": "남청청",
+      "signature_sha256": "703e98e87823c8cf71f8b05de3010642266d80c25ada63e73484abd84e9daf0d",
+      "source_sha256": "0245a377a6d2c14b470fea3129d2f9a4df673cdf80c0590df0c1508372cc96ec",
+      "sha256": "6b48ddb5d7e3a5f00db5e028ca08496e3a2e693dd10a96f2cb69ffef5e58ab65",
+      "date": "2026년 9월 28일",
+      "consents_accepted": 4,
+      "signature_count": 1,
+      "signature_image_unmodified": true
+    },
+    {
+      "file": "03_참가자_동의서_이개심_서명본.hwp",
+      "participant": "이개심",
+      "signature_sha256": "5fad63f0d5dfdf8f0f2cc4b4a4b708b490541a53ddd3883ec11d2b980eaed362",
+      "source_sha256": "a98720ef7d4eeb9396abeba1d0312e720f8b90481be91483121650da4d8d69b3",
+      "sha256": "c6abcccbd02902d184e60cc0d50a31810926d7f3f998de32c93cb3a8166af520",
+      "date": "2026년 9월 28일",
+      "consents_accepted": 4,
+      "signature_count": 1,
+      "signature_image_unmodified": true
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "schema_version": 1,
+  "kind": "kitguard_v05_delivery",
+  "final": true,
+  "created_at": "2026-09-26T15:50:51.532000+00:00",
+  "summary": {
+    "human_field_samples": 0,
+    "new_accuracy_samples_from_public_integration": 0,
+    "operator_scope_completeness_certified": false,
+    "release_status": "final",
+    "pending_required_roles": [],
+    "completed_gates": [
+      "UI API receipt -> final visual receipt SHA",
+      "UI API + final visual + engineering export SHA chain; scroll is supplementary",
+      "engineering_api export -> independent verification SHA",
+      "engineering_ui export -> independent verification SHA",
+      "final JUnit -> source ZIP -> extracted JUnit SHA/counts",
+      "four unchanged observer method SHA values in delivered source",
+      "UI behavior and final CSS SHA in delivered source",
+      "two actual MLX attempts -> verification -> root/view ZIP SHA"
+    ],
+    "pending_gates": [],
+    "final_tests": {
+      "tests": 696,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 696
+    },
+    "extracted_tests": {
+      "tests": 696,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6,
+      "passed": 690
+    },
+    "backend_tests": {
+      "tests": 681,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 681
+    },
+    "independent_region_tests": {
+      "tests": 54,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 54
+    },
+    "ui_api": {
+      "assertions": 52,
+      "scope": "engineering_fixture_or_read_only"
+    },
+    "ui_visual": {
+      "assertions": 16,
+      "scope": "engineering_fixture_or_read_only"
+    },
+    "ui_scroll": {
+      "assertions": 2,
+      "scope": "engineering_fixture_or_read_only"
+    },
+    "engineering_api_verification": {
+      "status": "verified_internal_consistency",
+      "planned_cases": 3,
+      "input_sha256": "6b89f66bc9ba86404898250bb9f61298066b143a00f2c5344bc4200dc09981cc",
+      "photo_bytes_verified": false,
+      "physical_authenticity_verified": false
+    },
+    "engineering_ui_verification": {
+      "status": "verified_internal_consistency",
+      "planned_cases": 1,
+      "input_sha256": "b82ff8f3ce44eda05c749300a4db5d27d30788ebfd3337ea9adf8e431d012b47",
+      "photo_bytes_verified": false,
+      "physical_authenticity_verified": false
+    },
+    "source_verification": {
+      "status": "passed",
+      "source_archive_sha256": "6b17561a2a81645db2436a604fef9b7e8581f01e8306e6eadd0fca7d280e5e3a",
+      "extracted_suite": {
+        "tests": 696,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 6,
+        "passed": 690
+      }
+    },
+    "real_api": {
+      "status": "completed",
+      "planned_requests": 2,
+      "attempted_requests": 2,
+      "source_changed": false,
+      "verification_status": "verified",
+      "cases": [
+        {
+          "sample": "ino-A41-author-region",
+          "status": "completed",
+          "decision": "ready",
+          "error": null
+        },
+        {
+          "sample": "mixed-screws-full-region",
+          "status": "completed",
+          "decision": "ready",
+          "error": null
+        }
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "role": "final_evaluation",
+      "title": "최종 자체 평가 / 最终自检评估",
+      "source": "docs/v0.5/FINAL_EVALUATION.md",
+      "destination": "artifacts/final_evaluation/FINAL_EVALUATION.md",
+      "bytes": 3948,
+      "sha256": "5b64770ae878992c200480a3f3b788d50e34f2e8e985699f80cbfc271a82b505"
+    },
+    {
+      "role": "demo_runbook",
+      "title": "시연 순서 / 演示流程",
+      "source": "docs/v0.5/DEMO_RUNBOOK_KO_ZH.md",
+      "destination": "artifacts/demo_runbook/DEMO_RUNBOOK_KO_ZH.md",
+      "bytes": 3397,
+      "sha256": "57f3251efac57f7c41403c2d620554e8d378f1f269c10cf7c211a7c1e0841bf2"
+    },
+    {
+      "role": "real_integration_result",
+      "title": "실제 연결 결과와 한계 / 真实连接结果与边界",
+      "source": "docs/v0.5/REAL_MODEL_INTEGRATION_RESULT.md",
+      "destination": "artifacts/real_integration_result/REAL_MODEL_INTEGRATION_RESULT.md",
+      "bytes": 5883,
+      "sha256": "1737c01110bdbb6e2d07cde1554ec7190b1bfca070d081d8f05dd9bdb0874c78"
+    },
+    {
+      "role": "wheel",
+      "title": "설치 wheel / 安装 wheel",
+      "source": "output/wheels-v0.5-final/kitguard-0.5.0-py3-none-any.whl",
+      "destination": "artifacts/wheel/kitguard-0.5.0-py3-none-any.whl",
+      "bytes": 177021,
+      "sha256": "04b98c1da25ffeba90e9da03d26d7879795ec21d372620d21429571d44059099"
+    },
+    {
+      "role": "region_design",
+      "title": "검사 범위와 한계 / 检查范围设计与边界",
+      "source": "docs/v0.5/INSPECTION_REGION_DESIGN.md",
+      "destination": "artifacts/region_design/INSPECTION_REGION_DESIGN.md",
+      "bytes": 15359,
+      "sha256": "cdacaa10e7ba46216051507a0b2cf4bce05ff45e6bff385e050961a4392a40ad"
+    },
+    {
+      "role": "backend_implementation",
+      "title": "범위·원본 추적 구현 / 范围与原图追溯实现",
+      "source": "docs/v0.5/REGION_BACKEND_IMPLEMENTATION.md",
+      "destination": "artifacts/backend_implementation/REGION_BACKEND_IMPLEMENTATION.md",
+      "bytes": 6607,
+      "sha256": "75b0f7814b6427cc4757b0bee15dd3f96810fa323ceea17882fe1c169560d896"
+    },
+    {
+      "role": "independent_review",
+      "title": "독립 반례 검토 / 独立对抗审查",
+      "source": "docs/v0.5/INSPECTION_REGION_INDEPENDENT_REVIEW.md",
+      "destination": "artifacts/independent_review/INSPECTION_REGION_INDEPENDENT_REVIEW.md",
+      "bytes": 6008,
+      "sha256": "31b0881c443f73c0f8998917af53b5e10b475fd67f81d622ffc6760dcb57aaff"
+    },
+    {
+      "role": "independent_region_tests",
+      "title": "독립 영역 테스트 / 独立区域测试",
+      "source": "test-results/inspection-region-independent-review.xml",
+      "destination": "artifacts/independent_region_tests/inspection-region-independent-review.xml",
+      "bytes": 8495,
+      "sha256": "dfb9c2fa7a67c9d6e215eb15247ed7a73adf998ca9047f0420a159cf89016f36"
+    },
+    {
+      "role": "backend_tests",
+      "title": "백엔드 단계 회귀 / 后台阶段回归",
+      "source": "test-results/v05-backend-final.xml",
+      "destination": "artifacts/backend_tests/v05-backend-final.xml",
+      "bytes": 97817,
+      "sha256": "c4a15641eeddb26fcb5f7c9eb7021bfe4bfb2808e554286afce4636451708a90"
+    },
+    {
+      "role": "ui_qa",
+      "title": "키보드·터치·모바일 검사 / 键盘、触控与手机验收",
+      "source": "docs/v0.5/INSPECTION_REGION_UI_QA.md",
+      "destination": "artifacts/ui_qa/INSPECTION_REGION_UI_QA.md",
+      "bytes": 4908,
+      "sha256": "4362add7712efa5884b430cfaedddffdbdba6b9cdceefb79e5911ec0a7686fa4"
+    },
+    {
+      "role": "ui_api",
+      "title": "Chrome 실제 API 공학 검사 / Chrome 实际 API 工程验收",
+      "source": "test-results/browser/inspection-region-v05/result.json",
+      "destination": "artifacts/ui_api/result.json",
+      "bytes": 6952,
+      "sha256": "9e2661af5a7d8ed20f9282ea5598b76e81775696b5f8b6950ee871f89914438c"
+    },
+    {
+      "role": "ui_visual",
+      "title": "최종 화면 읽기 검사 / 最终界面只读检查",
+      "source": "test-results/browser/inspection-region-v05/visual-final-result.json",
+      "destination": "artifacts/ui_visual/visual-final-result.json",
+      "bytes": 1834,
+      "sha256": "82543b87e7d48c82e83b9ced60d681ac67aa38fd15d978113e89c852ac7464c9"
+    },
+    {
+      "role": "ui_scroll",
+      "title": "휴대폰 선언 스크롤 / 手机确认声明滚动检查",
+      "source": "test-results/browser/inspection-region-v05/footer-visual-result.json",
+      "destination": "artifacts/ui_scroll/footer-visual-result.json",
+      "bytes": 272,
+      "sha256": "f997cba11839997db860bb897ebf5ef4201328e515f7fcd8ed5e5513b8fe4234"
+    },
+    {
+      "role": "ui_freeze",
+      "title": "화면 소스 동결 / 界面源码冻结",
+      "source": "test-results/browser/inspection-region-v05/SOURCE_FREEZE.json",
+      "destination": "artifacts/ui_freeze/SOURCE_FREEZE.json",
+      "bytes": 1224,
+      "sha256": "217c2fc2f3ec3ee4d3f057cccdd50a53f274d9df92e6492dcfb6e786cc948ecc"
+    },
+    {
+      "role": "ui_shutdown",
+      "title": "공학 서버 종료 / 工程服务停止",
+      "source": "test-results/browser/inspection-region-v05/shutdown.json",
+      "destination": "artifacts/ui_shutdown/shutdown.json",
+      "bytes": 157,
+      "sha256": "644c5f0444d7c6f636187772e28a686d3999b7bd002468763906e19698eb570e"
+    },
+    {
+      "role": "method_preservation",
+      "title": "기존 관찰 방법 SHA / 既有观察方法 SHA 保持",
+      "source": "test-results/v05-method-preservation.json",
+      "destination": "artifacts/method_preservation/v05-method-preservation.json",
+      "bytes": 497,
+      "sha256": "16eba3068f802b298391ab50c29c22f649febdb66900d875aea5d7d83dbb7ed8"
+    },
+    {
+      "role": "engineering_api_export",
+      "title": "세 범위 공학 API 기록 / 三种范围工程 API 记录",
+      "source": "test-results/v05-api-scope-fixture/engineering-study-export.json",
+      "destination": "artifacts/engineering_api_export/engineering-study-export.json",
+      "bytes": 53654,
+      "sha256": "6b89f66bc9ba86404898250bb9f61298066b143a00f2c5344bc4200dc09981cc"
+    },
+    {
+      "role": "engineering_api_verification",
+      "title": "공학 API 독립 재계산 / 工程 API 独立复算",
+      "source": "test-results/audit/v05-api-scope-independent-verification.json",
+      "destination": "artifacts/engineering_api_verification/v05-api-scope-independent-verification.json",
+      "bytes": 2656,
+      "sha256": "52f6086ab4c069e4a9c762a74718578cde67998fb06a1df6cd0df279913ceecd"
+    },
+    {
+      "role": "engineering_api_zip",
+      "title": "세 범위 공학 증거 ZIP / 三种范围工程证据包",
+      "source": "test-results/v05-api-scope-fixture/engineering-study-evidence.zip",
+      "destination": "artifacts/engineering_api_zip/engineering-study-evidence.zip",
+      "bytes": 21483,
+      "sha256": "90e88dfc47b3cbbfbfc499d7f9624daa656d1641704fa5bbf013581911247389"
+    },
+    {
+      "role": "engineering_ui_export",
+      "title": "브라우저 공학 연구 기록 / 浏览器工程研究记录",
+      "source": "test-results/browser/inspection-region-v05/engineering-study-export.json",
+      "destination": "artifacts/engineering_ui_export/engineering-study-export.json",
+      "bytes": 22466,
+      "sha256": "b82ff8f3ce44eda05c749300a4db5d27d30788ebfd3337ea9adf8e431d012b47"
+    },
+    {
+      "role": "engineering_ui_verification",
+      "title": "브라우저 기록 독립 재계산 / 浏览器记录独立复算",
+      "source": "test-results/audit/v05-engineering-study-independent-verification-v2.json",
+      "destination": "artifacts/engineering_ui_verification/v05-engineering-study-independent-verification-v2.json",
+      "bytes": 2666,
+      "sha256": "5e2453c5c1a364526a4963026381d221597e1796a86244aa251d7e38070f241d"
+    },
+    {
+      "role": "real_plan",
+      "title": "실제 모델 연결 계획 / 真实模型连接计划",
+      "source": "docs/v0.5/REAL_MODEL_INTEGRATION_PLAN.md",
+      "destination": "artifacts/real_plan/REAL_MODEL_INTEGRATION_PLAN.md",
+      "bytes": 2666,
+      "sha256": "89b89db9365af1c20a82d64c56bcf007d6f744331982e53ad24016529f82de5d"
+    },
+    {
+      "role": "real_result",
+      "title": "두 번의 실제 MLX 호출 / 两次真实 MLX 调用记录",
+      "source": "test-results/browser/inspection-region-real-v05/result.json",
+      "destination": "artifacts/real_result/result.json",
+      "bytes": 57131,
+      "sha256": "a548129e652d3c8a9c2f4d9d5ddbbff7b10008da812db72337506e197f11129d"
+    },
+    {
+      "role": "real_verification",
+      "title": "실제 입력·범위 독립 검증 / 真实输入与范围独立核验",
+      "source": "test-results/browser/inspection-region-real-v05/verification.json",
+      "destination": "artifacts/real_verification/verification.json",
+      "bytes": 1884,
+      "sha256": "9a48d199edaca420e6238366b43ce02fad36db486ff35e82fdde3e3edc6bfab1"
+    },
+    {
+      "role": "real_freeze",
+      "title": "실제 실행 동결 / 真实运行冻结",
+      "source": "test-results/browser/inspection-region-real-v05/PLAN_FREEZE.json",
+      "destination": "artifacts/real_freeze/PLAN_FREEZE.json",
+      "bytes": 4166,
+      "sha256": "3b385d30ae6326ce7090e0f3574527d9d93360e68d13f23b3df74cfb479cbcd7"
+    },
+    {
+      "role": "real_source_plan",
+      "title": "고정 입력 계획 / 固定输入计划",
+      "source": "test-results/browser/inspection-region-real-v05/SOURCE_PLAN.json",
+      "destination": "artifacts/real_source_plan/SOURCE_PLAN.json",
+      "bytes": 7483,
+      "sha256": "79f1f8ef529357fa2db35a103f9ec8c3028e7d81551d6cf83bf92d0fc43c700b"
+    },
+    {
+      "role": "real_http_index",
+      "title": "HTTP 호출 기록 / HTTP 调用记录",
+      "source": "test-results/browser/inspection-region-real-v05/http-index.json",
+      "destination": "artifacts/real_http_index/http-index.json",
+      "bytes": 34886,
+      "sha256": "13ae68b62edc7418ca1fcaa8c63ae94eb267c2cf1c2380ac1fae5d8f65d76f48"
+    },
+    {
+      "role": "real_study_verification",
+      "title": "공개 재생 독립 검증 / 公开回放独立核验",
+      "source": "test-results/browser/inspection-region-real-v05/study-export-verification.json",
+      "destination": "artifacts/real_study_verification/study-export-verification.json",
+      "bytes": 2664,
+      "sha256": "ab7a20e8b648d815e11140efc44c10018618fe3a56214915bac24ad77c88e4fd"
+    },
+    {
+      "role": "real_mixed_order_zip",
+      "title": "나사류 원본·영역 공정 기록 / 螺纹件根图与选区工单",
+      "source": "test-results/browser/inspection-region-real-v05/mixed-screws-full-region/order-evidence.zip",
+      "destination": "artifacts/real_mixed_order_zip/order-evidence.zip",
+      "bytes": 458805,
+      "sha256": "8792869899fa53e43a3013baed1f8a3ca350934ac4f14225d5ecf2da9c763dd3"
+    },
+    {
+      "role": "wheel_verification",
+      "title": "격리 wheel 실행 / 隔离 wheel 运行核验",
+      "source": "test-results/audit/v05-wheel-final-verification.json",
+      "destination": "artifacts/wheel_verification/v05-wheel-final-verification.json",
+      "bytes": 5780,
+      "sha256": "a427bde4baf4e569b81c0f62859e899a0fae5fcab2418609eb6652305088650d"
+    },
+    {
+      "role": "wheel_documentation",
+      "title": "wheel 검증 범위 / wheel 验证范围",
+      "source": "docs/v0.5/WHEEL_VERIFICATION.md",
+      "destination": "artifacts/wheel_documentation/WHEEL_VERIFICATION.md",
+      "bytes": 1632,
+      "sha256": "b07caccc7cd554035e7b61e7e300cdfabf01ac62e8374afd4aef6c9ef8d1093f"
+    },
+    {
+      "role": "real_shutdown",
+      "title": "모델 서비스 종료 / 模型服务停止",
+      "source": "test-results/browser/inspection-region-real-v05/shutdown.json",
+      "destination": "artifacts/real_shutdown/shutdown.json",
+      "bytes": 281,
+      "sha256": "5fde7c8443f0531aeebf219e22252e648a24b1f068f9b00708dfc67c3998a768"
+    },
+    {
+      "role": "real_a41_zip",
+      "title": "A41 원본·영역 증거 / A41 根图与选区证据",
+      "source": "test-results/browser/inspection-region-real-v05/ino-A41-author-region/order-evidence.zip",
+      "destination": "artifacts/real_a41_zip/order-evidence.zip",
+      "bytes": 276570,
+      "sha256": "32881a41677a50c68c65163e3cdf0555d7fe9fc3ae63a9d8fcde9e2787a4aeb7"
+    },
+    {
+      "role": "real_screws_zip",
+      "title": "나사류 원본·영역 연구 증거 / 螺纹件根图与选区研究证据",
+      "source": "test-results/browser/inspection-region-real-v05/public-replay-evidence.zip",
+      "destination": "artifacts/real_screws_zip/public-replay-evidence.zip",
+      "bytes": 387801,
+      "sha256": "df70c0b5fbc48b846ad6dbde6c299fbeabe71362d3dc20a3e8d17dec95994300"
+    },
+    {
+      "role": "real_study_export",
+      "title": "공개 재생 JSON / 公开回放完整记录",
+      "source": "test-results/browser/inspection-region-real-v05/public-replay.json",
+      "destination": "artifacts/real_study_export/public-replay.json",
+      "bytes": 32891,
+      "sha256": "eb7117dbf14255164d6f5d9033f67ebc517d00f2a0f7e628c8aea984ed68700e"
+    },
+    {
+      "role": "final_tests",
+      "title": "최종 전체 CPU 테스트 / 最终全套 CPU 测试",
+      "source": "test-results/engineering-v05-final.xml",
+      "destination": "artifacts/final_tests/engineering-v05-final.xml",
+      "bytes": 99891,
+      "sha256": "79866aaa835cec32ea4e6bf0ad893b727369ae8f81b66542713528681566c21e"
+    },
+    {
+      "role": "extracted_tests",
+      "title": "압축 해제 소스 실제 테스트 / 解压源码实际测试",
+      "source": "test-results/audit/source_v05_verification.pytest.xml",
+      "destination": "artifacts/extracted_tests/source_v05_verification.pytest.xml",
+      "bytes": 101997,
+      "sha256": "38ab6f425b43be0a8a2527bcd50cc6484997b5ae0ae51b494341d72629a82ced"
+    },
+    {
+      "role": "source_archive",
+      "title": "v0.5 소스 ZIP / v0.5 源码包",
+      "source": "output/KitGuard_source_v0.5.zip",
+      "destination": "artifacts/source_archive/KitGuard_source_v0.5.zip",
+      "bytes": 5386487,
+      "sha256": "6b17561a2a81645db2436a604fef9b7e8581f01e8306e6eadd0fca7d280e5e3a"
+    },
+    {
+      "role": "source_verification",
+      "title": "소스 ZIP 해제·해시 검증 / 源码 ZIP 解压与哈希验证",
+      "source": "test-results/audit/source_v05_verification.json",
+      "destination": "artifacts/source_verification/source_v05_verification.json",
+      "bytes": 3665,
+      "sha256": "c2f2d4372469b69b88d8869208f44e07b5f653f6df6d4e49ab3d34484077420d"
+    },
+    {
+      "role": "source_disclosure",
+      "title": "AI·사진 출처 공개 / AI 与照片来源披露",
+      "source": "docs/AI_AND_SOURCE_DISCLOSURE.md",
+      "destination": "artifacts/source_disclosure/AI_AND_SOURCE_DISCLOSURE.md",
+      "bytes": 6072,
+      "sha256": "7f1e884175079213365d1eff3c16b7f5649cd6cd5c88bba7a8763387353ea58b"
+    }
+  ],
+  "missing_roles": []
+}

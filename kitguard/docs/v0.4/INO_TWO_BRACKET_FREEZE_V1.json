@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "protocol": "ino_bracket_partial_v1",
+  "frozen_at": "2026-09-26T15:08:09.967690+00:00",
+  "manifest_sha256": "603d26994ba1565de1381293d6782ead26a5eac13eb67dfce38f46116a980c33",
+  "runner_sha256": "8760cd43db75c37028d102440a6c0109b9d8471ee409e20d45e68533917e0c73",
+  "method_source_hashes": {
+    "kitguard/__init__.py": "cbee720fa84a191dee58e3286c3789dd9cc12819c7e91186b0de73ffb04209a8",
+    "kitguard/app.py": "e5e3c6023198a754b1c53e023586b5bc6477269892089d2ada0b41e001dee14a",
+    "kitguard/consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+    "kitguard/evaluation.py": "7f5f7e9840e81cf5896d850248c0491fb8ad24f5228cb58479340c89061f37a3",
+    "kitguard/evidence.py": "230b26b4fd99a47f13f6f523b79faa235e84ae69c72534a2b016e215e7f79300",
+    "kitguard/feedback.py": "370a8ee1adf606a1d08bd4890422ef4bbbafd7661254dbd1741f294bad76dc64",
+    "kitguard/field_api.py": "23d7cea5b3f4ece198ecc606a29f6b7d6b7e066ded1812378729f1df58ce8f6d",
+    "kitguard/field_archive.py": "4b03ca0f78b3f89f48a63b3a274a9ddd0486bfb2fc5a96fac38134acb222c43e",
+    "kitguard/field_study.py": "20a09935261d6e6f334dde9aba642ab01dc5343327e709ccb8f7acc8558d1f9b",
+    "kitguard/identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+    "kitguard/instructions.py": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+    "kitguard/models.py": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+    "kitguard/public_demo_catalog.py": "cc50ea4ed9f3d3c08ea8b59f671403df8961c900e06890aa0e082d1aecb6eddf",
+    "kitguard/runtime.py": "c5a6fa1ebcd4021436cbfeb83bc19d59852e1225fd8142bf0004bc449ba2edfb",
+    "kitguard/schemas.py": "6cc72d010ff65bf4b718f5d5f5445dd4f364d80091e0f036f6076635e0eed886",
+    "kitguard/spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+    "kitguard/store.py": "91af2cd3872ab5617d5d9da374d9b9615c550e740d461eac53bb1477781b7246",
+    "kitguard/vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef"
+  },
+  "model": {
+    "profile": "Qwen3.6-27B-4bit",
+    "revision": "c000ac2c2057d94be3fa931000c31723aac53282"
+  },
+  "observation_mode": "spatial_guarded",
+  "image_max_side": 1536,
+  "input_pipeline": "app-upload",
+  "label_scope": "author_L_bracket_count_only",
+  "case_ids": [
+    "ino-two-bracket-F-52"
+  ],
+  "expected_cases": 1,
+  "fixed_observer_requirements": {
+    "bolt": 1,
+    "nut": 1,
+    "washer": 1,
+    "bracket": 1
+  },
+  "no_retry_or_adoption_tuning": true,
+  "limitations": [
+    "Exactly one two-bracket case. This cannot establish multi-object stability or generic counting accuracy.",
+    "Author-box oracle ROI: selected complete boxes are inside; every omitted box is outside and does not touch.",
+    "A constant answer 2 scores 1/1. Constant 1 scores 0/1. This is a separate diagnostic, not a new balanced benchmark.",
+    "Counts 2 and 3 were enumerated before inference on all unused pure-class0 source images; only F/52 yields a valid crop.",
+    "No input image was viewed or model output consulted when selecting the ROI. No object is pasted, erased or partially cut by a box.",
+    "The other three product categories remain unlabelled; no four-class readiness claim."
+  ],
+  "independent_runner_review": "test-results/partial-bracket-independent-review.xml"
+}

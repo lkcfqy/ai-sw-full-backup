@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "file": "01_해피_참가신청서_개발계획서_주소서명전.pdf",
+      "pages": 4,
+      "all_pages_visually_reviewed": true,
+      "sha256": "09d7a634c5ababa8499f9d3d4ebc98bba5b95381d54048f904a6322060f3b41c"
+    },
+    {
+      "file": "02_참가자_동의서_남청청_선택서명전.pdf",
+      "pages": 2,
+      "all_pages_visually_reviewed": true,
+      "sha256": "e9eac5572e9c5733da57b9df80bfbb277eac54a76851afcd3977285678844b1b"
+    },
+    {
+      "file": "03_참가자_동의서_이개심_선택서명전.pdf",
+      "pages": 2,
+      "all_pages_visually_reviewed": true,
+      "sha256": "06459466eb1d1464a12995ae5904ea2b41b2f3c8c352f5b7396fc9b46f026e62"
+    }
+  ],
+  "team_fields_verified": true,
+  "unused_ids_and_member_email_not_added_to_form": true,
+  "pending": [
+    "leader detailed address",
+    "member city/county",
+    "actual dates and signatures",
+    "two enrollment certificates",
+    "leader eligibility confirmation as applicable"
+  ],
+  "local_links_valid": true,
+  "submitted": false
+}

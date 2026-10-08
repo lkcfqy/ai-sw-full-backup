@@ -1,0 +1,30 @@
+{
+  "schema": "kitguard.v08.loco-combined-method-selection.v1",
+  "status": "approved_for_freeze",
+  "approved_by": "root_agent",
+  "selected_at_utc": "2026-10-02T02:07:44.923741+00:00",
+  "methods": [
+    "spatial_guarded"
+  ],
+  "identity_decision": {
+    "include": false,
+    "role": "excluded",
+    "reason": "Apply the decision rule recorded before reading identity51 results. Independent full51 audit passed, but candidate quality was C40/W3/U8/E0/N0: all three historical errors remain, one old C is lost, and only13 of14 historically correct LOCO cases remain. The original preregistered quality gate failed. Test only original G on all24 new combined-quantity cases; do not use them to tune or rescue the failed candidate."
+  },
+  "no_loco24_model_results_used": true,
+  "identity51_evidence": {
+    "run": {
+      "path": "evaluation-runs/v0.8/identity_reference_guarded_v1/run.json",
+      "sha256": "d6256b45efbe2d2e5eb634bf4e047ab13f5279641137379472c07a4897f8b289"
+    },
+    "predictions": {
+      "path": "evaluation-runs/v0.8/identity_reference_guarded_v1/predictions.jsonl",
+      "sha256": "3c7474fbdb6c4b8befa03d50a5ccbfd0b1216e8225152416015442bd9908e5b6"
+    },
+    "independent_audit": {
+      "path": "test-results/v0.8-identity-reference-independent-audit-v1.json",
+      "sha256": "51e38affdf7c226d37377c5de8ac39df23c0e756159d11438290e47a0874bec4"
+    }
+  },
+  "exposure_since_source_preflight": []
+}

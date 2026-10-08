@@ -1,0 +1,115 @@
+{
+  "schema": "kitguard.contest-submission.20261005.v1",
+  "code_version": "0.9.0.dev4",
+  "material_revision": "2026-10-05",
+  "sealed_at_utc": "2026-10-05T09:09:32.202991+00:00",
+  "team": "해피",
+  "members": [
+    "남청청",
+    "이개심"
+  ],
+  "division": "일반부",
+  "track": "업무혁신·생산성 향상 AI Agent",
+  "pages": [
+    5,
+    1
+  ],
+  "slides": 9,
+  "video_seconds": 177.416667,
+  "source_integrity": {
+    "payload_files": 610,
+    "crc": "passed",
+    "payload_sha256": "passed"
+  },
+  "human_participants": 0,
+  "physical_completions": 0,
+  "new_image_accuracy_denominator": 0,
+  "submission_status": "Prepared locally; user submits through the official final form",
+  "qualification_receipt": null,
+  "submission_receipt": null,
+  "five_materials": [
+    "KitGuard_report_5p.pdf",
+    "KitGuard_agent_1p.pdf",
+    "KitGuard_source.zip",
+    "KitGuard_demo_ko.mp4",
+    "KitGuard_presentation_9slides.pptx"
+  ],
+  "files": [
+    {
+      "path": "KitGuard_report_5p.pdf",
+      "bytes": 197390,
+      "sha256": "cd8f3a139562c16f547d7118f3ff2406f7af150be1f2c7baf2830b1311672ce4"
+    },
+    {
+      "path": "KitGuard_agent_1p.pdf",
+      "bytes": 74193,
+      "sha256": "ff913fe38b5dc727f083a0d38782209409b4fc9d56198b86ae82090a5a1146e7"
+    },
+    {
+      "path": "KitGuard_source.zip",
+      "bytes": 6946553,
+      "sha256": "e60aa641e032bf59741a1f4c27142436fe910cebd0e28f1fe65b2d1d1f804f06"
+    },
+    {
+      "path": "KitGuard_demo_ko.mp4",
+      "bytes": 1963522,
+      "sha256": "3a4eb4554935d6e9e38ae03a33c0b286246b4d03e7d6356a1671693d879cb9d5"
+    },
+    {
+      "path": "KitGuard_presentation_9slides.pptx",
+      "bytes": 136486,
+      "sha256": "46099c5695d414f181e6219f6f2514249b49d5dd9ea65246a938327f768a9259"
+    },
+    {
+      "path": "KitGuard_presentation_9slides.pdf",
+      "bytes": 609654,
+      "sha256": "2810ec36bf0595afffa1e63b400c1319d7316bcc6bdaac36686fd79d3251ed91"
+    },
+    {
+      "path": "SOURCE_AI_DISCLOSURE_KO.txt",
+      "bytes": 14897,
+      "sha256": "a796a9734498522ce156263892aee81f0cee5d1e6634f7571e83f8f6ad651359"
+    },
+    {
+      "path": "SOURCE_AI_DISCLOSURE_KO.md",
+      "bytes": 14897,
+      "sha256": "a796a9734498522ce156263892aee81f0cee5d1e6634f7571e83f8f6ad651359"
+    },
+    {
+      "path": "PRESENTATION_SCRIPT_KO.md",
+      "bytes": 10646,
+      "sha256": "fd7a605de5581f3f34f6a24ed2344ab4b4a6cd3847ab35fb2ca6fa9399482504"
+    },
+    {
+      "path": "PRIOR_ART_POSITION_KO_ZH.md",
+      "bytes": 4557,
+      "sha256": "d519ec55577777c8f81b2ef0a85df284d7971720742053ba84b07d19f5a21826"
+    },
+    {
+      "path": "README_KO.txt",
+      "bytes": 3839,
+      "sha256": "465fb35eb6232f5aa223686670bdd4b94257a8218460da66bac96893dab072a8"
+    },
+    {
+      "path": "START_HERE.html",
+      "bytes": 5567,
+      "sha256": "2d8ddc03881941a1aee2df76a8e62624b8de44427f983021dcb99804e548317f"
+    },
+    {
+      "path": "KitGuard_execution_evidence.zip",
+      "bytes": 1066272,
+      "sha256": "fe5b4bbe526fd6848118159928ecc84926c6c86ccf91b6baf04b0478ea44a1b5"
+    },
+    {
+      "path": "KitGuard_final_runtime_evidence.zip",
+      "bytes": 1066237,
+      "sha256": "1f0a5f95b3083b7389d6619555760dadf553502ce0f9525b15321e87088a81eb"
+    },
+    {
+      "path": "FINAL_ACCEPTANCE.json",
+      "bytes": 9388,
+      "sha256": "aba40e78aa900bb191ebf194dab5adc9e6ad181f0e8de4faec93c27032c23876"
+    }
+  ],
+  "checksum_scope": "Integrity only; no authenticity, official score, acceptance or rank claim"
+}

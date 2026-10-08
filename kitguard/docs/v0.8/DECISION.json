@@ -1,0 +1,659 @@
+{
+  "schema": "kitguard.v08.three-class-shadow.decision.v1",
+  "decided_at_utc": "2026-10-02T00:43:16.452299+00:00",
+  "experiment": "three_class_shadow_v1",
+  "decision": "reject_candidate_for_next_stage_and_production",
+  "production_version_retained": "0.7.0",
+  "production_changed": false,
+  "candidate_promoted": false,
+  "development_gate_passed": false,
+  "reason": "All3 original W were rejected, but16 original C were lost, including all14 originally correct LOCO cases.",
+  "scope": "Already-exposed51-image development regression; no new holdout, real-user or field-efficiency claim.",
+  "baseline_outcomes": {
+    "C": 41,
+    "W": 3,
+    "U": 7,
+    "E": 0,
+    "N": 0
+  },
+  "shadow_outcomes": {
+    "C": 25,
+    "W": 0,
+    "U": 26,
+    "E": 0,
+    "N": 0
+  },
+  "paired_transitions": {
+    "C->U": 16,
+    "U->U": 7,
+    "C->C": 25,
+    "W->U": 3
+  },
+  "strata": {
+    "loco_normal_222": {
+      "C": 0,
+      "W": 0,
+      "U": 16,
+      "E": 0,
+      "N": 0
+    },
+    "screws_author_safe_crop": {
+      "C": 25,
+      "W": 0,
+      "U": 10,
+      "E": 0,
+      "N": 0
+    }
+  },
+  "original_W_rejected": 3,
+  "original_C_lost": 16,
+  "loco_old_C": 14,
+  "loco_C_preserved": 0,
+  "any_false_ready_images": {
+    "all_four": 0,
+    "source_supported": 0
+  },
+  "risk_denominator": 51,
+  "unmeasured_risk": 0,
+  "zero_AFR_interpretation": "No false-ready on the frozen order panel after abstention, not all51 correct or proof of physical safety.",
+  "development_checks": {
+    "all51_called_once": true,
+    "all51_calls_completed": true,
+    "zero_error_or_unattempted": true,
+    "three_original_wrong_rejected": true,
+    "all14_loco_correct_preserved": false,
+    "C_at_least_41": false,
+    "zero_W": true,
+    "zero_all_four_AFR": true
+  },
+  "model": {
+    "checkpoint_epoch": 7,
+    "threshold": 0.5,
+    "threshold_source": "fixed training validation selection",
+    "device": "cpu"
+  },
+  "completion": {
+    "planned": 51,
+    "recorded": 51,
+    "model_calls_started": 51,
+    "model_calls_completed": 51,
+    "raw_returned_boxes": 643,
+    "threshold_retained_boxes": 251,
+    "trigger_images": 21,
+    "source_changed": false
+  },
+  "loco_diagnosis": {
+    "n": 16,
+    "trigger_classes": {
+      "nut": 16
+    },
+    "washer_candidate_count_all": 0,
+    "nut_candidate_histogram": {
+      "5": 3,
+      "6": 3,
+      "7": 1,
+      "8": 4,
+      "9": 5
+    },
+    "instance_box_ground_truth": false,
+    "interpretation": "Count disagreement established; extra nut boxes cannot all be attributed to washer misclassification or duplication without instance-level truth.",
+    "cases": [
+      {
+        "case_id": "v07-loco-screw_bag-train-good-259",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 1,
+          "nut": 9,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 9,
+            "prediction_indices": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-279",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 6,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 6,
+            "prediction_indices": [
+              0,
+              1,
+              3,
+              4,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-225",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": null,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 9,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 9,
+            "prediction_indices": [
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-validation-good-019",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 8,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 8,
+            "prediction_indices": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-validation-good-020",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 3,
+          "nut": 9,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 9,
+            "prediction_indices": [
+              0,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-261",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 6,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 6,
+            "prediction_indices": [
+              0,
+              1,
+              3,
+              4,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-118",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 8,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 8,
+            "prediction_indices": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-148",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": null,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 9,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 9,
+            "prediction_indices": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-validation-good-012",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 5,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 5,
+            "prediction_indices": [
+              1,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-288",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 5,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 5,
+            "prediction_indices": [
+              1,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-085",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 5,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 5,
+            "prediction_indices": [
+              0,
+              2,
+              3,
+              4,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-081",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 3,
+          "nut": 8,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 8,
+            "prediction_indices": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7,
+              8,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-345",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 1,
+          "nut": 7,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 7,
+            "prediction_indices": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-186",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 9,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 9,
+            "prediction_indices": [
+              0,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-087",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 2,
+          "nut": 6,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 6,
+            "prediction_indices": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "v07-loco-screw_bag-train-good-144",
+        "G_counts": {
+          "bolt": 2,
+          "nut": 2,
+          "washer": 2,
+          "bracket": 0
+        },
+        "detector_counts": {
+          "bolt": 1,
+          "nut": 8,
+          "washer": 0
+        },
+        "triggers": [
+          {
+            "part": "nut",
+            "G_count": 2,
+            "detector_candidates": 8,
+            "prediction_indices": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "author_target_detector_summary": {
+    "screws_n": 35,
+    "screws_three_class_exact_count": 22,
+    "loco_n": 16,
+    "loco_three_class_exact_count": 0,
+    "scope": "author_annotated_target_only; count equality separate from localization; no LOCO boxes"
+  },
+  "independent_audits": {
+    "training": "passed",
+    "fusion": "passed",
+    "audit_pass_is_performance_pass": false
+  },
+  "comparison_limit": "Versus prior two-class veto, training data/weights/head, actual-input chain and count-based rule changed jointly; no causal attribution to adding washer alone.",
+  "immutable_evidence": {
+    "run": {
+      "path": "evaluation-runs/v0.8/three_class_shadow_v1/run.json",
+      "sha256": "0bb84a0f85bc09d18893993f8849f5775db56f63cc61461b7b368d265a072802"
+    },
+    "predictions": {
+      "path": "evaluation-runs/v0.8/three_class_shadow_v1/predictions.jsonl",
+      "sha256": "6ed0c022880d19fffebe32b58df11f1647c77435b5f10bd2441a9f1c4a78e18b"
+    },
+    "analysis": {
+      "path": "evaluation-runs/v0.8/three_class_shadow_v1/analysis.json",
+      "sha256": "05e8fe81602fa67b60cca0db6cbdcb49001c4ee0bf65117d8f437cc94f503a9a"
+    },
+    "run_freeze_copy": {
+      "path": "evaluation-runs/v0.8/three_class_shadow_v1/freeze.json",
+      "sha256": "6ba1690a369a90d73d39a8d4acc74547ee6b4f526149b54b0dcbb0167dbef1d1"
+    },
+    "original_freeze": {
+      "path": "docs/v0.8/three_class_shadow_freeze_v1/freeze.json",
+      "sha256": "6ba1690a369a90d73d39a8d4acc74547ee6b4f526149b54b0dcbb0167dbef1d1"
+    },
+    "frozen_runner": {
+      "path": "docs/v0.8/three_class_shadow_freeze_v1/source_snapshot/probe_three_class_shadow.py",
+      "sha256": "11b0b8d72ee0671143a1a6cb290e0ba5a1423f337893d906ded2c9569e236cfd"
+    },
+    "frozen_plan": {
+      "path": "docs/v0.8/three_class_shadow_freeze_v1/source_snapshot/plan.md",
+      "sha256": "937b5f43f5c458a9bdaaa775a3530fa1af4223a75d4667eb1a79fcd400500655"
+    },
+    "training_run": {
+      "path": "training-runs/v0.8/grouped_detector_v1/run.json",
+      "sha256": "4a9bd4edf2ab7a1c677675ce72897b20b30e9110891268240f3ec86f14a66763"
+    },
+    "training_protocol": {
+      "path": "training-runs/v0.8/grouped_detector_v1/protocol.json",
+      "sha256": "0230682fac7d542cf6669a42a6ba274402747908795da874b80f1f33c54be24a"
+    },
+    "checkpoint": {
+      "path": "training-runs/v0.8/grouped_detector_v1/best.pt",
+      "sha256": "2a70848fa26207fe8702e8d39e15794e8902212b8b439bfa536edf7d63a83613"
+    },
+    "training_independent_audit": {
+      "path": "test-results/v0.8-grouped-detector-independent-audit-v1.json",
+      "sha256": "ebba458d862fde4fae9cc6be9236dffab76d709e25bd9c4779dab26da2a782fa"
+    },
+    "fusion_independent_audit": {
+      "path": "test-results/v0.8-three-class-shadow-independent-audit-v1.json",
+      "sha256": "7c4beca063064c1819df124abd9a67401d5d470d49cd010fd8fa8ac2a48219d9"
+    },
+    "original_G_predictions": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/predictions.jsonl",
+      "sha256": "9b525702cb2665274c37a7d7740c1d93c05562ab5fb5a17e171e31b75a6859ee"
+    }
+  },
+  "result_report": {
+    "path": "docs/v0.8/THREE_CLASS_SHADOW_RESULT.md",
+    "sha256": "21f8a937017cf351054aef1b14793ae8f4bb38c2acefeb68078a334f8ce6b63b"
+  }
+}

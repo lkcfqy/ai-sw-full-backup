@@ -1,0 +1,14 @@
+{
+  "request": {
+    "scenario": "order",
+    "request_key": "machine_physical_refusal_v1",
+    "order_id": "ord_fe495ccd857c47f6a228",
+    "expected_revision": 1,
+    "expected_evidence_epoch": 0,
+    "expected_photo_id": "no-digital-photo"
+  },
+  "status": 409,
+  "response": {
+    "detail": "디지털 자료 주문만 가능합니다 / 仅支持数字照片资料订单"
+  }
+}

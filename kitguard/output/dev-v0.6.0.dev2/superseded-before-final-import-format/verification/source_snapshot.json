@@ -1,0 +1,214 @@
+{
+  "pyproject.toml": {
+    "sha256": "e5b622950eaeda8daa27ae9b7a820d4ee560b133d330258356154a2a59e8d619",
+    "bytes": 840
+  },
+  "kitguard/__init__.py": {
+    "sha256": "c6e3d38264849e505567747b91ab1decbdeaabf9b96a1e8a22a41826b10011f2",
+    "bytes": 62
+  },
+  "kitguard/app.py": {
+    "sha256": "cbc74ed4325628e0edb1f4edafdd53b7bc9e8f7a6153f5a06c17a08d293f3616",
+    "bytes": 30617
+  },
+  "kitguard/consensus.py": {
+    "sha256": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+    "bytes": 3340
+  },
+  "kitguard/detector_lab.py": {
+    "sha256": "1ef12e1027f505a75f7f4643479f48f2ab313e48a1d74f098671f13aad2415e2",
+    "bytes": 19184
+  },
+  "kitguard/detector_worker.py": {
+    "sha256": "5283d515c7ce47676c7f6069e7702ba20a2705b9d286633ea5761a0aab3e9586",
+    "bytes": 7951
+  },
+  "kitguard/evaluation.py": {
+    "sha256": "7f5f7e9840e81cf5896d850248c0491fb8ad24f5228cb58479340c89061f37a3",
+    "bytes": 14040
+  },
+  "kitguard/evidence.py": {
+    "sha256": "096576eb97cc5580d158055da23445ebd4dbeb54a5bf304fe49e2f573845a7ce",
+    "bytes": 36325
+  },
+  "kitguard/feedback.py": {
+    "sha256": "53bc33cb728b98b0a6896f4d3b9e236ecfab7d9db3f12ac6eb8cde087ea9db1e",
+    "bytes": 9202
+  },
+  "kitguard/field_api.py": {
+    "sha256": "23d7cea5b3f4ece198ecc606a29f6b7d6b7e066ded1812378729f1df58ce8f6d",
+    "bytes": 4717
+  },
+  "kitguard/field_archive.py": {
+    "sha256": "302abca5b4eb07a0f7255c8fd393e53fb5f426c24badc25794900694e5768413",
+    "bytes": 5419
+  },
+  "kitguard/field_study.py": {
+    "sha256": "c74f7de108ea574bbca66c9311116ba1b5bc152805c83512819c9d0350cbe12f",
+    "bytes": 30988
+  },
+  "kitguard/identity.py": {
+    "sha256": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+    "bytes": 19776
+  },
+  "kitguard/inspection_jobs.py": {
+    "sha256": "9dd9befd9aa13b28fe4f75609234173c72e6d824b4892b950a89b3606b4f72ca",
+    "bytes": 7939
+  },
+  "kitguard/instructions.py": {
+    "sha256": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+    "bytes": 4794
+  },
+  "kitguard/manual_review.py": {
+    "sha256": "e8e4295c4df83d601d5bbd52866a49ec7459fa45d1e24c30145a0df5da697cc5",
+    "bytes": 650
+  },
+  "kitguard/models.py": {
+    "sha256": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+    "bytes": 953
+  },
+  "kitguard/public_demo_catalog.py": {
+    "sha256": "cc50ea4ed9f3d3c08ea8b59f671403df8961c900e06890aa0e082d1aecb6eddf",
+    "bytes": 2013
+  },
+  "kitguard/readiness.py": {
+    "sha256": "0804217c3724b025ad4e3bb0fff5eca7f37c598cb35165ae9409eaad38b3202e",
+    "bytes": 18455
+  },
+  "kitguard/regions.py": {
+    "sha256": "0915bc19bb5c26dec95d34d65a23e0cac09a0db48d4c8e6e05724029da898bcf",
+    "bytes": 12839
+  },
+  "kitguard/runtime.py": {
+    "sha256": "c5a6fa1ebcd4021436cbfeb83bc19d59852e1225fd8142bf0004bc449ba2edfb",
+    "bytes": 4510
+  },
+  "kitguard/schemas.py": {
+    "sha256": "2726e824a1a0c7e8fb2a99994992f787300e8675c93954e1e58d2f6156573788",
+    "bytes": 13599
+  },
+  "kitguard/spatial.py": {
+    "sha256": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+    "bytes": 5242
+  },
+  "kitguard/static/app.js": {
+    "sha256": "5ff22451db45831e012ff0521b36ca3079ccd3b1e0d6b04ea58e4c6741117187",
+    "bytes": 70689
+  },
+  "kitguard/static/audit.js": {
+    "sha256": "1b7cb8e38b7eb6d8762974ed0e8d315d675bd0ecd8bee21a995329d377d557af",
+    "bytes": 62357
+  },
+  "kitguard/static/camera.js": {
+    "sha256": "b38d1290850db0db67bf8845757262482e9a5d4e03dc287f847b0b09413123f5",
+    "bytes": 21832
+  },
+  "kitguard/static/demo.css": {
+    "sha256": "a90a412c6bec35e0c9c45a76b6340d448e481c1da241d9cef94f644569b6fc7c",
+    "bytes": 1857
+  },
+  "kitguard/static/demo.html": {
+    "sha256": "81605897336958ef297e24b33358352829f112971ccfb3807f889ac7138360db",
+    "bytes": 1651
+  },
+  "kitguard/static/demo.js": {
+    "sha256": "736acee31a18e16da3d84cc5626c29abe1081892fd8395a9cb540a1e17240213",
+    "bytes": 2637
+  },
+  "kitguard/static/detector.css": {
+    "sha256": "988da98c18e52275612bf6fbe56d94216d15d1c9b275aed5dc79faedfdabb8fc",
+    "bytes": 8359
+  },
+  "kitguard/static/detector.html": {
+    "sha256": "d575adcdaa3a6cb8a9d36583e24fcff13806941d2e33caf06178cc127938906b",
+    "bytes": 6780
+  },
+  "kitguard/static/detector.js": {
+    "sha256": "66fe07a3fe12e30e26c5f5f537657a8a84570f8ae9dcc799166e9cda2d183d52",
+    "bytes": 16489
+  },
+  "kitguard/static/favicon.svg": {
+    "sha256": "1e72ff002f137d117d6bd58b597e22f5b9fd807bd893d52caef22ba9993dd1a7",
+    "bytes": 303
+  },
+  "kitguard/static/index.html": {
+    "sha256": "25d6c1ef097784470428f5bc76f7a0e8b26746717ade4667782eb4ea6e52e135",
+    "bytes": 1921
+  },
+  "kitguard/static/readiness.css": {
+    "sha256": "c2303614f95f494db005432f9f792653c451747aa203b870c44757aac136902f",
+    "bytes": 3695
+  },
+  "kitguard/static/readiness.html": {
+    "sha256": "f300db9759dae5fbc4e0dbde01cb6a10a6bfc37baad589d8dac25bf9ee29c62e",
+    "bytes": 2381
+  },
+  "kitguard/static/readiness.js": {
+    "sha256": "09a6a34b3752e859188b772e93e02c574ad192f36d63557821b123c8ab3f98bc",
+    "bytes": 6881
+  },
+  "kitguard/static/region.css": {
+    "sha256": "3c497497966fd4f3df2c39fcf46583de2c4b823c2974d53589ac381a65db665e",
+    "bytes": 4097
+  },
+  "kitguard/static/region.js": {
+    "sha256": "307907a31bf61aea26ea1cf199a31f71a27de0f1a770cd32936205b7ed3722cc",
+    "bytes": 14157
+  },
+  "kitguard/static/spatial.js": {
+    "sha256": "fc482aaba0f2bcc18d1a4cd7093113544c6f415ebaf4a57c5a72ff738d9b36f4",
+    "bytes": 6471
+  },
+  "kitguard/static/study.css": {
+    "sha256": "b3eb9ffa3df56239a2a5c19e75cc337bbb7c39a15b9c435e562410bb89974cd4",
+    "bytes": 10191
+  },
+  "kitguard/static/study.html": {
+    "sha256": "1fe3499b8b77406169340cb6d2699f7a152b6f6037e0dd06beefdca6939e4d94",
+    "bytes": 726
+  },
+  "kitguard/static/study.js": {
+    "sha256": "0339f1a958e98bbc73a88981c09368c7c8d74fc6f1210758b29e0ba59590ac25",
+    "bytes": 40697
+  },
+  "kitguard/static/styles.css": {
+    "sha256": "16233578b215935e3286e62a7b174f2d988f6b9c4a906c360e6edf53c7e35f31",
+    "bytes": 59158
+  },
+  "kitguard/static/trials.css": {
+    "sha256": "25b0efdfddf6526d0c4c9548a3e7cf0dbc3b29ead0efe344fd74709c73dc65ba",
+    "bytes": 2954
+  },
+  "kitguard/static/trials.html": {
+    "sha256": "c461407db9614ea48b7cd0006e66e63d1f2d61241a3e9b6ebe42ca622b01f560",
+    "bytes": 4317
+  },
+  "kitguard/static/trials.js": {
+    "sha256": "bdf1f41ebd3f6d2be8d600c25d0ab77c278a125ff7402e9a91681d1fdc4feb5b",
+    "bytes": 19948
+  },
+  "kitguard/static/workflow.css": {
+    "sha256": "85c02bc52428a399498ab37fd01753598f9a9e3f3444d753c581cc3f0a703534",
+    "bytes": 903
+  },
+  "kitguard/static/workflow.js": {
+    "sha256": "02526de8435a5ee6660ad29fbc2c74ba09741d2937f475dd235bf5edfef115f8",
+    "bytes": 13020
+  },
+  "kitguard/store.py": {
+    "sha256": "7a7835c7d46a8d96f955c568bec4a3fb43949e8177471584ec82e91c37bc1e0e",
+    "bytes": 27270
+  },
+  "kitguard/task_trial_api.py": {
+    "sha256": "c7309b4487cec840f265bf63681ac56029ca4e0de6e58340f7db81d56658721b",
+    "bytes": 9452
+  },
+  "kitguard/task_trials.py": {
+    "sha256": "9ab4a3e5f65a9c16dab05e55fa0d756be84ec87366fff57b93a95cd38e68c7e1",
+    "bytes": 33400
+  },
+  "kitguard/vision.py": {
+    "sha256": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+    "bytes": 36138
+  }
+}

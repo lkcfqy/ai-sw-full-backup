@@ -1,0 +1,1940 @@
+{
+  "schema_version": 1,
+  "name": "KitGuard LOCO screw_bag static counting v2 with nominal-order metric",
+  "created_at_utc": "2026-09-26T10:20:30.761592+00:00",
+  "dataset_root": "datasets",
+  "source_archive_sha256": "9e7c84dba550fd2e59d8e9e231c929c45ba737b6b6a6d3814100f54d63aae687",
+  "defect_config_sha256": "99d2f93ac25f632d594ec0e4e610d30c157b8f4985cd3bd76828375103bdaacd",
+  "selection": {
+    "seed": "KitGuard-LOCO-v1-20260926",
+    "sort_key": "SHA256(UTF-8(seed + '|' + original_image_sha256)) ascending",
+    "normal_pool": "Official train good for development; official test good for holdout",
+    "quantity_pool": "Official test logical_anomalies, exactly one mask / one explicit quantity defect / counts within product scope",
+    "development_request": {
+      "normal": 8,
+      "quantity_anomaly": 8
+    },
+    "holdout_request": {
+      "normal": 24,
+      "quantity_anomaly": 24
+    },
+    "order": "Development first, holdout second; within each split alternate normal then quantity, retaining sorted order",
+    "shortfall_policy": "Use available eligible images only; never broaden label interpretation to fill quotas",
+    "upstream_test_repartition_note": "The first 8 eligible official-test quantity anomalies are explicitly reassigned to development. Remaining selected quantity anomalies form our custom holdout; this is not the untouched official-test protocol."
+  },
+  "actual_subgroup_counts": {
+    "development/normal_constant_222": 8,
+    "development/quantity_anomaly": 8,
+    "holdout/normal_constant_222": 24,
+    "holdout/quantity_anomaly": 24
+  },
+  "candidate_counts": {
+    "train_normal": 360,
+    "test_normal": 122,
+    "quantity_anomaly": 48
+  },
+  "limitations": [
+    "Report constant-222 normal images separately from variable-count anomalies; constant guessing cannot establish visual counting skill.",
+    "Original full photographs only; no crops, composites or generated images.",
+    "Count labels use author definitions and original masks, not model-generated answers or claimed human labeling.",
+    "No positive bracket examples; broad class counts do not validate screw length/SKU, actual physical recapture or unseen-factory generalization."
+  ],
+  "cases": [
+    {
+      "id": "mvtec-loco-screw_bag-train-good-016",
+      "image": "raw/mvtec_loco_ad/screw_bag/train/good/016.png",
+      "sha256": "3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9",
+      "source_id": "mvtec-loco-ad:screw_bag/train/good/016",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "train",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-043",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/043.png",
+      "sha256": "d75d49ef64bef5e899e72f47ad597d5999095739bda2d260ea77c72bc266adb6",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/043",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 3,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_washer: washer +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/043/000.png",
+          "sha256": "e1a871b77d2b7c22eeffde12516e90dc58af0e86d1c1af2dc80427e6c15e8551",
+          "pixel_values": [
+            247
+          ],
+          "defect_names": [
+            "1_additional_washer"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-train-good-046",
+      "image": "raw/mvtec_loco_ad/screw_bag/train/good/046.png",
+      "sha256": "fa6c5ed0a7a8278870056984baa8379831e75e7be2653c01c712bce36e8f4a91",
+      "source_id": "mvtec-loco-ad:screw_bag/train/good/046",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "train",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-062",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/062.png",
+      "sha256": "df066e5c5aaa8065744e2f41d501c37ca96cb87690ad839e6db8abe8a9543559",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/062",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 3,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_long_screw: bolt +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/062/000.png",
+          "sha256": "30363f1c6e513c7364df1c7cc858803b1ba9d8d0b3f60b0be3b65c0a3fa57cc7",
+          "pixel_values": [
+            251
+          ],
+          "defect_names": [
+            "1_additional_long_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-train-good-031",
+      "image": "raw/mvtec_loco_ad/screw_bag/train/good/031.png",
+      "sha256": "687969fb4f0383ae99071ff1a8865e3aaf22907987998a45577d68456ab795e3",
+      "source_id": "mvtec-loco-ad:screw_bag/train/good/031",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "train",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-082",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/082.png",
+      "sha256": "74195ad6264dd86289a249f272249352c80412193948e06940fa85a91fc39ff4",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/082",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 1,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_short_screw: bolt -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/082/000.png",
+          "sha256": "30e85684df50ac22f2b21aba5d4cdfff38aea22ef422a67d61f754dc13ba33af",
+          "pixel_values": [
+            244
+          ],
+          "defect_names": [
+            "1_missing_short_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-train-good-312",
+      "image": "raw/mvtec_loco_ad/screw_bag/train/good/312.png",
+      "sha256": "8370101e1875ef2598cf2bd8e6ed803634bb010eb3cbd807406c2c289f3576b2",
+      "source_id": "mvtec-loco-ad:screw_bag/train/good/312",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "train",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-072",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/072.png",
+      "sha256": "85c813797d1285f51145e5a5161ffa6fe9939e5a0e92361e879e010d703a03d4",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/072",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 1,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_washer: washer -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/072/000.png",
+          "sha256": "00cefd328da9c4d7e9bd35ddd8dbf23087ece69fd4c6670bbaa841e7c1edd75d",
+          "pixel_values": [
+            241
+          ],
+          "defect_names": [
+            "1_missing_washer"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-train-good-265",
+      "image": "raw/mvtec_loco_ad/screw_bag/train/good/265.png",
+      "sha256": "43c6666b43292b85751dd02b047b09942e62998c8c7d275e2dd911a5bbe25afe",
+      "source_id": "mvtec-loco-ad:screw_bag/train/good/265",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "train",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-050",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/050.png",
+      "sha256": "21e5db21ba176fbf097fec035262e149c0ad5cd42bd8e0539e593ffc9db49d70",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/050",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 3,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_short_screw: bolt +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/050/000.png",
+          "sha256": "8107bdbb150a7e9b20ef2fcfac37a6a12e3a86c00d86d833d2ee34454d59b53b",
+          "pixel_values": [
+            250
+          ],
+          "defect_names": [
+            "1_additional_short_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-train-good-057",
+      "image": "raw/mvtec_loco_ad/screw_bag/train/good/057.png",
+      "sha256": "525a366f58623a4e100dbd04387c9c8ddeac39b025fd6545ed2cb94dd3791f88",
+      "source_id": "mvtec-loco-ad:screw_bag/train/good/057",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "train",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-065",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/065.png",
+      "sha256": "2aa4c5be7b529b768aa64c40cbcdbede6743eb98cd5db8ca5780c72c89429c99",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/065",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 1,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_long_screw: bolt -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/065/000.png",
+          "sha256": "acf92f31bf202531aeb1e314ace3065addeb604203b2c7662557dd0690c28113",
+          "pixel_values": [
+            245
+          ],
+          "defect_names": [
+            "1_missing_long_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-train-good-250",
+      "image": "raw/mvtec_loco_ad/screw_bag/train/good/250.png",
+      "sha256": "9e80a32e38e2ceea904993d2021f97656b457f1215c9763d7730984eed944d9c",
+      "source_id": "mvtec-loco-ad:screw_bag/train/good/250",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "train",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-087",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/087.png",
+      "sha256": "c0939c7f1ef9b6d9ac56dbe783e169ca5487f612769e4e20499831527f994f0c",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/087",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_nut: nut -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/087/000.png",
+          "sha256": "7c3c99958bded2ef07a413faa7b803807122768489cd35ad9456c958e551e244",
+          "pixel_values": [
+            243
+          ],
+          "defect_names": [
+            "1_missing_nut"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-train-good-257",
+      "image": "raw/mvtec_loco_ad/screw_bag/train/good/257.png",
+      "sha256": "7c503df207c4457d753e5ff7c4a11d874f60a6139e814449d1e6d42d46556283",
+      "source_id": "mvtec-loco-ad:screw_bag/train/good/257",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "train",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-061",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/061.png",
+      "sha256": "5e48824d4503dc0edb2ad0553cf0f9b1bc3d19edbeb0d379e75e28ddce9ff820",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/061",
+      "split": "development",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_nut: nut +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/061/000.png",
+          "sha256": "0ad33c7729c42aefaf880d930d7a65d523bb674f41dda945322ece9defa734b4",
+          "pixel_values": [
+            249
+          ],
+          "defect_names": [
+            "1_additional_nut"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-020",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/020.png",
+      "sha256": "0f795c9dabf6404a12169e88e215b17ea6dc703ee89edb6c32d928e48b8a85e8",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/020",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-064",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/064.png",
+      "sha256": "950cfd133dcdce32bc967bab28781e2a4ca50649178742d03abfe33eb8e25ccf",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/064",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 3,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_short_screw: bolt +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/064/000.png",
+          "sha256": "2bdaccf39ce5e047f61996b13d05a181200466f6ddc669006a7faff76155c3ff",
+          "pixel_values": [
+            250
+          ],
+          "defect_names": [
+            "1_additional_short_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-080",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/080.png",
+      "sha256": "4b3d6724e4de2ed669bdcab0fe983637c593eab8fe9185a273f5da606ef05101",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/080",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-041",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/041.png",
+      "sha256": "635a8d19a43b3f11eec74fb4175ee6dc9d1805d0a5d4c2e07370d77291c15365",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/041",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_nut: nut +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/041/000.png",
+          "sha256": "bb5778fff2bdd24456e0330e7b6fa85ce9172a24172681e930a3ac7c475bc952",
+          "pixel_values": [
+            249
+          ],
+          "defect_names": [
+            "1_additional_nut"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-052",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/052.png",
+      "sha256": "e754702eceac115a7732df9be2c9ef3ff55ae9c51ba7c107cc742544ae61321f",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/052",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-063",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/063.png",
+      "sha256": "9204509ef64fca92b8ce64996d4aa7db1c090a9905184b8224ec7a02d70fddf4",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/063",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 3,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_short_screw: bolt +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/063/000.png",
+          "sha256": "9e535dc6638d67306398f1284eaff029786e3734daadf06577f0e062ae7dc483",
+          "pixel_values": [
+            250
+          ],
+          "defect_names": [
+            "1_additional_short_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-112",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/112.png",
+      "sha256": "a90a832d9d6be448480ae11ac969eb62333c887060e48f218e9dbe62328c257c",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/112",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-051",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/051.png",
+      "sha256": "ce87d3035774b37110ff3c624b3815ac011fce0460a483632c9b6ab7778753c4",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/051",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_nut: nut +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/051/000.png",
+          "sha256": "404a68b9bb1c4f2c24f107814f24e1bb6e2aecf6786d732036b3cc72276fda04",
+          "pixel_values": [
+            249
+          ],
+          "defect_names": [
+            "1_additional_nut"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-104",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/104.png",
+      "sha256": "b9a49a832986f9d137f8bbae51787bbfcd44bb82ee5d0f193c63a3a3ba756921",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/104",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-081",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/081.png",
+      "sha256": "183371802cb139315d5cf97b835eb9d46e158c198d104d708cbb229d00bce218",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/081",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 1,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_long_screw: bolt -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/081/000.png",
+          "sha256": "f509680deda7153fc55f58c011b19c22f1ad2cbf4fbceeb27d17ca3313c2dd5e",
+          "pixel_values": [
+            245
+          ],
+          "defect_names": [
+            "1_missing_long_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-113",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/113.png",
+      "sha256": "a637d04393b7ddbd620d80ba86c3eb37b7ea4d4df2c4f43bc5e765531fc7d8ba",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/113",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-042",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/042.png",
+      "sha256": "b09fc8b770c8db05f40857565792a5ba7c00c8420a6fb7ed0aa18bc459fe9613",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/042",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 3,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_long_screw: bolt +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/042/000.png",
+          "sha256": "ceb08093f757950b22bc52da7e196d99a64ecd4296fc0d6978b4ce784c43f1db",
+          "pixel_values": [
+            251
+          ],
+          "defect_names": [
+            "1_additional_long_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-036",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/036.png",
+      "sha256": "5bdd542166fc5dff2c420424453e0b84d08cdb1381073124cd67e5a08cc73b3c",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/036",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-045",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/045.png",
+      "sha256": "0862384e1553382dd106ed2e80379708ca354058529f6698d401409dee3cf455",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/045",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_nut: nut +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/045/000.png",
+          "sha256": "2f1d862e5eade34b385d902e6a06cfdf62ee6e82d9d7819c50e89428082f953e",
+          "pixel_values": [
+            249
+          ],
+          "defect_names": [
+            "1_additional_nut"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-101",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/101.png",
+      "sha256": "26a3e10dff6486009a202c9f7396807e4b92ea4a16913e93a52ec6aceed0d858",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/101",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-068",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/068.png",
+      "sha256": "e3b91c0855082979190a020c4693817e16943975fcaa79c07b12e4a8ee387bcf",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/068",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_nut: nut -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/068/000.png",
+          "sha256": "4e0eda6d9c21d4149d9a2e9c73f047bde56d409691956890ba7983d72d879d9a",
+          "pixel_values": [
+            243
+          ],
+          "defect_names": [
+            "1_missing_nut"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-062",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/062.png",
+      "sha256": "67e278149257aa49fba7fa081695a2e1e2531af656ce690e7be49d375fb514fe",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/062",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-079",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/079.png",
+      "sha256": "000b7dd17108df2e52d6798402469cd766d19d1782708b5afad17c45433c3a83",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/079",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 1,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_short_screw: bolt -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/079/000.png",
+          "sha256": "f05b64c68b692eccca5e58afe52e69170db2c6d49c1abdb5de9db08020144bb3",
+          "pixel_values": [
+            244
+          ],
+          "defect_names": [
+            "1_missing_short_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-105",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/105.png",
+      "sha256": "14ca5f6f84cc831ec888601a9a1493fcea2cc5f3f36a29707a90877067d8f360",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/105",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-073",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/073.png",
+      "sha256": "730b5ddac19e66e204b4452a27f158809e3e36e2da5d41b6671762eb5fbed173",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/073",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 1,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_short_screw: bolt -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/073/000.png",
+          "sha256": "0c6026ba690470be129bef6f37681cdec420f2686a9e05daa951de5f3cfe118b",
+          "pixel_values": [
+            244
+          ],
+          "defect_names": [
+            "1_missing_short_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-008",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/008.png",
+      "sha256": "73886d5a4708ca00d58dbd23425ca06372ef00d9116cdc37f6316326a393a75b",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/008",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-046",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/046.png",
+      "sha256": "e7b65b5226bfbde3564b269649bb305ab786fade0e3f3d277113932dfeb1c587",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/046",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 3,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_long_screw: bolt +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/046/000.png",
+          "sha256": "a6f329afdc56f464c6e7c2b9aeb0cb6e78574a6b86409ced7d07cc611ee2dbf5",
+          "pixel_values": [
+            251
+          ],
+          "defect_names": [
+            "1_additional_long_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-024",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/024.png",
+      "sha256": "c0cc7e5f0ce3928c477d5ffa9944c7b31f6baa857e7d9302e5d9c55d95caac9f",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/024",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-086",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/086.png",
+      "sha256": "c9ffb8c92b2a1accfc55beb7f07800b44e62dcac3ff87d700adf57a3180a9eb4",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/086",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_nut: nut -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/086/000.png",
+          "sha256": "9c9f0d3e41a2d7703000476b905715f4200742594a6c0b3be34a7ea8c9facab0",
+          "pixel_values": [
+            243
+          ],
+          "defect_names": [
+            "1_missing_nut"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-073",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/073.png",
+      "sha256": "ccc3addb654ea39f6c31a5814369e8e83d2680a7d38aea2d90451aaa468526a0",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/073",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-047",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/047.png",
+      "sha256": "ef00596b02c62f01732cdf3578bcc879d8dc65389c9d1bef3af52844fbaffe8b",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/047",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_nut: nut +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/047/000.png",
+          "sha256": "42af336034536bea0eb9af0c5e74e5bb57d7361c44fc97c3bc472aaadb6fb1ac",
+          "pixel_values": [
+            249
+          ],
+          "defect_names": [
+            "1_additional_nut"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-103",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/103.png",
+      "sha256": "4f8c74221af8712f980721abff13784baddb58d22012b1edc2facb7133d990c4",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/103",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-049",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/049.png",
+      "sha256": "5d2cb3bc992b439e77efdedd12efd7f294970ba487f32bb3dabfd70aa0dcdfea",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/049",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 3,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_short_screw: bolt +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/049/000.png",
+          "sha256": "b6f5d1dadc83a0390beff1179dd6a5e9d0ecd1b1a547eb7491099a7beebe574d",
+          "pixel_values": [
+            250
+          ],
+          "defect_names": [
+            "1_additional_short_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-007",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/007.png",
+      "sha256": "31f6a52f86b97e312e35867a0fdc8847bef9d5c1dff5db6ad8d23b687f65f1ef",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/007",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-076",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/076.png",
+      "sha256": "1072faaeb15734ce5d7cb30fe79f59bcfbcc8f076779d1178490fa7dd30d0635",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/076",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 1,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_long_screw: bolt -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/076/000.png",
+          "sha256": "502e1d189791625c9a55de9c3e5899cb30f00fa4fa83b7a48a0ad0adb750b1a5",
+          "pixel_values": [
+            245
+          ],
+          "defect_names": [
+            "1_missing_long_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-035",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/035.png",
+      "sha256": "64d8e75352b5fb52f85e38173882c86ca54763e3e1db7be5ee1d3c51f8b19fd1",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/035",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-069",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/069.png",
+      "sha256": "03de27afe9e3c02efebe2a8233abc3c646130fa3355a0a0a953cc896563f14e1",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/069",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_nut: nut -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/069/000.png",
+          "sha256": "880ade0fc668b341f90b124bcaf96623147c9b563499cdd497c12c36fd10a7c6",
+          "pixel_values": [
+            243
+          ],
+          "defect_names": [
+            "1_missing_nut"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-016",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/016.png",
+      "sha256": "c87c61337a7de7b8b18c684b3a9b5e01e1a1710ed396646f9ac6b9018d81c2fb",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/016",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-085",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/085.png",
+      "sha256": "ec17de2b80cb2ff6b59fb90ec8a57c1e7cd7b92ae95b8412323e8051a5967766",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/085",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 1,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_long_screw: bolt -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/085/000.png",
+          "sha256": "8249a815b18dbafd91b76afb76257f89d8018a8680fa56a6ea7e99d828197e1c",
+          "pixel_values": [
+            245
+          ],
+          "defect_names": [
+            "1_missing_long_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-001",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/001.png",
+      "sha256": "fe2c8cbf3b9755da6bd4cafad986f131ff4d54f6652b038f453b9152bdc476fc",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/001",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-048",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/048.png",
+      "sha256": "2dffede1233566fe3a947031f034adc720fff2108c5eed9cc5ff24210626133c",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/048",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 3,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_washer: washer +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/048/000.png",
+          "sha256": "20a74cef1131d2a4cc57c8ff75f53ec8be5e6feb0b771af759af8a654ae9457d",
+          "pixel_values": [
+            247
+          ],
+          "defect_names": [
+            "1_additional_washer"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-060",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/060.png",
+      "sha256": "aa52edc81121d8e590ed5d65b57a55cce106533b9640ff0b382d632e8491f32e",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/060",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-044",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/044.png",
+      "sha256": "7eab2ca7028ac993d1962e9be4d6d013841942355e04997dbd48e495ae0a8784",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/044",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 3,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_washer: washer +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/044/000.png",
+          "sha256": "7442e675156a7c50926e978b598b9b09554d52d10c62d0ae943dcf179e210a26",
+          "pixel_values": [
+            247
+          ],
+          "defect_names": [
+            "1_additional_washer"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-055",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/055.png",
+      "sha256": "c606a2d9c3336a16def2dcd7ef15d69a8adc389aef71cf7a5886beee56ddb522",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/055",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-083",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/083.png",
+      "sha256": "c791258c0e6990ec5981f96e8eebc5a722f55af0371a65365dbaeb9f7779e948",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/083",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 1,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_washer: washer -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/083/000.png",
+          "sha256": "253ff11a473887ffbe6f9d22eff15319387e093e3b341bb92ab87faccf646114",
+          "pixel_values": [
+            241
+          ],
+          "defect_names": [
+            "1_missing_washer"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-025",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/025.png",
+      "sha256": "ac0a7bfed5114b7f38bea46de4d403bacc2366215916e96e6024e6cede14f2a1",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/025",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-067",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/067.png",
+      "sha256": "488fcd2ea93ed1e493b55e159415bdccca988b43dc2b9795161c57c90962f991",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/067",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 1,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_short_screw: bolt -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/067/000.png",
+          "sha256": "9e48d5ce141cbc1c7179e97b9646d4ac5bd5276049699e164bd47066e76f8657",
+          "pixel_values": [
+            244
+          ],
+          "defect_names": [
+            "1_missing_short_screw"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-120",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/120.png",
+      "sha256": "afb4d51f5e7c72b701746c93da9e0634f944c8dc40a3f3eaa2efcda91f4f4111",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/120",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-057",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/057.png",
+      "sha256": "c7aabd1def40ecb1f7a3a64e542fd6069cc630d5f065f4b421008f88ed973867",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/057",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 3,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_nut: nut +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/057/000.png",
+          "sha256": "9f716eee9ccdc2e90f5c49aa79df01dc2068216ba0cda5e0c8365a14b3cf0989",
+          "pixel_values": [
+            249
+          ],
+          "defect_names": [
+            "1_additional_nut"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-045",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/045.png",
+      "sha256": "47fd67538a5133760b4b9f80ae9f41c0a0dd94941f9aa6405b18aca66f91d1b6",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/045",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-053",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/053.png",
+      "sha256": "f6ac2f0aea73c4d924fd6d52bf46f5fc3be88e37810472bba9eed5aaa2e62d81",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/053",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 3,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_additional_washer: washer +1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/053/000.png",
+          "sha256": "4355cecd0fc05ebff6bfd9b69342c645b00249f4bf96b6d59fb7b27465e927b0",
+          "pixel_values": [
+            247
+          ],
+          "defect_names": [
+            "1_additional_washer"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-good-014",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/good/014.png",
+      "sha256": "7cda7e32457c8dadc9db6dfb9f109a002afbe0910e4f08b29c5513c1e243481c",
+      "source_id": "mvtec-loco-ad:screw_bag/test/good/014",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "good",
+      "subgroup": "normal_constant_222",
+      "ground_truth_basis": "Author-defined normal bag composition: 1 long screw + 1 short screw + 2 nuts + 2 washers",
+      "source_masks": [],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    },
+    {
+      "id": "mvtec-loco-screw_bag-test-logical_anomalies-066",
+      "image": "raw/mvtec_loco_ad/screw_bag/test/logical_anomalies/066.png",
+      "sha256": "956b74f0a9f92fa297f1c4319cfa47e97c786b17f52ac3c5e0c0ecae6f35ece5",
+      "source_id": "mvtec-loco-ad:screw_bag/test/logical_anomalies/066",
+      "split": "holdout",
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 1,
+        "bracket": 0
+      },
+      "upstream_split": "test",
+      "upstream_kind": "logical_anomalies",
+      "subgroup": "quantity_anomaly",
+      "ground_truth_basis": "Author normal composition plus the single original mask defect 1_missing_washer: washer -1",
+      "source_masks": [
+        {
+          "path": "datasets/raw/mvtec_loco_ad/screw_bag/ground_truth/logical_anomalies/066/000.png",
+          "sha256": "32b21b4e1e91473d874ba8adc8a037b20ce5f72834dff231cf8d2d26b163cf61",
+          "pixel_values": [
+            241
+          ],
+          "defect_names": [
+            "1_missing_washer"
+          ]
+        }
+      ],
+      "nominal_requirements": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      }
+    }
+  ],
+  "selection_frozen_at_utc": "2026-09-26T10:20:23.784386+00:00",
+  "previous_manifest_sha256": "2a429c3170f08eff1d478d2ed12e47dda95e29f745f623e62f7113e89f590ddc",
+  "metric_revision": {
+    "reason": "Add the author's fixed normal order to expose false-ready decisions on actual quantity anomalies, including a model that always guesses 2/2/2/0",
+    "timing": "Metric refined after reviewing 8B development results; holdout model inference had not been run when the v2 protocol was adopted",
+    "selection_unchanged": true,
+    "note": "v1 and all prior development results remain preserved; this is not a claim that v2 metrics were specified before development"
+  }
+}

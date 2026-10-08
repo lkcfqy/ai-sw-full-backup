@@ -1,0 +1,13 @@
+file '/Users/lkc/Downloads/AI·SW/kitguard/output/demo/v0.8/photo-document-edit-01/scenes/scene-01.png'
+duration 20
+file '/Users/lkc/Downloads/AI·SW/kitguard/output/demo/v0.8/photo-document-edit-01/scenes/scene-02.png'
+duration 25
+file '/Users/lkc/Downloads/AI·SW/kitguard/output/demo/v0.8/photo-document-edit-01/scenes/scene-03.png'
+duration 25
+file '/Users/lkc/Downloads/AI·SW/kitguard/output/demo/v0.8/photo-document-edit-01/scenes/scene-04.png'
+duration 25
+file '/Users/lkc/Downloads/AI·SW/kitguard/output/demo/v0.8/photo-document-edit-01/scenes/scene-05.png'
+duration 20
+file '/Users/lkc/Downloads/AI·SW/kitguard/output/demo/v0.8/photo-document-edit-01/scenes/scene-06.png'
+duration 20
+file '/Users/lkc/Downloads/AI·SW/kitguard/output/demo/v0.8/photo-document-edit-01/scenes/scene-06.png'

@@ -1,0 +1,201 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KitGuard autonomous mission</title><style>body{max-width:980px;margin:40px auto;padding:0 22px;background:#f6f8f6;color:#173b35;font:16px system-ui}section{background:white;padding:24px;margin:24px 0;border:1px solid #dae4de;border-radius:16px}img{max-width:100%;max-height:340px}table{border-collapse:collapse}th,td{padding:8px 24px;border-bottom:1px solid #ddd}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}li{margin:18px 0}a{color:#12654d}</style><h1>KitGuard · Autonomous mission</h1><p>mission_996c0910dc114a1797a5 · completed · 135516ms</p><p>3 planned cases · 4 planned checks · 0 humans · 0 physical completions</p><p>工程执行 / 엔지니어링 실행. Known development photos; no new accuracy or human benefit claim.</p><p><a href="mission.json">Full snapshots and tool results</a> · <a href="SHA256.json">File checksums</a></p><section><h2>quantity · completed · quantity_difference</h2><p>Binding at export: current</p><img src="photos/img_15eb64da94be4c1fa196.jpg" alt="quantity"><p>R1 · chk_d520bc89c80b419aa481 · 19953ms</p><table><tr><th>Part</th><th>BOM</th><th>AI</th></tr><tr><th>bolt</th><td>2</td><td>3</td></tr><tr><th>nut</th><td>0</td><td>0</td></tr><tr><th>washer</th><td>0</td><td>0</td></tr><tr><th>bracket</th><td>0</td><td>0</td></tr></table><ol><li><b>prepare_public_photo</b> · completed<p>Use the frozen public source and predeclared BOM, not a cached prediction.</p><pre>{
+  &quot;order_id&quot;: &quot;ord_12c45fe8070449559f10&quot;,
+  &quot;photo_id&quot;: &quot;img_15eb64da94be4c1fa196&quot;,
+  &quot;source&quot;: {
+    &quot;sample_id&quot;: &quot;mixed-screws&quot;,
+    &quot;source_case_id&quot;: &quot;v03-screws-screws_344-8d389e404b12&quot;,
+    &quot;source_sha256&quot;: &quot;dfbe014a9c19c37d806e75019e38da66cd2ac4583aae7538c75825b1abb5b7eb&quot;,
+    &quot;source_url&quot;: &quot;https://www.mvtec.com/research-teaching/datasets/mvtec-screws&quot;,
+    &quot;license&quot;: &quot;MVTec · CC BY-NC-SA 4.0&quot;,
+    &quot;source_note&quot;: &quot;굵은 종류만 검사, 규격·SKU 검증 아님 / 检查粗类别，不验证规格或SKU&quot;,
+    &quot;derived_view&quot;: true,
+    &quot;kind&quot;: &quot;public_photo_demo&quot;,
+    &quot;physical_completion_allowed&quot;: false,
+    &quot;autonomous_mission_id&quot;: &quot;mission_996c0910dc114a1797a5&quot;,
+    &quot;autonomous_case_id&quot;: &quot;quantity&quot;
+  }
+}</pre></li><li><b>local_vision</b> · completed<p>A fresh check is required for this exact version and photograph.</p><pre>{
+  &quot;check_id&quot;: &quot;chk_d520bc89c80b419aa481&quot;,
+  &quot;decision&quot;: &quot;correct&quot;,
+  &quot;latency_ms&quot;: 19953,
+  &quot;check_sha256&quot;: &quot;77265b37dcf7500fee3db60e60d2f0386de5fedc5a9e4cca7b8e0e59ead557b4&quot;
+}</pre></li><li><b>list_differences</b> · completed<p>The stored count comparison has a nonzero difference; preserve the BOM and list the differences.</p><pre>{
+  &quot;finding&quot;: &quot;quantity_difference&quot;,
+  &quot;differences&quot;: [
+    {
+      &quot;part&quot;: &quot;bolt&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 3,
+      &quot;delta&quot;: 1
+    },
+    {
+      &quot;part&quot;: &quot;nut&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;washer&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;bracket&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    }
+  ],
+  &quot;uncertain_action&quot;: null
+}</pre></li></ol></section><section><h2>identity · completed · needs_more_evidence</h2><p>Binding at export: current</p><img src="photos/img_68f8a7d547dd418ab254.jpg" alt="identity"><p>R1 · chk_0a363c02b3c14ab6b9a6 · 20725ms</p><table><tr><th>Part</th><th>BOM</th><th>AI</th></tr><tr><th>bolt</th><td>2</td><td>2</td></tr><tr><th>nut</th><td>1</td><td>?</td></tr><tr><th>washer</th><td>0</td><td>?</td></tr><tr><th>bracket</th><td>0</td><td>0</td></tr></table><ol><li><b>prepare_public_photo</b> · completed<p>Use the frozen public source and predeclared BOM, not a cached prediction.</p><pre>{
+  &quot;order_id&quot;: &quot;ord_66d2fc54a6e44fa49a04&quot;,
+  &quot;photo_id&quot;: &quot;img_68f8a7d547dd418ab254&quot;,
+  &quot;source&quot;: {
+    &quot;sample_id&quot;: &quot;small-part&quot;,
+    &quot;source_case_id&quot;: &quot;v03-screws-screws_222-56eea59f64ca&quot;,
+    &quot;source_sha256&quot;: &quot;9aba8a284f2492dc78014a886b5091c7fa93f10485f9b4fab6e5ccfbaafedddd&quot;,
+    &quot;source_url&quot;: &quot;https://www.mvtec.com/research-teaching/datasets/mvtec-screws&quot;,
+    &quot;license&quot;: &quot;MVTec · CC BY-NC-SA 4.0&quot;,
+    &quot;source_note&quot;: &quot;작은 원형 부품은 혼동될 수 있습니다 / 小型环状零件可能被误认&quot;,
+    &quot;derived_view&quot;: true,
+    &quot;kind&quot;: &quot;public_photo_demo&quot;,
+    &quot;physical_completion_allowed&quot;: false,
+    &quot;autonomous_mission_id&quot;: &quot;mission_996c0910dc114a1797a5&quot;,
+    &quot;autonomous_case_id&quot;: &quot;identity&quot;
+  }
+}</pre></li><li><b>local_vision</b> · completed<p>A fresh check is required for this exact version and photograph.</p><pre>{
+  &quot;check_id&quot;: &quot;chk_0a363c02b3c14ab6b9a6&quot;,
+  &quot;decision&quot;: &quot;recapture&quot;,
+  &quot;latency_ms&quot;: 20725,
+  &quot;check_sha256&quot;: &quot;81016a495058dbfd2fb9e645677f57752ff800ebe6b8a497212b1d54cc3f27a5&quot;
+}</pre></li><li><b>request_more_evidence</b> · completed<p>The stored observation is uncertain or requires review; these same pixels cannot resolve it by assertion.</p><pre>{
+  &quot;finding&quot;: &quot;needs_more_evidence&quot;,
+  &quot;differences&quot;: [
+    {
+      &quot;part&quot;: &quot;bolt&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;nut&quot;,
+      &quot;required&quot;: 1,
+      &quot;observed&quot;: null,
+      &quot;delta&quot;: null
+    },
+    {
+      &quot;part&quot;: &quot;washer&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: null,
+      &quot;delta&quot;: null
+    },
+    {
+      &quot;part&quot;: &quot;bracket&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    }
+  ],
+  &quot;uncertain_action&quot;: {
+    &quot;kind&quot;: &quot;recapture&quot;,
+    &quot;message&quot;: &quot;표시된 부품을 분리하고 약간 기울여 머리·나사산·관통 구멍을 보여 주세요. 전체를 다시 촬영하세요 / 分开放置所示零件，稍微倾斜以露出头部、螺纹和孔口，再拍摄整套。区域仅为模型估计。&quot;,
+    &quot;region&quot;: [
+      0.81,
+      0.0,
+      1.0,
+      0.24
+    ]
+  }
+}</pre></li></ol></section><section><h2>revision · completed · quantities_match</h2><p>Binding at export: current</p><img src="photos/img_0d9c4f8b09d14287ae01.jpg" alt="revision"><p>R2 · chk_2a7c82e600e94b69a0c4 · 47233ms</p><table><tr><th>Part</th><th>BOM</th><th>AI</th></tr><tr><th>bolt</th><td>2</td><td>2</td></tr><tr><th>nut</th><td>2</td><td>2</td></tr><tr><th>washer</th><td>2</td><td>2</td></tr><tr><th>bracket</th><td>0</td><td>0</td></tr></table><ol><li><b>prepare_public_photo</b> · completed<p>Use the frozen public source and predeclared BOM, not a cached prediction.</p><pre>{
+  &quot;order_id&quot;: &quot;ord_6e9789881bc0461da930&quot;,
+  &quot;photo_id&quot;: &quot;img_16add1eb4b674fdfb828&quot;,
+  &quot;source&quot;: {
+    &quot;sample_id&quot;: &quot;bag-revision&quot;,
+    &quot;source_case_id&quot;: &quot;mvtec-loco-screw_bag-train-good-016&quot;,
+    &quot;source_sha256&quot;: &quot;3d97e65b2f54a690a9383fb8a1e35c53f21b59a1f96ed378a4ba6a6a636a31d9&quot;,
+    &quot;source_url&quot;: &quot;https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad&quot;,
+    &quot;license&quot;: &quot;MVTec · CC BY-NC-SA 4.0&quot;,
+    &quot;source_note&quot;: &quot;공개 사진의 관찰과 수량 변경 흐름 / 用公开照片体验核验与改版&quot;,
+    &quot;derived_view&quot;: false,
+    &quot;kind&quot;: &quot;public_photo_demo&quot;,
+    &quot;physical_completion_allowed&quot;: false,
+    &quot;autonomous_mission_id&quot;: &quot;mission_996c0910dc114a1797a5&quot;,
+    &quot;autonomous_case_id&quot;: &quot;revision&quot;
+  }
+}</pre></li><li><b>local_vision</b> · completed<p>A fresh check is required for this exact version and photograph.</p><pre>{
+  &quot;check_id&quot;: &quot;chk_47cf3fee7dbe417996ff&quot;,
+  &quot;decision&quot;: &quot;correct&quot;,
+  &quot;latency_ms&quot;: 46953,
+  &quot;check_sha256&quot;: &quot;23ce6d2a53f45d093bd22a602b30c4f76383352ad1a502346987aaaccffd2aba&quot;
+}</pre></li><li><b>list_differences</b> · completed<p>The stored count comparison has a nonzero difference; preserve the BOM and list the differences.</p><pre>{
+  &quot;finding&quot;: &quot;quantity_difference&quot;,
+  &quot;differences&quot;: [
+    {
+      &quot;part&quot;: &quot;bolt&quot;,
+      &quot;required&quot;: 3,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: -1
+    },
+    {
+      &quot;part&quot;: &quot;nut&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;washer&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;bracket&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    }
+  ],
+  &quot;uncertain_action&quot;: null
+}</pre></li><li><b>apply_planned_revision</b> · completed<p>Apply the predeclared simulated R2 and prove the old check is no longer current.</p><pre>{
+  &quot;revision&quot;: 2,
+  &quot;old_check_valid&quot;: false
+}</pre></li><li><b>replay_verified_photo</b> · completed<p>Same pixels, declared no new physical capture; the new revision requires new inference.</p><pre>{
+  &quot;replay_id&quot;: &quot;replay_81e798c44795409c9a7a&quot;,
+  &quot;photo_id&quot;: &quot;img_0d9c4f8b09d14287ae01&quot;,
+  &quot;physical_capture&quot;: false
+}</pre></li><li><b>local_vision</b> · completed<p>A fresh check is required for this exact version and photograph.</p><pre>{
+  &quot;check_id&quot;: &quot;chk_2a7c82e600e94b69a0c4&quot;,
+  &quot;decision&quot;: &quot;ready&quot;,
+  &quot;latency_ms&quot;: 47233,
+  &quot;check_sha256&quot;: &quot;6bc9c4da7bc5034dee62994e7a732ea5beece3c937883c04bcc9daf1bf967c10&quot;
+}</pre></li><li><b>package_findings</b> · completed<p>All four visible coarse-category counts match this BOM; digital evidence only.</p><pre>{
+  &quot;finding&quot;: &quot;quantities_match&quot;,
+  &quot;differences&quot;: [
+    {
+      &quot;part&quot;: &quot;bolt&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;nut&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;washer&quot;,
+      &quot;required&quot;: 2,
+      &quot;observed&quot;: 2,
+      &quot;delta&quot;: 0
+    },
+    {
+      &quot;part&quot;: &quot;bracket&quot;,
+      &quot;required&quot;: 0,
+      &quot;observed&quot;: 0,
+      &quot;delta&quot;: 0
+    }
+  ],
+  &quot;uncertain_action&quot;: null
+}</pre></li></ol></section><ul><li>This is automatic engineering execution on previously exposed public development photos; human participants = 0.</li><li>The rule planner routes real model findings. It does not certify correctness, independently review the image, or repair a scene.</li><li>Same-photo R2 replay is declared simulation, not a new capture. No physical completion or user-efficiency claim.</li><li>An archived finding describes its saved snapshot. A later order, photo, check or runtime change makes it historical.</li></ul></html>

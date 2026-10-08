@@ -1,0 +1,18 @@
+{
+  "slides": 9,
+  "version": "0.9.0.dev4",
+  "font": "Apple SD Gothic Neo",
+  "photoSources": [
+    {
+      "path": "test-results/scoring-v1/recording/own-goal/0015.jpg",
+      "sha256": "35aaeb213354682b1a1c63d4c037e8f7464405d7d0a87eecc393dd3ab8d62bf2"
+    },
+    {
+      "path": "test-results/scoring-v1/recording/all-cases/0030.jpg",
+      "sha256": "ef1c43843e83b5dec8e75fb9b649cb75b8a2098b58138b9e67d9d84b629fff4b"
+    }
+  ],
+  "visual_qa": "verified_all_9_portably_rendered_slides",
+  "sha256": "f4ed867a2eeb915bfec8e84774aa264e640201b2ad1559be0f561cb64b177c5a",
+  "native_powerpoint_rendering_verified": false
+}

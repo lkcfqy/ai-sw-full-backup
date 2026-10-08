@@ -1,0 +1,259 @@
+{
+  "schema": "kitguard.v07.delivery.v1",
+  "created_at": "2026-10-01T22:38:42.875081+00:00",
+  "version": "0.7.0",
+  "submission_sent": false,
+  "validation": {
+    "report_pages": 5,
+    "technical_pages": 1,
+    "presentation_slides": 8,
+    "video_duration_seconds": 143.0,
+    "source_version": "0.7.0",
+    "source_sha256": "e25074ff5db30e22459d66f0e29f6b610453eba5753dd75bbbb27c4fef3a2960",
+    "software_tests": {
+      "total": 1156,
+      "passed": 1156,
+      "skipped": 0
+    },
+    "evaluation_attempts": 153,
+    "evaluation_modes": [
+      "spatial_inventory",
+      "spatial_guarded",
+      "selective_identity_experimental_v1"
+    ],
+    "evaluation_freeze_sha256": "cec1cf5362a5154cfd6e4d27e5ed9dbb49d7757a12189474c13e643f1dc67be7",
+    "evaluation_independent_audit_status": "passed",
+    "evaluation_evidence": {
+      "evaluation_run": {
+        "path": "evaluation-runs/v0.7/public_paired_v1/run.json",
+        "sha256": "98d26a66c384466fc85f2e6c3f9c2266d2be89b8a2a3d3ad034da6fae2789661"
+      },
+      "evaluation_freeze": {
+        "path": "docs/v0.7/public_paired_freeze_v1/freeze.json",
+        "sha256": "cec1cf5362a5154cfd6e4d27e5ed9dbb49d7757a12189474c13e643f1dc67be7"
+      },
+      "evaluation_analysis": {
+        "path": "evaluation-runs/v0.7/public_paired_v1/analysis.json",
+        "sha256": "13f1775f4f6c57a6f21e01dbb6584654d4beb36a1749ae5430179d7a95f037c4"
+      },
+      "evaluation_audit": {
+        "path": "test-results/v0.7/public-paired-audit-v1.json",
+        "sha256": "94c71e45341a5065ee90fe601e606cd3a54242094d5dcc08770f6aae8c588fe9"
+      },
+      "freeze.json": {
+        "path": "evaluation-runs/v0.7/public_paired_v1/freeze.json",
+        "sha256": "cec1cf5362a5154cfd6e4d27e5ed9dbb49d7757a12189474c13e643f1dc67be7"
+      },
+      "manifest.json": {
+        "path": "evaluation-runs/v0.7/public_paired_v1/manifest.json",
+        "sha256": "efe4633e873d45032101a26e035c23d267bafa6605d147d3d2f7fcb51b697643"
+      },
+      "predictions.jsonl": {
+        "path": "evaluation-runs/v0.7/public_paired_v1/predictions.jsonl",
+        "sha256": "9b525702cb2665274c37a7d7740c1d93c05562ab5fb5a17e171e31b75a6859ee"
+      },
+      "auditor": {
+        "path": "scripts/v07/audit_public_paired.py",
+        "sha256": "4ed25dcb8b832adf027c72abddea76b0363d3b06125ad6e864621d6340d7a5f6"
+      }
+    },
+    "evaluation_verification_scope": "Independent CPU audit receipt bound to actual run, analysis, freeze, manifest, predictions and auditor bytes",
+    "experimental_acceptance_is_not_a_release_guarantee": true,
+    "real_user_validation_claimed": false,
+    "physical_task_validation_claimed": false
+  },
+  "summary": [
+    "공개 출처 51장 × 3방법 = 153회 실제 관찰, 전수 독립 재검산 완료. Inventory C46/W5/U0, 기본 Guarded C41/W3/U7, Selective C46/W4/U1. 모두 실행 오류·미실행 0. C=정확·명확, W=오류·명확, U=미확인.",
+    "默认方案仍有3张错误，未达到预设安全与覆盖门槛；候选虽然更快却多出1张错误，因此不晋升。四类合法订单面板的照片级错误就绪分别为5/51、3/51、4/51；受限来源面板的0不能替代该结果。",
+    "公开照片数字审查、改版失效、同图重新推理与离线证据已做真实本地浏览器验收。1,156项软件测试通过不等于识别零错；工程审查不计为真人参与或实物完工。",
+    "源码包含3张获许可的开发演示照片，不含模型权重、私人数据库和完整实验图片。解压运行检查使用本机已有依赖，不是全新机器安装验证。报告及Markdown中的仓库相对路径按源码目录解释。",
+    "真实开发从2026-09-26开始，沿用赛前原型的资格仍待主办方确认。本地交付已整理，不表示已向比赛平台提交，也不保证名次。"
+  ],
+  "artifacts": [
+    {
+      "role": "report",
+      "title": "결과 보고서",
+      "source": "output/pdf/v0.7-final/KitGuard_결과보고서_v0.7.pdf",
+      "destination": "files/report/KitGuard_결과보고서_v0.7.pdf",
+      "sha256": "7eaefdf5d5149be50b603972bd69269e657469c141f531ce50d790c45da1d344",
+      "bytes": 107628
+    },
+    {
+      "role": "technical",
+      "title": "Agent 기술 설명",
+      "source": "output/pdf/v0.7-final/KitGuard_Agent_기술설명_v0.7.pdf",
+      "destination": "files/technical/KitGuard_Agent_기술설명_v0.7.pdf",
+      "sha256": "e561a2dfc7de52d3af160be0a7e1b6c32c44550bd4cc346a25fd39b517dc7280",
+      "bytes": 82342
+    },
+    {
+      "role": "source",
+      "title": "실행 소스",
+      "source": "output/KitGuard_source_v0.7.0.zip",
+      "destination": "files/source/KitGuard_source_v0.7.0.zip",
+      "sha256": "e25074ff5db30e22459d66f0e29f6b610453eba5753dd75bbbb27c4fef3a2960",
+      "bytes": 5515923
+    },
+    {
+      "role": "video",
+      "title": "실제 실행 시연",
+      "source": "output/demo/v0.7/public-photo-edit-01/KitGuard_v07_public_photo_walkthrough.mp4",
+      "destination": "files/video/KitGuard_v07_public_photo_walkthrough.mp4",
+      "sha256": "d0d88b67ac3a4ae489758d78799913d113a8309584ac4cb1575d707911a2c826",
+      "bytes": 2291710
+    },
+    {
+      "role": "slides",
+      "title": "발표 자료",
+      "source": "output/presentations/v0.7-final/KitGuard_발표_v0.7.0_v2.pptx",
+      "destination": "files/slides/KitGuard_발표_v0.7.0_v2.pptx",
+      "sha256": "e00a14ae73ba953dfd8272cae8a7bd3d0a51adbb1a8901a0b3972e7e026bb50f",
+      "bytes": 1075108
+    },
+    {
+      "role": "evidence_0",
+      "title": "完整中文评估 / Evaluation",
+      "source": "docs/v0.7/FINAL_EVALUATION.md",
+      "destination": "files/evidence_0/FINAL_EVALUATION.md",
+      "sha256": "3499d854ce327f67744e7a8eb10666406398b6812b5675b7c85cd496f33a0b5f",
+      "bytes": 12234
+    },
+    {
+      "role": "evidence_1",
+      "title": "逐错例原文复核 / Failure review",
+      "source": "docs/v0.7/PUBLIC51_FAILURE_REVIEW.md",
+      "destination": "files/evidence_1/PUBLIC51_FAILURE_REVIEW.md",
+      "sha256": "f222f0a6cf130309b5249b961d21e7c1aa84ce9800c0cd237ffd647ae5adee90",
+      "bytes": 13249
+    },
+    {
+      "role": "evidence_2",
+      "title": "错例哈希索引 / Failure evidence hashes",
+      "source": "docs/v0.7/PUBLIC51_FAILURE_EVIDENCE.json",
+      "destination": "files/evidence_2/PUBLIC51_FAILURE_EVIDENCE.json",
+      "sha256": "c093384e6362aa5513b1538802e6b6e41f0bba0be7f01425dee0f96f61919f55",
+      "bytes": 61645
+    },
+    {
+      "role": "evidence_3",
+      "title": "51图完整指标 / Paired analysis",
+      "source": "evaluation-runs/v0.7/public_paired_v1/analysis.json",
+      "destination": "files/evidence_3/analysis.json",
+      "sha256": "13f1775f4f6c57a6f21e01dbb6584654d4beb36a1749ae5430179d7a95f037c4",
+      "bytes": 16850
+    },
+    {
+      "role": "evidence_4",
+      "title": "153次独立审计 / Independent audit",
+      "source": "test-results/v0.7/public-paired-audit-v1.json",
+      "destination": "files/evidence_4/public-paired-audit-v1.json",
+      "sha256": "94c71e45341a5065ee90fe601e606cd3a54242094d5dcc08770f6aae8c588fe9",
+      "bytes": 256856
+    },
+    {
+      "role": "evidence_5",
+      "title": "实验冻结 / Experiment freeze",
+      "source": "docs/v0.7/public_paired_freeze_v1/freeze.json",
+      "destination": "files/evidence_5/freeze.json",
+      "sha256": "cec1cf5362a5154cfd6e4d27e5ed9dbb49d7757a12189474c13e643f1dc67be7",
+      "bytes": 32121
+    },
+    {
+      "role": "evidence_6",
+      "title": "最终应用与实验兼容 / Release method compatibility",
+      "source": "test-results/v0.7/release-method-compatibility-v1.json",
+      "destination": "files/evidence_6/release-method-compatibility-v1.json",
+      "sha256": "73bfb8c7235baf8002ac2edf5d0cf03eeb7255a6616fd483ddb556f5f382dee4",
+      "bytes": 10723
+    },
+    {
+      "role": "evidence_7",
+      "title": "软件测试 / Software tests",
+      "source": "test-results/v07-final-20261002-r2.xml",
+      "destination": "files/evidence_7/v07-final-20261002-r2.xml",
+      "sha256": "0dba95f7a0206eb2eb0f1a3803af92d540b11856c71a71bfede1fcf1ac5462b3",
+      "bytes": 12747684
+    },
+    {
+      "role": "evidence_8",
+      "title": "袋装套件离线证据 ZIP / Bag review evidence",
+      "source": "test-results/browser/public-review-v07/demonstration/evidence.zip",
+      "destination": "files/evidence_8/evidence.zip",
+      "sha256": "ff7c35eaa1dc94930a392b5745fa9aca214dffde5142dde3c67fa82da3828783",
+      "bytes": 1032891
+    },
+    {
+      "role": "evidence_9",
+      "title": "小零件补资料证据 ZIP / Small-part evidence",
+      "source": "test-results/browser/public-review-v07/final-acceptance/small-part-r1-evidence.zip",
+      "destination": "files/evidence_9/small-part-r1-evidence.zip",
+      "sha256": "7c25a96e46e762e505d05bb852b23a46b42e3dd10d9ab04b73d127295c9221e6",
+      "bytes": 331055
+    },
+    {
+      "role": "evidence_10",
+      "title": "异常分支实际检查 / Exception acceptance",
+      "source": "test-results/browser/public-review-v07/final-acceptance/api-verification.json",
+      "destination": "files/evidence_10/api-verification.json",
+      "sha256": "f806a7f4ec1624bc4e4525f64ed4e87bec79f540621bef0ea66bc69b42dd3cb5",
+      "bytes": 1139
+    },
+    {
+      "role": "evidence_11",
+      "title": "离线与视口验收边界 / Offline and layout scope",
+      "source": "test-results/browser/public-review-v07/final-acceptance/offline-and-layout-verification.json",
+      "destination": "files/evidence_11/offline-and-layout-verification.json",
+      "sha256": "0e53f1f09ab20d91856956796f9890362262c9df843e9198a5bf8e9a355c3d35",
+      "bytes": 795
+    },
+    {
+      "role": "evidence_12",
+      "title": "可选真人试用说明 / Optional user trial",
+      "source": "docs/v0.7/PUBLIC_USER_CHECK_KO_ZH.md",
+      "destination": "files/evidence_12/PUBLIC_USER_CHECK_KO_ZH.md",
+      "sha256": "f9b890c9190cb16a925934a985c79b49af3e257aafc91c619628894ecb500165",
+      "bytes": 5035
+    },
+    {
+      "role": "evidence_13",
+      "title": "开发期贡献与资格说明 / Contribution disclosure",
+      "source": "docs/v0.7/CONTEST_PERIOD_CONTRIBUTIONS.md",
+      "destination": "files/evidence_13/CONTEST_PERIOD_CONTRIBUTIONS.md",
+      "sha256": "71f32990ec6b860e2385d83f2c5ba001199a309c9226a8c788eb82f11f9913d0",
+      "bytes": 13963
+    },
+    {
+      "role": "evidence_14",
+      "title": "源码解压运行检查 / Source runtime check",
+      "source": "output/KitGuard_source_v0.7.0.zip.verification.json",
+      "destination": "files/evidence_14/KitGuard_source_v0.7.0.zip.verification.json",
+      "sha256": "5ae60d6c10c287782e58db60a7e8be691a9513b00a5fe30ad1183f29af737660",
+      "bytes": 1051
+    },
+    {
+      "role": "evidence_15",
+      "title": "视频生成与解码记录 / Video verification",
+      "source": "output/demo/v0.7/public-photo-edit-01/video_receipt.json",
+      "destination": "files/evidence_15/video_receipt.json",
+      "sha256": "c4bd4fe274d9cc2d60f18c1999a8e5db9a98615f8a453a3a11d96d6eb15e9aae",
+      "bytes": 31744
+    },
+    {
+      "role": "evidence_16",
+      "title": "PDF逐页QA / PDF verification",
+      "source": "output/pdf/v0.7-final/QA.json",
+      "destination": "files/evidence_16/QA.json",
+      "sha256": "e7c7408eebd2d9c47c61ffcd68b415941b6baf416cda944aa9c069e63c55d28f",
+      "bytes": 4868
+    },
+    {
+      "role": "evidence_17",
+      "title": "幻灯片渲染QA / Slides verification",
+      "source": "test-results/v0.7/presentation-final-qa.json",
+      "destination": "files/evidence_17/presentation-final-qa.json",
+      "sha256": "1c52705fcdb320970332beeb226f0c1242b83bd38fff0961695da0da1bf4a799",
+      "bytes": 2650
+    }
+  ],
+  "config_sha256": "f8e5cec74808a903e0991a741dcff9bfe79cf29f85550f3f57d990ce29dd5d18"
+}

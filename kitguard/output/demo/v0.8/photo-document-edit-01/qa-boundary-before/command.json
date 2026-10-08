@@ -1,0 +1,14 @@
+[
+  "/Users/lkc/Downloads/AI·SW/kitguard/.tools/imageio-ffmpeg/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+  "-hide_banner",
+  "-nostdin",
+  "-i",
+  "/Users/lkc/Downloads/AI·SW/kitguard/output/demo/v0.8/photo-document-edit-01/KitGuard_v08_photo_document_edit_ko.mp4",
+  "-vf",
+  "select=eq(n\\,478)+eq(n\\,1078)+eq(n\\,1678)+eq(n\\,2278)+eq(n\\,2758)",
+  "-fps_mode",
+  "vfr",
+  "-threads",
+  "1",
+  "/Users/lkc/Downloads/AI·SW/kitguard/output/demo/v0.8/photo-document-edit-01/qa-boundary-before/selected-%02d.png"
+]

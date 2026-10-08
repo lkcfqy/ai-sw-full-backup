@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://sw.inje.ac.kr/bbs/board.php?bo_table=news&wr_id=71",
+    "path": "05_补充官方资料/仁济大学参赛公告_原始.html",
+    "source": "https://sw.inje.ac.kr/bbs/board.php?bo_table=news",
+    "kind": "webpage"
+  },
+  {
+    "url": "https://www.gnict.org/media/uploads/2026/09/17/제4회_AI.SW_경진대회_참가_신청서_수정r1최종.hwp",
+    "path": "02_主办方公告/附件/제4회_AI.SW_경진대회_참가_신청서_수정r1최종.hwp",
+    "source": "https://www.gnict.org/게시판/sw경진대회/제4회-경남aisw경진대회-공고/",
+    "kind": "attachment"
+  },
+  {
+    "url": "https://www.gnict.org/media/uploads/2026/09/18/공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집_20260908.hwp",
+    "path": "02_主办方公告/附件/공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집_20260908.hwp",
+    "source": "https://www.gnict.org/게시판/sw경진대회/제4회-경남aisw경진대회-공고/",
+    "kind": "attachment"
+  },
+  {
+    "url": "https://www.gnict.org/media/images/ckeditor/2026/09/07/제4회 경남AI·SW경진대회 포스터@2x_4c6G85N.png",
+    "path": "02_主办方公告/附件/제4회 경남AI·SW경진대회 포스터@2x_4c6G85N.png",
+    "source": "https://www.gnict.org/게시판/sw경진대회/제4회-경남aisw경진대회-공고/",
+    "kind": "content_image"
+  }
+]

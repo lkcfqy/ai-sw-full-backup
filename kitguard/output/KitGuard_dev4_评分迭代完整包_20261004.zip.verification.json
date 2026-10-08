@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-03T18:16:29.678316+00:00",
+  "status": "passed",
+  "archive": "output/KitGuard_dev4_评分迭代完整包_20261004.zip",
+  "archive_sha256": "055b388e2f1799aa24d47f771ac3fa1a5e7c95d8e9a6e045502b0aa583aa08ad",
+  "archive_bytes": 15899493,
+  "archive_files": 124,
+  "zip_crc": "passed",
+  "exact_file_set": "passed",
+  "every_payload_sha256": "passed",
+  "manifest_sha256": "3d469ea95648a85ddba985ccddd09906fa89a6a35fe6972aa673bacdd0513f5f",
+  "five_accepted_materials_unchanged": true,
+  "http_checks": [
+    {
+      "path": "DEV4_HANDOFF.md",
+      "status": 200
+    },
+    {
+      "path": "KitGuard_agent_1p.pdf",
+      "status": 200
+    },
+    {
+      "path": "KitGuard_competition_score.html",
+      "status": 200
+    },
+    {
+      "path": "KitGuard_demo_ko.mp4",
+      "status": 200
+    },
+    {
+      "path": "KitGuard_execution_evidence.zip",
+      "status": 200
+    },
+    {
+      "path": "KitGuard_presentation_9slides.pptx",
+      "status": 200
+    },
+    {
+      "path": "KitGuard_report_5p.pdf",
+      "status": 200
+    },
+    {
+      "path": "KitGuard_source_dev4.zip",
+      "status": 200
+    },
+    {
+      "path": "MANIFEST.json",
+      "status": 200
+    },
+    {
+      "path": "PRESENTATION_SCRIPT_KO.md",
+      "status": 200
+    },
+    {
+      "path": "RELEASE_ACCEPTANCE.json",
+      "status": 200
+    },
+    {
+      "path": "SOURCE_AI_DISCLOSURE_KO.md",
+      "status": 200
+    },
+    {
+      "path": "completed-ko.jpg",
+      "status": 200
+    },
+    {
+      "path": "evidence/index.html",
+      "status": 200
+    },
+    {
+      "path": "ledger.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8765/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8765/static/autonomy.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8797/?view=1",
+      "status": 200
+    }
+  ],
+  "submission_receipt": null
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "kitguard.official-rule-clarification.v1",
+  "created_at_utc": "2026-10-02T03:08:39.616988+00:00",
+  "source_pages": [
+    {
+      "url": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=2",
+      "published_date": "2026-09-29",
+      "download_attachment": 1,
+      "native_slides_1_based": [
+        4,
+        27,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "url": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=4",
+      "published_at_kst": "2026-10-02T11:46:00+09:00"
+    }
+  ],
+  "findings": {
+    "prior_assets": "Official general permission conditional on distinguishing reused assets from new contest-period design/integration/improvement; no invented routine project-specific advance-approval prerequisite.",
+    "project_started": "2026-09-26",
+    "official_development_dates": [
+      "2026-09-29",
+      "2026-10-06"
+    ],
+    "individual_organizer_review_received": false,
+    "final_submission_kst": "2026-10-06T12:00:00+09:00",
+    "award_start_kst": "2026-10-14T15:00:00+09:00",
+    "award_end": null,
+    "visitor_web_preregistration_deadline_date": "2026-10-08",
+    "visitor_registration_performed": false,
+    "annex_2_official_template_obtained": false,
+    "annex_2_search_scope": "Public four-notice list, two HWP and two PPTX attachments; common resource room mentioned without URL. Missing from this search is not proof unavailable in participant channels.",
+    "physical_robot_required": false,
+    "public_data_evidence_not_field_outcome": true,
+    "real_users": 0
+  },
+  "files": [
+    {
+      "path": "test-results/v0.8/official-forms-discovery-20261002/notice-2.html",
+      "bytes": 17051,
+      "sha256": "b42df39f212fca8a0ad0aa420ee967ea812c3af30394ce40bd5fd85c22a48c67"
+    },
+    {
+      "path": "test-results/v0.8/official-forms-discovery-20261002/notice-2-attachment-1.pptx",
+      "bytes": 174768,
+      "sha256": "3c14f0ab5abce7272891c9a2dc5e34c56e69a296ec3e27d1fe53db33c0077bac"
+    },
+    {
+      "path": "test-results/v0.8/official-forms-discovery-20261002/notice-2-attachment-1.txt",
+      "bytes": 25880,
+      "sha256": "cfb8aab21fc410d7aaa48537100899f3c799c2a33781cbe4d734a7620f955718"
+    },
+    {
+      "path": "test-results/v0.8/official-forms-discovery-20261002/notice-2-attachment-0.pptx",
+      "bytes": 30497441,
+      "sha256": "e250dbcc64313f2abb5bec8d157105cf200375816d6f40bfe9dfe9095616fc89"
+    },
+    {
+      "path": "test-results/v0.8/official-forms-discovery-20261002/briefing-attachments-receipt.json",
+      "bytes": 1201,
+      "sha256": "5a5bcbb99d11585831334b0f587e52a97e7ad5781eb97ba32a3e920bfb7cdccb"
+    },
+    {
+      "path": "test-results/v0.8/official-forms-discovery-20261002/notice-4.html",
+      "bytes": 16174,
+      "sha256": "e22e3ee0e0770119031c5c081767d569d35a21b90787cef421fa366d1b3c98eb"
+    },
+    {
+      "path": "test-results/v0.8/official-forms-discovery-20261002/notice-4.txt",
+      "bytes": 6720,
+      "sha256": "5ec926b950d06834530beff7583c20bce6d438f1116cbb4e50b2b7facf4baf72"
+    },
+    {
+      "path": "test-results/v0.8/official-recheck-20261002/rule.html",
+      "bytes": 16312,
+      "sha256": "5cd3b7de620209c6449dc3162d6069bcb0878c29d9b3228850bf20683782e649"
+    },
+    {
+      "path": "test-results/v0.8/official-recheck-20261002/rule.txt",
+      "bytes": 5454,
+      "sha256": "8e91228ffa73f5f142765812024e1648272a80ec4de5296faf2daed4cc2ad674"
+    },
+    {
+      "path": "docs/v0.8/OFFICIAL_RULE_CLARIFICATION_20261002.md",
+      "bytes": 4543,
+      "sha256": "9f28ee9fa7c482f54319d987da297e246169e2805914aa19205a2f6f7a7384a9"
+    }
+  ],
+  "frozen_artifacts_modified": false,
+  "visual_ppt_validation_claimed": false
+}

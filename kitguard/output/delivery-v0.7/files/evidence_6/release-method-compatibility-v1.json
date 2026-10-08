@@ -1,0 +1,244 @@
+{
+  "schema": "kitguard.v07.release-method-compatibility.v1",
+  "status": "passed",
+  "checked_at": "2026-10-01T22:24:18.280870+00:00",
+  "application_version": "0.7.0",
+  "freeze_sha256": "cec1cf5362a5154cfd6e4d27e5ed9dbb49d7757a12189474c13e643f1dc67be7",
+  "model_loaded_or_called": false,
+  "production_mode_verified": "spatial_guarded",
+  "model_identity": {
+    "label": "Qwen3.6-27B · MLX 4-bit · local",
+    "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+    "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+    "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+    "observation_mode": "spatial_guarded",
+    "image_max_side": 1536
+  },
+  "unchanged_recognition_dependencies": {
+    "kitguard/vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+    "kitguard/spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+    "kitguard/consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+    "kitguard/identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+    "kitguard/models.py": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+    "kitguard/schemas.py": "2726e824a1a0c7e8fb2a99994992f787300e8675c93954e1e58d2f6156573788",
+    "kitguard/feedback.py": "53bc33cb728b98b0a6896f4d3b9e236ecfab7d9db3f12ac6eb8cde087ea9db1e",
+    "kitguard/regions.py": "0915bc19bb5c26dec95d34d65a23e0cac09a0db48d4c8e6e05724029da898bcf"
+  },
+  "unchanged_decide_ast_sha256": "a770f271dba4e257a1a050e71bae1547ddcb0fdece226fae3376854618ddabdf",
+  "current_app_sha256": "18541c473913810da510edc90647c7ee52b3619921aed730e3828b8706d97f61",
+  "current_store_sha256": "5e1b5311ae2d6c7c9d89020150ef92d3a69534e48b26831b9784a487d5a588cd",
+  "current_upload_harness_sha256": "576c893e5d0e801561368c056528ed2ac140995eed5242ef52e784182c64d824",
+  "run_metadata_sha256": "98d26a66c384466fc85f2e6c3f9c2266d2be89b8a2a3d3ad034da6fae2789661",
+  "normalized_inputs_reexecuted": 51,
+  "photos": [
+    {
+      "case_id": "v07-loco-screw_bag-train-good-259",
+      "normalized_sha256": "49804228be8ce16bdccb1e9bfaf67d81da11e133e67bf43ab8235e7f9ea10ecf"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-279",
+      "normalized_sha256": "7a11a0de59787ea903b77fe354ac7c128fc8b0545b06daa59c71f7b976607d86"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-225",
+      "normalized_sha256": "5b3f37a89a7abf3e8d6f7cb456db5630bd1c094d43bb9e99ecf8f533def0899f"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-validation-good-019",
+      "normalized_sha256": "06b09e3ee0d868d74040cc0714822dd3b779189b9bfef59713c7ec193ccb5f37"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-validation-good-020",
+      "normalized_sha256": "25d78a71e33c4e43b0f3683d5c1f020ca1e5f263abc8577215904373d833c707"
+    },
+    {
+      "case_id": "v07-screws-screws_278-7c485f49437e",
+      "normalized_sha256": "cfc52e5d37c5b081f0ae954392335789a7e363863e300e73ac0ed8694133056e"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-261",
+      "normalized_sha256": "c266cef7cba042779238bb0c0b15eef315feec6b7f3714e27fc33ab82652ec7c"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-118",
+      "normalized_sha256": "d5792df047eb8862131809f810f348b06886368af63bde28deada52864e7599c"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-148",
+      "normalized_sha256": "b5c4ff3d17366514c00fd470c542a41cbf652a3c51fc66555e2a77863728e5e7"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-validation-good-012",
+      "normalized_sha256": "e6879e37615dfd8df12242e98f30e131e0c0a0d9817c37af5a79dc8acda159a4"
+    },
+    {
+      "case_id": "v07-screws-screws_267-b588d0610843",
+      "normalized_sha256": "cf7b6d46e89eaaf5b8183386ae0488510763381c1600df227be483eb0f570fff"
+    },
+    {
+      "case_id": "v07-screws-screws_043-0f142a407685",
+      "normalized_sha256": "30f9211cc8fa96cced29ca864c5476d0e15f4deb056fdf4ab6499e7694e5f96c"
+    },
+    {
+      "case_id": "v07-screws-screws_329-3ef8cd71fa7c",
+      "normalized_sha256": "db10888d012075b28a8f96455958f7eb21a33a933e9f51899e2f6b46bd6912de"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-288",
+      "normalized_sha256": "a33c0854b61e896b7a6745fb99020c2ac94e162250e298cb3abf9f4952ee9734"
+    },
+    {
+      "case_id": "v07-screws-screws_254-01bdc322d45c",
+      "normalized_sha256": "5cdbc6af9441a1109b74bcdf17fece97729a4163231552ad9d58d60cd705b12e"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-085",
+      "normalized_sha256": "e1a54b1a3570043e1e03b1efad4c08ecd62bfd35e963ca58b52055feb9658a6e"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-081",
+      "normalized_sha256": "e22aa0dcb8f1e11195308b45fa18c89861fdd6bce0e3a2ae3e7a676735e03db2"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-345",
+      "normalized_sha256": "0086f6a2539b32ad714b989fe88100a8644fc08e1c2ee7b2563b345a2e1fcdfd"
+    },
+    {
+      "case_id": "v07-screws-screws_052-2ff24eaf90ca",
+      "normalized_sha256": "85beb312aad90b88ac297ff78a51c38ba38e67838d4860a9e63634c21b8ae514"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-186",
+      "normalized_sha256": "d6e457859f6141c1cfb665e3176db5edfe8a280768588176568b63ac0960cb76"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-087",
+      "normalized_sha256": "7765cca291414dd95640b1ab43dc30d8347a52d0a41a833c4996490a6aa13ecf"
+    },
+    {
+      "case_id": "v07-loco-screw_bag-train-good-144",
+      "normalized_sha256": "9d52960cc91a1100a04c7f26d000a81d6b5561a9fe88eabde434f322eba53fae"
+    },
+    {
+      "case_id": "v07-screws-screws_217-02dcfdb94d9b",
+      "normalized_sha256": "259b650aa1800ebc42fe0ae6b1e2228ba62ad6f8422905aaf6dea6af20204a53"
+    },
+    {
+      "case_id": "v07-screws-screws_173-e4f3732390c7",
+      "normalized_sha256": "37017bb365d73f7e0a6a3f4c40365434a766ed94a438050f321e6e83cb8608dd"
+    },
+    {
+      "case_id": "v07-screws-screws_306-b99ef95d6c60",
+      "normalized_sha256": "688281d0250fe2a5cc5e2f3f236a8ac87f51ed6ee2797e22a3e70ead2b8ee83b"
+    },
+    {
+      "case_id": "v07-screws-screws_029-022f090246f7",
+      "normalized_sha256": "1d825156d846b899df47787c160e12cb5b88c75e435476c60fee0d396adcfdde"
+    },
+    {
+      "case_id": "v07-screws-screws_041-273db36ccf08",
+      "normalized_sha256": "86f2abc39eb575a57ac902571676874067d6788b732b27982b4358a6edf0df30"
+    },
+    {
+      "case_id": "v07-screws-screws_026-159d851cf865",
+      "normalized_sha256": "e44cc2b34b69504b8b5f63fe7cd1dfcb35bfb62ec0a32c3261e183845ed39656"
+    },
+    {
+      "case_id": "v07-screws-screws_165-203dda5f8171",
+      "normalized_sha256": "4e44c3d0a2e107e032b81e4da2e260e1d7a29d47ca8c3f31e20cb69e031c9376"
+    },
+    {
+      "case_id": "v07-screws-screws_116-579021319beb",
+      "normalized_sha256": "4e8dbdb3133f3c131f7a63bb44806b42ec5f1b4705384ba7c3cfe92c90cb4189"
+    },
+    {
+      "case_id": "v07-screws-screws_120-3e86c9ca51d9",
+      "normalized_sha256": "4c3a5e28926b6284dd9f3f34f6c05e383484cb94390aec02cc96a7628f0fbb6b"
+    },
+    {
+      "case_id": "v07-screws-screws_316-ceebce0412a3",
+      "normalized_sha256": "73139a780e76e2eb1db5a6ab3352b47df22ff923771de401edd6c89149ee077c"
+    },
+    {
+      "case_id": "v07-screws-screws_025-be0cfb452c55",
+      "normalized_sha256": "1fc366c5ff73b5602279ae99b9d5a6e7d88f4d0809d72768f10011888132a396"
+    },
+    {
+      "case_id": "v07-screws-screws_255-8f97b70e7b70",
+      "normalized_sha256": "7b66eb02e20508aac639e81e63e5cf4993e5ca0444112c1206d6058bcf65e09c"
+    },
+    {
+      "case_id": "v07-screws-screws_163-042340f2c1b1",
+      "normalized_sha256": "1a36ebfe31fd68f8ea4e2df11d8ff62374371c9c3f9f7102e7109740be6fbca9"
+    },
+    {
+      "case_id": "v07-screws-screws_240-3b677a02b30a",
+      "normalized_sha256": "4d86c49c7f2f79d416eaaf5c5a2ec5fa142e82066076852ba9a50259ea8bf405"
+    },
+    {
+      "case_id": "v07-screws-screws_256-92cbbb2e681a",
+      "normalized_sha256": "d369c60b10181b193c79618540043603ad5272555a95182fb74c439a31b524ed"
+    },
+    {
+      "case_id": "v07-screws-screws_024-07f4bcf5c349",
+      "normalized_sha256": "3884d278e932ee2e4c13c2eda81d3df3574db23d9f357e7cb9ecb6d74a084a60"
+    },
+    {
+      "case_id": "v07-screws-screws_233-27b2aabfe1e8",
+      "normalized_sha256": "b3de688d3c69981a1300c574a073014134482a056c71b8e7701a9c91c18442cf"
+    },
+    {
+      "case_id": "v07-screws-screws_315-6a1b174187e3",
+      "normalized_sha256": "b90b2ca5004d073c05c5739948c62fc60a7badbed80e9a335ebcbefa5f1fa611"
+    },
+    {
+      "case_id": "v07-screws-screws_213-0c47276c5590",
+      "normalized_sha256": "2ff3cc74e434065180c39c59eefb1e267a5b7f683d48eb4c5bb308f02da24827"
+    },
+    {
+      "case_id": "v07-screws-screws_230-37d67057763d",
+      "normalized_sha256": "1dcb0483e901c4e87fb1ffa173f94d44c73c83c3a25b5df369694eae185da0a6"
+    },
+    {
+      "case_id": "v07-screws-screws_105-1227f4b91a1e",
+      "normalized_sha256": "a414c1b3cb6ae358116f8578ff535a60d3031bc9a078f218cf3fdfecce7f7564"
+    },
+    {
+      "case_id": "v07-screws-screws_295-880c3c73c29d",
+      "normalized_sha256": "5f34186c413a5d523138c51aa70a2337edfca81881aa774b0b2d0317b3192186"
+    },
+    {
+      "case_id": "v07-screws-screws_028-63c1ae2b3ff8",
+      "normalized_sha256": "3dfa259439f47a1c4863b34c4f33007c601c76526f78e6f9ab8e8e37201266ef"
+    },
+    {
+      "case_id": "v07-screws-screws_128-4a8c39795714",
+      "normalized_sha256": "752115e15b346dc9c3942cd63695da325a034254d02e9f4e131af0fe876bac85"
+    },
+    {
+      "case_id": "v07-screws-screws_164-937fa690c693",
+      "normalized_sha256": "3bc3d6da9aedc82074bc80a616f3e13951f0599eaf0cfff45e75e1f46f3e86f2"
+    },
+    {
+      "case_id": "v07-screws-screws_261-1deaacc5e8e3",
+      "normalized_sha256": "4272656363a3c8c5717c39ec8480e22347500a2cb3d6bf4f4a872d31a006bf39"
+    },
+    {
+      "case_id": "v07-screws-screws_313-1ba16c0cddf8",
+      "normalized_sha256": "49aafee4bd7f7f7cf3e01c6ea2685104d8bba49a8ca47c24bb2b46e9ecc448c8"
+    },
+    {
+      "case_id": "v07-screws-screws_172-53dacfde39d4",
+      "normalized_sha256": "a40f75baa889f94b88be58a5879af55d1443b8ba3227baaa3413add768256a9c"
+    },
+    {
+      "case_id": "v07-screws-screws_301-e88319aa2833",
+      "normalized_sha256": "d79d89aeec583d8a50fdcc0f827aab143678378cb58eabf1ce9c102ce0e07c43"
+    }
+  ],
+  "limitations": [
+    "This checks frozen observer dependencies, the decision AST, and actual final-app upload bytes; it does not repeat inference.",
+    "Workflow/UI changes are separate from this method-compatibility check and require their own regression and browser validation.",
+    "References, user-selected regions and earlier-photo context are not covered by the no-reference full-image paired study."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "kitguard.v08.video-preparation.v1",
+  "status": "prepared_for_independent_review",
+  "created_at": "2026-10-02T03:03:34.461778+00:00",
+  "source_script": "scripts/v08/build_demo_video.py",
+  "script_sha256": "f5d1cf0fd53900101fa5f3a495f1b188956f7123a24746c0d21e5c9dda18daa3",
+  "plan_sha256": "41476fd6014466e016a95369d25e51af3f672d5c3aaf929134dd0f936ba1c8bc",
+  "source_index_sha256": "65fb880e118d2948907487597ce1de79a81a1cfaafb3473c5fc32e6a0b0117f1",
+  "timeline_sha256": "2b1dc886359e5139973f3c2af6ed395a361d762c5d045887a1b489a190d32eb8",
+  "duration_seconds": 135,
+  "ffmpeg": {
+    "path": ".tools/imageio-ffmpeg/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "sha256": "6d175a4743ca50256e89a8cdd731100f9cee33bd79aeea46894d209410dc6617",
+    "version": "ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers"
+  },
+  "font": {
+    "path": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+    "sha256": "876af2cd4854644e7f3e7feb2f688997fdb3343c6df6693611209c9dfb47ccec"
+  },
+  "audio_tracks": 0,
+  "visual_qa": "pending; captions are independent composition layers and originals are unchanged"
+}

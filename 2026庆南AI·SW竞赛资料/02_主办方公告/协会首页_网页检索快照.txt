@@ -1,0 +1,6 @@
+2026-09-24网页检索快照。原站直连超时，保留检索工具返回的文字。
+
+Internal Error ()
+citeturn9view0 [wordlim: 200] Source: open({"ref_id":"https://www.gnict.org/","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.gnict.org/: (400) Timeout fetching
+

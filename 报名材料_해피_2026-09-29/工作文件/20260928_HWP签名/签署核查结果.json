@@ -1,0 +1,41 @@
+[
+  {
+    "file": "01_해피_참가신청서_개발계획서_서명본.hwp",
+    "sha256": "0b7d406056ca68357919e87f2375e92121a600b6806c4f87ecdfc309a87cddd0",
+    "text_changes_limited_to_date_signature_and_authorized_consent": true,
+    "official_clauses_and_other_text_unchanged": true,
+    "original_signature_bytes_preserved": true,
+    "independent_hwp_parser_passed": true,
+    "opened_in_native_hancom": true,
+    "native_hancom_pages_visually_checked": 4,
+    "signature_page": 4,
+    "native_print_qa_pdf_sha256": "5a36aa4cd4e613910af0878cf619f4d3c6a84d21284f7d2d8585569b83b85a73",
+    "signature_and_checks_readable_no_overlap": true
+  },
+  {
+    "file": "02_참가자_동의서_남청청_서명본.hwp",
+    "sha256": "6b48ddb5d7e3a5f00db5e028ca08496e3a2e693dd10a96f2cb69ffef5e58ab65",
+    "text_changes_limited_to_date_signature_and_authorized_consent": true,
+    "official_clauses_and_other_text_unchanged": true,
+    "original_signature_bytes_preserved": true,
+    "independent_hwp_parser_passed": true,
+    "opened_in_native_hancom": true,
+    "native_hancom_pages_visually_checked": 2,
+    "signature_page": 2,
+    "native_print_qa_pdf_sha256": "3f5629676829cc197fafdfba2c767499a0a8bae3eddce6f6f3fc75e1bd8518f6",
+    "signature_and_checks_readable_no_overlap": true
+  },
+  {
+    "file": "03_참가자_동의서_이개심_서명본.hwp",
+    "sha256": "c6abcccbd02902d184e60cc0d50a31810926d7f3f998de32c93cb3a8166af520",
+    "text_changes_limited_to_date_signature_and_authorized_consent": true,
+    "official_clauses_and_other_text_unchanged": true,
+    "original_signature_bytes_preserved": true,
+    "independent_hwp_parser_passed": true,
+    "opened_in_native_hancom": true,
+    "native_hancom_pages_visually_checked": 2,
+    "signature_page": 2,
+    "native_print_qa_pdf_sha256": "2edcad72b3367943f4e8fd7a3d7cfb4d44e70cf89eac780e31a8dae4a43e349f",
+    "signature_and_checks_readable_no_overlap": true
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "url": "https://www.gnu.ac.kr/aero/na/ntt/selectNttInfo.do?mi=13821&nttSn=8570562",
+  "path": "05_补充官方资料/庆尚国立大学航空航天竞赛公告_原始.html",
+  "source": "https://www.gnu.ac.kr/aero/na/ntt/selectNttList.do?bbsId=4226&mi=13821",
+  "kind": "webpage",
+  "retrieved_at": "2026-09-24T16:33:50.066472+09:00",
+  "http_status": 200,
+  "final_url": "https://www.gnu.ac.kr/aero/na/ntt/selectNttInfo.do?mi=13821&nttSn=8570562",
+  "content_type": "text/html;charset=UTF-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 52105,
+  "sha256": "5bb73d665bad7f538f3bc5d733dc0ef5882aa2241212eb0803099ae1de51b2fa",
+  "magic_hex": "0d0a0d0a0d0a3c21646f637479706520"
+}

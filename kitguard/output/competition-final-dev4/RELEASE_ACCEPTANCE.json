@@ -1,0 +1,76 @@
+{
+  "version": "0.9.0.dev4",
+  "at": "2026-10-03T17:40:05.716293+00:00",
+  "status": "passed",
+  "five_materials": [
+    {
+      "name": "KitGuard_report_5p.pdf",
+      "bytes": 195541,
+      "sha256": "5b743ed2709cb171955ddbc32624e26acf775bc63d2f08455f351b259b408c1f"
+    },
+    {
+      "name": "KitGuard_agent_1p.pdf",
+      "bytes": 73460,
+      "sha256": "5f607c2b604072c6075256de8e248d7f57affd6885c73c4475e5bf4c4bf5af81"
+    },
+    {
+      "name": "KitGuard_source_dev4.zip",
+      "bytes": 6920177,
+      "sha256": "ea6be3911df51ee4ae4a5f39e88988922d41b26e29ff7bef7b93fc81bcddb3cd"
+    },
+    {
+      "name": "KitGuard_demo_ko.mp4",
+      "bytes": 1963522,
+      "sha256": "3a4eb4554935d6e9e38ae03a33c0b286246b4d03e7d6356a1671693d879cb9d5"
+    },
+    {
+      "name": "KitGuard_presentation_9slides.pptx",
+      "bytes": 136370,
+      "sha256": "f4ed867a2eeb915bfec8e84774aa264e640201b2ad1559be0f561cb64b177c5a"
+    }
+  ],
+  "regression_passed": 1877,
+  "goal_contracts_passed": 33,
+  "extracted_source_contracts_passed": 68,
+  "source_contract_run": "test-results/scoring-v1/release-source-contracts.xml",
+  "source_binding": {
+    "tested_archive_sha256": "027a999853d4f6782df256046e4d78955ead6554505f6b96b7e48f16ba43e5f3",
+    "final_archive_sha256": "ea6be3911df51ee4ae4a5f39e88988922d41b26e29ff7bef7b93fc81bcddb3cd",
+    "all_production_and_test_python_files_byte_identical": true,
+    "matched_files": 132,
+    "difference": "Only video builder changed to enforce CFR frame count and a bounded end-screen hold; validated separately by full decode and native playback."
+  },
+  "source_runtime_scope": "Existing dependencies; synthetic HTTP only, no clean install, model or browser",
+  "pdf_pages": [
+    5,
+    1
+  ],
+  "slides": 9,
+  "video_seconds": 177.416667,
+  "video_method": "Timed actual browser samples, actual gaps held as still screens; no native continuous recording claim. Full own-goal and all-case timelines retained, final completed screen held2 extra seconds. All model waits retained. Final5sec tool-result still. Separate captions and local Yuna synthetic narration. Screenshots unretouched.",
+  "observer_frozen": {
+    "kitguard/vision.py": "e0c30d23c2620bfdc4bdf453f828c0a353da957eab89ab3c2ec92b7840f79b08",
+    "kitguard/spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+    "kitguard/consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+    "kitguard/identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696"
+  },
+  "planned_machine_tasks": 5,
+  "machine_workflow_outcomes_met": 5,
+  "machine_real_mlx_checks": 4,
+  "separate_three_case_real_mlx_checks": 4,
+  "human_participants": 0,
+  "physical_completions": 0,
+  "new_accuracy_denominator": 0,
+  "qualification_receipt": null,
+  "submission_receipt": null,
+  "claims_not_established": [
+    "clean-machine install",
+    "native PowerPoint rendering",
+    "continuous native recording",
+    "new-photo accuracy gain",
+    "human productivity",
+    "industrial reliability",
+    "sustained throughput",
+    "official score or rank"
+  ]
+}

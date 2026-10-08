@@ -1,0 +1,56 @@
+{
+  "classification": "modeled_capacity_from_four_observed_machine_tasks_not_sustained_throughput",
+  "input_elapsed_ms": [
+    20213,
+    21739,
+    48628,
+    49417
+  ],
+  "range_seconds": [
+    20.213,
+    49.417
+  ],
+  "mean_seconds": 34.99925,
+  "sample_count": 4,
+  "assumptions": [
+    "One local model worker, queue capacity 0; extra requests refused, not accumulated",
+    "Future single-goal service times equal these four exposed-photo tasks; no upload, acquisition, review or idle time",
+    "Occupancy is a scenario input, not observed usage. No human time or wage estimate."
+  ],
+  "scenarios": [
+    {
+      "inference_occupancy": 0.25,
+      "jobs_per_hour_range": [
+        18,
+        44
+      ]
+    },
+    {
+      "inference_occupancy": 0.5,
+      "jobs_per_hour_range": [
+        36,
+        89
+      ]
+    },
+    {
+      "inference_occupancy": 1,
+      "jobs_per_hour_range": [
+        72,
+        178
+      ]
+    }
+  ],
+  "expenses": {
+    "new_physical_purchase": false,
+    "external_gpu": false,
+    "cloud_calls": 0,
+    "electricity_cost": null,
+    "hardware_cost": null,
+    "customer_price": null
+  },
+  "limits": [
+    "Known photos, single run per goal; cannot guarantee business SLA or broader visual reliability",
+    "Existing Mac has other tasks; memory/disk/time require deployment readiness check",
+    "Demand, willingness to pay, sustained deployment and customer benefits remain unverified"
+  ]
+}

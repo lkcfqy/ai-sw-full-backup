@@ -1,0 +1,29 @@
+{
+  "schema": "kitguard.v09.delivery-check.v1",
+  "pdf_pages": [
+    5,
+    1
+  ],
+  "slides": 9,
+  "video_seconds": 104.53999999999999,
+  "full_video_decode": "passed",
+  "visual_review": "all 6 PDF pages, 9 slides and 7 final video scene frames reviewed",
+  "workspace_tests": 1826,
+  "extracted_feature_tests": 101,
+  "extracted_runtime_smoke": "passed, 0 model calls",
+  "actual_workflow": "2 local MLX checks and point resolutions, 0 humans",
+  "source_observation_core_unchanged": true,
+  "no_private_database_or_model_weights": true,
+  "submission_performed": false,
+  "browser_delivery": {
+    "entry": "http://127.0.0.1:8793/START_HERE.html",
+    "video_ready_state": 4,
+    "duration": 104.54322,
+    "video_dimensions": [
+      1920,
+      1080
+    ],
+    "video_error": null,
+    "autoplay": false
+  }
+}

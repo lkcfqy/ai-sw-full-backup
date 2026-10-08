@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "kind": "kitguard_v04_delivery",
+  "final": true,
+  "created_at": "2026-09-26T15:19:17.388403+00:00",
+  "summary": {
+    "human_field_samples": 0,
+    "new_accuracy_samples_from_public_replay": 0,
+    "historical_v03_64_is_new_result": false,
+    "release_status": "final",
+    "final_tests": {
+      "tests": 592,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 592
+    },
+    "real_api": {
+      "status": "completed",
+      "planned_requests": 3,
+      "attempted_requests": 3,
+      "source_changed": false,
+      "decisions": [
+        {
+          "sample": "bag-revision",
+          "status": "completed",
+          "decision": "correct"
+        },
+        {
+          "sample": "small-part",
+          "status": "completed",
+          "decision": "recapture"
+        },
+        {
+          "sample": "mixed-screws",
+          "status": "completed",
+          "decision": "ready"
+        }
+      ]
+    },
+    "independent_verifier": {
+      "status": "verified_internal_consistency",
+      "source_kind": "engineering_fixture",
+      "physical_authenticity_verified": false,
+      "photo_bytes_verified": false
+    },
+    "partial_prediction_records": 20,
+    "partial_run_status": "completed",
+    "source_verification": {
+      "status": "passed",
+      "source_archive_sha256": "afee1ace24c8b91bf996db31f26b2484920f3ed1f2684e5f4d216ac42a1607dd",
+      "extracted_suite": {
+        "tests": 592,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 5,
+        "passed": 587,
+        "returncode": 0,
+        "log": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/audit/source_v04_verification.pytest.log",
+        "junit": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/audit/source_v04_verification.pytest.xml",
+        "junit_sha256": "79757159d18d3ec5993ddec5128f6931bbbb1881da084a353a5030c062d3add7",
+        "skip_policy": "Five photo/crop replay checks require excluded public input photographs; all other tests execute against extracted code and text records."
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "role": "partial_independent",
+      "title": "새 도메인 독립 재계산 / 新域独立复算说明",
+      "source": "docs/v0.4/INO_RUN_INDEPENDENT_AUDIT.md",
+      "destination": "artifacts/partial_independent/INO_RUN_INDEPENDENT_AUDIT.md",
+      "bytes": 3566,
+      "sha256": "11777e95bc4809f8b942c805ab187265b364c50ccbd54a000f5969b5049c13d6"
+    },
+    {
+      "role": "two_independent",
+      "title": "2개 진단 재계산 / 双角码诊断独立复核",
+      "source": "test-results/audit/v04-data-research/ino2-independent-run-audit.json",
+      "destination": "artifacts/two_independent/ino2-independent-run-audit.json",
+      "bytes": 2250,
+      "sha256": "03c2f0f0fd773ae5e9f3ffe41a1f32cd3726fc58ca8ff110fa06ac97cb7f84f0"
+    },
+    {
+      "role": "inputs_independent",
+      "title": "21개 입력 재구성 / 21输入独立重建",
+      "source": "test-results/audit/v04-data-research/independent-21-derived-audit.json",
+      "destination": "artifacts/inputs_independent/independent-21-derived-audit.json",
+      "bytes": 17898,
+      "sha256": "12863054816f3fbeafbf38d354bde44288b078fc26d015a2dd68e3b1b85ac5e9"
+    },
+    {
+      "role": "flow_review",
+      "title": "수동 확인 문구 수정 / 人工复核提示修正",
+      "source": "docs/v0.4/FIELD_FLOW_FOCUSED_REVIEW.md",
+      "destination": "artifacts/flow_review/FIELD_FLOW_FOCUSED_REVIEW.md",
+      "bytes": 3874,
+      "sha256": "3612b29d0e75a49bfe461ca5a04ec241158338c14b57f4451392de99afae8c98"
+    },
+    {
+      "role": "flow_receipt",
+      "title": "최종 문구 검증 / 最终界面定向检查",
+      "source": "test-results/browser/field-study-flow-review-v04/regression-result.json",
+      "destination": "artifacts/flow_receipt/regression-result.json",
+      "bytes": 1296,
+      "sha256": "8f2b9576ec4ec8b03f828f5d1bddc794ac8bf46300692a307d0d4e05eb896534"
+    },
+    {
+      "role": "real_independent",
+      "title": "실제 내보내기 독립 검증 / 真实导出独立重算",
+      "source": "test-results/audit/v04-real-study-independent-verification.json",
+      "destination": "artifacts/real_independent/v04-real-study-independent-verification.json",
+      "bytes": 2679,
+      "sha256": "a4466be9f18cb8f0e3c1838ba98dc8f9683b57a0fca3fb6e7941e284e1ef7fb6"
+    },
+    {
+      "role": "wheel_receipt",
+      "title": "최종 설치 패키지 검증 / 安装包实际验证",
+      "source": "test-results/audit/v04-wheel-final-verification.json",
+      "destination": "artifacts/wheel_receipt/v04-wheel-final-verification.json",
+      "bytes": 660,
+      "sha256": "86c0c46c1b2fa38b10c4fa50c35fac3e15884a9860fc6280ff01893040f82f80"
+    },
+    {
+      "role": "source_disclosure",
+      "title": "AI·자료 출처 / AI 与数据来源披露",
+      "source": "docs/AI_AND_SOURCE_DISCLOSURE.md",
+      "destination": "artifacts/source_disclosure/AI_AND_SOURCE_DISCLOSURE.md",
+      "bytes": 6072,
+      "sha256": "7f1e884175079213365d1eff3c16b7f5649cd6cd5c88bba7a8763387353ea58b"
+    },
+    {
+      "role": "judge_qa",
+      "title": "발표 질의응답 / 答辩问题与证据",
+      "source": "docs/v0.4/JUDGE_QA_KO_ZH.md",
+      "destination": "artifacts/judge_qa/JUDGE_QA_KO_ZH.md",
+      "bytes": 9847,
+      "sha256": "a23cf8dbe3168b396770cfb4f850a7d32d8ee38271289baf6b8e04acccaf0f00"
+    },
+    {
+      "role": "two_bracket_run",
+      "title": "2개 브래킷 단일 진단 / 单个双角码诊断",
+      "source": "evaluation-runs/v04_ino_two_bracket_v1/run.json",
+      "destination": "artifacts/two_bracket_run/run.json",
+      "bytes": 12752,
+      "sha256": "b3f99c43ff139fd06d3df0252735d191c063a14b7892aace14cc5700042bd5e5"
+    },
+    {
+      "role": "two_bracket_rows",
+      "title": "2개 사례 원본 출력 / 双角码完整输出",
+      "source": "evaluation-runs/v04_ino_two_bracket_v1/predictions.jsonl",
+      "destination": "artifacts/two_bracket_rows/predictions.jsonl",
+      "bytes": 4782,
+      "sha256": "a4b4b22f6f363b7e38a8209e5115bc7a670f12edf814bfbbe9638bb2b5bdce51"
+    },
+    {
+      "role": "field_design",
+      "title": "기록 프로토콜 / 记录协议",
+      "source": "docs/v0.4/FIELD_API_CONTRACT.md",
+      "destination": "artifacts/field_design/FIELD_API_CONTRACT.md",
+      "bytes": 8118,
+      "sha256": "0a52c7d4b24936993350148ce89c1dcf05e5959170cbc24eaba0b90d1436d93e"
+    },
+    {
+      "role": "field_review",
+      "title": "독립 프로토콜 검토 / 独立审查",
+      "source": "docs/v0.4/FIELD_VALIDATION_INDEPENDENT_AUDIT.md",
+      "destination": "artifacts/field_review/FIELD_VALIDATION_INDEPENDENT_AUDIT.md",
+      "bytes": 6545,
+      "sha256": "635132887e93f9c2b867bf1113ff134326ba4e332a7480e68ee515dae9724bd3"
+    },
+    {
+      "role": "ui_qa",
+      "title": "화면·오프라인 검증 / 界面与离线验收",
+      "source": "docs/v0.4/FIELD_UI_QA.md",
+      "destination": "artifacts/ui_qa/FIELD_UI_QA.md",
+      "bytes": 6895,
+      "sha256": "9162d8366f846ede61d1789e748c99547ce44c6e20cb75e20a9f1e939eb8f8be"
+    },
+    {
+      "role": "runtime_review",
+      "title": "실행 신뢰성 수리 / 运行可靠性修复",
+      "source": "docs/v0.4/RUNTIME_REVIEW.md",
+      "destination": "artifacts/runtime_review/RUNTIME_REVIEW.md",
+      "bytes": 8826,
+      "sha256": "7bcd0cff1c29a9a2dfe465067e7afdee985032748795fba5df1a31c76266aa43"
+    },
+    {
+      "role": "runtime_protocol",
+      "title": "관찰 프로토콜 보존 / 观察协议保持",
+      "source": "test-results/audit/v04-runtime/protocol-preservation.json",
+      "destination": "artifacts/runtime_protocol/protocol-preservation.json",
+      "bytes": 1181,
+      "sha256": "60a71620009fd99f029bc4f94b05408b1bd399a75bdf5b275d493c23102ed092"
+    },
+    {
+      "role": "runtime_tests",
+      "title": "실행 계층 집중 테스트 / 运行层定向测试",
+      "source": "test-results/audit/v04-runtime/targeted-final.xml",
+      "destination": "artifacts/runtime_tests/targeted-final.xml",
+      "bytes": 9323,
+      "sha256": "b8f2f1bec817a4187ec3a2a093f7d5529c01740084d8e58c7ca713cb2f24d83b"
+    },
+    {
+      "role": "real_review",
+      "title": "실제 MLX 연결 기록 / 真实 MLX 连接验收",
+      "source": "docs/v0.4/REAL_API_INTEGRATION.md",
+      "destination": "artifacts/real_review/REAL_API_INTEGRATION.md",
+      "bytes": 4574,
+      "sha256": "8883cc833dca3ea3ff74ae6da8d03ee407311e159aea5ced59b408dad7f626b2"
+    },
+    {
+      "role": "real_result",
+      "title": "실제 API 전체 응답 / 真实 API 全部结果",
+      "source": "test-results/browser/field-study-real-v04/result.json",
+      "destination": "artifacts/real_result/result.json",
+      "bytes": 139490,
+      "sha256": "3cec32d07758958bc31f9ca99448b9108c1b753aecc09377eec201e29779b9d9"
+    },
+    {
+      "role": "real_verification",
+      "title": "실제 바이트·연결 감사 / 字节与绑定审计",
+      "source": "test-results/browser/field-study-real-v04/verification.json",
+      "destination": "artifacts/real_verification/verification.json",
+      "bytes": 3487,
+      "sha256": "eb06cb8540462287bfa38d25e0f4e0100f7a6eabbd774eeac278a3590bbecec3"
+    },
+    {
+      "role": "real_browser",
+      "title": "실제 기록 읽기 화면 / 真实记录只读界面",
+      "source": "test-results/browser/field-study-real-v04/browser-result.json",
+      "destination": "artifacts/real_browser/browser-result.json",
+      "bytes": 806,
+      "sha256": "b75341bfeaab1fbcbeb6c874dc1cc554af3075c85458808b8a6f49a35eb51217"
+    },
+    {
+      "role": "real_shutdown",
+      "title": "추론 종료 확인 / 模型服务已释放",
+      "source": "test-results/browser/field-study-real-v04/shutdown.json",
+      "destination": "artifacts/real_shutdown/shutdown.json",
+      "bytes": 332,
+      "sha256": "9414953a88d89e7436ba50658494add04e91a5106dd587fee9b6941517e5c48a"
+    },
+    {
+      "role": "real_export",
+      "title": "공개 재생 JSON / 公开回放完整 JSON",
+      "source": "test-results/browser/field-study-real-v04/public-replay.json",
+      "destination": "artifacts/real_export/public-replay.json",
+      "bytes": 100113,
+      "sha256": "f4b04b874a2a6df2f5fe72ad246c3f844ae576582896b3fdd565862dcf4fca94"
+    },
+    {
+      "role": "real_html",
+      "title": "공개 재생 HTML / 公开回放报告",
+      "source": "test-results/browser/field-study-real-v04/public-replay.html",
+      "destination": "artifacts/real_html/public-replay.html",
+      "bytes": 57485,
+      "sha256": "02178a3171a3a6d46b979299e624937614a7e07ca9152f392c3666b155b994db"
+    },
+    {
+      "role": "real_evidence",
+      "title": "공개 사진 증거 ZIP / 公开图证据包",
+      "source": "test-results/browser/field-study-real-v04/public-replay-evidence.zip",
+      "destination": "artifacts/real_evidence/public-replay-evidence.zip",
+      "bytes": 732990,
+      "sha256": "d96dd61a74e17a03b9fcefc3061f8808af55cfc3ea94a625816309671984a5b5"
+    },
+    {
+      "role": "photo_sources",
+      "title": "공개 사진 출처·라이선스 / 图片来源与许可",
+      "source": "kitguard/public_demo_catalog.py",
+      "destination": "artifacts/photo_sources/public_demo_catalog.py",
+      "bytes": 2013,
+      "sha256": "cc50ea4ed9f3d3c08ea8b59f671403df8961c900e06890aa0e082d1aecb6eddf"
+    },
+    {
+      "role": "engineering_ui",
+      "title": "공학 대역 74개 UI 검사 / 工程替身 UI 检查",
+      "source": "test-results/browser/field-study-v04/result.json",
+      "destination": "artifacts/engineering_ui/result.json",
+      "bytes": 10893,
+      "sha256": "8eca26bed40b75ad50b943ed90cb6aa36fb16e08624e2a8ac4d430d602b80f6a"
+    },
+    {
+      "role": "engineering_archive",
+      "title": "공학 증거 ZIP 점검 / 工程证据包检查",
+      "source": "test-results/browser/field-study-v04/archive-result.json",
+      "destination": "artifacts/engineering_archive/archive-result.json",
+      "bytes": 3495,
+      "sha256": "ce802d8571055de28b8ff4a7c022e5e5713b1c2f0f5ebfd2c35c590f8ea6f2c5"
+    },
+    {
+      "role": "independent_verifier",
+      "title": "독립 JSON 재계산 / 独立 JSON 重算",
+      "source": "test-results/audit/v04-study-export-verification.json",
+      "destination": "artifacts/independent_verifier/v04-study-export-verification.json",
+      "bytes": 2688,
+      "sha256": "7b400cb8677e08936f8b29dde1a75f810d87311dd5b457330482c6cc2b9e12ca"
+    },
+    {
+      "role": "partial_review",
+      "title": "ㄱ자 브래킷 단일 클래스 검토 / 角码单类别审查",
+      "source": "docs/v0.4/INO_PARTIAL_LABEL_REVIEW.md",
+      "destination": "artifacts/partial_review/INO_PARTIAL_LABEL_REVIEW.md",
+      "bytes": 10520,
+      "sha256": "2e3a3bc0ddb9a4d14be2d979f55bf5215ab5ad9efcba55c0460672a8f31aeabe"
+    },
+    {
+      "role": "data_research",
+      "title": "새 도메인 자료 조사 / 新域资料调查",
+      "source": "docs/v0.4/NEW_DOMAIN_DATA_RESEARCH.md",
+      "destination": "artifacts/data_research/NEW_DOMAIN_DATA_RESEARCH.md",
+      "bytes": 9861,
+      "sha256": "25a91c2dc7e925abe42971a907800d3ce5a5b992de3d432aa4eaae029c6c26ae"
+    },
+    {
+      "role": "historical_gate",
+      "title": "v0.3 동결 64장: 과거 기록 / 旧版冻结 64 例",
+      "source": "evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json",
+      "destination": "artifacts/historical_gate/gate_report_v1.json",
+      "bytes": 898888,
+      "sha256": "8f8fa784b9abca802ffab08e1fc8b23efd75407a2ede9cc235c3496b442f599f"
+    },
+    {
+      "role": "final_tests",
+      "title": "최종 전체 테스트 / 最终全套测试",
+      "source": "test-results/engineering-v04-final.xml",
+      "destination": "artifacts/final_tests/engineering-v04-final.xml",
+      "bytes": 84671,
+      "sha256": "3145da44f01c6f9e51889ace68ad580dcf49f4832c106e96d2dd99d351d26d22"
+    },
+    {
+      "role": "source_archive",
+      "title": "v0.4 소스 ZIP / 源码包",
+      "source": "output/KitGuard_source_v0.4.zip",
+      "destination": "artifacts/source_archive/KitGuard_source_v0.4.zip",
+      "bytes": 4875281,
+      "sha256": "afee1ace24c8b91bf996db31f26b2484920f3ed1f2684e5f4d216ac42a1607dd"
+    },
+    {
+      "role": "source_verification",
+      "title": "실제 압축 해제 검증 / 源码解压验证",
+      "source": "test-results/audit/source_v04_verification.json",
+      "destination": "artifacts/source_verification/source_v04_verification.json",
+      "bytes": 3562,
+      "sha256": "c46b65cf66e8e9333bb402a81b091aa2f35242726d09a163d228ce8d341c5595"
+    },
+    {
+      "role": "final_evaluation",
+      "title": "최종 자체 평가 / 最终自检评估",
+      "source": "docs/v0.4/FINAL_EVALUATION.md",
+      "destination": "artifacts/final_evaluation/FINAL_EVALUATION.md",
+      "bytes": 7125,
+      "sha256": "3456ba2d0c6e7de19a2675a53005f71f57e0cd7b75faed961779c301c92d19d6"
+    },
+    {
+      "role": "partial_run",
+      "title": "ㄱ자 브래킷 진단 실행 / 角码诊断运行",
+      "source": "evaluation-runs/v04_ino_bracket_partial_v1/run.json",
+      "destination": "artifacts/partial_run/run.json",
+      "bytes": 12925,
+      "sha256": "5db010fb60f6bb3220981ba8154434e5f2fc2435d7c84a6800160f2745da6887"
+    },
+    {
+      "role": "partial_predictions",
+      "title": "ㄱ자 브래킷 전체 행 / 角码全部输出",
+      "source": "evaluation-runs/v04_ino_bracket_partial_v1/predictions.jsonl",
+      "destination": "artifacts/partial_predictions/predictions.jsonl",
+      "bytes": 100267,
+      "sha256": "c434ef5f22507bdc84d7a5515e143caf81123d9b4e3c5989bd59e49c6aa7b51f"
+    },
+    {
+      "role": "partial_report",
+      "title": "ㄱ자 브래킷 단일 라벨 보고 / 角码单标签报告",
+      "source": "docs/v0.4/INO_RUN_INDEPENDENT_AUDIT.md",
+      "destination": "artifacts/partial_report/INO_RUN_INDEPENDENT_AUDIT.md",
+      "bytes": 3566,
+      "sha256": "11777e95bc4809f8b942c805ab187265b364c50ccbd54a000f5969b5049c13d6"
+    },
+    {
+      "role": "partial_audit",
+      "title": "ㄱ자 브래킷 독립 감사 / 角码独立审计",
+      "source": "test-results/audit/v04-data-research/ino20-independent-run-audit.json",
+      "destination": "artifacts/partial_audit/ino20-independent-run-audit.json",
+      "bytes": 6459,
+      "sha256": "6dcd0f0569199e651ef639eb849c69acd7e5c7a4c39835103c0e3ae6d9b99401"
+    }
+  ],
+  "missing_roles": []
+}

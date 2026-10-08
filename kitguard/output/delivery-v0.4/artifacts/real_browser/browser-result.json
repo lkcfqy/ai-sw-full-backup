@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "assertions": 10,
+  "checks": [
+    "closed real-study page explicitly marks automated counts as no human baseline",
+    "public-replay source visible",
+    "three real public input photographs displayed",
+    "390px closed actual-study page contained",
+    "320px closed actual-study page contained",
+    "all three archived public normalized photographs decode offline",
+    "export retains scripted manual-stage note",
+    "offline archive sends zero HTTP requests",
+    "closed UI screenshots and offline checks made no mutations or inference calls",
+    "zero browser JavaScript errors"
+  ],
+  "errors": [],
+  "mutations": [],
+  "external": [],
+  "scope": "Read-only screenshots of actual public-development MLX study; scripted manual stage is not human or field evidence."
+}

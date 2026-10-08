@@ -1,0 +1,72 @@
+{
+  "version": "0.9.0.dev4",
+  "material_revision": "20261005",
+  "pages": 9,
+  "source_pptx_sha256": "46099c5695d414f181e6219f6f2514249b49d5dd9ea65246a938327f768a9259",
+  "pdf_sha256": "2810ec36bf0595afffa1e63b400c1319d7316bcc6bdaac36686fd79d3251ed91",
+  "renderer": "/Users/lkc/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+  "font": "Arial Unicode MS",
+  "font_source": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+  "font_config_scope": "Private build file only; no installed runtime or system settings changed",
+  "all_native_text_preserved": [
+    {
+      "slide": 1,
+      "expected_text_segments": 5,
+      "missing": []
+    },
+    {
+      "slide": 2,
+      "expected_text_segments": 10,
+      "missing": []
+    },
+    {
+      "slide": 3,
+      "expected_text_segments": 17,
+      "missing": []
+    },
+    {
+      "slide": 4,
+      "expected_text_segments": 4,
+      "missing": []
+    },
+    {
+      "slide": 5,
+      "expected_text_segments": 23,
+      "missing": []
+    },
+    {
+      "slide": 6,
+      "expected_text_segments": 13,
+      "missing": []
+    },
+    {
+      "slide": 7,
+      "expected_text_segments": 18,
+      "missing": []
+    },
+    {
+      "slide": 8,
+      "expected_text_segments": 15,
+      "missing": []
+    },
+    {
+      "slide": 9,
+      "expected_text_segments": 9,
+      "missing": []
+    }
+  ],
+  "visual_qa": "verified_all_9_final_pdf_rendered_pages",
+  "native_powerpoint_verified": false,
+  "inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "visual_findings": []
+}

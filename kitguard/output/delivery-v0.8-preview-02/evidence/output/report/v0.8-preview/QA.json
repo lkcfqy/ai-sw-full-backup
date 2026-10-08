@@ -1,0 +1,474 @@
+{
+  "schema": "kitguard.v08.preview-pdf-qa.v1",
+  "checked_at": "2026-10-02T02:41:30.304818+00:00",
+  "status": "passed",
+  "reviewer": "Codex visual inspection, not a human participant study",
+  "version": "0.8.0.dev1",
+  "release_status": "development_preview_not_released_or_submitted",
+  "builder_sha256": "bb7a5d2203a48b05f1e89e79e16a866dfa3af2c30d207fdb9721f34a5f08b7b0",
+  "build_manifest_sha256": "85f249d745e7d1684a081bb7269379a5ba453a486deae1184e41b9615b3e3d20",
+  "content_source_sha256": "86b85f07250324f505421fe2b8ad83f6f7c878f2c75c22bef310a59658885586",
+  "source_evidence_sha256": "7013e3bb2206ffd622471460579a6d991966c68ec46b7f5504538a0b5f0ca5a4",
+  "pdf_documents": [
+    {
+      "path": "output/report/v0.8-preview/KitGuard_결과보고서_v0.8_preview.pdf",
+      "sha256": "9812fbafb68a2ffeac91c05abcb93ad60f2a03c5cdcf9abb469cdcd9c6a23072",
+      "pages": 5,
+      "body_font_pt": 10.3,
+      "cell_font_pt": 9.4,
+      "layout": [
+        {
+          "page": 1,
+          "blocks": [
+            {
+              "kind": "lead",
+              "top": 694.8897637795277,
+              "bottom": 675.8897637795277
+            },
+            {
+              "kind": "body",
+              "top": 668.8897637795277,
+              "bottom": 621.9217637795277
+            },
+            {
+              "kind": "process",
+              "top": 614.9217637795277,
+              "bottom": 528.9217637795277
+            },
+            {
+              "kind": "h2",
+              "top": 518.9217637795277,
+              "bottom": 501.1217637795277
+            },
+            {
+              "kind": "table",
+              "top": 495.1217637795277,
+              "bottom": 310.92176377952774
+            },
+            {
+              "kind": "callout",
+              "top": 301.92176377952774,
+              "bottom": 236.95376377952772
+            },
+            {
+              "kind": "small",
+              "top": 227.95376377952772,
+              "bottom": 201.75376377952773
+            }
+          ],
+          "bottom": 201.75376377952773
+        },
+        {
+          "page": 2,
+          "blocks": [
+            {
+              "kind": "lead",
+              "top": 725.8897637795277,
+              "bottom": 706.8897637795277
+            },
+            {
+              "kind": "body",
+              "top": 699.8897637795277,
+              "bottom": 652.9217637795277
+            },
+            {
+              "kind": "table",
+              "top": 645.9217637795277,
+              "bottom": 422.1217637795277
+            },
+            {
+              "kind": "h2",
+              "top": 413.1217637795277,
+              "bottom": 395.3217637795277
+            },
+            {
+              "kind": "body",
+              "top": 389.3217637795277,
+              "bottom": 342.3537637795277
+            },
+            {
+              "kind": "callout",
+              "top": 335.3537637795277,
+              "bottom": 254.7297637795277
+            },
+            {
+              "kind": "small",
+              "top": 245.7297637795277,
+              "bottom": 219.5297637795277
+            }
+          ],
+          "bottom": 219.52976377952768
+        },
+        {
+          "page": 3,
+          "blocks": [
+            {
+              "kind": "body",
+              "top": 725.8897637795277,
+              "bottom": 678.9217637795277
+            },
+            {
+              "kind": "table",
+              "top": 671.9217637795277,
+              "bottom": 529.1217637795278
+            },
+            {
+              "kind": "small",
+              "top": 520.1217637795278,
+              "bottom": 493.9217637795278
+            },
+            {
+              "kind": "h2",
+              "top": 486.9217637795278,
+              "bottom": 469.1217637795278
+            },
+            {
+              "kind": "body",
+              "top": 463.1217637795278,
+              "bottom": 416.15376377952776
+            },
+            {
+              "kind": "table",
+              "top": 409.15376377952776,
+              "bottom": 252.55376377952777
+            },
+            {
+              "kind": "callout",
+              "top": 243.55376377952777,
+              "bottom": 147.27376377952777
+            }
+          ],
+          "bottom": 147.27376377952777
+        },
+        {
+          "page": 4,
+          "blocks": [
+            {
+              "kind": "body",
+              "top": 725.8897637795277,
+              "bottom": 678.9217637795277
+            },
+            {
+              "kind": "table",
+              "top": 671.9217637795277,
+              "bottom": 542.9217637795277
+            },
+            {
+              "kind": "small",
+              "top": 533.9217637795277,
+              "bottom": 507.72176377952775
+            },
+            {
+              "kind": "h2",
+              "top": 500.72176377952775,
+              "bottom": 482.92176377952774
+            },
+            {
+              "kind": "body",
+              "top": 476.92176377952774,
+              "bottom": 429.9537637795277
+            },
+            {
+              "kind": "body",
+              "top": 422.9537637795277,
+              "bottom": 375.9857637795277
+            },
+            {
+              "kind": "callout",
+              "top": 368.9857637795277,
+              "bottom": 288.3617637795277
+            },
+            {
+              "kind": "small",
+              "top": 279.3617637795277,
+              "bottom": 253.1617637795277
+            }
+          ],
+          "bottom": 253.1617637795277
+        },
+        {
+          "page": 5,
+          "blocks": [
+            {
+              "kind": "h2",
+              "top": 725.8897637795277,
+              "bottom": 708.0897637795277
+            },
+            {
+              "kind": "body",
+              "top": 702.0897637795277,
+              "bottom": 623.8097637795278
+            },
+            {
+              "kind": "body",
+              "top": 616.8097637795278,
+              "bottom": 569.8417637795278
+            },
+            {
+              "kind": "table",
+              "top": 562.8417637795278,
+              "bottom": 378.64176377952776
+            },
+            {
+              "kind": "h2",
+              "top": 369.64176377952776,
+              "bottom": 351.84176377952775
+            },
+            {
+              "kind": "body",
+              "top": 345.84176377952775,
+              "bottom": 298.87376377952774
+            },
+            {
+              "kind": "small",
+              "top": 291.87376377952774,
+              "bottom": 252.57376377952772
+            },
+            {
+              "kind": "h2",
+              "top": 245.57376377952772,
+              "bottom": 227.7737637795277
+            },
+            {
+              "kind": "refs",
+              "top": 221.7737637795277,
+              "bottom": 104.77376377952771
+            },
+            {
+              "kind": "small",
+              "top": 95.77376377952771,
+              "bottom": 69.57376377952771
+            }
+          ],
+          "bottom": 69.57376377952771
+        }
+      ]
+    },
+    {
+      "path": "output/report/v0.8-preview/KitGuard_Agent_기술설명_v0.8_preview.pdf",
+      "sha256": "77b518127c6d3c9e6cb2f391454980add053d5242a0aac58e44e3f306d476e2c",
+      "pages": 1,
+      "body_font_pt": 9.8,
+      "cell_font_pt": 9.1,
+      "layout": [
+        {
+          "page": 1,
+          "blocks": [
+            {
+              "kind": "body",
+              "top": 733.8897637795277,
+              "bottom": 704.0977637795277
+            },
+            {
+              "kind": "table",
+              "top": 697.0977637795277,
+              "bottom": 485.29776377952766
+            },
+            {
+              "kind": "h2",
+              "top": 476.29776377952766,
+              "bottom": 458.49776377952765
+            },
+            {
+              "kind": "body",
+              "top": 452.49776377952765,
+              "bottom": 407.80976377952766
+            },
+            {
+              "kind": "body",
+              "top": 400.80976377952766,
+              "bottom": 356.12176377952767
+            },
+            {
+              "kind": "small",
+              "top": 349.12176377952767,
+              "bottom": 312.2217637795277
+            },
+            {
+              "kind": "callout",
+              "top": 305.2217637795277,
+              "bottom": 257.42976377952766
+            },
+            {
+              "kind": "small",
+              "top": 248.4297637795277,
+              "bottom": 223.8297637795277
+            }
+          ],
+          "bottom": 223.8297637795277
+        }
+      ]
+    }
+  ],
+  "renders": [
+    {
+      "pdf": "output/report/v0.8-preview/KitGuard_결과보고서_v0.8_preview.pdf",
+      "page": 1,
+      "render": "output/report/v0.8-preview/qa/report-1.png",
+      "render_sha256": "e340d7149e78411d08dbc97b7e8f763dad04473b6f26b688146b7631eb565d5f",
+      "pixels": [
+        1075,
+        1521
+      ],
+      "dpi": 130,
+      "visually_inspected": true,
+      "result": "passed",
+      "checked": [
+        "Korean and Latin glyphs",
+        "no overflow/overlap/clipping",
+        "table alignment and wrapping",
+        "readable titles/footers/page numbers",
+        "preview marker and factual limitations"
+      ]
+    },
+    {
+      "pdf": "output/report/v0.8-preview/KitGuard_결과보고서_v0.8_preview.pdf",
+      "page": 2,
+      "render": "output/report/v0.8-preview/qa/report-2.png",
+      "render_sha256": "6126982bcb51a69f172c95397255ee46241272ba2e031edf9ce1dbfd91910717",
+      "pixels": [
+        1075,
+        1521
+      ],
+      "dpi": 130,
+      "visually_inspected": true,
+      "result": "passed",
+      "checked": [
+        "Korean and Latin glyphs",
+        "no overflow/overlap/clipping",
+        "table alignment and wrapping",
+        "readable titles/footers/page numbers",
+        "preview marker and factual limitations"
+      ]
+    },
+    {
+      "pdf": "output/report/v0.8-preview/KitGuard_결과보고서_v0.8_preview.pdf",
+      "page": 3,
+      "render": "output/report/v0.8-preview/qa/report-3.png",
+      "render_sha256": "f944d28f450c5473bfa83d26c54d7b3c98b6c99bd0ff2df2000dc9328f8d89e1",
+      "pixels": [
+        1075,
+        1521
+      ],
+      "dpi": 130,
+      "visually_inspected": true,
+      "result": "passed",
+      "checked": [
+        "Korean and Latin glyphs",
+        "no overflow/overlap/clipping",
+        "table alignment and wrapping",
+        "readable titles/footers/page numbers",
+        "preview marker and factual limitations"
+      ]
+    },
+    {
+      "pdf": "output/report/v0.8-preview/KitGuard_결과보고서_v0.8_preview.pdf",
+      "page": 4,
+      "render": "output/report/v0.8-preview/qa/report-4.png",
+      "render_sha256": "484cb6db814a15212137f2b9c6c0dd94209482a732fc8279fb3659de8baf3c08",
+      "pixels": [
+        1075,
+        1521
+      ],
+      "dpi": 130,
+      "visually_inspected": true,
+      "result": "passed",
+      "checked": [
+        "Korean and Latin glyphs",
+        "no overflow/overlap/clipping",
+        "table alignment and wrapping",
+        "readable titles/footers/page numbers",
+        "preview marker and factual limitations"
+      ]
+    },
+    {
+      "pdf": "output/report/v0.8-preview/KitGuard_결과보고서_v0.8_preview.pdf",
+      "page": 5,
+      "render": "output/report/v0.8-preview/qa/report-5.png",
+      "render_sha256": "720840652086d729c68225039fae9583c8e866c76f75e09ddb438d99e14a0092",
+      "pixels": [
+        1075,
+        1521
+      ],
+      "dpi": 130,
+      "visually_inspected": true,
+      "result": "passed",
+      "checked": [
+        "Korean and Latin glyphs",
+        "no overflow/overlap/clipping",
+        "table alignment and wrapping",
+        "readable titles/footers/page numbers",
+        "preview marker and factual limitations"
+      ]
+    },
+    {
+      "pdf": "output/report/v0.8-preview/KitGuard_Agent_기술설명_v0.8_preview.pdf",
+      "page": 1,
+      "render": "output/report/v0.8-preview/qa/technical-1.png",
+      "render_sha256": "3aee43df6afcf6ff13b47b1eb43cc36860dd63005eb45ec22db83d991468dfd1",
+      "pixels": [
+        1075,
+        1521
+      ],
+      "dpi": 130,
+      "visually_inspected": true,
+      "result": "passed",
+      "checked": [
+        "Korean and Latin glyphs",
+        "no overflow/overlap/clipping",
+        "table alignment and wrapping",
+        "readable titles/footers/page numbers",
+        "preview marker and factual limitations"
+      ]
+    }
+  ],
+  "static_checks": [
+    {
+      "command": [
+        ".venv/bin/ruff",
+        "check",
+        "scripts/v08/build_submission_pdfs.py"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "py_compile",
+        "scripts/v08/build_submission_pdfs.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "independent_quantitative_review": {
+    "reviewer": "progress_audit agent",
+    "scope": "report[3] and technical[0] source text",
+    "result": "passed",
+    "clarification_adopted": "N is 미시도 (not attempted), not a vague unmeasured label"
+  },
+  "evidence_boundaries": [
+    "R1/R2 real API checks and ENGINEERING-AGENT opinions remain 0 human participants, not accuracy evaluation.",
+    "Old51 and LOCO24 separate denominators; old3 wrong observations remain; constant and abstain controls both shown.",
+    "Author-derived labels, count4 matched-order N/A, correlated 255/63 panels, non-independent physical source and pretrained exposure uncertainty disclosed.",
+    "1530 are engineering regression contracts, not image samples, people or extracted source-package verification.",
+    "Actual project began2026-09-26; official period09-29 to10-06; organizer approval of prior assets still not evidenced.",
+    "Sources/partially retained reference PNG policy, self-declared provenance, explicit order change and digital-only limitations preserved."
+  ],
+  "operation_marker": {
+    "path": "/Users/lkc/.codex/plugins/cache/openai-primary-runtime/pdf/26.905.11957/skills/pdf/container_tools/mark_artifact_operation_started.mjs",
+    "operation_kind": "create",
+    "expected_output_count": 2,
+    "output_format": "pdf",
+    "successful_calls_this_operation": 1
+  },
+  "render_history_note": "Initial render command failed because qa/ did not yet exist; directory created, then all six final pages rendered successfully. No PDF layout overflow occurred.",
+  "v07_artifacts_modified": false,
+  "production_files_modified": false,
+  "model_calls": 0,
+  "local_reference_policy": "Labels and companion SOURCE_EVIDENCE.json; no broken clickable local links. Source archive own hash is not embedded."
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KitGuard v0.9 · 参赛交付</title>
+<style>
+:root{color-scheme:light;--ink:#163e35;--muted:#526f66;--line:#d2ded8;--paper:#f5f8f5;--accent:#13785e}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif}main{max-width:1120px;margin:auto;padding:56px 34px 70px}header{border-bottom:1px solid var(--line);padding-bottom:32px}.eyebrow{letter-spacing:.13em;font-size:13px;color:var(--accent);font-weight:700}h1{font-size:56px;line-height:1.1;margin:16px 0}h2{font-size:25px;margin:38px 0 12px}p{margin:10px 0}.intro{font-size:21px;max-width:840px}.muted,small{color:var(--muted)}a{color:#086c53;text-underline-offset:4px}nav{display:flex;gap:24px;flex-wrap:wrap;margin-top:24px}.button{display:inline-block;padding:10px 20px;background:var(--ink);color:white;text-decoration:none;border-radius:7px}table{width:100%;border-collapse:collapse;background:white}th,td{text-align:left;padding:17px 18px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#e7efea}video{width:100%;max-height:570px;background:#112c25;border:1px solid var(--line)}.two{display:grid;grid-template-columns:1fr 1fr;gap:44px}ul{padding-left:22px}code{font-size:14px;overflow-wrap:anywhere}.status{font-weight:650;color:var(--accent)}footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}@media(max-width:720px){main{padding:28px 18px}.two{grid-template-columns:1fr;gap:0}h1{font-size:42px}th,td{padding:12px 9px;font-size:14px}}
+</style>
+<main>
+<header><div class="eyebrow">해피 · 2026.10.03 · 0.9.0.dev1</div><h1>KitGuard</h1><p class="intro">从照片 AI 检查，到有位置依据的复核结论。<br>现有 M5 Pro 上运行的数字审查 MVP。</p><p class="status">1,826 项软件测试通过 · 真实本地两版本流程完成 · 无新增硬件或外部 GPU</p><nav><a class="button" href="http://127.0.0.1:8765/">打开本机工作台</a><a href="DEMO_AND_HANDOFF_ZH.md">中文演示说明</a><a href="PRESENTATION_SCRIPT_KO.md">6分钟韩文讲稿与问答</a><a href="evidence/real-run/OPEN_ME.html">查看真实导出证据</a></nav></header>
+<h2>五项参赛材料 / 제출 자료</h2><p class="muted">提交前核对团队信息和主办方最新入口。本目录为本地交付，不代表已提交或接收。</p>
+<table><thead><tr><th>材料</th><th>文件</th><th>范围</th></tr></thead><tbody>
+<tr><td>结果报告 / 결과보고서</td><td><a href="KitGuard_report_5p.pdf">打开韩文报告</a></td><td>A4 5页；问题、功能、结构、验证、业务假设</td></tr>
+<tr><td>Agent 技术说明</td><td><a href="KitGuard_agent_1p.pdf">打开一页技术说明</a></td><td>A4 1页；对应官方别纸1字段</td></tr>
+<tr><td>源代码 / 소스코드</td><td><a href="KitGuard_source_v0.9.zip">下载源码 ZIP</a></td><td>含测试和3张已授权公开开发样例；依赖和模型另备</td></tr>
+<tr><td>演示 / 시연동영상</td><td><a href="KitGuard_demo_ko.mp4">打开韩文演示视频</a></td><td>约105秒；实际画面剪辑，本机合成旁白</td></tr>
+<tr><td>答辩 / 발표자료</td><td><a href="KitGuard_presentation_9slides.pptx">下载可编辑 PPT</a></td><td>9页；含讲解备注与来源</td></tr>
+</tbody></table>
+<h2>真实执行画面演示</h2><video controls preload="metadata" poster="evidence/test-results/v0.9/browser/08-final-workspace.jpg"><source src="KitGuard_demo_ko.mp4" type="video/mp4"></video><p class="muted">这是保存的真实界面截图剪辑，省略等待与操作间隔；不是连续屏幕录像。ENGINEERING-AGENT 功能演练，真人参与者0名。R1/R2实际观测分别55.052秒、49.773秒。</p>
+<div class="two"><section><h2>已完成的闭环</h2><p>AI 观察 → 图上逐件复核 → 独立结论 → 改版后失效 → 同图重新推理 → 保存并导出证据。</p><p>原AI结果保留；新意见会使旧结论过期。显示范围、照片与订单版本绑定，支持需要更多资料的结论。</p><p>现有电脑双击项目内 <code>启动参赛演示.command</code>，或 <code>bash scripts/run_competition.sh</code>。模型放在已有的 AI-Models 目录。源码解压包不附虚拟环境和大模型权重，先按说明准备依赖。</p></section><section><h2>仍需保持的边界</h2><p>自评 Level 3 MVP。旧51图模型成绩为41正确、3错误、7未确认；LOCO24为23正确、0错误、1未确认。两组不能合并，也不构成工业可靠性保证。</p><p>此次同一公开照片的两次运行验证功能；复核标记是操作者声明。真人效益尚未测量，数字结论不批准实物出库。</p><p>按照已核对的<a href="https://contest.gnict.org/bbs/board.php?bo_table=notice&amp;wr_id=5">官方通知</a>，最终提交截至10月6日12:00（KST）。答辩请按6分钟练习并准备2分钟问答。</p></section></div>
+<h2>证据和披露</h2><ul>
+<li><a href="SOURCE_AI_DISCLOSURE_KO.md">来源与AI使用披露</a>：9月26日开始开发、既有资产、赛期增量、Codex辅助、模型和图片条件。</li>
+<li><a href="RELEASE_NOTES.md">版本更新记录</a>及<a href="evidence/test-results/v0.9/ACCEPTANCE.json">工程验收记录</a>。</li>
+<li><a href="evidence/test-results/v0.9/browser/downloaded-evidence.zip">浏览器实际下载的证据 ZIP</a>，含原AI、两版本复核、照片、HTML与SHA。</li>
+<li><a href="KitGuard_source_v0.9.zip.verification.json">源码解压启动检查</a>，使用现有依赖、不调用模型；<a href="evidence/test-results/v0.9/extracted-resolution.log">解压后的复核合同测试</a>。</li>
+<li><a href="MANIFEST.json">文件和SHA清单</a>；<a href="facts.json">报告事实来源</a>。facts中的项目相对路径可在 <code>evidence/</code> 下查找；源码ZIP另含项目文档。完整历史研究原始数据及模型不包含在这里。</li>
+</ul>
+<footer>公开图来源：<a href="https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad">MVTec LOCO AD</a> screw_bag/train/good/016.png，<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>。未改写历史模型成绩，未代签或提交比赛。</footer>
+</main></html>

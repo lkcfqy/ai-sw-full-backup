@@ -1,0 +1,211 @@
+{
+  "schema": "kitguard.v08.reference-guarded.decision.v1",
+  "recorded_at": "2026-10-02T01:25:06.980676+00:00",
+  "status": "candidate_rejected",
+  "candidate": "spatial_guarded_fixed_class_references_v1",
+  "decision_reason": "完整已曝光 51 图上 C 未增加，旧 3 个 W 全保留，另有 1 个 U 转 W；W=0 与主 AFR=0 的预登记条件失败。",
+  "development_conditions_passed": false,
+  "automatic_promotion": false,
+  "production_unchanged": true,
+  "default_unchanged": true,
+  "production_scope": "spatial_guarded 仍只作研究与数字辅助，不作自动放行安全声明。",
+  "evaluation_scope": {
+    "planned": 51,
+    "new_holdout": false,
+    "screws": 35,
+    "loco_normal_222": 16,
+    "loco_constant_baseline_correct": 16,
+    "independent_physical_ids_verified": false,
+    "pretraining_exposure_known": false,
+    "no_new_trial_for_this_decision": true
+  },
+  "baseline": {
+    "outcomes": {
+      "C": 41,
+      "W": 3,
+      "U": 7,
+      "E": 0,
+      "N": 0
+    },
+    "any_false_ready_images": {
+      "all_four": 3,
+      "source_supported": 0
+    },
+    "concurrent_rerun": false
+  },
+  "candidate_results": {
+    "outcomes": {
+      "C": 41,
+      "W": 4,
+      "U": 6,
+      "E": 0,
+      "N": 0
+    },
+    "paired_transitions": {
+      "C->C": 41,
+      "U->U": 6,
+      "U->W": 1,
+      "W->W": 3
+    },
+    "source_groups": {
+      "loco_normal_222": {
+        "C": 14,
+        "W": 0,
+        "U": 2,
+        "E": 0,
+        "N": 0
+      },
+      "screws_author_safe_crop": {
+        "C": 27,
+        "W": 4,
+        "U": 4,
+        "E": 0,
+        "N": 0
+      }
+    },
+    "any_false_ready_images": {
+      "all_four": 4,
+      "source_supported": 0
+    },
+    "risk_denominator": 51,
+    "unmeasured_risk": 0,
+    "old_C_lost": [],
+    "loco_old_C": 14,
+    "loco_C_preserved": 14,
+    "development_checks": {
+      "all51_attempted": true,
+      "zero_W": false,
+      "zero_E": true,
+      "zero_N": true,
+      "C_at_least_41": true,
+      "zero_all_four_AFR": false,
+      "all14_loco_C_preserved": true
+    },
+    "latency_all_attempted": {
+      "measured": 51,
+      "median_ms": 23587,
+      "p90_ms": 48289,
+      "maximum_ms": 51234,
+      "total_ms": 1414527
+    },
+    "latency_warm_subset": {
+      "measured": 50,
+      "median_ms": 22609.0,
+      "p90_ms": 47955,
+      "maximum_ms": 49055,
+      "total_ms": 1363293
+    },
+    "baseline_historical_latency": {
+      "measured": 51,
+      "median_ms": 21814,
+      "p90_ms": 46231,
+      "maximum_ms": 47733,
+      "total_ms": 1352628
+    },
+    "generation_calls": 134
+  },
+  "wrong_cases": [
+    {
+      "case_id": "v07-screws-screws_217-02dcfdb94d9b",
+      "baseline": "U",
+      "candidate": "W",
+      "source_group": "screws_author_safe_crop"
+    },
+    {
+      "case_id": "v07-screws-screws_120-3e86c9ca51d9",
+      "baseline": "W",
+      "candidate": "W",
+      "source_group": "screws_author_safe_crop"
+    },
+    {
+      "case_id": "v07-screws-screws_024-07f4bcf5c349",
+      "baseline": "W",
+      "candidate": "W",
+      "source_group": "screws_author_safe_crop"
+    },
+    {
+      "case_id": "v07-screws-screws_172-53dacfde39d4",
+      "baseline": "W",
+      "candidate": "W",
+      "source_group": "screws_author_safe_crop"
+    }
+  ],
+  "method_limits": {
+    "same_vlm_all_stages": true,
+    "reference_stages": [
+      1,
+      2
+    ],
+    "identity_stage_references": false,
+    "fixed_references_selected_before_inference": true,
+    "reference_selection_inference_used": false,
+    "historical_latency_fair_speed_comparison": false,
+    "narrow_source_panel_replaces_all_four": false
+  },
+  "independent_audit": {
+    "status": "passed",
+    "completed_attempts": 51,
+    "source_snapshot_files_verified": 60,
+    "model_payloads_rehashed": 16,
+    "source_changed": false,
+    "raw_evidence_checks": {
+      "normalized_inputs_verified": 51,
+      "calls": 134,
+      "parsed": 134,
+      "raw_text_returns": 134,
+      "input_images": 419,
+      "reconstructed_identity_crops": 81
+    },
+    "model_loaded_or_called": false
+  },
+  "workspace_compatibility": {
+    "status": "passed",
+    "observations_replayed": 51,
+    "new_mlx_observations": 0,
+    "behavior_and_prompts_schemas_inputs_equal": true,
+    "frozen_experiment_audit_replaced": false,
+    "scope": "只证明保存 raw 在当时工作版的非 metadata 观察/诊断、提示、完整 schema、输入字节一致，另核验新增 reference_evidence。"
+  },
+  "first_audit_failure": {
+    "preserved": true,
+    "reason": "Snapshot contains missing/unlisted source or asset",
+    "extra_file": "data/kitguard.sqlite3",
+    "model_failure": false,
+    "resolution": "仅显式允许精确路径、精确 schema、七表全空、无 sidecar 的默认 SQLite 运行产物；原源码/资产 hash 全部不放宽。",
+    "attribution": "冻结应用导入链及文件时间支持运行初始化副作用；并非历史 process trace，不证明历史从无删除。",
+    "database_sha256": "22e68505424eb7e0ae4fe25ec2aa38fd57239ced9972616d8d9ae9a08f08a576",
+    "schema_sha256": "c267cbc14454e2d9f87f56a75bf36c690e763027f714181faa9434b77eed22ba"
+  },
+  "evidence_sha256": {
+    "docs/v0.8/REFERENCE_GUARDED_PLAN.md": "e5af46d9f6ffeabe876c684eb9703923fab48328357d2b6009bca179c0217ea9",
+    "docs/v0.8/REFERENCE_GUARDED_RESULT.md": "d4044a0b6e494987ea31772c9a837c03a41319f198d5cc8d3e97362afd78800c",
+    "docs/v0.8/REFERENCE_GUARDED_AUDIT_CONTRACT.md": "b2ec096cdb5b0fd23fe7b4cf27c209e9d8a5eb7e27e9cb8be419e37c4c4bba72",
+    "docs/v0.8/REFERENCE_WORKSPACE_COMPAT_CONTRACT.md": "712de573aa1d0aa9326a131d0dd5550848580321afcebaa86a78927848973d6d",
+    "docs/v0.8/reference_guarded_freeze_v1/freeze.json": "6530e2341a60fd99fb758eac2c5f3d6010f7b8c973be71a800ad5ca0d2578462",
+    "datasets/derived/v0.8/class_reference_dev_v1/approved_references.json": "9eded7727cf624d812b3b4ed03598c7d82afe93bd6a9a630935afa3d318961fe",
+    "evaluation-runs/v0.8/reference_guarded_v1/run.json": "0e7ec9638f38db2dd55cfb0c373a04b294bb717ec53a429309f7ba9459d8b259",
+    "evaluation-runs/v0.8/reference_guarded_v1/freeze.json": "6530e2341a60fd99fb758eac2c5f3d6010f7b8c973be71a800ad5ca0d2578462",
+    "evaluation-runs/v0.8/reference_guarded_v1/manifest.json": "326c8054bb33d945868feee4a6dba5d0c137b138a1b1fe62253f28de969050cb",
+    "evaluation-runs/v0.8/reference_guarded_v1/predictions.jsonl": "f2a5953878bf3ef6ea1ac958a0d076207039aa043b3f58a5374310b9c60a1dd2",
+    "evaluation-runs/v0.8/reference_guarded_v1/analysis.json": "e0b4fb208e1f8e7444ad34651020bb1b83b4bc1f304fb8208603f5e26e2c2efe",
+    "test-results/v0.8-reference-guarded-independent-audit-v1.json": "53c37681a2c8bcf779af44804f65f5b0b2535f08d41d5c675916a0f2dd5292e1",
+    "test-results/v0.8-reference-guarded-independent-audit-v1.log": "3973a7bde2375346b85eea73f69ecbaf5d953adb66e9f19d307f54be178d3134",
+    "test-results/v0.8-reference-guarded-independent-audit-v2.json": "efb2442e5c7d6584c80d3c25fa035094657649d0744502df2c6fce389e2efc7c",
+    "test-results/v0.8-reference-guarded-independent-audit-v2.log": "9fe3bccf84d2f56bb12c2d76ab195ad39b94afdb142f55e88c4fe3acb969709f",
+    "test-results/v0.8-reference-workspace-compat-v1/compatibility.json": "32f7e44a28c8e967a6e6410c86a006a9a9ef73895f70c06f0591557f0426d3fa",
+    "test-results/v0.8-reference-workspace-compat-v1.log": "b8e36c9d6253639ae4ede259d3adb915a9fe6012d82e5785f2474db835cd19c4",
+    "test-results/v0.8-reference-snapshot-empty-db-peer-review-v1.json": "9b2d0550b8521a28b81e6114baa0ec81bc172678edb34a5fc9b038aafc97df3e",
+    "test-results/v0.8-reference-audit-and-compat-contracts-v4.log": "c47b9aecd0ac6a8440694616f86bef145c768b14d6eec720ce0ff62dd9a02742",
+    "test-results/v0.8-reference-audit-and-compat-contracts-v4.xml": "d5b662897fa03fc2dd8a76be6376422106103c32c13d03638bae7597754ea3ea",
+    "scripts/v08/audit_reference_guarded.py": "69016d6906fc340c83d19f12dfe8c005c78ba497d3c78795893d93c6e9fabcdf",
+    "scripts/v08/replay_reference_workspace_compat.py": "fc4a4fa591f43cc576b3acd7128bb80609dc7e7f351e973666d9c302c8870844",
+    "scripts/v07/audit_public_paired.py": "4ed25dcb8b832adf027c72abddea76b0363d3b06125ad6e864621d6340d7a5f6",
+    "docs/v0.8/reference_guarded_freeze_v1/source_snapshot/data/kitguard.sqlite3": "22e68505424eb7e0ae4fe25ec2aa38fd57239ced9972616d8d9ae9a08f08a576"
+  },
+  "limitations": [
+    "保存 raw 和哈希是本地一致性凭证，不是不可篡改签名或模型输出真实性证明。",
+    "旧 51 是开发回归，不能据其调参后称新留出。",
+    "LOCO 16 恒正常，不能证明数量异常识别优势；没有 bracket 阳性。",
+    "工作版兼容回放不是新增 MLX 运行，不更新实验分数或耗时。"
+  ]
+}

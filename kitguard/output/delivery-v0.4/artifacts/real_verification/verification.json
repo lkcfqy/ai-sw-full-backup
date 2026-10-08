@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "assertions": 7,
+  "checks": [
+    "Exactly three real HTTP inspect requests, one per fixed public-development sample",
+    "No physical-completion or retry endpoint invoked",
+    "All frozen source files equal before/after hashes and archived snapshots",
+    "Author-truth manifest hashes unchanged",
+    "Closed public replay labels scripted author inputs, not a human or field baseline",
+    "Every completed trial binds the actual pinned MLX check to case photo/version; all failures retained",
+    "ZIP CRC, complete manifest hashes, exact STUDY JSON and three normalized photos all verify"
+  ],
+  "cases": [
+    {
+      "sample": "bag-revision",
+      "status": "completed",
+      "decision": "correct",
+      "observed": {
+        "bolt": 2,
+        "bracket": 0,
+        "nut": 2,
+        "washer": 2
+      },
+      "truth": {
+        "bolt": 2,
+        "bracket": 0,
+        "nut": 2,
+        "washer": 2
+      },
+      "latency_ms": 50113,
+      "trial_elapsed_ms": 50122
+    },
+    {
+      "sample": "small-part",
+      "status": "completed",
+      "decision": "recapture",
+      "observed": {
+        "bolt": 2,
+        "bracket": 0,
+        "nut": null,
+        "washer": null
+      },
+      "truth": {
+        "bolt": 2,
+        "bracket": 0,
+        "nut": 1,
+        "washer": 0
+      },
+      "latency_ms": 20605,
+      "trial_elapsed_ms": 20618
+    },
+    {
+      "sample": "mixed-screws",
+      "status": "completed",
+      "decision": "ready",
+      "observed": {
+        "bolt": 3,
+        "bracket": 0,
+        "nut": 0,
+        "washer": 0
+      },
+      "truth": {
+        "bolt": 3,
+        "bracket": 0,
+        "nut": 0,
+        "washer": 0
+      },
+      "latency_ms": 15252,
+      "trial_elapsed_ms": 15263
+    }
+  ],
+  "inspect_http_elapsed_ms": [
+    50117,
+    20609,
+    15256
+  ],
+  "ai_metrics": {
+    "started": 3,
+    "completed": 3,
+    "correct": 2,
+    "wrong": 0,
+    "uncertain": 1,
+    "failed": 0,
+    "abandoned": 0,
+    "interrupted": 0,
+    "not_started": 0,
+    "planned": 3,
+    "correct_fraction": 0.6666666666666666,
+    "terminal_elapsed_ms": {
+      "n": 3,
+      "median": 20618,
+      "max": 50122
+    },
+    "completed_elapsed_ms": {
+      "n": 3,
+      "median": 20618,
+      "max": 50122
+    },
+    "false_ready": {
+      "numerator": 0,
+      "denominator": 1
+    },
+    "returned_checks": {
+      "total": 3,
+      "scorable": 3,
+      "wrong_clear": 0,
+      "false_ready": 0,
+      "uncertain": 1,
+      "multiple_attempt_trials": 0,
+      "ineligible_backend_or_identity": 0
+    }
+  },
+  "manual_metrics_interpretation": "Ignore as human performance: counts and timing are automated author-truth input only.",
+  "source_changed": false,
+  "scope": "Three existing public development examples, scripted author-truth inputs, no human baseline or field experiment, not new independent accuracy samples. Exactly one actual inspect request per case, all errors preserved, no retries or best-of selection.",
+  "artifact_sha256": {
+    "PLAN_FREEZE.json": "23f374b6a0f0499c27eb17b2251a80ae055b4944ba1d284162a2ba95a085200a",
+    "result.json": "3cec32d07758958bc31f9ca99448b9108c1b753aecc09377eec201e29779b9d9",
+    "public-replay.json": "f4b04b874a2a6df2f5fe72ad246c3f844ae576582896b3fdd565862dcf4fca94",
+    "public-replay.html": "02178a3171a3a6d46b979299e624937614a7e07ca9152f392c3666b155b994db",
+    "public-replay-evidence.zip": "d96dd61a74e17a03b9fcefc3061f8808af55cfc3ea94a625816309671984a5b5"
+  }
+}

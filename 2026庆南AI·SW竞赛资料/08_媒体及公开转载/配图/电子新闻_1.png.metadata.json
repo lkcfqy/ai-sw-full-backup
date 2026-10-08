@@ -1,0 +1,16 @@
+{
+  "url": "https://img.etnews.com/news/article/2026/09/17/news-p.v1.20260917.41386bdf22b744a3baa8649704def925_P1.png",
+  "path": "08_媒体及公开转载/配图/电子新闻_1.png",
+  "source": "https://www.etnews.com/20260917000221",
+  "kind": "content_image",
+  "retrieved_at": "2026-09-24T16:41:45.965954+09:00",
+  "http_status": 200,
+  "final_url": "https://img.etnews.com/news/article/2026/09/17/news-p.v1.20260917.41386bdf22b744a3baa8649704def925_P1.png",
+  "content_type": "image/png",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 613446,
+  "sha256": "1ecaaa544b194c35adf1384b2ee3b66ba6214619bf7bca5e9383f1d27d0dce3c",
+  "magic_hex": "89504e470d0a1a0a0000000d49484452"
+}

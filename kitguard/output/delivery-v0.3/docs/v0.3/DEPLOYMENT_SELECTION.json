@@ -1,0 +1,24 @@
+{
+  "selected_at": "2026-09-26T13:21:55.127379+00:00",
+  "version": "0.3.0",
+  "selected_mode": "spatial_guarded",
+  "scope": "Default environment value in scripts/run.sh; direct LocalVision construction remains backward-compatible spatial_inventory unless explicitly configured.",
+  "gate_report_sha256": "8f8fa784b9abca802ffab08e1fc8b23efd75407a2ede9cc235c3496b442f599f",
+  "analysis_sha256": "76a878c1b75fc09dcbaf4ae5d3139c97f46cfdc859c8c0200f0014215c5b3408",
+  "protocol_sha256": "563bf149286d6cacb7e14992b5ee9d1b1895752fae7f407a4da37ab11d65b8b6",
+  "launcher_sha256": "8f9f578ab99352b9b05c8c3c6bb1880f0a3a85aaf9d0e9821b50319fc92cb5ba",
+  "method_core_unchanged": true,
+  "changes": [
+    "Launcher default observation mode only; no frozen model, prompts, preprocessing or method core modified after holdout."
+  ],
+  "limitations": [
+    "Internal research selection, not contest score or promise of first place.",
+    "Static public photographs; no physical replenishment, operator efficiency, live site or shipping safety validation.",
+    "Unique source IDs are not independent factories or capture sessions; pretrained data overlap unknown.",
+    "No bracket-positive cases; Screws has no washer positives.",
+    "Same model across calls, correlated scene and model-selected crops; agreement and visible-hole attributes can be wrong.",
+    "A false-ready rule simulation is not an actual shipment or human completion.",
+    "0 observed errors is not zero real-world risk; descriptive sample, independent_sample=False.",
+    "September26 predevelopment code eligibility remains subject to organizer confirmation under the official rule."
+  ]
+}

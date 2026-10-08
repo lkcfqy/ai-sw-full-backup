@@ -1,0 +1,34 @@
+{
+  "archive_sha256": "e25074ff5db30e22459d66f0e29f6b610453eba5753dd75bbbb27c4fef3a2960",
+  "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]",
+  "runtime": {
+    "experiment_runner_imports": true,
+    "inference_called": false,
+    "isolated_import": true,
+    "mlx_imported": false,
+    "model_loaded": false,
+    "public_samples": [
+      "bag-revision",
+      "small-part",
+      "mixed-screws"
+    ],
+    "routes": {
+      "/": 200,
+      "/api/orders": 200,
+      "/static/demo.css": 200,
+      "/static/demo.html": 200,
+      "/static/demo.js": 200,
+      "/static/public-review.css": 200,
+      "/static/public-review.js": 200,
+      "/static/readiness.html": 200,
+      "/static/study.html": 200,
+      "/static/trials.html": 200,
+      "/static/workflow.js": 200
+    },
+    "version": "0.7.0"
+  },
+  "scope": "Extracted source, existing dependencies; no clean install or inference",
+  "shell_syntax": "passed",
+  "source_tree_sha256": "d4bd057c344c039f90fbf9ddb95e42bc5da7b202cb97761347a7267e10cc33e7",
+  "status": "passed"
+}

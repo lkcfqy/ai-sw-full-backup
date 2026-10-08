@@ -1,0 +1,1789 @@
+{
+  "schema": "kitguard.v07.public51-failure-review.v1",
+  "created_at": "2026-10-01T22:31:16.758564+00:00",
+  "scope": "Post-run diagnostic index only; no model calls, relabeling, reruns, method edits or promotion. Paths are repository-relative.",
+  "run_completed_at": "2026-10-01T22:14:54.621793+00:00",
+  "audit_status": "passed",
+  "frozen_runtime_source_changed": false,
+  "workspace_changed_during_run": true,
+  "inputs": {
+    "run.json": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/run.json",
+      "sha256": "98d26a66c384466fc85f2e6c3f9c2266d2be89b8a2a3d3ad034da6fae2789661"
+    },
+    "analysis.json": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/analysis.json",
+      "sha256": "13f1775f4f6c57a6f21e01dbb6584654d4beb36a1749ae5430179d7a95f037c4"
+    },
+    "manifest.json": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/manifest.json",
+      "sha256": "efe4633e873d45032101a26e035c23d267bafa6605d147d3d2f7fcb51b697643"
+    },
+    "freeze.json": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/freeze.json",
+      "sha256": "cec1cf5362a5154cfd6e4d27e5ed9dbb49d7757a12189474c13e643f1dc67be7"
+    },
+    "predictions.jsonl": {
+      "path": "evaluation-runs/v0.7/public_paired_v1/predictions.jsonl",
+      "sha256": "9b525702cb2665274c37a7d7740c1d93c05562ab5fb5a17e171e31b75a6859ee"
+    },
+    "independent_audit": {
+      "path": "test-results/v0.7/public-paired-audit-v1.json",
+      "sha256": "94c71e45341a5065ee90fe601e606cd3a54242094d5dcc08770f6aae8c588fe9"
+    },
+    "author_annotations": {
+      "path": "datasets/raw/mvtec_screws_v1.0/mvtec_screws.json",
+      "sha256": "81257dff178531b5f02240addb89a132b701b557fb2663817981339176c80fa9"
+    },
+    "taxonomy_projection": {
+      "path": "docs/v0.7/public_paired_freeze_v1/source_snapshot/scripts/v07/prepare_public_evaluation.py",
+      "sha256": "aa25051995f4fdb35644bb7de3f94aca38d925f382ec6f778ff67c250cbdb656"
+    }
+  },
+  "model_identity": {
+    "spatial_inventory": {
+      "label": "Qwen3.6-27B · MLX 4-bit · local",
+      "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+      "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+      "observer_protocol_sha256": "7bea93e85437e8229c3c6d9567cdde82c977155563674c4336160cac1cd88642",
+      "observer_source_hashes": {
+        "vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+        "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278"
+      },
+      "observation_mode": "spatial_inventory",
+      "image_max_side": 1536
+    },
+    "spatial_guarded": {
+      "label": "Qwen3.6-27B · MLX 4-bit · local",
+      "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+      "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+      "observer_protocol_sha256": "0f6d5a514d4e7b093e486ae585040e9506670a4a7e725f7471333ec103e75403",
+      "observer_source_hashes": {
+        "vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+        "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+        "consensus.py": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8",
+        "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696"
+      },
+      "observation_mode": "spatial_guarded",
+      "image_max_side": 1536
+    },
+    "selective_identity_experimental_v1": {
+      "label": "Qwen3.6-27B · MLX 4-bit · local · selective identity experiment",
+      "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+      "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+      "observer_protocol_sha256": "325674fb44e3b8677ad6eb56915b637f25a7b3b431640b0c231de3d929b7bdf8",
+      "observer_source_hashes": {
+        "vision.py": "1f69d3b45d35ff8bedda746f2c72bb506ea690bb66ccc855e64513253630b8ef",
+        "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+        "identity.py": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696",
+        "schemas.py": "2726e824a1a0c7e8fb2a99994992f787300e8675c93954e1e58d2f6156573788",
+        "probe_selective_identity.py": "6766e01af02c17e14e21349780fec688d0301b4814c1d1f7abd54c44c7d755fd"
+      },
+      "observation_mode": "selective_identity_experimental_v1",
+      "image_max_side": 1536
+    }
+  },
+  "part_order": [
+    "bolt",
+    "nut",
+    "washer",
+    "bracket"
+  ],
+  "summary": {
+    "spatial_inventory": {
+      "photos": 51,
+      "outcomes": {
+        "C": 46,
+        "W": 5,
+        "U": 0,
+        "E": 0,
+        "N": 0
+      },
+      "all_four_any_false_ready_images": 5,
+      "source_supported_any_false_ready_images": 0,
+      "latency_median_ms": 8962
+    },
+    "spatial_guarded": {
+      "photos": 51,
+      "outcomes": {
+        "C": 41,
+        "W": 3,
+        "U": 7,
+        "E": 0,
+        "N": 0
+      },
+      "all_four_any_false_ready_images": 3,
+      "source_supported_any_false_ready_images": 0,
+      "latency_median_ms": 21814
+    },
+    "selective_identity_experimental_v1": {
+      "photos": 51,
+      "outcomes": {
+        "C": 46,
+        "W": 4,
+        "U": 1,
+        "E": 0,
+        "N": 0
+      },
+      "all_four_any_false_ready_images": 4,
+      "source_supported_any_false_ready_images": 0,
+      "latency_median_ms": 15625
+    }
+  },
+  "paired_transitions": {
+    "inventory_to_guarded": {
+      "C->C": 41,
+      "C->U": 5,
+      "W->U": 2,
+      "W->W": 3
+    },
+    "inventory_to_selective": {
+      "C->C": 46,
+      "W->U": 1,
+      "W->W": 4
+    },
+    "guarded_to_selective": {
+      "C->C": 41,
+      "U->C": 5,
+      "U->U": 1,
+      "U->W": 1,
+      "W->W": 3
+    }
+  },
+  "inventory_correct_guarded_uncertain_case_ids": [
+    "v07-loco-screw_bag-train-good-148",
+    "v07-loco-screw_bag-train-good-225",
+    "v07-screws-screws_025-be0cfb452c55",
+    "v07-screws-screws_165-203dda5f8171",
+    "v07-screws-screws_306-b99ef95d6c60"
+  ],
+  "unique_wrong_case_count": 5,
+  "raw_generation_files_checked": 29,
+  "visual_review": {
+    "reviewer": "Codex",
+    "scope": "Five full source photographs, all five selected evaluation crops, and seven recorded identity crop images inspected directly. Visual inspection is not independent taxonomy adjudication.",
+    "selected_case_ids": [
+      "v07-screws-screws_024-07f4bcf5c349",
+      "v07-screws-screws_120-3e86c9ca51d9",
+      "v07-screws-screws_163-042340f2c1b1",
+      "v07-screws-screws_172-53dacfde39d4",
+      "v07-screws-screws_217-02dcfdb94d9b"
+    ],
+    "identity_crop_paths": [
+      "evaluation-runs/v0.7/public_paired_v1/cases/112-spatial_guarded/call-03/image-02.png",
+      "evaluation-runs/v0.7/public_paired_v1/cases/092-spatial_guarded/call-03/image-02.png",
+      "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-03/image-02.png",
+      "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-03/image-03.png",
+      "evaluation-runs/v0.7/public_paired_v1/cases/148-spatial_guarded/call-03/image-02.png",
+      "evaluation-runs/v0.7/public_paired_v1/cases/068-selective_identity_experimental_v1/call-02/image-02.png",
+      "evaluation-runs/v0.7/public_paired_v1/cases/068-selective_identity_experimental_v1/call-02/image-03.png"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "v07-screws-screws_024-07f4bcf5c349",
+      "source_image": {
+        "path": "datasets/raw/mvtec_screws_v1.0/images/screws_024.png",
+        "sha256": "e6e3bb2b9d4c17662ac66be60b9f11d0e32f7941a5594d4a8db326baa8bff6e9"
+      },
+      "selected_crop": {
+        "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_024-07f4bcf5c349.png",
+        "sha256": "74138063d6dc74cddf2c84b9e2f6d9cc6fc73fb48bcdbceee0ce155306227a17"
+      },
+      "crop_xyxy": [
+        704,
+        0,
+        1664,
+        720
+      ],
+      "ground_truth": {
+        "bolt": 1,
+        "nut": 1,
+        "washer": 0,
+        "bracket": 0
+      },
+      "author_annotations": [
+        {
+          "id": 24004,
+          "category_id": 7,
+          "category_name": "type_007",
+          "projected_part": "nut"
+        },
+        {
+          "id": 24006,
+          "category_id": 5,
+          "category_name": "type_005",
+          "projected_part": "bolt"
+        }
+      ],
+      "supported_positive_classes": [
+        "bolt",
+        "nut"
+      ],
+      "attempts": {
+        "spatial_inventory": {
+          "attempt": 114,
+          "outcome": "W",
+          "observed": {
+            "bolt": 1,
+            "nut": 0,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/114-spatial_inventory/call-01/generation.json",
+              "sha256": "1cf5c4641db9a5d86967f2cf28de96a3b6b56e34dd2643c0055805c1e8d14e2e",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 1,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/114-spatial_inventory/call-01/image-01.png",
+                  "sha256": "11839cf2fb7cac7eb3c74b993163e7bc6a9be15210b01f6a9acd69efed7780f8"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": null,
+          "identity_status": null,
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 1,
+                  "nut": 0,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        },
+        "spatial_guarded": {
+          "attempt": 112,
+          "outcome": "W",
+          "observed": {
+            "bolt": 1,
+            "nut": 0,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/112-spatial_guarded/call-01/generation.json",
+              "sha256": "5f631e88986c397077b40172823d106d51523e01567da0c8310049f2e2c47f6e",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 1,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/112-spatial_guarded/call-01/image-01.png",
+                  "sha256": "11839cf2fb7cac7eb3c74b993163e7bc6a9be15210b01f6a9acd69efed7780f8"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/112-spatial_guarded/call-02/generation.json",
+              "sha256": "04c7613f016def55c984fd0ad3b1fa569aeb74781aac2bd24b1eed9a3a226fc4",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 1,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/112-spatial_guarded/call-02/image-01.png",
+                  "sha256": "21214a1491acfa3340575465f7846ee80de73ad751f7634e47bbccf434f9f481"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/112-spatial_guarded/call-03/generation.json",
+              "sha256": "25f1bc67d0ff569a3846e0fc9ecc110b4091ed8b85b906b6db5700f2850a5145",
+              "schema": "IdentityResponse",
+              "status": "parsed",
+              "identity_response": [
+                {
+                  "id": "p002",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/112-spatial_guarded/call-03/image-01.png",
+                  "sha256": "11839cf2fb7cac7eb3c74b993163e7bc6a9be15210b01f6a9acd69efed7780f8"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/112-spatial_guarded/call-03/image-02.png",
+                  "sha256": "aff43288043a232ef1cd08e13c2df96ac1c1ca5a4be3eebea52827601989835d"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": true,
+          "identity_status": "confirmed_candidates",
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [
+            {
+              "id": "p002",
+              "source_pixels": [
+                144,
+                174
+              ],
+              "resampled_pixels": [
+                424,
+                512
+              ],
+              "interpolation_creates_information": false
+            }
+          ],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 1,
+                  "nut": 0,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        },
+        "selective_identity_experimental_v1": {
+          "attempt": 113,
+          "outcome": "W",
+          "observed": {
+            "bolt": 1,
+            "nut": 0,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/113-selective_identity_experimental_v1/call-01/generation.json",
+              "sha256": "f08975e69eb2027fbcdd4245c6bd5f6f7c624656a531a01f1ef7e03bb669693f",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 1,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/113-selective_identity_experimental_v1/call-01/image-01.png",
+                  "sha256": "11839cf2fb7cac7eb3c74b993163e7bc6a9be15210b01f6a9acd69efed7780f8"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/113-selective_identity_experimental_v1/call-02/generation.json",
+              "sha256": "161e9cb5996e6c24e32d0c02d38be66940bcae3a779a7d62997594a72f6e5f23",
+              "schema": "IdentityResponse",
+              "status": "parsed",
+              "identity_response": [
+                {
+                  "id": "p002",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/113-selective_identity_experimental_v1/call-02/image-01.png",
+                  "sha256": "11839cf2fb7cac7eb3c74b993163e7bc6a9be15210b01f6a9acd69efed7780f8"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/113-selective_identity_experimental_v1/call-02/image-02.png",
+                  "sha256": "aff43288043a232ef1cd08e13c2df96ac1c1ca5a4be3eebea52827601989835d"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": null,
+          "identity_status": "confirmed_candidates",
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [
+            {
+              "id": "p002",
+              "source_pixels": [
+                144,
+                174
+              ],
+              "resampled_pixels": [
+                424,
+                512
+              ],
+              "interpolation_creates_information": false
+            }
+          ],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 1,
+                  "nut": 0,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_120-3e86c9ca51d9",
+      "source_image": {
+        "path": "datasets/raw/mvtec_screws_v1.0/images/screws_120.png",
+        "sha256": "c4f663e6528ef41fafb77303095adf5b05934560bec00af36ec64d81238aad60"
+      },
+      "selected_crop": {
+        "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_120-3e86c9ca51d9.png",
+        "sha256": "9b5055b70a2926696ea7f5ab3c325f59bc22ab592661605c5297b905a2f5a84b"
+      },
+      "crop_xyxy": [
+        896,
+        704,
+        1856,
+        1424
+      ],
+      "ground_truth": {
+        "bolt": 1,
+        "nut": 1,
+        "washer": 0,
+        "bracket": 0
+      },
+      "author_annotations": [
+        {
+          "id": 120004,
+          "category_id": 7,
+          "category_name": "type_007",
+          "projected_part": "nut"
+        },
+        {
+          "id": 120005,
+          "category_id": 6,
+          "category_name": "type_006",
+          "projected_part": "bolt"
+        }
+      ],
+      "supported_positive_classes": [
+        "bolt",
+        "nut"
+      ],
+      "attempts": {
+        "spatial_inventory": {
+          "attempt": 91,
+          "outcome": "W",
+          "observed": {
+            "bolt": 1,
+            "nut": 0,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/091-spatial_inventory/call-01/generation.json",
+              "sha256": "26f79a0eb932211048804463e82a6e8d836177a7f508a181fbadd66aa7b12c06",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 1,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/091-spatial_inventory/call-01/image-01.png",
+                  "sha256": "3fadb2a106ee28c016ce26b0c83ccaf931c7f14f8af99cbc743f58b98ee612ee"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": null,
+          "identity_status": null,
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 1,
+                  "nut": 0,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        },
+        "spatial_guarded": {
+          "attempt": 92,
+          "outcome": "W",
+          "observed": {
+            "bolt": 1,
+            "nut": 0,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/092-spatial_guarded/call-01/generation.json",
+              "sha256": "8901f2eabf224b7b8114e0f10b302392fe8cb5999319a538259a6800f451099d",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 1,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/092-spatial_guarded/call-01/image-01.png",
+                  "sha256": "3fadb2a106ee28c016ce26b0c83ccaf931c7f14f8af99cbc743f58b98ee612ee"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/092-spatial_guarded/call-02/generation.json",
+              "sha256": "3ec422cb18c9db77b3403c137242fa506bf85d94cb5dc22557b53488bc6acfc6",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 1,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/092-spatial_guarded/call-02/image-01.png",
+                  "sha256": "724270641d8d4ba7a7f976e5d0316c99eccbedc730998027d20ff2fe5327c3f8"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/092-spatial_guarded/call-03/generation.json",
+              "sha256": "5af237a86be8b115c691e352a5a96ab720327d604755de0e2770880ac390b802",
+              "schema": "IdentityResponse",
+              "status": "parsed",
+              "identity_response": [
+                {
+                  "id": "p001",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/092-spatial_guarded/call-03/image-01.png",
+                  "sha256": "3fadb2a106ee28c016ce26b0c83ccaf931c7f14f8af99cbc743f58b98ee612ee"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/092-spatial_guarded/call-03/image-02.png",
+                  "sha256": "b110211011f4ec77f0f7f14e2da29e3bf80bd3e1209e2a02d2ed62b26c0bd23e"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": true,
+          "identity_status": "confirmed_candidates",
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [
+            {
+              "id": "p001",
+              "source_pixels": [
+                173,
+                173
+              ],
+              "resampled_pixels": [
+                512,
+                512
+              ],
+              "interpolation_creates_information": false
+            }
+          ],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 1,
+                  "nut": 0,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        },
+        "selective_identity_experimental_v1": {
+          "attempt": 93,
+          "outcome": "W",
+          "observed": {
+            "bolt": 1,
+            "nut": 0,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/093-selective_identity_experimental_v1/call-01/generation.json",
+              "sha256": "8901f2eabf224b7b8114e0f10b302392fe8cb5999319a538259a6800f451099d",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 1,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/093-selective_identity_experimental_v1/call-01/image-01.png",
+                  "sha256": "3fadb2a106ee28c016ce26b0c83ccaf931c7f14f8af99cbc743f58b98ee612ee"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/093-selective_identity_experimental_v1/call-02/generation.json",
+              "sha256": "42d9fa99abe4c8ac2e699bea181a93b80c1d848dc13446352c6220c382a47ca8",
+              "schema": "IdentityResponse",
+              "status": "parsed",
+              "identity_response": [
+                {
+                  "id": "p001",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/093-selective_identity_experimental_v1/call-02/image-01.png",
+                  "sha256": "3fadb2a106ee28c016ce26b0c83ccaf931c7f14f8af99cbc743f58b98ee612ee"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/093-selective_identity_experimental_v1/call-02/image-02.png",
+                  "sha256": "b110211011f4ec77f0f7f14e2da29e3bf80bd3e1209e2a02d2ed62b26c0bd23e"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": null,
+          "identity_status": "confirmed_candidates",
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [
+            {
+              "id": "p001",
+              "source_pixels": [
+                173,
+                173
+              ],
+              "resampled_pixels": [
+                512,
+                512
+              ],
+              "interpolation_creates_information": false
+            }
+          ],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 1,
+                  "nut": 0,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_163-042340f2c1b1",
+      "source_image": {
+        "path": "datasets/raw/mvtec_screws_v1.0/images/screws_163.png",
+        "sha256": "b544e677e69f2cb8d3adfd438943744c77daa49f2612117a8a8b5016c283e228"
+      },
+      "selected_crop": {
+        "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_163-042340f2c1b1.png",
+        "sha256": "3ee1124c4be639f2dff45df34688356452e3b25c2262145498a8f74a025105a9"
+      },
+      "crop_xyxy": [
+        64,
+        720,
+        1024,
+        1440
+      ],
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "author_annotations": [
+        {
+          "id": 163002,
+          "category_id": 8,
+          "category_name": "type_008",
+          "projected_part": "bolt"
+        },
+        {
+          "id": 163004,
+          "category_id": 7,
+          "category_name": "type_007",
+          "projected_part": "nut"
+        },
+        {
+          "id": 163005,
+          "category_id": 6,
+          "category_name": "type_006",
+          "projected_part": "bolt"
+        },
+        {
+          "id": 163006,
+          "category_id": 7,
+          "category_name": "type_007",
+          "projected_part": "nut"
+        }
+      ],
+      "supported_positive_classes": [
+        "bolt",
+        "nut"
+      ],
+      "attempts": {
+        "spatial_inventory": {
+          "attempt": 103,
+          "outcome": "W",
+          "observed": {
+            "bolt": 2,
+            "nut": 0,
+            "washer": 2,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/103-spatial_inventory/call-01/generation.json",
+              "sha256": "11876c552e150ee551f6bdc313216bf5fa74abe6d22348025bdb6a11fe2943f5",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 2,
+                "nut": 0,
+                "washer": 2,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/103-spatial_inventory/call-01/image-01.png",
+                  "sha256": "0fb2730f20d0bf0a99037bd1efe54763c435fd89fd1af69a73620118dec34d27"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": null,
+          "identity_status": null,
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 2,
+                  "nut": 0,
+                  "washer": 2,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        },
+        "spatial_guarded": {
+          "attempt": 105,
+          "outcome": "U",
+          "observed": {
+            "bolt": 2,
+            "nut": null,
+            "washer": null,
+            "bracket": 0
+          },
+          "action": "recapture",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-01/generation.json",
+              "sha256": "68289e26daf449711d730e2a26290a0dbac7e86a7ba1f4a9bb9a13181365d248",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 2,
+                "nut": 0,
+                "washer": 2,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-01/image-01.png",
+                  "sha256": "0fb2730f20d0bf0a99037bd1efe54763c435fd89fd1af69a73620118dec34d27"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-02/generation.json",
+              "sha256": "87f1fa052b2f4c55fa8cd60834b4ec6bf6d2db37df673af9279eb232100d48b7",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 2,
+                "nut": 0,
+                "washer": 2,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-02/image-01.png",
+                  "sha256": "92a72a268ab473f938b554eb59566096b056262096a4b089e0061ff7d6c5320d"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-03/generation.json",
+              "sha256": "aa50ed9c53f87d270b10fb0f2a44f747d26f73216ae77ee954eb1f7499fb9448",
+              "schema": "IdentityResponse",
+              "status": "parsed",
+              "identity_response": [
+                {
+                  "id": "p001",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p002",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-03/image-01.png",
+                  "sha256": "0fb2730f20d0bf0a99037bd1efe54763c435fd89fd1af69a73620118dec34d27"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-03/image-02.png",
+                  "sha256": "26f7927862fa0b75a8bdaa87bb2b8bc55318a401afb0be4cb62ceec3c0945d0f"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/105-spatial_guarded/call-03/image-03.png",
+                  "sha256": "87b53730a954d8f21fc9a0e47f3b6c640e966ec88e9389f3179a205e428c1041"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": true,
+          "identity_status": "blocked",
+          "identity_blocked_categories": [
+            "nut",
+            "washer"
+          ],
+          "identity_crop_sizes": [
+            {
+              "id": "p001",
+              "source_pixels": [
+                174,
+                144
+              ],
+              "resampled_pixels": [
+                512,
+                424
+              ],
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p002",
+              "source_pixels": [
+                173,
+                174
+              ],
+              "resampled_pixels": [
+                509,
+                512
+              ],
+              "interpolation_creates_information": false
+            }
+          ],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        },
+        "selective_identity_experimental_v1": {
+          "attempt": 104,
+          "outcome": "U",
+          "observed": {
+            "bolt": 2,
+            "nut": null,
+            "washer": null,
+            "bracket": 0
+          },
+          "action": "recapture",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/104-selective_identity_experimental_v1/call-01/generation.json",
+              "sha256": "7041412cfa0fd6bf9995ec97a5bdac93606b8162db90e928b28a546b2c7b3adb",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 2,
+                "nut": 0,
+                "washer": 2,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/104-selective_identity_experimental_v1/call-01/image-01.png",
+                  "sha256": "0fb2730f20d0bf0a99037bd1efe54763c435fd89fd1af69a73620118dec34d27"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/104-selective_identity_experimental_v1/call-02/generation.json",
+              "sha256": "0adda39db95de2a5dc35a79a23ffcd2743908f2a58fcf51b6aef3905019ed9a3",
+              "schema": "IdentityResponse",
+              "status": "parsed",
+              "identity_response": [
+                {
+                  "id": "p001",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p002",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/104-selective_identity_experimental_v1/call-02/image-01.png",
+                  "sha256": "0fb2730f20d0bf0a99037bd1efe54763c435fd89fd1af69a73620118dec34d27"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/104-selective_identity_experimental_v1/call-02/image-02.png",
+                  "sha256": "26f7927862fa0b75a8bdaa87bb2b8bc55318a401afb0be4cb62ceec3c0945d0f"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/104-selective_identity_experimental_v1/call-02/image-03.png",
+                  "sha256": "87b53730a954d8f21fc9a0e47f3b6c640e966ec88e9389f3179a205e428c1041"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": null,
+          "identity_status": "blocked",
+          "identity_blocked_categories": [
+            "nut",
+            "washer"
+          ],
+          "identity_crop_sizes": [
+            {
+              "id": "p001",
+              "source_pixels": [
+                174,
+                144
+              ],
+              "resampled_pixels": [
+                512,
+                424
+              ],
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p002",
+              "source_pixels": [
+                173,
+                174
+              ],
+              "resampled_pixels": [
+                509,
+                512
+              ],
+              "interpolation_creates_information": false
+            }
+          ],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_172-53dacfde39d4",
+      "source_image": {
+        "path": "datasets/raw/mvtec_screws_v1.0/images/screws_172.png",
+        "sha256": "cda11712c99a93152e7b57111aae1bb69bcbd9f085645e67dd65e7913fabff6c"
+      },
+      "selected_crop": {
+        "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_172-53dacfde39d4.png",
+        "sha256": "6470f890c2aebb3a2948d2d63798545d79faabb0d78f941c1d5c9c7d94700436"
+      },
+      "crop_xyxy": [
+        64,
+        0,
+        1216,
+        864
+      ],
+      "ground_truth": {
+        "bolt": 2,
+        "nut": 1,
+        "washer": 0,
+        "bracket": 0
+      },
+      "author_annotations": [
+        {
+          "id": 172003,
+          "category_id": 7,
+          "category_name": "type_007",
+          "projected_part": "nut"
+        },
+        {
+          "id": 172006,
+          "category_id": 6,
+          "category_name": "type_006",
+          "projected_part": "bolt"
+        },
+        {
+          "id": 172008,
+          "category_id": 5,
+          "category_name": "type_005",
+          "projected_part": "bolt"
+        }
+      ],
+      "supported_positive_classes": [
+        "bolt",
+        "nut"
+      ],
+      "attempts": {
+        "spatial_inventory": {
+          "attempt": 150,
+          "outcome": "W",
+          "observed": {
+            "bolt": 2,
+            "nut": 0,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/150-spatial_inventory/call-01/generation.json",
+              "sha256": "b5d5bd7637f368cfb66a5494a98afc47de530aa4e8217557139332ef2c1451ac",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 2,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/150-spatial_inventory/call-01/image-01.png",
+                  "sha256": "50ead6771c1cee2610c84933d40f00ddda5b22033b7eabd7998e14783e669f53"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": null,
+          "identity_status": null,
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 2,
+                  "nut": 0,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        },
+        "spatial_guarded": {
+          "attempt": 148,
+          "outcome": "W",
+          "observed": {
+            "bolt": 2,
+            "nut": 0,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/148-spatial_guarded/call-01/generation.json",
+              "sha256": "b000a19bd05b354e1c3d0649001b256f0448c83b9b7a5d4229970e98a4030052",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 2,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/148-spatial_guarded/call-01/image-01.png",
+                  "sha256": "50ead6771c1cee2610c84933d40f00ddda5b22033b7eabd7998e14783e669f53"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/148-spatial_guarded/call-02/generation.json",
+              "sha256": "676d955c5ae3fddc3168546fd2d0fee941fbfffa4e19b779f5ed6f73d1c3a029",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 2,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/148-spatial_guarded/call-02/image-01.png",
+                  "sha256": "bb04d2c74c44a5c4ef45b40d595167af4da2d111e1a230a865802652dbc05086"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/148-spatial_guarded/call-03/generation.json",
+              "sha256": "281b532f30dc330d0946e9c310575a885d0a575c922b4504b13e3268e810466e",
+              "schema": "IdentityResponse",
+              "status": "parsed",
+              "identity_response": [
+                {
+                  "id": "p003",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/148-spatial_guarded/call-03/image-01.png",
+                  "sha256": "50ead6771c1cee2610c84933d40f00ddda5b22033b7eabd7998e14783e669f53"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/148-spatial_guarded/call-03/image-02.png",
+                  "sha256": "e9424a27585b5eacb810a385203ddde19fc2b6aa99872f0362e93f19c4a0c1c7"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": true,
+          "identity_status": "confirmed_candidates",
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [
+            {
+              "id": "p003",
+              "source_pixels": [
+                208,
+                208
+              ],
+              "resampled_pixels": [
+                512,
+                512
+              ],
+              "interpolation_creates_information": false
+            }
+          ],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 2,
+                  "nut": 0,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        },
+        "selective_identity_experimental_v1": {
+          "attempt": 149,
+          "outcome": "W",
+          "observed": {
+            "bolt": 2,
+            "nut": 0,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/149-selective_identity_experimental_v1/call-01/generation.json",
+              "sha256": "4116036b72d2a6d4688c8b0b4e03cda7c46a91bd9b65f3ef0e7bf0ec63d6ee9e",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 2,
+                "nut": 0,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/149-selective_identity_experimental_v1/call-01/image-01.png",
+                  "sha256": "50ead6771c1cee2610c84933d40f00ddda5b22033b7eabd7998e14783e669f53"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/149-selective_identity_experimental_v1/call-02/generation.json",
+              "sha256": "55e86f490daf1f137af00e1e98a654de15f7d023dcb340d11f1b8cd413c336d3",
+              "schema": "IdentityResponse",
+              "status": "parsed",
+              "identity_response": [
+                {
+                  "id": "p003",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/149-selective_identity_experimental_v1/call-02/image-01.png",
+                  "sha256": "50ead6771c1cee2610c84933d40f00ddda5b22033b7eabd7998e14783e669f53"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/149-selective_identity_experimental_v1/call-02/image-02.png",
+                  "sha256": "e9424a27585b5eacb810a385203ddde19fc2b6aa99872f0362e93f19c4a0c1c7"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": null,
+          "identity_status": "confirmed_candidates",
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [
+            {
+              "id": "p003",
+              "source_pixels": [
+                208,
+                208
+              ],
+              "resampled_pixels": [
+                512,
+                512
+              ],
+              "interpolation_creates_information": false
+            }
+          ],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 2,
+                  "nut": 0,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "case_id": "v07-screws-screws_217-02dcfdb94d9b",
+      "source_image": {
+        "path": "datasets/raw/mvtec_screws_v1.0/images/screws_217.png",
+        "sha256": "68286e4b8f52431198f8a321681bb15b44f6bda8821725bbd97287e0359406c0"
+      },
+      "selected_crop": {
+        "path": "datasets/derived/v0.7/public_paired_v1/images/v07-screws-screws_217-02dcfdb94d9b.png",
+        "sha256": "37742f4745003df6a4ef55d2ee42497769bfe74eba68d68d6284989f32d80f50"
+      },
+      "crop_xyxy": [
+        896,
+        192,
+        1856,
+        912
+      ],
+      "ground_truth": {
+        "bolt": 3,
+        "nut": 2,
+        "washer": 0,
+        "bracket": 0
+      },
+      "author_annotations": [
+        {
+          "id": 217001,
+          "category_id": 8,
+          "category_name": "type_008",
+          "projected_part": "bolt"
+        },
+        {
+          "id": 217003,
+          "category_id": 6,
+          "category_name": "type_006",
+          "projected_part": "bolt"
+        },
+        {
+          "id": 217004,
+          "category_id": 7,
+          "category_name": "type_007",
+          "projected_part": "nut"
+        },
+        {
+          "id": 217005,
+          "category_id": 5,
+          "category_name": "type_005",
+          "projected_part": "bolt"
+        },
+        {
+          "id": 217008,
+          "category_id": 7,
+          "category_name": "type_007",
+          "projected_part": "nut"
+        }
+      ],
+      "supported_positive_classes": [
+        "bolt",
+        "nut"
+      ],
+      "attempts": {
+        "spatial_inventory": {
+          "attempt": 67,
+          "outcome": "W",
+          "observed": {
+            "bolt": 3,
+            "nut": 1,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/067-spatial_inventory/call-01/generation.json",
+              "sha256": "e48416a186b7c18f3ced8dbc1499679c56ceae6161c0bacf146e262e602cc69b",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 3,
+                "nut": 1,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/067-spatial_inventory/call-01/image-01.png",
+                  "sha256": "9b6b2dd3016ba64acf556b167d851c77ed3908a2a3ce9e298651cef4d0032a3d"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": null,
+          "identity_status": null,
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 3,
+                  "nut": 1,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        },
+        "spatial_guarded": {
+          "attempt": 69,
+          "outcome": "U",
+          "observed": {
+            "bolt": 3,
+            "nut": null,
+            "washer": null,
+            "bracket": 0
+          },
+          "action": "recapture",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/069-spatial_guarded/call-01/generation.json",
+              "sha256": "e0bf7544eae74bbb4100bf12ac5659dcd6990f3f96fced3e90861b3476ae5310",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 3,
+                "nut": 1,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/069-spatial_guarded/call-01/image-01.png",
+                  "sha256": "9b6b2dd3016ba64acf556b167d851c77ed3908a2a3ce9e298651cef4d0032a3d"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/069-spatial_guarded/call-02/generation.json",
+              "sha256": "9851e0456747bbd75fefa8049fd2ab81c01c03607ac9a5e1b2a5c5c09676e190",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 3,
+                "nut": 2,
+                "washer": 0,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/069-spatial_guarded/call-02/image-01.png",
+                  "sha256": "8ba6db839150786ab79061f8494053f8850f47699c9b10b247c421b0282b9ad8"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": false,
+          "identity_status": "skipped_base_unclear",
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        },
+        "selective_identity_experimental_v1": {
+          "attempt": 68,
+          "outcome": "W",
+          "observed": {
+            "bolt": 3,
+            "nut": 1,
+            "washer": 1,
+            "bracket": 0
+          },
+          "action": "none",
+          "raw_calls": [
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/068-selective_identity_experimental_v1/call-01/generation.json",
+              "sha256": "5e66ada7bd711d5a5db1ebb25d75ed9c1a35f54c7a70cb9f05a70ebdf35f296d",
+              "schema": "SpatialInventory",
+              "status": "parsed",
+              "object_counts": {
+                "bolt": 3,
+                "nut": 1,
+                "washer": 1,
+                "bracket": 0
+              },
+              "uncertain_parts": [],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/068-selective_identity_experimental_v1/call-01/image-01.png",
+                  "sha256": "9b6b2dd3016ba64acf556b167d851c77ed3908a2a3ce9e298651cef4d0032a3d"
+                }
+              ]
+            },
+            {
+              "path": "evaluation-runs/v0.7/public_paired_v1/cases/068-selective_identity_experimental_v1/call-02/generation.json",
+              "sha256": "be4c47a3c8ddd791fcda3e5619d5fe9f2cafd4d53d21f88312e746ed87725fe1",
+              "schema": "IdentityResponse",
+              "status": "parsed",
+              "identity_response": [
+                {
+                  "id": "p004",
+                  "part": "washer",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                },
+                {
+                  "id": "p005",
+                  "part": "nut",
+                  "status": "independent_object",
+                  "opening": "through_hole",
+                  "issue": ""
+                }
+              ],
+              "inputs": [
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/068-selective_identity_experimental_v1/call-02/image-01.png",
+                  "sha256": "9b6b2dd3016ba64acf556b167d851c77ed3908a2a3ce9e298651cef4d0032a3d"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/068-selective_identity_experimental_v1/call-02/image-02.png",
+                  "sha256": "45b549955836feaacc13a77b84b7cbe5a82f9f4f49e897da9386e9964cfdddf8"
+                },
+                {
+                  "path": "evaluation-runs/v0.7/public_paired_v1/cases/068-selective_identity_experimental_v1/call-02/image-03.png",
+                  "sha256": "4f096602e8f03daf9c146372685c3b38d1c6638c3568ae10435a4ab961e05824"
+                }
+              ]
+            }
+          ],
+          "orientation_counts_agree": null,
+          "identity_status": "confirmed_candidates",
+          "identity_blocked_categories": [],
+          "identity_crop_sizes": [
+            {
+              "id": "p004",
+              "source_pixels": [
+                139,
+                174
+              ],
+              "resampled_pixels": [
+                409,
+                512
+              ],
+              "interpolation_creates_information": false
+            },
+            {
+              "id": "p005",
+              "source_pixels": [
+                174,
+                174
+              ],
+              "resampled_pixels": [
+                512,
+                512
+              ],
+              "interpolation_creates_information": false
+            }
+          ],
+          "panels": {
+            "all_four": {
+              "mismatched_orders": 254,
+              "false_ready_orders": [
+                {
+                  "bolt": 3,
+                  "nut": 1,
+                  "washer": 1,
+                  "bracket": 0
+                }
+              ],
+              "any_false_ready": true,
+              "risk_measured": true
+            },
+            "source_supported": {
+              "mismatched_orders": 14,
+              "false_ready_orders": [],
+              "any_false_ready": false,
+              "risk_measured": true
+            }
+          }
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Original category names are type_NNN; nut is the frozen project taxonomy projection, not a literal upstream category name.",
+    "All wrong outputs assign washer to an author category-7 nut under that fixed projection. No annotation was changed.",
+    "Calls reuse the same model and original source pixels; agreement is not independent verification.",
+    "Synthetic BOM panels measure rule behavior on these photos, not deployed warehouse error rates.",
+    "This exposed 51-photo set is diagnostic/regression evidence for any subsequent design, not a fresh holdout."
+  ],
+  "automatic_promotion": false
+}

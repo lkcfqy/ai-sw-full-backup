@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="경남 AI·SW 경진대회">
+<meta property="og:title" content="제4회 경남 AI·SW 경진대회">
+<meta property="og:description" content="8일 만에 우리 팀의 첫 AI Agent를 완성하라 · 총상금 3,050만원 · 접수 ~2026.09.29">
+<meta property="og:image" content="https://contest.gnict.org/theme/basic/img/og-thumb.png?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://contest.gnict.org/">
+<meta name="description" content="8일 만에 우리 팀의 첫 AI Agent를 완성하라 · 총상금 3,050만원 · 접수 ~2026.09.29">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="제4회 경남 AI·SW 경진대회">
+<meta name="twitter:description" content="8일 만에 우리 팀의 첫 AI Agent를 완성하라 · 총상금 3,050만원 · 접수 ~2026.09.29">
+<meta name="twitter:image" content="https://contest.gnict.org/theme/basic/img/og-thumb.png?v=1">
+<title>경남 AI·SW 경진대회</title>
+<link rel="stylesheet" href="https://contest.gnict.org/theme/basic/css/default.css?ver=1789524813">
+<link rel="stylesheet" href="https://contest.gnict.org/js/font-awesome/css/font-awesome.min.css?ver=1789457630">
+<!--[if lte IE 8]>
+<script src="https://contest.gnict.org/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://contest.gnict.org";
+var g5_bbs_url   = "https://contest.gnict.org/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+<script src="https://contest.gnict.org/js/jquery-1.12.4.min.js?ver=1789457629"></script>
+<script src="https://contest.gnict.org/js/jquery-migrate-1.4.1.min.js?ver=1789457629"></script>
+<script src="https://contest.gnict.org/js/jquery.menu.js?ver=1789457629"></script>
+<script src="https://contest.gnict.org/js/common.js?ver=1789457628"></script>
+<script src="https://contest.gnict.org/js/wrest.js?ver=1789457629"></script>
+<script src="https://contest.gnict.org/js/placeholders.min.js?ver=1789457629"></script>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://contest.gnict.org/theme/basic/css/contest.css?ver=6">
+
+<div id="gnict-main">
+
+  <!-- ===== HEADER (공통) ===== -->
+  <header class="gn-header">
+    <div class="wrap gn-nav">
+      <a class="brand" href="https://contest.gnict.org/">
+        <img src="https://contest.gnict.org/theme/basic/img/gnict_logo.png" alt="(사)경남인공지능ICT협회 · 경남 AI·SW 경진대회">
+      </a>
+      <ul class="menu" aria-label="주요 메뉴">
+                  <li><a href="https://contest.gnict.org/about.php">대회소개</a></li>
+                  <li><a href="https://contest.gnict.org/rule.php">운영규정</a></li>
+                  <li><a href="https://contest.gnict.org/apply.php">주제 및 신청방법</a></li>
+                  <li><a href="https://contest.gnict.org/bbs/board.php?bo_table=notice">공지사항</a></li>
+              </ul>
+      <div class="gn-auth">
+                  <a class="lnk" href="https://contest.gnict.org/bbs/login.php">로그인</a>
+          <a class="lnk" href="https://contest.gnict.org/bbs/register.php">회원가입</a>
+                <a class="btn btn-primary" href="https://forms.gle/RcxRqdWCXkfQTqYTA" target="_blank" rel="noopener">참가신청</a>
+      </div>
+      <button class="burger" id="gnBurger" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span></button>
+    </div>
+    <div class="mobile-menu" id="gnMobileMenu">
+              <a href="https://contest.gnict.org/about.php">대회소개</a>
+              <a href="https://contest.gnict.org/rule.php">운영규정</a>
+              <a href="https://contest.gnict.org/apply.php">주제 및 신청방법</a>
+              <a href="https://contest.gnict.org/bbs/board.php?bo_table=notice">공지사항</a>
+                    <a href="https://contest.gnict.org/bbs/login.php">로그인 / 회원가입</a>
+            <a class="btn btn-primary" href="https://forms.gle/RcxRqdWCXkfQTqYTA" target="_blank" rel="noopener">참가신청 바로가기</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span>2026 · 제4회 · 경남 AI·SW 경진대회</span>
+        <h1 class="title"><b>8일</b> 만에,<br>우리 팀의 첫<br>AI Agent를 완성하라</h1>
+        <p class="lede">경남의 미래를 바꿀 혁신적인 AI 아이디어와 실행력 있는 여러분의 도전을 기다립니다.</p>
+        <div class="stats">
+          <div class="stat"><div class="num">총상금 <i>3,050</i>만원</div><div class="lab">대상 2팀 · 최우수 5팀 등 총 29팀 시상</div></div>
+          <div class="stat"><div class="num">5개 분야</div><div class="lab">고등부 · 대학부 · 일반부</div></div>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://forms.gle/RcxRqdWCXkfQTqYTA" target="_blank" rel="noopener">참가신청 바로가기</a>
+          <a class="btn btn-lite" href="https://contest.gnict.org/apply.php">대회 요강 보기</a>
+        </div>
+      </div>
+
+      <aside class="console" aria-label="접수 마감 카운트다운">
+        <div class="console-top">
+          <span class="k">참가자(팀) 접수</span>
+          <span class="live"><i></i>LIVE</span>
+        </div>
+        <div class="cd-title">접수 마감까지 <span id="gnDday">D-</span></div>
+        <div class="cd-grid">
+          <div class="cd-cell"><div class="v mono" id="cdD">--</div><div class="u">일</div></div>
+          <div class="cd-cell"><div class="v mono" id="cdH">--</div><div class="u">시</div></div>
+          <div class="cd-cell"><div class="v mono" id="cdM">--</div><div class="u">분</div></div>
+          <div class="cd-cell"><div class="v mono" id="cdS">--</div><div class="u">초</div></div>
+        </div>
+        <div class="console-foot">
+          <span>마감 <b>2026.09.29(화) 12:00</b></span>
+          <span>온라인 접수 · 팀 3인 이하</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== THEME BAND ===== -->
+  <section class="theme-band">
+    <div class="wrap theme-inner">
+      <span class="theme-tag">2026 경진대회 주제</span>
+      <span class="theme-text">AI를 활용한 <em>업무혁신</em> 및 <em>사회문제 해결형</em> AI 에이전트 개발</span>
+    </div>
+  </section>
+
+  <!-- ===== FIELDS ===== -->
+  <section id="about">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker">공모 분야</div>
+        <h2>5가지 주제로 만나는 무한한 가능성</h2>
+        <p class="sub">각 분야에서 실제로 작동하는 AI Agent를 만들어 지역과 산업의 문제를 해결합니다.</p>
+      </div>
+      <div class="fields">
+        <article class="field"><div class="no">01</div><div class="ico" aria-hidden="true">👥</div><h3>사회문제 해결형<br>AI Agent</h3><p>일상과 지역의 문제를 풀어내는 에이전트</p></article>
+        <article class="field"><div class="no">02</div><div class="ico" aria-hidden="true">📈</div><h3>업무혁신·생산성<br>향상 AI Agent</h3><p>반복 업무를 자동화하고 생산성을 높이는 에이전트</p></article>
+        <article class="field"><div class="no">03</div><div class="ico" aria-hidden="true">🦾</div><h3>제조 피지컬<br>AI Agent</h3><p>제조 현장·VR 기반 피지컬 AI (대학별 지정과제)</p></article>
+        <article class="field"><div class="no">04</div><div class="ico" aria-hidden="true">🎓</div><h3>교육·인재육성<br>AI Agent</h3><p>배움과 성장을 돕는 교육형 에이전트</p></article>
+        <article class="field"><div class="no">05</div><div class="ico" aria-hidden="true">🏛️</div><h3>지역혁신·공공<br>서비스 AI Agent</h3><p>공공서비스와 지역 혁신을 이끄는 에이전트</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIVISIONS ===== -->
+  <section class="timeline-sec">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker">참가 부문</div>
+        <h2>누구나 도전할 수 있습니다</h2>
+        <p class="sub">AI·SW에 관심 있는 경남 거주자, 학생, 재직자, 일반인(기업 포함) 모두 참여 가능합니다.</p>
+      </div>
+      <div class="divs">
+        <div class="div-card div-hi">
+          <div class="div-top"><div class="role">고등부</div><div class="name">HIGH SCHOOL</div><span class="qual">고등학교 재학생</span></div>
+          <div class="div-body"><p class="quote">"AI를 배우는 학생에서, AI Agent를 만드는 개발자로"</p><p>AI에 관심 있는 경남의 고등학생이 만드는 더 나은 미래.</p></div>
+        </div>
+        <div class="div-card div-uni">
+          <div class="div-top"><div class="role">대학부</div><div class="name">UNIVERSITY</div><span class="qual">학사 · 석사과정</span></div>
+          <div class="div-body"><p class="quote">"포트폴리오를 넘어, 실제로 작동하는 AI Agent를 만들자"</p><p>이론을 넘어 현장에서 통하는 에이전트에 도전하는 대학생을 응원합니다.</p></div>
+        </div>
+        <div class="div-card div-open">
+          <div class="div-top"><div class="role">일반부</div><div class="name">GENERAL</div><span class="qual">박사과정 포함</span></div>
+          <div class="div-body"><p class="quote">"우리 회사와 지역의 문제를 AI Agent로 해결하라"</p><p>기업·재직자·일반인 누구나 경남의 현안을 해결하는 에이전트에 도전하세요.</p></div>
+        </div>
+      </div>
+      <p class="divs-note">※ 대학원 박사과정은 <b>일반부</b>로 신청합니다. (학사·석사과정은 대학부)</p>
+    </div>
+  </section>
+
+  <!-- ===== SCHEDULE ===== -->
+  <section id="schedule">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker">추진 일정</div>
+        <h2>8일간의 도전, AI Agent로 세상을 바꾸다</h2>
+      </div>
+      <div class="rail">
+        <div class="step hot"><div class="bead">1</div><div><h4>참가자(팀) 접수</h4><div class="d">09.07(월) ~ 09.29(화) 12:00</div><span class="tag">접수 진행 중</span></div></div>
+        <div class="step"><div class="bead">2</div><div><h4>설명회 및 교육</h4><div class="d">09.29(화) 15:00</div><span class="tag blue">경진대회 시작</span></div></div>
+        <div class="step"><div class="bead">3</div><div><h4>경진대회 (8일)</h4><div class="d">제출마감 10.06(화)<br>서류평가 10.07~10.08</div></div></div>
+        <div class="step"><div class="bead">4</div><div><h4>본선 발표평가</h4><div class="d">10.12(월) 10:00~15:00</div><div class="d">전문위원 대면평가</div></div></div>
+        <div class="step"><div class="bead">5</div><div><h4>수상 및 시상식</h4><div class="d">10.14(수) 14:00~15:00</div><div class="d">제2회 The NextAI 박람회</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AWARDS ===== -->
+  <section id="award">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker">시상 내역</div>
+        <h2>총 29팀, 총상금 3,050만원</h2>
+        <p class="sub">순위별 차등 시상. 장학금 또는 개발장려금으로 지급됩니다.</p>
+      </div>
+      <div class="awards">
+        <div class="award a1"><div class="rank">대상</div><div class="teams">2팀 · 도지사상</div><div class="prize">350<small>만원</small></div><div class="note">협회장 부상 및 트로피</div></div>
+        <div class="award a2"><div class="rank">최우수상</div><div class="teams">5팀 · 총장·협회장상</div><div class="prize">150<small>만원</small></div><div class="note">고등부 1 · 대학부 3 · 일반부 1</div></div>
+        <div class="award a3"><div class="rank">우수상</div><div class="teams">10팀 · 각 분야별</div><div class="prize">100<small>만원</small></div><div class="note">상장·부상 및 트로피</div></div>
+        <div class="award a4"><div class="rank">장려상</div><div class="teams">12팀 · 각 분야별</div><div class="prize">50<small>만원</small></div><div class="note">상장·부상 및 트로피</div></div>
+      </div>
+      <p class="award-foot">※ 수상자 및 특별상이 추가될 수 있으며, 성능 미달 시 수상작이 없거나 줄어들 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- ===== BENEFITS ===== -->
+  <section class="timeline-sec" id="benefit">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker">참가·수상 혜택</div>
+        <h2>수상으로 끝나지 않는 기회</h2>
+      </div>
+      <div class="benefits">
+        <div class="benefit"><span class="bi" aria-hidden="true">💼</span><div><b>취업 연계 지원</b><span>경남 지역 IT기업 우선 면접·취업 지원</span></div></div>
+        <div class="benefit"><span class="bi" aria-hidden="true">📚</span><div><b>실무 교육·인턴십</b><span>현장 실무형 교육 및 인턴십 기회 제공</span></div></div>
+        <div class="benefit"><span class="bi" aria-hidden="true">📣</span><div><b>언론·미디어 홍보</b><span>경남신문·전자신문 등 홍보 지원</span></div></div>
+        <div class="benefit"><span class="bi" aria-hidden="true">🚀</span><div><b>창업 지원 연계</b><span>우수팀 지역 창업 지원 연계</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOTICE (실제 게시판 연동) ===== -->
+  <section id="notice">
+    <div class="wrap">
+      <div class="notice-head">
+        <div class="head" style="margin-bottom:0">
+          <div class="kicker">공지사항</div>
+          <h2>대회 소식</h2>
+        </div>
+        <a class="btn btn-ghost" href="https://contest.gnict.org/bbs/board.php?bo_table=notice">전체보기</a>
+      </div>
+      <div class="board">
+    <a class="row" href="https://contest.gnict.org/bbs/board.php?bo_table=notice&amp;wr_id=1">
+        <span class="cat">공지</span>
+                <span class="t">제4회 경남AI·SW 경진대회 참가자(팀) 모집 공고</span>
+        <span class="date">09.16</span>
+    </a>
+</div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band" id="apply">
+    <div class="wrap cta-inner">
+      <div>
+        <h2>지금, 당신의 AI Agent에 도전하세요</h2>
+        <p>홈페이지에서 신청양식을 내려받고 구글폼으로 접수하면 참가 완료.</p>
+        <div class="cta-contact">
+          <span>📞 <b>055-715-1050</b></span>
+          <span>✉️ <b>gnict@gnict.org</b></span>
+          <span>🌐 <b>www.gnict.org</b></span>
+        </div>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="https://forms.gle/RcxRqdWCXkfQTqYTA" target="_blank" rel="noopener">참가신청 바로가기</a>
+        <a class="btn btn-lite" href="https://contest.gnict.org/apply.php">주제 및 신청방법 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER (공통) ===== -->
+  <footer class="gn-footer">
+    <div class="wrap">
+      <div class="foot-orgs">
+        <div class="org-row"><span class="lbl">주최</span><span class="chip">경상남도</span><span class="chip">창원특례시</span><span class="chip">진주시</span></div>
+        <div class="org-row"><span class="lbl">주관</span><span class="chip">(사)경남인공지능ICT협회</span><span class="chip">(재)경남테크노파크</span><span class="chip">경상국립대학교</span><span class="chip">국립창원대학교</span><span class="chip">경남대학교</span><span class="chip">창신대학교</span></div>
+        <div class="org-row"><span class="lbl">후원기관</span><span class="chip">경남신문</span><span class="chip">경남도민일보</span><span class="chip">경남매일</span><span class="chip">전자신문</span><span class="chip">인제대학교</span><span class="chip">(사)한국제조데이터인공지능학회</span><span class="chip">NH농협은행</span></div>
+        <div class="org-row"><span class="lbl">후원기업</span><span class="chip">아라소프트</span><span class="chip">아이웍스</span><span class="chip">Argos AI</span><span class="chip">동서정보기술</span><span class="chip">이레산업</span><span class="chip">대형네트웍스</span><span class="chip">태진시스템</span><span class="chip">외 다수</span></div>
+      </div>
+      <div class="foot-div"></div>
+      <div class="foot-bottom">
+        <div class="office">
+          <b>(사)경남인공지능ICT협회 사무국</b><br>
+          경남 창원시 의창구 창원대로18번길 46 경남창원과학기술진흥원 1312호<br>
+          Tel. 055-715-1050 · <a href="mailto:gnict@gnict.org">gnict@gnict.org</a>
+        </div>
+        <div>© 2026 Gyeongnam Artificial Intelligence ICT Association.<br>제4회 경남 AI·SW 경진대회</div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /#gnict-main -->
+<script>
+(function(){
+  // 모바일 메뉴 토글
+  var burger=document.getElementById('gnBurger'),mm=document.getElementById('gnMobileMenu');
+  if(burger&&mm){
+    burger.addEventListener('click',function(){
+      var open=mm.style.display==='block';
+      mm.style.display=open?'none':'block';
+      burger.setAttribute('aria-expanded',String(!open));
+    });
+    mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.style.display='none';burger.setAttribute('aria-expanded','false');});});
+  }
+  // 접수 마감 카운트다운 (메인에만 요소 존재 · 없으면 자동 무시)
+  var eD=document.getElementById('cdD');
+  if(eD){
+    var target=new Date('2026-09-29T12:00:00+09:00').getTime();
+    var pad=function(n){return (n<10?'0':'')+n;};
+    var tick=function(){
+      var diff=target-Date.now();if(diff<0)diff=0;
+      var d=Math.floor(diff/86400000),h=Math.floor(diff%86400000/3600000),m=Math.floor(diff%3600000/60000),s=Math.floor(diff%60000/1000);
+      eD.textContent=pad(d);
+      document.getElementById('cdH').textContent=pad(h);
+      document.getElementById('cdM').textContent=pad(m);
+      document.getElementById('cdS').textContent=pad(s);
+      document.getElementById('gnDday').textContent=diff<=0?'접수 마감':'D-'+d;
+    };
+    tick();setInterval(tick,1000);
+  }
+  // 서브페이지 좌측 내비 : 현재 섹션 활성화(스크롤스파이)
+  var links=[].slice.call(document.querySelectorAll('.subnav a[href^="#"]'));
+  if(links.length){
+    var secs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));}).filter(Boolean);
+    var spy=function(){
+      var y=window.scrollY+120,cur=secs[0];
+      secs.forEach(function(s){ if(s.offsetTop<=y) cur=s; });
+      links.forEach(function(a){ a.classList.toggle('active', cur && a.getAttribute('href')==='#'+cur.id); });
+    };
+    window.addEventListener('scroll',spy,{passive:true});spy();
+  }
+})();
+</script>
+
+
+
+</body>
+</html>

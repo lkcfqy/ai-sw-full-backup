@@ -1,0 +1,20 @@
+[
+  {
+    "file": "apply.html",
+    "url": "https://contest.gnict.org/apply.php",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "file": "form.html",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLScbcpt-d4yt2bZhS9FnZJyfow8yU-_hfkflhJCqjN6CYCGt8A/viewform",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "file": "official_r1.hwp",
+    "url": "https://www.gnict.org/media/uploads/2026/09/17/%EC%A0%9C4%ED%9A%8C_AI.SW_%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C_%EC%B0%B8%EA%B0%80_%EC%8B%A0%EC%B2%AD%EC%84%9C_%EC%88%98%EC%A0%95r1%EC%B5%9C%EC%A2%85.hwp",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "local_template_sha256": "95e71c76c4bcd2d6dd3f544f6c2c04ab50a5e9655a591ab6b8c1e554bcdcb4c3"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "schema": "kitguard.v08.manta-classifier.freeze.v1",
+  "created_at_utc": "2026-10-02T03:16:26.640258+00:00",
+  "protocol_sha256": "1173ef3b587ce7048b35e958c61ca27f5bf2882d52f8d020eeeb62adbcdda654",
+  "source_snapshot": {
+    "scripts/v08/prepare_manta_classifier.py": "6c7c0e3d870064c4af02546ced9df9dc97dfe7a98c867a8c4b94c5618cdc03f1",
+    "docs/v0.8/MANTA_CLASSIFIER_PROTOCOL_V1.md": "cbb3ca611bd4ba3be4c4a082f7d2b4d7b8319713bc3f04a2a62724acfa9a0959",
+    "tests/test_manta_classifier_preparation_v08.py": "b8f9bcff0c0582d119aef83a1cc5b4e89f58f735c53756326e6667779d400ae5"
+  },
+  "selection_count": 1024,
+  "model_called": false,
+  "training_authorized_by_this_artifact": false
+}

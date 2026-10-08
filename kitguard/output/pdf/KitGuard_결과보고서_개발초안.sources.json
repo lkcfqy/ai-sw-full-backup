@@ -1,0 +1,214 @@
+{
+  "artifact": "/Users/lkc/Downloads/AI·SW/kitguard/output/pdf/KitGuard_결과보고서_개발초안.pdf",
+  "pages": 5,
+  "candidate_status": "파일 다운로드·검증 중, 실측 대기",
+  "loco_status": "전체 원본 압축본 SHA 검증 대기",
+  "report_sha256": "bb5251db1e6f5cd4d856fa87caeefa4c7de67563d19b7d5e08e5f6e92f0fc976",
+  "runs": [
+    {
+      "path": "evaluation-runs/screws_development_baseline_v1",
+      "label": "Screws 8B v1",
+      "summary": {
+        "images": 16,
+        "unique_image_hashes": 16,
+        "unique_source_images": 16,
+        "splits": {
+          "development": 16
+        },
+        "order_eligible_images": 0,
+        "order_out_of_scope_images": 16,
+        "count_exact": {
+          "numerator": 1,
+          "denominator": 16,
+          "rate": 0.0625,
+          "wilson_95": null,
+          "interval_note": "Descriptive benchmark only; independent holdout sampling is not established."
+        },
+        "actionable_coverage": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0.0
+        },
+        "wrong_actionable_count": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "errors": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0.0
+        },
+        "matched_order_ready": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "mismatched_order_false_ready": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "mismatched_order_correct_adjustment": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "latency_ms": {
+          "median": 5455.5,
+          "maximum": 8199
+        },
+        "limitations": [
+          "Public photographs, broad category mapping; no SKU/size or physical action verification.",
+          "Order tasks from the same photograph are correlated, not additional image samples.",
+          "Refusals and errors remain in the image denominator; no exclusion after model output.",
+          "Intervals require an explicit independent holdout sampling assumption and unique sources.",
+          "Development and first-N benchmark results are descriptive, not population performance estimates.",
+          "Mismatched-order rates cover one fixed perturbation per eligible image, not every possible mismatch.",
+          "Unknown overlap with the pretrained model's training data limits generalization claims."
+        ]
+      },
+      "run_sha256": "318e0c4f8ce61e3b6518bb0c8a64692de3509ece811ac608165db37431a886d9",
+      "predictions_sha256": "3af5484c853a859e4796c81decd1a16469afffcd2811d547696e94c0b8c6d7ae",
+      "manifest_sha256": "e20544689e2281c4bc3886c4cca75335ad9f4822fcd0f826c24c040df2cd2604",
+      "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local"
+    },
+    {
+      "path": "evaluation-runs/screws_development_v2",
+      "label": "Screws 8B v2",
+      "summary": {
+        "images": 16,
+        "unique_image_hashes": 16,
+        "unique_source_images": 16,
+        "splits": {
+          "development": 16
+        },
+        "order_eligible_images": 0,
+        "order_out_of_scope_images": 16,
+        "count_exact": {
+          "numerator": 3,
+          "denominator": 16,
+          "rate": 0.1875,
+          "wilson_95": null,
+          "interval_note": "Descriptive benchmark only; independent holdout sampling is not established."
+        },
+        "actionable_coverage": {
+          "numerator": 16,
+          "denominator": 16,
+          "rate": 1.0
+        },
+        "wrong_actionable_count": {
+          "numerator": 13,
+          "denominator": 16,
+          "rate": 0.8125
+        },
+        "errors": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0.0
+        },
+        "matched_order_ready": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "mismatched_order_false_ready": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "mismatched_order_correct_adjustment": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "latency_ms": {
+          "median": 3123.5,
+          "maximum": 5797
+        },
+        "limitations": [
+          "Public photographs, broad category mapping; no SKU/size or physical action verification.",
+          "Order tasks from the same photograph are correlated, not additional image samples.",
+          "Refusals and errors remain in the image denominator; no exclusion after model output.",
+          "Intervals require an explicit independent holdout sampling assumption and unique sources.",
+          "Development and first-N benchmark results are descriptive, not population performance estimates.",
+          "Mismatched-order rates cover one fixed perturbation per eligible image, not every possible mismatch.",
+          "Unknown overlap with the pretrained model's training data limits generalization claims."
+        ]
+      },
+      "run_sha256": "b2265b84dd20a6bacd132438e5361b3faf30ba9e26f04a41768a979c0d0fd23d",
+      "predictions_sha256": "73e6dc4a28a3f8e0aeb3cd905d5bf81dbef6b2386e75b79e61f75d39248db874",
+      "manifest_sha256": "e20544689e2281c4bc3886c4cca75335ad9f4822fcd0f826c24c040df2cd2604",
+      "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local"
+    },
+    {
+      "path": "evaluation-runs/loco_development_8b_v1",
+      "label": "LOCO 8B v1",
+      "summary": {
+        "images": 16,
+        "unique_image_hashes": 16,
+        "unique_source_images": 16,
+        "splits": {
+          "development": 16
+        },
+        "order_eligible_images": 16,
+        "order_out_of_scope_images": 0,
+        "count_exact": {
+          "numerator": 9,
+          "denominator": 16,
+          "rate": 0.5625,
+          "wilson_95": null,
+          "interval_note": "Descriptive benchmark only; independent holdout sampling is not established."
+        },
+        "actionable_coverage": {
+          "numerator": 16,
+          "denominator": 16,
+          "rate": 1.0
+        },
+        "wrong_actionable_count": {
+          "numerator": 7,
+          "denominator": 16,
+          "rate": 0.4375
+        },
+        "errors": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0.0
+        },
+        "matched_order_ready": {
+          "numerator": 9,
+          "denominator": 16,
+          "rate": 0.5625
+        },
+        "mismatched_order_false_ready": {
+          "numerator": 1,
+          "denominator": 16,
+          "rate": 0.0625
+        },
+        "mismatched_order_correct_adjustment": {
+          "numerator": 9,
+          "denominator": 16,
+          "rate": 0.5625
+        },
+        "latency_ms": {
+          "median": 3028.0,
+          "maximum": 5597
+        },
+        "limitations": [
+          "Public photographs, broad category mapping; no SKU/size or physical action verification.",
+          "Order tasks from the same photograph are correlated, not additional image samples.",
+          "Refusals and errors remain in the image denominator; no exclusion after model output.",
+          "Intervals require an explicit independent holdout sampling assumption and unique sources.",
+          "Development and first-N benchmark results are descriptive, not population performance estimates.",
+          "Mismatched-order rates cover one fixed perturbation per eligible image, not every possible mismatch.",
+          "Unknown overlap with the pretrained model's training data limits generalization claims."
+        ]
+      },
+      "run_sha256": "485517b67ee9da81c8dd374fa9dba3c5bec262d4db15afc35e9cce0492de2793",
+      "predictions_sha256": "0ca3bd2e7b5c9350a7da85d50e0d9f09ef14133b84ebf192f9b2424f1bca44c3",
+      "manifest_sha256": "fb17e1a2e4fb516ba1ca5efd5e29ed6e89216342b7d2375f9789939fd65d5bf5",
+      "model": "Qwen3-VL-8B-Instruct · MLX 8-bit · local"
+    }
+  ],
+  "note": "Historic development results, not frozen final product performance. Rendering and visual QA are required after each content update."
+}

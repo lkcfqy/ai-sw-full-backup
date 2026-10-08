@@ -1,0 +1,42 @@
+{
+  "version": "0.9.0.dev3",
+  "mission_id": "mission_996c0910dc114a1797a5",
+  "files": [
+    {
+      "path": "kitguard/autonomy.py",
+      "sha256": "00c6f0cec5120f0f4e6202f4673d879b61719b8c73ca2704159fed96e9ae43ca"
+    },
+    {
+      "path": "kitguard/app.py",
+      "sha256": "c5f38ac0159da3fdc86a94f9171277370e655300f9376e01e5e2ce054688fbf1"
+    },
+    {
+      "path": "kitguard/inspection_jobs.py",
+      "sha256": "9dd9befd9aa13b28fe4f75609234173c72e6d824b4892b950a89b3606b4f72ca"
+    },
+    {
+      "path": "kitguard/public_review.py",
+      "sha256": "789d38885145e5c6c1e5f26b82f204a78d21445bb57ac2a2c5d1e18fa78741ea"
+    },
+    {
+      "path": "kitguard/digital_review_state.py",
+      "sha256": "28591af6a2831df351f15c0701d5615ea59782bef472786e4f7a1a0dc020fdd7"
+    },
+    {
+      "path": "kitguard/vision.py",
+      "sha256": "e0c30d23c2620bfdc4bdf453f828c0a353da957eab89ab3c2ec92b7840f79b08"
+    },
+    {
+      "path": "kitguard/spatial.py",
+      "sha256": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278"
+    },
+    {
+      "path": "kitguard/consensus.py",
+      "sha256": "e02a8f0340141c683b2ff40db4a49f1ba6b8f1c9896e92cab65e5ce5374838e8"
+    },
+    {
+      "path": "kitguard/identity.py",
+      "sha256": "f6d6d28d3129803de8942b08cf1fadf784183814d2cbdecc6d03427810532696"
+    }
+  ]
+}

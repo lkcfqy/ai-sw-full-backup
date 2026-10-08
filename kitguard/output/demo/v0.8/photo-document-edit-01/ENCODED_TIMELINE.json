@@ -1,0 +1,50 @@
+{
+  "video_sha256": "faeb3b16fee34370a2b04e2beacc726b8c7a419d90d18180bceb7f9dc9320857",
+  "method": "AI visual comparison of exact select(n) frames immediately before and after each hard cut",
+  "nominal_timeline": "TIMELINE.json",
+  "cut_quantization": "Each cut begins one 24fps frame before the integer nominal cut due image-concat frame-rate quantization; subtitles and screenshot are one composition and cut together. Does not alter displayed actual API inference timings.",
+  "scenes": [
+    {
+      "scene": 1,
+      "first_decoded_frame": 0,
+      "end_frame_exclusive": 479,
+      "start_seconds": 0.0,
+      "end_seconds": 19.958333333333332
+    },
+    {
+      "scene": 2,
+      "first_decoded_frame": 479,
+      "end_frame_exclusive": 1079,
+      "start_seconds": 19.958333333333332,
+      "end_seconds": 44.958333333333336
+    },
+    {
+      "scene": 3,
+      "first_decoded_frame": 1079,
+      "end_frame_exclusive": 1679,
+      "start_seconds": 44.958333333333336,
+      "end_seconds": 69.95833333333333
+    },
+    {
+      "scene": 4,
+      "first_decoded_frame": 1679,
+      "end_frame_exclusive": 2279,
+      "start_seconds": 69.95833333333333,
+      "end_seconds": 94.95833333333333
+    },
+    {
+      "scene": 5,
+      "first_decoded_frame": 2279,
+      "end_frame_exclusive": 2759,
+      "start_seconds": 94.95833333333333,
+      "end_seconds": 114.95833333333333
+    },
+    {
+      "scene": 6,
+      "first_decoded_frame": 2759,
+      "end_frame_exclusive": 3240,
+      "start_seconds": 114.95833333333333,
+      "end_seconds": 135.0
+    }
+  ]
+}

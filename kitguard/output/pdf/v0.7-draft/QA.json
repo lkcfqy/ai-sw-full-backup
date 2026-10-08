@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-01T21:24:47.828013+00:00",
+  "status": "passed",
+  "scope": "PDF draft layout, extraction and evidence-link validation; no new MLX or score claims",
+  "operation_marker_calls_this_authoring_operation": 1,
+  "generator_sha256": "e268f590efae5226d49abc47acf040ccfd8b2a8502decc1d739a47e094ff222d",
+  "documents": [
+    {
+      "pdf": "/Users/lkc/Downloads/AI·SW/kitguard/output/pdf/v0.7-draft/KitGuard_결과보고서_v0.7_draft.pdf",
+      "sha256": "67a5d6394f1dbbf4ca1965b3d841325861c60e05ed3576cff898174b5bad0ce6",
+      "pages": [
+        {
+          "page": 1,
+          "a4": true,
+          "extractable_characters": 1101,
+          "out_of_page_margin_characters": 0,
+          "source_body_text_contiguously_preserved": true,
+          "draft_visible": true,
+          "link_annotations": 0,
+          "visual_inspection": "passed: Korean legible, no missing glyphs, no clipping/overlap, table boundaries and footer clear"
+        },
+        {
+          "page": 2,
+          "a4": true,
+          "extractable_characters": 1364,
+          "out_of_page_margin_characters": 0,
+          "source_body_text_contiguously_preserved": true,
+          "draft_visible": true,
+          "link_annotations": 3,
+          "visual_inspection": "passed: Korean legible, no missing glyphs, no clipping/overlap, table boundaries and footer clear"
+        },
+        {
+          "page": 3,
+          "a4": true,
+          "extractable_characters": 1410,
+          "out_of_page_margin_characters": 0,
+          "source_body_text_contiguously_preserved": true,
+          "draft_visible": true,
+          "link_annotations": 6,
+          "visual_inspection": "passed: Korean legible, no missing glyphs, no clipping/overlap, table boundaries and footer clear"
+        },
+        {
+          "page": 4,
+          "a4": true,
+          "extractable_characters": 1318,
+          "out_of_page_margin_characters": 0,
+          "source_body_text_contiguously_preserved": true,
+          "draft_visible": true,
+          "link_annotations": 4,
+          "visual_inspection": "passed: Korean legible, no missing glyphs, no clipping/overlap, table boundaries and footer clear"
+        },
+        {
+          "page": 5,
+          "a4": true,
+          "extractable_characters": 1600,
+          "out_of_page_margin_characters": 0,
+          "source_body_text_contiguously_preserved": true,
+          "draft_visible": true,
+          "link_annotations": 5,
+          "visual_inspection": "passed: Korean legible, no missing glyphs, no clipping/overlap, table boundaries and footer clear"
+        }
+      ],
+      "embedded_fonts": [
+        {
+          "name": "/AAAAAA+ArialUnicodeMS",
+          "embedded": true
+        },
+        {
+          "name": "/AAAAAB+ArialUnicodeMS",
+          "embedded": true
+        }
+      ],
+      "body_font_size": 10.6,
+      "cell_font_size": 10.1
+    },
+    {
+      "pdf": "/Users/lkc/Downloads/AI·SW/kitguard/output/pdf/v0.7-draft/KitGuard_Agent_기술설명_v0.7_draft.pdf",
+      "sha256": "93327805444eb5734ae8a2132713d531036715b534fa1d8b524039d6594a1ee2",
+      "pages": [
+        {
+          "page": 1,
+          "a4": true,
+          "extractable_characters": 1855,
+          "out_of_page_margin_characters": 0,
+          "source_body_text_contiguously_preserved": true,
+          "draft_visible": true,
+          "link_annotations": 8,
+          "visual_inspection": "passed: Korean legible, no missing glyphs, no clipping/overlap, table boundaries and footer clear"
+        }
+      ],
+      "embedded_fonts": [
+        {
+          "name": "/AAAAAA+ArialUnicodeMS",
+          "embedded": true
+        },
+        {
+          "name": "/AAAAAB+ArialUnicodeMS",
+          "embedded": true
+        }
+      ],
+      "body_font_size": 10.3,
+      "cell_font_size": 9.8
+    }
+  ],
+  "rendered_pages": [
+    {
+      "path": "output/pdf/v0.7-draft/qa/agent-1.png",
+      "sha256": "42c625c8f1ac9cf3b03194c0c5d9e42dab6aa5fdc53c6201e0608096c6f478fb"
+    },
+    {
+      "path": "output/pdf/v0.7-draft/qa/report-1.png",
+      "sha256": "0f7731cacb75dbacc5409629250b461fbfc8b8cd4982103b1a59a6e746df9740"
+    },
+    {
+      "path": "output/pdf/v0.7-draft/qa/report-2.png",
+      "sha256": "d9f1b4118e2e352e131336e9732de6b94893005a170fdf29fedafe708a684f58"
+    },
+    {
+      "path": "output/pdf/v0.7-draft/qa/report-3.png",
+      "sha256": "99c0a5b8cb4e4fd29655c2ab9053b3b8bc9f4acd3357facb267e34b6b5f14e2e"
+    },
+    {
+      "path": "output/pdf/v0.7-draft/qa/report-4.png",
+      "sha256": "ee3397d27cdf5470f887d1794e268302f993f17bf18e72cdec1b36f129dc6ee2"
+    },
+    {
+      "path": "output/pdf/v0.7-draft/qa/report-5.png",
+      "sha256": "4b5ddd54c653ee744b88e569cf2e46b899186bf34048dde6783692115c6104f4"
+    }
+  ]
+}

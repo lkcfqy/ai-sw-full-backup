@@ -1,0 +1,49 @@
+[
+  {
+    "url": "http://www.gnict.org/게시판/sw경진대회/제4회-경남aisw경진대회-공고/",
+    "source_images": [
+      "01_昌原大学公告/附件/正文海报_1.png",
+      "01_昌原大学公告/附件/正文海报_2.png",
+      "01_昌原大学公告/附件/최종_경진대회_프로그램포스터.png",
+      "02_主办方公告/附件/제4회 경남AI·SW경진대회 포스터@2x_4c6G85N.png",
+      "05_补充官方资料/附件/仁济大学_正文海报_1.png",
+      "08_媒体及公开转载/配图/CODE_C_1.png",
+      "08_媒体及公开转载/配图/Campung_1.webp"
+    ],
+    "final_url": "http://www.gnict.org/%EA%B2%8C%EC%8B%9C%ED%8C%90/sw%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/%EC%A0%9C4%ED%9A%8C-%EA%B2%BD%EB%82%A8aisw%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C-%EA%B3%B5%EA%B3%A0/",
+    "http_status": 0,
+    "error": "curl: (28) Operation timed out after 25005 milliseconds with 0 bytes received"
+  },
+  {
+    "url": "https://m.site.naver.com/2fIQM",
+    "source_images": [
+      "05_补充官方资料/附件/庆南科技园海报_1.jpg"
+    ],
+    "final_url": "https://www.gnict.org/",
+    "http_status": 200,
+    "error": null
+  },
+  {
+    "url": "https://m.site.naver.com/2gmJs",
+    "source_images": [
+      "05_补充官方资料/附件/庆尚国立大学VR培训海报.png",
+      "05_补充官方资料/附件/庆尚国立大学_KakaoTalk_20260915_170128054_03.png",
+      "05_补充官方资料/附件/VR培训表单_1.png"
+    ],
+    "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScuKMLVV5AGA-envX5QLrjtlCwiKFiXJGRwtT-FfBE6F5hyOg/viewform?usp=header",
+    "http_status": 200,
+    "error": null
+  },
+  {
+    "url": "https://m.site.naver.com/2gdT2",
+    "source_images": [
+      "05_补充官方资料/附件/庆尚国立大学VR培训海报.png",
+      "05_补充官方资料/附件/庆尚国立大学_KakaoTalk_20260915_170128054_01.png",
+      "05_补充官方资料/附件/庆尚国立大学_KakaoTalk_20260915_170128054_06.png",
+      "05_补充官方资料/附件/VR培训表单_1.png"
+    ],
+    "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https://docs.google.com/forms/d/e/1FAIpQLScbcpt-d4yt2bZhS9FnZJyfow8yU-_hfkflhJCqjN6CYCGt8A/viewform?usp%3Dsend_form&followup=https://docs.google.com/forms/d/e/1FAIpQLScbcpt-d4yt2bZhS9FnZJyfow8yU-_hfkflhJCqjN6CYCGt8A/viewform?usp%3Dsend_form&ltmpl=forms&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-1174385633:1790235559643882",
+    "http_status": 200,
+    "error": null
+  }
+]

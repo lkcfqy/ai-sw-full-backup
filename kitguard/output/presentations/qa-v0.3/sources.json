@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-09-26T13:30:08.169Z",
+  "builder": {
+    "path": "scripts/build_v03_slides.mjs",
+    "sha256": "c8384fad7f539c5c286ac9e68b8f799fdcc3efe78df8258ee439cc4c1f3fc771"
+  },
+  "shared_validator": {
+    "path": "scripts/build_v03_korean_addendum.py",
+    "sha256": "e9e02b07532521ed8a075e0021cc7ac038483568e576c96bf47838d27ac0e7b4"
+  },
+  "sources": {
+    "holdout_gate": {
+      "path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json",
+      "sha256": "8f8fa784b9abca802ffab08e1fc8b23efd75407a2ede9cc235c3496b442f599f"
+    },
+    "development_gate": {
+      "path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/v03_guarded_integrated_development_v1/gate_report_v1.json",
+      "sha256": "fc54ee5cbac231a3aa214235de1d8ae494055ef744d94b0e5fca28ab8a95d4e8"
+    },
+    "independent_audit": {
+      "path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/audit/v03-guarded-holdout-analysis.json",
+      "sha256": "76a878c1b75fc09dcbaf4ae5d3139c97f46cfdc859c8c0200f0014215c5b3408"
+    },
+    "engineering_junit": {
+      "path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/engineering-v03-final.xml",
+      "sha256": "5842e15b5d851940dd2b13168064dbae277f483a062de8038710f7a2dbfede92"
+    },
+    "real_api_demo": {
+      "path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/result.json",
+      "sha256": "cab064f757d7c4e984b76a64c31ab5f47a2ed7040226fa128838881dbe8d01f7"
+    },
+    "protocol": {
+      "path": "/Users/lkc/Downloads/AI·SW/kitguard/docs/v0.3/HOLDOUT_GATES_V1.json",
+      "sha256": "563bf149286d6cacb7e14992b5ee9d1b1895752fae7f407a4da37ab11d65b8b6"
+    },
+    "v03_owl_development_v1": {
+      "path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/v03_owl_development_v1/run.json",
+      "sha256": "a33635eb96fa231c79745e7ba12851fcae5e12b275c6cff4759b58ad56cec383"
+    },
+    "v03_grounding_dino_development_v1": {
+      "path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/v03_grounding_dino_development_v1/run.json",
+      "sha256": "e174cdd952f82e9385ba34ceba35f7039e1f95e2bc982b381f7768e9c1df56bf"
+    }
+  },
+  "development_audit": {
+    "path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/audit/v03-guarded-integrated-development-analysis.json",
+    "sha256": "da054cdb515b11b4bec968944c0c5b0d51516897fad0cea991e14fc55eed2961"
+  },
+  "failed_identity": {
+    "path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/v03_screws_identity_probe_v1/run.json",
+    "sha256": "04e2708c6d66c4137014f690db24ce02a0fe1a078df0a010eac1b93c0352246a"
+  },
+  "screenshots": {
+    "workbench": {
+      "path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/screenshots/bag-revision-r1-workspace.png",
+      "sha256": "1621ebbb0442308d31a663b1086432ae93941aebce914861b00153467872dcca"
+    },
+    "audit": {
+      "path": "/Users/lkc/Downloads/AI·SW/kitguard/test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/screenshots/bag-revision-r2-audit.png",
+      "sha256": "e73edb273bd0da8c380d36d04b4f8f19db667dec978b1a0dfaaa936b6b00b00f"
+    }
+  },
+  "deployment_mode": "spatial_guarded",
+  "slides": 6,
+  "marker": "Successfully invoked once before authoring this artifact operation; not repeated by builder"
+}

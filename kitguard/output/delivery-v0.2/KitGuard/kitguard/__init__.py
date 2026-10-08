@@ -1,0 +1,2 @@
+"""KitGuard local application."""
+

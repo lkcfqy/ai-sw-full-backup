@@ -1,0 +1,20 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Text,Arial Unicode MS,32,&H00353D12,&H000000FF,&H00F2F8F8,&H00F2F8F8,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,20)\fs24\c&H353D12&\b0}API 실행 기록 + 브라우저 정지 화면 편집 · 연속 녹화 아님 · 실제 사용자 0명
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(1500,20)\fs24\c&H353D12&\b0}KitGuard · 0.8.0.dev1 preview
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,65)\fs44\c&H353D12&\b1}02  R1: 요구 3개, 관찰 2개
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,185)\fs30\c&H353D12&\b1}볼트 요구 3\NAI 관찰 2\N차이 −1
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,415)\fs30\c&H353D12&\b1}R1 검사\N50.909초
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,645)\fs30\c&H353D12&\b1}correct\N요구 수량과 차이
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(448,900)\fs22\c&H646B56&\b0}실제 R1 이력 화면 · R2 이후 열람 · 한국어 설명 자막
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,944)\fs29\c&H353D12&\b0}모델 관찰값과 R1 요구를 프로그램이 비교해 차이를 기록했습니다.\N중국어 화면은 R2 이후 열어 본 R1 이력입니다. 현재 증거로는 이미 무효입니다.
+Dialogue: 0,0:00:00.00,0:03:00.00,Text,,0,0,0,,{\pos(55,1038)\fs19\c&H646B56&\b0}사용한 MVTec LOCO AD 사진: CC BY-NC-SA 4.0 · mvtec.com/research-teaching/datasets/mvtec-loco-ad

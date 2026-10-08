@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "assertions": 14,
+  "checks": [
+    "ko actual manual decision says needs manual review",
+    "ko AI decision no longer mistaken for manual method header",
+    "ko actual manual method keeps its numbered header",
+    "ko read-existing-check resume branch also has correct decision wording",
+    "ko resume branch remains a bind-existing-check action",
+    "ko manual-review label fits 320px",
+    "zh actual manual decision says needs manual review",
+    "zh AI decision no longer mistaken for manual method header",
+    "zh actual manual method keeps its numbered header",
+    "zh read-existing-check resume branch also has correct decision wording",
+    "zh resume branch remains a bind-existing-check action",
+    "zh manual-review label fits 320px",
+    "regression verification issued only read-only requests",
+    "no JavaScript errors"
+  ],
+  "errors": [],
+  "mutations": [],
+  "before_source_sha256": "b5de490d761de3c7994bc3cc3d9a92adc96c232ab6676a115c9a560447d16239",
+  "after_source_sha256": "cdbbb333fb397cff15ccb0bd6e2798506bafbc0f73d38a9fa47c335278f420ff",
+  "scope": "Only decision labeling changed in study.js. Closed engineering trial read-only QA; resume branch is a DOM-only render with its actual saved check. No GPU, API mutation or new inference."
+}

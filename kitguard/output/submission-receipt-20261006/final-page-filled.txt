@@ -1,0 +1,57 @@
+- heading "『제4회 경남AI·SW경진대회』 최종산출물 제출" [level=1]
+- text: lkcfqy@gmail.com
+- link "Switch account":
+  - /url: https://accounts.google.com/AccountChooser?continue=https://docs.google.com/forms/d/e/1FAIpQLScICgtArF_gnn2kjDpCMu_4OmTZ05qIczgXqr0EJloSFTewtg/formResponse&service=wise
+- status:
+  - generic: Saving…
+- generic: The name, email, and photo associated with your Google account will be recorded when you upload files and submit this form
+- generic: "* Indicates required question"
+- list:
+  - heading "개인정보 수집 및 활용 동의" [level=2]:
+    - generic: 개인정보 수집 및 활용 동의
+  - text: 본 경진대회 운영 사무국에서는 개인정보 보호법 제15조, 17조, 18조 등 관계 법령에 따라 아래와 같이 개인정보를 수집 및 이용하고자 합니다. 「개인정보보호법」에 의거하여 위 사항에 대한 개인정보 제공을 거부할 권리가 있으며, 거부에 따른 불이익이 발생할 수 있음을 알려 드립니다.
+  - generic: "- 구 분: 필수"
+  - generic: "- 항 목: 성명, 소속, 전화번호, 이메일"
+  - generic: "- 수집 목적: 경진대회 신청 및 운영"
+  - generic: "- 보유 기간: 경진대회 사업 종료 시까지"
+  - heading "개인정보 수집 및 활용에 동의 여부 Required question" [level=3]:
+    - generic: 개인정보 수집 및 활용에 동의 여부
+    - generic "Required question": "*"
+  - radiogroup "개인정보 수집 및 활용에 동의 여부 Required question":
+    - radio "동의합니다" [checked]
+    - generic: 동의합니다
+    - radio "동의하지 않습니다"
+    - generic: 동의하지 않습니다
+  - heading "어떤 홍보 경로를 통해 참여하게 되었나요? 예) 00대 앵커사업단 공문/ 00 인스타/ 00대 포스터/00대 현수막 등 구체적으로 기입 Required question" [level=3]:
+    - text: 어떤 홍보 경로를 통해 참여하게 되었나요?
+    - generic: 예) 00대 앵커사업단 공문/ 00 인스타/ 00대 포스터/00대 현수막 등 구체적으로 기입
+    - generic "Required question": "*"
+  - textbox "어떤 홍보 경로를 통해 참여하게 되었나요? 예) 00대 앵커사업단 공문/ 00 인스타/ 00대 포스터/00대 현수막 등 구체적으로 기입 Required question" [active]: 경남AI·SW경진대회 공식 홈페이지(contest.gnict.org) 공고
+  - heading "산출물 내용이나 평가시에 참고할 사항이 있으면 기술하세요." [level=3]:
+    - generic: 산출물 내용이나 평가시에 참고할 사항이 있으면 기술하세요.
+  - textbox "산출물 내용이나 평가시에 참고할 사항이 있으면 기술하세요.": 해피 팀의 KitGuard 최종 제출본입니다. 주문 ID·버전·현재 사진·BOM을 근거에 결합하는 로컬 AI Agent MVP로, 실제 사진 관찰 → 수량 차이/추가 자료 요청/현재 수량 일치 분기 → 주문 개정 시 과거 결론 만료 및 재검사 → 오프라인 증거 내보내기를 구현했습니다. ZIP 안의 START_HERE.html을 먼저 열면 필수 제출물 5종(보고서 5쪽, 기술설명서 1쪽, 실행 안내를 포함한 소스 ZIP, 실제 작동 영상 177.42초, 발표자료 9장)과 출처·AI 활용 공개, 두 실행 증거 ZIP을 볼 수 있습니다. 소스 실행 환경은 Apple Silicon macOS이며, 모델 가중치는 별도 준비합니다. 10월 5일 최종 본기기 재현에서 기존 공개 개발 사진 3장으로 3개 시나리오·4회 실제 MLX 검사를 135.542초에 완료했습니다. 소프트웨어 회귀 1,877건과 실제 소스 ZIP 해제 후 계약 검사 68건이 통과했습니다. 이 공학 검사는 새 사진 정확도나 실제 사용자 효율을 뜻하지 않습니다. 기존 51장 C41/W3/U7과 제한된 같은 공개 도메인 LOCO24 C23/W0/U1은 분모를 합치지 않고 오류·미확정·한계를 공개했습니다. 실제 개발 시작일은 9월 26일입니다. 기존 자산 재사용, 공식 개발기간의 신규 기여, Codex 도움 및 공개 사진의 이용조건을 SOURCE_AI_DISCLOSURE_KO.txt에 명시했습니다. 실제 사용자 검증과 실물 완료는 각각 0이며 이를 주장하지 않습니다.
+- button "Back":
+  - generic: Back
+- button "Submit":
+  - generic: Submit
+- button "Clear form":
+  - generic: Clear form
+- generic: Never submit passwords through Google Forms.
+- text: This content is neither created nor endorsed by Google. -
+- button "Contact form owner"
+- text: "-"
+- link "Terms of Service":
+  - /url: https://policies.google.com/terms
+- text: "-"
+- link "Privacy Policy":
+  - /url: https://policies.google.com/privacy
+- paragraph:
+  - text: Does this form look suspicious?
+  - link "Report":
+    - /url: https://docs.google.com/forms/u/0/d/e/1FAIpQLScICgtArF_gnn2kjDpCMu_4OmTZ05qIczgXqr0EJloSFTewtg/abuse
+- link "Google Forms":
+  - /url: //www.google.com/forms/about/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms
+  - img "Google"
+  - text: Forms
+- button "help and feedback"
+- tooltip: Help and feedback

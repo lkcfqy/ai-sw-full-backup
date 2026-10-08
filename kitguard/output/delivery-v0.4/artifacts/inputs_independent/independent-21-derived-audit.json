@@ -1,0 +1,623 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-26T15:10:20.888323+00:00",
+  "status": "verified",
+  "manifests": [
+    {
+      "path": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "sha256": "83465c4d2b35f072977bd652ca35cfcd7942898cc07c2a10e5796483ff18d27b"
+    },
+    {
+      "path": "manifests/v0.4/ino_two_bracket_diagnostic_v1/manifest.json",
+      "sha256": "603d26994ba1565de1381293d6782ead26a5eac13eb67dfce38f46116a980c33"
+    }
+  ],
+  "cases": 21,
+  "unique_sources": 21,
+  "full_frame_count": 4,
+  "oracle_roi_count": 17,
+  "count_histogram": {
+    "1": 20,
+    "2": 1
+  },
+  "images_visually_viewed": false,
+  "gpu_inference_performed": false,
+  "root_preparation_functions_reused": false,
+  "rebuilt_files_written": false,
+  "limits": [
+    "Only author class0 L-bracket counts have labels; other classes are unknown.",
+    "Oracle ROIs use author positions and do not demonstrate open-scene detection.",
+    "Distinct source identifiers may share objects/sessions; no independence or field authenticity certification."
+  ],
+  "records": [
+    {
+      "id": "ino-l-bracket-A-39",
+      "source_id": "ino-10-190:A/39",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "full_image",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "selected_author_rows_zero_based": [
+        0
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "b6de009ed7f4cc8d7b6802e83842f2dcda922146f236f710bc89bc52ae8aeac3"
+    },
+    {
+      "id": "ino-l-bracket-A-40",
+      "source_id": "ino-10-190:A/40",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "full_image",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "selected_author_rows_zero_based": [
+        0
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "38ac11b556263b0ae5fd92cf88aef3ee7536d6428aeceedd804b486e2e4d0ed4"
+    },
+    {
+      "id": "ino-l-bracket-A-41",
+      "source_id": "ino-10-190:A/41",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "full_image",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "selected_author_rows_zero_based": [
+        0
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "0633cf4178aada2611ec46d8df34ee0f6c7452a549c8e6bd67fc4c456e299695"
+    },
+    {
+      "id": "ino-l-bracket-A-42",
+      "source_id": "ino-10-190:A/42",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "full_image",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "selected_author_rows_zero_based": [
+        0
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "9f529599f54a0d704a853fef0a4fb384b87eabceeca7dc2ee2d93c5e685ad710"
+    },
+    {
+      "id": "ino-l-bracket-B-4",
+      "source_id": "ino-10-190:B/4",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        616,
+        230,
+        726,
+        368
+      ],
+      "selected_author_rows_zero_based": [
+        1
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "3c8f707b6e6d0d79b37aa9ffd36792a85ff00954e01984217d7e055adb04d582"
+    },
+    {
+      "id": "ino-l-bracket-B-5",
+      "source_id": "ino-10-190:B/5",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        616,
+        229,
+        730,
+        367
+      ],
+      "selected_author_rows_zero_based": [
+        1
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "b7520a3ad9ffaebd2c6915365bc84ed0ebbaa20e1d9d0aa5e36b2bbb6b73de80"
+    },
+    {
+      "id": "ino-l-bracket-B-6",
+      "source_id": "ino-10-190:B/6",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        607,
+        192,
+        728,
+        367
+      ],
+      "selected_author_rows_zero_based": [
+        2
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "895e075cf46338ac8229c03c485189168ba09447933826baa139b28a975a8171"
+    },
+    {
+      "id": "ino-l-bracket-B-12",
+      "source_id": "ino-10-190:B/12",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        728,
+        231,
+        869,
+        329
+      ],
+      "selected_author_rows_zero_based": [
+        2
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "8e7c54ac52e70f5a5eb52f1c5745954e440c1000215a5ffe29b0d775553867a3"
+    },
+    {
+      "id": "ino-l-bracket-B-13",
+      "source_id": "ino-10-190:B/13",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        648,
+        438,
+        787,
+        559
+      ],
+      "selected_author_rows_zero_based": [
+        4
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "68e7b7d6a4af7e75d68b71732c72ef349434b44244f409195ac2722a83582d1c"
+    },
+    {
+      "id": "ino-l-bracket-C-6",
+      "source_id": "ino-10-190:C/6",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        308,
+        320,
+        484,
+        456
+      ],
+      "selected_author_rows_zero_based": [
+        3
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "1db83922a6e3fbdc440ecc8b6f2a22423e54477e247de7598ac2bc7ac759df51"
+    },
+    {
+      "id": "ino-l-bracket-C-10",
+      "source_id": "ino-10-190:C/10",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        686,
+        516,
+        876,
+        659
+      ],
+      "selected_author_rows_zero_based": [
+        4
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "f88a9b8db2be0187ab5a253d444ae443f3ef32fcf55169ea0c48646891b69a3b"
+    },
+    {
+      "id": "ino-l-bracket-C-12",
+      "source_id": "ino-10-190:C/12",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        707,
+        229,
+        860,
+        308
+      ],
+      "selected_author_rows_zero_based": [
+        1
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "157442de815b95ed7734128fe1b2a69b6fc0186e717cd1c4fedc84f66ce5c85c"
+    },
+    {
+      "id": "ino-l-bracket-C-15",
+      "source_id": "ino-10-190:C/15",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        507,
+        487,
+        643,
+        676
+      ],
+      "selected_author_rows_zero_based": [
+        3
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "a27f36fab38184e8c8621b0aa0eb7fcc40a50697744283c99b2c8cdf3987b3c8"
+    },
+    {
+      "id": "ino-l-bracket-C-17",
+      "source_id": "ino-10-190:C/17",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        500,
+        206,
+        664,
+        376
+      ],
+      "selected_author_rows_zero_based": [
+        1
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "55384cdd5bf306816f083d37ba1ee45940d14b32dfd326d68815ab18e53965fd"
+    },
+    {
+      "id": "ino-l-bracket-E-9",
+      "source_id": "ino-10-190:E/9",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        716,
+        155,
+        837,
+        322
+      ],
+      "selected_author_rows_zero_based": [
+        2
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "b4aa754d28683d7ba0cc14b7bb88690c8f381ff747bf7b5aea0b87109fb61cad"
+    },
+    {
+      "id": "ino-l-bracket-E-10",
+      "source_id": "ino-10-190:E/10",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        718,
+        157,
+        832,
+        320
+      ],
+      "selected_author_rows_zero_based": [
+        2
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "244f932b2b6adbd12382c300986955769dbe6899ba75082c20c90bc1c50fe89d"
+    },
+    {
+      "id": "ino-l-bracket-E-12",
+      "source_id": "ino-10-190:E/12",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        716,
+        155,
+        835,
+        319
+      ],
+      "selected_author_rows_zero_based": [
+        2
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "db4d25c48cc905a218c119639985a89eb4e746d2957bda729bd8b45980bef9a2"
+    },
+    {
+      "id": "ino-l-bracket-E-14",
+      "source_id": "ino-10-190:E/14",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        550,
+        525,
+        638,
+        702
+      ],
+      "selected_author_rows_zero_based": [
+        5
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "ca5990cc5f9f1b3da10c4a2641a24fbc2644f110dd4f41125b9ff528cd11a501"
+    },
+    {
+      "id": "ino-l-bracket-E-15",
+      "source_id": "ino-10-190:E/15",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        552,
+        527,
+        637,
+        706
+      ],
+      "selected_author_rows_zero_based": [
+        5
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "3035fb067bead1440eb7ac2577cb7fcf2ae79a563623ca94bb795b82022c1016"
+    },
+    {
+      "id": "ino-l-bracket-E-16",
+      "source_id": "ino-10-190:E/16",
+      "manifest": "manifests/v0.4/ino_l_bracket_external_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 1,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        552,
+        527,
+        639,
+        704
+      ],
+      "selected_author_rows_zero_based": [
+        6
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "f7fd17d49086326591dd591b10fbce7363f4652b7a03b56183350fbb9fce1d68"
+    },
+    {
+      "id": "ino-two-bracket-F-52",
+      "source_id": "ino-10-190:F/52",
+      "manifest": "manifests/v0.4/ino_two_bracket_diagnostic_v1/manifest.json",
+      "view_kind": "author_box_roi",
+      "author_count_scored": 2,
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "roi_xyxy": [
+        612,
+        277,
+        839,
+        635
+      ],
+      "selected_author_rows_zero_based": [
+        1,
+        3
+      ],
+      "source_sha256_verified": true,
+      "annotation_sha256_verified": true,
+      "author_boxes_valid": true,
+      "other_boxes_do_not_touch": true,
+      "selected_boxes_fully_inside": true,
+      "pixel_equal_to_origin_view": true,
+      "derived_sha256_equal": true,
+      "rebuilt_sha256": "52aaf9592f41ac913479c819300fa451e5232433950565fa715d24b19787cf63"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "review_date": "2026-09-28",
+  "method": "Visual inspection of every rendered page; original PDFs copied byte-for-byte. No external authenticity check performed.",
+  "records": [
+    {
+      "role": "leader",
+      "source_name": "青青.pdf",
+      "target_name": "04_재학증명서_남청청.pdf",
+      "name": "남청청",
+      "student_id": "20267927",
+      "course_on_certificate": "석박사통합",
+      "enrollment_semester": 1,
+      "admission_date": "2026-09-01",
+      "issue_date": "2026-09-28",
+      "pages": 1,
+      "source": "/Users/lkc/Library/Mobile Documents/com~apple~CloudDocs/青青.pdf",
+      "archived_file": "/Users/lkc/Downloads/AI·SW/报名材料_해피_2026-09-29/02_资格证明放这里/04_재학증명서_남청청.pdf",
+      "sha256": "7d8ea64795a6d38a70146876747699b8f49cdfe5e41d9260f06f9cfa73f8d3b6",
+      "school": "국립창원대학교 대학원",
+      "department": "인공지능융합공학과",
+      "name_student_id_department_match": true,
+      "all_pages_visually_reviewed": true
+    },
+    {
+      "role": "member",
+      "source_name": "李恺琛.pdf",
+      "target_name": "05_재학증명서_이개심.pdf",
+      "name": "이개심",
+      "student_id": "20267645",
+      "course_on_certificate": "박사",
+      "enrollment_semester": 1,
+      "admission_date": "2026-09-01",
+      "issue_date": "2026-09-01",
+      "pages": 2,
+      "page_note": "两页为同一份在学证明的两次扫描；原样保留。",
+      "source": "/Users/lkc/Library/Mobile Documents/com~apple~CloudDocs/李恺琛.pdf",
+      "archived_file": "/Users/lkc/Downloads/AI·SW/报名材料_해피_2026-09-29/02_资格证明放这里/05_재학증명서_이개심.pdf",
+      "sha256": "704656d6eb524ecce88f2c2a883bfb937698ea1945a22fe9ab1707fa00542e24",
+      "school": "국립창원대학교 대학원",
+      "department": "인공지능융합공학과",
+      "name_student_id_department_match": true,
+      "all_pages_visually_reviewed": true
+    }
+  ],
+  "registration_submitted": false
+}

@@ -1,0 +1,14 @@
+{
+  "01_참가신청서_개발계획서_개인정보입력전.pdf": {
+    "pages": 4,
+    "all_pages_visually_reviewed": true,
+    "sha256": "0991e571246762622b6c6f0fe7beafd2e5b942af4324784d5d823351617d650a"
+  },
+  "02_참가자_동의서_본인선택서명전.pdf": {
+    "pages": 2,
+    "all_pages_visually_reviewed": true,
+    "sha256": "a4623f2e978aed0185be0b4c88adcecbb1a7c33ea41d0870a2d498bcb6e9b14c"
+  },
+  "official_hwp_original_copy_identical": true,
+  "status": "Project text prepared; personal information, signature/consent and enrollment certificate pending; no submission ZIP created."
+}

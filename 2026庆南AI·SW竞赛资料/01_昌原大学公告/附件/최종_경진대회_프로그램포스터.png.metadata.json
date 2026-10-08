@@ -1,0 +1,16 @@
+{
+  "url": "https://www.changwon.ac.kr/common/nttFileDownload.do?fileKey=a954f57c4d44aa7088e036b126c9e965",
+  "path": "01_昌原大学公告/附件/최종_경진대회_프로그램포스터.png",
+  "source": "https://www.changwon.ac.kr/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn=1430805",
+  "kind": "attachment",
+  "retrieved_at": "2026-09-24T16:29:04.775034+09:00",
+  "http_status": 200,
+  "final_url": "https://www.changwon.ac.kr/common/nttFileDownload.do?fileKey=a954f57c4d44aa7088e036b126c9e965",
+  "content_type": "application-download",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": "attachment; filename=\"ìµì¢",
+  "bytes": 1181124,
+  "sha256": "9392b81491c83982f76597ca535898bd9e8596f25f21b9c3f4ac919904a786a8",
+  "magic_hex": "89504e470d0a1a0a0000000d49484452"
+}

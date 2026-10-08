@@ -1,0 +1,115 @@
+{
+  "schema": "kitguard.v07.final-submission-pdf-qa.v1",
+  "checked_at": "2026-10-02T07:24:55.309364+09:00",
+  "status": "passed",
+  "checks": [
+    "All source text fragments preserved after Markdown formatting removal",
+    "5 report pages and 1 technical page, all A4",
+    "Every page marked FINAL, no incomplete/audit-pending markers",
+    "Korean TrueType font embedded; source glyph check empty",
+    "Local references become plain labels with trace metadata; only HTTP(S) PDF actions",
+    "Every final rendered page inspected visually",
+    "Sources and final PDFs match BUILD_MANIFEST hashes"
+  ],
+  "documents": [
+    {
+      "file": "KitGuard_결과보고서_v0.7.pdf",
+      "sha256": "7eaefdf5d5149be50b603972bd69269e657469c141f531ce50d790c45da1d344",
+      "source": "docs/v0.7/RESULT_REPORT_KO_FINAL.md",
+      "source_sha256": "2a43f39987d43d62e908fb5fca78b991bb1a49e82173afcb2fb23b1e26da1cff",
+      "pages": 5,
+      "page_size": "A4",
+      "body_font_pt": 10.6,
+      "cell_font_pt": 10.1,
+      "source_fragments_verified": 96,
+      "min_content_bottom_pt": 167.0717637795277,
+      "embedded_korean_fonts": [
+        "/AAAAAA+ArialUnicodeMS",
+        "/AAAAAB+ArialUnicodeMS"
+      ],
+      "clickable_uris": [
+        "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+        "https://www.mvtec.com/research-teaching/datasets/mvtec-screws"
+      ],
+      "local_source_labels": 16,
+      "rendered_pages": [
+        {
+          "page": 1,
+          "file": "qa/report-1.png",
+          "sha256": "599cf4d3fef6a5cd2ab6b8b4957c09dc749fd355a7438d03395c65e58e8ebffc",
+          "visual_status": "passed",
+          "notes": "All text/table edges, Korean glyphs, footer and spacing visually inspected; no clipping, overlap or missing glyphs."
+        },
+        {
+          "page": 2,
+          "file": "qa/report-2.png",
+          "sha256": "f94b18db70ef9dd1839a95bead06a4bcf8d01f177425f18e4dfa308f7ccc8089",
+          "visual_status": "passed",
+          "notes": "All text/table edges, Korean glyphs, footer and spacing visually inspected; no clipping, overlap or missing glyphs."
+        },
+        {
+          "page": 3,
+          "file": "qa/report-3.png",
+          "sha256": "42d276c992163fcd0ceb5adc517e0d1e8b269b46ad8ba174148431626f69c8b6",
+          "visual_status": "passed",
+          "notes": "All text/table edges, Korean glyphs, footer and spacing visually inspected; no clipping, overlap or missing glyphs."
+        },
+        {
+          "page": 4,
+          "file": "qa/report-4.png",
+          "sha256": "8ea261d476120eb10fc3363d930aadcfa7de4ef9f0ee4a67bc553658f53f50de",
+          "visual_status": "passed",
+          "notes": "All text/table edges, Korean glyphs, footer and spacing visually inspected; no clipping, overlap or missing glyphs."
+        },
+        {
+          "page": 5,
+          "file": "qa/report-5.png",
+          "sha256": "f4d73143596ea54fdd7cd98b531de04e9d3b6ccecb86cba1e18000726b3faa85",
+          "visual_status": "passed",
+          "notes": "All text/table edges, Korean glyphs, footer and spacing visually inspected; no clipping, overlap or missing glyphs."
+        }
+      ]
+    },
+    {
+      "file": "KitGuard_Agent_기술설명_v0.7.pdf",
+      "sha256": "e561a2dfc7de52d3af160be0a7e1b6c32c44550bd4cc346a25fd39b517dc7280",
+      "source": "docs/v0.7/AGENT_TECH_KO_FINAL.md",
+      "source_sha256": "286aa4ee13090c7c8110135fd9b65859066f41af11cd3f90e715b45f25b84c1d",
+      "pages": 1,
+      "page_size": "A4",
+      "body_font_pt": 10.3,
+      "cell_font_pt": 9.8,
+      "source_fragments_verified": 20,
+      "min_content_bottom_pt": 64.45876377952757,
+      "embedded_korean_fonts": [
+        "/AAAAAA+ArialUnicodeMS",
+        "/AAAAAB+ArialUnicodeMS"
+      ],
+      "clickable_uris": [],
+      "local_source_labels": 10,
+      "rendered_pages": [
+        {
+          "page": 1,
+          "file": "qa/agent-1.png",
+          "sha256": "583b8f7af0aa4cc39194e3a13cdfcf6e4436b67f5d224e62b3360c4ebd5fa74a",
+          "visual_status": "passed",
+          "notes": "All text/table edges, Korean glyphs, footer and spacing visually inspected; no clipping, overlap or missing glyphs."
+        }
+      ]
+    }
+  ],
+  "audit_source": "test-results/v0.7/public-paired-audit-v1.json",
+  "audit_sha256": "94c71e45341a5065ee90fe601e606cd3a54242094d5dcc08770f6aae8c588fe9",
+  "visual_review_complete": true,
+  "model_rerun": false,
+  "historical_pdfs_modified": false,
+  "operation_marker": {
+    "operation_kind": "create",
+    "expected_output_count": 2,
+    "invoked_once_for_this_final_generation": true
+  },
+  "limitations": [
+    "PDF FINAL denotes a verified document artifact, not organizer acceptance, pre-contest asset authorization, industrial safety, or real-user validation.",
+    "Source ZIP filename/version is stated without embedding its self-referential archive hash."
+  ]
+}

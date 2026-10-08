@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: kitguard
+Version: 0.6.0.dev2
+Summary: Local evidence-driven kitting assistant
+Requires-Python: <3.14,>=3.11
+Requires-Dist: fastapi<1,>=0.115
+Requires-Dist: uvicorn<1,>=0.34
+Requires-Dist: python-multipart>=0.0.20
+Requires-Dist: pillow<13,>=11
+Requires-Dist: pydantic<3,>=2.10
+Provides-Extra: detector
+Requires-Dist: torch<2.15,>=2.14; extra == "detector"
+Requires-Dist: torchvision<0.30,>=0.29; extra == "detector"
+Provides-Extra: local
+Requires-Dist: mlx-vlm<0.8,>=0.7.3; extra == "local"
+Requires-Dist: huggingface-hub>=0.34; extra == "local"
+Requires-Dist: safetensors>=0.6; extra == "local"
+Requires-Dist: torch<3,>=2.8; extra == "local"
+Requires-Dist: torchvision<1,>=0.23; extra == "local"
+Provides-Extra: dev
+Requires-Dist: pytest<10,>=8; extra == "dev"
+Requires-Dist: httpx<1,>=0.28; extra == "dev"
+Requires-Dist: ruff>=0.12; extra == "dev"

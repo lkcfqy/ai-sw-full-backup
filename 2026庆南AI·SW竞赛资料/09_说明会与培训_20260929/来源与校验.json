@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "source": "用户提供本地附件",
+  "acquisition_note": "从用户提供的iCloud本地PDF逐字节复制；不是从原网页下载。",
+  "document_date": "2026-09-29",
+  "imported_at": "2026-09-30T23:32:09+09:00",
+  "timezone": "Asia/Seoul",
+  "records": [
+    {
+      "title": "比赛说明会 V0.1",
+      "local_filename": "比赛说明会_V0.1_20260929.pdf",
+      "relative_path": "09_说明会与培训_20260929/比赛说明会_V0.1_20260929.pdf",
+      "local_path": "/Users/lkc/Downloads/AI·SW/2026庆南AI·SW竞赛资料/09_说明会与培训_20260929/比赛说明会_V0.1_20260929.pdf",
+      "source_type": "user_provided_local_attachment",
+      "source_description": "用户提供本地附件",
+      "source_path": "/Users/lkc/Library/Mobile Documents/com~apple~CloudDocs/TalkFile_발표자료_경진대회 사업설명회V0.1_최창석부회장_20260929.pdf.pdf",
+      "source_filename": "TalkFile_발표자료_경진대회 사업설명회V0.1_최창석부회장_20260929.pdf.pdf",
+      "original_web_download": false,
+      "document_date": "2026-09-29",
+      "imported_at": "2026-09-30T23:32:09+09:00",
+      "timezone": "Asia/Seoul",
+      "bytes": 4692852,
+      "pages": 18,
+      "sha256": "573f86cfb4b85652cdbcb5e3cc863e5164863aefb9b3f371dc1c008d0322448f",
+      "source_sha256": "573f86cfb4b85652cdbcb5e3cc863e5164863aefb9b3f371dc1c008d0322448f",
+      "copy_method": "shutil.copy2",
+      "verification": "源文件与项目副本字节数和SHA-256一致；原文件不编辑、不移动。"
+    },
+    {
+      "title": "AI Agent 八天开发教育资料",
+      "local_filename": "AI_Agent八天开发教育资料_20260929.pdf",
+      "relative_path": "09_说明会与培训_20260929/AI_Agent八天开发教育资料_20260929.pdf",
+      "local_path": "/Users/lkc/Downloads/AI·SW/2026庆南AI·SW竞赛资料/09_说明会与培训_20260929/AI_Agent八天开发教育资料_20260929.pdf",
+      "source_type": "user_provided_local_attachment",
+      "source_description": "用户提供本地附件",
+      "source_path": "/Users/lkc/Library/Mobile Documents/com~apple~CloudDocs/TalkFile_교육자료_제4회_경남AI_SW경진대회_AI_Agent_8일완성.pdf.pdf",
+      "source_filename": "TalkFile_교육자료_제4회_경남AI_SW경진대회_AI_Agent_8일완성.pdf.pdf",
+      "original_web_download": false,
+      "document_date": "2026-09-29",
+      "imported_at": "2026-09-30T23:32:09+09:00",
+      "timezone": "Asia/Seoul",
+      "bytes": 527853,
+      "pages": 32,
+      "sha256": "199ebd332900f8702e0279e7e83a9bdbe1b444323436dc2bc35c49f58ac61b04",
+      "source_sha256": "199ebd332900f8702e0279e7e83a9bdbe1b444323436dc2bc35c49f58ac61b04",
+      "copy_method": "shutil.copy2",
+      "verification": "源文件与项目副本字节数和SHA-256一致；原文件不编辑、不移动。"
+    }
+  ]
+}

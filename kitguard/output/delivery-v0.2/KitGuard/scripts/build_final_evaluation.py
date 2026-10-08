@@ -1,0 +1,140 @@
+"""Write the Chinese assessment from completed frozen runs, without inventing metrics."""
+
+import json
+from datetime import UTC, datetime
+from pathlib import Path
+from xml.etree import ElementTree
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def read_run(name):
+    path = ROOT / "evaluation-runs" / name / "run.json"
+    run = json.loads(path.read_text())
+    assert run["status"] == "completed" and run["finished_at"]
+    assert run["completed_cases"] == run["expected_cases"]
+    assert run.get("source_changed_during_run") is False
+    return run
+
+
+def fraction(metric):
+    return f"{metric['numerator']}/{metric['denominator']} ({metric['rate']:.1%})"
+
+
+def row(label, summary):
+    nominal = summary["nominal_order"]
+    return (
+        f"| {label} | {fraction(summary['count_exact'])} | "
+        f"{fraction(summary['wrong_actionable_count'])} | "
+        f"{fraction(nominal['quantity_anomalies_false_ready'])} | "
+        f"{summary['latency_ms']['median'] / 1000:.2f}s |"
+    )
+
+
+def main():
+    final = read_run("loco_holdout_release_v1")
+    control = read_run("loco_holdout_27b_single_control_v1")
+    development = read_run("loco_development_release_v1")
+    assert final["case_ids"] == control["case_ids"] and len(final["case_ids"]) == 48
+    s, c = final["summary"], control["summary"]
+    suites = ElementTree.parse(ROOT / "test-results/engineering-current.xml").getroot()
+    tests = sum(int(item.get("tests", 0)) for item in suites.iter("testsuite"))
+    failures = sum(
+        int(item.get("failures", 0)) + int(item.get("errors", 0))
+        for item in suites.iter("testsuite")
+    )
+    delta = (s["count_exact"]["rate"] - c["count_exact"]["rate"]) * 100
+    document = f"""# KitGuard v0.2 自检与竞争力评估
+
+生成：{datetime.now(UTC).isoformat()}。实际开发日为2026-09-26（韩国时间）。这是本队项目的内部技术评估，不是评委评分、获奖预测或正式提交回执。
+
+## 结论
+
+现有Mac已能运行真实本地模型、订单变更、图像核验、补证状态控制、人工确认约束与证据导出。公开实拍的冻结留出集完整计数正确为 **{fraction(s['count_exact'])}**；同一27B模型直接计数对照为 **{fraction(c['count_exact'])}**，差值 **{delta:+.2f}个百分点**。这使项目的技术能力有可检查的实测依据，但仍不能据此认定达到第一名水平。
+
+目前最强的是可演示的业务状态管理、可复算评测和证据追溯；最大缺口是真实操作者的连续补件验证和现场收益。公开静态图无法替代这部分。另有赛前开发条款与正式评分表问题，技术完成不自动消除参赛资格风险。
+
+## 已完成的产品
+
+- 韩语/中文工作台；四类粗分类（螺纹件、螺母、垫圈、角码），每类0–3、总数1–12。
+- 韩中英自然语言修改先生成提案，程序核验原文数量和范围，人工批准后形成新版本。
+- 视觉模型只接收待检图、可选参考图和有限的不确定类别上下文，不接收订单目标；逐件输出类别和坐标，程序统计清单并对照需求。
+- 结果与照片、参考图、需求版本绑定。换图、改版或证据变化令旧结果失效；失败、超时和不确定不会当作完成。
+- 补证最多继续两轮，仍不能判断则转人工；不以先前数量填补新图未知值。相符也必须本人确认实物后才能记录完成。
+- 历史只读审计、可选点位叠加和离线证据ZIP；包含照片、JSON、HTML查看器及SHA-256清单。哈希可追溯，不能证明现场真实性。
+
+模型为 `mlx-community/Qwen3.6-27B-4bit`，固定revision `c000ac2c2057d94be3fa931000c31723aac53282`；MLX本地部署。默认 `spatial_inventory`、1536最长边、900输出token、temperature=0、不启用thinking。权重在 `~/Downloads/AI-Models/`共享，正常推理不发送照片到云端。另一台3080电脑未连接、未作实测。
+
+## 冻结评测
+
+16张开发图用于选择方案，结果为 {fraction(development['summary']['count_exact'])}，不能当作留出成绩。19:44:49 KST固定配置和核心源码散列，19:45:00之后才运行48张留出图；配置见 [冻结记录](RELEASE_EVALUATION_FREEZE.json)。没有依据这48张的结果再调整观察器。
+
+| 同一48张留出原图 | 四类计数全部正确 | 可执行计数中的错误 | 固定正常订单下异常图错误ready | 中位耗时 |
+| --- | --- | --- | --- | --- |
+{row('所选逐件清单协议', s)}
+{row('同27B/1536直接计数对照', c)}
+
+所选方案正常组成子组：{fraction(s['subgroups']['normal_constant_222']['count_exact'])}；数量异常子组：{fraction(s['subgroups']['quantity_anomaly']['count_exact'])}。拒绝和异常仍保留在48张分母中；本轮执行错误为 {fraction(s['errors'])}。可执行覆盖率为 {fraction(s['actionable_coverage'])}。固定正常订单下正确纠正数量异常为 {fraction(s['nominal_order']['quantity_anomalies_correct_adjustment'])}。
+
+独立配对复算为：两者都正确34张、对照错误而所选方案正确12张、对照正确而所选方案错误0张、两者都错误2张，见 `test-results/audit/paired_holdout_comparison.json`。这是一组固定图片上的描述性比较。
+
+两例共同失败须保留：`test/good/113` 真值2/2/2/0，所选观察为2/4/2/0，会错误建议取出2个螺母；`test/logical_anomalies/042` 真值3/2/2/0，所选观察为2/2/2/0，对正常订单会错误判为ready。042同时计入固定扰动1/48与正常订单1/24，是同一张图、同一个订单，不是两次独立失败。没有实际出库。
+
+计数错误、错误`ready`和最终完成人工确认是不同层次；即使某项错误ready是0，也不等于没有错误建议，更不等于实际出货零差错。所有病例和失败见 `evaluation-runs/loco_holdout_release_v1/predictions.jsonl`；对照在 `loco_holdout_27b_single_control_v1`。同图派生匹配、不匹配及固定订单任务，不增加独立样本数。
+
+对照保持同模型、同上传处理、同1536分辨率和同48张图，但结构/提示词与输出预算同时变化（900对450）；它验证的是整套观察协议，不能把提升单独归因于空间定位。耗时包括隔离上传路由、SQLite、归一化、散列和观察调用；不是纯模型耗时，也未包含真人操作或完整inspect接口超时路径。
+
+数据为MVTec LOCO AD screw_bag：24正常图、24数量异常图。正常组成固定为2/2/2/0，恒返该数量的无视觉基线可取得24/48，却会将24/24异常误判为ready。真值从作者正常组成与单一明确数量缺陷标签派生，不由本模型生成。官方test中的8张异常已明确划入开发，当前是自定义留出划分，不能称官方完整测试协议。基础模型是否见过公开图未知，不给工业总体准确率或统计显著性结论。
+
+## 数据、自检与复现
+
+已获取并核验MVTec Screws完整归档和LOCO完整归档；本项目解出384张Screws与761张LOCO screw_bag原始实拍。Screws粗类映射与数量范围不匹配，只作压力探索，不混入主成绩。另有2张CC0角码照片供后续研究，没有建立计数真值、不计准确率；主留出集中角码全为0，不能声称已验证角码正例。
+
+Python工程回归 **{tests - failures}/{tests}通过**。这些测试使用明确标注的工程夹具和模型替身，验证版本、并发、幂等、输入、失败和审计行为，不算模型识别样本。Chrome回归覆盖工作台、历史、补证和空间叠加；各组有重叠，不能相加为独立数据量。独立审查及逐例复算见 [审计报告](FINAL_INDEPENDENT_AUDIT.md)，原始工程记录在 `test-results/`。
+
+另有24条作者编写的韩/中/英指令开发案例，27B真实运行24/24符合预期（9条修改提案、15条需澄清/拒绝；每种语言8条）。这不是独立用户测试或真人效率基线，不能称自然语言能力100%。
+
+实际Chrome与MLX界面演示已保存为75.16秒MP4，显示3→2的订单变更、旧检查失效、同一公开照片再次上传、真实重新检查和只读证据导出。两次inspect均为真实mlx后端；R1失效、R2 ready，但未作人工完成确认。录像不是补件前后实物实验，不增加评测样本。两次调用的observation_context与evidence_feedback均为空：这段实录验证改版隔离和重新检查，不验证真实补证反馈效果。初次录制因自动化重复选同一文件未触发change而中断，记录保留；修复录屏脚本后完整重录，没有修改模型来挑选成功输出。
+
+重新构建wheel时发现默认自动包发现误收数据/报告目录，已只在安装配置中限定应用包与静态资源。独立解压启动与静态资源读取通过，依赖复用现有环境；不冒称新机器完整安装。冻结12个核心/runner源码散列仍未变。
+
+两种Qwen模型的权重已按上游哈希验证，原始许可和模型卡保存在共享模型目录及项目 `third_party/models/`。数据来源、类别映射、排除条件、原始档案哈希及CC BY-NC-SA限制见 [DATA_PROVENANCE.md](DATA_PROVENANCE.md)。AI辅助编程和资料使用见 [来源披露](AI_AND_SOURCE_DISCLOSURE.md)。
+
+复现命令（新输出目录，不能覆盖旧证据）：
+
+```bash
+bash scripts/setup.sh
+.venv/bin/python scripts/download_candidate_model.py
+bash scripts/run.sh
+# 以下在项目根目录执行；模型服务不要同时处理推理请求。
+.venv/bin/python -m scripts.run_benchmark \\
+  --manifest datasets/manifests/mvtec_loco_screw_bag/benchmark_v2.json \\
+  --dataset-root datasets --output evaluation-runs/my_holdout_reproduction \\
+  --split holdout --input-pipeline app-upload \\
+  --observation-mode spatial_inventory --image-max-side 1536 \\
+  --model-path "$HOME/Downloads/AI-Models/Qwen3.6-27B-4bit"
+```
+
+## 竞争力判断与剩余证据
+
+| 判断维度 | 当前证据 | 对争取高名次的影响 |
+| --- | --- | --- |
+| 问题和工作流清晰 | 订单变化→照片观察→程序核对→补证/调整→再检查→确认记录 | 易演示，符合业务Agent方向 |
+| 可执行与可审计 | 真实模型、状态约束、独立回归、公开数据与失败留存 | 技术完成度较强；没有用界面占位替代推理 |
+| 技术差异 | 逐件清单、受限上下文、版本证据与工具结果结合 | 属于本项目实现重点；不是全球首创视觉备料或新基础模型 |
+| 效果证据 | 自定义48张静态留出和同模型对照 | 有技术依据；仍缺真人对照、补证收益及新环境样本 |
+| 工业落地 | 没有企业试点，不能识别螺距、尺寸、材料或SKU | 尚不能宣称Pilot、节省成本或现场降低漏配率 |
+| 正式提交 | 五类交付材料已按当前格式准备，未代为提交 | 需按9月29日公布的最终表格/评分要求复核 |
+
+继续提高竞争力最有价值的验证，是用现有摄像头和少量真实零件完成连续操作：真实少件→模型建议→本人补件→新照片→核验，并与人工清单及单次模型比较。采集协议已经写入 [REAL_WORLD_VALIDATION.md](REAL_WORLD_VALIDATION.md)，当前没有冒填结果。这个计划的16/48自采场景与已完成的公开数据16/48是两套不同实验。
+
+原始报名同意书限制正式开发期外的预先开发；本项目如实保留9月26日记录，不把来源披露当作豁免。9月26日再次核查的 [官网规则](https://contest.gnict.org/rule.php)仍列正式开发期9月29日至10月6日、五类交付要求；[主办方答疑](https://www.gnict.org/게시판/sw경진대회/제4회-경남aisw경진대회-공고/)仍说明评分表与AI来源表将在9月29日说明会公布。使用当前资产的资格解释需主办方明确。没有替用户发邮件、签字、报名或提交作品。
+
+**评估意见：已形成可运行、可展示、可复查的竞争型技术原型；尚未具备据实宣称“必拿第一”或“现场效果已验证”的证据。** 后续新增真实资料后，应另建验证集并明确新版本，不能把当前留出重新当成未见数据。
+"""
+    (ROOT / "docs/FINAL_EVALUATION.md").write_text(document)
+    print("Wrote docs/FINAL_EVALUATION.md from both completed 48-image runs")
+
+
+if __name__ == "__main__":
+    main()

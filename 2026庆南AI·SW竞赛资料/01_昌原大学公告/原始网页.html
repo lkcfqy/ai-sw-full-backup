@@ -1,0 +1,2349 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+         <title>프로그램 모집
+			>게시물 내용보기
+			
+			  - 학사안내</title>    
+        <meta name="keywords" content="학사안내">
+		<meta name="description" content="학사안내 홈페이지에 오신 것을 환영합니다. ">
+        <link rel="stylesheet" href="/css/common/common_v1.css" media="all"><!-- 대표, 템플릿 전체 공통 css -->
+        <link rel="stylesheet" href="/css/common/con_com.css" media="all"><!-- 대표, 템플릿 전체 공통 css -->
+        <link rel="stylesheet" href="/css/common/webfont.css" media="all">		    
+        <link rel="stylesheet" href="/css/web/haksa/F_layout.css" media="all"><!-- F_layout CSS-->	    
+        <link rel="stylesheet" href="/css/web/haksa/sub_cnt.css" media="all"><!-- sub Content -->
+        <link rel="stylesheet" href="/css/common/F_layout_logo.css" media="all">
+        <link href="/css/com/jquery/jquery-ui.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="/js/html5shiv.js"></script>
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.form.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="/js/jquery.bpopup.min.js"></script>
+	</head>
+    <body>
+    	<!-- 바로가기 -->
+        <!-- <div id="skipArea">
+            <a href="#gnb">메인메뉴 바로가기</a> 
+            <a href="#container">본문으로 바로가기</a>
+        </div> -->
+		<!-- //바로가기 -->		
+
+        <div id="wrap"> 
+
+        	<div class="js_mobile_check"></div>
+            <!-- header  -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	<link href="/css/common/main_widget.css" rel="stylesheet" />
+	<div id="joinPopUp" title="" style='display:none; text-align: center;'>
+		창원대학교 Waggle에 로그인 하신후<br>
+		회원가입이 가능합니다.<br>
+		Waggle의 회원이 아니신 경우는<br> 
+		먼저 Waggle에 회원가입 후 이용하여 주세요.
+	</div>
+<script>
+$(function () {
+	
+	//리스트 팝업 : 보기, 취소
+	$(".viewPopListBtn").click(function(){
+		var btnTy = $(this).attr("id");
+		
+		if ( btnTy == "close" ) {
+				//팝업 목록 닫기
+				$(".pop_header").hide();	
+			
+		} else {
+			
+			$("#listPopup").dialog({
+			    autoOpen: true,
+			    modal: false,
+			    resizeable : false,
+			    title: "학사안내 팝업 목록",
+			    width: 380,
+			    height: 350,
+			    show:{
+			  		effect:"blind",
+			  		duration: 100
+			    },
+			    hide:{
+			   	 	effect:"blind",
+			   	 	duration: 100
+			    },						    
+			    position: {my:'left+50 top+50', at: 'left top' }
+			}).dialog('open');	
+			
+		}
+		
+	});
+	
+	//리스트 팝업 : 팝업 보기 
+	$(".viewPopupBtn").click(function(){
+		var popupSn = $(this).attr("data-seq");
+		var popupTitle = $(this).attr("title"); 
+		var popupWidth = $("#popupData"+popupSn).attr("data-width");
+		var popupHeight = $("#popupData"+popupSn).attr("data-height");
+		var popupWidthLc = $("#popupData"+popupSn).attr("data-widthLc");
+		var popupHeightLc = $("#popupData"+popupSn).attr("data-heightLc");
+		var popupFileId = $("#popupData"+popupSn).attr("data-fileId");
+		var popupFileList = $("#popupData"+popupSn).attr("data-fileList");		
+		
+		var fileHeight = "";
+		if( popupFileId != "" && popupFileList != "" ) {
+			fileHeight = popupFileList.split("},").length;
+			popupHeight = parseInt(popupHeight) + parseInt(fileHeight)*20;
+			popupWidth = parseInt(popupWidth) + parseInt(fileHeight)*5;
+			
+		}
+			$("#popupNormal"+popupSn).dialog({
+			    autoOpen: true,
+			    modal: false,
+			    resizeable : false,
+			    title: popupTitle,
+			    width: popupWidth,
+			    height: popupHeight,
+			    show:{
+			  		effect:"blind",
+			  		duration: 100
+			    },
+			    hide:{
+			   	 	effect:"blind",
+			   	 	duration: 100
+			    },						    
+			    position: {my:'left+ top+', at: 'left top' }
+			}).dialog('open');	
+		
+	});
+	
+	
+	
+});
+	
+$(document).ready(function(){
+	
+	// 리스트 팝업 호출 여부	
+	var popCallAt = "";
+	
+	// 팝업 호출 : 기본 창 팝업
+	if ( popCallAt == "" ) {
+		
+		
+	}
+});
+	
+
+
+function myMailClick(){
+	var tmp_url = "https://mail.changwon.ac.kr";
+	alert("웹메일 연동이 되어있지 않습니다. \n [정보수정]에서 웹메일 사용자 인증을 하시면 \n 별도의 로그인과정 없이 웹메일을 이용하실 수 있습니다.");	
+
+	window.open(tmp_url);
+}
+</script>	
+	
+
+
+ 
+<style>
+#header #nav #gnb .wrap > ul > li > ul > li > a {
+    font-family: 'NotoM';
+    font-size: 13px !important;
+    line-height: 20px;
+    height: auto;
+    padding: 10px 30px 10px 10px;
+    color: #333;
+    text-align: left;
+}
+</style>
+            <header id="header">
+                <!-- 메뉴 -->
+                <div class="headerWrap">
+					
+					<h1 class="logoBox2" id="logo"><a href="/haksa/main.do"><span class="logo">국립창원대학교</span><span class="name">학사안내</span></a></h1>
+
+					<div class="toputil">
+						<!-- 상단 버튼  -->
+						<ul class="topMenu">
+							<li><a href="http://portal.changwon.ac.kr/" target="_blank" title="새창" class="home">와글메인</a></li> 
+							<li><a href="http://www.changwon.ac.kr/" target="_blank" title="새창">국립창원대학교</a></li>
+						
+							<li class="login"><a href="/haksa/lo/login/ssoPage.do" title="로그인">로그인</a></li>
+							<li><a href="#join2" id="joinMber2" title="회원가입">회원가입</a></li>
+						
+						
+						
+						</ul>
+						<!-- //상단 버튼  -->
+					</div>
+
+					<a href="#" class="mob_btn">MOBILE MENU
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
+					<!-- 풀다운 클래스 : fullDown / 하나씩 : oneDown-->
+					<!--START-->
+						
+						<div id="nav" class="oneDown">
+							<div id="blind"></div>
+							<div id="gnb">
+								<a href="/haksa/sitemap.do" class="sitemap">사이트맵 바로가기<span></span><span></span><span></span></a>
+								<div class="wrap">
+								<ul class="group">
+									<li class="menu1"><a href="https://www.changwon.ac.kr/portal/account/ssoHaksa.do"><span>학사정보</span></a>
+										<ul class="menuBox group">
+											<li><a href="https://www.changwon.ac.kr/portal/account/ssoHaksa.do" class="depth" rel="noopener noreferrer" target="_blank" title="새창열림" ><strong>학사정보시스템</strong></a></li>
+											<li><a href="/haksa/sv/schdulView/schdulCalendarView.do?mi=10980" class="depth"><strong>학사일정</strong></a></li>
+											<li><a href="/haksa/na/ntt/selectNttList.do?mi=10982&bbsId=3120" class="depth"><strong>공지사항</strong></a></li>
+											<li><a href="/haksa/na/ntt/selectNttList.do?mi=15814&bbsId=5849" class="depth"><strong>장학안내</strong></a></li>
+											<li><a href="/haksa/na/ntt/selectNttList.do?mi=16467&bbsId=6253" class="depth"><strong>등록안내</strong></a></li>
+											<li><a href="/haksa/na/ntt/selectMainAtNttList.do?mi=11495" class="depth"><strong>와글홈공지</strong></a></li>
+											<li><a href="http://www.changwon.ac.kr/portal/account/ssoHaksa.do?menu_code=16910100?mid=86" class="depth" rel="noopener noreferrer" target="_blank" title="새창열림" ><strong>봉림민원</strong></a></li>
+											<li><a href="https://changwon.certpia.com" class="depth" rel="noopener noreferrer" target="_blank" title="새창열림" ><strong>인터넷증명발급</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11497&cntntsId=4353" class="depth"><strong>학생증발급</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11498&cntntsId=4354" class="depth"><strong>국제학생증발급</strong></a></li>
+										</ul>
+									</li>
+									<li class="menu2"><a href="/haksa/cm/cntnts/cntntsView.do?mi=10990&cntntsId=3907"><span>학적</span></a>
+										<ul class="menuBox group">
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=10990&cntntsId=3907" class="depth"><strong>휴학</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=10991&cntntsId=3908" class="depth"><strong>복학</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=10992&cntntsId=3909" class="depth"><strong>자퇴</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=10993&cntntsId=3910" class="depth"><strong>제적</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=10994&cntntsId=3911" class="depth"><strong>전과</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=10995&cntntsId=3912" class="depth"><strong>재입학</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=10996&cntntsId=3913" class="depth"><strong>학적정정</strong></a></li>
+										</ul>
+									</li>
+									<li class="menu3"><a href="/haksa/cm/cntnts/cntntsView.do?mi=18415&cntntsId=6644"><span>대학요람</span></a>
+										<ul class="menuBox group">
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=18415&cntntsId=6644" class="depth"><strong>2025학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=17228&cntntsId=6239" class="depth"><strong>2024학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=16813&cntntsId=6119" class="depth"><strong>2023학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=16573&cntntsId=6050" class="depth"><strong>2022학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=14910&cntntsId=5363" class="depth"><strong>2021학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=12625&cntntsId=4795" class="depth"><strong>2020학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=12624&cntntsId=4794" class="depth"><strong>2019학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=12623&cntntsId=4793" class="depth"><strong>2018학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=12622&cntntsId=4792" class="depth"><strong>2017학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=12621&cntntsId=4791" class="depth"><strong>2016학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=12620&cntntsId=4790" class="depth"><strong>2015학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=12619&cntntsId=4789" class="depth"><strong>2014학년도 대학요람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=12617&cntntsId=4788" class="depth"><strong>2013학년도 대학요람</strong></a></li>
+										</ul>
+									</li>
+									<li class="menu4"><a href="https://www.changwon.ac.kr/haksa/cm/cntnts/cntntsView.do?mi=19272&cntntsId=7109"><span>교육과정</span></a>
+										<ul class="menuBox group">
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=12492&cntntsId=7109" class="depth"><strong>교육과정편람</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=19099&cntntsId=7110" class="depth"><strong>교양 가이드북</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=19100&cntntsId=7111" class="depth"><strong>전공 가이드북</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=19101&cntntsId=7112" class="depth"><strong>비교과 가이드북</strong></a></li>
+										</ul>
+									</li>
+									<li class="menu5"><a href="/haksa/cm/cntnts/cntntsView.do?mi=11002&cntntsId=3917"><span>다전공</span></a>
+										<ul class="menuBox group">
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11002&cntntsId=3917" class="depth"><strong>부전공</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11003&cntntsId=3918" class="depth"><strong>복수전공</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11004&cntntsId=3919" class="depth"><strong>연계전공</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11005&cntntsId=3920" class="depth"><strong>융합전공</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11006&cntntsId=3921" class="depth"><strong>융합(부)전공</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=16225&cntntsId=5929" class="depth"><strong>다전공홍보</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=19450&cntntsId=7173" class="depth"><strong>학생설계전공 가이드북</strong></a></li>
+										</ul>
+									</li>
+									<li class="menu6"><a href="/haksa/na/ntt/selectNttList.do?mi=11008&bbsId=3537"><span>수업</span></a>
+										<ul class="menuBox group">
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=13242&cntntsId=3922" class="depth"><strong>수강신청</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11009&cntntsId=3923" class="depth"><strong>학점인정</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11010&cntntsId=3924" class="depth"><strong>사회봉사</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11011&cntntsId=3925" class="depth"><strong>성적</strong></a></li>
+											<li><a href="/haksa/na/ntt/selectNttList.do?mi=11008&bbsId=3537" class="depth"><strong>타대학 수학</strong></a></li>
+										</ul>
+									</li>
+									<li class="menu7"><a href="/haksa/cm/cntnts/cntntsView.do?mi=11013&cntntsId=3926"><span>졸업</span></a>
+										<ul class="menuBox group">
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11013&cntntsId=3926" class="depth"><strong>학위수여요건</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11014&cntntsId=3927" class="depth"><strong>졸업인증제</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11015&cntntsId=3928" class="depth"><strong>학위취득유예</strong></a></li>
+										</ul>
+									</li>
+									<li class="menu8"><a href="/haksa/cm/cntnts/cntntsView.do?mi=11017&cntntsId=3929"><span>자격증</span></a>
+										<ul class="menuBox group">
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11017&cntntsId=3929" class="depth"><strong>교원</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11018&cntntsId=3930" class="depth"><strong>평생교육사</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11019&cntntsId=3931" class="depth"><strong>문화예술교육사</strong></a></li>
+										</ul>
+									</li>
+									<li class="menu9"><a href="/haksa/cm/cntnts/cntntsView.do?mi=11022&cntntsId=3933"><span>장학</span></a>
+										<ul class="menuBox group">
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11022&cntntsId=3933" class="depth"><strong>교내장학</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11023&cntntsId=3934" class="depth"><strong>국가장학</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11024&cntntsId=3935" class="depth"><strong>외부장학</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11025&cntntsId=3936" class="depth"><strong>근로장학</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11027&cntntsId=3938" class="depth"><strong>학자금대출</strong></a></li>
+										</ul>
+									</li>
+									<li class="menu10"><a href="/haksa/cm/cntnts/cntntsView.do?mi=11029&cntntsId=3939"><span>등록</span></a>
+										<ul class="menuBox group">
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11030&cntntsId=3940" class="depth"><strong>등록일정</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11031&cntntsId=3941" class="depth"><strong>계열별등록금</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11032&cntntsId=3942" class="depth"><strong>정규학기등록</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11222&cntntsId=3970" class="depth"><strong>분할납부</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11223&cntntsId=3971" class="depth"><strong>수업연한초과자</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11224&cntntsId=3972" class="depth"><strong>학위취득유예등록</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11034&cntntsId=3944" class="depth"><strong>등록금납부</strong></a></li>
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11033&cntntsId=3943" class="depth"><strong>등록금반환</strong></a></li>
+										</ul>
+									</li>
+									<li class="menu11"><a href="#?mi=11037"><span>국제교류</span></a>
+										<ul class="menuBox group">
+											<li><a href="/haksa/cm/cntnts/cntntsView.do?mi=11618&cntntsId=3974" class="depth"><strong>프로그램</strong></a></li>
+											<li><a href="https://cafe.naver.com/exchangecwnu" class="depth" rel="noopener noreferrer" target="_blank" title="새창열림" ><strong>프로그램커뮤니티</strong></a></li>
+											<li><a href="https://www.facebook.com/cnuinternational" class="depth" rel="noopener noreferrer" target="_blank" title="새창열림" ><strong>유학생커뮤니티</strong></a></li>
+										</ul>
+									</li>
+								</ul>
+								</div>
+							</div>
+						</div>
+					<!--END-->
+                </div>
+                <!-- //메뉴 --> 
+            </header>
+
+
+ 
+            <!-- //header  --> 
+            <!-- container -->
+            <div id="sub_container_wrap">
+                <div class="sub_content_wrap">
+                    <!-- 왼쪽메뉴 -->        
+					
+
+
+
+				<aside id="menu">
+				<!--START-->
+									
+									<input type="hidden" id="leftCurrMi" value="18769">
+									<input type="hidden" id="tabBaseMi" value="18769">
+									<input type="hidden" id="tabUpperMi" value="">
+
+
+
+
+
+
+
+
+
+
+
+				<!--END-->
+				</aside>
+
+
+
+                    <!-- //왼쪽메뉴 --> 
+                    <!-- sub 내용 -->
+                    <section id="sub_content">
+                        <div class="title_area">
+							
+
+
+					
+						<h2 class="pageTitle">프로그램 모집</h2>
+                        <div class="location">
+                            <a href="/haksa/main.do" class="home ri-home-fill"><span class="hid">HOME</span></a> 
+                              
+							
+								
+									
+										 <strong>프로그램 모집</strong>
+									
+									
+								
+							
+                        </div>
+							
+
+
+
+
+
+
+<link href="/css/web/common/print.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="/css/web/common/sns.css" rel="stylesheet">
+<style>
+<!--
+.snsBox .btnFavorites {width:35px;height:35px;overflow:hidden;background:#777 url("/images/ad/potal/btn_star.png") no-repeat center;border-radius:30px;}
+.snsBox .btnFavoritesOn {width:35px;height:35px;overflow:hidden;background:#FFCD4F url("/images/ad/potal/btn_star_on.png") no-repeat center;border-radius:30px;}
+-->
+</style>
+<script type="text/javascript">
+function goPrint() {
+	var popW = 763;  
+	var popH = 632; 
+	var popX  = (document.body.clientWidth / 2) - (popW / 2) + window.screenLeft; // 팝업창 X 좌표 계산
+	var popY  = (document.body.clientHeight / 2) - (popH) + window.screenTop; // 팝업창 Y 좌표 계산
+	
+	window.open("/haksa/pr/printPage.do", "printPage",'top='+popY+',left='+popX+',width='+popW+',height='+popH+',scrollbars=yes,noreferrer');	
+
+}
+
+function goSns(shareTy){ 
+	var htmlTitle = '학사안내';
+	var title = ''; // 메뉴타이틀의 경우 스크립트 추가되어 오류  ;
+	var menuTitle = '프로그램 모집';
+	var mi = '18769';
+	var _br2  = encodeURIComponent('\n'); 
+	var linkUrl = location.href;
+	
+	if(linkUrl.indexOf('?') > -1) {
+		if(linkUrl.indexOf('mi=') < 0) {
+			linkUrl = linkUrl + '&mi=' +mi	
+		}
+	} else {
+		if(linkUrl.indexOf('mi=') < 0) {
+			linkUrl = linkUrl + '?mi=' +mi	
+		}
+	}
+	
+	linkUrl = encodeURIComponent(linkUrl);
+	
+	if(menuTitle != '메뉴명없음') {
+		title = htmlTitle + ' : ' + menuTitle;
+	} else {
+		title = htmlTitle;
+	}
+	
+	title = encodeURIComponent(title);
+
+	if(shareTy == "fbook") {
+		window.open('https://www.facebook.com/sharer/sharer.php?u='+ linkUrl, 'facebook', 'width=626,height=436,noreferrer');
+	} else if(shareTy == "twt") {
+		window.open('https://twitter.com/intent/tweet?url='+ linkUrl + '&text=' + title + '&original_referer=' + linkUrl, 'twitter', 'width=626,height=436,noreferrer');
+	} else if(shareTy == "kkot") {
+		window.open('https://story.kakao.com/s/share?url='+ linkUrl + '&text=' + title, 'kakaostory', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600,noreferrer');
+	} else if(shareTy == "band") {
+		window.open('http://band.us/plugin/share?body='+ title + _br2 + linkUrl + '&route=' + linkUrl, 'band', 'width=410, height=540, resizable=no,noreferrer');
+	} else if(shareTy == "blog") {
+		window.open('https://share.naver.com/web/shareView.nhn?url='+ linkUrl + '&title='+title, 'band', 'width=410, height=540, resizable=no,noreferrer');
+	}
+}
+</script>
+
+
+             
+                        </div>
+                        
+                        <div class="subCntBody clearfix">
+                            <!-- 페이지뷰 : 서브콘텐츠 시작-->
+                            <div>
+								
+
+
+
+<div>
+   <!--START-->
+										
+<!-- 12492 UPPER TAB START-->
+
+<!-- 12492 UPPER TAB END-->
+										
+<!-- 11037 UPPER TAB START-->
+
+<!-- 11037 UPPER TAB END-->
+										
+    <!--END-->
+</div>
+	
+
+
+
+
+								
+
+
+
+
+
+
+
+<link href="/css/co/na/ntt.css" rel="stylesheet">					
+<link href="/css/com/jquery/jquery-confirm.min.css" rel="stylesheet">
+<script src="/js/jquery-confirm.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" media="all">
+
+<!-- 드래그 방지 추가 스크립트 -->
+
+
+
+<script src="/js/fileUpload.js"></script>
+
+<script>
+$(document).ready(function() {
+	 var noticeUseAt = "N";
+	 if ( noticeUseAt == "Y") {
+			$(".confmUseDt").hide();
+	 } else {
+		 $(".confmUseDt").show();
+	 }
+});
+
+
+function fileView(fileKey){
+	var forms = document.nttViewForm;
+	var formData = new FormData($('#nttViewForm')[0]);
+	var htmlDocTransView = window.open("about:blank","docTransName","");
+
+	$('#fileKey').val(fileKey); 
+	
+	$('#nttViewForm').ajaxSubmit({
+		formData : formData,
+        url: "/common/nttFileView.do",
+        dataType: "json",
+        async: true,
+        success: function(responseText, statusText){
+        	successView(responseText);
+        }
+    });
+	
+	function successView(result) {
+		if(result.resultAt == "N") {
+			alert("유효하지 않은 요청입니다.");
+		} else if(result.resultAt == "E") {
+			alert("존재하지 않는 파일입니다.");
+		} else if(result.resultAt == "F") {
+			alert("문서 Type만 바로보기를 할 수 있습니다.");
+		} else if(result.resultAt == "2") {
+			alert("변환을 지원하지 않는 파일입니다.");
+		} else if(result.resultAt == "3") {
+			alert("암호화된 파일입니다.");
+		} else if(result.resultAt == "0") {
+
+			forms.method="post";
+			forms.action="/viewer/skin/doc.html?fn="+fileKey+"&rs=/viewer/result/";
+			forms.target="docTransName";
+			forms.submit();				
+		} else if(result.resultAt != "0") {
+			// 오류 코드가 많은데 모두 알려줄 수는 없음. 대표적인 것만 알려줌
+			alert("바로보기를 지원하지 않는 파일입니다.");
+		}
+	}
+}
+
+
+	$(function(){
+		$('#selectCopy').change(function(){
+			//jw
+		})
+		
+		//html5 지원 여부 파악
+		var formData = "";
+		if (fn_html5Support() && fn_FormDataSupport("answerForm")) {
+			// 자바 스크립트 in -> 명시된 속성이 명시된 객체에 존재하면 true 반환, 속성 in 객체명
+			formData = new FormData($("#answerForm")[0]);
+		}else{
+			formData = $("#answerForm").serialize();
+		}
+		
+		
+		$('.nttUpdatePage').click(function(){
+			
+			
+			
+			
+			
+			
+						
+			$('#nttParamForm').prepend('<input type="hidden" name="nttSn" id="nttSnParam" value="1430805" />');
+			$("#nttParamForm").attr("action", "/haksa/na/ntt/updateNttPage.do?mi=18769&bbsId=4404").submit();
+			
+		});
+		
+		
+		
+		$('.nttUpdatePage2').click(function(){
+			$('#nttParamForm').prepend('<input type="hidden" name="nttSn" id="nttSnParam" value="1430805" />');
+			$("#nttParamForm").attr("action", "/haksa/na/ntt/updateNttPage.do?mi=18769&bbsId=4404").submit();
+		});
+		
+		
+		
+		
+		$('.nttReplyPage').click(function(){
+			$('#nttParamForm [name="upperNttSn"]').remove();
+			$('#nttParamForm').prepend('<input type="hidden" name="upperNttSn" id="nttSnParam" value="1430805" />');
+			$('#nttParamForm').attr('action','/haksa/na/ntt/insertNttPage.do?mi=18769&bbsId=4404').submit();
+		});
+		
+		var col1 = $("#aditCol1").val();
+		var col2 = $("#aditCol2").val();
+		var col3 = $("#aditCol3").val();
+		
+		$('.nttReplyPage2').click(function(){
+			$('#nttParamForm [name="upperNttSn"]').remove();
+			$('#nttParamForm').prepend('<input type="hidden" name="upperNttSn" id="nttSnParam" value="1430805" />');
+			$('#nttParamForm').attr('action','/haksa/na/ntt/insertNttPage.do?mi=18769&bbsId=4404&aditCol1='+col1+'&aditCol2='+col2+'&aditCol3='+col3).submit();
+		});
+		
+		var insertDupCancelCnt = 0;
+		$('.insertAnswer').click(function(){
+			if($("#answerCn").valueEmpty()) {
+	            alert("내용을 입력해주세요.");
+	            $("#answerCn").focus();
+	            return false;
+	        }
+			/* if(!confirm('댓글을 등록하시겠습니까?')){
+				return;
+			} */
+			if (insertDupCancelCnt > 0) {
+				return false;
+			}
+			insertDupCancelCnt++;
+			$("#answerForm").ajaxSubmit({
+				formData : formData,
+	            url: "/haksa/na/ntt/insertNttAnswer.do",
+	            dataType: "json",
+	            async: true,
+	            success: function(responseText, statusText){
+	            	if (responseText.resultAt == 'Y') {
+		            	/* alert('댓글이 등록되었습니다.'); */
+		            	//완료 페이지 이동
+						
+						nttView($("input[name='nttSn']").val());
+					} else if (responseText.resultAt == 'L') {
+		            	alert('로그인또는 본인인증 후 댓글 등록이 가능합니다.');
+		            	//완료 페이지 이동
+		            	location.href="/"+haksa+"/lo/login/loginPage.do";
+					} else {
+						alert('댓글이 등록 권한이 없습니다.');
+					}
+	            	
+	            }
+	        });
+		});
+		var updateDupCancelCnt = 0;
+		$(document).on("click",".updateAnswer",function(){
+			if($('#answerCn'+$(this).attr('data-id')).valueEmpty()) {
+	            alert("내용을 입력해주세요.");
+	            $('#answerCn'+$(this).attr('data-id')).focus();
+	            return false;
+	        }
+			/* if(!confirm('댓글을 수정하시겠습니까?')){
+				return;
+			} */
+			$('#answerSn').val($(this).attr('data-id'));
+			$('#updtAnswerCn').val($('#answerCn'+$(this).attr('data-id')).val());
+			if (updateDupCancelCnt > 0) {
+				return false;
+			}
+			updateDupCancelCnt++;
+			$("#answerForm").ajaxSubmit({
+				formData : formData,
+	            url: "/haksa/na/ntt/updateNttAnswer.do",
+	            dataType: "json",
+	            async: true,
+	            success: function(responseText, statusText){
+	            	if(responseText.resultAt == 'X'){
+	            		alert('댓글을 수정할 권한이 없습니다.');
+	            	} else {
+	            		/* alert('댓글이 수정되었습니다.'); */
+	            		//완료 페이지 이동
+						
+						nttView($("input[name='nttSn']").val());
+	            	}
+	            }
+	        });
+		});
+		
+		$(document).on("click",".answerCancel",function(){
+			$('#replyUpdt'+$(this).attr('data-id')).hide();
+			$('#replyView'+$(this).attr('data-id')).show();
+		});
+		
+		$(document).on("click",".answerUpadteMode",function(){
+			$('#replyView'+$(this).attr('data-id')).hide();
+			$('#replyUpdt'+$(this).attr('data-id')).show();
+		});
+		
+		var deleteDupCancelCnt = 0;
+		$('.answerDelete').click(function(){
+			/* if(!confirm('댓글을 삭제하시겠습니까?')){
+				return;
+			} */
+			$('#answerSn').val($(this).attr('data-id'));
+			if (deleteDupCancelCnt > 0) {
+				return false;
+			}
+			deleteDupCancelCnt++;
+			$("#answerForm").ajaxSubmit({
+				formData : formData,
+	            url: "/haksa/na/ntt/deleteNttAnswer.do",
+	            dataType: "json",
+	            async: true,
+	            success: function(responseText, statusText){
+	            	/* alert('댓글이 삭제되었습니다.'); */
+	            	
+	            	//완료 페이지 이동
+					
+					nttView($("input[name='nttSn']").val());
+	            }
+	        });
+		})
+		
+		$('.nttReport').click(function(){
+		
+			var memberId = $(this).attr("data-meberId");
+		
+			if(memberId != "" ){
+			
+					$.ajax({
+								type : "post",
+								url : "/haksa/na/nttpopup/reportNttPopupPage.do",
+								data : {},
+								success : function(data) {
+									$.confirm({
+										
+										title : '<h3 class="tit1">신고사유를 입력해주세요.<h3>',                                  
+										boxWidth : '448px',
+										useBootstrap : false,
+										content : data,
+						 				buttons : {
+											confirm : {
+												text : '사유입력',
+												btnClass : 'btn-red btnDelete',
+												action : function () {
+													if(!$('input:radio[name=reportResnTy]').is(':checked')){
+														alert("신고사유를 선택해주세요.");										
+													}
+													if($('input:radio[name=reportResnTy]:checked').val() != '기타'){
+														$("#reportResn").val($('input:radio[name=reportResnTy]:checked').val());												
+													}else{
+														$("#reportResn").val($('input:radio[name=reportResnTy]:checked').val()+' - '+ $("#reportResnIn").val());												
+													}
+													reportAction();
+													return false;
+										        }
+											},			
+											close : {
+												text: '취소',
+												btnClass: 'btn-dark popClose'
+											}
+										},
+									})						
+								},
+								error : function(data) {
+									alert("오류가 발생하였습니다.\n관리자에게 문의하세요.1");
+								}		
+						});		
+			}else{
+				alert("로그인 이후에 신고가 가능합니다.");
+				location.href='/portal/lo/login/ssoPage.do?mi=13566';
+			}
+		})
+		
+		
+		function reportAction(){
+			if(!confirm('게시물을 신고하시겠습니까?')){
+				return;
+			}
+			
+			//html지원여부파악
+			var formData = "";
+			if (fn_html5Support() && fn_FormDataSupport("nttViewForm")) {
+				// 자바 스크립트 in -> 명시된 속성이 명시된 객체에 존재하면 true 반환, 속성 in 객체명
+				formData = new FormData($("#nttViewForm")[0]);
+			}else{
+				formData = $("#nttViewForm").serialize();
+			}
+			
+			if (fn_html5Support() && fn_FormDataSupport("nttViewForm")) {
+				var makers = '';
+				$("#nttViewForm").ajaxSubmit({
+					formData : formData,
+		            url: "/haksa/na/ntt/reportNttInfo.do",
+		            dataType: "json",
+		            async: true,
+		            success: function(responseText, statusText){
+		            	
+		            	markers = JSON.stringify(responseText);
+		            	var resultAtType = markers.substring(13,14);
+		            	if(resultAtType == 'P'){
+		            		alert('이미 신고한 게시글입니다.');
+		            	}else{
+		            		alert('게시물이 신고되었습니다.');
+		            	}
+		            	
+		            	//완료 페이지 이동
+						
+			 			nttList();
+		            	
+		            },error : function(responseText, statusText){
+						alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+					} 
+		        });
+				
+			}else{
+				var makers = '';
+				$("#nttViewForm").ajaxForm({
+					formData : formData,
+		            url: "/haksa/na/ntt/reportNttInfo.do",
+		            dataType: "json",
+		            async: true,
+		             success : function(responseText, statusText){
+		            	 markers = JSON.stringify(responseText);
+			            	var resultAtType = markers.substring(13,14);
+			            	if(resultAtType == 'P'){
+			            		alert('이미 신고한 게시글입니다.');
+			            	}else{
+			            		alert('게시물이 신고되었습니다.');
+			            	}
+
+			             //완료 페이지 이동
+						 
+			 			 nttList();
+		            },error : function(responseText, statusText){
+						 alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");	
+					}
+		            
+				}).submit();
+			}
+		}
+		
+		
+		$('.nttDelete').click(function(){
+		
+				
+					
+			if(!confirm('게시물을 삭제하시겠습니까?')){
+				return;
+			}
+			//html지원여부파악
+			var formData = "";
+			if (fn_html5Support() && fn_FormDataSupport("nttViewForm")) {
+				// 자바 스크립트 in -> 명시된 속성이 명시된 객체에 존재하면 true 반환, 속성 in 객체명
+				formData = new FormData($("#nttViewForm")[0]);
+			}else{
+				formData = $("#nttViewForm").serialize();
+			}
+			
+			if (fn_html5Support() && fn_FormDataSupport("nttViewForm")) {
+				$("#nttViewForm").ajaxSubmit({
+					formData : formData,
+		            url: "/haksa/na/ntt/deleteNttInfo.do",
+		            dataType: "json",
+		            async: true,
+		            success: function(responseText, statusText){
+		            	alert('게시물이 삭제되었습니다.');
+		            	
+		            	//완료 페이지 이동
+						
+			 			nttList();
+		            	
+		            },error : function(responseText, statusText){
+						alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+					} 
+		        });
+			}else{
+				$("#nttViewForm").ajaxForm({
+					formData : formData,
+		            url: "/haksa/na/ntt/deleteNttInfo.do",
+		            dataType: "json",
+		            async: true,
+		             success : function(responseText, statusText){
+		            	 alert('게시물이 삭제되었습니다.');
+
+			             //완료 페이지 이동
+						
+						nttList();
+		            },error : function(responseText, statusText){
+						 alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");	
+					}
+		            
+				}).submit();
+			}
+		
+		})
+		
+		// 게시물 이동
+		$(".btnMove").click(function(){
+			
+			if (!confirm("게시물을 이동하시겠습니까?"))
+				return false;
+			
+			var bbsId = $("#selectMove").val();
+			var oriBbsId = $("input[name='bbsId']").val();
+			var nttSn = $("input[name='nttSn']").val();
+			
+			$.ajax({
+				type : "post",
+				url : "/haksa/na/ntt/updateBbsId.do",
+				data : { 
+					bbsId : bbsId,
+					oriBbsId : oriBbsId,
+					nttSn : nttSn,
+					mi : $("#nowMenuId").val()
+				},
+				dataType : "json",
+				success : function(data) {
+					if (data == 1) {
+						alert("게시물이 이동되었습니다.");
+					}
+					
+					//완료 페이지 이동
+					
+			 		nttList();
+				},
+				error : function(data) {
+					alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+				}		
+			});				
+		});
+		
+	
+		
+		// 게시물 복사
+		$("#btnCopy").click(function(){
+			if($("#selectCopy").val() == "") {
+				alert("대상 게시판을 선택하세요");
+				$("#selectCopy").focus();
+				return;
+			}
+			
+			if (!confirm("게시물을 복사하시겠습니까?"))
+				return false;
+			
+			var newbbsId = "";
+			var bbsIdString = $("#selectCopy").val();
+		    var bbsIdSplit = bbsIdString.split('/');
+		    var fileSysId = "";
+		    for ( var i in bbsIdSplit ) {
+		    	newbbsId = bbsIdSplit[0];
+		    	fileSysId = bbsIdSplit[1];
+		    }
+			var oriBbsId = '4404';
+			var sysId = $("input[name='sysId']").val();
+			
+			$("#nttViewForm").ajaxSubmit({
+				type : "post",
+				url : "/haksa/na/ntt/copyBbsId.do",
+				data : { 
+					newbbsId : newbbsId,
+					oriBbsId : oriBbsId,
+					sysId : sysId,
+					fileSysId : fileSysId
+				},
+				dataType : "json",
+				success : function(data) {
+					if (data.resultAt == "Y") {	
+						//여기서 xfree업로더에 넣어준다.
+						/* wFileUpload.setUploadParam("sysId", fileSysId)
+						wFileUpload.setUploadParam("bbsId", data.bbsId)
+						wFileUpload.setUploadParam("nttSn", data.nttSn)
+						bbsId = data.bbsId;
+						nttSn = data.nttSn;
+						histGroupSeq = data.histGroupSeq;
+						wFileUpload.fileSubmit(); */
+						
+						bbsId = data.bbsId;
+						nttSn = data.nttSn;
+						histGroupSeq = data.histGroupSeq;
+						
+						//하단 fileList만 대체해주면 된다.
+						var data = new Array();
+					            
+					    data.push({fileName: "1. 제4회_AI.SW_경진대회_참가_신청서.hwp"
+					                    , savePath : "/upload/helpcenter/na/bbs_7374/ntt_1430718/doc_424aae37-9b07-438d-ba1a-1cd33ad012501789030647902.hwp"
+					                    , fileReName : "1. 제4회_AI.SW_경진대회_참가_신청서.hwp"
+					                    ,fileSize : "80384"});
+					            
+					    data.push({fileName: "2. 공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집.hwp"
+					                    , savePath : "/upload/helpcenter/na/bbs_7374/ntt_1430718/doc_e77d37b5-2ca1-4e4d-83c6-85da664b889d1789030647963.hwp"
+					                    , fileReName : "2. 공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집.hwp"
+					                    ,fileSize : "90112"});
+					            
+					    data.push({fileName: "최종_경진대회_프로그램포스터.png"
+					                    , savePath : "/upload/portal/na/bbs_4404/ntt_1430805/img_e6cbc504-7ab7-456b-a003-d1cfcb82e6391789537770349.png"
+					                    , fileReName : "최종_경진대회_프로그램포스터.png"
+					                    ,fileSize : "1181124"});
+					    
+					    var fileList = "";
+					    if(data.length > 0){
+						    for (var i = 0; i < data.length; i++) {
+								fileList += data[i].fileName + '|' + data[i].savePath + '|' + data[i].fileReName + '|' + data[i].fileSize;
+								if (i != data.length - 1) {
+									fileList += '||';
+						        }
+							}
+							
+							$.ajax({
+								type : "POST",
+								url: "/haksa/na/ntt/insertNttFilexFree.do",
+								data : {
+									fileData : fileList,
+									bbsId : bbsId,
+									nttSn : nttSn,
+									histGroupSeq : histGroupSeq,
+									bbsTy : $("#bbsTy").val(),
+									sysId : fileSysId,
+									copy : 'Y'
+								},
+								dataType : "json",
+								success : function(data) {
+									if ( data.resultAt == 'Y' ) {
+										if(failCnt > 0) {
+											alert("파일 업로드 중 오류가 발생하였습니다.\n파일 업로드 오류 수 : " + failCnt);
+										} else {
+											alert("수정이 완료되었습니다.");
+										}
+										goParamPage($("input[name='nttSn']").val(), 'nttSn', '/haksa/na/ntt/selectNttInfo.do');
+										nttView($("input[name='nttSn']").val());
+									} else {
+										alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+										goParamPage($("input[name='nttSn']").val(), 'nttSn', '/haksa/na/ntt/selectNttInfo.do');
+										nttView($("input[name='nttSn']").val());
+									}
+								},
+								error : function(data) {
+									alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+									goParamPage($("input[name='nttSn']").val(), 'nttSn', '/haksa/na/ntt/selectNttInfo.do');
+									nttView($("input[name='nttSn']").val());
+								}
+							}); 
+					    }
+						
+						alert("게시물이 복사되었습니다.");
+					} else {
+						alert(data.msg);
+					}
+					
+					//완료 페이지 이동
+					
+			 		//nttList();
+				},
+				error : function(data) {
+					alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+				}	
+	        });
+					
+		});
+		
+		// 게시물 승인
+		$('.confmAtBtn').click(function(){
+		    var confmTy = $(this).attr("title"); // 승인 or 취소
+		    var confmAt = $(this).attr("data-id");
+		    
+		    // 현재 보고 있는(원본) 게시물의 정보
+		    var nttSn = $("input[name=nttSn]").val();
+		    var bbsId = $("input[name=bbsId]").val();
+		    
+		    if(!confirm("게시물을 "+confmTy+"하시겠습니까?"))       
+		        return false;
+		
+		    // [1] 공통으로 사용할 승인 처리 함수 정의 (마지막에 실행됨)
+		    var fn_procApproval = function() {
+		        $.ajax({
+		            type : "post",
+		            url : "/haksa/na/ntt/updateNttConfmAt.do",
+		            data : {
+		                confmAt : confmAt,
+		                nttSn : nttSn,
+		                bbsId : bbsId
+		            },
+		            dataType : "json",
+		            success : function(res){ // 변수명 data -> res 로 변경 (혼동 방지)
+		                if (res > 0) {
+		                    alert("처리되었습니다.");
+		                    // 목록 함수가 있다면 호출, 없다면 페이지 이동
+		                    if(typeof nttList === 'function') {
+		                        nttList(); 
+		                    } else {
+		                        location.reload(); // 혹은 목록 페이지로 이동
+		                    }
+		                } else {
+		                    alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+		                }
+		            },
+		            error : function(err){
+		                alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+		            }           
+		        });
+		    };
+		
+		    // [2] 조건 확인: "승인" 이면서 "7374 게시판" 인 경우 -> 복사 후 승인
+		    if(confmTy == "승인" && bbsId == '7374'){
+		        
+		        // 복사 로직 시작
+		        var newbbsId = "";
+		        var fileSysId = ""; // [수정] 변수 선언 추가
+		        var bbsIdString = $("#aditCol18").val(); // hidden 값 (예: "1731")
+		        
+		        // 유효성 체크
+		        if(!bbsIdString) {
+		            alert("복사할 게시판 정보(aditCol18)가 없습니다.");
+		            return false;
+		        }
+		
+		        
+             	newbbsId = bbsIdString;
+             	if(newbbsId == "2932" || newbbsId == "2933"){
+             		fileSysId = "kor";
+             	}
+             	if(newbbsId == "4404"){
+             		fileSysId = "portal";
+             	}
+
+		        var oriBbsId = '4404';
+		        var sysId = $("input[name='sysId']").val();
+		        
+		        // 2-1. 게시물 내용 복사 AJAX
+		        $("#nttViewForm").ajaxSubmit({
+		            type : "post",
+		            url : "/haksa/na/ntt/copyBbsId.do",
+		            data : { 
+		                newbbsId : newbbsId,
+		                oriBbsId : oriBbsId,
+		                sysId : sysId,
+		                fileSysId : fileSysId
+		            },
+		            dataType : "json",
+		            success : function(copyData) { // 변수명 data -> copyData 변경
+		                if (copyData.resultAt == "Y") { 
+		                    // 복사된 새 게시물의 정보
+		                    var targetBbsId = copyData.bbsId;
+		                    var targetNttSn = copyData.nttSn;
+		                    var targetHistGroupSeq = copyData.histGroupSeq;
+		                    
+		                    // 2-2. 파일 리스트 생성
+		                    // [수정] 변수명 data -> fileDataArr 변경 (충돌 방지)
+		                    var fileDataArr = new Array(); 
+		                            
+		                        fileDataArr.push({
+		                            fileName: "1. 제4회_AI.SW_경진대회_참가_신청서.hwp",
+		                            savePath : "/upload/helpcenter/na/bbs_7374/ntt_1430718/doc_424aae37-9b07-438d-ba1a-1cd33ad012501789030647902.hwp",
+		                            fileReName : "1. 제4회_AI.SW_경진대회_참가_신청서.hwp",
+		                            fileSize : "80384"
+		                        });
+		                            
+		                        fileDataArr.push({
+		                            fileName: "2. 공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집.hwp",
+		                            savePath : "/upload/helpcenter/na/bbs_7374/ntt_1430718/doc_e77d37b5-2ca1-4e4d-83c6-85da664b889d1789030647963.hwp",
+		                            fileReName : "2. 공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집.hwp",
+		                            fileSize : "90112"
+		                        });
+		                            
+		                        fileDataArr.push({
+		                            fileName: "최종_경진대회_프로그램포스터.png",
+		                            savePath : "/upload/portal/na/bbs_4404/ntt_1430805/img_e6cbc504-7ab7-456b-a003-d1cfcb82e6391789537770349.png",
+		                            fileReName : "최종_경진대회_프로그램포스터.png",
+		                            fileSize : "1181124"
+		                        });
+		                    
+		                    
+		                    var fileListStr = "";
+		                    if(fileDataArr.length > 0){
+		                        for (var i = 0; i < fileDataArr.length; i++) {
+		                            fileListStr += fileDataArr[i].fileName + '|' + fileDataArr[i].savePath + '|' + fileDataArr[i].fileReName + '|' + fileDataArr[i].fileSize;
+		                            if (i != fileDataArr.length - 1) {
+		                                fileListStr += '||';
+		                            }
+		                        }
+		                        
+		                        // 2-3. 파일 복사 AJAX
+		                        $.ajax({
+		                            type : "POST",
+		                            url: "/haksa/na/ntt/insertNttFilexFree.do",
+		                            data : {
+		                                fileData : fileListStr,
+		                                bbsId : targetBbsId,
+		                                nttSn : targetNttSn,
+		                                histGroupSeq : targetHistGroupSeq,
+		                                bbsTy : $("#bbsTy").val(),
+		                                sysId : fileSysId,
+		                                copy : 'Y'
+		                            },
+		                            dataType : "json",
+		                            success : function(fileResult) {
+		                                if ( fileResult.resultAt == 'Y' ) {
+		                                    // [핵심] 파일 복사 성공 후 -> 승인 처리 함수 실행
+		                                    fn_procApproval(); 
+		                                } else {
+		                                    alert("파일 복사 중 오류가 발생했습니다. 승인 처리를 중단합니다.");
+		                                }
+		                            },
+		                            error : function(err) {
+		                                alert("파일 복사 시스템 오류");
+		                            }
+		                        }); 
+		                    } else {
+		                        // 파일이 없는 경우 바로 승인 처리
+		                        fn_procApproval();
+		                    }
+		                } else {
+		                    alert(copyData.msg); // 복사 실패 메시지
+		                }
+		            },
+		            error : function(xhr, status, error) {
+		                alert("복사 프로세스 오류 발생");
+		            }   
+		        });
+		
+		    } else {
+		        // [3] 일반적인 경우 (승인이 아니거나, 7374 게시판이 아님) -> 바로 승인/취소 처리
+		        fn_procApproval();
+		    }
+		});
+
+
+		
+		//220620 게시글 좋아요, 싫어요 기능 구현
+		// 해당 게시글 좋아요, 싫어요 참가한 이력이 있으면 표시하기 위한 호출 
+		$.ajax({
+			type : "post",
+			url : "/haksa/na/ntt/LikeHateRecCheck.do",
+			data : {
+				nttSn : "1430805",
+				bbsId : "4404"
+			},
+			success : function(data) {
+				var data = JSON.parse(data);
+				if (data.likeHateCheck == 'L') {
+					$('.like i').addClass('on');
+				} else if (data.likeHateCheck == 'H') {
+					$('.hate i').addClass('on');
+				}
+			},
+			error : function(data) {
+				alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+			}
+		});
+		
+		// 게시글 내용 상세보기 했을 시 좋아요와 싫어요 카운트를 가져오기위한 호출
+		$.ajax({
+			type : "post",
+			url : "/haksa/na/ntt/selectLikeHateCount.do",
+			data : {
+				nttSn : "1430805"
+			},
+			success : function(data) {
+				var data = JSON.parse(data);
+				if (data.resultAt == 'Y') {
+					$('.like .num').text(data.likeCount);
+					$('.hate .num').text(data.hateCount);
+				}
+			},
+			error : function(data) {
+				alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+			}
+		});
+		
+		$('.like i').on('click', function(){
+			// 이미 좋아요를 표시한 후 싫어요를 눌렀을때 동작
+			if ($('.hate i').hasClass('on')) {
+				alert('이미 싫어요를 표시하셨습니다.\n싫어요를 취소 후 눌러주세요.');
+				return;
+			}
+			// 이미 좋아요를 표시한 후 한번 더 좋아요를 눌렀을때 동작
+			if ($('.like i').hasClass('on')) {
+				alert('좋아요를 취소합니다.');
+				// 좋아요 카운트를 1 지우기 위한 호출
+				$.ajax({
+					type : "post",
+					url : "/haksa/na/ntt/deleteLikeAndHate.do",
+					data : {
+						"bbsId" : "4404",
+						"nttSn" : "1430805",
+						"likeAt" : "L"
+					},
+					success : function(data) {
+					$('.like i').removeClass('on');
+						// 좋아요 취소한 후 카운트 재호출 
+						$.ajax({
+							type : "post",
+							url : "/haksa/na/ntt/selectLikeHateCount.do",
+							data : {
+								nttSn : "1430805"
+							},
+							success : function(data) {
+								var data = JSON.parse(data);
+								if (data.resultAt == 'Y') {
+									$('.like .num').text(data.likeCount);
+									$('.hate .num').text(data.hateCount);
+								}
+							},
+							error : function(data) {
+								alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+							}
+						});
+					},
+					error : function(data) {
+						alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+					}
+				});
+				
+			} else {
+				// 좋아요 누를때 좋아요 카운트를 1 증가시키기 위한 호출
+				$.ajax({
+					type : "post",
+					url : "/haksa/na/ntt/insertLikeAndHate.do",
+					data : {
+						"bbsId" : "4404",
+						"nttSn" : "1430805",
+						"likeAt" : "L"
+					},
+					success : function(data) {
+						// 좋아요 표시한 후 카운트 재호출 
+						$.ajax({
+							type : "post",
+							url : "/haksa/na/ntt/selectLikeHateCount.do",
+							data : {
+								nttSn : "1430805"
+							},
+							success : function(data) {
+								var data = JSON.parse(data);
+								if (data.resultAt == 'Y') {
+									$('.like .num').text(data.likeCount);
+									$('.hate .num').text(data.hateCount);
+								}
+							},
+							error : function(data) {
+								alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+							}
+						});
+					},
+					error : function(data) {
+						alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+					}
+				});
+				
+				$('.like i').addClass('on');
+			}
+		});
+		
+		$('.hate i').on('click', function(){
+			// 이미 싫어요를 표시한 후 좋아요를 눌렀을때 동작
+			if ($('.like i').hasClass('on')) {
+				alert('이미 좋아요를 표시하셨습니다.\n좋아요를 취소 후 눌러주세요.');
+				return;
+			}
+			// 이미 싫어요를 표시한 후 한번 더 싫어요를 눌렀을때 동작
+			if ($('.hate i').hasClass('on')) {
+				alert('싫어요를 취소합니다.');
+				// 싫어요 카운트를 1 지우기 위한 호출
+				$.ajax({
+					type : "post",
+					url : "/haksa/na/ntt/deleteLikeAndHate.do",
+					data : {
+						"bbsId" : "4404",
+						"nttSn" : "1430805",
+						"likeAt" : "H"
+					},
+					success : function(data) {
+					$('.hate i').removeClass('on');
+						// 싫어요 취소한 후 카운트 재호출
+						$.ajax({
+							type : "post",
+							url : "/haksa/na/ntt/selectLikeHateCount.do",
+							data : {
+								nttSn : "1430805"
+							},
+							success : function(data) {
+								var data = JSON.parse(data);
+								if (data.resultAt == 'Y') {
+									$('.like .num').text(data.likeCount);
+									$('.hate .num').text(data.hateCount);
+								}
+							},
+							error : function(data) {
+								alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+							}
+						});
+					},
+					error : function(data) {
+						alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+					}
+				});
+			} else {
+				// 싫어요 누를때 싫어요 카운트를 1 증가시키기 위한 호출
+				$.ajax({
+					type : "post",
+					url : "/haksa/na/ntt/insertLikeAndHate.do",
+					data : {
+						"bbsId" : "4404",
+						"nttSn" : "1430805",
+						"likeAt" : "H"
+					},
+					success : function(data) {
+						// 싫어요 표시한 후 카운트 재호출 
+						$.ajax({
+							type : "post",
+							url : "/haksa/na/ntt/selectLikeHateCount.do",
+							data : {
+								nttSn : "1430805"
+							},
+							success : function(data) {
+								var data = JSON.parse(data);
+								if (data.resultAt == 'Y') {
+									$('.like .num').text(data.likeCount);
+									$('.hate .num').text(data.hateCount);
+								}
+							},
+							error : function(data) {
+								alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+							}
+						});
+					},
+					error : function(data) {
+						alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+					}
+				});
+				
+				$('.hate i').addClass('on');
+			}
+		});
+		
+	});
+	
+	function fn_saveSuccess(result) {
+		if(result.resultAt == "Y")
+		{
+			
+			//완료 페이지 이동
+			
+			nttView($("input[name='nttSn']").val());
+		}
+	}
+	
+	function updateNttSttus(act) {
+		var returnMsg = "";
+		
+		if (act == "R") {
+			returnMsg = "접수되었습니다.";
+			
+			if (!confirm("접수하시겠습니까?")) {
+				return false;
+			}
+		} 
+		else if (act == "H") {
+			returnMsg = "보류되었습니다.";
+			
+			if (!confirm("보류하시겠습니까?")) {
+				return false;
+			}
+		} 
+		else if (act == "C") {
+			returnMsg = "완료되었습니다.";
+			
+			if (!confirm("완료하시겠습니까?")) {
+				return false;
+			}
+		} else if (act == "tempR") {
+			
+			
+				act = "R"
+			
+			returnMsg = "등록되었습니다.";
+				
+			if (!confirm("등록하시겠습니까?")) {
+				return false;
+			}
+		} else if (act == "tempT") {
+			act = "T"
+			returnMsg = "임시저장되었습니다.";
+			
+			if (!confirm("임시저장하시겠습니까?")) {
+				return false;
+			}
+		} else {
+			alert("올바른 접근이 아닙니다.");
+			return false;
+		}
+		
+		$("input[name='nttSttus']").val(act);
+
+		$.ajax({
+			type : "post",
+			url : "/haksa/na/ntt/updateNttSttus.do",
+			data : $("#nttViewForm").serialize(),
+			dataType : "json",
+			success : function(data){
+				if (data > 0) {
+					alert(returnMsg);
+				} else {
+					alert("실패하였습니다.");
+				}
+				//완료 페이지 이동
+				
+				nttView($("input[name='nttSn']").val());
+			},
+			error : function(data){
+				alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+			}			
+		});
+	}	
+	
+</script>
+
+
+				
+								
+				
+								<form name="nttViewForm" id="nttViewForm" method="post" >
+								<input type="hidden" name="mi" value="18769"/>
+								<input type="hidden" name="bbsId" value="4404"/>
+								<input type="hidden" name="bbsPrpos" value="HOMEPAGE"/>
+								<input type="hidden" name="bbsTy" id="bbsTy" value="NORMAL" />
+								<input type="hidden" name="nttSn" value="1430805" />
+								<input type="hidden" name="nttSttus" value=""/>
+								<input type="hidden" name="fileKey" id="fileKey"/>
+								<input type="hidden" name="reportResn" id="reportResn"/> 
+						
+								<input type="hidden" name="HmpgId" value=""/>
+					
+								
+								<input type="hidden" name="replyAt" value="" />
+								
+										
+								
+								
+									<div class="BD_table scroll_gr">
+										<table>
+											<caption>프로그램 모집게시글 상세보기</caption>
+											<colgroup>
+												<col style="width: 15%;">
+												<col style="width: 35%;">
+												<col style="width: 15%;">
+												<col style="width: 35%;">
+											</colgroup>
+											<tbody>
+											
+												
+												
+												
+													
+												
+													
+												<tr>
+													<th scope="col" colspan="4" class="title">[ANCHOR사업단] 2026 경남 AI·SW 경진대회 국립창원대 대학생 참가자 모집</th>
+												</tr>
+													
+												
+													
+												
+													
+												
+													
+												
+													
+												
+													
+												
+													
+												
+													
+												
+												
+												
+													
+													<tr>
+														<th scope="row">게시자</th>
+														<td>
+															<!-- menuAuthAt 관리자 권한이 있을 시 Y값이 들어간다. 본인글이거나 관리자일 경우 작성자가 보이도록 수정 -->
+															
+																
+																김**
+															
+														</td>
+														<th scope="row">등록일</th>
+														<td>2026. 9. 11 09:15</td>
+													</tr>
+													
+													
+												
+												
+												
+												
+													
+												
+												
+													
+												
+												
+													
+												
+												
+																										
+												
+												
+												
+													
+														
+														
+														
+															<tr>																							
+																<th scope="row"><label for="nttSj">부서</label></th>
+																<td colspan="3">
+															
+																
+														
+													
+												
+													
+													
+													
+													
+																										
+													
+													
+													
+													
+													
+													
+													
+														
+															
+															
+																
+																
+																	ANCHOR 사업단
+																
+																
+															
+														
+													
+													
+												
+												
+													
+														
+														
+																</td>
+															</tr>	
+														
+													
+												
+												
+												
+												
+																										
+												
+												
+												
+													
+														
+														
+														
+															<tr>																							
+																<th scope="row"><label for="nttSj">연락처</label></th>
+																<td colspan="3">
+															
+																
+														
+													
+												
+													
+													
+													
+													
+																										
+													
+													
+													
+													
+													
+													
+													
+														
+															
+															
+																
+																
+																	055-213-4518
+																
+																
+															
+														
+													
+													
+												
+												
+													
+														
+														
+																</td>
+															</tr>	
+														
+													
+												
+												
+												
+												
+													
+												
+												
+													
+												
+												
+													
+												
+												
+													
+												
+												
+												
+												
+												
+												
+											  	
+											  	
+																			
+																				
+												
+												
+											
+																						
+											
+										 
+											</tbody>
+										</table>
+									</div>
+									<!-- 웹접근성 일괄 대응을 위해서 이동 -->
+									<br/>
+									<div class="ntt_cn">
+										
+											
+											
+												
+													
+												
+													
+												
+													
+												
+													
+												
+													
+												
+													
+												<tr>
+													
+														<td class="ntt_cn" colspan="4">
+													
+													
+													
+														
+														
+															    <p style="line-height: 160%; text-align: left;"><br></p><p style="line-height: 160%; text-align: center; font-family: '맑은 고딕'; color: rgb(0, 0, 0);"><br></p><p style="line-height: 160%; text-align: center;"><span style="font-family:맑은 고딕; color:#989899; "><span style="font-size: 21.3333px;"><b><span style="color: rgb(0, 0, 0);">[ANCHOR사업단] 2026 경남 AI·SW 경진대회 국립창원대 대학생 참가자 모집</span></b></span></span></p><p style="line-height: 160%; font-family: '맑은 고딕'; color: rgb(152, 152, 153);"><br></p><p style="line-height: 160%; text-align: center;"><img src="/common/nttEditorImgView.do?imgKey=8443a80060e39a5f943287c72eb7d7ec" style=" width:723px; height:1024px; vertical-align:auto; border:none;" width="723" height="1024"><br></p><p style="line-height: 160%; text-align: center;"><br></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;"><b>&#xa0;ㅇ경진대회 주제 : AI를 활용한 업무혁신 및 사회문제 해결형 AI Agent 개발</b></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0;ㅇ경진대회 목적 : AI·SW 경진대회를 통한 AI 리터러시 소양 함양 및 AI Agent 실무 역량 강화 마련</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;"><br></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">1. 모집내용</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; ㅇ 참여대상: 국립창원대 학부 전 학년 재학생</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; <b><span style="color: rgb(0, 0, 255);">ㅇ 모집기간: 2026. 9.7(월) ~ 09.29.(화) 12:00 까지</span></b></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; ㅇ 모집인원 및 접수 : 00명(온라인 접수 : 팀은 3명이하로 구성)</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; ㅇ 선발방법: 국립창원대 앵커사업단 지정 주제 및 분야별 주제 선발&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0;<b> - 1순위(대학 지정주제): '우리 삶(L.AX)*과 산업(M.AX, P.AX)**을 바꾸는 똑똑한 AI Agent‘ 참여자 중 선발</b></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0;&#xa0; *Life AX, **Manufacturing AX, Physical AX</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0; - 2순위:분야별 주제 참여자 선발&#xa0; &#xa0;*분야별 주제는 포스터 참조&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;"><br></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0;ㅇ 참여자 AI Agent 실무 집중 교육 지원</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0; &#xa0; - 경진대회 참여자는 성과물 고도화를 위한 AI활용 집중교육 지원&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0; &#xa0; - 교육 내용 : AI Agent 개념 및 설계, API 연동 등 주제별 에이전트 완성&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0; &#xa0; &#xa0;* 교육내용은 경진대회 신청 분야 및 수요에 따라 변경 될 수 있음.&#xa0;&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0; &#xa0;&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">2. 세부 추진 일정</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; <b><span style="color: rgb(0, 0, 255);">ㅇ 경진대회 운영 설명회 및 교육 : 2026. 09.29.(화) , 15:00 ~</span></b></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;"><b><span style="color: rgb(0, 0, 255);">&#xa0; &#xa0; &#xa0;* 장소 : 추후 안내 (유트브 방송 예정)</span></b></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;"><b><span style="color: rgb(0, 0, 255);">&#xa0; &#xa0; &#xa0;</span></b><span style="color: rgb(0, 0, 0); font-family: '맑은 고딕'; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;"><b><span style="color: rgb(0, 0, 255);">*&#xa0;참가자에 한하여 경진대회 관련 </span><span style="color: rgb(0, 0, 255);">교육 예정(추후안내)</span></b></span></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; ㅇ 경진 대회 기간: 2026.9.29.(화) ~ 2026.10.6.(화)&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; ㅇ 평가 및 시상 : * 포스터 참조&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><br></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">3. 참여자 혜택&#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0;<b>ㅇ 앵커마일리지 비교과수료(단기): 시간당 1점 지급 1일 최대 8시간 인정(최대 50점 이내)</b></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;"><b>&#xa0;ㅇ 앵커마일리지 경진대회: 참가_5점 / 입상_10점&#xa0; / 장려상 이상_교외 20점 / 최우수상 이상_교외 30점</b></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0;</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">4. 문의:</span></span><span style="font-size: 16px;">&#xa0;앵커사업단 055-213-4518&#xa0;</span></p><p style="line-height: 160%; text-align: left;"><br></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;"><span style="color: rgb(0, 0, 255);">5. 신청방법: </span><b><span style="color: rgb(0, 0, 255);">첨부파일 신청서 </span></b><span style="color: rgb(0, 0, 255);">다운받아 작성하여 </span><b><span style="color: rgb(0, 0, 255);">참가신청 구글 폼</span></b><span style="color: rgb(0, 0, 255);">으로 </span><b><span style="color: rgb(0, 0, 255);">입력 및 업로드</span></b></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;"><br></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; ※ 자세한 내용은 경남ICT협회 <b><span style="color: rgb(0, 0, 255);">(</span><a href="https://www.gnict.org/" style="color: rgb(0, 0, 255);">https://www.gnict.org/</a><span style="color: rgb(0, 0, 255);">)</span></b> 참고</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;"><br></span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0;<b><span style="color: rgb(0, 0, 255);"> ※ 참가신청 <span style="color: rgb(0, 0, 255);">( </span></span><a href="https://forms.gle/RcxRqdWCXkfQTqYTA " style="color: rgb(0, 0, 255);">https://forms.gle/RcxRqdWCXkfQTqYTA </a></b><span style="color: rgb(0, 0, 255);">)</span></span></span></p><p style="line-height: 160%; text-align: left;"><br></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">● 첨부파일 : 1.&#xa0; 경진대회_참가신청서</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0;2.&#xa0; 공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집</span></span></p><p style="line-height: 160%; text-align: left;"><span style="font-family:맑은 고딕; "><span style="font-size: 16px;">&#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0; &#xa0;3.&#xa0;&#xa0;경진대회 포스터</span></span></p><p style="line-height: 160%; text-align: left;"><br></p><p style="text-align: left; font-size: 14pt; line-height: 160%;"><span style="font-size: 14pt;"><span style="font-size: 12pt;"><span style="font-family: '맑은 고딕';"><span style="color: rgb(0, 0, 0);"><img src="https://www.changwon.ac.kr/common/nttEditorImgView.do?imgKey=e0873eb2cf7a7b95a8f5bb75934602d2" width="2878" height="4179" style="color: rgb(0, 0, 0); font-family: '맑은 고딕'; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; width: 835px; height: 1209.34px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none;"><br></span></span></span></span></p><p style="text-align: left; font-size: 14pt; line-height: 160%;"><br></p>														
+														
+													
+													
+													</td>
+												</tr>
+													
+												
+													
+												
+													
+												
+													
+												
+												
+											
+											
+										
+									</div>
+									<!-- 전산원 이정현씨로 부터 첨부파일 가장 아래로 내려달라고 요청 대응  -->
+									<div class="BD_table" style="border-top:1px solid #9298af !important;">
+									<table>
+									
+										<caption>프로그램 모집 > [ANCHOR사업단] 2026 경남 AI·SW 경진대회 국립창원대 대학생 참가자 모집게시글 붙임자료</caption>
+										<tr>
+											<th scope="row">붙임자료</th>
+											<td colspan="3">
+												<ul class="file">
+												
+													<li>
+														<a href="/common/nttFileDownload.do?fileKey=0b133ca692169b607d2244df675ff78d">
+															1. 제4회_AI.SW_경진대회_참가_신청서.hwp&nbsp;
+															<strong>&nbsp;(다운로드 : 17회)</strong>
+														</a>
+														
+															<a href="javascript:void(0)" class="btn_view" onclick="fileView('0b133ca692169b607d2244df675ff78d');" title="새 창 열림">바로보기</a>
+														
+													</li>
+												
+													<li>
+														<a href="/common/nttFileDownload.do?fileKey=f98b403aa06129b6553c6ac3e6d4359f">
+															2. 공고문_2026년_제4회_경남_AI.SW_경진대회_참가자팀_모집.hwp&nbsp;
+															<strong>&nbsp;(다운로드 : 31회)</strong>
+														</a>
+														
+															<a href="javascript:void(0)" class="btn_view" onclick="fileView('f98b403aa06129b6553c6ac3e6d4359f');" title="새 창 열림">바로보기</a>
+														
+													</li>
+												
+													<li>
+														<a href="/common/nttFileDownload.do?fileKey=a954f57c4d44aa7088e036b126c9e965">
+															최종_경진대회_프로그램포스터.png&nbsp;
+															<strong>&nbsp;(다운로드 : 3회)</strong>
+														</a>
+														
+													</li>
+												
+												</ul>														
+											</td>
+										</tr>
+										
+										
+										
+										 
+											<!-- Added by SH.Ahn(2021.07.20) : 게시물 복사권한 추가 -->
+											
+											
+									</table>
+									</div>
+														
+									<!-- 버튼 -->
+				
+									<div class="ar mgt20">
+									
+									
+									
+									
+										
+									
+																				
+																		
+									
+									
+									
+									
+									
+									
+										
+											
+											
+												
+													
+												
+											
+										
+										
+										
+									
+									
+									
+										
+											
+											
+												
+											
+										
+										
+										
+										
+										
+									
+								
+									
+										
+											
+												
+												
+														
+																
+																
+																
+																
+														
+													
+											
+										
+									
+									
+										
+										<a href="javascript:void(0)" onclick="nttList();" title="목록" class="btn_gr">목록</a>
+									</div>
+									<!-- //버튼 -->
+									
+								</form>
+								
+								
+								
+								
+								<!-- 다음글 이전글 -->
+								
+									
+									<nav class="BD_listNavi">
+										<ul>
+											
+											<li class="next">
+													
+												<a href="javascript:void(0)" onclick="nttView('1431156');">
+													<strong>윗글</strong>
+													<span>[취업전략센터] 창대한 멘토단(9월) 진로탐색형-자산운용 분야 참가자 모집</span>
+												</a>
+											</li>
+											
+											
+											<li class="prev">
+												
+												<a href="javascript:void(0)" onclick="nttView('1430679');">
+													<strong>아랫글</strong>
+													<span>[취업전략센터] 창대한 멘토단(10월) 참가자 모집</span>
+												</a>
+											</li>
+											
+										</ul>
+									</nav>
+									
+								
+								<!-- //다음글 이전글 -->
+							 
+								
+									<!-- Added by SH.Ahn(2021.07.20) : 게시물 이동권한 추가 -->
+									
+										
+												
+								
+<form name="nttParamForm" id="nttParamForm" method="post" >
+	
+		 
+	<input type="hidden" name="manageAt" id="manageAtParam" value="N">
+		 
+	<input type="hidden" name="confmUseAt" id="confmUseAtParam" value="N">
+		 
+	<input type="hidden" name="annymtyUseAt" id="annymtyUseAtParam" value="Y">
+		 
+	<input type="hidden" name="menuTy" id="menuTyParam" value="BBS">
+		 
+	<input type="hidden" name="sysId" id="sysIdParam" value="haksa">
+		
+		 
+	<input type="hidden" name="menuId" id="menuIdParam" value="18769">
+		 
+	<input type="hidden" name="cntntsId" id="cntntsIdParam" value="4404">
+		
+		
+		
+</form>
+
+<script type="text/javascript">
+	function nttView(nttSn){
+ 		$("#miParam").remove();
+ 		$("#nttSnParam").remove();
+		$("#nttParamForm").attr('action', "/haksa/na/ntt/selectNttInfo.do?mi=18769&nttSn="+nttSn).submit();
+ 	}
+	
+ 	function nttList(){
+ 		
+	 		$("#bbsIdParam").remove();
+			$("#nttParamForm").attr("action", "/haksa/na/ntt/selectNttList.do?mi=18769&bbsId=4404").submit();
+ 		
+ 		
+ 	}
+ 	
+	//신청하기
+	function nttRequest(){
+		$('#nttParamForm').prepend('<input type="hidden" name="rqBbsId" id="rqBbsIdParam" value="4404" />');
+		$('#nttParamForm').prepend('<input type="hidden" name="rqNttSj" id="rqNttSjParam" value="[ANCHOR사업단] 2026 경남 AI·SW 경진대회 국립창원대 대학생 참가자 모집" />');
+		$('#nttParamForm').prepend('<input type="hidden" name="rqNttSn" id="rqNttSnParam" value="1430805" />');
+		$("#nttParamForm").attr('action', "/haksa/na/ntt/insertNttPage.do?mi=18769&bbsId=").submit();		
+	}
+</script>
+
+                            </div>						
+                        	<!-- //페이지뷰 : 서브콘텐츠 끝 --> 
+                        	<div id="charge-satisfy">
+								
+
+
+
+<link rel="stylesheet" href="/css/ap/dt/dta.css" media="all">
+
+
+								
+								
+													
+								
+									
+
+
+<link href="/css/web/common/csnst.css" rel="stylesheet" />
+<script>
+	$(document).on('click','.csnstSubmit',function(){
+		if(!confirm('만족도 조사에 참여하시겠습니까?')){
+			return false;
+		} else {
+			var data = $("#csnstForm").serialize();
+			
+			$.ajax({
+				type: "POST",
+				datatype:"json",
+				data: data,
+				url: "/haksa/cs/csnst/insertCsnstInfo.do",
+				success:function(result){
+					var retValue = result;
+					if(retValue == 1){
+						alert("만족도 참여를 완료하였습니다.");
+					} else if(retValue == 2){
+						alert("하루에 1회만 참여할 수 있습니다.");
+					} else {
+						alert("만족도 참여에 실패하였습니다.");
+					}
+				},
+				error:function(data) {   
+					alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+				}
+						
+			});
+		}
+	});
+</script>								
+								<!-- 만족도조사 -->
+						        <div class="satisfaction"> 
+						            <h3 class="hid">콘텐츠 만족도 조사</h3>
+						            <p class="question">  페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?  </p>
+						            <form name="csnstForm" id="csnstForm" method="post" >
+						                <fieldset>
+						                    <legend>만족도 조사</legend>
+						                    <input type="hidden" name="sysId" id="csnstSysId" value='haksa'>
+						                    <input type="hidden" name="menuId" id="csnstMenuId" value="18769">
+						                    <div class="satisfaction_list">
+						                        <div class="input_radio">
+						                            <input name="csnstScore" value="5" id="csnstScore1" type="radio" checked >
+						                            <label for="csnstScore1">매우만족</label>
+						                            <input name="csnstScore" value="4" id="csnstScore2" type="radio">
+						                            <label for="csnstScore2">만족</label>
+						                            <input name="csnstScore" value="3" id="csnstScore3" type="radio">
+						                            <label for="csnstScore3">보통</label>
+						                            <input name="csnstScore" value="2" id="csnstScore4" type="radio">
+						                            <label for="csnstScore4">불만족</label>
+						                            <input name="csnstScore" value="1" id="csnstScore5" type="radio">
+						                            <label for="csnstScore5">매우불만족</label>
+						                        </div>
+						                        <div class="opinion">
+						                            기타의견 : <input type="text" name="csnstOpinion" id="csnstOpinion" title="의견을 입력해주세요" placeholder="의견을 입력해 주세요" style="height:24px">
+						                            <input type="button" value="평가하기" class="csnstSubmit">
+						                        </div>
+						                    </div>
+						                </fieldset>
+						            </form>
+						        </div>
+						        <!-- //만족도조사 -->
+								
+							</div> 
+                        </div>
+                        
+                    </section>
+                    <!-- // sub 내용-->
+                </div>
+            </div>
+            <!-- //container -->
+            
+            <!-- footer -->
+   			
+
+
+
+            <footer>
+                <div class="area_footer">
+                    <div class="box_footer">
+						<!-- 사이트 링크 -->
+						
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+				
+				
+					
+						<div class="footer_link">
+							<ul>
+							
+							
+								
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+																
+									<li class="point"><a href="/kor/cm/cntnts/cntntsView.do?mi=11445&cntntsId=4305">개인정보처리방침</a></li>
+									<!--<li><a href="/kor/cm/cntnts/cntntsView.do?mi=11518&cntntsId=4414">이메일집단수집거부</a></li>-->
+									
+									
+																												
+													
+							</ul>
+						
+							
+								<div class="info_link">
+										
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+										
+									
+										
+																	
+											
+											
+																	
+								</div>	
+								
+							
+						
+						</div>		
+						<div class="footBtnWrap">
+							<div class="footBtn">
+								<button type="button">
+									<span>교내사이트 바로가기</span>
+								</button>									
+								<div>
+									<ul>
+										
+										
+											
+												<li>
+													<a href="https://portal.changwon.ac.kr/account/ssoHaksa.do" rel="noopener noreferrer" target = "_blank">학사정보</a>
+												</li>
+											
+										
+											
+												<li>
+													<a href="/haksa/main.do" rel="noopener noreferrer" target = "_blank">학사안내</a>
+												</li>
+											
+										
+											
+												<li>
+													<a href="https://dreamcatch.changwon.ac.kr" rel="noopener noreferrer" target = "_blank">드림캐치</a>
+												</li>
+											
+										
+											
+												<li>
+													<a href="https://edream.changwon.ac.kr/" rel="noopener noreferrer" target = "_blank">이뤄드림</a>
+												</li>
+											
+										
+											
+												<li>
+													<a href="http://lib.changwon.ac.kr/index.ax" rel="noopener noreferrer" target = "_blank">도서관</a>
+												</li>
+											
+										
+											
+												<li>
+													<a href="/dorm/main.do" rel="noopener noreferrer" target = "_blank">학생생활관</a>
+												</li>
+											
+										
+											
+												<li>
+													<a href="/kor/cm/cntnts/cntntsView.do?mi=10130&cntntsId=3310" rel="noopener noreferrer" target = "_blank">대학조직(전화번호안내)</a>
+												</li>
+											
+										
+											
+												<li>
+													<a href="https://ecampus.changwon.ac.kr/" rel="noopener noreferrer" target = "_blank">e-캠퍼스(LMS)</a>
+												</li>
+											
+										
+											
+												<li>
+													<a href="/kor/di/diView/dietView.do?mi=10197" rel="noopener noreferrer" target = "_blank">주간식단</a>
+												</li>
+											
+										
+																			
+									</ul>
+								</div>
+							</div>
+						</div>
+					
+					
+				
+						<!-- //사이트 링크 -->
+	 					
+
+
+
+
+
+
+	
+	
+	
+
+					
+						<div class="box_info">
+							<address>
+													
+							
+							
+								
+									<span>(우)51140 국립창원대학교 경남 창원시 의창구 창원대학로 20 국립창원대학교</span>
+									
+										
+									
+								
+							
+													
+																					
+							</address>
+					
+					
+							
+							<p class="copyright">Copyright (c) By Changwon National University. All rights reserved</p>
+						</div>
+						
+						
+					
+					
+                    </div>
+				</div>	
+				<div class="btn_top" id="moveTop"><a href="#none">MOVE TOP</a></div>
+            </footer>
+
+            <!-- // footer -->
+        </div>
+        <script type='text/javascript' src="/js/common/jquery.cookie.js"></script>  
+        <script type="text/javascript" src="/js/common/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="/js/common/slick.min.js"></script>
+        <script type="text/javascript" src="/js/common/F_common.js"></script>
+        <script type="text/javascript" src="/js/common/con_com.js"></script>
+        <script type="text/javascript" src="/js/template/00024/sub.js"></script>
+        <script type="text/javascript" src="/js/common-scroll.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+        
+        <!-- menuForm -->
+        
+
+
+<!--공통 메뉴 Form -->
+<form name="mainMenuForm" id="mainMenuForm" method="post">
+	<input type="hidden" name="mi" id="nowMenuId" value="18769" />
+	<input type="hidden" name="paramNm" id="paramNm" value=""/>
+	<input type="hidden" name="paramVal" id="paramVal" value=""/>
+</form>
+<!--/공통 메뉴 Form -->
+	
+<script>
+$(function() {
+	
+	//공통 submit
+	$(".menuFormBtn").click(function(){
+		var paramVal = $(this).attr('data-param'); 
+		var paramNm = $(this).attr('data-nm');
+		var paramUrl = $(this).attr('data-url');
+		$("#paramVal").val(paramVal);
+		$("#paramNm").val(paramNm);
+		setTrimMenuId();
+		$("#mainMenuForm").attr('action', paramUrl).submit();
+	});
+	
+});
+
+//파라미터 페이지 이동 
+function goParamPage( setVal, setNm, setUrl ) {
+	$("#paramNm").val(setNm);
+	$("#paramVal").val(setVal);
+	setTrimMenuId();
+	$("#mainMenuForm").attr('action', setUrl).submit();
+};
+
+//메뉴 아이디 공백제거
+function setTrimMenuId(){
+	var nowMenuId = $.trim($("#nowMenuId").val());
+	$("nowMenuId").val(nowMenuId);
+};
+</script>
+	
+	 
+	
+	
+
+	
+        <!-- /menuForm -->
+        
+    </body>
+</html>
+

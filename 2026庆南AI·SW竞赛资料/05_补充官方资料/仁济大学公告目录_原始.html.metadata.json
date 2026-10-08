@@ -1,0 +1,16 @@
+{
+  "url": "https://sw.inje.ac.kr/bbs/board.php?bo_table=news",
+  "path": "05_补充官方资料/仁济大学公告目录_原始.html",
+  "source": "https://contest.gnict.org/",
+  "kind": "listing",
+  "retrieved_at": "2026-09-24T16:29:55.584231+09:00",
+  "http_status": 200,
+  "final_url": "https://sw.inje.ac.kr/bbs/board.php?bo_table=news",
+  "content_type": "text/html; charset=utf-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 44249,
+  "sha256": "9e0555b085fde99516ff71f8aa98fcf8255c8ba14789a125ced4eded01a20c7b",
+  "magic_hex": "3c21646f63747970652068746d6c3e0a"
+}

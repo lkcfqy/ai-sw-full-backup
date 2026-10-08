@@ -1,0 +1,536 @@
+{
+  "schema_version": 1,
+  "generator": "/Users/lkc/Downloads/AI·SW/kitguard/scripts/v07/build_submission_pdfs.py",
+  "generator_sha256": "e268f590efae5226d49abc47acf040ccfd8b2a8502decc1d739a47e094ff222d",
+  "font": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+  "font_sha256": "876af2cd4854644e7f3e7feb2f688997fdb3343c6df6693611209c9dfb47ccec",
+  "page_size": "A4",
+  "documents": [
+    {
+      "source": "/Users/lkc/Downloads/AI·SW/kitguard/docs/v0.7/RESULT_REPORT_KO_DRAFT.md",
+      "source_sha256": "0b07ad7c3bfda0474ac74b4de560f74e4e1640855b9331783c40c9f4cf920a05",
+      "pdf": "/Users/lkc/Downloads/AI·SW/kitguard/output/pdf/v0.7-draft/KitGuard_결과보고서_v0.7_draft.pdf",
+      "pdf_sha256": "67a5d6394f1dbbf4ca1965b3d841325861c60e05ed3576cff898174b5bad0ce6",
+      "status": "draft",
+      "pages": 5,
+      "max_pages": 5,
+      "body_font_size": 10.6,
+      "cell_font_size": 10.1,
+      "missing_font_glyphs": [],
+      "layout": [
+        {
+          "page": 1,
+          "content_bottom": 309.3117637795276,
+          "blocks": [
+            {
+              "kind": "h1",
+              "top": 779.8897637795277,
+              "bottom": 750.8897637795277,
+              "height": 29
+            },
+            {
+              "kind": "body",
+              "top": 740.8897637795277,
+              "bottom": 724.6717637795277,
+              "height": 16.218
+            },
+            {
+              "kind": "h2",
+              "top": 715.6717637795277,
+              "bottom": 694.6717637795277,
+              "height": 21
+            },
+            {
+              "kind": "body",
+              "top": 684.6717637795277,
+              "bottom": 603.5817637795277,
+              "height": 81.09
+            },
+            {
+              "kind": "body",
+              "top": 594.5817637795277,
+              "bottom": 545.9277637795277,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "body",
+              "top": 536.9277637795277,
+              "bottom": 520.7097637795277,
+              "height": 16.218
+            },
+            {
+              "kind": "list",
+              "top": 511.7097637795277,
+              "bottom": 495.4917637795277,
+              "height": 16.218
+            },
+            {
+              "kind": "list",
+              "top": 492.4917637795277,
+              "bottom": 476.27376377952766,
+              "height": 16.218
+            },
+            {
+              "kind": "list",
+              "top": 473.27376377952766,
+              "bottom": 457.05576377952764,
+              "height": 16.218
+            },
+            {
+              "kind": "list",
+              "top": 454.05576377952764,
+              "bottom": 437.8377637795276,
+              "height": 16.218
+            },
+            {
+              "kind": "list",
+              "top": 434.8377637795276,
+              "bottom": 418.6197637795276,
+              "height": 16.218
+            },
+            {
+              "kind": "body",
+              "top": 415.6197637795276,
+              "bottom": 366.9657637795276,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "body",
+              "top": 357.9657637795276,
+              "bottom": 309.3117637795276,
+              "height": 48.653999999999996
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "content_bottom": 183.28976377952773,
+          "blocks": [
+            {
+              "kind": "h2",
+              "top": 779.8897637795277,
+              "bottom": 758.8897637795277,
+              "height": 21
+            },
+            {
+              "kind": "code",
+              "top": 748.8897637795277,
+              "bottom": 655.8897637795277,
+              "height": 93
+            },
+            {
+              "kind": "body",
+              "top": 646.8897637795277,
+              "bottom": 598.2357637795277,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "table",
+              "top": 589.2357637795277,
+              "bottom": 357.2517637795277,
+              "height": 231.98399999999998
+            },
+            {
+              "kind": "body",
+              "top": 347.2517637795277,
+              "bottom": 298.5977637795277,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "body",
+              "top": 289.5977637795277,
+              "bottom": 240.94376377952773,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "body",
+              "top": 231.94376377952773,
+              "bottom": 183.28976377952773,
+              "height": 48.653999999999996
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "content_bottom": 184.8737637795277,
+          "blocks": [
+            {
+              "kind": "h2",
+              "top": 779.8897637795277,
+              "bottom": 758.8897637795277,
+              "height": 21
+            },
+            {
+              "kind": "body",
+              "top": 748.8897637795277,
+              "bottom": 700.2357637795277,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "table",
+              "top": 691.2357637795277,
+              "bottom": 432.70776377952774,
+              "height": 258.52799999999996
+            },
+            {
+              "kind": "body",
+              "top": 422.70776377952774,
+              "bottom": 374.05376377952774,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "body",
+              "top": 365.05376377952774,
+              "bottom": 300.1817637795277,
+              "height": 64.872
+            },
+            {
+              "kind": "body",
+              "top": 291.1817637795277,
+              "bottom": 226.3097637795277,
+              "height": 64.872
+            },
+            {
+              "kind": "body",
+              "top": 217.3097637795277,
+              "bottom": 184.8737637795277,
+              "height": 32.436
+            }
+          ]
+        },
+        {
+          "page": 4,
+          "content_bottom": 117.54776377952776,
+          "blocks": [
+            {
+              "kind": "h2",
+              "top": 779.8897637795277,
+              "bottom": 758.8897637795277,
+              "height": 21
+            },
+            {
+              "kind": "body",
+              "top": 748.8897637795277,
+              "bottom": 700.2357637795277,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "h3",
+              "top": 691.2357637795277,
+              "bottom": 674.2357637795277,
+              "height": 17
+            },
+            {
+              "kind": "table",
+              "top": 669.2357637795277,
+              "bottom": 589.6037637795278,
+              "height": 79.63199999999999
+            },
+            {
+              "kind": "body",
+              "top": 579.6037637795278,
+              "bottom": 514.7317637795278,
+              "height": 64.872
+            },
+            {
+              "kind": "h3",
+              "top": 505.73176377952774,
+              "bottom": 488.73176377952774,
+              "height": 17
+            },
+            {
+              "kind": "body",
+              "top": 483.73176377952774,
+              "bottom": 418.8597637795277,
+              "height": 64.872
+            },
+            {
+              "kind": "table",
+              "top": 409.8597637795277,
+              "bottom": 192.41976377952776,
+              "height": 217.43999999999997
+            },
+            {
+              "kind": "body",
+              "top": 182.41976377952776,
+              "bottom": 117.54776377952776,
+              "height": 64.872
+            }
+          ]
+        },
+        {
+          "page": 5,
+          "content_bottom": 207.22176377952775,
+          "blocks": [
+            {
+              "kind": "h2",
+              "top": 779.8897637795277,
+              "bottom": 758.8897637795277,
+              "height": 21
+            },
+            {
+              "kind": "h3",
+              "top": 748.8897637795277,
+              "bottom": 731.8897637795277,
+              "height": 17
+            },
+            {
+              "kind": "body",
+              "top": 726.8897637795277,
+              "bottom": 678.2357637795277,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "body",
+              "top": 669.2357637795277,
+              "bottom": 604.3637637795277,
+              "height": 64.872
+            },
+            {
+              "kind": "h3",
+              "top": 595.3637637795277,
+              "bottom": 578.3637637795277,
+              "height": 17
+            },
+            {
+              "kind": "body",
+              "top": 573.3637637795277,
+              "bottom": 524.7097637795277,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "body",
+              "top": 515.7097637795277,
+              "bottom": 450.83776377952773,
+              "height": 64.872
+            },
+            {
+              "kind": "h3",
+              "top": 441.83776377952773,
+              "bottom": 424.83776377952773,
+              "height": 17
+            },
+            {
+              "kind": "body",
+              "top": 419.83776377952773,
+              "bottom": 338.74776377952776,
+              "height": 81.09
+            },
+            {
+              "kind": "body",
+              "top": 329.74776377952776,
+              "bottom": 281.09376377952776,
+              "height": 48.653999999999996
+            },
+            {
+              "kind": "body",
+              "top": 272.09376377952776,
+              "bottom": 207.22176377952775,
+              "height": 64.872
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Agent 판단 코드",
+          "source_target": "../../kitguard/app.py",
+          "pdf_uri": "../../../kitguard/app.py"
+        },
+        {
+          "label": "시각 관찰",
+          "source_target": "../../kitguard/vision.py",
+          "pdf_uri": "../../../kitguard/vision.py"
+        },
+        {
+          "label": "공개 사진 검토 계약",
+          "source_target": "PUBLIC_REVIEW_API.md",
+          "pdf_uri": "../../../docs/v0.7/PUBLIC_REVIEW_API.md"
+        },
+        {
+          "label": "전체 주문 JSON",
+          "source_target": "../../test-results/browser/public-review-v07/order.json",
+          "pdf_uri": "../../../test-results/browser/public-review-v07/order.json"
+        },
+        {
+          "label": "검토 현재성 요약",
+          "source_target": "../../test-results/browser/public-review-v07/review-summary.json",
+          "pdf_uri": "../../../test-results/browser/public-review-v07/review-summary.json"
+        },
+        {
+          "label": "ZIP 검증",
+          "source_target": "../../test-results/browser/public-review-v07/zip-verification.json",
+          "pdf_uri": "../../../test-results/browser/public-review-v07/zip-verification.json"
+        },
+        {
+          "label": "원 ZIP",
+          "source_target": "../../test-results/browser/public-review-v07/evidence.zip",
+          "pdf_uri": "../../../test-results/browser/public-review-v07/evidence.zip"
+        },
+        {
+          "label": "수정 오프라인 화면",
+          "source_target": "../../test-results/browser/public-review-v07/offline/VIEWER_REVISED.html",
+          "pdf_uri": "../../../test-results/browser/public-review-v07/offline/VIEWER_REVISED.html"
+        },
+        {
+          "label": "개발 기록",
+          "source_target": "CONTINUATION_20261002.md",
+          "pdf_uri": "../../../docs/v0.7/CONTINUATION_20261002.md"
+        },
+        {
+          "label": "과거 원시 예측",
+          "source_target": "../../evaluation-runs/v03_guarded_holdout_v1/predictions.jsonl",
+          "pdf_uri": "../../../evaluation-runs/v03_guarded_holdout_v1/predictions.jsonl"
+        },
+        {
+          "label": "당시 판정 보고서",
+          "source_target": "../../evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json",
+          "pdf_uri": "../../../evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json"
+        },
+        {
+          "label": "방법·한계",
+          "source_target": "../v0.3/FINAL_EVALUATION.md",
+          "pdf_uri": "../../../docs/v0.3/FINAL_EVALUATION.md"
+        },
+        {
+          "label": "사전 계획·선정 근거·판정 조건",
+          "source_target": "PUBLIC_EVALUATION_PLAN.md",
+          "pdf_uri": "../../../docs/v0.7/PUBLIC_EVALUATION_PLAN.md"
+        },
+        {
+          "label": "LOCO AD",
+          "source_target": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+          "pdf_uri": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad"
+        },
+        {
+          "label": "Screws",
+          "source_target": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws",
+          "pdf_uri": "https://www.mvtec.com/research-teaching/datasets/mvtec-screws"
+        },
+        {
+          "label": "데이터 출처 기록",
+          "source_target": "../DATA_PROVENANCE.md",
+          "pdf_uri": "../../../docs/DATA_PROVENANCE.md"
+        },
+        {
+          "label": "모델·데이터 재현 검토",
+          "source_target": "../MODEL_DATA_REPRODUCIBILITY_REVIEW.md",
+          "pdf_uri": "../../../docs/MODEL_DATA_REPRODUCIBILITY_REVIEW.md"
+        },
+        {
+          "label": "원고",
+          "source_target": "AGENT_TECH_KO_DRAFT.md",
+          "pdf_uri": "../../../docs/v0.7/AGENT_TECH_KO_DRAFT.md"
+        }
+      ],
+      "visual_qa": "pending_render_and_human_visual_inspection"
+    },
+    {
+      "source": "/Users/lkc/Downloads/AI·SW/kitguard/docs/v0.7/AGENT_TECH_KO_DRAFT.md",
+      "source_sha256": "ce94ad698429b4ae004a2a0338f4795ba59c09b987789ad76b06782f8edca411",
+      "pdf": "/Users/lkc/Downloads/AI·SW/kitguard/output/pdf/v0.7-draft/KitGuard_Agent_기술설명_v0.7_draft.pdf",
+      "pdf_sha256": "93327805444eb5734ae8a2132713d531036715b534fa1d8b524039d6594a1ee2",
+      "status": "draft",
+      "pages": 1,
+      "max_pages": 1,
+      "body_font_size": 10.3,
+      "cell_font_size": 9.8,
+      "missing_font_glyphs": [],
+      "layout": [
+        {
+          "page": 1,
+          "content_bottom": 143.2537637795276,
+          "blocks": [
+            {
+              "kind": "h1",
+              "top": 779.8897637795277,
+              "bottom": 754.8897637795277,
+              "height": 25
+            },
+            {
+              "kind": "body",
+              "top": 744.8897637795277,
+              "bottom": 729.1307637795277,
+              "height": 15.759000000000002
+            },
+            {
+              "kind": "body",
+              "top": 723.1307637795277,
+              "bottom": 675.8537637795276,
+              "height": 47.27700000000001
+            },
+            {
+              "kind": "body",
+              "top": 669.8537637795276,
+              "bottom": 654.0947637795276,
+              "height": 15.759000000000002
+            },
+            {
+              "kind": "table",
+              "top": 648.0947637795276,
+              "bottom": 404.6387637795276,
+              "height": 243.45600000000002
+            },
+            {
+              "kind": "body",
+              "top": 397.6387637795276,
+              "bottom": 334.6027637795276,
+              "height": 63.03600000000001
+            },
+            {
+              "kind": "body",
+              "top": 328.6027637795276,
+              "bottom": 265.5667637795276,
+              "height": 63.03600000000001
+            },
+            {
+              "kind": "body",
+              "top": 259.5667637795276,
+              "bottom": 196.5307637795276,
+              "height": 63.03600000000001
+            },
+            {
+              "kind": "body",
+              "top": 190.5307637795276,
+              "bottom": 143.2537637795276,
+              "height": 47.27700000000001
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "원시 주문",
+          "source_target": "../../test-results/browser/public-review-v07/order.json",
+          "pdf_uri": "../../../test-results/browser/public-review-v07/order.json"
+        },
+        {
+          "label": "현재성 요약",
+          "source_target": "../../test-results/browser/public-review-v07/review-summary.json",
+          "pdf_uri": "../../../test-results/browser/public-review-v07/review-summary.json"
+        },
+        {
+          "label": "구현 계약",
+          "source_target": "PUBLIC_REVIEW_API.md",
+          "pdf_uri": "../../../docs/v0.7/PUBLIC_REVIEW_API.md"
+        },
+        {
+          "label": "시각 관찰",
+          "source_target": "../../kitguard/vision.py",
+          "pdf_uri": "../../../kitguard/vision.py"
+        },
+        {
+          "label": "규칙 판단",
+          "source_target": "../../kitguard/app.py",
+          "pdf_uri": "../../../kitguard/app.py"
+        },
+        {
+          "label": "새 평가 계획",
+          "source_target": "PUBLIC_EVALUATION_PLAN.md",
+          "pdf_uri": "../../../docs/v0.7/PUBLIC_EVALUATION_PLAN.md"
+        }
+      ],
+      "visual_qa": "pending_render_and_human_visual_inspection"
+    }
+  ]
+}

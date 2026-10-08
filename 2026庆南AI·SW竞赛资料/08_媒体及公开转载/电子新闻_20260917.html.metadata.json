@@ -1,0 +1,16 @@
+{
+  "url": "https://www.etnews.com/20260917000221",
+  "path": "08_媒体及公开转载/电子新闻_20260917.html",
+  "source": "public web search",
+  "kind": "media_repost",
+  "retrieved_at": "2026-09-24T16:39:43.228524+09:00",
+  "http_status": 200,
+  "final_url": "https://www.etnews.com/20260917000221",
+  "content_type": "text/html; charset=UTF-8",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 51114,
+  "sha256": "a7704948b26f39e48e4edf6eb5af136929cb55c70aeeee6c19e469db80e30ae7",
+  "magic_hex": "3c21444f43545950452068746d6c3e0a"
+}

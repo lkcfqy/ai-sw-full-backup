@@ -1,0 +1,25 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; media-src 'self';">
+<title>KitGuard 0.7.0 · 제출 자료 / 交付材料</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#143c3a;background:#eef5f2}
+*{box-sizing:border-box}body{margin:0}main{max-width:1080px;margin:auto;padding:48px 24px}
+header{padding:36px;border-radius:24px;background:#143c3a;color:#fff}header small{letter-spacing:.12em;color:#b4ded0}
+h1{font-size:clamp(30px,5vw,54px);line-height:1.08;margin:22px 0}p{line-height:1.7;max-width:78ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:24px 0}
+article{background:white;border:1px solid #d6e5df;padding:24px;border-radius:18px}h2{font-size:21px;margin:12px 0}
+article span{font-size:13px;color:#56786e}a{color:#125d50;text-underline-offset:4px}a:focus{outline:3px solid #f1ad42;outline-offset:4px}
+section{background:white;border:1px solid #d6e5df;border-radius:18px;padding:24px;margin:20px 0}
+video{width:100%;border-radius:12px;background:#143c3a}li{margin:12px 0;overflow-wrap:anywhere}
+.meta{font-size:14px;color:#507469}code{overflow-wrap:anywhere}@media(max-width:600px){main{padding:16px}header{padding:24px}}
+</style><main><header><small>해피 · LOCAL PHOTO REVIEW AGENT</small><h1>KitGuard 0.7.0</h1>
+<p>공개 사진과 주문을 대조하고, 변경된 버전의 증거를 다시 확인합니다.</p>
+<p>公开照片与订单核对 · 版本变更后重新核验 · 可离线复查</p></header>
+<div class="grid"><article><span>结果报告</span><h2><a href="files/report/KitGuard_%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0%EC%84%9C_v0.7.pdf">결과 보고서</a></h2><p>0.1 MiB</p></article><article><span>Agent 技术说明</span><h2><a href="files/technical/KitGuard_Agent_%EA%B8%B0%EC%88%A0%EC%84%A4%EB%AA%85_v0.7.pdf">Agent 기술 설명</a></h2><p>0.1 MiB</p></article><article><span>可运行源码</span><h2><a href="files/source/KitGuard_source_v0.7.0.zip">실행 소스</a></h2><p>5.3 MiB</p></article><article><span>真实运行演示</span><h2><a href="files/video/KitGuard_v07_public_photo_walkthrough.mp4">실제 실행 시연</a></h2><p>2.2 MiB</p></article><article><span>主讲幻灯片</span><h2><a href="files/slides/KitGuard_%EB%B0%9C%ED%91%9C_v0.7.0_v2.pptx">발표 자료</a></h2><p>1.0 MiB</p></article></div>
+<section><h2>검증 범위 / 验证范围</h2><p>공개 출처 51장 × 3방법 = 153회 실제 관찰, 전수 독립 재검산 완료. Inventory C46/W5/U0, 기본 Guarded C41/W3/U7, Selective C46/W4/U1. 모두 실행 오류·미실행 0. C=정확·명확, W=오류·명확, U=미확인.</p><p>默认方案仍有3张错误，未达到预设安全与覆盖门槛；候选虽然更快却多出1张错误，因此不晋升。四类合法订单面板的照片级错误就绪分别为5/51、3/51、4/51；受限来源面板的0不能替代该结果。</p><p>公开照片数字审查、改版失效、同图重新推理与离线证据已做真实本地浏览器验收。1,156项软件测试通过不等于识别零错；工程审查不计为真人参与或实物完工。</p><p>源码包含3张获许可的开发演示照片，不含模型权重、私人数据库和完整实验图片。解压运行检查使用本机已有依赖，不是全新机器安装验证。报告及Markdown中的仓库相对路径按源码目录解释。</p><p>真实开发从2026-09-26开始，沿用赛前原型的资格仍待主办方确认。本地交付已整理，不表示已向比赛平台提交，也不保证名次。</p><p class="meta">보고서 5쪽 · 기술 설명 1쪽 · 발표 8장 · 영상 143.0초</p></section>
+<section><h2>실제 실행 화면 편집본 / 真实运行画面剪辑</h2><video controls preload="metadata" src="files/video/KitGuard_v07_public_photo_walkthrough.mp4"></video>
+<p class="meta">실제 공개 사진·로컬 추론. 대기·조작 구간을 줄인 화면 편집본이며 연속 실시간 녹화가 아닙니다.</p></section>
+<section><h2>근거와 재현 안내 / 证据与复现说明</h2><ul><li><a href="files/evidence_0/FINAL_EVALUATION.md">完整中文评估 / Evaluation</a></li><li><a href="files/evidence_1/PUBLIC51_FAILURE_REVIEW.md">逐错例原文复核 / Failure review</a></li><li><a href="files/evidence_2/PUBLIC51_FAILURE_EVIDENCE.json">错例哈希索引 / Failure evidence hashes</a></li><li><a href="files/evidence_3/analysis.json">51图完整指标 / Paired analysis</a></li><li><a href="files/evidence_4/public-paired-audit-v1.json">153次独立审计 / Independent audit</a></li><li><a href="files/evidence_5/freeze.json">实验冻结 / Experiment freeze</a></li><li><a href="files/evidence_6/release-method-compatibility-v1.json">最终应用与实验兼容 / Release method compatibility</a></li><li><a href="files/evidence_7/v07-final-20261002-r2.xml">软件测试 / Software tests</a></li><li><a href="files/evidence_8/evidence.zip">袋装套件离线证据 ZIP / Bag review evidence</a></li><li><a href="files/evidence_9/small-part-r1-evidence.zip">小零件补资料证据 ZIP / Small-part evidence</a></li><li><a href="files/evidence_10/api-verification.json">异常分支实际检查 / Exception acceptance</a></li><li><a href="files/evidence_11/offline-and-layout-verification.json">离线与视口验收边界 / Offline and layout scope</a></li><li><a href="files/evidence_12/PUBLIC_USER_CHECK_KO_ZH.md">可选真人试用说明 / Optional user trial</a></li><li><a href="files/evidence_13/CONTEST_PERIOD_CONTRIBUTIONS.md">开发期贡献与资格说明 / Contribution disclosure</a></li><li><a href="files/evidence_14/KitGuard_source_v0.7.0.zip.verification.json">源码解压运行检查 / Source runtime check</a></li><li><a href="files/evidence_15/video_receipt.json">视频生成与解码记录 / Video verification</a></li><li><a href="files/evidence_16/QA.json">PDF逐页QA / PDF verification</a></li><li><a href="files/evidence_17/presentation-final-qa.json">幻灯片渲染QA / Slides verification</a></li></ul>
+<p><a href="BUILD_MANIFEST.json">交付清单 / Manifest</a> · <a href="SHA256.json">SHA-256</a></p>
+<p class="meta">이 폴더는 로컬 자료 묶음입니다. 대회 포털에 제출하거나 외부에 게시하지 않았습니다.<br>本目录尚未向比赛平台提交或对外发布。哈希用于完整性校验，不是签名或现场认证。</p></section></main></html>

@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-28",
+  "source": "/Users/lkc/Downloads/AI·SW/报名材料_해피_2026-09-29/04_20260927更新_仍待补地址签字/01_해피_참가신청서_개발계획서_20260927_주소서명전.docx",
+  "output": "/Users/lkc/Downloads/AI·SW/报名材料_해피_2026-09-29/05_20260928地址已补_待签字/01_해피_참가신청서_개발계획서_20260928_서명전.docx",
+  "source_sha256": "2c09383c154b95f7e3d240aa6ad05928778532e7366fbe5e8047d40df03c521a",
+  "output_sha256": "31dca76a1f124edf1fdbc5b4d8056b2d6c047fcfa83cfb3856dc6dd0319a2f27",
+  "replacements": {
+    "[팀장 상세 주소 입력]": "경상남도 창원시 의창구 창원대학로 20, 국립창원대학교 학생생활관 5동 510호실",
+    "[거주 시·군 입력]": "경상남도 창원시"
+  },
+  "only_two_text_nodes_changed": true,
+  "other_package_parts_unchanged": true,
+  "date_and_signature_unchanged": true,
+  "address_source": "User provided buildings/rooms; campus road address checked against https://www.changwon.ac.kr/dorm/main.do on 2026-09-28.",
+  "signature_pending": true,
+  "submitted": false
+}

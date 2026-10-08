@@ -1,0 +1,2372 @@
+[
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/.verified_archive_sha256",
+    "bytes": 65,
+    "sha256": "df0767e9e3cf0fe19e68227efce38a4c3d91a7ec5432861b6c81f14ab09f40d5",
+    "origin": "local_verification_metadata"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/README_v1.0.txt",
+    "bytes": 4643,
+    "sha256": "23af4622d4d0369459f33870476be45ab624f6ab747d00e6058e2de4fba5dfc3",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_001.png",
+    "bytes": 3402719,
+    "sha256": "36404d7f5d8247253bf9767a3a15e9eaeca461c1edf9a0162e300b8871a8132f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_002.png",
+    "bytes": 3405445,
+    "sha256": "50538bce31d1a2377e5fad3b087d1a8864c14084b9ee7a579b7bd233e0448fbe",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_003.png",
+    "bytes": 3598468,
+    "sha256": "3ba43cd003293bc62d517939f8b60bef065b42311720302dfd8d9ea901da266e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_004.png",
+    "bytes": 3591802,
+    "sha256": "dd9d055b54ab5ad992ffb91d418ac90684170c18503a49e539c87b8fae1d8949",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_005.png",
+    "bytes": 3614052,
+    "sha256": "82a7215529a8db937ef7d989449d1c567150e5b638c3174f9e74ae88e2bdd9d2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_006.png",
+    "bytes": 3605835,
+    "sha256": "7e38cc26468af4574f9140038d37508c7abed67d012fd6531dd5a061c4c32029",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_007.png",
+    "bytes": 3593337,
+    "sha256": "0b728f694f9433e1134fce4035960c5040dab7da7823d376e76189866ffbbacf",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_008.png",
+    "bytes": 3598470,
+    "sha256": "d2bb7c7db2962d6f85c5847d7480032ca34ab16d15fd41ccac0ed52db1bdba46",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_009.png",
+    "bytes": 3587595,
+    "sha256": "7893d5b5b2b3c5a5e742648fa7335cf502f4d7eb56c14b3004a935890976060d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_010.png",
+    "bytes": 3587790,
+    "sha256": "7de1c5a2a2a347c9202300d637214065b969182885045bb204c959f9b625b117",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_011.png",
+    "bytes": 3568576,
+    "sha256": "1eea4359664c5b3d84bfb2c904c6e5192f9df799a33a16e784c59a714ee37d83",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_012.png",
+    "bytes": 3601564,
+    "sha256": "4886447573d94a74920b6b5444946671005d77cd09a18368b133fb5d3e0bed3d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_013.png",
+    "bytes": 3617996,
+    "sha256": "ee803062e987cbc3a3dc23eea77ab00beba6dd8d87cd628e39c70d133b735693",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_014.png",
+    "bytes": 3607102,
+    "sha256": "9bc3dca540ca14512a0f85cdb9e660cff14667826f86dc47226cd84e458abced",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_015.png",
+    "bytes": 3529136,
+    "sha256": "e0f2ba435e3cfd5f528d682968aea3c9351ba0cb8af85b12ed6cf21ecc39b613",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_016.png",
+    "bytes": 3541131,
+    "sha256": "bc2f95bbd529afce5c422da14e3f9804851dde131b019ae82b03e906faa2d599",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_017.png",
+    "bytes": 3566853,
+    "sha256": "96cd1bf9cfc19764ce3fbe3607ddc1802319125df76ec8bd8b2f378a0f3c9de3",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_018.png",
+    "bytes": 3466955,
+    "sha256": "19d27b862f28bba7b291b8e2637be21f7f9d9576e16e67fa3c759ae9da368a40",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_019.png",
+    "bytes": 3490147,
+    "sha256": "3cf7153eb5807612b69bb26f0194e6aa511a14b5f88f08742945d11055ec310a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_020.png",
+    "bytes": 3436434,
+    "sha256": "aa48eb05c8133b1db949b70d12216c04c18a426a1710a05cf564ee66ce2d0b63",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_021.png",
+    "bytes": 3442944,
+    "sha256": "3fdf7864865c5c6605960c1c66615edf5d5e8ff3334b9f6aa88c342a5f1985c4",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_022.png",
+    "bytes": 3385566,
+    "sha256": "9ef8b45c79cf102c0bca5249f0eb99412f56f16a5540d4e4f17d28a89968b77d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_023.png",
+    "bytes": 3391989,
+    "sha256": "c211e3738b1de259e0faf0bc15d54e921f613279c9134547741164ba847e61f9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_024.png",
+    "bytes": 3401291,
+    "sha256": "e6e3bb2b9d4c17662ac66be60b9f11d0e32f7941a5594d4a8db326baa8bff6e9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_025.png",
+    "bytes": 3405682,
+    "sha256": "e734d84b32631fe63c71fd3095ba66c1e97768cf389a6f0c70eaebc3015b9cad",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_026.png",
+    "bytes": 3360715,
+    "sha256": "a14ad6e127ce7a562025f0caadf56a6c988b13dd571964e8fdbe6f29ffc5c525",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_027.png",
+    "bytes": 3367164,
+    "sha256": "fa7d67b2c018840d2f498c8b3d59347791e4f65492a5242302c31e6703c31742",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_028.png",
+    "bytes": 3370179,
+    "sha256": "37bdeb3cafec721d90d25705ec7faf58fb026efcfe1b30e5ca31b34ae2833fde",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_029.png",
+    "bytes": 3356530,
+    "sha256": "94403917cd187703ca919ec0f2d060bcf622c4b4c54a51768f78d53d73e98b3a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_030.png",
+    "bytes": 3382757,
+    "sha256": "0d5979bcb564620f6794f95f31a5df1527a96d5feaa9419e7600e1d113f855b3",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_031.png",
+    "bytes": 3378947,
+    "sha256": "e9ee1f38797aa68f89c434efce9aebcd47d374c074da89321d5a711834325d29",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_032.png",
+    "bytes": 3447564,
+    "sha256": "05bf9b54dc03299a184acce02d41c3a2b00e5b9e68f8d961d02a6b7d6e592f5d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_033.png",
+    "bytes": 3371399,
+    "sha256": "cdcb828cd4341fed53a27e6d649858ecc086da50df25732818f7a2981bb4cf89",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_034.png",
+    "bytes": 3368902,
+    "sha256": "2795be68cd1fcaa6cf6d3933cd0a24ee525994801e07d80578ec28a906171fff",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_035.png",
+    "bytes": 3356028,
+    "sha256": "480238b28efc2f835397eecf6a3cb0f086917006a4928a20e54a1a984ff92e90",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_036.png",
+    "bytes": 3367190,
+    "sha256": "5b440814a4e477f9012cd237f8ad499f46491b97b71aac7847c54991d74b5408",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_037.png",
+    "bytes": 3352928,
+    "sha256": "68a538bdd8317c8a3e530b994b0c274a5479a8e112d1a90f98ca95f494ecec57",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_038.png",
+    "bytes": 3523986,
+    "sha256": "2f03699b89ee6de8894721071c471689c99f73b80713df4aee3de5a37c851c6c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_039.png",
+    "bytes": 3510206,
+    "sha256": "8c5074c5eab895d4ad06644e2c35124fe9e74422e3db7e5d6428c88736bb048f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_040.png",
+    "bytes": 3530951,
+    "sha256": "af656f2cef93e9413db1197a481b6e28cf2ed5fdd5c9e303d7bb53dc0ab87071",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_041.png",
+    "bytes": 3526828,
+    "sha256": "0f7ef3d719ed18a84637c3f78a76af99b3ce628dae1c1f1fb73081129970262f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_042.png",
+    "bytes": 3529651,
+    "sha256": "e8a32e2854546bc5e60f45e113cc5b3f2578787f77307f96c9e7e6e9994e823c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_043.png",
+    "bytes": 3545540,
+    "sha256": "8e41165ee69c578d755b53f5b66cf1a41081ce203c6be867eb193b9c408d5b5b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_044.png",
+    "bytes": 3543385,
+    "sha256": "df10d1fe5cf7b61f0b73ea9b298dd75a7bad9ef7ac3e874c5686385fc6740a34",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_045.png",
+    "bytes": 3551831,
+    "sha256": "a4fe8436f899d2ee648c54756199f8d2937bf42f149c86d5605fb83dc39f13aa",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_046.png",
+    "bytes": 3563167,
+    "sha256": "a2c3935ec22e86321efa483eef28a198fbd879382c7014933263ff16470b78a6",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_047.png",
+    "bytes": 3552378,
+    "sha256": "2830eb221be9181dbb81ffb32564d50d7b99cb62fbbe075f3c3eefcf08fe5f93",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_048.png",
+    "bytes": 3544352,
+    "sha256": "60d158a50b51749a50dd0fd2d35e7c927bba582f188d2a99392a16f09508976d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_049.png",
+    "bytes": 3549223,
+    "sha256": "20c834a360897b8efce22cc4270052037079155c307a8c6384a8a311ad4b2bec",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_050.png",
+    "bytes": 3554246,
+    "sha256": "35c398a5956e5d10c53c8e4c79241f95fe28bd9549ae7c6a488aa067792b4552",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_051.png",
+    "bytes": 3558589,
+    "sha256": "60ae3c0fbd287716a8455f4867ba4ce28ee7e7d31e2068a24097b133a47efb75",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_052.png",
+    "bytes": 3572018,
+    "sha256": "5280c1e072bfd08fde162cbcd5748ded97594511802a47c0b67188396b6ca261",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_053.png",
+    "bytes": 3567267,
+    "sha256": "75388e38b15561a9feaf179b226b70c86184077c26204adfefe41cf1bf4117de",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_054.png",
+    "bytes": 3569385,
+    "sha256": "a3cc760d93e8fe35012e3e823e66e7ba21f2e233ce75f854ceefd496c208335d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_055.png",
+    "bytes": 3509175,
+    "sha256": "23462e90c7971def58867c26548e7eef80e4dfd4ffe637a0ba91f43ab5a7b3ec",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_056.png",
+    "bytes": 3555087,
+    "sha256": "30a67d21f65ab6eced41718a29b80ae9022cf4b695d8bb2e2f3a0b0677eb198e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_057.png",
+    "bytes": 3563473,
+    "sha256": "a73f9e8a00aba0d7879e36a2b147f4cc8e4b14d691d2df8d003987096a7fe9a5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_058.png",
+    "bytes": 3539990,
+    "sha256": "6b425a5745824a0576f6f077c51a5991df72083eaa8b9b7b4f13d354f1329240",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_059.png",
+    "bytes": 3548066,
+    "sha256": "76bc08d3bd5b2c3326f2a78238819d7f3ffa697be25d22227d6f185c37a2391e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_060.png",
+    "bytes": 3579177,
+    "sha256": "93b660ee0b59d926353a1679a0355faaad3a320724bd7f576baf47f6a9dbbe52",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_061.png",
+    "bytes": 3586874,
+    "sha256": "467ad65f811373ced6c171f21d596eb5713f38d8bd7f3a308ac3a184bd5debf1",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_062.png",
+    "bytes": 3563066,
+    "sha256": "00ddf5fb3b534619675416272dbcf57ee4379d27d81225b2b05a84d9d8d24485",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_063.png",
+    "bytes": 3563136,
+    "sha256": "e59f3ca5e81d3114734039354368def7a73fa9ff87da3f337cff5752e66b1d2f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_064.png",
+    "bytes": 3563277,
+    "sha256": "26a5b71bfb7a67ba37b85732ea606ba8b46328456faaac203c7224da2829e34e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_065.png",
+    "bytes": 3564575,
+    "sha256": "77c4cb69273b7cd7e3ddc8c5627cf720b3363429d3473b7d396c5f7d9fcc314c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_066.png",
+    "bytes": 3566068,
+    "sha256": "4a1e8fb610547d22c8ac07f3ea74526529ae2988f2fc413c5ab7f3be3830bc13",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_067.png",
+    "bytes": 3552346,
+    "sha256": "77a7f5901caa017f57488b1d952e13fc9f0ef389295d5d401d57f34ebe80b808",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_068.png",
+    "bytes": 3571551,
+    "sha256": "99ddcd16947d031df8df5af168fdf2f017c3bb9856bb339d8eb2d9e56d663658",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_069.png",
+    "bytes": 3572393,
+    "sha256": "8d35be08bac8f06f2e742c3e8bcf5f926a3ac110f903c66743a146a8210df566",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_070.png",
+    "bytes": 3562168,
+    "sha256": "8b28a43b84b80088cf9f91b77eb3d86e80caa039c1bc08db80d01e0b4cd241a7",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_071.png",
+    "bytes": 3559879,
+    "sha256": "ace25e82d38fd739e937733d477fcfc8b17aeb5904cdf761304478f8d6051781",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_072.png",
+    "bytes": 3560782,
+    "sha256": "93d37a853f586c2a7c55c2b0675bd2334298ece8e2c8afc05729d697806c6791",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_073.png",
+    "bytes": 3542417,
+    "sha256": "0f0c3e9c39c540b2798e21518c9f563e05520a122dab566f696967976d956aa6",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_074.png",
+    "bytes": 3594641,
+    "sha256": "a9119896d1db5b598c1e2c5c73b0fd81baa4b4a17140033622d518b6c53a4429",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_075.png",
+    "bytes": 3576122,
+    "sha256": "fc9ef1d1f5e8275232f249ff48c196af5871124cfa800de4460f34a8411934be",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_076.png",
+    "bytes": 3592069,
+    "sha256": "e4c031c81f4c8cec140b2d83ec633fb9a23dc5310e55a35d74facb60d4ec63d5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_077.png",
+    "bytes": 3596690,
+    "sha256": "4e83b03669005747a189ed2fb902acbad98556379daa1d4804e2ede820da90a5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_078.png",
+    "bytes": 3582076,
+    "sha256": "ac9eab315946171eedcc4660466d619024128de38daa7b80ba6c53df05a4e59c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_079.png",
+    "bytes": 3584981,
+    "sha256": "45d4e482127686a3676e1afb5699a57a4e6909791e29e0776a180db86ff6da28",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_080.png",
+    "bytes": 3575712,
+    "sha256": "081d5324bf8fd24a30f3e7058b08519d006582866567e81ea323fa10fa8da3ca",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_081.png",
+    "bytes": 3590008,
+    "sha256": "346f6205fe22b6c0d6b87472655ec02baabbf5595f04580529b0d3f67b7387b4",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_082.png",
+    "bytes": 3523272,
+    "sha256": "59c5b43b6a67099ef02fe2f1a35c9f30ea514f7c0e7528ef1baf22d192f5184b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_083.png",
+    "bytes": 3511952,
+    "sha256": "6afbfd6a4a700a5c0a4b3acbc798838c5766d1a2b416a2128393f0310d2f1dc2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_084.png",
+    "bytes": 3567730,
+    "sha256": "57f5299770a790412f9d6b1e4a075bcdb27b9a087b51d29057fb5a78b0cd10cf",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_085.png",
+    "bytes": 3556772,
+    "sha256": "ecc6527ccd854ea3664107d96579ed4ee40dd0bf928f9e9b67f889e9c7aab86b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_086.png",
+    "bytes": 3556583,
+    "sha256": "a0447a2672d7b883dcfefef94d670d7c52c993409b4411fa5f1a35619ea468ff",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_087.png",
+    "bytes": 3542859,
+    "sha256": "777d76fbf1fbc3580dbbb79968c851c0657d2a8d7f30d75cdc25f6aa0c97e39e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_088.png",
+    "bytes": 3536141,
+    "sha256": "3bb779702d715e1ce783105a72a00a53302f259e239c0116150ee306f88a5728",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_089.png",
+    "bytes": 3556779,
+    "sha256": "b0c24eac0526f2bef6af214d9f3480b40184445aafa9d488ad391831c738b57a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_090.png",
+    "bytes": 3530008,
+    "sha256": "fb8377e1275454123d980db2c91a366dceb6ae9a1e1f0cc4ebae11105646c447",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_091.png",
+    "bytes": 3546614,
+    "sha256": "d7b717d145afb7b6d83f44d2dfeb7f5c4ce3d52c1172ced304bc180e6cda3b76",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_092.png",
+    "bytes": 3532839,
+    "sha256": "1dcc9f1040501acf6750863d62eefdd2bd4eb0f324ed7bbc2687165b5e7e334d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_093.png",
+    "bytes": 3577882,
+    "sha256": "37ee7ddd7b7b200710ff6814bc9eb77b4c4691fbe8f06a017f064e11fda86c81",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_094.png",
+    "bytes": 3557194,
+    "sha256": "96e273449d2cea71dc953390cd5184edfee60e5bce3585153222387374331bb0",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_095.png",
+    "bytes": 3577206,
+    "sha256": "34c286e4d744555903fb5fc79a6a08624dc083ac07c18b5d8c2749ce8d691bea",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_096.png",
+    "bytes": 3413589,
+    "sha256": "7b182d129a175197187c9526530edbb572b33e4e49d9abec9411ab367d9ce8fd",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_097.png",
+    "bytes": 3421186,
+    "sha256": "19b2adba465f282ad2c42f9444ad1e3adf6db237bb1092d913b2a8aaf9fa73f0",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_098.png",
+    "bytes": 3434592,
+    "sha256": "e95bee9ef3995ce1d34e21564fdd659ac8115ae45ced374853ce845dde2174f2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_099.png",
+    "bytes": 3568862,
+    "sha256": "ec4045915263c40d84b312761a4192abd7a98c8e3e76437c08d258fc19c8d828",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_100.png",
+    "bytes": 3569699,
+    "sha256": "d9ac9a09fd512668f2398dc705691ee5f7a19ca9425dc827a390a68deec339b4",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_101.png",
+    "bytes": 3580915,
+    "sha256": "cffb2668c10a67ff7bd842032d13b5019e15156617a257a65bb1e007982fc77c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_102.png",
+    "bytes": 3563321,
+    "sha256": "069a1d3b049e6a0af0519f9d96e443dd3a316f286a25d61f2cb56110291b7cf0",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_103.png",
+    "bytes": 3559341,
+    "sha256": "bc55c81b0d95d509989dc78a84307fe702d1a9decc0d999cfaff883e6044dd38",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_104.png",
+    "bytes": 3534088,
+    "sha256": "b7d87fa8d1bbc560759fd47600710dd60ce575f4ee8c7762329e2d1d4425f994",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_105.png",
+    "bytes": 3544998,
+    "sha256": "0d311c3ee7adf4c5a73a84672852a085b8ce124426633bee184098e3cd540c30",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_106.png",
+    "bytes": 3571878,
+    "sha256": "8fdf815c7e84fc5dc112cc5165aff431729976d98dc0c3e77b4e2cd599a22d7e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_107.png",
+    "bytes": 3546068,
+    "sha256": "94a8c47498d9bde626eb463451ff6b6704bb8174cbd72340c30ed4adc76de618",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_108.png",
+    "bytes": 3535610,
+    "sha256": "60f632681c2e8c2410cd87e0050868a252a5ea282d779d792d9bc732b22ca4d5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_109.png",
+    "bytes": 3531675,
+    "sha256": "08d4a1f31d268c473b00a7f68c5ff7e8db45a7e7768182dcae2baa7498ec7b1b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_110.png",
+    "bytes": 3534640,
+    "sha256": "9b635a1cba7b8d3ba650f9eb5c71e72b2467667df56d6acb76b782e04d7f2405",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_111.png",
+    "bytes": 3555471,
+    "sha256": "22ca5a4b979deb428c410921de749db0675e81c7255c57c846f90f6b6d0c52fc",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_112.png",
+    "bytes": 3538472,
+    "sha256": "01af87c53fce05976cc707e9af2b95fa3b53070a52ff8637a291a0120bb90b9b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_113.png",
+    "bytes": 3539972,
+    "sha256": "0294192c7d10a45346591d3637d670c1db6d3395b5dcf5561f70532e9ee4b2a4",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_114.png",
+    "bytes": 3537729,
+    "sha256": "c5505c5f3c50278e6b3100246b059932b66cc94d80578910669f2b5167b51c2f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_115.png",
+    "bytes": 3524860,
+    "sha256": "18eca60d47506c34059b8c4eddca997757a060a10702aa4929c8bda52b19c96e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_116.png",
+    "bytes": 3568880,
+    "sha256": "d599a15193ca56abbecad76d5abd72aac8bab91fe23942bf249fa047571cbc9e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_117.png",
+    "bytes": 3531770,
+    "sha256": "2b23fbc19342b7b34ebd324730a23f28ed68d1762ba7d029be214760402e7c11",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_118.png",
+    "bytes": 3526791,
+    "sha256": "91b8120b41b7f30bb1e9cbadace2c69ba46514d5c40d78f4be84f3b695606cb5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_119.png",
+    "bytes": 3539353,
+    "sha256": "d3d0f4d9bb21e1c85eb57c97a6b3fd2b948b7da221eca1d41779b8999d002838",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_120.png",
+    "bytes": 3550206,
+    "sha256": "c4f663e6528ef41fafb77303095adf5b05934560bec00af36ec64d81238aad60",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_121.png",
+    "bytes": 3521011,
+    "sha256": "880e9065e3b4aef61d9395feeaf5e4cd6f428d80e71eac12eef527ce6cd81b84",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_122.png",
+    "bytes": 3554776,
+    "sha256": "4a53d0e39179620bbfd6d44b59bb605e92ae7a6ce747ed82228d34ea170cc4a6",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_123.png",
+    "bytes": 3556733,
+    "sha256": "20d61a6d43843f1afc1eec8f2ace37a62dd6f9427984f18f57f3471f8470926a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_124.png",
+    "bytes": 3533935,
+    "sha256": "4adeb35bf3d2305d9ba28ea96efdfc30376acfb1a73f852eadb555901f9ac5f2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_125.png",
+    "bytes": 3262804,
+    "sha256": "256e2293850df91e19c81468e25daf49ef512b3862f3f509eed81f768a490e94",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_126.png",
+    "bytes": 3546560,
+    "sha256": "9b03c858d6da063dc4775d623950a5f95458618ec6ca9e5f26f7f0995e30a6f9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_127.png",
+    "bytes": 3546058,
+    "sha256": "7f256796f15aa8c3f2d59d2a918c628f330f64f4df32b47717542e068be0e509",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_128.png",
+    "bytes": 3523362,
+    "sha256": "e021fa11927cae0320111382745a2a17060248919fb22c95730e94252807fa20",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_129.png",
+    "bytes": 3535074,
+    "sha256": "9dc01f470b4e31675bdcba1cd0347e2e15f1b9865542c49169f1cc8dd8f2d35e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_130.png",
+    "bytes": 3399368,
+    "sha256": "bdbc8e019b2d85304a4471b4aa077c1ff057b762213e33cabea7ac5f4ebf6cbe",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_131.png",
+    "bytes": 3556205,
+    "sha256": "4e583bc76094a489e489cb43c328945453bea6775cdd5e68d52b0b35d74ab5a7",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_132.png",
+    "bytes": 3562895,
+    "sha256": "f85b6b19a4c063e1700ef1b26926b1cd199ecc8a8172e602eef40b894573979b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_133.png",
+    "bytes": 3552556,
+    "sha256": "e52f433953bca57ad8927a918b972a4b1b7de1990da0630eedccc123c9218902",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_134.png",
+    "bytes": 3608807,
+    "sha256": "594ee0208969451a56a1263925b22aff64112eea51392fbabcd519b9a3cc6a74",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_135.png",
+    "bytes": 3585617,
+    "sha256": "7f437d5bfbebe150531ac2c34640471576e8c6da2a1563cd9bbf636747799202",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_136.png",
+    "bytes": 3617381,
+    "sha256": "268f140917d0a2b5668b79f5e4f8a6288723833ada91ee0284d6600b00b82edc",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_137.png",
+    "bytes": 3558769,
+    "sha256": "55e8d15ceaa4637f83875cfc2e388bcd94d10848da579d6f561bc3f02ce9974b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_138.png",
+    "bytes": 3565224,
+    "sha256": "174e8cc85f782fcdee3ad93b6c44b2d2e6750ef5afb42ddf6ec45cba8c737f63",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_139.png",
+    "bytes": 3554451,
+    "sha256": "b6218992748ea3b708f8991199ba24d0ff8fdb4b5da3c9b5bacb39d96a9da0a2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_140.png",
+    "bytes": 3586792,
+    "sha256": "71736b49c5aecfe3b18aae3eb76eb35de812c14d35311af5fa8b27e07fa30c38",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_141.png",
+    "bytes": 3567926,
+    "sha256": "f731019ef07c51698b12d033028fac85791c977dbca1a5578d2f0278388dc3b1",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_142.png",
+    "bytes": 3554623,
+    "sha256": "582486a9be71ac201d0a09821b7f4157d24ea143fc344d2f48eaecbf0f62aeff",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_143.png",
+    "bytes": 3574618,
+    "sha256": "76c3dfb01b2ca3496ab6ac25f8091108d455c985d84d4fc8b00d78592616f027",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_144.png",
+    "bytes": 3506276,
+    "sha256": "dd760f52f65fa71e01262398c0ec042cf02e2e3f5d052cb8d617919e2216db88",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_145.png",
+    "bytes": 3499632,
+    "sha256": "3599ea4b44c4650a0e831691e80e35112131833c6be709e60c52e3fcaa1f2539",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_146.png",
+    "bytes": 3555806,
+    "sha256": "fb748917dd39b9ae8ba02d9fb6f6300d9ca412e13c0340b3ece98141a60448d0",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_147.png",
+    "bytes": 3558710,
+    "sha256": "ef124d0dc36abe036f0f6fd82ed33369358d340960bfdf9fc1c64fb920d7c74c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_148.png",
+    "bytes": 3586835,
+    "sha256": "a04825910673f51dcd7103e5f105ff7c8ff7f0efaef88ca9a99acc9fe1288198",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_149.png",
+    "bytes": 3567085,
+    "sha256": "1b75193822f5690b1e7ffe4332d4e8ad804ca07e25289530f0b1ab13396920da",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_150.png",
+    "bytes": 3589075,
+    "sha256": "fdf414c662ae66a4f75d884e883b00790604d71361aacf50463bb7cc8e92d83e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_151.png",
+    "bytes": 3576952,
+    "sha256": "86741f69bacc6e982d1a1055833489327afe489c762e95bb646e47e5353fb13d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_152.png",
+    "bytes": 3536117,
+    "sha256": "12f06ba17028dab45e18eb4ded4ab74df1e2e9b86599431b4b9587b01c9d992a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_153.png",
+    "bytes": 3564157,
+    "sha256": "86996761c2673b1bfb89c729db9b5b80dde3ec3f0e6a45eb98b4d76a60e168f2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_154.png",
+    "bytes": 3558413,
+    "sha256": "0f348a147cb025bb5015f92758a12d600eaa50458f5135824b4503c87621966f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_155.png",
+    "bytes": 3585508,
+    "sha256": "8c5cae632e1e22bc2f35daf16ad2181d0149b24604f7ad782b98186bec88e894",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_156.png",
+    "bytes": 3557013,
+    "sha256": "3372e8e3eaa0f71efcb5aca5ddaf8fbbe7cbbc7c4d6c004319a42abd9b723293",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_157.png",
+    "bytes": 3610422,
+    "sha256": "40c40db1177b6a514e10610699277ffdff4fe730713c184c731dce894e96458a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_158.png",
+    "bytes": 3609706,
+    "sha256": "494bf10d928ae93cb289a5fa85a1cc0d52ded87e048cec932abd9518a82ab853",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_159.png",
+    "bytes": 3594358,
+    "sha256": "8d062ae1937710e33497693257d954df1093f65bc43b760ed7977ed1dd386fff",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_160.png",
+    "bytes": 3582941,
+    "sha256": "f29d0a8429ba5c626a527441bb77ad6ee760443d6e21fca470c4fa73767ea9ae",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_161.png",
+    "bytes": 3567652,
+    "sha256": "8a8e8dca0eb486b6254beb825764e0da421a6afb6b1e3157f4a5d87365d8e9bb",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_162.png",
+    "bytes": 3586233,
+    "sha256": "42baa99be24f7dd39ceb35e8ad1b47e242415a643ca7c93b5a64221cc6c69750",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_163.png",
+    "bytes": 3561729,
+    "sha256": "b544e677e69f2cb8d3adfd438943744c77daa49f2612117a8a8b5016c283e228",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_164.png",
+    "bytes": 3562959,
+    "sha256": "bb84d247ffa96cc13b8768ab47a16bc5bfaa479d0158bc58c40520fe1fef6d4a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_165.png",
+    "bytes": 3547852,
+    "sha256": "582a401c35b73ea44f51ec708b0f985b92ef625e44172e7be2bc21e85a052857",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_166.png",
+    "bytes": 3560208,
+    "sha256": "151bf29c0bd59942947d3f8e7a2904bfada67028bfe12de401ba1faeb35abb71",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_167.png",
+    "bytes": 3554368,
+    "sha256": "827ae2dacf221c3370939c0d1956a93ad476bd71b61a33124198fa683d6223b5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_168.png",
+    "bytes": 3588247,
+    "sha256": "e7b2479bbec1028c2a4d84dde3b9435a1da9224431fe059e0b486d61720b5a5f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_169.png",
+    "bytes": 3596286,
+    "sha256": "1bb38dd2f5c52d486c4371706e5d6f3e318596a7742a310b1c87c0b59dfddb5a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_170.png",
+    "bytes": 3534872,
+    "sha256": "7e094a58ca0fe47262bb5ea036a31312946ddc6d77e329da22a8201f150ff5a4",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_171.png",
+    "bytes": 3558397,
+    "sha256": "9d687754adfe7dcb253ff5cc350f978c0d2492ae7fa18ee1e613e4dd366f2484",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_172.png",
+    "bytes": 3545723,
+    "sha256": "cda11712c99a93152e7b57111aae1bb69bcbd9f085645e67dd65e7913fabff6c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_173.png",
+    "bytes": 3542551,
+    "sha256": "a6aeaf2faa5b28a2ba0fe9ec91882f18f0e3a7a05b76e9bafcece626c4755aa9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_174.png",
+    "bytes": 3544549,
+    "sha256": "84baf92c7b844e7434b7012779885e06db832b9662cd620a166e84ccfd2026b6",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_175.png",
+    "bytes": 3553573,
+    "sha256": "a0e39669cd8c9675f7581191c9edb7ecde58ef15afdfd2f939afc3caf5779717",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_176.png",
+    "bytes": 3598665,
+    "sha256": "f25db8d454dbbdd5fd76dd5fcde7d256a38bd80be0c1da7dedb45bc31ae0f09a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_177.png",
+    "bytes": 3570729,
+    "sha256": "82c5500730526a7a18bfac1935460910e280b27e99abec14dbbd7329e133b7ef",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_178.png",
+    "bytes": 3559635,
+    "sha256": "9b483f17adef6786b2467e668b6d0375902b56446a51e9c4cfe07729632a0734",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_179.png",
+    "bytes": 3558044,
+    "sha256": "2047f5c2749130d6e4cc7357562f23b7ca0034a4af90c7860139f6ed6f005e98",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_180.png",
+    "bytes": 3600988,
+    "sha256": "b5d586b574f8c5563c1d202af9e41c0dfc7c79eaace4dad7f3faa309c1a45a09",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_181.png",
+    "bytes": 3596957,
+    "sha256": "31db0f188754908e0da92f23acf4d762758d18ecbb49dd3d918c3c6ac22caf5a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_182.png",
+    "bytes": 3596185,
+    "sha256": "f3207d16cbca0b3b64146b2d9d5f8d8ec3892e393c2f10d4f8ae3091f1d0722e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_183.png",
+    "bytes": 3596413,
+    "sha256": "ad27bc3caa4e179ed95c44abcc23902cad8275912aed38203c658eb6684916eb",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_184.png",
+    "bytes": 3595268,
+    "sha256": "5b41c40c7e7f69948e1b182c438894b57e3e57d475489a4ad09f6b70e9fa52ca",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_185.png",
+    "bytes": 3593611,
+    "sha256": "abe10b2684a2b2e7b11ab14e1d8d9dd441adc3b8a1dc5c839a81fb47ecce5fe9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_186.png",
+    "bytes": 3596442,
+    "sha256": "0ccb199520a47a81f5ae61d54adc9392edf63e086e7c7996dd7d25b40969c6ff",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_187.png",
+    "bytes": 3598100,
+    "sha256": "4f9a296cf5fd3ebe82e97325472b7bea95553b2e7b88f2ba0c0cf96b8f94cfeb",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_188.png",
+    "bytes": 3590658,
+    "sha256": "4afe9813d2f37a9816c73997d09acb50bc27514b220001299b87818cbf7d0e6c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_189.png",
+    "bytes": 3587402,
+    "sha256": "6c08e902cacd9c7db64979e554c2aa73869761fe5e1591be62d713c9624c27e2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_190.png",
+    "bytes": 3592396,
+    "sha256": "3290cc2083990ebcb1836c561dbb19397ce29df5e8a6e19325c2586b669d303c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_191.png",
+    "bytes": 3577331,
+    "sha256": "0dd3fae3ccdb4dfeac79d96451bf55134369837684ed3e1e901567cbe6df53bd",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_192.png",
+    "bytes": 3591463,
+    "sha256": "0c9a423cf0f06b9167b6710ccb6d7313cfeb2533afadba987d7792c2052db232",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_193.png",
+    "bytes": 3599362,
+    "sha256": "05cda6ef23c0a01eb2d781a21ea1a53b40663e63671d673cba7b2306fdf5f1c8",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_194.png",
+    "bytes": 3590752,
+    "sha256": "f0d770f8cbb9af7b8d014430ea735bc18d21d521dd458b43ae0f1094a07970bc",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_195.png",
+    "bytes": 3559788,
+    "sha256": "5389ac14f1a9f4201297489b8a001345810755f09cd49d2e6cc9329164695501",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_196.png",
+    "bytes": 3554765,
+    "sha256": "0fc93ad7546b3ce6529d389aab0888cd033917754510268f2f89ef7b66e714a7",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_197.png",
+    "bytes": 3555740,
+    "sha256": "458bf435a19e23be946614f00f0348295d94587b2c78ac0a6a4dcd460cc65fb7",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_198.png",
+    "bytes": 3553443,
+    "sha256": "ead8c5dd40b6f5e5798b5c8cfff3e05a578639957d03f6b49a8c989b0fe2462d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_199.png",
+    "bytes": 3540690,
+    "sha256": "fea275c426c32c64d8a6f80ef542dd6bba95d3f8017db6bbfbd17c2e0d0012b6",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_200.png",
+    "bytes": 3566288,
+    "sha256": "065214ef082a5f5914558145aebd776a7f014f641cadf2bdd4e142704c23b683",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_201.png",
+    "bytes": 3592386,
+    "sha256": "613aa84a1e63b8feacbfcec2402cd4dbc1a8bd30f44bbee12f5ac5b6e1363ee3",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_202.png",
+    "bytes": 3621386,
+    "sha256": "b644bbc8de3ed19901ac56ad003ef9fb9b831ce54f89ca9205fb4d43fffddc3a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_203.png",
+    "bytes": 3620807,
+    "sha256": "495a3d211a2665a300c1260d2c7eb622005284d62db71a571aba0e879fc393f9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_204.png",
+    "bytes": 3585913,
+    "sha256": "d3fe918cfead2e424a586629746617b8654845ea8bc46a848711cf7709a7a3a7",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_205.png",
+    "bytes": 3591120,
+    "sha256": "6f27618154b89eb88006df4416b7a7b4aa756d53dbc438e0256888e6d50ba9f4",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_206.png",
+    "bytes": 3591237,
+    "sha256": "6aebfc8f1e0fd958077191ddce8f16e1d1e5fb2ff6b0200a69ef564578ffc2c6",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_207.png",
+    "bytes": 3606734,
+    "sha256": "0495844494e6cb567f407ab1e07ed2c101d64fcc9663f14bab99ff1dd49df5b0",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_208.png",
+    "bytes": 3588397,
+    "sha256": "e5c0ce625ebfe882e712a5e9b238aaa3cd5c28a0d1743b0b81b92ea146b09657",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_209.png",
+    "bytes": 3578710,
+    "sha256": "5d7f3a07836b8ee9886e4028afe408dee913ef3ebbc0dc31a0f36b5f651da14b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_210.png",
+    "bytes": 3564659,
+    "sha256": "5b1f225f1b9b8ffb1c762b796fe3b6b2de72fcae4e6fd4e2463d9c8a43ac488c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_211.png",
+    "bytes": 3579005,
+    "sha256": "9d25aa1fe0ca688939210045285f6777f526f39dd0a87c6e5aed7471415e1395",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_212.png",
+    "bytes": 3571222,
+    "sha256": "d5730e06e15ee59d61006ab4be9d22efc958420077fae270ae3c9b1a3f2f6f9f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_213.png",
+    "bytes": 3541288,
+    "sha256": "62fe19c607086a27a0cd1b1ab65c364a2edb3ae5cd7d13f2245496cb420cfee3",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_214.png",
+    "bytes": 3516612,
+    "sha256": "9df5e889a02283d7e33464e8fcee3d2d3a9b86386cef8d443c4e2b6d3362a3a5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_215.png",
+    "bytes": 3551144,
+    "sha256": "571116243a237f4e9c69269674c968ecba28c77f1d49c90ef05fc57cb76c2892",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_216.png",
+    "bytes": 3554383,
+    "sha256": "8647571d9b365c7c9a290843511012ac20ad657797ab64481e81cac182d66338",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_217.png",
+    "bytes": 3513130,
+    "sha256": "68286e4b8f52431198f8a321681bb15b44f6bda8821725bbd97287e0359406c0",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_218.png",
+    "bytes": 3551200,
+    "sha256": "8b997f3d5bca0175b1754f4c09b0a0b243b3e1f277be15202a4da338802ed0b8",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_219.png",
+    "bytes": 3547120,
+    "sha256": "434f4183abbfc983eed4c13500dde60d53e189a4852a67f4f0ae5544b416f64f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_220.png",
+    "bytes": 3548964,
+    "sha256": "f202f0fe241d3228eca0c68ae6904292b73fa7bae70816ccf8d6c2f75910aab8",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_221.png",
+    "bytes": 5940028,
+    "sha256": "462bf0e76e2b55d133450ccf06bcd41167f8eb03808092fc99bff15c8bd6586c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_222.png",
+    "bytes": 3547729,
+    "sha256": "401f395f2cd082ac07f2df323e13e693ccea047b2354c2bdf390a94797ae485e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_223.png",
+    "bytes": 3541974,
+    "sha256": "77745958c46ef4975f75a8b9a66f9026401bbc048ab6f2fc058d7f33475fa9c9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_224.png",
+    "bytes": 3525621,
+    "sha256": "b3df15f8ad71b41c5add10d1e5c74b12d16f42d07d0b82dedd873de05bc2870e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_225.png",
+    "bytes": 3583550,
+    "sha256": "ba113bc0992db6b1b791718de57e3769ce9ca4bde7ffb2a6f0c925bb73edab16",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_226.png",
+    "bytes": 3561398,
+    "sha256": "2683a74483ccaa03623242076f527e2c853d4e091a5210aa28ee5e2fa7308195",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_227.png",
+    "bytes": 3528955,
+    "sha256": "9c297845021d1ede4e89325e593e4755cb955e75b221a8511b85701d54f70499",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_228.png",
+    "bytes": 3535550,
+    "sha256": "30e8734e111e4ddadc12c1f654b85fc104c2ed267f6df28701ebb3f3fc8123f4",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_229.png",
+    "bytes": 3549627,
+    "sha256": "bf0786c9ff5b9f3b23e7cda07e392750a17c8a98562debc5d31f9962e83c0a25",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_230.png",
+    "bytes": 3516705,
+    "sha256": "b5d49154610ba86d0254d0d01c25c6ab06083e2a09272f3fe804ea2d15dd61b4",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_231.png",
+    "bytes": 3509144,
+    "sha256": "f1fc594a1768c85aa84652b1fd9b8876e51bbee0a712b84cd609cebaf236a87b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_232.png",
+    "bytes": 3534644,
+    "sha256": "c9fde3e65d3ff22236cad197251a59809c96ff8a8689e697a1efabb48ed27349",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_233.png",
+    "bytes": 3530797,
+    "sha256": "dc4d8c0ea5828b57a840c8ac5e29ff364aee978ec80a59be7e0ccb3b3f720d6c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_234.png",
+    "bytes": 3539185,
+    "sha256": "e29fdbcb8a12621a5e872d4db6c055ec890e692fd81c1f03258ddadc1260f0a2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_235.png",
+    "bytes": 3525472,
+    "sha256": "64c64eee5c92657c125342a051967591e1536fa4fbb7f07fc0f45ddb4fbb646f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_236.png",
+    "bytes": 3530990,
+    "sha256": "513269e573a208cd34f117aae2d757a45f8b666f59f6db7ebcd72fd5bfacd318",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_237.png",
+    "bytes": 3526356,
+    "sha256": "c46c6b76c692fb9c0ea98b62664b8e262559841b5e3d8ff3d336fd1a5ccf7c7d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_238.png",
+    "bytes": 3505519,
+    "sha256": "2e62bdd5097cd8a890ddb4172964df2b09c5eaa3a3a4c705efe2e6b0682469f7",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_239.png",
+    "bytes": 3536815,
+    "sha256": "4495a2200b170f8b038cdf6481aa8083da7b3c38d4ebd572f0490d760526e2ed",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_240.png",
+    "bytes": 3542918,
+    "sha256": "13df91b1248d1a633e9a173111fd01859dcff490b08b7e56da6b46d2543578be",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_241.png",
+    "bytes": 3509690,
+    "sha256": "4111a9e545872c8d7d9cbd2e629316ea78be75eddf7a404834e62c0ea7be34bd",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_242.png",
+    "bytes": 3537265,
+    "sha256": "9e21b490720d7c831c09b98a582fef751f53b0f33af7f1e434f94a6902a4b8e3",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_243.png",
+    "bytes": 3528617,
+    "sha256": "096b9083b28bda0d28813f7dbb34cbfaff39d6e02b569965bb75aedc52fd7350",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_244.png",
+    "bytes": 3526141,
+    "sha256": "3acc5a91285f00ffcec05e26ca43215e563b56b77e7b67843818f6d553b2fbb5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_245.png",
+    "bytes": 3519586,
+    "sha256": "74b8c1508b631b772daeff11ad30591f66cac3fb299cdcf9f7bd5f0b79677640",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_246.png",
+    "bytes": 3517653,
+    "sha256": "3b13527585e772dab2008dd39749dd33a4e577fe935098089117b1785e9cfcfd",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_247.png",
+    "bytes": 3532217,
+    "sha256": "d86cbc7ccd25998bf9593682bf6c1cebfe2079a3a91446b7910bd9ef3cc37478",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_248.png",
+    "bytes": 3496460,
+    "sha256": "a9045983a607c6067abe95ade866cf92d29ea778e6d47b75ec458c208f974078",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_249.png",
+    "bytes": 3514977,
+    "sha256": "3b8bd8cfc6395de4cf706b81a60b6582555534c6c34622a60ad32c4530c7f54d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_250.png",
+    "bytes": 3474449,
+    "sha256": "6c113b63d6456c4a3e4f838d04a70b8ae18837555bc0344445336c3f7ba961e9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_251.png",
+    "bytes": 3518773,
+    "sha256": "e601015e3e54746f3b799889c16bb2506aabe09227503b16153f9f6648f74d87",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_252.png",
+    "bytes": 3463161,
+    "sha256": "afbfb51cf3de409490c3d97cad8bd84de3ec1bca5686bdb7cf222015e4e38895",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_253.png",
+    "bytes": 3482332,
+    "sha256": "10bd98970f118396d380f86afbdf669e5a3409cfa7c3eccaf553dd78aaba07a0",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_254.png",
+    "bytes": 3534337,
+    "sha256": "b8e27e154d33900d383f65fead45bd257198d3e7e8357e9bbe2b541ec8d733f5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_255.png",
+    "bytes": 3529856,
+    "sha256": "9464daa979ac9f5cb6f452fd1aa3e19433a73fdf8ef5fdb125f186ae8c699ae5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_256.png",
+    "bytes": 3523491,
+    "sha256": "2c72d44d6505c751666cc24e07e5de96daa7924ceb7e32d3c1df26d63c1f435e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_257.png",
+    "bytes": 3532805,
+    "sha256": "0414ca74ee326f3c66273b017b6bb3f156f4a52544a3ceea51c0851e31e70ab0",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_258.png",
+    "bytes": 3521876,
+    "sha256": "e7dbf007a5f101d0ddadda7d51008dd0076ab24aa3127c57a0d974df9d1ce746",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_259.png",
+    "bytes": 3552133,
+    "sha256": "c03e244862e4e513577cd03f73f6f7bfbcb67b98e092ae32b36fb89fbaf92bef",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_260.png",
+    "bytes": 3537403,
+    "sha256": "31d36c7509910ec9114ef3a17c8e50e0e8c9799f4bd1a5d3f1b7faefa8a93168",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_261.png",
+    "bytes": 3540366,
+    "sha256": "74e8731145d988c21aa7b446a8b44404689d529ab61c599df236b0c57a8a6501",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_262.png",
+    "bytes": 3553399,
+    "sha256": "2819525ea9a557d73dda10a47a109f97d45c28705b8fe51421c1bfbac6eda44f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_263.png",
+    "bytes": 3540594,
+    "sha256": "73168739ed9ddc13a235bc334d84f4cb3fa32cf6f4b7babb8dca2abb6ae81179",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_264.png",
+    "bytes": 3586255,
+    "sha256": "4919c9601aaf356f401e46d6e6c5ada4e3228d93a3686f0f6b2c52f22e012a38",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_265.png",
+    "bytes": 3574579,
+    "sha256": "483303040c53c93341ab155f547770c905ad89bbe7a418c8ecb0ce702d99dcdb",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_266.png",
+    "bytes": 3580215,
+    "sha256": "ac59371a60ba3c06e7e6d1b69743ca735ede3b887406b1b57bc8fd841c971ee7",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_267.png",
+    "bytes": 3490200,
+    "sha256": "8efad11d7cf3716b8bd15a7d11005ce5111f9542a12737a7e8bab9346c082914",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_268.png",
+    "bytes": 3540376,
+    "sha256": "a8c6167058a63acee95ab8a86df85057fba98a59252e692e0f0a93a9e8c06c8c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_269.png",
+    "bytes": 3562257,
+    "sha256": "422dbb66eedaa442954af15e20a0507c432b9ee4299caaa17c176de409769dbf",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_270.png",
+    "bytes": 3544226,
+    "sha256": "d1df080437649f638bf78c3ebe485dac5ab90624542d8aa374c732eb290e9973",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_271.png",
+    "bytes": 3548573,
+    "sha256": "8d6ce3468448ba366e00ebdaad0d3b15b17b8d360ec01cc234edfd639b2b161a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_272.png",
+    "bytes": 3569071,
+    "sha256": "e1ca20b93613226dc21257d3b56e31fe3becd8063a9eb113014f84e5ff9faad8",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_273.png",
+    "bytes": 3569282,
+    "sha256": "ed55326fc027899abac214508d775507678dddb65e863a48749b5808f7119885",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_274.png",
+    "bytes": 3578717,
+    "sha256": "d2faf3b852bda70de388b6302a2219ee27d9779c8da99b727a3d1361dfc75ab2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_275.png",
+    "bytes": 3554644,
+    "sha256": "17e4e840b24752a8ad8e22c667720e4558af5758b67c88e12c5e0033a9790161",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_276.png",
+    "bytes": 3478503,
+    "sha256": "ab09525cd5ed46f4a09b461ee4eb719bcd79fb0b5d32ccc94bc9c2fb69630262",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_277.png",
+    "bytes": 3555591,
+    "sha256": "a2d5afd50419646c62fb6446926bd615e990915628e3fdb03434040c1b528628",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_278.png",
+    "bytes": 3549113,
+    "sha256": "b595cc798ac859ff2fabf0cdd3858f5c1d64a15595d242188fbfb6f7c7555e77",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_279.png",
+    "bytes": 3549293,
+    "sha256": "3848976d044d72c29158b47203da6668fd5a9acee4dc9c16465f5863963bc69c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_280.png",
+    "bytes": 3549555,
+    "sha256": "699e5b9100ad811ee61b6127bad17c277e5cf6d7b59a9b9ca57c1b48384949c5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_281.png",
+    "bytes": 3560700,
+    "sha256": "43fa5c09b3bb033c91ba3f3603d65dcb106750213ee922ab189741242ec72f00",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_282.png",
+    "bytes": 3536060,
+    "sha256": "d1d257d1efcdbbd4db9d069781c95d3afb093d119a5a5679c3b3aa4236b34ea0",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_283.png",
+    "bytes": 3549006,
+    "sha256": "e1e8022c4edc69d3e4829d3522aa945ee26de4318b22ff72ec6df9dfdbbb254b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_284.png",
+    "bytes": 3542980,
+    "sha256": "7824635e9fb18755c8256edbf70c91607161b2ef6bcb4ea3927ab80b5e4ce36c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_285.png",
+    "bytes": 3536614,
+    "sha256": "eb18bcf72ad14a225654c264f74c0bd5e238e0db250aed37433adf61c1f51b7f",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_286.png",
+    "bytes": 3522790,
+    "sha256": "84ed68876f69d5624b144462c3502c34209b7e0a2d894c0dbeba29b3e5e69689",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_287.png",
+    "bytes": 3511179,
+    "sha256": "beccfea8aa7aa1eea0f1597d3d819a1a71545679dc2bbec02634135c8f2cf2db",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_288.png",
+    "bytes": 3544470,
+    "sha256": "ee737ddfb25a6e3ef41222e6d928e11af327ed30e60a31943736c475ddc1a4ac",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_289.png",
+    "bytes": 3526756,
+    "sha256": "b936bcbb14744fa4ea3a445ca6fba3dd114c47c5a3aa43ab52d3f84ee6ce9b15",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_290.png",
+    "bytes": 3542103,
+    "sha256": "d744377fb85679cf42f7a25d4a3d34e200bea50e6808a3d641d1ff2b118de727",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_291.png",
+    "bytes": 3536774,
+    "sha256": "49d2a08ab6a3d7f3b7e2391ea3d50f77d7c380431a8c55fd41248fa49c9606e6",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_292.png",
+    "bytes": 3526107,
+    "sha256": "ec8e606e9cea06b5848d2efc2342a55fd96143b4ea5ce60d796d53882af761e3",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_293.png",
+    "bytes": 3528645,
+    "sha256": "a50fecd273294781018c2a4baac19f4ce914c7d2562e4786826de22851d88b5d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_294.png",
+    "bytes": 3523782,
+    "sha256": "2caa8ebc558b1627e02f7c52a8f54b2a89ea4b1ddb627acd64a955ef334f88ae",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_295.png",
+    "bytes": 3553872,
+    "sha256": "e64b2c16b98227d7793d2d76b50e628f257bb51311f4c8e69fc48a3f055ebd12",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_296.png",
+    "bytes": 3546824,
+    "sha256": "88a7223f7568fec0829018c4ab7ffcc8da55c0ee524be553208917da17b95d31",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_297.png",
+    "bytes": 3545524,
+    "sha256": "e8307fe81beeb2e5438769fe0f337246e8f7b410a6c87136a9f800bab2809552",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_298.png",
+    "bytes": 3547460,
+    "sha256": "43c1e731a606660b5405d01eb20970e6c625aa271388a94ba91db4802782bb49",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_299.png",
+    "bytes": 3538173,
+    "sha256": "046fae669ee2d9b191f249b3a7cc7b5698caa8079ac4a54ab2db0c5a94e9c6c6",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_300.png",
+    "bytes": 3433362,
+    "sha256": "01cec4e12edef28b75f62d935e87bf9bda434dab8ce2c088cbb045d3d5c99aa9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_301.png",
+    "bytes": 3448162,
+    "sha256": "8afc9ae353c992373592864d4f3a56a576f723498ddcb326e140f8f50a6d8e0d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_302.png",
+    "bytes": 3455941,
+    "sha256": "a6f7c834fe0450a10854a152d12f8b06bec330de6215ae79f4d81e697b50f0de",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_303.png",
+    "bytes": 3443660,
+    "sha256": "15c04d19e6386439d3f907af98f0fcfb3e74b53c7a25503be7fb4120e286f947",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_304.png",
+    "bytes": 3443731,
+    "sha256": "4d8072a52db63a03d970fd5921183a3adfce1546ce7a80dfd2df38cf4841df27",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_305.png",
+    "bytes": 3429730,
+    "sha256": "18aa2344a671ea9db7f7fded667fa34b3182df9f133dc6690366e21177f6c7e9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_306.png",
+    "bytes": 3449621,
+    "sha256": "36fbe6356b956dc65d87a85ae2a061be838a51b729868cca3b10e499ec3600d3",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_307.png",
+    "bytes": 3572373,
+    "sha256": "81d9f05583d15275770cb36100d3ca8f3458529d7e1cfae11e3aa0872bd9c69e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_308.png",
+    "bytes": 3559583,
+    "sha256": "26825cbc568f26eaad94ab05259369b927c996863ab8245cc8acaa1ad93bb7e4",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_309.png",
+    "bytes": 3558207,
+    "sha256": "d56f581b255379057295992c485feb65e817f88621a9b28f7db31ba7cc721e47",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_310.png",
+    "bytes": 3573506,
+    "sha256": "047669d235926848ad6b1cf5f3b717c7837003a8947ab9d1bd8abf5428900c33",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_311.png",
+    "bytes": 3572795,
+    "sha256": "df0df47491d703ab6c7f687474450ad95b12cf0ca041cee49cfc058372568c8d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_312.png",
+    "bytes": 3549199,
+    "sha256": "68725dab19c8600bc25b643bc5cf13b0e265a38344a8a668ca6b7f38bca1ce22",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_313.png",
+    "bytes": 3544832,
+    "sha256": "135cf4d60a55afc31e1934008c6ae5bf4dbcaed5e3a23939234dc5d6fe74c127",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_314.png",
+    "bytes": 3548561,
+    "sha256": "97217aa9f37d139a6ce38fa1f1b7b6708553bcf79df3c1bf35bcb88a51ffcdd8",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_315.png",
+    "bytes": 3545254,
+    "sha256": "8ca1780ceba921813d1874f920db93af65383c9aa5e2675924d941fa8a1f6912",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_316.png",
+    "bytes": 3539170,
+    "sha256": "0db245445481965e27c40d2ce5f0fdb623a178dd22178e326c4ecd926ebe8710",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_317.png",
+    "bytes": 3565655,
+    "sha256": "6aaf9eafcc106cbf65ed89c1588c2c313e24afb49f8fae0e39d9b8326a7f1207",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_318.png",
+    "bytes": 3559922,
+    "sha256": "f3a897efa13f92e0dfc42eb8568ad4a50118493a965a7d2fc26c5d71350fff53",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_319.png",
+    "bytes": 3552018,
+    "sha256": "a7fd549a7d2e970f18d15aaa036d026a1f52ad54031eb1e6e2e79725c4eca295",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_320.png",
+    "bytes": 3558088,
+    "sha256": "102b62ab7bdd55b172162932c5b5b3552a1f54408aa31a2b1d5e21fbfa3d62d8",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_321.png",
+    "bytes": 3558578,
+    "sha256": "5ffd8d5b4448f9ed02168c9322119e893aaf3373ef657b2fd655a785c6635d33",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_322.png",
+    "bytes": 3547478,
+    "sha256": "bf6d2e92012a066ec67163e04aae11d21e1b60387cce1b635382a2c298af2443",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_323.png",
+    "bytes": 3560939,
+    "sha256": "7c4a08ead01f1795e47b9f5726288a0e20d568341f2a7eb3d08c9cf56316bba2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_324.png",
+    "bytes": 3549415,
+    "sha256": "fbd7670a3b8e8df771e4b1e43e7188b1e351eba0d9205ef49480ef5bc50660f2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_325.png",
+    "bytes": 3544972,
+    "sha256": "919c65fecb58a74ed01f0cc40d3a692bb6509e6ae27f52f7cb9152ec1720883b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_326.png",
+    "bytes": 3560057,
+    "sha256": "18bd9f76ffb7d7c9b04d6fab46020d8269fb0c23cd5a215b8fff54fc24f2d76e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_327.png",
+    "bytes": 3491382,
+    "sha256": "81b2d1ee9d5d1ce022d65a2185c212cb79b87b7855a8823a1c30d4bfa697c1d6",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_328.png",
+    "bytes": 3561092,
+    "sha256": "4c8e22372735f3c9592bc7b2426a228846af1823fc7cbf5426ff6596e4b511ee",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_329.png",
+    "bytes": 3556195,
+    "sha256": "94dc98efafcb98c759d27bf06078ccb4d4bf5f2b6c1691fc8cc8f749b16b0d75",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_330.png",
+    "bytes": 3505093,
+    "sha256": "af3b740b82de5ff6841487038f82aa46819802af3b3f25c1b1783827356802af",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_331.png",
+    "bytes": 3544069,
+    "sha256": "3173d07d36fe272c370b4c08cc37dfba7537f096127f07df4c44d328ca03c6fb",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_332.png",
+    "bytes": 3560157,
+    "sha256": "346bf29b822609e702289873344e74d8af23641b1af58e638b641bd45730ca1a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_333.png",
+    "bytes": 3561135,
+    "sha256": "b4997153bf9c4329508a57f27a36a3bab113ff1efbd131fcb260c2e50af5f662",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_334.png",
+    "bytes": 3555055,
+    "sha256": "d37150d4500772326d74b8a9ef470dac43cdcea888dfa44edec2f8c65df92ee6",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_335.png",
+    "bytes": 3550205,
+    "sha256": "d38363708d18bbe41884656c889d442a9e8a7af6e12e4ce71bc5ff70a3737999",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_336.png",
+    "bytes": 3543461,
+    "sha256": "ef6a3478c3fae3fe9d59590e8955bf4a020ffc8e548928c7e8fb552aebe0b4cb",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_337.png",
+    "bytes": 3548533,
+    "sha256": "bf87de17efa4d66cf5ba56c9b184a8b818b99a794d081d3b4fa29a2f84714521",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_338.png",
+    "bytes": 3620904,
+    "sha256": "282af2eee7f045ca84e6e490818be244bffaf16f6f41fec6bc7d7b6b3820c54a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_339.png",
+    "bytes": 3548774,
+    "sha256": "66ed75e6c79e4ddbbb6acc388e1d423c9fae131e77ce29f43dba1a9f8b993cb8",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_340.png",
+    "bytes": 3556099,
+    "sha256": "7646dca7ad0cd11dcd28f1db396c6dbd3ce0673e1b106334ba57546ce757be7a",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_341.png",
+    "bytes": 3572547,
+    "sha256": "c32c57a2cf2b49096a1332460eeb5b7defd9d529ea83cfbb06161f7c65125431",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_342.png",
+    "bytes": 3552368,
+    "sha256": "2a34e49eb2914311c90e4540eb4f96f4ca61faf2bb2b11dcec11b9d2f12781f2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_343.png",
+    "bytes": 3559507,
+    "sha256": "e79e00c367cd76388328fccd51fcea1f5c93f86a3e6211f0f2d7b9f600fa4d52",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_344.png",
+    "bytes": 3555118,
+    "sha256": "082118a3c0a7530b640a9327b369e73c9d63ec9ed7ca11fb15565aeb840bb4ca",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_345.png",
+    "bytes": 3549941,
+    "sha256": "cd3f189ab45dc0a5089b04ac4e1a4cfd55e9e449ae2dfe485bc83ff8f40f1e19",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_346.png",
+    "bytes": 3556793,
+    "sha256": "20bc7b89229596204aea8f3472b5664f22480dbe7bb31ee31ffdc5ae46f0fb51",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_347.png",
+    "bytes": 3530203,
+    "sha256": "551053f8849129d3029da71dc9bdecbff0bcb7da8fd80731d52aeb7de0b2a399",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_348.png",
+    "bytes": 3562177,
+    "sha256": "a5d837505578c545652099b9c94b71761e906a7f08248b96826c49ed0407896c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_349.png",
+    "bytes": 3552770,
+    "sha256": "6baa25b6ffe605930073b831466de619db2d9123ab5f5526092e337553058e57",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_350.png",
+    "bytes": 3545229,
+    "sha256": "79de663ab3a1682be200ecb8386bdd39402893a7592021af3d64ad5d7c111248",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_351.png",
+    "bytes": 3562699,
+    "sha256": "ada0dffc1733702934f801462992276ba8e7c31a12b0630d860030ade6a03b51",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_352.png",
+    "bytes": 3553251,
+    "sha256": "2496143397db1d2d2cc21fb64b2b1580329c2ef697ec81bbf4652284fb3848cc",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_353.png",
+    "bytes": 3554198,
+    "sha256": "6de034fe5458222ea7151c0fe638a5344e3be25ae96649029912af707c46d9b2",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_354.png",
+    "bytes": 3547911,
+    "sha256": "91c656effec1435b263719449b9066321700039a6fe2360eac38fd6f9398363e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_355.png",
+    "bytes": 3509378,
+    "sha256": "f163b41e44ec821e71f7d8d956737061fb724cd380c6189fc3349c914249cc67",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_356.png",
+    "bytes": 3559644,
+    "sha256": "650ed880cf46bd085491fd2b6d6e92c8993d3f4e3d40112a5135eff27c723626",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_357.png",
+    "bytes": 3546124,
+    "sha256": "2e5393dbd800714ee1e4c19e8ac7f70b46dea6b1bfdc58be22f445a2b854aef5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_358.png",
+    "bytes": 3545997,
+    "sha256": "08f9a1f00ae69785ec6abf42ce881a45b075e69b8ac098a127e12ff625cdb64c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_359.png",
+    "bytes": 3566347,
+    "sha256": "6293561f36fe20deaf1b553e0d3a9d7841cee20964e0dbfba0cf127b887a26ac",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_360.png",
+    "bytes": 3554603,
+    "sha256": "20e9421d11821551dea406a331e0056c7d2aa2c711fed6194ad8c471b559763b",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_361.png",
+    "bytes": 3572242,
+    "sha256": "62bc6827c6f15305ae35ce6ca098f51f8f550ee12207fd939fe5def413cf460e",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_362.png",
+    "bytes": 3591222,
+    "sha256": "404f508e572c30f70bbd9a1b2ad7e7d5e2712150849a7191d99416357f814086",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_363.png",
+    "bytes": 3598927,
+    "sha256": "051a7470b35dc648096625468bfbee6f0e7a7e05aadcdb8c458bdbbe084566ce",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_364.png",
+    "bytes": 3587118,
+    "sha256": "545068194a1918b0a310d8dd359b8dffeb9312f96caeba89e63b6d3592bf2f59",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_365.png",
+    "bytes": 3591004,
+    "sha256": "30600f159dedadd8b7cca244c9655dff472235a744a13ccb9096fc47172e8ed4",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_366.png",
+    "bytes": 3594244,
+    "sha256": "b91346897480bf061204e7ec269249dcac6d3c838a8e270d25fe35af52023cb8",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_367.png",
+    "bytes": 3588034,
+    "sha256": "eb3672e8f472d5fba80a4499150eaec15fc2a60c5cc18548a6e4ba5116f4e1c5",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_368.png",
+    "bytes": 3594192,
+    "sha256": "e9a384c9751d47259b4adb381ae683aacc8f70a3336f30c15bfccee63f899e74",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_369.png",
+    "bytes": 3578341,
+    "sha256": "3c95b41274ef3cd58598573e5d48849327308b04d5fc837ebd9f000135fdcec9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_370.png",
+    "bytes": 3585075,
+    "sha256": "73ced645ca016b43a02ca7f769e9508f913c06e7c2bde913caaa27a01c0455d0",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_371.png",
+    "bytes": 3575523,
+    "sha256": "35b754330117824d174bf7d5e27cb468aee55d78db7eb8f9918d1cbd7233b2ac",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_372.png",
+    "bytes": 3572231,
+    "sha256": "e7ba5992c1caab7bccfa07613db7e66ef8eba13d70181ab6b6662ad8d6b87c9d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_373.png",
+    "bytes": 3583485,
+    "sha256": "fdd4d44f8f1193798365ffdd36d1789ab66feb0c67c23f200ee929d25e773bea",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_374.png",
+    "bytes": 3567409,
+    "sha256": "a9acf29ada4398f4d5273e2d6a14b71f59242551134c45dea0e7af342e7f0046",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_375.png",
+    "bytes": 3544747,
+    "sha256": "08a39a87ddd7218640e9764278c8325899a5225ae0dd00274927803281f501e3",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_376.png",
+    "bytes": 3557751,
+    "sha256": "329b0f471059c7b8e3500965bdb5190303444b7908ce8012947bf7cc2363048d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_377.png",
+    "bytes": 3581589,
+    "sha256": "612153f97ed745d4ce4031dbd1d35048dba102d1c9528ace45aa579fd7e132a9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_378.png",
+    "bytes": 3590855,
+    "sha256": "7980a7a9753219e546638fcd1c6b736e8864fb2843044cfca47702dc98a56596",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_379.png",
+    "bytes": 3591045,
+    "sha256": "2dda584163972280be36428e6c7372d3b4bacfa8f857978cff7d5d973ca461cf",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_380.png",
+    "bytes": 3584442,
+    "sha256": "f1abe20aa9afcbb4e775e16e3782ce082796ca3f4a9ce482a9938c480213a82c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_381.png",
+    "bytes": 3572104,
+    "sha256": "da852a46bb26cf192e25287c54faab6b04f5922eae938156c411933d56383f72",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_382.png",
+    "bytes": 3562252,
+    "sha256": "e309df73789ae42f5f780c06ee18d8a039c0dcfee8cde5aa43e869e8ea6d088d",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_383.png",
+    "bytes": 3553990,
+    "sha256": "57ab5e3898da1421722eb739b7f55364dfa84cc56929824d297ad8ab8baad0e8",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/images/screws_384.png",
+    "bytes": 3594479,
+    "sha256": "0c9037437f33530dedd98b7085142c201f3ee1d10f80f353122eb4faef91ed80",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/mvtec_screws.hdict",
+    "bytes": 334503,
+    "sha256": "c0b4c20ca1047befb2d6453489d826c3cc52b340b5207ff353aa4698e24e1c35",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/mvtec_screws.json",
+    "bytes": 849022,
+    "sha256": "81257dff178531b5f02240addb89a132b701b557fb2663817981339176c80fa9",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/mvtec_screws_splitted.hdict",
+    "bytes": 348542,
+    "sha256": "a56d66d68712c0432b0cb719ec1e82e5ec48ac6e78f294dc7ab54269b6a761e7",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/mvtec_screws_test.hdict",
+    "bytes": 51051,
+    "sha256": "825155b501861a1a0c2abf4e863a1b203c16f6d3766b23d6fea40736954a8535",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/mvtec_screws_test.json",
+    "bytes": 127245,
+    "sha256": "ae03cba64f0c35088cdfd716ce93975067392324de98d70f4f1b570ae78dab1c",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/mvtec_screws_train.hdict",
+    "bytes": 235272,
+    "sha256": "90bc5047457e2dce4f2c495a748f54e77688cdc53a1f6b63d11b70a471991af7",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/mvtec_screws_train.json",
+    "bytes": 597621,
+    "sha256": "56fb5070b9919add27a599c9d08dca1d8e3cdacc337030257f9e72604dbec6bc",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/mvtec_screws_val.hdict",
+    "bytes": 49074,
+    "sha256": "a02350a6638d4616c11df2a7d0787b9cde2f512fd040f3321597137c8e47f450",
+    "origin": "original_archive_member"
+  },
+  {
+    "path": "datasets/raw/mvtec_screws_v1.0/mvtec_screws_val.json",
+    "bytes": 124129,
+    "sha256": "c746bee8f0ea2d48623960bcc41c80e02232914ca09bbf21928d924d22215599",
+    "origin": "original_archive_member"
+  }
+]

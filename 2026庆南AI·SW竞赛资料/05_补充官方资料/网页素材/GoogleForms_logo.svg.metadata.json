@@ -1,0 +1,16 @@
+{
+  "url": "https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_74x24px.svg",
+  "path": "05_补充官方资料/网页素材/GoogleForms_logo.svg",
+  "source": "https://docs.google.com/forms/d/e/1FAIpQLScuKMLVV5AGA-envX5QLrjtlCwiKFiXJGRwtT-FfBE6F5hyOg/viewform?usp=header",
+  "kind": "ancillary_image",
+  "retrieved_at": "2026-09-24T16:42:30.851870+09:00",
+  "http_status": 200,
+  "final_url": "https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_74x24px.svg",
+  "content_type": "image/svg+xml",
+  "curl_exit": 0,
+  "result": "downloaded",
+  "content_disposition": null,
+  "bytes": 1510,
+  "sha256": "f4af84efe90891185d9b29a841181ca9d26d7560864ea47b6cd709d3b964aee3",
+  "magic_hex": "3c73766720786d6c6e733d2268747470"
+}

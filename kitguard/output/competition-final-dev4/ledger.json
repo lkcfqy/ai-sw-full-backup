@@ -1,0 +1,493 @@
+{
+  "schema_version": 1,
+  "classification": "rubric_based_subjective_self_assessment_not_official_score",
+  "official_notice_url": "https://contest.gnict.org/bbs/board.php?bo_table=notice&wr_id=5",
+  "official_rules_sha256": "7f47dac1f5d6fc435cebb4700d4a18df18adc33e62024d517ee1abe42e28bb2c",
+  "created_at": "2026-10-03T16:14:55.199135+00:00",
+  "constraints": [
+    "no physical purchases",
+    "no external GPU",
+    "no recruited human participants"
+  ],
+  "method": "Official Annex 5 weights; estimates are reviewer judgment, not official thresholds. Outcomes, bonus, submission and eligibility need evidence. Scores can decrease. Feature/test count alone earns no points.",
+  "qualification_receipt": null,
+  "submission_receipt": null,
+  "bonus": 0,
+  "rounds": [
+    {
+      "id": "baseline",
+      "version": "0.9.0.dev3",
+      "at": "2026-10-03T16:14:55.199135+00:00",
+      "score": 72.5,
+      "categories": [
+        {
+          "id": "problem",
+          "name": "问题与主题",
+          "max": 15,
+          "score": 11,
+          "subscores": "5/3/3",
+          "reason": "主题吻合；对象与价值来自场景设定，尚无目标用户重复验证。"
+        },
+        {
+          "id": "agent",
+          "name": "Agent 自主性",
+          "max": 20,
+          "score": 17,
+          "subscores": "3/3.5/3.5/4/3",
+          "reason": "真实推理与规则分支可运行；目标限于三种预定场景。"
+        },
+        {
+          "id": "technical",
+          "name": "技术实现",
+          "max": 20,
+          "score": 17,
+          "subscores": "7/5/5",
+          "reason": "持久化流程、版本失效和故障测试；失败输入归档与通用目标有缺口。"
+        },
+        {
+          "id": "novelty",
+          "name": "新颖性",
+          "max": 10,
+          "score": 6,
+          "subscores": "2.5/3.5",
+          "reason": "结合版本与数字证据；未证明首创，也没有独立竞品全景调查。"
+        },
+        {
+          "id": "effects",
+          "name": "实际效果",
+          "max": 15,
+          "score": 6.5,
+          "subscores": "3.5/1/2",
+          "reason": "公开资料演示可复查；没有前瞻机器工作流对照，也没有真人提效或客户验证。"
+        },
+        {
+          "id": "safety",
+          "name": "数据与安全",
+          "max": 10,
+          "score": 8.5,
+          "subscores": "3/2.5/3",
+          "reason": "本地数据、来源与失败边界清楚；已知 51 图中仍有 3 个 false-ready。"
+        },
+        {
+          "id": "business",
+          "name": "商业模式与答辩",
+          "max": 10,
+          "score": 6.5,
+          "subscores": "3/1.5/1/1",
+          "reason": "已有部署与材料；完整五件套对应 dev1，dev3 功能只有补充包。"
+        }
+      ],
+      "evidence": [
+        "test-results/scoring-v1/official-rules.docx",
+        "test-results/v0.9/autonomy/ACCEPTANCE.json",
+        "test-results/v0.9/autonomy/full-regression-v1.xml",
+        "output/competition-v0.9/START_HERE.html",
+        "output/competition-v0.9-autonomy/START_HERE.html"
+      ],
+      "screening_content_readiness": {
+        "score": 73,
+        "denominator": 90,
+        "five_prepared": 20,
+        "video": 30,
+        "slides": 15,
+        "tech": 8,
+        "qualification": null,
+        "official_submitted_total": null
+      }
+    },
+    {
+      "id": "bound_goal",
+      "version": "0.9.0.dev4",
+      "at": "2026-10-03T16:27:42.712595+00:00",
+      "score": 75.0,
+      "categories": [
+        {
+          "id": "problem",
+          "name": "问题与主题",
+          "max": 15,
+          "score": 11,
+          "subscores": "5/3/3",
+          "reason": "主题吻合；对象与价值来自场景设定，尚无目标用户重复验证。"
+        },
+        {
+          "id": "agent",
+          "name": "Agent 自主性",
+          "max": 20,
+          "score": 18,
+          "subscores": "3.5/4/3.5/4/3",
+          "reason": "支持当前用户照片与 BOM，接受前冻结输入；真实新推理与分支完成。目标范围仍限于四种粗类别，未支持自由任务规划。"
+        },
+        {
+          "id": "technical",
+          "name": "技术实现",
+          "max": 20,
+          "score": 18,
+          "subscores": "7.5/5.5/5",
+          "reason": "失败也保存输入，锁定当前目标并拒绝过期输入；1877项回归通过。抽出源码复现仍待本轮最终包验证。"
+        },
+        {
+          "id": "novelty",
+          "name": "新颖性",
+          "max": 10,
+          "score": 6,
+          "subscores": "2.5/3.5",
+          "reason": "结合版本与数字证据；未证明首创，也没有独立竞品全景调查。"
+        },
+        {
+          "id": "effects",
+          "name": "实际效果",
+          "max": 15,
+          "score": 7,
+          "subscores": "4/1/2",
+          "reason": "可审查用户当前资料而非仅固定演示；真人收益和业务泛化仍未验证。"
+        },
+        {
+          "id": "safety",
+          "name": "数据与安全",
+          "max": 10,
+          "score": 8.5,
+          "subscores": "3/2.5/3",
+          "reason": "本地数据、来源与失败边界清楚；已知 51 图中仍有 3 个 false-ready。"
+        },
+        {
+          "id": "business",
+          "name": "商业模式与答辩",
+          "max": 10,
+          "score": 6.5,
+          "subscores": "3/1.5/1/1",
+          "reason": "已有部署与材料；完整五件套对应 dev1，dev3 功能只有补充包。"
+        }
+      ],
+      "evidence": [
+        "test-results/scoring-v1/GOAL_ACCEPTANCE.json",
+        "test-results/scoring-v1/goal-contracts.xml",
+        "test-results/scoring-v1/goal-completed-ko.jpg",
+        "test-results/scoring-v1/machine-tasks/quantity-run.json"
+      ],
+      "screening_content_readiness": {
+        "score": 73,
+        "denominator": 90,
+        "five_prepared": 20,
+        "video": 30,
+        "slides": 15,
+        "tech": 8,
+        "qualification": null,
+        "official_submitted_total": null
+      }
+    },
+    {
+      "id": "machine_comparison",
+      "version": "0.9.0.dev4",
+      "at": "2026-10-03T16:27:42.712595+00:00",
+      "score": 78.5,
+      "categories": [
+        {
+          "id": "problem",
+          "name": "问题与主题",
+          "max": 15,
+          "score": 12,
+          "subscores": "5/3/4",
+          "reason": "预先固定任务范围、成功标准与完整分母，5任务达到预定流程结果。目标用户问题与价值仍为场景假设。"
+        },
+        {
+          "id": "agent",
+          "name": "Agent 自主性",
+          "max": 20,
+          "score": 18,
+          "subscores": "3.5/4/3.5/4/3",
+          "reason": "支持当前用户照片与 BOM，接受前冻结输入；真实新推理与分支完成。目标范围仍限于四种粗类别，未支持自由任务规划。"
+        },
+        {
+          "id": "technical",
+          "name": "技术实现",
+          "max": 20,
+          "score": 18,
+          "subscores": "7.5/5.5/5",
+          "reason": "失败也保存输入，锁定当前目标并拒绝过期输入；1877项回归通过。抽出源码复现仍待本轮最终包验证。"
+        },
+        {
+          "id": "novelty",
+          "name": "新颖性",
+          "max": 10,
+          "score": 6.5,
+          "subscores": "2.5/4",
+          "reason": "对照明确展示版本保护的差异；对照为自行实现的省略绑定流程，不能证明首创或竞品优势。"
+        },
+        {
+          "id": "effects",
+          "name": "实际效果",
+          "max": 15,
+          "score": 9,
+          "subscores": "4/3/2",
+          "reason": "5项前瞻机器流程验证、4次真实MLX核验；同一观测的版本消融暴露一次旧结果沿用。不证明新图准确率或人效。"
+        },
+        {
+          "id": "safety",
+          "name": "数据与安全",
+          "max": 10,
+          "score": 8.5,
+          "subscores": "3/2.5/3",
+          "reason": "本地数据、来源与失败边界清楚；已知 51 图中仍有 3 个 false-ready。"
+        },
+        {
+          "id": "business",
+          "name": "商业模式与答辩",
+          "max": 10,
+          "score": 6.5,
+          "subscores": "3/1.5/1/1",
+          "reason": "已有部署与材料；完整五件套对应 dev1，dev3 功能只有补充包。"
+        }
+      ],
+      "evidence": [
+        "test-results/scoring-v1/machine-tasks/protocol.json",
+        "test-results/scoring-v1/machine-tasks/RESULTS.json",
+        "test-results/scoring-v1/machine-tasks/changed-bom-before.json"
+      ],
+      "screening_content_readiness": {
+        "score": 73,
+        "denominator": 90,
+        "five_prepared": 20,
+        "video": 30,
+        "slides": 15,
+        "tech": 8,
+        "qualification": null,
+        "official_submitted_total": null
+      }
+    },
+    {
+      "id": "deployment_capacity",
+      "version": "0.9.0.dev4",
+      "at": "2026-10-03T17:40:05.716293+00:00",
+      "score": 79.5,
+      "categories": [
+        {
+          "id": "problem",
+          "name": "问题与主题",
+          "max": 15,
+          "score": 12,
+          "subscores": "5/3/4",
+          "reason": "预先固定任务范围、成功标准与完整分母，5任务达到预定流程结果。目标用户问题与价值仍为场景假设。"
+        },
+        {
+          "id": "agent",
+          "name": "Agent 自主性",
+          "max": 20,
+          "score": 18,
+          "subscores": "3.5/4/3.5/4/3",
+          "reason": "支持当前用户照片与 BOM，接受前冻结输入；真实新推理与分支完成。目标范围仍限于四种粗类别，未支持自由任务规划。"
+        },
+        {
+          "id": "technical",
+          "name": "技术实现",
+          "max": 20,
+          "score": 18,
+          "subscores": "7.5/5.5/5",
+          "reason": "失败也保存输入，锁定当前目标并拒绝过期输入；1877项回归通过。抽出源码复现仍待本轮最终包验证。"
+        },
+        {
+          "id": "novelty",
+          "name": "新颖性",
+          "max": 10,
+          "score": 6.5,
+          "subscores": "2.5/4",
+          "reason": "对照明确展示版本保护的差异；对照为自行实现的省略绑定流程，不能证明首创或竞品优势。"
+        },
+        {
+          "id": "effects",
+          "name": "实际效果",
+          "max": 15,
+          "score": 9.5,
+          "subscores": "4/3/2.5",
+          "reason": "五项机器流程和版本消融已完成；补充四次服务器任务时间及容量假设，未验证新图、人效或持续吞吐。"
+        },
+        {
+          "id": "safety",
+          "name": "数据与安全",
+          "max": 10,
+          "score": 8.5,
+          "subscores": "3/2.5/3",
+          "reason": "本地数据、来源与失败边界清楚；已知 51 图中仍有 3 个 false-ready。"
+        },
+        {
+          "id": "business",
+          "name": "商业模式与答辩",
+          "max": 10,
+          "score": 7,
+          "subscores": "3.5/1.5/1/1",
+          "reason": "部署范围、单工作线程容量和费用未知项已说明；导入支持商业路径仍为假设，客户与付费意愿未验证。"
+        }
+      ],
+      "evidence": [
+        "docs/scoring/CAPACITY.json",
+        "output/competition-final-dev4/KitGuard_report_5p.pdf",
+        "output/competition-final-dev4/KitGuard_presentation_9slides.pptx"
+      ],
+      "screening_content_readiness": {
+        "score": 73,
+        "denominator": 90,
+        "five_prepared": 20,
+        "video": 30,
+        "slides": 15,
+        "tech": 8,
+        "qualification": null,
+        "official_submitted_total": null
+      }
+    },
+    {
+      "id": "verified_materials",
+      "version": "0.9.0.dev4",
+      "at": "2026-10-03T17:40:05.716293+00:00",
+      "score": 80.5,
+      "categories": [
+        {
+          "id": "problem",
+          "name": "问题与主题",
+          "max": 15,
+          "score": 12,
+          "subscores": "5/3/4",
+          "reason": "预先固定任务范围、成功标准与完整分母，5任务达到预定流程结果。目标用户问题与价值仍为场景假设。"
+        },
+        {
+          "id": "agent",
+          "name": "Agent 自主性",
+          "max": 20,
+          "score": 18,
+          "subscores": "3.5/4/3.5/4/3",
+          "reason": "支持当前用户照片与 BOM，接受前冻结输入；真实新推理与分支完成。目标范围仍限于四种粗类别，未支持自由任务规划。"
+        },
+        {
+          "id": "technical",
+          "name": "技术实现",
+          "max": 20,
+          "score": 18.5,
+          "subscores": "7.5/5.5/5.5",
+          "reason": "当前目标、失败归档和过期拒绝有实测；1877项全回归、68项解压源码合同及隔离导入通过。视觉错误和新机器安装边界仍存在。"
+        },
+        {
+          "id": "novelty",
+          "name": "新颖性",
+          "max": 10,
+          "score": 6.5,
+          "subscores": "2.5/4",
+          "reason": "对照明确展示版本保护的差异；对照为自行实现的省略绑定流程，不能证明首创或竞品优势。"
+        },
+        {
+          "id": "effects",
+          "name": "实际效果",
+          "max": 15,
+          "score": 9.5,
+          "subscores": "4/3/2.5",
+          "reason": "五项机器流程和版本消融已完成；补充四次服务器任务时间及容量假设，未验证新图、人效或持续吞吐。"
+        },
+        {
+          "id": "safety",
+          "name": "数据与安全",
+          "max": 10,
+          "score": 8.5,
+          "subscores": "3/2.5/3",
+          "reason": "本地数据、来源与失败边界清楚；已知 51 图中仍有 3 个 false-ready。"
+        },
+        {
+          "id": "business",
+          "name": "商业模式与答辩",
+          "max": 10,
+          "score": 7.5,
+          "subscores": "3.5/2/1/1",
+          "reason": "同版本五件套与讲稿完成，视频和所有页面已检查，来源/AI复用披露齐备。真人答辩和客户验证尚未执行，因此问答项不额外增加。"
+        }
+      ],
+      "evidence": [
+        "output/competition-final-dev4/RELEASE_ACCEPTANCE.json",
+        "test-results/scoring-v1/release-source-contracts.xml",
+        "docs/scoring/PRESENTATION_SCRIPT_KO.md",
+        "output/competition-final-dev4/video-build.json"
+      ],
+      "screening_content_readiness": {
+        "score": 80,
+        "denominator": 90,
+        "five_prepared": 20,
+        "video": 30,
+        "slides": 20,
+        "tech": 10,
+        "qualification": null,
+        "official_submitted_total": null,
+        "classification": "subjective_prepared_content_not_submitted_score",
+        "reason": "五件已准备20；视频良好30（抽样画面与长等待保留）；9页同版本演示20；一页技术和可复现源码10。资格和实际接收留空。"
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "id": "own_goal",
+      "status": "done",
+      "reason": "真实当前照片与 BOM 目标、过期绑定拒绝、失败输入归档"
+    },
+    {
+      "id": "task_comparison",
+      "status": "done",
+      "reason": "预定至少5个代表机器任务；不声称真人提效或新图准确率"
+    },
+    {
+      "id": "five_same_version",
+      "status": "done",
+      "reason": "5页报告、1页Agent、源码、177秒视频、9张PPT统一dev4；源码、媒体及全页验收完成。"
+    },
+    {
+      "id": "visual_candidates",
+      "status": "negative_evidence",
+      "reason": "以前的 reference/consensus/transfer 候选未满足发布标准，保持失败记录与模型不变"
+    },
+    {
+      "id": "human_field_outcomes",
+      "status": "constraint_excluded",
+      "reason": "用户排除真人招募与实物购买，不编造实际用户收益"
+    },
+    {
+      "id": "customer_pricing",
+      "status": "unknown_not_awarded",
+      "reason": "没有验证需求或付费意愿，定价与收益仅能作为假设"
+    },
+    {
+      "id": "judge_rank",
+      "status": "not_observable",
+      "reason": "其他作品与评委判断未知，不能保证第一"
+    },
+    {
+      "id": "deployment_capacity",
+      "status": "done",
+      "reason": "以四次服务器任务时间建立占用率场景和容量边界；明确是计算假设，客户价格和持续吞吐未知。"
+    },
+    {
+      "id": "prior_art_scope",
+      "status": "done_no_score_change",
+      "reason": "阅读HALCON、Roboflow、Cognex官方资料，收窄独创性主张；未做产品实测，不增加分数。"
+    },
+    {
+      "id": "repeat_exposed_photos",
+      "status": "no_supported_uplift",
+      "reason": "再跑旧图只能补运行记录，不能增加新图或真人分母；没有依据额外计分。"
+    },
+    {
+      "id": "more_feature_count",
+      "status": "no_supported_uplift",
+      "reason": "官方第28条重视3–5核心功能稳定连接。未验证的SKU猜测、自由规划或更多页面没有可计分效果证据。"
+    },
+    {
+      "id": "new_independent_evidence",
+      "status": "unknown_not_awarded",
+      "reason": "新的独立图片/标注与实际部署仍可能改变判断，但当前缺少新评估和改善证据；不把未知效果提前加分。"
+    }
+  ],
+  "stopping": {
+    "status": "converged_within_reviewed_scope",
+    "at": "2026-10-03T17:40:05.716293+00:00",
+    "score": 80.5,
+    "gain": 8,
+    "reason": "已完成本轮有明确评分缺口且可验证的改善项；其余候选为负面、证据不足或用户约束排除。按已审计候选范围停止，不证明所有未来方案的全局最高分。新独立数据、实际用户/现场效果、商业需求或评委反馈到来后，判断仍可能改变。",
+    "global_maximum_proved": false,
+    "first_place_guaranteed": false,
+    "remaining_score_not_awarded": "真实用户收益、现场可靠性、独立新图泛化、需求/付费、实际问答与官方加分均缺实证。",
+    "no_pending_candidates": true
+  },
+  "screening_method_correction": "Initial content readiness used 7 for technical explanation, outside Annex4 discrete bands. Corrected to the good band8 (total73/90); this is a rubric correction, not an earned development gain."
+}

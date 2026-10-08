@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "release": "v0.3",
+  "created_at": "2026-09-26T13:40:42.760099+00:00",
+  "status": "completed",
+  "manifest_source": "tmp/v03-delivery-manifest.completed.json",
+  "manifest_sha256": "ac23476b5042e3bfdca8e450044d0244d2cdca2214a4a5022f2445ecfd740f3c",
+  "selected_default": "spatial_guarded",
+  "artifacts": [
+    {
+      "role": "final_evaluation",
+      "title": "中文最终自检评估",
+      "note": "64 张冻结留出、同图首轮对照、全部 5 个补拍结果及竞争力与限制。",
+      "path": "docs/v0.3/FINAL_EVALUATION.md",
+      "source": "docs/v0.3/FINAL_EVALUATION.md",
+      "bytes": 12265,
+      "sha256": "29a28b3ce930d128a8da13a9a49fb1ac3d83fd30d9dbd3d7600117d5b8a9a19e"
+    },
+    {
+      "role": "offline_report",
+      "title": "中文离线交互报告",
+      "note": "可直接离线打开；含完整对照、来源检查器、历史结果和实际演示记录。",
+      "path": "review/KitGuard_v0.3.html",
+      "source": "output/report/KitGuard_v0.3.html",
+      "bytes": 2962427,
+      "sha256": "d7de023e7609e48d50a6b73f033534ecbb56f63bb1754ff79ad1fbbbd1aef27e"
+    },
+    {
+      "role": "korean_pdf",
+      "title": "韩文验证补充报告 / 검증 보충",
+      "note": "5 页韩文：方法、64 张结果、错误拦截与补拍代价、实际 API 演示及适用边界。",
+      "path": "review/KitGuard_validation_v0.3.pdf",
+      "source": "output/pdf/KitGuard_검증보충_v0.3.pdf",
+      "bytes": 99850,
+      "sha256": "fb724e10ac6227ed9369720d8d4c323b8a330870a6896ee9e5d66cd4d85a9805"
+    },
+    {
+      "role": "korean_slides",
+      "title": "韩文答辩补充幻灯片 / 발표 보충",
+      "note": "6 页补充幻灯片，包含实际界面与完整测量范围；已逐页渲染检查。",
+      "path": "review/KitGuard_validation_v0.3.pptx",
+      "source": "output/presentations/KitGuard_검증보충_v0.3.pptx",
+      "bytes": 687200,
+      "sha256": "4cfe783b4ce5561c35df087558639abfd33f4f51bc75685ed5f6e935e2502c26"
+    },
+    {
+      "role": "source_archive",
+      "title": "源码、测试与复算记录",
+      "note": "含逐文件 SHA 清单；不含模型权重、照片、数据库、环境或私人报名资料。",
+      "path": "source/KitGuard_source_v0.3.zip",
+      "source": "output/KitGuard_source_v0.3.zip",
+      "bytes": 3530748,
+      "sha256": "072b1b685d3766cc28164ce1bfa17e8b409dacbe015055e46647807366c9e87e"
+    },
+    {
+      "role": "demo_video",
+      "title": "152 秒实际本地 API 演示",
+      "note": "完整 152.08 秒录制，未剪切或加速；4 次视觉核验、1 次韩语改版提案。公开开发图片和自动化操作，不是现场用户实验。",
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/candidate-real-api.mp4",
+      "source": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/candidate-real-api.mp4",
+      "bytes": 7237604,
+      "sha256": "9610b0c0e5c993fdff1a04fc02a6b1ab4e20726e9430dc5683a98f94a2243381"
+    },
+    {
+      "role": "demo_evidence",
+      "title": "改版案例 R1：数量调整",
+      "note": "实际模型给出数量调整提示；尚未改版。 解压后打开 OPEN_ME.html，可查看照片、许可、核验与哈希。",
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/bag-revision-r1.zip",
+      "source": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/bag-revision-r1.zip",
+      "bytes": 455555,
+      "sha256": "df693a317edf772fbb0bae907c86dd4df1382fd8c3f30513a1e412abd4672af0"
+    },
+    {
+      "role": "demo_evidence",
+      "title": "改版案例 R2：重新核验",
+      "note": "韩语提案经自动化明确批准后改版；重传同一公开源图，重新核验，仍未实物完成。 解压后打开 OPEN_ME.html，可查看照片、许可、核验与哈希。",
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/bag-revision-r2.zip",
+      "source": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/bag-revision-r2.zip",
+      "bytes": 868334,
+      "sha256": "a11808490f26c9f0ea7b2e2ddb7ce00c4c550b28fb9c540548fdf1c08d992160"
+    },
+    {
+      "role": "demo_evidence",
+      "title": "小零件案例：要求补拍",
+      "note": "实际 washer→nut 身份冲突触发保守补拍；不把补拍当作识别成功。 解压后打开 OPEN_ME.html，可查看照片、许可、核验与哈希。",
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/small-part-r1.zip",
+      "source": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/small-part-r1.zip",
+      "bytes": 271669,
+      "sha256": "6bc4ebc9f0e9ff33402415b40e0bf3c61eb70b7c0ba663484800b609e62af474"
+    },
+    {
+      "role": "demo_evidence",
+      "title": "混合零件案例：数量一致",
+      "note": "公开开发图片实际核验结果；仍等待本人实物确认，未产生完成记录。 解压后打开 OPEN_ME.html，可查看照片、许可、核验与哈希。",
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/mixed-screws-r1.zip",
+      "source": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/archives/mixed-screws-r1.zip",
+      "bytes": 253544,
+      "sha256": "8af5c4cd29781f17a9a42a6f80112ef68e8ca76606d1f19d83025d4ffaf8b90f"
+    },
+    {
+      "role": "demo_verification",
+      "title": "实际 API 演示验收",
+      "note": "4 次视觉请求与 1 次韩语提案，86 项工程断言；5 个 API 请求不等于 5 次内部模型生成。",
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/result.json",
+      "source": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/result.json",
+      "bytes": 254659,
+      "sha256": "cab064f757d7c4e984b76a64c31ab5f47a2ed7040226fa128838881dbe8d01f7"
+    },
+    {
+      "role": "source_verification",
+      "title": "源码 ZIP 解压验收",
+      "note": "实际交付源码 ZIP 的 CRC、全部文件 SHA 及隔离解压检查；具体依赖与启动验证范围见记录。",
+      "path": "test-results/audit/source_v03_verification.json",
+      "source": "test-results/audit/source_v03_verification.json",
+      "bytes": 3327,
+      "sha256": "8acaf9594b840330b6b900b6dd65b28a4decbbd863abf23cc34727b07aa9536e"
+    },
+    {
+      "role": "holdout_run",
+      "title": "64 张完整留出运行",
+      "note": "全部 64 张预定图片与完成时间；不混入开发 28 张或历史 48 张。",
+      "path": "evaluation-runs/v03_guarded_holdout_v1/run.json",
+      "source": "evaluation-runs/v03_guarded_holdout_v1/run.json",
+      "bytes": 17686,
+      "sha256": "4e28b4508f5c390ca663c230c5c8d6546fb9dc6913526b8f36cafb7138882280"
+    },
+    {
+      "role": "gate_report",
+      "title": "内部事前冻结门槛判定",
+      "note": "59 正确可行动、0 错误可行动、5 补拍、0 执行错误；各组门槛全部通过。",
+      "path": "evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json",
+      "source": "evaluation-runs/v03_guarded_holdout_v1/gate_report_v1.json",
+      "bytes": 898888,
+      "sha256": "8f8fa784b9abca802ffab08e1fc8b23efd75407a2ede9cc235c3496b442f599f"
+    },
+    {
+      "role": "holdout_protocol",
+      "title": "内部冻结的评测协议",
+      "note": "固定各组门槛、时延与误放行检查；团队内部冻结，不是外部正式预注册。",
+      "path": "docs/v0.3/HOLDOUT_GATES_V1.json",
+      "source": "docs/v0.3/HOLDOUT_GATES_V1.json",
+      "bytes": 25306,
+      "sha256": "563bf149286d6cacb7e14992b5ee9d1b1895752fae7f407a4da37ab11d65b8b6"
+    },
+    {
+      "role": "independent_recomputation",
+      "title": "独立输入与评分复算",
+      "note": "128 份预处理输入与 330 份裁剪字节重建 SHA 一致；CPU 复算不等于重新进行独立模型推理。",
+      "path": "test-results/audit/v03-guarded-holdout-analysis.json",
+      "source": "test-results/audit/v03-guarded-holdout-analysis.json",
+      "bytes": 10156,
+      "sha256": "76a878c1b75fc09dcbaf4ae5d3139c97f46cfdc859c8c0200f0014215c5b3408"
+    },
+    {
+      "role": "independent_review",
+      "title": "独立最终审计说明",
+      "note": "复核完整 64 张结果、冻结源码、同图对照与所有补拍；解释相关模型与公开静态图片限制。",
+      "path": "docs/v0.3/FINAL_INDEPENDENT_AUDIT.md",
+      "source": "docs/v0.3/FINAL_INDEPENDENT_AUDIT.md",
+      "bytes": 8965,
+      "sha256": "a2009319411ab4353d9ac3dad21b7fad85aec7d3d108eda0474f8b10d6a34c5a"
+    },
+    {
+      "role": "judge_qa",
+      "title": "韩文评委问答 / 심사위원 질의응답",
+      "note": "围绕增量价值、拒判代价、速度、工程验证和研究边界的如实答辩。",
+      "path": "docs/v0.3/JUDGES_QA_KO.md",
+      "source": "docs/v0.3/JUDGES_QA_KO.md",
+      "bytes": 16720,
+      "sha256": "25cfeb2f8f526abdc8d071cee74705111eee2134780a54bbde0f718562d6f613"
+    },
+    {
+      "role": "demo_runbook",
+      "title": "韩文演示步骤 / 시연 순서",
+      "note": "现场演示操作与措辞；公开数据案例不能宣布为工厂现场验证。",
+      "path": "docs/v0.3/DEMO_RUNBOOK_KO.md",
+      "source": "docs/v0.3/DEMO_RUNBOOK_KO.md",
+      "bytes": 5702,
+      "sha256": "c6f804091c344dc7cb7b28373f6bf8e92a2d0dea9880d1769b15224efd262dc7"
+    },
+    {
+      "role": "source_reproduction",
+      "title": "源码复现说明",
+      "note": "环境、共享模型路径与来源、启动脚本默认及 Data 报告框架边界。",
+      "path": "docs/v0.3/SOURCE_REPRODUCTION.md",
+      "source": "docs/v0.3/SOURCE_REPRODUCTION.md",
+      "bytes": 2603,
+      "sha256": "00666be109a0d17712241cc4dc62f62ef1106cce53c1b5a4b941ac9f19d005c6"
+    },
+    {
+      "role": "deployment_selection",
+      "title": "启动脚本默认方法选择",
+      "note": "通过完整 64 张门槛后将 scripts/run.sh 的研究默认设为 spatial_guarded；直接库调用仍需明确指定。",
+      "path": "docs/v0.3/DEPLOYMENT_SELECTION.json",
+      "source": "docs/v0.3/DEPLOYMENT_SELECTION.json",
+      "bytes": 1651,
+      "sha256": "a36e8b1b51b2bb3443728ec46c75659b6bbdd54c2e233fc0babbdf04c04947ae"
+    },
+    {
+      "role": "video_metadata",
+      "title": "录像完整性与编码记录",
+      "note": "原始 WebM 与 MP4 哈希及完整时长一致；使用 ffmpeg 实际读取容器，并未运行 ffprobe。",
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/video-metadata.json",
+      "source": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/video-metadata.json",
+      "bytes": 4212,
+      "sha256": "02ad81b26334b096102285165b36dcab589d638172b3019c00df5b5c7c57c517"
+    },
+    {
+      "role": "video_visual_qa",
+      "title": "录像与界面视觉复核",
+      "note": "实际录制页面、关键帧和静态界面复核记录；保留录制时版本身份。",
+      "path": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/visual-qa.json",
+      "source": "test-results/browser/real-api-v03/runs/candidate-real-api-v2/browser/visual-qa.json",
+      "bytes": 1848,
+      "sha256": "687ff3ab8badf2fa27b4098ceaeb0f4a5a564890180fab7db789a41f34a6718e"
+    },
+    {
+      "role": "engineering_results",
+      "title": "428 项 Python 工程测试",
+      "note": "JUnit 原始记录。工程测试不计入 64 张模型测量样本。",
+      "path": "test-results/engineering-v03-final.xml",
+      "source": "test-results/engineering-v03-final.xml",
+      "bytes": 61912,
+      "sha256": "5842e15b5d851940dd2b13168064dbae277f483a062de8038710f7a2dbfede92"
+    },
+    {
+      "role": "report_live_qa",
+      "title": "交互报告浏览器验收",
+      "note": "真实 Chrome 下的 87 项报告交互检查，含手机与同图对照；不是模型推理测试。",
+      "path": "test-results/browser/report-v03-final/browser-result.json",
+      "source": "test-results/browser/report-v03-final/browser-result.json",
+      "bytes": 8534,
+      "sha256": "5104c629768ad9db1b73eeaaba3785e46dd8931ea35ba869c0de06a5fc9be807"
+    },
+    {
+      "role": "report_offline_qa",
+      "title": "单文件离线报告验收",
+      "note": "18 项离线功能检查、0 HTTP 请求；离线查看不调用模型。",
+      "path": "test-results/browser/report-v03-final/offline-result.json",
+      "source": "test-results/browser/report-v03-final/offline-result.json",
+      "bytes": 1251,
+      "sha256": "3d8ffece11eb9855bf0a774785843cb7eedeee8685f3914918e5c4821bc0b9bf"
+    },
+    {
+      "role": "pdf_visual_qa",
+      "title": "韩文 PDF 渲染验收",
+      "note": "5 页渲染检查及最终 PDF 来源哈希。",
+      "path": "test-results/audit/korean_pdf_v0.3_qa.json",
+      "source": "test-results/audit/korean_pdf_v0.3_qa.json",
+      "bytes": 2765,
+      "sha256": "ac16f0ba131ae683bc20e987e439732f7126329946efffb8be6031319443c4bc"
+    },
+    {
+      "role": "slides_visual_qa",
+      "title": "韩文 PPT 渲染验收",
+      "note": "6 页 ArtifactTool 渲染与视觉检查；不宣称在 PowerPoint 原生应用中验证。",
+      "path": "verification/slides-visual-qa.json",
+      "source": "output/presentations/qa-v0.3/visual-qa.json",
+      "bytes": 3609,
+      "sha256": "e9ff5fa31bcab879b5903b566bc2f793885e8ab925d10e1355f86ba536eb84a1"
+    },
+    {
+      "role": "source_extracted_tests",
+      "title": "实际解压源码测试结果",
+      "note": "在已存在依赖下测试实际解压源码：423 通过、5 项因未携带照片而明确跳过，无失败或错误；不是全新机器安装或 GPU 再评测。",
+      "path": "test-results/audit/source_v03_verification.pytest.xml",
+      "source": "test-results/audit/source_v03_verification.pytest.xml",
+      "bytes": 63717,
+      "sha256": "006c137380dff47e37e70bf1385720c4412b7049ad548375bd397ef2c059c882"
+    },
+    {
+      "role": "post_record_ui_qa",
+      "title": "录像后手机标签修复验收",
+      "note": "仅改善估计补拍区域文字在手机边缘的显示；320/390/1440 双语只读检查，39 项通过，不调用模型。",
+      "path": "test-results/browser/region-label-v03/result.json",
+      "source": "test-results/browser/region-label-v03/result.json",
+      "bytes": 17750,
+      "sha256": "37baa61a5a0a76db988160c9c48d01423006d10d589e09639efa8a4adddaa18a"
+    },
+    {
+      "role": "post_record_ui_provenance",
+      "title": "录像后界面修复版本记录",
+      "note": "最终源码的 app.js/styles.css 与原录像存在明确记录的界面差异；冻结的模型方法和真实录像未改动。",
+      "path": "test-results/browser/region-label-v03/provenance.json",
+      "source": "test-results/browser/region-label-v03/provenance.json",
+      "bytes": 1436,
+      "sha256": "65a47c702ace2887fe88b8f1ecffdd88528f38217dc2113f9df50a7988d00a17"
+    },
+    {
+      "role": "reference_context",
+      "title": "28 张开发集完整判定",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "evaluation-runs/v03_guarded_integrated_development_v1/gate_report_v1.json",
+      "source": "evaluation-runs/v03_guarded_integrated_development_v1/gate_report_v1.json",
+      "bytes": 409341,
+      "sha256": "fc54ee5cbac231a3aa214235de1d8ae494055ef744d94b0e5fca28ab8a95d4e8"
+    },
+    {
+      "role": "reference_context",
+      "title": "28 张开发集复算审计",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "test-results/audit/v03-guarded-integrated-development-analysis.json",
+      "source": "test-results/audit/v03-guarded-integrated-development-analysis.json",
+      "bytes": 10266,
+      "sha256": "da054cdb515b11b4bec968944c0c5b0d51516897fad0cea991e14fc55eed2961"
+    },
+    {
+      "role": "reference_context",
+      "title": "未采用方法：OWL v2 开发探索",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "docs/v0.3/OWL_DEVELOPMENT_REPORT.md",
+      "source": "docs/v0.3/OWL_DEVELOPMENT_REPORT.md",
+      "bytes": 4967,
+      "sha256": "b24cdade771816e3d70e63ac2ca6b646cfd254cc5276c24891db33483c453eb6"
+    },
+    {
+      "role": "reference_context",
+      "title": "未采用方法：Grounding DINO 开发探索",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "docs/v0.3/GROUNDING_DINO_DEVELOPMENT_REPORT.md",
+      "source": "docs/v0.3/GROUNDING_DINO_DEVELOPMENT_REPORT.md",
+      "bytes": 5959,
+      "sha256": "7c2a7eaaef55e18a75e27e55b4312e175b529f29b9e7a59e6b48e4750f57f873"
+    },
+    {
+      "role": "reference_context",
+      "title": "历史 v0.2 评估（引用上下文）",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "docs/FINAL_EVALUATION.md",
+      "source": "docs/FINAL_EVALUATION.md",
+      "bytes": 10285,
+      "sha256": "b03b2e7f018c14acaaccd3d89d147bfe794e833ec17b923ccc69a4d1299aaaf3"
+    },
+    {
+      "role": "reference_context",
+      "title": "AI 与素材来源披露",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "docs/AI_AND_SOURCE_DISCLOSURE.md",
+      "source": "docs/AI_AND_SOURCE_DISCLOSURE.md",
+      "bytes": 4703,
+      "sha256": "f1c1cc6a271585593b4f01ef63a54ab0cd470535e8866fb3d77f42c88527b1b7"
+    },
+    {
+      "role": "reference_context",
+      "title": "后续真实场景验证清单",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "docs/REAL_WORLD_VALIDATION.md",
+      "source": "docs/REAL_WORLD_VALIDATION.md",
+      "bytes": 3710,
+      "sha256": "4b16b0cab547eca20c07a546b22027482b0d9127936f11f67e08b024233ecafa"
+    },
+    {
+      "role": "reference_context",
+      "title": "公开数据使用计划",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "docs/PUBLIC_DATA_PLAN.md",
+      "source": "docs/PUBLIC_DATA_PLAN.md",
+      "bytes": 3819,
+      "sha256": "3bb812bc1620bc61c238c38921967af74967f87cd89d9976eef04ff26411363c"
+    },
+    {
+      "role": "reference_context",
+      "title": "历史 v0.2 冻结（引用上下文）",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "docs/RELEASE_EVALUATION_FREEZE.json",
+      "source": "docs/RELEASE_EVALUATION_FREEZE.json",
+      "bytes": 6036,
+      "sha256": "593a3f3f4da4a26f429a08fdea31cab22f0fdc3c40da42e73fb5a15dda65dea6"
+    },
+    {
+      "role": "reference_context",
+      "title": "历史 v0.2 审计（引用上下文）",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "docs/FINAL_INDEPENDENT_AUDIT.md",
+      "source": "docs/FINAL_INDEPENDENT_AUDIT.md",
+      "bytes": 26680,
+      "sha256": "16e4939ede9eda2232856a76fed2cb3f846bc0a8ada890305518605b10b8f6c2"
+    },
+    {
+      "role": "reference_context",
+      "title": "公开数据许可与来源",
+      "note": "保持原文件与原统计范围，便于相对引用离线阅读；开发或历史记录不计为本次 64 张新留出结果。",
+      "path": "docs/DATA_PROVENANCE.md",
+      "source": "docs/DATA_PROVENANCE.md",
+      "bytes": 10958,
+      "sha256": "1ba8538b68632f4d0281d87ece3128224712846c905d423258fad1b8d5a6beac"
+    }
+  ],
+  "historical_references": [
+    {
+      "title": "v0.2 历史交付入口",
+      "note": "保留原版本文档、录像和 48 张历史评测；不计为 v0.3 新留出结果。历史链接依赖本项目目录。",
+      "source": "output/delivery-v0.2/index.html",
+      "bytes": 3331,
+      "sha256": "732f87bfd9afed7496432eec8688ed665585abc743f02c757bd8a19d6fd1772d",
+      "href": "../delivery-v0.2/index.html"
+    }
+  ],
+  "scope": "Internal reviewed artifact bundle; not a contest submission or rank guarantee"
+}

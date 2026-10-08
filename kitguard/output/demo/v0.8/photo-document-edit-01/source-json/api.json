@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "started_at": "2026-10-02T02:28:37.373550+00:00",
+  "inspect_attempts": 2,
+  "human_participants": 0,
+  "retries": 0,
+  "warmups": 0,
+  "inspection_results": [
+    {
+      "revision": 1,
+      "check_id": "chk_b9b65ab555d8413bb022",
+      "observed": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "decision": "correct",
+      "latency_ms": 50909,
+      "model_calls": 3
+    },
+    {
+      "revision": 2,
+      "check_id": "chk_2788d41b196745839bdc",
+      "observed": {
+        "bolt": 2,
+        "nut": 2,
+        "washer": 2,
+        "bracket": 0
+      },
+      "decision": "ready",
+      "latency_ms": 47728,
+      "model_calls": 3
+    }
+  ],
+  "full_model_sha256_receipt": "fc870607de1d7a23b7e9c4e9ab2eb38c0e66df457cce9eb37c866e0213e5716d",
+  "order_id": "ord_37625d420eaf4e7a868a",
+  "inspect_r1_wall_ms": 50915,
+  "inspect_r2_wall_ms": 47734,
+  "source_binding_verified": true,
+  "revision_invalidates_previous_check_and_review": true,
+  "replay_model_calls": 0,
+  "two_generation_history_verified": true,
+  "physical_completion_rejections": 2,
+  "evidence_zip_sha256": "d94a205093d70bedfc4eee4c2080fa7a52d27a173fab61ab3202b12af67f80b6",
+  "zip_members_verified": 6,
+  "accuracy_claim": false,
+  "physical_completion": false,
+  "finished_at": "2026-10-02T02:30:21.524926+00:00",
+  "full_integration_seconds": 104.156,
+  "source_unchanged": true,
+  "source_after_sha256": "8f6efb2a0ca729274b3b36c7f89c7fbebb6806b6f5995c20ec5792b4d2612a0a",
+  "model_calls_started": 6,
+  "model_calls_completed": 6,
+  "model_manifest_unchanged": true,
+  "model_payload_size_mtime_unchanged": true,
+  "model_after_check_scope": "Manifest hash + payload size/mtime; full byte hashes are before-run"
+}
