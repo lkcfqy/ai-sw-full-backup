@@ -1,0 +1,111 @@
+{
+  "repo_id": "google/owlv2-base-patch16-ensemble",
+  "revision": "cfd3195ba4ea9592eec887ded089f4c08eff231d",
+  "completed_at_utc": "2026-09-26T11:58:32.590903+00:00",
+  "license": "Apache-2.0",
+  "license_declaration": "Pinned original README.md model card",
+  "license_text_source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+  "license_note": "Canonical Apache text; pinned HF repository has no standalone LICENSE",
+  "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "license_bytes": 11358,
+  "metadata_source": "https://huggingface.co/api/models/google/owlv2-base-patch16-ensemble/revision/cfd3195ba4ea9592eec887ded089f4c08eff231d?blobs=true",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_sha1": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "git_blob_sha1_checked": true,
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble/resolve/cfd3195ba4ea9592eec887ded089f4c08eff231d/.gitattributes"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4838,
+      "sha256": "7c7426bc5ec939a42d1f96fb093031b6263400cceac4129ebb941a0c8c11b9b9",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_sha1": "f9b9d65cdb5b30e39154300969f765e81bdd9f05",
+      "git_blob_sha1_checked": true,
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble/resolve/cfd3195ba4ea9592eec887ded089f4c08eff231d/README.md"
+    },
+    {
+      "path": "added_tokens.json",
+      "bytes": 67,
+      "sha256": "e5dc0da35d20111e8ff3fdfc03682beca23d5f94ed74331bce81786b2636a24f",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_sha1": "5ff4ac542d5e800dd3aadbdcda354868b5f24ddd",
+      "git_blob_sha1_checked": true,
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble/resolve/cfd3195ba4ea9592eec887ded089f4c08eff231d/added_tokens.json"
+    },
+    {
+      "path": "config.json",
+      "bytes": 414,
+      "sha256": "ba9df8c25a4b8461887dd0a93d9252c9cd84697fe8d49a9d8794ce409af9acb2",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_sha1": "dfc1049705d082052a81e7d18bde6d11fc137a0d",
+      "git_blob_sha1_checked": true,
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble/resolve/cfd3195ba4ea9592eec887ded089f4c08eff231d/config.json"
+    },
+    {
+      "path": "merges.txt",
+      "bytes": 524619,
+      "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_sha1": "76e821f1b6f0a9709293c3b6b51ed90980b3166b",
+      "git_blob_sha1_checked": true,
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble/resolve/cfd3195ba4ea9592eec887ded089f4c08eff231d/merges.txt"
+    },
+    {
+      "path": "model.safetensors",
+      "bytes": 619918824,
+      "sha256": "e1e130b9e404cf91a75ad45644c1da9d7fa5284085eecc864266a6923efb99e7",
+      "upstream_lfs_sha256": "e1e130b9e404cf91a75ad45644c1da9d7fa5284085eecc864266a6923efb99e7",
+      "upstream_git_blob_sha1": "e8643bcae4afdfa3a3019a6c271d19090b2e2fc6",
+      "git_blob_sha1_checked": false,
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble/resolve/cfd3195ba4ea9592eec887ded089f4c08eff231d/model.safetensors"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "bytes": 425,
+      "sha256": "cf3e396635b797ee1a464e1b2836e98748f8edac19e89aaa2c93b55ac15b0064",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_sha1": "b24bfd579e8682df31c7794a3e1c3ef6a9a22a7a",
+      "git_blob_sha1_checked": true,
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble/resolve/cfd3195ba4ea9592eec887ded089f4c08eff231d/preprocessor_config.json"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "bytes": 121,
+      "sha256": "d6e2b9cf664efbad2d22998b8d3da986abcbeed3e0825ad33605c9401f9cf73e",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_sha1": "39808ac074d69141c0b2f065d16f56dfa5194cac",
+      "git_blob_sha1_checked": true,
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble/resolve/cfd3195ba4ea9592eec887ded089f4c08eff231d/special_tokens_map.json"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 1100,
+      "sha256": "b55cda6198e152ded427c8a9b3faf1cccf27a7fa080697a62f6ff143f511f44f",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_sha1": "1c4c373d81adc0c63bb3368a89f4a92574395c2c",
+      "git_blob_sha1_checked": true,
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble/resolve/cfd3195ba4ea9592eec887ded089f4c08eff231d/tokenizer_config.json"
+    },
+    {
+      "path": "vocab.json",
+      "bytes": 1059962,
+      "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_sha1": "469be27c5c010538f845f518c4f5e8574c78f7c8",
+      "git_blob_sha1_checked": true,
+      "url": "https://huggingface.co/google/owlv2-base-patch16-ensemble/resolve/cfd3195ba4ea9592eec887ded089f4c08eff231d/vocab.json"
+    }
+  ],
+  "upstream_files_bytes": 621511889,
+  "excluded": {
+    "pytorch_model.bin": "Duplicate unsafe pickle serialization; safetensors retained"
+  },
+  "verification": "Every upstream file: size + LFS SHA-256 or Git blob SHA-1; all local SHA-256 saved",
+  "credentials": "Anonymous HTTPS requests; no Hugging Face tokens read",
+  "runtime": "No inference/model loading by downloader"
+}

@@ -1,0 +1,82 @@
+{
+ "format_version": 1,
+ "files": {
+  ".gitattributes": {
+   "size": 1570,
+   "blob_id": "52373fe24473b1aa44333d318f578ae6bf04b49b"
+  },
+  "README.md": {
+   "size": 572,
+   "blob_id": "54c337b15f660c821d8c01e8fade7911b8fec9bc"
+  },
+  "added_tokens.json": {
+   "size": 707,
+   "blob_id": "b54f9135e44c1e81047e8d05cb027af8bc039eed"
+  },
+  "chat_template.jinja": {
+   "size": 5292,
+   "blob_id": "124386803f142761528f710e77ae483f5f8c4fc4"
+  },
+  "chat_template.json": {
+   "size": 5499,
+   "blob_id": "1081bacf1af7c7c6de4a585ce02cd0fd34e382da"
+  },
+  "config.json": {
+   "size": 7140,
+   "blob_id": "b8620c908dcb52bf3731a6056ce7a6179fa632df"
+  },
+  "generation_config.json": {
+   "size": 269,
+   "blob_id": "e116347d7ef42621c7a5957f82c015c38d939c1f"
+  },
+  "merges.txt": {
+   "size": 1671853,
+   "blob_id": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+  },
+  "model-00001-of-00002.safetensors": {
+   "size": 5343910279,
+   "blob_id": "041f3e8e86b6c7a9d85e3d7185d10b9e2126860d",
+   "lfs_sha256": "84d99a5a1afab274a4b1edb6aa5772e3600a6956bbcb615aaef7751c20a87af9",
+   "lfs_size": 5343910279,
+   "xet_hash": "070a1cc115a1beeb308ed825365f74b6e4c378b214d5b373a6b59f2d1deec19a"
+  },
+  "model-00002-of-00002.safetensors": {
+   "size": 4511968734,
+   "blob_id": "2b5a4c52c317a892ac78beec72f46746c340d542",
+   "lfs_sha256": "9ca3dc0e5a27e29b3b481d9a778552e383af77cdb958f176055e5c155a9bd2ec",
+   "lfs_size": 4511968734,
+   "xet_hash": "c11b375624aa75a2275e54014a899e9fc98919fc58eca77eedbfa1356e822ad3"
+  },
+  "model.safetensors.index.json": {
+   "size": 67759,
+   "blob_id": "5857ec62530eb589b1876034dd5386f1d98131a6"
+  },
+  "preprocessor_config.json": {
+   "size": 782,
+   "blob_id": "2fa6553554f69b4e3a6b742a75264ff9dff90ad0"
+  },
+  "special_tokens_map.json": {
+   "size": 613,
+   "blob_id": "ac23c0aaa2434523c494330aeb79c58395378103"
+  },
+  "tokenizer.json": {
+   "size": 11422654,
+   "blob_id": "cd71f61a15a522601badb3dc960d800d9cb3766c",
+   "lfs_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+   "lfs_size": 11422654,
+   "xet_hash": "693ec4b3922b0bd306bf7b4989e115ffbfeb7b0c08b31bc6d956818c6bb07f61"
+  },
+  "tokenizer_config.json": {
+   "size": 5445,
+   "blob_id": "fec7f182135c384a08ea2fc9635566ca79c45afc"
+  },
+  "video_preprocessor_config.json": {
+   "size": 817,
+   "blob_id": "e32b1d90356f74457edbfca27aa1e121dab7cdc7"
+  },
+  "vocab.json": {
+   "size": 2776833,
+   "blob_id": "4783fe10ac3adce15ac8f358ef5462739852c569"
+  }
+ }
+}

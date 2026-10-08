@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-26T10:47:20.188329+00:00",
+  "status": "runtime_verified_in_completed_development_suites",
+  "model": {
+    "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+    "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+    "local_directory": "/Users/lkc/Downloads/AI-Models/Qwen3.6-27B-4bit",
+    "format": "Community MLX affine 4-bit, group_size 64, model_type qwen3_5"
+  },
+  "acquisition_manifest": {
+    "path": "/Users/lkc/Downloads/AI-Models/Qwen3.6-27B-4bit.manifest.json",
+    "bytes": 7434,
+    "sha256": "d4595e09a870f9cf9ed081bbf33971dc8948bfdecab547c9c39888129455e3b0",
+    "historical_status_unchanged": "files_verified_runtime_not_tested"
+  },
+  "hardware": {
+    "cpu_brand": "Apple M5 Pro",
+    "physical_memory_bytes": 68719476736
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "package_versions_from_completed_language_run": {
+      "kitguard": "0.1.0",
+      "mlx": "0.32.2",
+      "mlx-vlm": "0.7.3",
+      "pydantic": "2.13.5",
+      "transformers": "5.17.0",
+      "outlines": null,
+      "safetensors": "0.8.0"
+    }
+  },
+  "release_freeze": {
+    "path": "/Users/lkc/Downloads/AI·SW/kitguard/docs/RELEASE_EVALUATION_FREEZE.json",
+    "bytes": 6036,
+    "sha256": "593a3f3f4da4a26f429a08fdea31cab22f0fdc3c40da42e73fb5a15dda65dea6"
+  },
+  "selected_protocol": {
+    "selected_mode": "spatial_inventory",
+    "image_max_side": 1536,
+    "max_tokens": 900,
+    "temperature": 0,
+    "enable_thinking": false,
+    "input_pipeline": "app-upload"
+  },
+  "completed_suite_records": [
+    {
+      "suite": "loco_development_release_v1",
+      "scope": "public_photo_development",
+      "run": {
+        "path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/loco_development_release_v1/run.json",
+        "bytes": 11274,
+        "sha256": "bc3e9aa45bb7fdbc79bdec72caa264c0f598e6dbcc41663383f5b66f21cdb4d6"
+      },
+      "predictions": {
+        "path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/loco_development_release_v1/predictions.jsonl",
+        "bytes": 33852,
+        "sha256": "a00a76f268c11a427651cb52e47a9d0c90ac45445632cc3830cf82d068d70d2c"
+      },
+      "started_at_utc": "2026-09-26T10:39:18.419584+00:00",
+      "finished_at_utc": "2026-09-26T10:43:18.168337+00:00",
+      "source_changed_during_run": false,
+      "source_hashes": {
+        "vision.py": "cd9d36f3496b759ba845149c901a9c85bbc87d051cb833a8a80ba44f4649c39e",
+        "app.py": "7899f6e43cd343416defc50f5e2d6dbbeebeacec91275dbc1b6fa2329a68ec18",
+        "schemas.py": "e0997da7ffc66ee164851a0cec43dc191d16a648c98ed1837eafcae0439c9533",
+        "evaluation.py": "4bf45f22ba460e936275cc1fc5dc968cce94ba4368ed078b985a192942452759",
+        "feedback.py": "2eb4111671c1910c8d38bcc2ad99f6e16586a1c69c48fdfdec0a3da9ac3e950a",
+        "store.py": "0ab6802be1cedea76136052fe51b10f98a8c417a6b1d01af66a43f6e1ee931f2",
+        "models.py": "e158ebffe8181e14916103459e556ab675dd75c842b2b688f0f872facea68e20",
+        "instructions.py": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+        "evidence.py": "360360a7f2fa223389ba88c27353c4d315c487e0e3d3f11855816ace9801d723",
+        "spatial.py": "018b07ba694371ea9a1745abba51310ce57e7e75e14c8665f8c6f6ba8d39e278",
+        "run_benchmark.py": "ce12de26bcb7f149d65be74f95180ea4d4d7da818fc057f7dbd6cea041e5854d"
+      },
+      "model_status_after_run": {
+        "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+        "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+        "loaded": true,
+        "label": "Qwen3.6-27B · MLX 4-bit · local",
+        "observer_protocol_sha256": "d65f411dc69c3f5de57bfcad82c34a4e4bf77fad45c373ad60572c3866ce9678",
+        "observation_mode": "spatial_inventory",
+        "image_max_side": 1536,
+        "load_seconds": 2.979
+      },
+      "metrics_recomputed_from_rows": {
+        "images": 16,
+        "complete_count_exact": 15,
+        "wrong_actionable": 1,
+        "execution_errors": 0
+      },
+      "saved_summary": {
+        "images": 16,
+        "unique_image_hashes": 16,
+        "unique_source_images": 16,
+        "splits": {
+          "development": 16
+        },
+        "order_eligible_images": 16,
+        "order_out_of_scope_images": 0,
+        "count_exact": {
+          "numerator": 15,
+          "denominator": 16,
+          "rate": 0.9375,
+          "wilson_95": null,
+          "interval_note": "Descriptive benchmark only; independent holdout sampling is not established."
+        },
+        "actionable_coverage": {
+          "numerator": 16,
+          "denominator": 16,
+          "rate": 1.0
+        },
+        "wrong_actionable_count": {
+          "numerator": 1,
+          "denominator": 16,
+          "rate": 0.0625
+        },
+        "errors": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0.0
+        },
+        "matched_order_ready": {
+          "numerator": 15,
+          "denominator": 16,
+          "rate": 0.9375
+        },
+        "mismatched_order_false_ready": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0.0
+        },
+        "mismatched_order_correct_adjustment": {
+          "numerator": 15,
+          "denominator": 16,
+          "rate": 0.9375
+        },
+        "nominal_order": {
+          "matching_images_ready": {
+            "numerator": 7,
+            "denominator": 8,
+            "rate": 0.875
+          },
+          "quantity_anomalies_false_ready": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0.0
+          },
+          "quantity_anomalies_correct_adjustment": {
+            "numerator": 8,
+            "denominator": 8,
+            "rate": 1.0
+          },
+          "constant_nominal_baseline": {
+            "label": "Always return the author-defined normal composition; no visual input",
+            "count_exact": {
+              "numerator": 8,
+              "denominator": 16,
+              "rate": 0.5
+            },
+            "quantity_anomalies_false_ready": {
+              "numerator": 8,
+              "denominator": 8,
+              "rate": 1.0
+            }
+          }
+        },
+        "subgroups": {
+          "normal_constant_222": {
+            "images": 8,
+            "count_exact": {
+              "numerator": 7,
+              "denominator": 8,
+              "rate": 0.875
+            },
+            "actionable_coverage": {
+              "numerator": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "wrong_actionable_count": {
+              "numerator": 1,
+              "denominator": 8,
+              "rate": 0.125
+            },
+            "errors": {
+              "numerator": 0,
+              "denominator": 8,
+              "rate": 0.0
+            }
+          },
+          "quantity_anomaly": {
+            "images": 8,
+            "count_exact": {
+              "numerator": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "actionable_coverage": {
+              "numerator": 8,
+              "denominator": 8,
+              "rate": 1.0
+            },
+            "wrong_actionable_count": {
+              "numerator": 0,
+              "denominator": 8,
+              "rate": 0.0
+            },
+            "errors": {
+              "numerator": 0,
+              "denominator": 8,
+              "rate": 0.0
+            }
+          }
+        },
+        "latency_ms": {
+          "median": 14742.0,
+          "maximum": 18273
+        },
+        "limitations": [
+          "Public photographs, broad category mapping; no SKU/size or physical action verification.",
+          "Order tasks from the same photograph are correlated, not additional image samples.",
+          "Refusals and errors remain in the image denominator; no exclusion after model output.",
+          "Intervals require an explicit independent holdout sampling assumption and unique sources.",
+          "Development and first-N benchmark results are descriptive, not population performance estimates.",
+          "Mismatched-order rates cover one fixed perturbation per eligible image, not every possible mismatch.",
+          "Unknown overlap with the pretrained model's training data limits generalization claims."
+        ]
+      },
+      "latency_ms": {
+        "median": 14742.0,
+        "maximum": 18273,
+        "includes_cold_load_when_applicable": true
+      },
+      "mlx_reported_peak_memory_gb": {
+        "record_count": 16,
+        "minimum_reported_value": 19.107,
+        "maximum_reported_value": 19.114,
+        "basis": "MLX-VLM GenerationResult.peak_memory = mx.get_peak_memory() / 1e9; decimal GB. Counters may be cumulative within the process, not independent per-image allocation or total machine RAM."
+      },
+      "source_version_scope": "Integrated spatial release development run, same observer hash as the pre-holdout freeze."
+    },
+    {
+      "suite": "instructions_27b_v1",
+      "scope": "author_generated_language_development",
+      "run": {
+        "path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/instructions_27b_v1/run.json",
+        "bytes": 8768,
+        "sha256": "15541227ef0f06601e5335846881e7bb987bdbd599d7452746f5011fde57a2cd"
+      },
+      "predictions": {
+        "path": "/Users/lkc/Downloads/AI·SW/kitguard/evaluation-runs/instructions_27b_v1/predictions.jsonl",
+        "bytes": 62181,
+        "sha256": "c7ae53fd8e4588e9f3e8d7e71ca55190193c7f1cdf8060de5f0d585143779a0c"
+      },
+      "started_at_utc": "2026-09-26T10:24:24.920567+00:00",
+      "finished_at_utc": "2026-09-26T10:25:51.307433+00:00",
+      "source_changed_during_run": false,
+      "source_hashes": {
+        "scripts/run_instruction_benchmark.py": "fdf95c5da7f131c8fe67bcdb9701a7180b506202e7a79cc6cb6cd5d330292798",
+        "kitguard/vision.py": "bdaee8548171aaea596a7d9c06181ff7c2e859a98bb74a41336e90a1a5e45745",
+        "kitguard/schemas.py": "5c5d71d193aeaf0c6d578b91999f7092086d0f84287afc7975a9e5efd3deaa5e",
+        "kitguard/instructions.py": "add5a975ef0e55ed876f27bcec43a96ceb0606dc7b45bec774b7a222ca3ca5e3",
+        "kitguard/models.py": "3dee59a02d8a7d22e8579b5096446549fac82df1105fa7fa3dfebb68768dcd6b",
+        "pyproject.toml": "43c04b7dc645f58d3d04f2776b9fdc18a4905e97df7c178dbb19ee10d9f59828"
+      },
+      "model_status_after_run": {
+        "repo_id": "mlx-community/Qwen3.6-27B-4bit",
+        "revision": "c000ac2c2057d94be3fa931000c31723aac53282",
+        "loaded": true,
+        "label": "Qwen3.6-27B · MLX 4-bit · local",
+        "observer_protocol_sha256": "bdaee8548171aaea596a7d9c06181ff7c2e859a98bb74a41336e90a1a5e45745",
+        "observation_mode": "single",
+        "image_max_side": 1024,
+        "load_seconds": 3.336
+      },
+      "metrics_recomputed_from_rows": {
+        "cases": 24,
+        "passed": 24,
+        "execution_errors": 0,
+        "expected_clarification_responses": 15,
+        "metric_note": "Expected domain clarification can carry a caught exception record; it is not an execution error. The outcome and expected response are scored by the language runner."
+      },
+      "saved_summary": {
+        "selected": 24,
+        "unattempted": 0,
+        "overall": {
+          "attempted": 24,
+          "passed": 24,
+          "pass_rate_over_attempted": 1.0,
+          "proposal_responses": 9,
+          "clarification_responses": 15,
+          "execution_errors": 0
+        },
+        "by_language": {
+          "ko": {
+            "attempted": 8,
+            "passed": 8,
+            "pass_rate_over_attempted": 1.0,
+            "proposal_responses": 3,
+            "clarification_responses": 5,
+            "execution_errors": 0
+          },
+          "zh": {
+            "attempted": 8,
+            "passed": 8,
+            "pass_rate_over_attempted": 1.0,
+            "proposal_responses": 3,
+            "clarification_responses": 5,
+            "execution_errors": 0
+          },
+          "en": {
+            "attempted": 8,
+            "passed": 8,
+            "pass_rate_over_attempted": 1.0,
+            "proposal_responses": 3,
+            "clarification_responses": 5,
+            "execution_errors": 0
+          }
+        },
+        "by_category": {
+          "clear": {
+            "attempted": 9,
+            "passed": 9,
+            "pass_rate_over_attempted": 1.0,
+            "proposal_responses": 9,
+            "clarification_responses": 0,
+            "execution_errors": 0
+          },
+          "out_of_range": {
+            "attempted": 6,
+            "passed": 6,
+            "pass_rate_over_attempted": 1.0,
+            "proposal_responses": 0,
+            "clarification_responses": 6,
+            "execution_errors": 0
+          },
+          "ambiguous": {
+            "attempted": 3,
+            "passed": 3,
+            "pass_rate_over_attempted": 1.0,
+            "proposal_responses": 0,
+            "clarification_responses": 3,
+            "execution_errors": 0
+          },
+          "unrelated": {
+            "attempted": 3,
+            "passed": 3,
+            "pass_rate_over_attempted": 1.0,
+            "proposal_responses": 0,
+            "clarification_responses": 3,
+            "execution_errors": 0
+          },
+          "unauthorized_completion": {
+            "attempted": 3,
+            "passed": 3,
+            "pass_rate_over_attempted": 1.0,
+            "proposal_responses": 0,
+            "clarification_responses": 3,
+            "execution_errors": 0
+          }
+        },
+        "by_expected_kind": {
+          "proposal": {
+            "attempted": 9,
+            "passed": 9,
+            "pass_rate_over_attempted": 1.0,
+            "proposal_responses": 9,
+            "clarification_responses": 0,
+            "execution_errors": 0
+          },
+          "clarification": {
+            "attempted": 15,
+            "passed": 15,
+            "pass_rate_over_attempted": 1.0,
+            "proposal_responses": 0,
+            "clarification_responses": 15,
+            "execution_errors": 0
+          }
+        },
+        "interpretation": "Author-generated engineering cases only; expected clarification/rejection is success. Execution errors remain in every attempted-case denominator. No user-study or generalization claim."
+      },
+      "latency_ms": {
+        "median": 2864.0,
+        "maximum": 7594,
+        "includes_cold_load_when_applicable": true
+      },
+      "mlx_reported_peak_memory_gb": {
+        "record_count": 24,
+        "minimum_reported_value": 16.988,
+        "maximum_reported_value": 17.05,
+        "basis": "MLX-VLM GenerationResult.peak_memory = mx.get_peak_memory() / 1e9; decimal GB. Counters may be cumulative within the process, not independent per-image allocation or total machine RAM."
+      },
+      "source_version_scope": "This record describes its completed source snapshot. The language suite ran before the final spatial observer integration; it does not certify all later source changes."
+    }
+  ],
+  "independent_cpu_only_review": {
+    "path": "/Users/lkc/Downloads/AI-Models/verification/Qwen3.6-27B-reproducibility-review.json",
+    "bytes": 3801,
+    "sha256": "fb9d7917fd1ed0ffa14f502a10e7070518d03f7a8ddab3b815764d0f69e6c548"
+  },
+  "limitations": [
+    "A separate subsequent runtime record does not alter historical acquisition metadata.",
+    "No GPU inference was performed while creating this verification summary.",
+    "Development results are not held-out test results, physical field validation, location-ground-truth validation, or industrial certification.",
+    "Public images may overlap unknown model pretraining data.",
+    "Model-reported peak allocation is not entire computer RAM consumption, free-memory headroom, or a promise for other projects, longer contexts, more images or concurrent processes.",
+    "The 16-image visual suite contains no positive bracket examples."
+  ]
+}

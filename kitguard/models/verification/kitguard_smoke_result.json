@@ -1,0 +1,379 @@
+{
+  "scope": "Synthetic engineering smoke; not physical-part accuracy or field validation",
+  "hardware": "Apple M5 Pro, 64 GiB unified memory, macOS 26.6.2",
+  "started_at": "2026-09-26T09:25:13.147593+00:00",
+  "before": {
+    "available": true,
+    "loaded": false,
+    "label": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+    "path": "/Users/lkc/Downloads/AI-Models/Qwen3-VL-8B-Instruct-8bit",
+    "error": null,
+    "load_seconds": null,
+    "last_inference": null
+  },
+  "text": {
+    "instruction": "볼트는 1개 줄이고 와셔는 1개 늘려 주세요.",
+    "proposal": {
+      "requirements": {
+        "bolt": 0,
+        "nut": 1,
+        "washer": 2,
+        "bracket": 1
+      },
+      "explanation": "볼트를 1개 줄이고 와셔를 1개 늘린 요청에 따라 변경했습니다. 나머지 부품 수량은 유지합니다."
+    },
+    "wall_seconds": 5.798,
+    "model_status": {
+      "available": true,
+      "loaded": true,
+      "label": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+      "path": "/Users/lkc/Downloads/AI-Models/Qwen3-VL-8B-Instruct-8bit",
+      "error": null,
+      "load_seconds": 2.1,
+      "last_inference": {
+        "seconds": 3.247,
+        "prompt_tokens": 246,
+        "generation_tokens": 71,
+        "mlx_reported_peak_memory_gb": 10.169,
+        "finish_reason": "stop"
+      }
+    }
+  },
+  "additional_text_cases": [
+    {
+      "instruction": "螺栓改成2个，其他不变",
+      "rejected": false,
+      "proposal": {
+        "requirements": {
+          "bolt": 2,
+          "nut": 1,
+          "washer": 1,
+          "bracket": 1
+        },
+        "explanation": "볼트를 2개로 변경하고, 나머지 부품 수량은 그대로 유지합니다."
+      },
+      "wall_seconds": 1.929,
+      "model_status": {
+        "available": true,
+        "loaded": true,
+        "label": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+        "path": "/Users/lkc/Downloads/AI-Models/Qwen3-VL-8B-Instruct-8bit",
+        "error": null,
+        "load_seconds": 2.1,
+        "last_inference": {
+          "seconds": 1.928,
+          "prompt_tokens": 232,
+          "generation_tokens": 58,
+          "mlx_reported_peak_memory_gb": 10.169,
+          "finish_reason": "stop"
+        }
+      }
+    },
+    {
+      "instruction": "螺栓100个",
+      "rejected": true,
+      "clarification": "100개는 최대 3개까지 허용되므로, 범위를 초과합니다. 정확한 수량을 다시 요청해 주세요.",
+      "wall_seconds": 1.694,
+      "model_status": {
+        "available": true,
+        "loaded": true,
+        "label": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+        "path": "/Users/lkc/Downloads/AI-Models/Qwen3-VL-8B-Instruct-8bit",
+        "error": null,
+        "load_seconds": 2.1,
+        "last_inference": {
+          "seconds": 1.693,
+          "prompt_tokens": 230,
+          "generation_tokens": 50,
+          "mlx_reported_peak_memory_gb": 10.169,
+          "finish_reason": "stop"
+        }
+      }
+    }
+  ],
+  "image": {
+    "api_response": {
+      "order": {
+        "id": "ord_964cce024a9b400ba6a5",
+        "title": "Synthetic engineering API smoke - not parts evaluation",
+        "requirements": {
+          "bolt": 1,
+          "nut": 1,
+          "washer": 1,
+          "bracket": 1
+        },
+        "revision": 1,
+        "status": "needs_action",
+        "created_at": "2026-09-26T09:25:22.581+00:00",
+        "updated_at": "2026-09-26T09:25:28.030+00:00",
+        "latest_check": {
+          "id": "chk_a2214de102924adc9632",
+          "order_id": "ord_964cce024a9b400ba6a5",
+          "revision": 1,
+          "photo_id": "img_e96a546113474f7db94d",
+          "decision": "manual",
+          "observed": {
+            "bolt": null,
+            "nut": null,
+            "washer": null,
+            "bracket": null
+          },
+          "differences": [
+            {
+              "part": "bolt",
+              "required": 1,
+              "observed": null,
+              "delta": null
+            },
+            {
+              "part": "nut",
+              "required": 1,
+              "observed": null,
+              "delta": null
+            },
+            {
+              "part": "washer",
+              "required": 1,
+              "observed": null,
+              "delta": null
+            },
+            {
+              "part": "bracket",
+              "required": 1,
+              "observed": null,
+              "delta": null
+            }
+          ],
+          "issues": [
+            "시뮬레이션 이미지",
+            "실제 키트 아님",
+            "객체 불명확",
+            "카테고리 불일치",
+            "수량 불가능",
+            "검사 불가"
+          ],
+          "action": {
+            "kind": "manual",
+            "message": "시뮬레이션 이미지로 실제 키트 검사 불가",
+            "region": null
+          },
+          "model_label": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+          "backend": "mlx",
+          "latency_ms": 5438,
+          "created_at": "2026-09-26T09:25:28.030+00:00",
+          "valid": true,
+          "evidence_epoch": 1
+        },
+        "checks": [
+          {
+            "id": "chk_a2214de102924adc9632",
+            "order_id": "ord_964cce024a9b400ba6a5",
+            "revision": 1,
+            "photo_id": "img_e96a546113474f7db94d",
+            "decision": "manual",
+            "observed": {
+              "bolt": null,
+              "nut": null,
+              "washer": null,
+              "bracket": null
+            },
+            "differences": [
+              {
+                "part": "bolt",
+                "required": 1,
+                "observed": null,
+                "delta": null
+              },
+              {
+                "part": "nut",
+                "required": 1,
+                "observed": null,
+                "delta": null
+              },
+              {
+                "part": "washer",
+                "required": 1,
+                "observed": null,
+                "delta": null
+              },
+              {
+                "part": "bracket",
+                "required": 1,
+                "observed": null,
+                "delta": null
+              }
+            ],
+            "issues": [
+              "시뮬레이션 이미지",
+              "실제 키트 아님",
+              "객체 불명확",
+              "카테고리 불일치",
+              "수량 불가능",
+              "검사 불가"
+            ],
+            "action": {
+              "kind": "manual",
+              "message": "시뮬레이션 이미지로 실제 키트 검사 불가",
+              "region": null
+            },
+            "model_label": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+            "backend": "mlx",
+            "latency_ms": 5438,
+            "created_at": "2026-09-26T09:25:28.030+00:00",
+            "valid": true,
+            "evidence_epoch": 1
+          }
+        ],
+        "photos": [
+          {
+            "id": "img_e96a546113474f7db94d",
+            "url": "/api/photos/img_e96a546113474f7db94d",
+            "sha256": "e2bdd987084b4722094016bb746e8e1d61935925590ae1ddcbd48a549b660e49",
+            "source_sha256": "28b0f1adf3432cd1d9d7fce632374f7aa4bcda0194784f3e5d19aa4043bee7ff",
+            "revision": 1,
+            "created_at": "2026-09-26T09:25:22.589+00:00",
+            "width": 640,
+            "height": 480,
+            "quality": {
+              "warning": "노출을 조정하세요 / 请调整曝光"
+            }
+          }
+        ],
+        "references": {},
+        "reference_history": [],
+        "events": [
+          {
+            "id": "evt_b9b72d4a6f8d4a31a2dd",
+            "kind": "order_created",
+            "message": "주문 생성 / 已创建订单",
+            "created_at": "2026-09-26T09:25:22.581+00:00",
+            "payload": {}
+          },
+          {
+            "id": "evt_944cfc62df844bfdae27",
+            "kind": "photo_uploaded",
+            "message": "새 실물 사진 등록 / 已上传实物照片",
+            "created_at": "2026-09-26T09:25:22.589+00:00",
+            "payload": {
+              "photo_id": "img_e96a546113474f7db94d",
+              "part": null
+            }
+          },
+          {
+            "id": "evt_b37d0bb21ad542f5a900",
+            "kind": "inspection_started",
+            "message": "실물 관찰 시작 / 开始观察实物",
+            "created_at": "2026-09-26T09:25:22.591+00:00",
+            "payload": {
+              "photo_id": "img_e96a546113474f7db94d"
+            }
+          },
+          {
+            "id": "evt_2778b3a9805e41f09897",
+            "kind": "inspection_completed",
+            "message": "시뮬레이션 이미지로 실제 키트 검사 불가",
+            "created_at": "2026-09-26T09:25:28.030+00:00",
+            "payload": {
+              "check_id": "chk_a2214de102924adc9632",
+              "decision": "manual",
+              "revision": 1
+            }
+          }
+        ],
+        "completions": [],
+        "evidence_epoch": 1,
+        "active_inspection": null,
+        "revisions": [
+          {
+            "revision": 1,
+            "requirements": {
+              "bolt": 1,
+              "nut": 1,
+              "washer": 1,
+              "bracket": 1
+            },
+            "instruction": "최초 주문 / 初始订单",
+            "created_at": "2026-09-26T09:25:22.581+00:00"
+          }
+        ]
+      },
+      "check": {
+        "id": "chk_a2214de102924adc9632",
+        "order_id": "ord_964cce024a9b400ba6a5",
+        "revision": 1,
+        "photo_id": "img_e96a546113474f7db94d",
+        "decision": "manual",
+        "observed": {
+          "bolt": null,
+          "nut": null,
+          "washer": null,
+          "bracket": null
+        },
+        "differences": [
+          {
+            "part": "bolt",
+            "required": 1,
+            "observed": null,
+            "delta": null
+          },
+          {
+            "part": "nut",
+            "required": 1,
+            "observed": null,
+            "delta": null
+          },
+          {
+            "part": "washer",
+            "required": 1,
+            "observed": null,
+            "delta": null
+          },
+          {
+            "part": "bracket",
+            "required": 1,
+            "observed": null,
+            "delta": null
+          }
+        ],
+        "issues": [
+          "시뮬레이션 이미지",
+          "실제 키트 아님",
+          "객체 불명확",
+          "카테고리 불일치",
+          "수량 불가능",
+          "검사 불가"
+        ],
+        "action": {
+          "kind": "manual",
+          "message": "시뮬레이션 이미지로 실제 키트 검사 불가",
+          "region": null
+        },
+        "model_label": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+        "backend": "mlx",
+        "latency_ms": 5438,
+        "created_at": "2026-09-26T09:25:28.030+00:00",
+        "valid": true,
+        "evidence_epoch": 1
+      }
+    },
+    "wall_seconds": 5.465,
+    "model_status": {
+      "available": true,
+      "loaded": true,
+      "label": "Qwen3-VL-8B-Instruct · MLX 8-bit · local",
+      "path": "/Users/lkc/Downloads/AI-Models/Qwen3-VL-8B-Instruct-8bit",
+      "error": null,
+      "load_seconds": 2.1,
+      "last_inference": {
+        "seconds": 5.434,
+        "prompt_tokens": 618,
+        "generation_tokens": 109,
+        "mlx_reported_peak_memory_gb": 10.913,
+        "finish_reason": "stop"
+      }
+    },
+    "input": "synthetic_engineering_smoke.png"
+  },
+  "process_max_rss_bytes_macos": 10766778368,
+  "finished_at": "2026-09-26T09:25:28.033564+00:00"
+}
