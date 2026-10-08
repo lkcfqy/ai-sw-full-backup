@@ -15,6 +15,6 @@
 - [恢复脚本](backup/restore-backup.sh)
 - [逐文件核验脚本](backup/verify-restored.py)
 
-请下载备份 Release 的全部分卷、SHA256SUMS.txt、backup-manifest.json 和 file-manifest.jsonl，按恢复说明在空目录中恢复并逐文件核验。归档保存原文件权限、时间和符号链接；未归档 macOS 扩展属性、ACL 或项目目录之外的系统依赖。`.venv` Python 和字体中的绝对路径链接在其他电脑上可能需要重建。
+请下载备份 Release 的全部分卷、SHA256SUMS.txt、backup-manifest.json 和 file-manifest.jsonl，按恢复说明在空目录中恢复并逐文件核验。归档保存原文件权限、时间和符号链接；未归档 macOS 扩展属性、ACL 或项目目录之外的系统依赖。`.venv` Python、字体和两个 `node_modules` 目录中的绝对路径链接在其他电脑上可能需要重建。
 
 此仓库必须保持私有。完整归档加密是为了保留可能含会话信息的原始文件；可浏览副本中也有个人报名材料。
