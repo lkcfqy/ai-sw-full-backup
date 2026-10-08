@@ -1,0 +1,352 @@
+{
+  "created_at_utc": "2026-10-08T06:20:25.097109+00:00",
+  "source": "/Users/lkc/Downloads/AI·SW",
+  "staging_repository": "/Users/lkc/Downloads/AI-SW-GitHub-backup-20261008/repository",
+  "scope": "Browsable GitHub source copy; complete original retained in release archive by parent workflow",
+  "copied_regular_files": 3406,
+  "copied_regular_file_bytes": 654616757,
+  "size_limit_bytes": 52428800,
+  "excluded_paths": [
+    {
+      "path": ".DS_Store",
+      "kind": "file",
+      "reason": "macOS Finder metadata"
+    },
+    {
+      "path": ".ruff_cache",
+      "kind": "directory",
+      "reason": "Linter cache"
+    },
+    {
+      "path": "2026庆南AI·SW竞赛资料/.DS_Store",
+      "kind": "file",
+      "reason": "macOS Finder metadata"
+    },
+    {
+      "path": "kitguard/.DS_Store",
+      "kind": "file",
+      "reason": "macOS Finder metadata"
+    },
+    {
+      "path": "kitguard/.presentation-build",
+      "kind": "directory",
+      "reason": "Presentation build artifacts"
+    },
+    {
+      "path": "kitguard/.presentation-v03-build",
+      "kind": "directory",
+      "reason": "Presentation build artifacts"
+    },
+    {
+      "path": "kitguard/.presentation-v07-build",
+      "kind": "directory",
+      "reason": "Presentation build artifacts"
+    },
+    {
+      "path": "kitguard/.pytest_cache",
+      "kind": "directory",
+      "reason": "Test cache"
+    },
+    {
+      "path": "kitguard/.ruff_cache",
+      "kind": "directory",
+      "reason": "Linter cache"
+    },
+    {
+      "path": "kitguard/.tools",
+      "kind": "directory",
+      "reason": "Local tool installations"
+    },
+    {
+      "path": "kitguard/.venv",
+      "kind": "directory",
+      "reason": "Python virtual environment"
+    },
+    {
+      "path": "kitguard/build",
+      "kind": "directory",
+      "reason": "Build artifacts"
+    },
+    {
+      "path": "kitguard/data",
+      "kind": "directory",
+      "reason": "Local runtime data artifacts"
+    },
+    {
+      "path": "kitguard/data-competition-v09",
+      "kind": "directory",
+      "reason": "Local runtime data artifacts"
+    },
+    {
+      "path": "kitguard/data-detector-lab",
+      "kind": "directory",
+      "reason": "Local runtime data artifacts"
+    },
+    {
+      "path": "kitguard/data-preview-v06",
+      "kind": "directory",
+      "reason": "Local runtime data artifacts"
+    },
+    {
+      "path": "kitguard/data-preview-v07",
+      "kind": "directory",
+      "reason": "Local runtime data artifacts"
+    },
+    {
+      "path": "kitguard/data-release-v07-browser",
+      "kind": "directory",
+      "reason": "Local runtime data artifacts"
+    },
+    {
+      "path": "kitguard/datasets",
+      "kind": "directory",
+      "reason": "Dataset artifacts"
+    },
+    {
+      "path": "kitguard/docs/v0.7/public_paired_freeze_v1/source_snapshot/kitguard/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.7/public_paired_freeze_v1/source_snapshot/scripts/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.7/public_paired_freeze_v1/source_snapshot/scripts/v07/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/detector_veto_freeze_v1/source_snapshot/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/identity_reference_guarded_freeze_v1/source_snapshot/kitguard/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/identity_reference_guarded_freeze_v1/source_snapshot/scripts/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/identity_reference_guarded_freeze_v1/source_snapshot/scripts/v07/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/identity_reference_guarded_freeze_v1/source_snapshot/scripts/v08/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/loco_combined_freeze_v1/source_snapshot/kitguard/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/loco_combined_freeze_v1/source_snapshot/scripts/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/loco_combined_freeze_v1/source_snapshot/scripts/v08/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/manta_classifier_freeze_v1/source_snapshot/scripts/v08/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/reference_guarded_freeze_v1/source_snapshot/kitguard/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/reference_guarded_freeze_v1/source_snapshot/scripts/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/reference_guarded_freeze_v1/source_snapshot/scripts/v07/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/reference_guarded_freeze_v1/source_snapshot/scripts/v08/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/docs/v0.8/three_class_shadow_freeze_v1/source_snapshot/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/evaluation-runs",
+      "kind": "directory",
+      "reason": "Evaluation run artifacts"
+    },
+    {
+      "path": "kitguard/kitguard/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/kitguard.egg-info",
+      "kind": "directory",
+      "reason": "Installed package metadata"
+    },
+    {
+      "path": "kitguard/models",
+      "kind": "directory",
+      "reason": "Model weight artifacts"
+    },
+    {
+      "path": "kitguard/output/.DS_Store",
+      "kind": "file",
+      "reason": "macOS Finder metadata"
+    },
+    {
+      "path": "kitguard/output/delivery-v0.2/KitGuard/.ruff_cache",
+      "kind": "directory",
+      "reason": "Linter cache"
+    },
+    {
+      "path": "kitguard/output/delivery-v0.2/KitGuard/evaluation-runs/instructions_27b_v1/source_snapshot/.ruff_cache",
+      "kind": "directory",
+      "reason": "Linter cache"
+    },
+    {
+      "path": "kitguard/output/delivery-v0.2/KitGuard/evaluation-runs/instructions_8b_v1/source_snapshot/.ruff_cache",
+      "kind": "directory",
+      "reason": "Linter cache"
+    },
+    {
+      "path": "kitguard/output/delivery-v0.2/KitGuard/evaluation-runs/instructions_8b_v2/source_snapshot/.ruff_cache",
+      "kind": "directory",
+      "reason": "Linter cache"
+    },
+    {
+      "path": "kitguard/output/delivery-v0.2/KitGuard/evaluation-runs/instructions_8b_v3/source_snapshot/.ruff_cache",
+      "kind": "directory",
+      "reason": "Linter cache"
+    },
+    {
+      "path": "kitguard/output/delivery-v0.2/KitGuard/kitguard/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/output/dev-v0.6.0.dev2/superseded-before-final-import-format/verification/build-source/.ruff_cache",
+      "kind": "directory",
+      "reason": "Linter cache"
+    },
+    {
+      "path": "kitguard/output/dev-v0.6.0.dev2/superseded-before-final-import-format/verification/build-source/kitguard.egg-info",
+      "kind": "directory",
+      "reason": "Installed package metadata"
+    },
+    {
+      "path": "kitguard/output/dev-v0.6.0.dev2/superseded-before-final-import-format/verification/extracted-wheel/kitguard/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/output/dev-v0.6.0.dev2/verification/build-source/.ruff_cache",
+      "kind": "directory",
+      "reason": "Linter cache"
+    },
+    {
+      "path": "kitguard/output/dev-v0.6.0.dev2/verification/build-source/kitguard.egg-info",
+      "kind": "directory",
+      "reason": "Installed package metadata"
+    },
+    {
+      "path": "kitguard/output/dev-v0.6.0.dev2/verification/extracted-wheel/kitguard/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/scripts/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/scripts/scoring/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/scripts/submission/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/scripts/v07/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/scripts/v08/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/scripts/v09/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/test-results",
+      "kind": "directory",
+      "reason": "Test result artifacts"
+    },
+    {
+      "path": "kitguard/tests/__pycache__",
+      "kind": "directory",
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "kitguard/tmp",
+      "kind": "directory",
+      "reason": "Temporary working artifacts"
+    },
+    {
+      "path": "kitguard/training-runs",
+      "kind": "directory",
+      "reason": "Training run artifacts"
+    },
+    {
+      "path": "tmp",
+      "kind": "directory",
+      "reason": "Top-level temporary working artifacts"
+    },
+    {
+      "path": "报名材料_KitGuard_2026-09-29/.DS_Store",
+      "kind": "file",
+      "reason": "macOS Finder metadata"
+    },
+    {
+      "path": "报名材料_해피_2026-09-29/工作文件/.DS_Store",
+      "kind": "file",
+      "reason": "macOS Finder metadata"
+    },
+    {
+      "path": "报名材料_해피_2026-09-29/工作文件/20260928_原生HWP填写/vendor/node_modules",
+      "kind": "directory",
+      "reason": "Installed dependency tree"
+    },
+    {
+      "path": "现在签名_해피/.DS_Store",
+      "kind": "file",
+      "reason": "macOS Finder metadata"
+    }
+  ],
+  "copied_symlinks": []
+}
