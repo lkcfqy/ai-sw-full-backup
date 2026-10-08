@@ -8,7 +8,7 @@
 
 完整归档使用 zstd 压缩和 age 加密，共 **42,975,391,030 字节（约 43.0 GB）**，切分为 **41 卷**，每卷最大 1 GiB。完整归档仅在保留本地恢复私钥时能够解密。私钥不在仓库或 Release 中，应另外保存到安全的独立位置。
 
-- 完整备份：[Releases](../../releases)
+- 完整备份：[Releases](https://github.com/lkcfqy/ai-sw-full-backup/releases/tag/backup-20261008)
 - [恢复说明](backup/RESTORE-README.md)
 - [完整备份元数据](backup/backup-manifest.json)
 - [源码副本选择规则](backup/backup-stage-selection.json)

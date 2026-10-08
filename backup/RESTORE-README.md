@@ -10,19 +10,19 @@
 
 从同一个备份 Release 下载全部附件，保持文件名和文件内容不变。分卷名为 `AI-SW-full-20261008.tar.zst.age.part-000001`、`...part-000002` 等，同时需要 `SHA256SUMS.txt`、`backup-manifest.json`、`file-manifest.jsonl` 和恢复工具。
 
-恢复环境需要 Bash、Python 3、`age`、`zstd`、`tar`，以及 `sha256sum` 或 macOS 的 `shasum`。所有备份附件应放在同一个下载目录中，校验文件内使用相对附件路径。恢复工具可从源码仓库的 `tools` 目录获取，也可使用 Release 附件中的脚本。
+恢复环境需要 Bash、Python 3、`age`、`zstd`、`tar`，以及 `sha256sum` 或 macOS 的 `shasum`。所有备份附件应放在同一个下载目录中，校验文件内使用相对附件路径。恢复工具可从源码仓库的 `backup` 目录获取，也可使用 Release 附件中的脚本。macOS 可用 Homebrew 安装 `age` 和 `zstd`：`brew install age zstd`。
 
 ## 恢复
 
 下面的下载目录、私钥和目标路径均为示例；将它们换成实际绝对路径。目标目录必须为空；目录不存在时脚本会创建它。
 
 ```bash
-bash '/路径/tools/restore-backup.sh' \
+bash '/路径/backup/restore-backup.sh' \
   '/路径/备份附件' \
   '/单独保存私钥的路径/RESTORE-KEY-KEEP-PRIVATE.agekey' \
   '/路径/恢复结果'
 
-python3 '/路径/tools/verify-restored.py' \
+python3 '/路径/backup/verify-restored.py' \
   '/路径/备份附件/file-manifest.jsonl' \
   '/路径/恢复结果'
 ```
