@@ -1,32 +1,44 @@
 {
   "status": "passed",
-  "verified_at": "2026-10-08T15:27:07.519740+09:00",
-  "elapsed_seconds": 67.21,
-  "manifest_sha256": "6eb02623dc5199ffae828ff708700a72188bb615c624185e2adef09902ec24ab",
-  "archive_name": "AI-SW-full-20261008.tar.zst.age",
+  "verified_at": "2026-10-08T15:40:49.217547+09:00",
+  "elapsed_seconds": 6.48,
+  "manifest_sha256": "4faa63e752fb3392d0812b57a35580fd479ec46ee2da222b2a0a8c28ae49d46a",
+  "scope_verification": {
+    "scope_sha256": "6234444eef6f74f16ae7c9183f64998016126927d89d3bb131a8ba994284d53b",
+    "scope_matches_summary": true,
+    "scope_matches_embedded_copy": true,
+    "original_minus_exclusions_matches_reduced_manifest": true,
+    "excluded_base_weight_files": 7,
+    "excluded_public_payload_files": 3160,
+    "confirmed_excluded_directories": 106,
+    "confirmed_excluded_files": 3179,
+    "preserved_training_checkpoint_files": 18,
+    "all_preserved_contents_match_original_snapshot": true
+  },
+  "archive_name": "AI-SW-project-20261008.tar.zst.age",
   "original_archive": {
-    "bytes": 42975391030,
-    "sha256": "5898b03004804e7595e429f37c99c0f7910d4f2a21f73b1d7d017fe523224e09"
+    "bytes": 3175601899,
+    "sha256": "b1d1578e943a3739a09c05b6385e57d33cd5869f8ecd5e78d05252a5712edc71"
   },
   "parts": {
-    "count": 41,
-    "bytes": 42975391030,
-    "sha256": "5898b03004804e7595e429f37c99c0f7910d4f2a21f73b1d7d017fe523224e09"
+    "count": 3,
+    "bytes": 3175601899,
+    "sha256": "b1d1578e943a3739a09c05b6385e57d33cd5869f8ecd5e78d05252a5712edc71"
   },
   "archive_matches_concatenated_parts": true,
   "manifest_counts": {
-    "directory": 7244,
-    "file": 53566,
-    "symlink": 6
+    "directory": 3782,
+    "file": 19862,
+    "symlink": 1
   },
   "archive_counts": {
-    "directory": 7244,
-    "file": 53566,
-    "symlink": 6
+    "directory": 3782,
+    "file": 19862,
+    "symlink": 1
   },
-  "manifest_regular_bytes": 47882042338,
-  "verified_regular_bytes": 47882042338,
-  "verified_member_count": 60816,
+  "manifest_regular_bytes": 4474275327,
+  "verified_regular_bytes": 4474275327,
+  "verified_member_count": 23645,
   "missing_member_count": 0,
   "extra_member_count": 0,
   "age_exit_code": 0,
@@ -43,6 +55,9 @@
     "all member types and modes",
     "all symlink targets",
     "no missing, extra, or duplicate members",
-    "no source tree reads"
+    "no source tree reads",
+    "confirmed final scope matches summary and embedded scope",
+    "reduced manifest equals original snapshot minus confirmed exclusions",
+    "all retained checkpoint, metadata and evidence contents match original snapshot"
   ]
 }

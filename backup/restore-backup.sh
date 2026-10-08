@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Restore the encrypted, multipart AI·SW backup into an empty directory.
+# Restore the manifest-selected encrypted AI·SW backup into an empty directory.
 set -euo pipefail
 
 fail() { printf '错误：%s\n' "$*" >&2; exit 1; }
@@ -56,17 +56,37 @@ for line in lines:
     if "RESTORE-KEY" in name or name.endswith(".agekey"):
         raise SystemExit("错误：校验清单不能包含私钥")
     seen.add(name)
+if "backup-manifest.json" not in seen:
+    raise SystemExit("错误：backup-manifest.json 必须列入 SHA256SUMS.txt")
 PY
 
 printf '正在校验全部备份附件……\n'
 (cd -- "$parts_dir" && "${checksum_command[@]}")
 
+[[ -f "$parts_dir/backup-manifest.json" && ! -L "$parts_dir/backup-manifest.json" ]] || fail '备份元数据必须是普通文件'
+archive_name=$(python3 - "$parts_dir/backup-manifest.json" <<'PY'
+import json
+import re
+import sys
+
+try:
+    with open(sys.argv[1], encoding="utf-8") as source:
+        manifest = json.load(source)
+    name = manifest.get("archive_name") if isinstance(manifest, dict) else None
+except (OSError, UnicodeError, ValueError) as error:
+    raise SystemExit("错误：无法读取已校验的备份元数据：" + str(error))
+if not isinstance(name, str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*\.tar\.zst\.age", name):
+    raise SystemExit("错误：archive_name 必须是以 .tar.zst.age 结尾的安全文件名")
+print(name)
+PY
+)
+
 shopt -s nullglob
-parts=("$parts_dir"/AI-SW-full-20261008.tar.zst.age.part-*)
+parts=("$parts_dir"/"$archive_name".part-*)
 [[ ${#parts[@]} -gt 0 ]] || fail '未找到备份分卷'
 expected=1
 for part in "${parts[@]}"; do
-  printf -v expected_name 'AI-SW-full-20261008.tar.zst.age.part-%06d' "$expected"
+  printf -v expected_name '%s.part-%06d' "$archive_name" "$expected"
   [[ "${part##*/}" == "$expected_name" ]] || fail "分卷序号不连续，预期：$expected_name"
   [[ -f "$part" && ! -L "$part" ]] || fail "分卷不是普通文件：${part##*/}"
   # Every consumed part must have an authenticated checksum entry.
